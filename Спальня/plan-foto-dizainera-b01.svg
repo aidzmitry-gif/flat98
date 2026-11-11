@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1050" viewBox="0 0 1400 1050">
+<rect width="1400" height="1050" fill="#faf8f4"/>
+<g font-family="Arial, sans-serif" fill="#302c28">
+<text x="65" y="55" font-size="30" font-weight="bold">Спальня B01 — примерка мебели, вид сверху</text>
+<text x="65" y="91" font-size="20">Ориентация как на фото: окно справа, вход слева ближе к нам</text>
+<rect x="245" y="170" width="768" height="562" fill="#f0ece5" stroke="#342f2a" stroke-width="7"/>
+<line x1="245" y1="544" x2="245" y2="732" stroke="#faf8f4" stroke-width="12"/>
+<line x1="1013" y1="290" x2="1013" y2="610" stroke="#3183a2" stroke-width="8"/>
+<text x="1035" y="415" font-size="21">Окно O3</text><text x="1035" y="443" font-size="21">1 600 B01</text>
+<text x="55" y="623" font-size="21" fill="#39765b">Вход P6</text><text x="55" y="650" font-size="21" fill="#39765b">940 B01 →</text>
+<rect x="445" y="170" width="280" height="400" rx="10" fill="#dfd0c0" stroke="#70625a" stroke-width="3"/>
+<rect x="455" y="180" width="260" height="42" rx="5" fill="#cbb7a6"/>
+<text x="483" y="350" font-size="23">Кровать</text><text x="471" y="382" font-size="20">1 400 × 2 000*</text>
+<rect x="285" y="170" width="140" height="260" rx="8" fill="#e8d5b4" stroke="#9c7650" stroke-width="3"/>
+<text x="300" y="265" font-size="19">Кроватка</text><text x="295" y="296" font-size="18">700 × 1 300*</text>
+<line x1="590" y1="577" x2="590" y2="725" stroke="#786f65" stroke-width="2"/><text x="607" y="634" font-size="20">810*</text><text x="607" y="660" font-size="18">до стены</text>
+<text x="748" y="370" font-size="20">1 440* до стены окна</text><text x="748" y="399" font-size="17">без учёта радиатора</text>
+<text x="748" y="424" font-size="17">и мебели под окном</text>
+<line x1="245" y1="132" x2="1013" y2="132" stroke="#514940" stroke-width="2"/><line x1="245" y1="120" x2="245" y2="145" stroke="#514940" stroke-width="2"/><line x1="1013" y1="120" x2="1013" y2="145" stroke="#514940" stroke-width="2"/><text x="550" y="125" font-size="22">3 840 мм B01</text>
+<line x1="1090" y1="170" x2="1090" y2="732" stroke="#514940" stroke-width="2"/><text x="1110" y="565" font-size="22" transform="rotate(-90 1110 565)">2 810 мм B01</text>
+<text x="245" y="780" font-size="20">* Мебель и проходы — условная примерка, не размеры выбранных изделий.</text>
+<text x="245" y="815" font-size="20">Радиатор и полки под окном на плане не измерены и в расчёт не включены.</text>
+<text x="245" y="850" font-size="20">Зазор между кроватями на этом примере: 100 мм; доступ к кроватке проверить.</text>
+<text x="245" y="885" font-size="20">Контроль комнаты: 3 870 × 2 830/2 870 мм; требуется повторный замер.</text>
+</g></svg>

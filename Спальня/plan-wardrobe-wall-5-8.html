@@ -1,0 +1,71 @@
+<div id="bedroom-wall-plan" aria-label="План спальни 5 с показанным встроенным шкафом на стене 5/8">
+  <style>
+    #bedroom-wall-plan { color: var(--foreground); width: 100%; }
+    #bedroom-wall-plan svg { display: block; width: 100%; height: auto; overflow: visible; }
+    #bedroom-wall-plan .title { fill: var(--foreground); font: 500 21px system-ui, sans-serif; }
+    #bedroom-wall-plan .label { fill: var(--foreground); font: 500 17px system-ui, sans-serif; }
+    #bedroom-wall-plan .small { fill: var(--muted-foreground); font: 400 14px system-ui, sans-serif; }
+    #bedroom-wall-plan .dim { fill: var(--orange); font: 500 16px system-ui, sans-serif; }
+    #bedroom-wall-plan .room { fill: color-mix(in srgb, var(--blue) 8%, transparent); }
+    #bedroom-wall-plan .wardrobe-room { fill: color-mix(in srgb, var(--muted) 70%, transparent); }
+    #bedroom-wall-plan .wall { fill: var(--foreground); opacity: .58; }
+    #bedroom-wall-plan .wardrobe { fill: color-mix(in srgb, var(--viz-series-1) 28%, transparent); stroke: var(--viz-series-1); stroke-width: 3; }
+    #bedroom-wall-plan .window { stroke: var(--green); stroke-width: 5; }
+    #bedroom-wall-plan .radiator { stroke: var(--muted-foreground); stroke-width: 2; stroke-dasharray: 5 5; }
+    #bedroom-wall-plan .measure { stroke: var(--orange); stroke-width: 2; fill: none; }
+    #bedroom-wall-plan .measure-dash { stroke: var(--orange); stroke-width: 2; fill: none; stroke-dasharray: 7 7; }
+    #bedroom-wall-plan .leader { stroke: var(--foreground); stroke-width: 1.5; fill: none; opacity: .7; }
+    #bedroom-wall-plan .legend { fill: color-mix(in srgb, var(--viz-series-1) 30%, transparent); stroke: var(--viz-series-1); stroke-width: 2; }
+  </style>
+
+  <svg viewBox="0 0 1060 730" role="img" aria-labelledby="plan-title plan-desc">
+    <title id="plan-title">Спальня 5: встроенный шкаф на общей стене с гардеробной</title>
+    <desc id="plan-desc">План B01. Спальня 3840 на 2810 мм. Встроенный блок 1870 на 600 мм расположен внутри спальни вдоль стены 5/8, по другую сторону которой находится гардеробная номер 8. Проход P6 940 мм оставлен свободным.</desc>
+
+    <text x="92" y="42" class="title">Спальня 5 — корректное место встроенного шкафа</text>
+    <text x="92" y="68" class="small">Схема по B01: шкаф только на стене 5/8; проход P6 не занимает.</text>
+
+    <rect x="92" y="105" width="691.2" height="505.8" class="room" />
+    <rect x="783.2" y="274.2" width="23.4" height="336.6" class="wall" />
+    <rect x="92" y="86" width="691.2" height="19" class="wall" />
+    <rect x="73" y="105" width="19" height="505.8" class="wall" />
+    <rect x="92" y="610.8" width="691.2" height="19" class="wall" />
+
+    <path d="M 783.2 105 L 820 105 M 783.2 274.2 L 820 274.2 M 810 105 L 810 274.2" class="measure-dash" />
+    <text x="832" y="177" class="dim" transform="rotate(-90 832 177)">P6 — проход 940</text>
+    <text x="842" y="205" class="small">свободно</text>
+
+    <line x1="92" y1="213" x2="92" y2="501" class="window" />
+    <line x1="113" y1="228" x2="113" y2="486" class="radiator" />
+    <text x="140" y="326" class="small" transform="rotate(-90 140 326)">O3 — окно 1600 · R-05 под ним</text>
+
+    <rect x="806.6" y="274.2" width="313.2" height="313.2" class="wardrobe-room" />
+    <text x="963.2" y="408" class="label" text-anchor="middle">Гардеробная №8</text>
+    <text x="963.2" y="433" class="small" text-anchor="middle">1740 × 1740</text>
+    <path d="M 806.6 600 L 806.6 633 L 783.2 633" class="leader" />
+    <text x="825" y="657" class="small">за этой стеной — гардеробная</text>
+
+    <rect x="675.2" y="274.2" width="108" height="336.6" class="wardrobe" />
+    <text x="729.2" y="450" class="label" text-anchor="middle" transform="rotate(-90 729.2 450)">ВСТРОЕННЫЙ ШКАФ</text>
+    <text x="705" y="450" class="small" text-anchor="middle" transform="rotate(-90 705 450)">1870 × 600</text>
+    <path d="M 675.2 620 L 675.2 645 M 783.2 620 L 783.2 645 M 675.2 639 L 783.2 639" class="measure" />
+    <text x="729.2" y="670" class="dim" text-anchor="middle">600</text>
+    <path d="M 642 274.2 L 660 274.2 M 642 610.8 L 660 610.8 M 650 274.2 L 650 610.8" class="measure" />
+    <text x="631" y="445" class="dim" text-anchor="middle" transform="rotate(-90 631 445)">1870</text>
+    <text x="512" y="374" class="label" text-anchor="middle">Спальня №5</text>
+    <text x="512" y="400" class="small" text-anchor="middle">3840 × 2810 · 10,79 м²</text>
+    <path d="M 585 425 L 675 425" class="leader" />
+    <text x="430" y="448" class="small" text-anchor="middle">шкаф стоит в пределах комнаты,</text>
+    <text x="430" y="469" class="small" text-anchor="middle">у подтверждённой стены 5/8</text>
+
+    <path d="M 92 672 L 92 701 M 783.2 672 L 783.2 701 M 92 694 L 783.2 694" class="measure" />
+    <text x="437.6" y="721" class="dim" text-anchor="middle">3840 мм</text>
+    <path d="M 41 105 L 64 105 M 41 610.8 L 64 610.8 M 50 105 L 50 610.8" class="measure" />
+    <text x="30" y="358" class="dim" text-anchor="middle" transform="rotate(-90 30 358)">2810 мм</text>
+
+    <rect x="838" y="103" width="27" height="18" class="legend" />
+    <text x="875" y="118" class="small">встроенный шкаф в спальне</text>
+    <line x1="838" y1="142" x2="865" y2="142" class="measure-dash" />
+    <text x="875" y="147" class="small">границы свободного P6</text>
+  </svg>
+</div>

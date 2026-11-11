@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1180" viewBox="0 0 2000 1180">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M8,0 L0,4 L8,8" fill="none" stroke="#2d7187" stroke-width="1.4"/>
+    </marker>
+    <pattern id="pleat" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M0 2 H10 M0 7 H10" stroke="#baa47d" stroke-width="1.2"/>
+    </pattern>
+    <pattern id="rad" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#bd7347" stroke-width="3"/>
+    </pattern>
+    <style>
+      text { font-family: Arial, sans-serif; fill: #26342e; }
+      .title { font-size: 30px; font-weight: 700; }
+      .sub { font-size: 16px; fill: #52635a; }
+      .head { font-size: 20px; font-weight: 700; }
+      .label { font-size: 13px; font-weight: 700; }
+      .small { font-size: 12px; fill: #53645b; }
+      .note { font-size: 12px; fill: #83542f; }
+      .wall { fill: #f7f3eb; stroke: #283831; stroke-width: 4; }
+      .window { fill: #eaf3f6; stroke: #4f96bb; stroke-width: 4; }
+      .unknown { fill: none; stroke: #bd7347; stroke-width: 2; stroke-dasharray: 7 5; }
+      .wardrobe { fill: #ddc79f; stroke: #8b6b3f; stroke-width: 2; }
+      .bed { fill: #c9dac6; stroke: #5c805d; stroke-width: 2; }
+      .storage { fill: #e6eee7; stroke: #738f79; stroke-width: 2; }
+      .desk { fill: #d9e7eb; stroke: #588092; stroke-width: 2; }
+      .future { fill: #e9f1f4; fill-opacity: .45; stroke: #4f8399; stroke-width: 2; stroke-dasharray: 8 6; }
+      .accent { fill: #d7e0d1; opacity: .85; }
+      .dim { stroke: #2d7187; stroke-width: 1.4; fill: none; marker-start: url(#arr); marker-end: url(#arr); }
+      .ext { stroke: #2d7187; stroke-width: 1.1; }
+      .dimtext { font-size: 12px; font-weight: 700; fill: #2d7187; }
+    </style>
+  </defs>
+
+  <rect width="2000" height="1180" fill="#f7f6f1"/>
+  <text x="55" y="52" class="title">Детская — развёртки стен, решение D без напольных штор</text>
+  <text x="55" y="82" class="sub">B01 и контрольные обмеры показаны отдельно · мебель — концепция · неизвестные высоты не назначены</text>
+
+  <!-- 1 WINDOW WALL -->
+  <g transform="translate(55 130)">
+    <text x="0" y="0" class="head">1. Оконная стена — 2810 B01</text>
+    <text x="0" y="23" class="small">Подтверждено по горизонтали: 610 + O2 1600 + 600. Высоты окна, подоконника и R-02 — н/д.</text>
+    <g transform="translate(245 75)">
+      <!-- scale .13; wall 2810 x 2716 -->
+      <rect x="0" y="0" width="365.3" height="353.1" class="wall"/>
+      <rect x="79.3" y="69" width="208" height="190" class="window"/>
+      <line x1="162" y1="69" x2="162" y2="259" stroke="#4f96bb" stroke-width="2"/>
+      <rect x="84" y="75" width="72" height="85" fill="url(#pleat)"/>
+      <rect x="168" y="75" width="113" height="85" fill="url(#pleat)"/>
+      <text x="120" y="118" text-anchor="middle" class="label">плиссе</text>
+      <text x="224" y="118" text-anchor="middle" class="label">плиссе</text>
+      <rect x="120" y="292" width="125" height="43" fill="url(#rad)" opacity=".65" class="unknown"/>
+      <text x="182.5" y="311" text-anchor="middle" class="label">R-02</text>
+      <text x="182.5" y="327" text-anchor="middle" class="small">габарит/ось н/д</text>
+      <line x1="0" y1="-24" x2="365.3" y2="-24" class="dim"/>
+      <text x="182.65" y="-32" text-anchor="middle" class="dimtext">2810 B01 — контроль ширины нужен</text>
+      <line x1="0" y1="-2" x2="79.3" y2="-2" class="dim"/>
+      <line x1="79.3" y1="-2" x2="287.3" y2="-2" class="dim"/>
+      <line x1="287.3" y1="-2" x2="365.3" y2="-2" class="dim"/>
+      <text x="39.7" y="15" text-anchor="middle" class="dimtext">610</text>
+      <text x="183.3" y="15" text-anchor="middle" class="dimtext">1600</text>
+      <text x="326.3" y="15" text-anchor="middle" class="dimtext">600</text>
+      <line x1="385" y1="69" x2="385" y2="259" class="unknown"/>
+      <text x="398" y="165" class="note" transform="rotate(90 398 165)">H окна/подоконника н/д</text>
+    </g>
+    <text x="0" y="465" class="note">Без карниза, тюля и боковых полотен. Замерить каждую створку, штапик и выступ ручек.</text>
+  </g>
+
+  <!-- 2 ENTRY WALL -->
+  <g transform="translate(1025 130)">
+    <text x="0" y="0" class="head">2. Входная стена — 910 проход + 1900 простенок</text>
+    <text x="0" y="23" class="small">Проход находится в углу. Его высота и чистовая геометрия пока не подтверждены.</text>
+    <g transform="translate(245 75)">
+      <rect x="0" y="0" width="365.3" height="353.1" class="wall"/>
+      <!-- passage 910 at corner, unknown height -->
+      <rect x="0" y="84" width="118.3" height="269.1" fill="#f7f6f1" stroke="#bd7347" stroke-width="2" stroke-dasharray="7 5"/>
+      <text x="59" y="220" text-anchor="middle" class="label">проход 910</text>
+      <text x="59" y="238" text-anchor="middle" class="small">H н/д</text>
+      <!-- 600 clear wall then 1300 wardrobe -->
+      <rect x="196.3" y="25" width="169" height="328.1" rx="3" class="wardrobe"/>
+      <line x1="280.8" y1="25" x2="280.8" y2="353.1" stroke="#8b6b3f"/>
+      <text x="280.8" y="175" text-anchor="middle" class="label">закрытый шкаф</text>
+      <text x="280.8" y="194" text-anchor="middle" class="small">W 1300 · D 600</text>
+      <text x="280.8" y="212" text-anchor="middle" class="small">H после чистового замера</text>
+      <text x="157.3" y="320" text-anchor="middle" class="label">600</text>
+      <text x="157.3" y="338" text-anchor="middle" class="small">буфер у входа</text>
+      <line x1="0" y1="-24" x2="365.3" y2="-24" class="dim"/>
+      <text x="182.65" y="-32" text-anchor="middle" class="dimtext">2810 B01 — проверить</text>
+      <line x1="0" y1="-2" x2="118.3" y2="-2" class="dim"/>
+      <line x1="118.3" y1="-2" x2="365.3" y2="-2" class="dim"/>
+      <text x="59.2" y="15" text-anchor="middle" class="dimtext">910</text>
+      <text x="241.8" y="15" text-anchor="middle" class="dimtext">1900</text>
+    </g>
+    <text x="0" y="465" class="note">Буфер 600 мм рядом с проходом оставляем свободным: шкаф не образует тесный входной карман.</text>
+  </g>
+
+  <!-- 3 BED WALL -->
+  <g transform="translate(55 640)">
+    <text x="0" y="0" class="head">3. Стена кровати — контроль 3825/3837</text>
+    <text x="0" y="23" class="small">Раскладка ниже считается от минимальной длины 3825 мм. Высоты мебели — после выбора модели.</text>
+    <g transform="translate(160 75)">
+      <!-- scale .13; wall uses conservative 3825 -->
+      <rect x="0" y="0" width="497.25" height="353.1" class="wall"/>
+      <!-- painted accent only: x700..2900, h1200 proposal -->
+      <rect x="91" y="197" width="286" height="156" class="accent"/>
+      <text x="234" y="215" text-anchor="middle" class="small">краска, без мягких панелей во всю стену</text>
+      <!-- bed x800..2800 -->
+      <rect x="104" y="275" width="260" height="78" rx="5" class="bed"/>
+      <rect x="104" y="220" width="42" height="133" rx="7" class="bed"/>
+      <text x="234" y="309" text-anchor="middle" class="label">кровать 900×2000</text>
+      <text x="52" y="324" text-anchor="middle" class="dimtext">800</text>
+      <text x="430.6" y="324" text-anchor="middle" class="dimtext">≥1025</text>
+      <!-- optional reading light, no fixed coordinates -->
+      <circle cx="155" cy="180" r="9" fill="#e8c977" stroke="#8b6b3f"/>
+      <path d="M155 189 V215" stroke="#8b6b3f" stroke-width="2"/>
+      <text x="170" y="184" class="small">бра: привязка после выбора кровати</text>
+      <line x1="0" y1="-24" x2="497.25" y2="-24" class="dim"/>
+      <text x="248.6" y="-32" text-anchor="middle" class="dimtext">3825 минимум / 3837 вторая стена</text>
+      <line x1="0" y1="-2" x2="104" y2="-2" class="dim"/>
+      <line x1="104" y1="-2" x2="364" y2="-2" class="dim"/>
+      <line x1="364" y1="-2" x2="497.25" y2="-2" class="dim"/>
+      <text x="52" y="15" text-anchor="middle" class="dimtext">800</text>
+      <text x="234" y="15" text-anchor="middle" class="dimtext">2000</text>
+      <text x="430.6" y="15" text-anchor="middle" class="dimtext">1025</text>
+    </g>
+    <text x="0" y="465" class="note">Над кроватью не проектируем тяжёлые шкафы. Только краска, лёгкая полка вне зоны головы и локальный свет.</text>
+  </g>
+
+  <!-- 4 STORAGE/DESK WALL -->
+  <g transform="translate(1025 640)">
+    <text x="0" y="0" class="head">4. Противоположная стена — съёмные модули</text>
+    <text x="0" y="23" class="small">Сейчас хранение и откидной стол; позже они снимаются и освобождают место второй кровати.</text>
+    <g transform="translate(160 75)">
+      <rect x="0" y="0" width="497.25" height="353.1" class="wall"/>
+      <!-- future bed x1000..3000 behind modules -->
+      <rect x="130" y="220" width="260" height="133.1" rx="6" class="future"/>
+      <text x="225" y="243" text-anchor="middle" class="label">будущая кровать 900×2000</text>
+      <text x="225" y="260" text-anchor="middle" class="small">после снятия модулей</text>
+      <!-- low storage x1000..2400 -->
+      <rect x="130" y="275" width="182" height="78" rx="4" class="storage"/>
+      <line x1="190.7" y1="275" x2="190.7" y2="353" stroke="#738f79"/>
+      <line x1="251.3" y1="275" x2="251.3" y2="353" stroke="#738f79"/>
+      <text x="221" y="315" text-anchor="middle" class="label">хранение 1400</text>
+      <!-- folded desk x2500..3500 -->
+      <rect x="325" y="205" width="130" height="70" rx="4" class="desk"/>
+      <line x1="325" y1="275" x2="455" y2="315" class="future"/>
+      <text x="390" y="232" text-anchor="middle" class="label">откидной стол 1000</text>
+      <text x="390" y="251" text-anchor="middle" class="small">500 открыт / 120 закрыт</text>
+      <rect x="338" y="322" width="104" height="14" rx="2" fill="#eee9df" stroke="#588092"/>
+      <text x="390" y="348" text-anchor="middle" class="small">розетки/данные: резерв, оси н/д</text>
+      <line x1="0" y1="-24" x2="497.25" y2="-24" class="dim"/>
+      <text x="248.6" y="-32" text-anchor="middle" class="dimtext">3825 минимум / 3837 вторая стена</text>
+      <line x1="130" y1="-2" x2="312" y2="-2" class="dim"/>
+      <line x1="325" y1="-2" x2="455" y2="-2" class="dim"/>
+      <text x="221" y="15" text-anchor="middle" class="dimtext">1400</text>
+      <text x="390" y="15" text-anchor="middle" class="dimtext">1000</text>
+    </g>
+    <text x="0" y="465" class="note">Все модули отдельно стоящие/навесные, без капитальной ниши: переход к двум детям остаётся обратимым.</text>
+  </g>
+
+  <g transform="translate(55 1110)">
+    <line x1="0" y1="0" x2="1890" y2="0" stroke="#c7cfca"/>
+    <text x="0" y="34" class="label">Зафиксировано:</text>
+    <text x="108" y="34" class="small">O2 1600; отступы 610/600; проход 910; стены 3825/3837; потолок 2712–2716; R-02 под окном.</text>
+    <text x="0" y="58" class="label">До заказа измерить:</text>
+    <text x="140" y="58" class="small">ширину 2810, высоту окна/подоконника, створки и ручки, R-02, чистовые стены, высоту прохода.</text>
+    <text x="1890" y="58" text-anchor="end" class="small">Концептуальные развёртки, не монтажные чертежи.</text>
+  </g>
+</svg>

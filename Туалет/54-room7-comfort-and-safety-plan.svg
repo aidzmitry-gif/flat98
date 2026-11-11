@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1080" viewBox="0 0 1440 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Комната 7 — план комфорта и безопасности</title>
+  <desc id="desc">Масштабный план санузла 2090 на 1740 миллиметров. Основная ванна 1600 на 700, условно показана ванна 1700 на 700 после чистового обмера. Сохранены WC, пятно ВМ-07, тумба и проход 670 миллиметров; доступ к люку ВМ-07 ещё не подтверждён.</desc>
+  <style>
+    .bg{fill:#171817}.panel{fill:#232522;stroke:#8d918a;stroke-width:2}.wall{fill:none;stroke:#f0eee7;stroke-width:7}.door{fill:none;stroke:#7bbcf0;stroke-width:4;stroke-dasharray:9 6}
+    .fixture{fill:#3c3028;stroke:#d6b18a;stroke-width:2.5}.vanity{fill:#51402f;stroke:#e0a95c;stroke-width:3}.service{fill:#352e53;stroke:#a48afb;stroke-width:2.5}
+    .option{fill:#473229;fill-opacity:.45;stroke:#f3a458;stroke-width:2.5;stroke-dasharray:9 6}.screen{stroke:#aee9eb;stroke-width:5}.bronze-line{stroke:#d5b07f;stroke-width:6;stroke-linecap:round}.led{stroke:#f5c878;stroke-width:5;stroke-linecap:round}.sensor{fill:#41ce85;stroke:#c5f4dc;stroke-width:1.5}
+    .dim{fill:none;stroke:#a8aaa4;stroke-width:1.4;stroke-dasharray:5 4}.arrow{fill:none;stroke:#41ce85;stroke-width:2.2}.heading{fill:#f3f0e8;font:700 26px Arial,sans-serif}.sub{fill:#a8aaa4;font:16px Arial,sans-serif}.small{fill:#a8aaa4;font:14px Arial,sans-serif}.tiny{fill:#a8aaa4;font:12px Arial,sans-serif}.tiny-warn{fill:#f3a458;font:700 12px Arial,sans-serif}.label{fill:#f3f0e8;font:700 16px Arial,sans-serif}.bronze{fill:#d5b07f;font:700 16px Arial,sans-serif}.green{fill:#41ce85;font:700 16px Arial,sans-serif}.warn{fill:#f3a458;font:700 15px Arial,sans-serif}.cyan{fill:#aee9eb;font:700 15px Arial,sans-serif}
+  </style>
+  <rect class="bg" width="1440" height="1080"/>
+  <text class="heading" x="60" y="55">Комната 7 · комфорт и безопасность</text>
+  <text class="sub" x="60" y="84">B01 2090 × 1740 мм · масштаб 1:2,86 · все размеры в миллиметрах</text>
+
+  <!-- Scale 0.35 px/mm. Interior origin X=80, Y=190. -->
+  <rect class="panel" x="80" y="190" width="731.5" height="609"/>
+  <path class="wall" d="M80 190 H346 M629.5 190 H811.5 V799 H80 V190"/>
+  <path class="door" d="M346 190 H629.5"/>
+  <text class="small" x="488" y="220" text-anchor="middle">D4 · наружу</text>
+  <text class="small" x="213" y="151" text-anchor="middle">760</text><text class="small" x="488" y="151" text-anchor="middle">810</text><text class="small" x="720.5" y="151" text-anchor="middle">520</text>
+
+  <!-- 1700 mm option under the recommended 1600 mm bath: Y=40..1740 -->
+  <rect class="option" x="80" y="204" width="245" height="595" rx="11"/>
+  <text class="warn" x="340" y="276">1700 × 700 · условно</text>
+  <text class="small" x="340" y="294">после чистового обмера</text>
+  <!-- Recommended bath: X=0..700, Y=140..1740 -->
+  <rect class="fixture" x="80" y="239" width="245" height="560" rx="11"/>
+  <text class="label" x="202.5" y="494" text-anchor="middle">ванна · рекомендовано</text>
+  <text class="bronze" x="202.5" y="518" text-anchor="middle">1600 × 700</text>
+  <text class="small" x="202.5" y="781" text-anchor="middle">Y=140…1740 · запас у D4: 140</text>
+
+  <!-- two D4 shelves share the same plan projection; exact elevation is file 43 -->
+  <rect x="108" y="190" width="210" height="43.75" rx="4" fill="none" stroke="#d5b07f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text class="bronze" x="213" y="176" text-anchor="middle">2 полки D4 · 600 × 125</text>
+
+  <!-- Screen at X=700, far part of bath -->
+  <line class="screen" x1="325" y1="563" x2="325" y2="755"/>
+  <text class="cyan" x="335" y="584">экран</text><text class="small" x="335" y="602">X=700</text>
+  <text class="small" x="335" y="620">дальняя часть</text>
+
+  <!-- far wall fittings -->
+  <rect x="113" y="772" width="72" height="15" rx="4" fill="#5d4935" stroke="#d5b07f" stroke-width="2"/>
+  <text class="bronze" x="110" y="714">термостат</text><text class="small" x="110" y="732">ограничитель</text>
+  <line class="bronze-line" x1="88" y1="300" x2="88" y2="458"/>
+  <circle cx="88" cy="300" r="5" fill="#d5b07f"/><circle cx="88" cy="458" r="5" fill="#d5b07f"/>
+  <text class="small" x="100" y="370">поручень 450–463</text>
+  <text class="small" x="100" y="388">только с закладной</text>
+
+  <!-- fixed WC / service / vanity -->
+  <rect class="fixture" x="559.5" y="484" width="175" height="189" rx="38"/>
+  <text class="label" x="647" y="585" text-anchor="middle">WC</text><text class="small" x="647" y="607" text-anchor="middle">X≈1370…1870</text>
+  <rect class="service" x="563" y="673" width="248.5" height="126"/>
+  <text class="label" x="687" y="737" text-anchor="middle">ВМ-07</text><text class="small" x="687" y="758" text-anchor="middle">710 × 360 · люк проверить</text>
+  <rect class="vanity" x="325" y="676.5" width="238" height="122.5" rx="4"/>
+  <text class="label" x="444" y="728" text-anchor="middle">тумба + раковина</text><text class="bronze" x="444" y="751" text-anchor="middle">заказ 670–674 × 345–347</text>
+  <line class="led" x1="337" y1="792" x2="551" y2="792"/><text class="small" x="444" y="820" text-anchor="middle">LED 2700K под тумбой</text>
+
+  <!-- practical WC kit on the real right wall X=2090, before the VM-07 zone -->
+  <circle cx="803" cy="548" r="7" fill="#d5b07f"/><path d="M803 548 h-25" class="bronze-line"/>
+  <path d="M803 579 q-18 -16 -28 0 v22" fill="none" stroke="#d5b07f" stroke-width="4"/>
+  <rect x="797" y="620" width="12" height="30" rx="5" fill="#d5b07f"/>
+
+  <!-- Sensors -->
+  <circle class="sensor" cx="348" cy="778" r="8"/><text class="green" x="360" y="774">датчик протечки</text><text class="small" x="360" y="792">под тумбой</text>
+  <circle class="sensor" cx="309" cy="747" r="8"/><text class="green" x="296" y="758" text-anchor="end">датчик у ванны</text>
+
+  <!-- right D4 segment: towel warmer and hooks -->
+  <rect x="651" y="197" width="140" height="27" rx="5" fill="#5d4935" stroke="#d5b07f" stroke-width="2"/>
+  <path d="M671 202 v17 M691 202 v17 M711 202 v17 M731 202 v17 M751 202 v17 M771 202 v17" stroke="#d5b07f" stroke-width="2"/>
+  <text class="bronze" x="721" y="244" text-anchor="middle">полотенцесушитель</text>
+  <text class="small" x="721" y="263" text-anchor="middle">800 × 400 × 76</text>
+  <text class="tiny" x="721" y="280" text-anchor="middle">(В×Ш×Г) · 200 W</text>
+  <text class="tiny-warn" x="721" y="297" text-anchor="middle">таймер снаружи D4 · max 4 ч</text>
+  <path d="M476 195 v18 m-8 -7 q8 12 16 0 M501 195 v18 m-8 -7 q8 12 16 0" fill="none" stroke="#d5b07f" stroke-width="3"/>
+  <text class="small" x="489" y="239" text-anchor="middle">2 складных крючка D4</text>
+
+  <!-- Clearance -->
+  <line class="arrow" x1="325" y1="462" x2="559.5" y2="462"/><path d="M325 462 l10 -6 v12 z M559.5 462 l-10 -6 v12 z" fill="#41ce85"/>
+  <text class="green" x="442" y="448" text-anchor="middle">670 мм — проход у WC</text>
+
+  <!-- dimensions -->
+  <line class="dim" x1="80" y1="826" x2="811.5" y2="826"/><text class="small" x="445.75" y="850" text-anchor="middle">2090</text>
+  <line class="dim" x1="53" y1="190" x2="53" y2="799"/><text class="small" x="36" y="495" text-anchor="middle" transform="rotate(-90 36 495)">1740</text>
+
+  <!-- Side decision panel -->
+  <rect class="panel" x="865" y="130" width="515" height="840" rx="15"/>
+  <text class="heading" x="900" y="183">Комфорт и безопасность</text>
+  <text class="bronze" x="900" y="232">Фиксируем</text>
+  <text class="label" x="900" y="264">• ванна 1600 × 700; экран у X=700</text>
+  <text class="label" x="900" y="292">• термостат с ограничителем температуры</text>
+  <text class="label" x="900" y="320">• поручень 450–463 мм: только с закладной</text>
+  <text class="label" x="900" y="348">• LED 2700K под тумбой + два датчика воды</text>
+  <text class="label" x="900" y="376">• WC-комплект на правой стене, не на ВМ-07</text>
+  <text class="label" x="900" y="404">• сушитель 200 W + boost-таймер до 4 часов</text>
+  <text class="small" x="918" y="428">Таймер снаружи D4; после питания — выключен.</text>
+  <line x1="900" y1="459" x2="1345" y2="459" stroke="#4c504a"/>
+  <text class="warn" x="900" y="500">Условно после обмера</text>
+  <text class="label" x="900" y="532">• ванна 1700 × 700 — только по карте монтажа</text>
+  <text class="small" x="918" y="557">Сверить чистый проём и фактический габарит изделия.</text>
+  <text class="label" x="900" y="588">• вывод сушителя, IP-зона и защита линии</text>
+  <text class="small" x="918" y="613">Скрытое питание и локальный таймер согласует электрик.</text>
+  <text class="label" x="900" y="644">• вентилятор с гигростатом</text>
+  <text class="small" x="918" y="669">Проверить сечение канала, обратный клапан и шум.</text>
+  <text class="warn" x="900" y="692">• ВМ-07: пятно сохранено, доступ к люку не подтверждён</text>
+  <line x1="900" y1="704" x2="1345" y2="704" stroke="#4c504a"/>
+  <text class="warn" x="900" y="744">Не добавлять</text>
+  <text class="label" x="900" y="776">• стеллаж или корзину в проходе</text>
+  <text class="label" x="900" y="804">• ниши в стене 160 мм</text>
+  <text class="label" x="900" y="832">• мебель или сантехнику на ВМ-07</text>
+  <text class="label" x="900" y="860">• поручень без закладной в стене</text>
+  <text class="label" x="900" y="888">• LED под ванной или WC</text>
+  <text class="small" x="900" y="930">Финальное размещение — после чистового обмера и</text><text class="small" x="900" y="949">проверки инженером электрики, вентиляции и ревизии.</text>
+</svg>

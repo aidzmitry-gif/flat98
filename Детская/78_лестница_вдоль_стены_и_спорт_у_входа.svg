@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1380" height="786" viewBox="0 0 1380 786">
+  <defs>
+    <style>
+      text{font-family:'Segoe UI',Arial,sans-serif;fill:#253b32}
+      .title{font-size:32px;font-weight:700}.head{font-size:22px;font-weight:700}
+      .body{font-size:17px}.small{font-size:15px}.bold{font-weight:700}
+      .dim{stroke:#54788a;stroke-width:1.4;fill:none}
+    </style>
+    <pattern id="steps" width="12" height="12" patternUnits="userSpaceOnUse">
+      <path d="M0 0L12 12M-6 6L6 18M6 -6L18 6" stroke="#bfaa7e" stroke-width="1.4"/>
+    </pattern>
+  </defs>
+  <rect width="1380" height="786" fill="#f5f4ee"/>
+  <text x="33" y="49" class="title">Детская · лестница вдоль стены с кроватью</text>
+  <text x="34" y="78" class="body">Проверка места, если оставить лестницу со стороны окна · размеры в мм</text>
+
+  <rect x="30" y="105" width="920" height="646" rx="14" fill="#fffefa" stroke="#c9d5cd"/>
+  <text x="53" y="141" class="head">Вид сверху</text>
+
+  <!-- Origin (115,232), scale 0.16 px/mm. -->
+  <path d="M115 169H728.92 M115 163v13 M728.92 163v13" class="dim"/>
+  <rect x="324" y="157" width="196" height="23" fill="#fffefa"/>
+  <text x="422" y="175" text-anchor="middle" class="small bold">3837 · обмер S10</text>
+  <path d="M115 203H728.92 M115 196v14 M323 196v14 M392.92 196v14 M728.92 196v14" class="dim"/>
+  <text x="219" y="195" text-anchor="middle" class="small bold">1300</text>
+  <text x="358" y="195" text-anchor="middle" class="small bold" style="fill:#826838">437</text>
+  <text x="561" y="195" text-anchor="middle" class="small bold">2100</text>
+
+  <rect x="115" y="232" width="613.92" height="449.6" fill="#f9f6eb"/>
+  <rect x="115" y="328" width="80" height="353.6" fill="#ece3cf" stroke="#af986d"/>
+  <text x="155" y="493" class="small bold" text-anchor="middle">СТОЛ</text>
+  <rect x="115" y="232" width="208" height="96" fill="#e7d8bd" stroke="#af986d"/>
+  <text x="219" y="276" text-anchor="middle" class="small bold">ШКАФ У ОКНА</text>
+  <text x="219" y="302" text-anchor="middle" class="small">1300 × 600 · проект</text>
+
+  <rect x="323" y="232" width="69.92" height="168" fill="#f3e9d2"/>
+  <rect x="323" y="232" width="69.92" height="168" fill="url(#steps)" stroke="#ad905c" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <text x="363" y="320" text-anchor="middle" class="small bold" transform="rotate(-90 363 320)">МЕСТО ЛЕСТНИЦЫ</text>
+  <rect x="392.92" y="232" width="336" height="168" fill="#dce5d2" stroke="#819575" stroke-width="1.6"/>
+  <text x="561" y="309" text-anchor="middle" class="head">Двухъярусная кровать</text>
+  <text x="561" y="339" text-anchor="middle" class="body">2100 × 1050 · проект</text>
+  <path d="M323 400H728.92" stroke="#8c9e84" stroke-dasharray="5 5"/>
+  <path d="M323 414v8h70v-8 M358 422v22" class="dim"/>
+  <text x="357" y="469" text-anchor="middle" class="small bold">437 мм вдоль стены</text>
+  <text x="357" y="492" text-anchor="middle" class="small">Контур для проверки</text>
+
+  <rect x="440.92" y="420" width="288" height="96" rx="5" fill="#e6ebdc" stroke="#799274" stroke-width="2"/>
+  <path d="M536.92 420v96 M632.92 420v96" stroke="#a4b19b" stroke-dasharray="4 4"/>
+  <text x="542" y="461" text-anchor="middle" class="small bold">СКЛАДНОЙ МАТ</text>
+  <text x="542" y="485" text-anchor="middle" class="small">600 × 1800</text>
+  <rect x="713" y="416.8" width="15.92" height="102.4" rx="2" fill="#637956"/>
+  <circle cx="681" cy="444" r="6" fill="#fffefa" stroke="#4e6446" stroke-width="2"/>
+  <circle cx="681" cy="492" r="6" fill="#fffefa" stroke="#4e6446" stroke-width="2"/>
+
+  <path d="M115 681.6V232H728.92V536 M115 681.6H728.92" stroke="#283e37" stroke-width="4" fill="none"/>
+  <path d="M115 388v161" stroke="#668ea0" stroke-width="5"/>
+  <text x="80" y="470" text-anchor="middle" class="small bold" transform="rotate(-90 80 470)">ОКНО</text>
+  <path d="M728.92 536V681.6" stroke="#668ea0" stroke-width="3" stroke-dasharray="7 6"/>
+  <path d="M741 232h29 M741 400h29 M741 536h29 M741 681.6h29 M758 232v449.6" class="dim"/>
+  <text x="783" y="312" class="small bold">1050 · кровать</text>
+  <text x="783" y="457" class="small bold">850 · участок</text>
+  <text x="783" y="481" class="small">для рамы 640</text>
+  <text x="783" y="602" class="small bold">910 · вход P2</text>
+  <text x="783" y="626" class="small">по БТИ</text>
+  <text x="53" y="719" class="small">Кольца показаны условно. Положение и ход дверного полотна требуют проверки.</text>
+
+  <rect x="974" y="105" width="376" height="646" rx="14" fill="#fffefa" stroke="#c9d5cd"/>
+  <text x="997" y="146" class="head">Вдоль стены с кроватью</text>
+  <text x="997" y="183" class="body">3837 − 1300 − 2100 = <tspan class="bold">437 мм</tspan></text>
+  <text x="997" y="219" class="small">Это место под лестницу между шкафом</text>
+  <text x="997" y="243" class="small">и кроватью, до учёта монтажных зазоров.</text>
+  <text x="997" y="278" class="small">Контур укладывается в глубину кровати</text>
+  <text x="997" y="302" class="small">1050 мм. Размер ступеней и открывание</text>
+  <text x="997" y="326" class="small">фасадов шкафа ещё нужно проверить.</text>
+
+  <path d="M997 352h329" stroke="#d8e0d6"/>
+  <text x="997" y="389" class="head">Поперёк комнаты у входа</text>
+  <text x="997" y="426" class="body">2810 − 1050 − 910 = <tspan class="bold">850 мм</tspan></text>
+  <text x="997" y="462" class="small">Участок для компактной шведской стенки</text>
+  <text x="997" y="486" class="small">остаётся того же размера. Проверка зоны</text>
+  <text x="997" y="510" class="small">колец и крепления к стене ещё впереди.</text>
+
+  <rect x="989" y="554" width="346" height="161" rx="10" fill="#f5f0e3"/>
+  <text x="1006" y="585" class="small bold">Откуда взяты размеры</text>
+  <text x="1006" y="613" class="small">3837 · обмер длинной стены S10.</text>
+  <text x="1006" y="638" class="small">2810 и 910 · план БТИ B01.</text>
+  <text x="1006" y="663" class="small">Кровать и шкаф · эскизные габариты.</text>
+</svg>

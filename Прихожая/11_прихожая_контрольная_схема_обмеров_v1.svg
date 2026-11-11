@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1080" viewBox="0 0 1600 1080">
+  <title>Прихожая — контрольная схема обмеров и ограничений, версия 1</title>
+  <desc>Схема построена по B01 и фото F08. Она не является рабочим чертежом мебели.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4d535a"/>
+    </marker>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#c77a17" stroke-width="3"/>
+    </pattern>
+    <style>
+      .title { font: 700 32px 'Segoe UI', Arial, sans-serif; fill: #20262d; }
+      .subtitle { font: 400 18px 'Segoe UI', Arial, sans-serif; fill: #56616c; }
+      .head { font: 700 20px 'Segoe UI', Arial, sans-serif; fill: #20262d; }
+      .label { font: 600 18px 'Segoe UI', Arial, sans-serif; fill: #20262d; }
+      .note { font: 400 16px 'Segoe UI', Arial, sans-serif; fill: #3f4953; }
+      .small { font: 400 14px 'Segoe UI', Arial, sans-serif; fill: #56616c; }
+      .dim { font: 600 16px 'Segoe UI', Arial, sans-serif; fill: #343a41; }
+      .warn { font: 600 15px 'Segoe UI', Arial, sans-serif; fill: #9a5a00; }
+      .source { font: 600 14px 'Segoe UI', Arial, sans-serif; fill: #176c45; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="1080" fill="#f7f6f3"/>
+  <rect x="42" y="36" width="1516" height="1008" rx="18" fill="#ffffff" stroke="#d7d4ce" stroke-width="2"/>
+
+  <text x="84" y="92" class="title">Прихожая 3 — контрольная схема до мебели</text>
+  <text x="84" y="124" class="subtitle">B01 + фото F08. Размеры в мм; цветом отмечены только подтверждённые источником факты.</text>
+  <line x1="84" y1="150" x2="1516" y2="150" stroke="#e0ddd7" stroke-width="2"/>
+
+  <!-- Plan. Scale: 0.4 px / mm. Interior B01: 2090 x 1675. -->
+  <text x="100" y="194" class="head">Плановая геометрия</text>
+  <rect x="220" y="220" width="836" height="670" fill="#ecebe8"/>
+  <text x="638" y="570" text-anchor="middle" class="head">3 · ПРИХОЖАЯ</text>
+  <text x="638" y="600" text-anchor="middle" class="note">S = 3,50 м² · H отмеченных точек = 2750</text>
+  <text x="638" y="628" text-anchor="middle" class="source">B01: 2090 × 1675</text>
+
+  <!-- fixed walls / openings -->
+  <line x1="220" y1="220" x2="464" y2="220" stroke="#20262d" stroke-width="18"/>
+  <line x1="868" y1="220" x2="1056" y2="220" stroke="#20262d" stroke-width="18"/>
+  <line x1="220" y1="220" x2="220" y2="890" stroke="#20262d" stroke-width="18"/>
+  <line x1="1056" y1="220" x2="1056" y2="446" stroke="#20262d" stroke-width="18"/>
+  <line x1="1056" y1="810" x2="1056" y2="890" stroke="#20262d" stroke-width="18"/>
+  <line x1="220" y1="890" x2="1056" y2="890" stroke="#176c45" stroke-width="8" stroke-dasharray="18 12"/>
+
+  <!-- D1 opening -->
+  <line x1="464" y1="220" x2="868" y2="220" stroke="#aa6800" stroke-width="5" stroke-dasharray="10 8"/>
+  <text x="666" y="198" text-anchor="middle" class="warn">D1: сегмент 1010 [B01]</text>
+  <text x="666" y="258" text-anchor="middle" class="small">U01: 1140 × 2150 — не объединять с цепочкой B01</text>
+  <text x="666" y="280" text-anchor="middle" class="warn">петли / сторона полотна — контроль на объекте</text>
+
+  <!-- D2 opening. B01 position drawn from source, only lower return has explicit local label. -->
+  <line x1="1056" y1="446" x2="1056" y2="810" stroke="#aa6800" stroke-width="5" stroke-dasharray="10 8"/>
+  <text x="1092" y="621" class="warn">D2</text>
+  <text x="1092" y="646" class="dim">сегмент 910 [B01]</text>
+  <text x="1092" y="671" class="small">U01: 915 × 2150</text>
+  <text x="1092" y="696" class="warn">сторона / петли н/д</text>
+  <line x1="1078" y1="810" x2="1078" y2="890" stroke="#4d535a" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="1100" y="855" class="dim">200 [B01]</text>
+  <text x="1092" y="878" class="small">нижний возврат до D2</text>
+
+  <!-- dimensions -->
+  <line x1="220" y1="174" x2="1056" y2="174" stroke="#4d535a" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <line x1="220" y1="184" x2="220" y2="212" stroke="#4d535a" stroke-width="2"/>
+  <line x1="1056" y1="184" x2="1056" y2="212" stroke="#4d535a" stroke-width="2"/>
+  <text x="638" y="166" text-anchor="middle" class="dim">2090 [B01] = 610 + D1 сегмент 1010 + 470</text>
+  <line x1="170" y1="220" x2="170" y2="890" stroke="#4d535a" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <line x1="182" y1="220" x2="212" y2="220" stroke="#4d535a" stroke-width="2"/>
+  <line x1="182" y1="890" x2="212" y2="890" stroke="#4d535a" stroke-width="2"/>
+  <text x="148" y="556" text-anchor="middle" class="dim" transform="rotate(-90 148 556)">1675 [B01]</text>
+
+  <!-- confirmed photo location, deliberately without dimensions -->
+  <rect x="228" y="315" width="72" height="300" fill="url(#hatch)" opacity="0.60"/>
+  <line x1="220" y1="315" x2="220" y2="615" stroke="#c77a17" stroke-width="5" stroke-dasharray="12 8"/>
+  <circle cx="244" cy="735" r="10" fill="#c77a17"/>
+  <circle cx="244" cy="768" r="10" fill="#c77a17"/>
+  <circle cx="244" cy="801" r="10" fill="#c77a17"/>
+  <line x1="300" y1="430" x2="470" y2="350" stroke="#c77a17" stroke-width="2"/>
+  <rect x="470" y="302" width="360" height="122" rx="10" fill="#fff7e9" stroke="#e0a23e" stroke-width="2"/>
+  <text x="490" y="332" class="warn">ЭЩ-03 — левая стена у входа [F08]</text>
+  <text x="490" y="358" class="note">положение подтверждено визуально;</text>
+  <text x="490" y="381" class="note">ось, W×H, нижняя отметка — не измерены</text>
+  <text x="490" y="405" class="warn">не проектировать мебель в эту зону до обмера</text>
+  <line x1="254" y1="768" x2="470" y2="470" stroke="#c77a17" stroke-width="2"/>
+  <text x="480" y="470" class="warn">E-03: три розетки у пола [F08]; ось н/д</text>
+
+  <text x="638" y="930" text-anchor="middle" class="source">Нижняя граница открыта в коридор 4 — не считать её стеной под шкаф.</text>
+
+  <!-- Control blocks -->
+  <rect x="1160" y="190" width="330" height="300" rx="14" fill="#edf6f1" stroke="#9cc4ae" stroke-width="2"/>
+  <text x="1190" y="228" class="head">Можно использовать сейчас</text>
+  <text x="1190" y="262" class="note">• B01: 2090 × 1675</text>
+  <text x="1190" y="290" class="note">• D1: 610 + 1010 + 470</text>
+  <text x="1190" y="318" class="note">• D2: 910 [B01], возврат 200</text>
+  <text x="1190" y="346" class="note">• ЭЩ-03 и E-03 на левой стене</text>
+  <text x="1190" y="374" class="note">• H отмеченных точек: 2750</text>
+  <text x="1190" y="416" class="source">Источники: B01, U01, F08</text>
+  <text x="1190" y="447" class="small">Это контрольная схема, не рабочий проект.</text>
+
+  <rect x="1160" y="515" width="330" height="365" rx="14" fill="#fff7e9" stroke="#e0a23e" stroke-width="2"/>
+  <text x="1190" y="553" class="head">Один обязательный обмер</text>
+  <text x="1190" y="587" class="note">1. ЭЩ-03: W × H, нижняя отметка;</text>
+  <text x="1210" y="611" class="note">   две привязки от внутренних углов.</text>
+  <text x="1190" y="645" class="note">2. E-03: оси и высоты трёх розеток.</text>
+  <text x="1190" y="679" class="note">3. D1: чистый проём, петли, траектория.</text>
+  <text x="1190" y="713" class="note">4. D2: сторона полотна и траектория.</text>
+  <line x1="1190" y1="742" x2="1460" y2="742" stroke="#e0a23e" stroke-width="1"/>
+  <text x="1190" y="771" class="warn">После этого можно фиксировать</text>
+  <text x="1190" y="794" class="warn">глубину шкафа / банкетки и фасады.</text>
+  <text x="1190" y="836" class="small">Фото с рулеткой F26/F28 не дают</text>
+  <text x="1190" y="858" class="small">полного W×H и двух координат щита.</text>
+
+  <rect x="84" y="968" width="1402" height="46" rx="8" fill="#f2f1ee"/>
+  <text x="106" y="997" class="small">Статус v1: плановая расстановка мебели сознательно не закреплена — она зависит от точного сервисного габарита ЭЩ-03 и направления полотен D1/D2.</text>
+</svg>

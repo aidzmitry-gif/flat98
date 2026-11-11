@@ -1,0 +1,136 @@
+<div id="bedroom-dimensioned-layout" aria-label="Размерная схема спальни 5">
+  <style>
+    #bedroom-dimensioned-layout { color: var(--foreground); width: 100%; }
+    #bedroom-dimensioned-layout svg { display: block; width: 100%; height: auto; overflow: visible; }
+    #bedroom-dimensioned-layout .title { fill: var(--foreground); font: 500 22px system-ui, sans-serif; }
+    #bedroom-dimensioned-layout .label { fill: var(--foreground); font: 500 17px system-ui, sans-serif; }
+    #bedroom-dimensioned-layout .small { fill: var(--muted-foreground); font: 400 15px system-ui, sans-serif; }
+    #bedroom-dimensioned-layout .dim { fill: var(--orange); font: 500 16px system-ui, sans-serif; }
+    #bedroom-dimensioned-layout .furn-dim { fill: var(--purple); font: 500 16px system-ui, sans-serif; }
+    #bedroom-dimensioned-layout .room { fill: color-mix(in srgb, var(--blue) 7%, transparent); }
+    #bedroom-dimensioned-layout .wardrobe-room { fill: color-mix(in srgb, var(--muted) 72%, transparent); }
+    #bedroom-dimensioned-layout .wall { fill: var(--foreground); opacity: .58; }
+    #bedroom-dimensioned-layout .bed { fill: color-mix(in srgb, var(--purple) 24%, transparent); stroke: var(--purple); stroke-width: 3; }
+    #bedroom-dimensioned-layout .bedside { fill: color-mix(in srgb, var(--purple) 14%, transparent); stroke: var(--purple); stroke-width: 2; }
+    #bedroom-dimensioned-layout .built-in { fill: color-mix(in srgb, var(--viz-series-1) 30%, transparent); stroke: var(--viz-series-1); stroke-width: 3; }
+    #bedroom-dimensioned-layout .vanity { fill: color-mix(in srgb, var(--yellow) 31%, transparent); stroke: var(--yellow); stroke-width: 2; }
+    #bedroom-dimensioned-layout .mirror { fill: color-mix(in srgb, var(--blue) 32%, transparent); stroke: var(--blue); stroke-width: 2; }
+    #bedroom-dimensioned-layout .pouf { fill: color-mix(in srgb, var(--yellow) 37%, transparent); stroke: var(--yellow); stroke-width: 2; }
+    #bedroom-dimensioned-layout .clear { fill: color-mix(in srgb, var(--green) 13%, transparent); stroke: var(--green); stroke-width: 2; stroke-dasharray: 7 6; }
+    #bedroom-dimensioned-layout .window { stroke: var(--green); stroke-width: 5; }
+    #bedroom-dimensioned-layout .radiator { stroke: var(--muted-foreground); stroke-width: 2; stroke-dasharray: 5 5; }
+    #bedroom-dimensioned-layout .measure { stroke: var(--orange); stroke-width: 2; fill: none; }
+    #bedroom-dimensioned-layout .furn-measure { stroke: var(--purple); stroke-width: 2; fill: none; }
+    #bedroom-dimensioned-layout .measure-dash { stroke: var(--orange); stroke-width: 2; fill: none; stroke-dasharray: 7 7; }
+    #bedroom-dimensioned-layout .tick { stroke: currentColor; stroke-width: 2; }
+  </style>
+
+  <svg viewBox="0 0 1140 765" role="img" aria-labelledby="dimension-plan-title dimension-plan-desc">
+    <title id="dimension-plan-title">Размерный план спальни 5</title>
+    <desc id="dimension-plan-desc">На плане указаны размеры помещения B01, проход P6, окно O3, встроенный шкаф и ниша туалетного столика, кровать, прикроватные тумбы, пуф и минимальный свободный проход.</desc>
+
+    <text x="85" y="38" class="title">Спальня 5 — размерная схема</text>
+    <text x="85" y="63" class="small">Оранжевый — подтверждённые размеры B01; фиолетовый — габариты мебели в этой концепции.</text>
+
+    <!-- B01 room outline: 3840 × 2810, scale 0.18 px/mm. -->
+    <rect x="85" y="128" width="691.2" height="505.8" class="room" />
+    <rect x="776.2" y="297.2" width="23.4" height="336.6" class="wall" />
+    <rect x="85" y="109" width="691.2" height="19" class="wall" />
+    <rect x="66" y="128" width="19" height="505.8" class="wall" />
+    <rect x="85" y="633.8" width="691.2" height="19" class="wall" />
+
+    <!-- Existing openings and window chain. -->
+    <path d="M 776.2 128 L 818 128 M 776.2 297.2 L 818 297.2 M 807 128 L 807 297.2" class="measure-dash" />
+    <text x="833" y="209" class="dim" transform="rotate(-90 833 209)">P6 · 940</text>
+    <line x1="85" y1="236" x2="85" y2="524" class="window" />
+    <line x1="108" y1="251" x2="108" y2="509" class="radiator" />
+    <path d="M 32 128 L 54 128 M 32 236 L 54 236 M 32 524 L 54 524 M 32 633.8 L 54 633.8 M 42 128 L 42 633.8" class="measure" />
+    <text x="24" y="182" class="dim" text-anchor="middle" transform="rotate(-90 24 182)">600</text>
+    <text x="24" y="380" class="dim" text-anchor="middle" transform="rotate(-90 24 380)">1600 O3</text>
+    <text x="24" y="579" class="dim" text-anchor="middle" transform="rotate(-90 24 579)">610</text>
+    <text x="132" y="368" class="small" transform="rotate(-90 132 368)">R-05: габарит н/д, зона свободна</text>
+
+    <!-- Neighbouring dressing room and shared wall. -->
+    <rect x="799.6" y="297.2" width="313.2" height="313.2" class="wardrobe-room" />
+    <text x="956.2" y="413" class="label" text-anchor="middle">Гардеробная №8</text>
+    <text x="956.2" y="437" class="small" text-anchor="middle">1740 × 1740</text>
+    <text x="956.2" y="460" class="small" text-anchor="middle">по другую сторону стены 5/8</text>
+
+    <!-- Built-in block 1870 × 600; P6 uses the other 940 mm. -->
+    <rect x="668.2" y="297.2" width="108" height="336.6" class="built-in" />
+    <rect x="668.2" y="297.2" width="108" height="156.6" class="vanity" />
+    <rect x="707.8" y="297.2" width="68.4" height="156.6" class="vanity" />
+    <rect x="763" y="314" width="13.2" height="122" class="mirror" />
+    <circle cx="687.4" cy="375.5" r="40.5" class="pouf" />
+    <rect x="668.2" y="453.8" width="108" height="180" class="built-in" />
+    <text x="722" y="370" class="small" text-anchor="middle">столик</text>
+    <text x="722" y="390" class="small" text-anchor="middle">870 × 380</text>
+    <text x="687.4" y="380" class="small" text-anchor="middle">Ø450</text>
+    <text x="722" y="548" class="label" text-anchor="middle" transform="rotate(-90 722 548)">ШКАФ 1000 × 600</text>
+    <text x="769.5" y="378" class="small" text-anchor="middle" transform="rotate(-90 769.5 378)">зеркало 600 × 900</text>
+    <path d="M 652 297.2 L 652 453.8 M 652 453.8 L 652 633.8" class="furn-measure" />
+    <text x="636" y="376" class="furn-dim" text-anchor="middle" transform="rotate(-90 636 376)">870</text>
+    <text x="636" y="544" class="furn-dim" text-anchor="middle" transform="rotate(-90 636 544)">1000</text>
+    <path d="M 668.2 649 L 668.2 674 M 776.2 649 L 776.2 674 M 668.2 668 L 776.2 668" class="furn-measure" />
+    <text x="722.2" y="691" class="furn-dim" text-anchor="middle">600</text>
+    <path d="M 617 297.2 L 617 633.8" class="furn-measure" />
+    <text x="600" y="465" class="furn-dim" text-anchor="middle" transform="rotate(-90 600 465)">1870</text>
+
+    <!-- Bed 1400 × 2000, 300 mm from window wall and 810 mm from north wall. -->
+    <rect x="139" y="273.8" width="252" height="360" class="bed" />
+    <rect x="85" y="561.8" width="54" height="72" class="bedside" />
+    <rect x="391" y="561.8" width="54" height="72" class="bedside" />
+    <text x="265" y="433" class="label" text-anchor="middle">КРОВАТЬ</text>
+    <text x="265" y="456" class="furn-dim" text-anchor="middle">1400 × 2000</text>
+    <text x="112" y="600" class="small" text-anchor="middle">тумба</text>
+    <text x="112" y="617" class="furn-dim" text-anchor="middle">300 × 400</text>
+    <text x="418" y="600" class="small" text-anchor="middle">тумба</text>
+    <text x="418" y="617" class="furn-dim" text-anchor="middle">300 × 400</text>
+    <path d="M 85 654 L 85 681 M 139 654 L 139 681 M 85 675 L 139 675" class="furn-measure" />
+    <text x="112" y="698" class="furn-dim" text-anchor="middle">300</text>
+    <path d="M 121 128 L 121 273.8" class="furn-measure" />
+    <text x="105" y="204" class="furn-dim" text-anchor="middle" transform="rotate(-90 105 204)">810</text>
+
+    <!-- Movement zone: exact tightest projected passage beside the right bedside table. -->
+    <rect x="445" y="453.8" width="223.2" height="180" class="clear" />
+    <path d="M 445 440 L 668.2 440" class="furn-measure" />
+    <text x="556.6" y="429" class="furn-dim" text-anchor="middle">проход 1240 мин.</text>
+    <text x="556.6" y="486" class="small" text-anchor="middle">свободная зона</text>
+    <text x="556.6" y="507" class="small" text-anchor="middle">между тумбой и шкафом</text>
+
+    <!-- Overall B01 dimensions. -->
+    <path d="M 85 710 L 85 738 M 776.2 710 L 776.2 738 M 85 731 L 776.2 731" class="measure" />
+    <text x="430.6" y="755" class="dim" text-anchor="middle">3840 мм</text>
+    <path d="M 55 128 L 55 633.8" class="measure" />
+    <text x="67" y="381" class="dim" text-anchor="middle" transform="rotate(-90 67 381)">2810 мм</text>
+  </svg>
+
+  <svg viewBox="0 0 1140 315" role="img" aria-labelledby="elevation-title elevation-desc">
+    <title id="elevation-title">Развертка встроенного мебельного блока</title>
+    <desc id="elevation-desc">Фасад мебельного блока: ниша туалетного столика шириной 870 мм и закрытый шкаф шириной 1000 мм. Высота до потолка 2750 мм по B01; столешница на высоте 750 мм, зеркало 600 на 900 мм.</desc>
+
+    <text x="85" y="36" class="title">Развертка мебельного блока на стене 5/8</text>
+    <text x="85" y="61" class="small">Высоты — проектные; перед заказом мебели перепроверить по чистовому потолку и полу.</text>
+
+    <!-- Front elevation, scale 0.42 px/mm. -->
+    <rect x="150" y="92" width="785.4" height="170" class="built-in" />
+    <rect x="150" y="92" width="365.4" height="170" class="vanity" />
+    <rect x="515.4" y="92" width="420" height="170" class="built-in" />
+    <rect x="210" y="171.6" width="245" height="56.7" class="vanity" />
+    <rect x="277" y="106" width="252" height="113.4" class="mirror" />
+    <text x="332.7" y="148" class="label" text-anchor="middle">НИША</text>
+    <text x="332.7" y="169" class="furn-dim" text-anchor="middle">870 × 600</text>
+    <text x="725.4" y="150" class="label" text-anchor="middle">ЗАКРЫТЫЙ ШКАФ</text>
+    <text x="725.4" y="172" class="furn-dim" text-anchor="middle">1000 × 600</text>
+    <text x="332.7" y="247" class="small" text-anchor="middle">столешница 870 × 380 · H 750</text>
+    <text x="403" y="126" class="small" text-anchor="middle">зеркало 600 × 900</text>
+
+    <path d="M 150 276 L 150 298 M 935.4 276 L 935.4 298 M 150 291 L 935.4 291" class="furn-measure" />
+    <text x="542.7" y="312" class="furn-dim" text-anchor="middle">1870</text>
+    <path d="M 150 270 L 515.4 270 M 515.4 270 L 935.4 270" class="furn-measure" />
+    <text x="332.7" y="285" class="furn-dim" text-anchor="middle">870</text>
+    <text x="725.4" y="285" class="furn-dim" text-anchor="middle">1000</text>
+    <path d="M 112 92 L 112 262" class="measure" />
+    <text x="96" y="178" class="dim" text-anchor="middle" transform="rotate(-90 96 178)">H 2750 B01</text>
+  </svg>
+</div>

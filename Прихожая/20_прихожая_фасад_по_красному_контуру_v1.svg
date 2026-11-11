@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1250" viewBox="0 0 1600 1250">
+  <defs>
+    <style>
+      .bg { fill:#f6f4f0; }
+      .panel { fill:#ffffff; stroke:#d8d2ca; stroke-width:2; }
+      .wall { stroke:#252b31; stroke-width:18; stroke-linecap:square; fill:none; }
+      .opening { stroke:#b87700; stroke-width:6; stroke-dasharray:16 12; fill:none; }
+      .furniture { fill:#fbe9e8; stroke:#e53935; stroke-width:4; }
+      .open-bay { fill:#efe2cf; stroke:#9a7550; stroke-width:2; }
+      .closed { fill:#e8e3dd; stroke:#6f675e; stroke-width:2; }
+      .panel-zone { fill:#d9f1e7; fill-opacity:.72; stroke:#008f6b; stroke-width:4; stroke-dasharray:10 7; }
+      .mirror-zone { fill:#fff2a6; fill-opacity:.72; stroke:#f0c400; stroke-width:4; stroke-dasharray:10 7; }
+      .dim { stroke:#48515a; stroke-width:2; fill:none; marker-start:url(#arrow); marker-end:url(#arrow); }
+      .ext { stroke:#8d959c; stroke-width:1.5; }
+      .thin { stroke:#8b8176; stroke-width:1.5; fill:none; }
+      .dash { stroke:#8b8176; stroke-width:1.5; stroke-dasharray:7 6; fill:none; }
+      .t { font-family:'Segoe UI',Arial,sans-serif; fill:#252b31; font-size:24px; }
+      .small { font-family:'Segoe UI',Arial,sans-serif; fill:#4f5962; font-size:18px; }
+      .tiny { font-family:'Segoe UI',Arial,sans-serif; fill:#68717a; font-size:15px; }
+      .title { font-family:'Segoe UI',Arial,sans-serif; fill:#20262c; font-size:36px; font-weight:700; }
+      .sub { font-family:'Segoe UI',Arial,sans-serif; fill:#5b646d; font-size:20px; }
+      .label { font-family:'Segoe UI',Arial,sans-serif; fill:#252b31; font-size:18px; font-weight:600; }
+      .warn { fill:#fff6df; stroke:#d79a24; stroke-width:2; }
+      .ok { fill:#e8f4ee; stroke:#4f8c70; stroke-width:2; }
+    </style>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse">
+      <path d="M0,0 L8,4 L0,8 z" fill="#48515a"/>
+    </marker>
+    <pattern id="slats" width="12" height="12" patternUnits="userSpaceOnUse">
+      <rect width="12" height="12" fill="#caa77d"/>
+      <rect x="0" width="4" height="12" fill="#9c734c"/>
+    </pattern>
+  </defs>
+
+  <rect class="bg" width="1600" height="1250"/>
+  <text class="title" x="70" y="62">Прихожая · левая стена · предпроектная посадка</text>
+  <text class="sub" x="70" y="98">B01 2090 × 1675 · H отмеченных точек 2750 · мебельный конверт по красной разметке ≈1170 × 420</text>
+
+  <rect class="panel" x="55" y="135" width="790" height="900" rx="18"/>
+  <text class="t" x="85" y="178">План</text>
+  <text class="small" x="85" y="207">Сверху — D1, снизу — открытый переход в коридор 4</text>
+
+  <!-- Room plan at 0.32 px/mm: 2090 x 1675 -->
+  <g transform="translate(105,310)">
+    <path class="wall" d="M0,0 H195.2 M518.4,0 H668.8 M0,0 V536 M668.8,0 V181 M668.8,472 V536"/>
+    <path class="opening" d="M195.2,0 H518.4"/>
+    <path class="opening" d="M668.8,181 V472"/>
+    <text class="label" x="318" y="-18">D1 · цепь B01 610 + 1010 + 470</text>
+    <text class="label" x="688" y="338" transform="rotate(90 688 338)">D2 · сегмент B01 910</text>
+
+    <!-- Furniture: 420 deep x 1170 long -->
+    <rect class="furniture" x="9" y="8" width="134.4" height="374.4" rx="3"/>
+    <rect class="open-bay" x="13" y="16" width="126.4" height="160"/>
+    <rect class="closed" x="13" y="176" width="126.4" height="198.4"/>
+    <rect class="panel-zone" x="18" y="205" width="34" height="94"/>
+    <rect class="mirror-zone" x="18" y="308" width="8" height="56"/>
+
+    <text class="tiny" x="151" y="82">открытая зона 500</text>
+    <text class="tiny" x="151" y="278">закрытый шкаф 620</text>
+    <text class="tiny" x="151" y="327" fill="#008f6b">ЭЩ-03: положение ориентировочно</text>
+    <text class="tiny" x="151" y="353" fill="#b79500">зеркало: зона из разметки</text>
+
+    <!-- Overall plan dimensions -->
+    <line class="ext" x1="0" y1="-3" x2="0" y2="-72"/>
+    <line class="ext" x1="668.8" y1="-3" x2="668.8" y2="-72"/>
+    <line class="dim" x1="0" y1="-58" x2="668.8" y2="-58"/>
+    <text class="label" x="299" y="-69">2090 B01</text>
+
+    <line class="ext" x1="-3" y1="0" x2="-64" y2="0"/>
+    <line class="ext" x1="-3" y1="536" x2="-64" y2="536"/>
+    <line class="dim" x1="-49" y1="0" x2="-49" y2="536"/>
+    <text class="label" x="-67" y="298" transform="rotate(-90 -67 298)">1675 B01</text>
+
+    <line class="ext" x1="143.4" y1="8" x2="190" y2="8"/>
+    <line class="ext" x1="143.4" y1="382.4" x2="190" y2="382.4"/>
+    <line class="dim" x1="178" y1="8" x2="178" y2="382.4"/>
+    <text class="label" x="196" y="205">≈1170</text>
+
+    <line class="ext" x1="9" y1="402" x2="9" y2="438"/>
+    <line class="ext" x1="143.4" y1="402" x2="143.4" y2="438"/>
+    <line class="dim" x1="9" y1="426" x2="143.4" y2="426"/>
+    <text class="label" x="52" y="455">≈420</text>
+
+    <text class="small" x="245" y="468">Расчётный проход B01: 2090 − 420 = 1670</text>
+    <text class="small" x="245" y="500">Запас у D1 по цепи B01: 610 − 420 = 190</text>
+    <text class="tiny" x="245" y="527">Это не проверка траектории полотна: петли D1/D2 не обмерены.</text>
+  </g>
+
+  <rect class="panel" x="875" y="135" width="670" height="900" rx="18"/>
+  <text class="t" x="905" y="178">Фасад, вид из кухни</text>
+  <text class="small" x="905" y="207">Слева шкаф, затем открытая часть, справа D1</text>
+
+  <!-- Elevation at 0.245 px/mm: 1170 x 2700 -->
+  <g transform="translate(1030,250)">
+    <rect x="0" y="0" width="286.65" height="661.5" fill="#f0ece7" stroke="#4f5962" stroke-width="2"/>
+    <!-- left filler 25, wardrobe 620, open bay 500, right filler 25 -->
+    <rect class="closed" x="6.125" y="0" width="151.9" height="661.5"/>
+    <line class="thin" x1="82.075" y1="0" x2="82.075" y2="661.5"/>
+    <rect class="open-bay" x="158.025" y="0" width="122.5" height="661.5"/>
+    <rect x="158.025" y="0" width="122.5" height="68.6" fill="#e6ddd0" stroke="#8b8176" stroke-width="1.5"/>
+    <rect x="168" y="178" width="102.5" height="368" fill="url(#slats)" opacity=".9"/>
+    <rect x="158.025" y="546" width="122.5" height="28" fill="#b88b5e" stroke="#7a5739" stroke-width="1.5"/>
+    <rect x="158.025" y="574" width="122.5" height="87.5" fill="#c8a982" stroke="#7a5739" stroke-width="1.5"/>
+    <rect x="163" y="531" width="112.5" height="18" rx="7" fill="#d5cec5"/>
+    <circle cx="201" cy="317" r="5" fill="#3b3027"/>
+    <circle cx="227" cy="317" r="5" fill="#3b3027"/>
+    <circle cx="253" cy="317" r="5" fill="#3b3027"/>
+
+    <!-- Provisional mirror leaf and hidden panel behind the second door -->
+    <rect x="8" y="8" width="72" height="645" rx="2" fill="#dce8eb" stroke="#f0c400" stroke-width="4" stroke-dasharray="10 7"/>
+    <rect class="panel-zone" x="94" y="125" width="50" height="130" rx="3"/>
+    <text class="tiny" x="14" y="552" fill="#9b7e00">зеркальная створка</text>
+    <text class="tiny" x="92" y="278" fill="#007d5e">щит за фасадом</text>
+
+    <!-- door handles -->
+    <rect x="70" y="280" width="4" height="120" rx="2" fill="#22272b"/>
+    <rect x="89" y="280" width="4" height="120" rx="2" fill="#22272b"/>
+
+    <!-- width dimensions -->
+    <line class="ext" x1="0" y1="661.5" x2="0" y2="724"/>
+    <line class="ext" x1="286.65" y1="661.5" x2="286.65" y2="724"/>
+    <line class="dim" x1="0" y1="710" x2="286.65" y2="710"/>
+    <text class="label" x="116" y="742">≈1170</text>
+
+    <line class="ext" x1="6.125" y1="661.5" x2="6.125" y2="692"/>
+    <line class="ext" x1="158.025" y1="661.5" x2="158.025" y2="692"/>
+    <line class="dim" x1="6.125" y1="679" x2="158.025" y2="679"/>
+    <text class="tiny" x="55" y="674">620</text>
+    <line class="ext" x1="280.525" y1="661.5" x2="280.525" y2="692"/>
+    <line class="dim" x1="158.025" y1="679" x2="280.525" y2="679"/>
+    <text class="tiny" x="207" y="674">500</text>
+
+    <!-- height dimension -->
+    <line class="ext" x1="0" y1="0" x2="-70" y2="0"/>
+    <line class="ext" x1="0" y1="661.5" x2="-70" y2="661.5"/>
+    <line class="dim" x1="-54" y1="0" x2="-54" y2="661.5"/>
+    <text class="label" x="-76" y="358" transform="rotate(-90 -76 358)">2700 предпроектно</text>
+  </g>
+
+  <g transform="translate(70,1055)">
+    <rect class="ok" x="0" y="0" width="680" height="82" rx="10"/>
+    <text class="label" x="18" y="28">Подтверждено</text>
+    <text class="small" x="18" y="56">B01 2090 × 1675 · H=2750 · ЭЩ-03 и E-03 на левой стене</text>
+    <rect class="warn" x="730" y="0" width="730" height="82" rx="10"/>
+    <text class="label" x="748" y="28">До обмера / предпроектно</text>
+    <text class="small" x="748" y="54">модуль ≈1170 × 420 × 2700 · секции 620 / 500</text>
+    <text class="tiny" x="748" y="76">W×H и привязки щита, розеток, зеркало, петли D1/D2</text>
+  </g>
+
+  <g transform="translate(70,1165)">
+    <rect x="0" y="0" width="22" height="22" class="furniture"/><text class="small" x="32" y="18">шкафовый конверт</text>
+    <rect x="260" y="0" width="22" height="22" class="panel-zone"/><text class="small" x="292" y="18">щит, размер и ось н/д</text>
+    <rect x="565" y="0" width="22" height="22" class="mirror-zone"/><text class="small" x="597" y="18">зеркало, размер н/д</text>
+    <text class="small" x="920" y="18">Робот и ниша для него исключены.</text>
+  </g>
+  <text class="tiny" x="70" y="1230">Статус: эскиз для согласования композиции. Не выдавать в изготовление без натурных привязок ЭЩ-03, E-03 и проёмов.</text>
+</svg>

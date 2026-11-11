@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="900" viewBox="0 0 1160 900" role="img" aria-labelledby="title desc">
+  <title id="title">Комната 7 — схема полотенец</title>
+  <desc id="desc">Масштабный план санузла 2090 на 1740 миллиметров. Основной электрический полотенцесушитель 500 на 1200 миллиметров расположен над длинной стеной ванны; полотенце для рук — на лицевом фасаде заказной тумбы 680 на 350 миллиметров, проложенной от ванны до ВМ-07; запас хранится в нижнем ящике.</desc>
+  <style>
+    .bg { fill:#171817; } .panel { fill:#232522; stroke:#8d918a; stroke-width:2; }
+    .wall { fill:none; stroke:#f0eee7; stroke-width:7; } .fixture { fill:#3c3028; stroke:#d6b18a; stroke-width:2; }
+    .door { fill:none; stroke:#7bbcf0; stroke-width:4; stroke-dasharray:9 6; } .muted { fill:#a8aaa4; font: 16px Arial, sans-serif; }
+    .small { fill:#a8aaa4; font: 13px Arial, sans-serif; } .heading { fill:#f3f0e8; font: 700 24px Arial, sans-serif; }
+    .subheading { fill:#d5b07f; font: 700 18px Arial, sans-serif; } .bronze { fill:#8a5b2d; stroke:#e0a95c; stroke-width:2; }
+    .line { stroke:#d5b07f; stroke-width:2; fill:none; } .dim { stroke:#a8aaa4; stroke-width:1.4; fill:none; stroke-dasharray:5 4; }
+    .ok { fill:#41ce85; font: 700 15px Arial, sans-serif; } .warn { fill:#f3a458; font: 14px Arial, sans-serif; }
+  </style>
+  <rect class="bg" width="1160" height="900"/>
+  <text class="heading" x="70" y="58">Комната 7 · полотенца и сушка</text>
+  <text class="muted" x="70" y="86">B01 2090 × 1740 мм · вид сверху · все размеры в миллиметрах</text>
+
+  <!-- exact-room scale: 0.35 px per mm -->
+  <rect class="panel" x="80" y="125" width="731.5" height="609"/>
+  <path class="wall" d="M80 125 H346 M629.5 125 H811.5 V734 H80 V125"/>
+  <path class="door" d="M346 125 H629.5"/>
+  <text class="small" x="487.7" y="115" text-anchor="middle">D4 · наружу · сегмент 810</text>
+
+  <!-- bath, WC, vanity and service hatch from the accepted plan -->
+  <rect class="fixture" x="80" y="279" width="245" height="455" rx="10"/>
+  <text class="muted" x="202" y="500" text-anchor="middle">ванна</text>
+  <text class="small" x="202" y="522" text-anchor="middle">1300 × 700</text>
+  <rect class="fixture" x="559.5" y="419" width="175" height="189" rx="38"/>
+  <text class="muted" x="647" y="512" text-anchor="middle">WC</text>
+  <rect class="fixture" x="325" y="611.5" width="238" height="122.5" rx="4"/>
+  <text class="muted" x="444" y="676" text-anchor="middle">тумба</text>
+  <text class="small" x="444" y="697" text-anchor="middle">680 × 350 · до ВМ‑07</text>
+  <rect x="563" y="608" width="248.5" height="126" fill="#352e53" stroke="#a48afb" stroke-width="2"/>
+  <text class="small" x="687" y="673" text-anchor="middle">ВМ-07</text>
+
+  <!-- existing shelves on the 760 mm segment at the door wall -->
+  <rect class="bronze" x="108" y="134" width="210" height="12" rx="2"/>
+  <rect class="bronze" x="108" y="153" width="210" height="12" rx="2"/>
+  <text class="small" x="213" y="184" text-anchor="middle">2 полки 600 × 125</text>
+
+  <!-- proposed main towel rail: 500 mm along wall, 1200 mm vertical -->
+  <rect class="bronze" x="87" y="405" width="27" height="175" rx="4"/>
+  <line class="line" x1="114" y1="492" x2="330" y2="492"/>
+  <text class="subheading" x="338" y="468">1. Основная сушка</text>
+  <text class="muted" x="338" y="493">электрическая «лесенка»</text>
+  <text class="muted" x="338" y="516">500 × 1200 × ≤80</text>
+  <text class="small" x="338" y="538">над длинной стеной ванны</text>
+  <text class="ok" x="338" y="562">2 банных + несколько малых</text>
+  <text class="small" x="338" y="583">по плану: Y=800…1300</text>
+  <text class="small" x="338" y="603">по высоте: +500…+1700</text>
+
+  <!-- hand towel bar on the door-facing vanity facade; bath-side panel is now occupied -->
+  <line class="bronze" x1="395" y1="620" x2="482.5" y2="620" stroke-width="8"/>
+  <line class="line" x1="482.5" y1="620" x2="930" y2="682"/>
+  <text class="subheading" x="942" y="655">2. Ручные полотенца</text>
+  <text class="muted" x="942" y="679">рейка 200–250 мм</text>
+  <text class="small" x="942" y="700">на лицевом фасаде тумбы</text>
+  <text class="small" x="942" y="719">к двери, +900…950</text>
+
+  <!-- towel reserves and D4 hooks -->
+  <circle class="bronze" cx="412.5" cy="711" r="8"/>
+  <line class="line" x1="420.5" y1="711" x2="930" y2="761"/>
+  <text class="subheading" x="942" y="753">3. Запас чистых</text>
+  <text class="muted" x="942" y="776">нижний ящик тумбы</text>
+  <text class="small" x="942" y="797">не открытая корзина</text>
+  <circle class="bronze" cx="468" cy="139" r="5"/>
+  <circle class="bronze" cx="510" cy="139" r="5"/>
+  <text class="small" x="487" y="205" text-anchor="middle">2 складных крючка на внутренней D4 — только для халатов/временно</text>
+
+  <!-- dimensions / caveats -->
+  <line class="dim" x1="80" y1="757" x2="811.5" y2="757"/>
+  <text class="small" x="446" y="781" text-anchor="middle">2090</text>
+  <line class="dim" x1="56" y1="125" x2="56" y2="734"/>
+  <text class="small" x="38" y="438" text-anchor="middle" transform="rotate(-90 38 438)">1740</text>
+  <text class="warn" x="80" y="842">Не ставить сушилку на стену 760 мм с полками, возле WC или в проходе 670 мм.</text>
+  <text class="small" x="80" y="868">Перед монтажом: электрик подтверждает зону, IP-защиту, кабель и точную высоту после ванной/плитки.</text>
+</svg>

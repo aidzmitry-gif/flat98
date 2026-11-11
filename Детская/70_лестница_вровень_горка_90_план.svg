@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="925" viewBox="0 0 1560 925">
+<defs>
+  <style>.title{font:700 30px 'Segoe UI',sans-serif;fill:#183e33}.h{font:700 20px 'Segoe UI',sans-serif;fill:#183e33}.t{font:16px 'Segoe UI',sans-serif;fill:#29483e}.s{font:14px 'Segoe UI',sans-serif;fill:#435d53}.b{font-weight:700}.card{fill:#fffefa;stroke:#cad9d1;stroke-width:1.5}.wall{stroke:#23443a;stroke-width:4;fill:none}.dim{stroke:#427b8e;stroke-width:1.5;marker-start:url(#arr);marker-end:url(#arr)}.guide{stroke:#9baea4;stroke-width:1;stroke-dasharray:5 5}.warn{fill:#fce8db;stroke:#bf8066;stroke-width:1.5}</style>
+  <marker id="arr" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse"><path d="M8 1L1 4L8 7" fill="none" stroke="#427b8e" stroke-width="1.2"/></marker>
+  <pattern id="conflict" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path d="M0 0V8" stroke="#bc664e" stroke-width="2.5"/></pattern>
+</defs>
+<rect width="1560" height="925" fill="#f6f5ef"/>
+<text x="35" y="47" class="title">Детская · лестница вровень, горка под 90°</text><text x="35" y="76" class="t">Проверка места по S10 и БТИ B01 · вид сверху · мм</text>
+<rect x="1275" y="23" width="250" height="48" rx="9" class="warn"/><text x="1400" y="53" class="t b" text-anchor="middle">ЭСКИЗ · ПРОВЕРКА МЕСТА</text>
+
+<rect x="30" y="100" width="950" height="793" rx="12" class="card"/>
+<text x="55" y="137" class="h">Горка выступает в сторону входа</text><text x="55" y="162" class="s">Лестница до передней линии кровати. Вылет горки взят для сравнения.</text>
+<!-- Origin (145,230), scale 0.18 px/mm, nominal width 2810 and length along the bed wall 3837. -->
+<line x1="145" y1="230" x2="835.66" y2="230" class="wall"/><line x1="145" y1="735.8" x2="835.66" y2="735.8" class="wall"/>
+<line x1="145" y1="230" x2="145" y2="735.8" class="wall"/><line x1="835.66" y1="393.8" x2="835.66" y2="735.8" class="wall"/>
+<text x="490" y="211" text-anchor="middle" class="s b">СТЕНА СО СПОРТОМ · 3825 ПО ОБМЕРУ</text>
+<rect x="681" y="230" width="154.66" height="163.8" fill="#f9eee5"/><line x1="681" y1="393.8" x2="914" y2="393.8" class="guide"/>
+<line x1="835.66" y1="230" x2="835.66" y2="393.8" stroke="#4e8594" stroke-width="3" stroke-dasharray="6 5"/>
+<text x="844" y="269" class="s b">ВХОД P2</text><text x="844" y="289" class="s">910 по БТИ</text>
+<text x="63" y="462" class="s b">ОКНО</text><line x1="145" y1="338" x2="145" y2="626" stroke="#4e8594" stroke-width="5"/>
+<rect x="145" y="230" width="90" height="397.8" fill="#eee8d5" stroke="#c1ac88"/><text x="190" y="438" text-anchor="middle" class="s b">СТОЛ</text>
+<rect x="145" y="627.8" width="234" height="108" fill="#ead6b5" stroke="#ae906a"/><text x="262" y="674" text-anchor="middle" class="s b">ШКАФ У ОКНА</text><text x="262" y="696" text-anchor="middle" class="s">1300 × 600, проект</text>
+<rect x="457.66" y="546.8" width="378" height="189" fill="#dcebdd" stroke="#76947b" stroke-width="2"/><text x="646" y="630" text-anchor="middle" class="t b">КРОВАТЬ</text><text x="646" y="657" text-anchor="middle" class="s">2100 × 1050, проект</text>
+<rect x="379" y="546.8" width="78.66" height="189" fill="#fff0cf" stroke="#bd965a" stroke-width="2" stroke-dasharray="5 5"/>
+<text x="410" y="641" text-anchor="middle" class="s b" transform="rotate(-90 410 641)">ЛЕСТНИЦА С ЯЩИКАМИ</text>
+<text x="435" y="641" text-anchor="middle" class="s" transform="rotate(-90 435 641)">место 437 × 1050</text>
+<rect x="747" y="306.68" width="88.66" height="240.12" fill="#eadcc0" stroke="#ab8a60" stroke-width="2" stroke-dasharray="5 5"/>
+<rect x="747" y="306.68" width="88.66" height="87.12" fill="url(#conflict)" stroke="#bc664e"/>
+<text x="792" y="458" text-anchor="middle" class="s b">ГОРКА</text><text x="792" y="480" text-anchor="middle" class="s">хранение</text><text x="792" y="501" text-anchor="middle" class="s">снизу</text>
+<path d="M740 481H661 M670 476L661 481L670 486" stroke="#427b8e" stroke-width="1.5" fill="none"/><text x="651" y="485" text-anchor="end" class="s">открывание внутрь</text><path d="M728 546.8V527.8H747" fill="none" stroke="#427b8e" stroke-width="1.5"/><text x="721" y="535" text-anchor="end" class="s b">90°</text><path d="M650 332H741" class="guide"/><text x="644" y="327" text-anchor="end" class="s b">Наложение на полосу входа</text><text x="644" y="349" text-anchor="end" class="s">≈ 484 по вылету</text>
+<line x1="835.66" y1="546.8" x2="951" y2="546.8" class="guide"/><line x1="835.66" y1="306.68" x2="951" y2="306.68" class="guide"/>
+<line x1="908" y1="393.8" x2="908" y2="546.8" class="dim"/><text x="899" y="470" text-anchor="middle" transform="rotate(-90 899 470)" class="s b">850</text>
+<line x1="949" y1="306.68" x2="949" y2="546.8" class="dim"/><text x="939" y="427" text-anchor="middle" transform="rotate(-90 939 427)" class="s b">1334 · пример</text>
+<line x1="145" y1="772" x2="379" y2="772" class="dim"/><text x="262" y="765" class="s" text-anchor="middle">1300</text>
+<line x1="379" y1="772" x2="457.66" y2="772" class="dim"/><text x="418" y="765" class="s" text-anchor="middle">437</text>
+<line x1="457.66" y1="772" x2="835.66" y2="772" class="dim"/><text x="646" y="765" class="s" text-anchor="middle">2100</text>
+<line x1="145" y1="817" x2="835.66" y2="817" class="dim"/><text x="490" y="807" class="t b" text-anchor="middle">3837 · СТЕНА С КРОВАТЬЮ ПО ОБМЕРУ</text>
+<text x="55" y="859" class="s">Ширина комнаты 2810 по БТИ. Размеры лестницы и ширина горки требуют подбора.</text>
+
+<rect x="1000" y="100" width="530" height="793" rx="12" class="card"/>
+<text x="1025" y="137" class="h">Что показала проверка</text>
+<text x="1025" y="181" class="t b">Ориентир у входа</text><text x="1025" y="209" class="t">2810 − 910 − 1050 = 850.</text><text x="1025" y="235" class="s">От края кровати до проекции проёма P2.</text><text x="1025" y="259" class="s">Чистовую геометрию входа уточнить обмером.</text>
+<rect x="1020" y="285" width="490" height="186" rx="9" class="warn"/>
+<text x="1037" y="317" class="t b">Горка с вылетом 1334 не проходит проверку</text><text x="1037" y="346" class="s">Пример Maxtrix: 52,5″ ≈ 1334 мм.</text><text x="1037" y="370" class="s">Она заходит в проекцию входа примерно на 484 мм.</text><text x="1037" y="394" class="s">До противоположной стены остаётся около 430 мм</text><text x="1037" y="418" class="s">без учёта места для съезда и предметов у стены.</text><text x="1037" y="442" class="s">Для сборки нужен расчёт конкретной модели.</text>
+<text x="1025" y="516" class="t b">Лестница слева</text><text x="1025" y="545" class="s">В зазоре между шкафом и кроватью есть 437 мм.</text><text x="1025" y="569" class="s">1050 мм по глубине до передней линии кровати.</text><text x="1025" y="593" class="s">Проверить ширину лестницы, ящики и дверцы.</text>
+<text x="1025" y="641" class="t b">Хранение под горкой</text><text x="1025" y="670" class="s">Фасады обращены к нижнему ярусу, внутрь.</text><text x="1025" y="694" class="s">Проверить выдвижение или открывание фасадов.</text>
+<line x1="1025" y1="729" x2="1500" y2="729" stroke="#d1ddd4"/>
+<text x="1025" y="759" class="s">Источник размеров: ведомость S10, план БТИ B01</text><text x="1025" y="783" class="s">и схема детской 58. Горка Maxtrix для сравнения.</text>
+</svg>

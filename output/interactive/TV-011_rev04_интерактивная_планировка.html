@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TV-011 — интерактивная планировка</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f5f2ec;
+      --panel: #fffdf9;
+      --ink: #292823;
+      --muted: #67635a;
+      --line: #a8a094;
+      --wall: #3d3a35;
+      --kitchen: #ddd3c2;
+      --work: #edb64e;
+      --danger: #c84c42;
+      --furniture: #dce8ed;
+      --selected: #4b7f93;
+      --ok: #4d7657;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Inter, Segoe UI, Arial, sans-serif;
+      line-height: 1.35;
+    }
+    main { max-width: 1500px; margin: 0 auto; padding: 18px; }
+    h1 { margin: 0; font-size: 22px; font-weight: 650; }
+    .lead { margin: 6px 0 16px; color: var(--muted); }
+    .layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(290px, 360px); gap: 16px; align-items: start; }
+    .panel { background: var(--panel); border: 1px solid color-mix(in srgb, var(--line) 60%, transparent); border-radius: 12px; padding: 14px; }
+    .plan-shell { overflow: auto; padding: 8px; }
+    #plan { display: block; min-width: 720px; width: 100%; height: auto; touch-action: none; user-select: none; }
+    .side { display: grid; gap: 12px; }
+    h2 { margin: 0 0 8px; font-size: 16px; font-weight: 650; }
+    p { margin: 0 0 10px; }
+    .hint { font-size: 13px; color: var(--muted); }
+    .selected { min-height: 78px; }
+    .selected strong { display: block; }
+    .coords { margin-top: 6px; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 13px; }
+    .controls { display: flex; flex-wrap: wrap; gap: 8px; }
+    button {
+      appearance: none;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: var(--panel);
+      color: var(--ink);
+      padding: 8px 10px;
+      font: inherit;
+      cursor: pointer;
+    }
+    button.primary { background: var(--selected); color: white; border-color: var(--selected); }
+    button:hover { filter: brightness(.97); }
+    .warnings { display: grid; gap: 7px; max-height: 280px; overflow: auto; }
+    .warning { padding: 8px 9px; border-left: 3px solid var(--danger); background: color-mix(in srgb, var(--danger) 8%, var(--panel)); font-size: 13px; }
+    .ok { padding: 8px 9px; border-left: 3px solid var(--ok); background: color-mix(in srgb, var(--ok) 8%, var(--panel)); font-size: 13px; }
+    .ref img { display: block; width: 100%; border-radius: 8px; margin-top: 8px; }
+    .legend { display: flex; gap: 12px; flex-wrap: wrap; font-size: 12px; color: var(--muted); }
+    .swatch { display: inline-block; width: 12px; height: 12px; margin-right: 4px; vertical-align: -1px; border: 1px solid var(--line); }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+    @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } .side { grid-template-columns: repeat(2, minmax(0,1fr)); } .ref { grid-column: 1 / -1; } }
+    @media (max-width: 560px) { main { padding: 10px; } .side { grid-template-columns: 1fr; } h1 { font-size: 20px; } }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #1b1b19; --panel: #24231f; --ink: #eeeae1; --muted: #c5c0b7; --line: #625e56; --wall: #d2cdc4; --kitchen: #756d61; --furniture: #315561; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>TV‑011 — интерактивная планировка B01</h1>
+    <p class="lead">Перетаскивайте мебель по плану. Шаг привязки — 50 мм; кухня и стены зафиксированы.</p>
+    <div class="layout">
+      <section class="panel plan-shell" aria-label="План помещения с перетаскиваемой мебелью">
+        <svg id="plan" viewBox="-260 -260 6230 4020" role="img" aria-label="Масштабный план B01 5710 на 3500 миллиметров. Мебель можно перетаскивать.">
+          <title>TV-011 — план B01 в миллиметрах</title>
+          <desc>Стены и кухня фиксированы. Стол, стулья, диван, рабочее место и ТВ-зона перемещаются мышью или пальцем.</desc>
+          <defs>
+            <pattern id="grid" width="500" height="500" patternUnits="userSpaceOnUse">
+              <path d="M 500 0 L 0 0 0 500" fill="none" stroke="currentColor" stroke-opacity=".12" stroke-width="12" />
+            </pattern>
+          </defs>
+          <rect x="0" y="0" width="5710" height="3500" fill="url(#grid)" />
+          <g id="static-layer"></g>
+          <g id="furniture-layer"></g>
+          <g id="dimension-layer" pointer-events="none"></g>
+        </svg>
+      </section>
+
+      <aside class="side" aria-label="Управление планировкой">
+        <section class="panel selected">
+          <h2>Выбранный элемент</h2>
+          <div id="selection" aria-live="polite">Нажмите на предмет мебели.</div>
+        </section>
+        <section class="panel">
+          <h2>Управление</h2>
+          <p class="hint">Тяните предмет. Стрелки клавиатуры — ±50 мм, Shift+стрелка — ±250 мм.</p>
+          <div class="controls">
+            <button id="reset" type="button">Вернуть исходное</button>
+            <button id="download" class="primary" type="button">Скачать координаты JSON</button>
+          </div>
+        </section>
+        <section class="panel">
+          <h2>Проверка при перемещении</h2>
+          <div id="warnings" class="warnings" aria-live="polite"></div>
+        </section>
+        <section class="panel">
+          <h2>Легенда</h2>
+          <div class="legend">
+            <span><i class="swatch" style="background:var(--kitchen)"></i>фиксированная кухня</span>
+            <span><i class="swatch" style="background:var(--furniture)"></i>перемещаемая мебель</span>
+            <span><i class="swatch" style="background:color-mix(in srgb,var(--work) 35%,transparent)"></i>контрольная зона</span>
+          </div>
+        </section>
+        <section class="panel ref">
+          <h2>Визуальный референс</h2>
+          <p class="hint">Фоторендер помогает оценить стиль, но координаты задаёт план слева.</p>
+          <img src="../visualizations/TV-011_rev03_визуализация_вид_от_ТВ_v3_индукция_ТВ_плюс200мм.png" alt="Визуализация кухни-гостиной TV-011" />
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <script>
+    (() => {
+      const svg = document.getElementById('plan');
+      const staticLayer = document.getElementById('static-layer');
+      const furnitureLayer = document.getElementById('furniture-layer');
+      const dimensionLayer = document.getElementById('dimension-layer');
+      const selectionEl = document.getElementById('selection');
+      const warningsEl = document.getElementById('warnings');
+      const NS = 'http://www.w3.org/2000/svg';
+      const ROOM = { w: 5710, h: 3500 };
+      const SNAP = 50;
+      const svgY = (y, h = 0) => ROOM.h - y - h;
+      const el = (name, attrs = {}, parent) => {
+        const node = document.createElementNS(NS, name);
+        Object.entries(attrs).forEach(([key, value]) => node.setAttribute(key, value));
+        if (parent) parent.appendChild(node);
+        return node;
+      };
+      const label = (parent, x, y, text, cls = 'label', anchor = 'middle') => {
+        const node = el('text', { x, y, 'text-anchor': anchor, class: cls }, parent);
+        text.split('\n').forEach((line, index) => {
+          const span = el('tspan', { x, dy: index ? 115 : 0 }, node);
+          span.textContent = line;
+        });
+        return node;
+      };
+
+      const style = el('style', {}, svg);
+      style.textContent = `
+        .wall { fill:none; stroke:var(--wall); stroke-width:70; stroke-linejoin:miter; }
+        .opening { fill:none; stroke:var(--ok); stroke-width:38; }
+        .kitchen { fill:var(--kitchen); stroke:var(--wall); stroke-width:18; }
+        .work-zone { fill:var(--work); fill-opacity:.14; stroke:var(--work); stroke-width:14; stroke-dasharray:55 36; }
+        .route-zone { fill:var(--danger); fill-opacity:.055; stroke:var(--danger); stroke-width:14; stroke-dasharray:52 34; }
+        .zone-label { fill:var(--muted); font: 74px Inter, Segoe UI, sans-serif; }
+        .kitchen-label { fill:var(--ink); font: 78px Inter, Segoe UI, sans-serif; font-weight:600; }
+        .furniture { cursor:grab; }
+        .furniture:active { cursor:grabbing; }
+        .furniture-shape { fill:var(--furniture); stroke:var(--wall); stroke-width:20; }
+        .furniture.selected .furniture-shape { stroke:var(--selected); stroke-width:44; }
+        .furniture-label { fill:var(--ink); font: 82px Inter, Segoe UI, sans-serif; font-weight:650; pointer-events:none; }
+        .furniture-sub { fill:var(--muted); font: 60px Inter, Segoe UI, sans-serif; pointer-events:none; }
+        .chair-seat { fill:#f8f3ea; stroke:var(--wall); stroke-width:18; }
+        .chair-line { stroke:var(--wall); stroke-width:18; }
+        .dimension { stroke:var(--line); stroke-width:16; }
+        .dimension-text { fill:var(--muted); font: 78px Inter, Segoe UI, sans-serif; }
+      `;
+
+      const kitchen = [
+        { x: 0, y: 2900, w: 600, h: 600, label: '1\nПодготовка' },
+        { x: 600, y: 2900, w: 600, h: 600, label: '2\nИндукция' },
+        { x: 1200, y: 2900, w: 600, h: 600, label: '3\nПММ 600' },
+        { x: 1800, y: 2900, w: 600, h: 600, label: '4\nПенал\nдуховка/СВЧ' },
+        { x: 0, y: 2250, w: 600, h: 600, label: '5\nМойка 600' },
+        { x: 0, y: 1900, w: 600, h: 350, label: '6\nВыкат 350' },
+        { x: 0, y: 1300, w: 600, h: 600, label: '7\nХолодильник 600' }
+      ];
+      const zones = [
+        { id: 'top-work', type: 'work', x: 0, y: 2200, w: 2400, h: 700, label: 'рабочая зона кухни 700' },
+        { id: 'left-work', type: 'work', x: 600, y: 1300, w: 700, h: 1600, label: 'полоса у левой кухни' },
+        { id: 'pmm-door', type: 'danger', x: 1200, y: 2300, w: 600, h: 600, label: 'дверца ПММ 600' },
+        { id: 'route', type: 'danger', x: 0, y: 350, w: 5710, h: 900, label: 'маршрут D2 → O1' }
+      ];
+      const INITIAL = [
+        { id: 'table', name: '8 Стол Ø850', kind: 'circle', x: 1200, y: 1300, w: 850, h: 850 },
+        { id: 'chair-a', name: '8A Стул', kind: 'chair', x: 1850, y: 2150, w: 400, h: 400 },
+        { id: 'chair-b', name: '8B Стул', kind: 'chair', x: 1000, y: 2150, w: 400, h: 400 },
+        { id: 'chair-c', name: '8C Стул', kind: 'chair', x: 1900, y: 950, w: 400, h: 400 },
+        { id: 'chair-d', name: '8D Стул', kind: 'chair', x: 950, y: 950, w: 400, h: 400 },
+        { id: 'sofa', name: '9 Диван 2000×1000', kind: 'sofa', x: 2450, y: 2500, w: 2000, h: 1000 },
+        { id: 'desk', name: '10 Рабочее место 1200×600', kind: 'desk', x: 4500, y: 2900, w: 1200, h: 600 },
+        { id: 'tv', name: '11 ТВ / медиа 1600×300', kind: 'tv', x: 2900, y: 0, w: 1600, h: 300 }
+      ];
+      let furniture = structuredClone(INITIAL);
+      let selectedId = null;
+      let drag = null;
+
+      const rectOverlap = (a, b) => Math.max(a.x, b.x) < Math.min(a.x + a.w, b.x + b.w) && Math.max(a.y, b.y) < Math.min(a.y + a.h, b.y + b.h);
+      const circleRectGap = (circle, rect) => {
+        const cx = circle.x + circle.w / 2;
+        const cy = circle.y + circle.h / 2;
+        const px = Math.min(Math.max(cx, rect.x), rect.x + rect.w);
+        const py = Math.min(Math.max(cy, rect.y), rect.y + rect.h);
+        return Math.hypot(cx - px, cy - py) - circle.w / 2;
+      };
+      const overlaps = (a, b) => (a.kind === 'circle' ? circleRectGap(a, b) < 0 : b.kind === 'circle' ? circleRectGap(b, a) < 0 : rectOverlap(a, b));
+      const snap = value => Math.round(value / SNAP) * SNAP;
+      const clamp = (value, low, high) => Math.min(Math.max(value, low), high);
+      const getItem = id => furniture.find(item => item.id === id);
+      const pointToModel = event => {
+        const point = svg.createSVGPoint();
+        point.x = event.clientX;
+        point.y = event.clientY;
+        const p = point.matrixTransform(svg.getScreenCTM().inverse());
+        return { x: p.x, y: ROOM.h - p.y };
+      };
+
+      function drawStatic() {
+        staticLayer.replaceChildren();
+        dimensionLayer.replaceChildren();
+        zones.forEach(zone => {
+          el('rect', { x: zone.x, y: svgY(zone.y, zone.h), width: zone.w, height: zone.h, class: zone.type === 'work' ? 'work-zone' : 'route-zone' }, staticLayer);
+          label(staticLayer, zone.x + zone.w / 2, svgY(zone.y, zone.h) + zone.h / 2 + 20, zone.label, 'zone-label');
+        });
+        kitchen.forEach(module => {
+          el('rect', { x: module.x, y: svgY(module.y, module.h), width: module.w, height: module.h, class: 'kitchen' }, staticLayer);
+          label(staticLayer, module.x + module.w / 2, svgY(module.y, module.h) + module.h / 2 - (module.label.split('\n').length - 1) * 55, module.label, 'kitchen-label');
+        });
+        el('line', { x1: 0, y1: 0, x2: ROOM.w, y2: 0, class: 'wall' }, staticLayer);
+        el('line', { x1: 0, y1: ROOM.h, x2: ROOM.w, y2: ROOM.h, class: 'wall' }, staticLayer);
+        el('line', { x1: 0, y1: 0, x2: 0, y2: ROOM.h, class: 'wall' }, staticLayer);
+        el('line', { x1: ROOM.w, y1: 0, x2: ROOM.w, y2: svgY(2450), class: 'wall' }, staticLayer);
+        el('line', { x1: ROOM.w, y1: svgY(350), x2: ROOM.w, y2: ROOM.h, class: 'wall' }, staticLayer);
+        el('line', { x1: ROOM.w, y1: svgY(350), x2: ROOM.w, y2: svgY(2450), class: 'opening' }, staticLayer);
+        label(staticLayer, ROOM.w - 120, svgY(1650), 'O1\nтерраса', 'zone-label', 'end');
+        el('line', { x1: 0, y1: ROOM.h + 115, x2: ROOM.w, y2: ROOM.h + 115, class: 'dimension' }, dimensionLayer);
+        el('line', { x1: 0, y1: ROOM.h + 70, x2: 0, y2: ROOM.h + 160, class: 'dimension' }, dimensionLayer);
+        el('line', { x1: ROOM.w, y1: ROOM.h + 70, x2: ROOM.w, y2: ROOM.h + 160, class: 'dimension' }, dimensionLayer);
+        label(dimensionLayer, ROOM.w / 2, ROOM.h + 220, '5710 мм', 'dimension-text');
+        el('line', { x1: -120, y1: 0, x2: -120, y2: ROOM.h, class: 'dimension' }, dimensionLayer);
+        el('line', { x1: -165, y1: 0, x2: -75, y2: 0, class: 'dimension' }, dimensionLayer);
+        el('line', { x1: -165, y1: ROOM.h, x2: -75, y2: ROOM.h, class: 'dimension' }, dimensionLayer);
+        const height = label(dimensionLayer, -190, ROOM.h / 2, '3500 мм', 'dimension-text');
+        height.setAttribute('transform', `rotate(-90 -190 ${ROOM.h / 2})`);
+      }
+
+      function drawFurniture(item) {
+        const group = el('g', { class: `furniture${selectedId === item.id ? ' selected' : ''}`, 'data-id': item.id, role: 'button', tabindex: '0', 'aria-label': `${item.name}; x ${item.x}, y ${item.y}` }, furnitureLayer);
+        const top = svgY(item.y, item.h);
+        if (item.kind === 'circle') {
+          el('circle', { cx: item.x + item.w / 2, cy: svgY(item.y + item.h / 2), r: item.w / 2, class: 'furniture-shape' }, group);
+        } else if (item.kind === 'chair') {
+          el('rect', { x: item.x + 32, y: top + 32, width: item.w - 64, height: item.h - 64, rx: 34, class: 'chair-seat' }, group);
+          el('line', { x1: item.x + 62, y1: top + 62, x2: item.x + item.w - 62, y2: top + 62, class: 'chair-line' }, group);
+        } else if (item.kind === 'sofa') {
+          el('rect', { x: item.x, y: top, width: item.w, height: item.h, rx: 140, class: 'furniture-shape' }, group);
+          el('line', { x1: item.x + 90, y1: top + 260, x2: item.x + item.w - 90, y2: top + 260, class: 'chair-line' }, group);
+          el('line', { x1: item.x + item.w / 2, y1: top + 260, x2: item.x + item.w / 2, y2: top + item.h - 90, class: 'chair-line' }, group);
+        } else if (item.kind === 'desk') {
+          el('rect', { x: item.x, y: top, width: item.w, height: item.h, rx: 36, class: 'furniture-shape' }, group);
+          el('line', { x1: item.x + 75, y1: top + item.h - 115, x2: item.x + item.w - 75, y2: top + item.h - 115, class: 'chair-line' }, group);
+        } else if (item.kind === 'tv') {
+          el('rect', { x: item.x, y: top, width: item.w, height: item.h, rx: 28, class: 'furniture-shape' }, group);
+          el('rect', { x: item.x + 130, y: top + 72, width: item.w - 260, height: item.h - 144, rx: 16, fill: '#202020' }, group);
+        }
+        const lines = item.kind === 'chair' ? [item.name.replace('8', ''), '400×400'] : [item.name, `${item.w}×${item.h}`];
+        label(group, item.x + item.w / 2, top + item.h / 2 - (lines.length - 1) * 50, lines.join('\n'), 'furniture-label');
+        return group;
+      }
+
+      function warningEntries() {
+        const messages = [];
+        furniture.forEach(item => {
+          if (item.x < 0 || item.y < 0 || item.x + item.w > ROOM.w || item.y + item.h > ROOM.h) messages.push(`${item.name}: выходит за границы B01.`);
+          zones.forEach(zone => {
+            if (overlaps(item, zone)) {
+              const labels = { 'top-work': 'заходит в рабочую зону кухни', 'left-work': 'заходит в полосу у левой кухни', 'pmm-door': 'пересекает дверцу ПММ', route: 'перекрывает маршрут D2 → O1' };
+              messages.push(`${item.name}: ${labels[zone.id]}.`);
+            }
+          });
+        });
+        for (let i = 0; i < furniture.length; i += 1) {
+          for (let j = i + 1; j < furniture.length; j += 1) {
+            const a = furniture[i], b = furniture[j];
+            if (overlaps(a, b)) messages.push(`${a.name} ↔ ${b.name}: пересечение габаритов.`);
+          }
+        }
+        return messages;
+      }
+
+      function updateSelection() {
+        const item = selectedId ? getItem(selectedId) : null;
+        selectionEl.replaceChildren();
+        if (!item) { selectionEl.textContent = 'Нажмите на предмет мебели.'; return; }
+        const name = document.createElement('strong'); name.textContent = item.name;
+        const coords = document.createElement('div'); coords.className = 'coords'; coords.textContent = `x=${item.x}  y=${item.y}  w=${item.w}  h=${item.h} мм`;
+        selectionEl.append(name, coords);
+      }
+
+      function updateWarnings() {
+        warningsEl.replaceChildren();
+        const messages = warningEntries();
+        if (!messages.length) {
+          const ok = document.createElement('div'); ok.className = 'ok'; ok.textContent = 'Пересечений с контрольными зонами и мебелью нет.'; warningsEl.appendChild(ok); return;
+        }
+        messages.forEach(message => {
+          const item = document.createElement('div'); item.className = 'warning'; item.textContent = message; warningsEl.appendChild(item);
+        });
+      }
+
+      function render() {
+        furnitureLayer.replaceChildren();
+        furniture.forEach(drawFurniture);
+        updateSelection();
+        updateWarnings();
+      }
+
+      function select(id) { selectedId = id; render(); }
+      function moveSelected(dx, dy) {
+        const item = selectedId ? getItem(selectedId) : null;
+        if (!item) return;
+        item.x = clamp(snap(item.x + dx), 0, ROOM.w - item.w);
+        item.y = clamp(snap(item.y + dy), 0, ROOM.h - item.h);
+        render();
+      }
+
+      furnitureLayer.addEventListener('pointerdown', event => {
+        const group = event.target.closest('[data-id]');
+        if (!group) return;
+        const item = getItem(group.dataset.id);
+        const point = pointToModel(event);
+        selectedId = item.id;
+        drag = { id: item.id, offsetX: point.x - item.x, offsetY: point.y - item.y };
+        furnitureLayer.setPointerCapture(event.pointerId);
+        render();
+        event.preventDefault();
+      });
+      furnitureLayer.addEventListener('pointermove', event => {
+        if (!drag) return;
+        const item = getItem(drag.id);
+        const point = pointToModel(event);
+        item.x = clamp(snap(point.x - drag.offsetX), 0, ROOM.w - item.w);
+        item.y = clamp(snap(point.y - drag.offsetY), 0, ROOM.h - item.h);
+        render();
+      });
+      const stopDrag = event => {
+        if (!drag) return;
+        if (furnitureLayer.hasPointerCapture(event.pointerId)) furnitureLayer.releasePointerCapture(event.pointerId);
+        drag = null;
+      };
+      furnitureLayer.addEventListener('pointerup', stopDrag);
+      furnitureLayer.addEventListener('pointercancel', stopDrag);
+      furnitureLayer.addEventListener('keydown', event => {
+        const group = event.target.closest('[data-id]');
+        if (!group) return;
+        select(group.dataset.id);
+        const step = event.shiftKey ? 250 : 50;
+        const moves = { ArrowLeft: [-step, 0], ArrowRight: [step, 0], ArrowUp: [0, step], ArrowDown: [0, -step] };
+        if (!moves[event.key]) return;
+        moveSelected(...moves[event.key]);
+        furnitureLayer.querySelector(`[data-id="${selectedId}"]`)?.focus();
+        event.preventDefault();
+      });
+      document.getElementById('reset').addEventListener('click', () => { furniture = structuredClone(INITIAL); selectedId = null; render(); });
+      document.getElementById('download').addEventListener('click', () => {
+        const payload = { project: 'TV-011', room_mm: ROOM, snap_mm: SNAP, furniture };
+        const url = URL.createObjectURL(new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' }));
+        const a = document.createElement('a'); a.href = url; a.download = 'TV-011_координаты_мебели.json'; a.click(); setTimeout(() => URL.revokeObjectURL(url), 0);
+      });
+      drawStatic();
+      render();
+    })();
+  </script>
+</body>
+</html>

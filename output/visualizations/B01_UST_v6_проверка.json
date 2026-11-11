@@ -1,0 +1,168 @@
+{
+  "checks": [
+    {
+      "name": "wall chain",
+      "actual": 5710,
+      "expected": 5710,
+      "pass": true
+    },
+    {
+      "name": "composition",
+      "actual": 3900,
+      "expected": 3900,
+      "pass": true
+    },
+    {
+      "name": "sofa axis",
+      "actual": 3470,
+      "expected": 3470,
+      "pass": true
+    },
+    {
+      "name": "screen axis",
+      "actual": 3470,
+      "expected": 3470,
+      "pass": true
+    },
+    {
+      "name": "four modules",
+      "actual": 2800,
+      "expected": 2800,
+      "pass": true
+    },
+    {
+      "name": "base sections",
+      "actual": 2800,
+      "expected": 2800,
+      "pass": true
+    },
+    {
+      "name": "base total height",
+      "actual": 600,
+      "expected": 600,
+      "pass": true
+    },
+    {
+      "name": "cabinet clear width",
+      "actual": 664,
+      "expected": 664,
+      "pass": true
+    },
+    {
+      "name": "central clear height",
+      "actual": 1434,
+      "expected": 1434,
+      "pass": true
+    },
+    {
+      "name": "outer storage cells",
+      "actual": 1434,
+      "expected": 1434,
+      "pass": true
+    },
+    {
+      "name": "middle storage cells",
+      "actual": 1434,
+      "expected": 1434,
+      "pass": true
+    },
+    {
+      "name": "bookcase width",
+      "actual": 600,
+      "expected": 600,
+      "pass": true
+    },
+    {
+      "name": "bookcase open cells",
+      "actual": 1782,
+      "expected": 1782,
+      "pass": true
+    },
+    {
+      "name": "decor clear width",
+      "actual": 464,
+      "expected": 464,
+      "pass": true
+    },
+    {
+      "name": "door width",
+      "actual": 698,
+      "expected": 698,
+      "pass": true
+    },
+    {
+      "name": "door height",
+      "actual": 1468,
+      "expected": 1468,
+      "pass": true
+    },
+    {
+      "name": "clearance over doors",
+      "actual": 75,
+      "expected": 75,
+      "pass": true
+    },
+    {
+      "name": "tray stored front",
+      "actual": 560,
+      "expected": 560,
+      "pass": true
+    },
+    {
+      "name": "tray extended front",
+      "actual": 1040,
+      "expected": 1040,
+      "pass": true
+    },
+    {
+      "name": "projector front",
+      "actual": 1012,
+      "expected": 1012,
+      "pass": true
+    },
+    {
+      "name": "sofa to tray",
+      "actual": 1460,
+      "expected": 1460,
+      "pass": true
+    },
+    {
+      "name": "open door envelope to sofa",
+      "actual": 1352,
+      "expected": 1352,
+      "pass": true
+    },
+    {
+      "name": "tree gap to decor",
+      "actual": 55,
+      "expected": 55,
+      "pass": true
+    },
+    {
+      "name": "central opening minus tray",
+      "actual": 64,
+      "expected": 64,
+      "pass": true
+    },
+    {
+      "name": "cassette front",
+      "actual": 583,
+      "expected": 583,
+      "pass": true
+    },
+    {
+      "name": "header inner front",
+      "actual": 632,
+      "expected": 632,
+      "pass": true
+    },
+    {
+      "name": "cassette nominal front reserve",
+      "actual": 49,
+      "expected": 49,
+      "pass": true
+    }
+  ],
+  "bounds": [],
+  "runtimeErrors": []
+}

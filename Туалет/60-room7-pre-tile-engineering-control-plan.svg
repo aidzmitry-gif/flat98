@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1080" viewBox="0 0 1440 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Комната 7 — инженерные точки перед плиткой</title>
+  <desc id="desc">Координационная схема санузла B01 2090 на 1740 мм перед плиткой. Показаны неизменные сантехнические пятна, свет, защита от протечек, сушитель, вентиляция, условный модуль SHV для бритвы и обязательные обмеры. Это не рабочий чертёж для сверления.</desc>
+  <style>
+    .bg{fill:#171817}.panel{fill:#232522;stroke:#8d918a;stroke-width:2}.wall{fill:none;stroke:#f0eee7;stroke-width:7}.door{fill:none;stroke:#7bbcf0;stroke-width:4;stroke-dasharray:9 6}.fixture{fill:#3c3028;stroke:#d6b18a;stroke-width:2.5}.vanity{fill:#51402f;stroke:#e0a95c;stroke-width:3}.service{fill:#352e53;stroke:#a48afb;stroke-width:2.5}.dim{fill:none;stroke:#a8aaa4;stroke-width:1.4;stroke-dasharray:5 4}.line{stroke:#4c504a;stroke-width:1.5}.light{fill:#f5c878;stroke:#fff2bf;stroke-width:2.5}.core{fill:#fff8d7}.mirror{stroke:#aee9eb;stroke-width:7;stroke-linecap:round}.led{stroke:#f5c878;stroke-width:5;stroke-linecap:round}.sensor{fill:#41ce85;stroke:#c5f4dc;stroke-width:1.5}.project{fill:#f3a458;stroke:#ffe0ac;stroke-width:1.5}.no{stroke:#f38f68;stroke-width:2.5}.heading{fill:#f3f0e8;font:700 26px Arial,sans-serif}.sub{fill:#a8aaa4;font:16px Arial,sans-serif}.label{fill:#f3f0e8;font:700 15px Arial,sans-serif}.small{fill:#a8aaa4;font:13px Arial,sans-serif}.tiny{fill:#a8aaa4;font:11px Arial,sans-serif}.gold{fill:#f5c878;font:700 15px Arial,sans-serif}.green{fill:#41ce85;font:700 14px Arial,sans-serif}.cyan{fill:#aee9eb;font:700 14px Arial,sans-serif}.warn{fill:#f3a458;font:700 14px Arial,sans-serif}.red{fill:#f38f68;font:700 13px Arial,sans-serif}
+  </style>
+  <rect class="bg" width="1440" height="1080"/>
+  <text class="heading" x="55" y="50">Комната 7 · инженерные точки перед плиткой</text>
+  <text class="sub" x="55" y="78">B01 2090 × 1740 мм · координаты — от левой стены и стены D4 · координационная схема, не рабочий чертёж для сверления</text>
+
+  <!-- Plan: origin 80,170; scale .35 px/mm. -->
+  <rect class="panel" x="80" y="170" width="731.5" height="609"/>
+  <path class="wall" d="M80 170 H346 M629.5 170 H811.5 V779 H80 V170"/>
+  <path class="door" d="M346 170 H629.5"/>
+  <text class="small" x="488" y="198" text-anchor="middle">D4 · наружу</text>
+  <text class="small" x="213" y="136" text-anchor="middle">760</text><text class="small" x="488" y="136" text-anchor="middle">810</text><text class="small" x="720.5" y="136" text-anchor="middle">520</text>
+
+  <!-- Fixed plumbing geometry: do not move. -->
+  <rect class="fixture" x="80" y="219" width="245" height="560" rx="11"/>
+  <text class="label" x="202.5" y="470" text-anchor="middle">ванна</text><text class="gold" x="202.5" y="493" text-anchor="middle">1600 × 700</text><text class="small" x="202.5" y="514" text-anchor="middle">X=0…700 · Y=140…1740</text>
+  <line x1="325" y1="543" x2="325" y2="735" stroke="#aee9eb" stroke-width="5"/><text class="tiny" x="333" y="560">экран X=700</text>
+  <rect class="fixture" x="559.5" y="464" width="175" height="189" rx="38"/><text class="label" x="647" y="562" text-anchor="middle">WC</text><text class="small" x="647" y="583" text-anchor="middle">X≈1370…1870</text><text class="small" x="647" y="601" text-anchor="middle">Y≈840…1380</text>
+  <rect class="vanity" x="325" y="656.5" width="238" height="122.5" rx="4"/><text class="label" x="444" y="707" text-anchor="middle">тумба + раковина</text><text class="small" x="444" y="728" text-anchor="middle">X=700…1380 · Y=1390…1740</text>
+  <rect class="service" x="563" y="653" width="248.5" height="126"/><text class="label" x="687" y="709" text-anchor="middle">ВМ‑07</text><text class="small" x="687" y="730" text-anchor="middle">710 × 360</text><text class="tiny" x="687" y="750" text-anchor="middle">пятно сохранено · люк проверить</text>
+  <line x1="325" y1="440" x2="559.5" y2="440" stroke="#41ce85" stroke-width="2.2"/><path d="M325 440l10-6v12zM559.5 440l-10-6v12z" fill="#41ce85"/><text class="green" x="442" y="425" text-anchor="middle">670 мм — проход</text>
+
+  <!-- Lighting: confirmed design points. -->
+  <circle class="light" cx="465" cy="443" r="19"/><circle class="core" cx="465" cy="443" r="7"/><text class="gold" x="465" y="478" text-anchor="middle">L1</text><text class="tiny" x="465" y="493" text-anchor="middle">1100,780</text>
+  <circle class="light" cx="202.5" cy="607.5" r="19"/><circle class="core" cx="202.5" cy="607.5" r="7"/><text class="gold" x="202.5" y="642" text-anchor="middle">L2</text><text class="tiny" x="202.5" y="657" text-anchor="middle">350,1250</text>
+  <rect x="372" y="668" width="144" height="40" rx="3" fill="#273534" stroke="#aee9eb" stroke-width="2"/><line class="mirror" x1="386" y1="678" x2="386" y2="698"/><line class="mirror" x1="502" y1="678" x2="502" y2="698"/><text class="cyan" x="444" y="648" text-anchor="middle">G2 зеркало</text>
+  <rect class="project" x="482" y="676" width="23" height="23" rx="4"/><text class="tiny" x="493.5" y="692" text-anchor="middle" fill="#171817">SHV</text><text class="warn" x="522" y="672">НОВОЕ</text><text class="tiny" x="522" y="688">за дверцей шкафа</text>
+  <line class="led" x1="337" y1="772" x2="551" y2="772"/><text class="gold" x="444" y="798" text-anchor="middle">только LED 24V · 2700K</text><text class="tiny" x="444" y="813" text-anchor="middle">под тумбой</text>
+  <path class="no" d="M108 408l42-28m0 28l-42-28"/><text class="red" x="158" y="393">под ванной / WC: LED, кабелей и драйверов нет</text>
+
+  <!-- Water sensors: coordinates are project orientation. -->
+  <circle class="sensor" cx="348" cy="758" r="8"/><path class="line" d="M348 750 L358 589" stroke-dasharray="3 3"/><text class="green" x="365" y="580">S1</text><text class="tiny" x="365" y="597">X≈766, Y≈1680 · под фронтом тумбы</text>
+  <circle class="sensor" cx="309" cy="727" r="8"/><path class="line" d="M303 721 L263 564" stroke-dasharray="3 3"/><text class="green" x="255" y="555" text-anchor="end">S2</text><text class="tiny" x="255" y="572" text-anchor="end">X≈654, Y≈1591 · у ванны</text>
+
+  <!-- Towel warmer: elevation callout on the right D4 segment. -->
+  <rect x="651" y="177" width="140" height="25" rx="5" fill="#5d4935" stroke="#d5b07f" stroke-width="2"/><path d="M670 181v17m20-17v17m20-17v17m20-17v17m20-17v17m20-17v17" stroke="#d5b07f" stroke-width="2"/>
+  <text class="tiny" x="721" y="221" text-anchor="middle">сушитель 800×400×76</text><text class="tiny" x="721" y="236" text-anchor="middle">200W · скрытый ввод</text><text class="tiny" x="721" y="251" text-anchor="middle">X≈1630…2030</text>
+
+  <!-- Ventilation is deliberately elevation-only. -->
+  <path d="M91 247h52m-26-26v52" stroke="#aee9eb" stroke-width="3"/><circle cx="117" cy="247" r="14" fill="none" stroke="#aee9eb" stroke-width="2"/>
+  <text class="cyan" x="150" y="237">вентиляция — существующая точка</text><text class="tiny" x="150" y="253">высоко на стене ванны; ось/высоту/канал/модель вентилятора обмерить</text>
+
+  <!-- Dimensions. -->
+  <line class="dim" x1="80" y1="825" x2="811.5" y2="825"/><text class="small" x="445.75" y="848" text-anchor="middle">2090</text><line class="dim" x1="52" y1="170" x2="52" y2="779"/><text class="small" x="35" y="474" text-anchor="middle" transform="rotate(-90 35 474)">1740</text>
+
+  <!-- Engineering coordination panel. -->
+  <rect class="panel" x="850" y="96" width="535" height="900" rx="15"/>
+  <text class="heading" x="882" y="142">Координация инженерии</text>
+  <text class="gold" x="882" y="181">Подтверждено в концепции</text>
+  <text class="label" x="882" y="208">• Свет: L1/L2 3000K, G2 у зеркала, LED 24V 2700K под тумбой</text>
+  <text class="small" x="900" y="227">Три группы; базовый свет и ручное управление — без облака.</text>
+  <text class="label" x="882" y="252">• S1/S2 — доступны для обслуживания</text>
+  <text class="small" x="900" y="271">Координаты на плане — проектная ориентация; подтвердить после монтажа.</text>
+  <text class="label" x="882" y="296">• Запорные краны — только в доступном инженерном узле</text>
+  <text class="small" x="900" y="315">Не за экраном ванны, не за тумбой, не в стене 160 мм.</text>
+  <text class="warn" x="900" y="334">ВМ‑07 не назначать, пока не проверены люк, ось и траектория доступа.</text>
+  <text class="small" x="900" y="350">Сушитель: правый участок D4 X≈1630…2030; boost-таймер снаружи, сторону уточнить.</text>
+  <line class="line" x1="882" y1="357" x2="1352" y2="357"/>
+  <text class="cyan" x="882" y="385">Электрика — проектная база</text>
+  <text class="label" x="882" y="412">• Выключатели и таймеры — снаружи D4</text>
+  <text class="label" x="882" y="437">• Цепи санузла: L/N/PE; RCBO Type A 30 mA — ориентир</text>
+  <text class="small" x="900" y="456">Число линий и защиту определяет электрик по применимым ТНПА РБ и фактической системе PE.</text>
+  <text class="label" x="882" y="481">• Открытую обычную розетку 230V не закладывать</text>
+  <text class="small" x="900" y="500">НОВОЕ: SHV — только заводской изолированный модуль за дверцей шкафа.</text>
+  <text class="label" x="882" y="525">• Драйвер LED — доступный, вне ВМ‑07 и стены 160 мм</text>
+  <line class="line" x1="882" y1="546" x2="1352" y2="546"/>
+  <text class="warn" x="882" y="575">До плитки обязательно обмерить</text>
+  <text class="small" x="900" y="600">1. Чистый проём D4, петли, наличник и сторону блока управления.</text>
+  <text class="small" x="900" y="624">2. ВМ‑07: размер люка, ось, открывание и траекторию доступа.</text>
+  <text class="small" x="900" y="648">3. Фактические канал/решётку вентиляции, ось и высоту.</text>
+  <text class="small" x="900" y="672">4. Модель ванны, экран, стекло и монтажную карту.</text>
+  <text class="small" x="900" y="696">5. Кронштейны и скрытый ввод сушителя.</text>
+  <text class="small" x="900" y="720">6. PE/заземление и электрические зоны на объекте.</text>
+  <text class="small" x="900" y="744">7. SHV: модуль, шкаф, IP/класс и допустимая зона.</text>
+  <text class="small" x="900" y="768">8. Подрез двери 18–20 мм — только после расчёта вентиляции.</text>
+  <line class="line" x1="882" y1="789" x2="1352" y2="789"/>
+  <text class="label" x="882" y="820">Условные обозначения</text>
+  <circle class="light" cx="897" cy="850" r="8"/><text class="small" x="915" y="855">подтверждено в концепции</text>
+  <circle class="project" cx="897" cy="879" r="8"/><text class="small" x="915" y="884">проектная точка — уточнить на объекте</text>
+  <path class="no" d="M888 907l18 14m0-14l-18 14"/><text class="small" x="915" y="918">проверка на объекте / не закладывать сейчас</text>
+  <text class="red" x="882" y="954">НЕ РАБОЧИЙ ЧЕРТЁЖ ДЛЯ СВЕРЛЕНИЯ ДО ОБМЕРА</text>
+  <text class="tiny" x="882" y="978">Любые скрытые выводы, клапаны и электрику — только после совместной разметки.</text>
+</svg>

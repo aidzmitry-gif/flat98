@@ -1,0 +1,14 @@
+APT-001 / ПРИХОЖАЯ / ВАРИАНТ C / НАПОЛНЕНИЕ v33
+Инструмент: ImageGen, редактирование по образцу.
+Исходный проектный образец: D:\6 Проекты\Квартира\Прихожая\54_прихожая_C_банкетка_сразу_у_входа_v32.png
+
+Use case: precise-object-edit
+Asset type: photorealistic cutaway view of an entryway wardrobe, for explaining interior storage
+Image 1 is the sole edit target. Preserve the exact kitchen-side camera, full-height fluted light oak furniture, olive niche next to the black entrance door on the right, floor, walls, warm lighting, overall 1675 mm wall segment, mirror, bench, hooks and open floor shoe area.
+
+Show what is INSIDE the EXISTING tall 850 mm wardrobe on the LEFT of the bench. Open the outer furniture doors realistically so both compartments are seen. Furniture body is approximately 580 mm deep overall. It has two adjacent narrow vertical interior compartments. Starting at the camera-side outer end:
+- a 400 mm clear-wide electrical service compartment, with a single small closed white metal electrical distribution-panel enclosure fixed to the rear wall at a comfortable reachable level. The exact real electrical box dimensions are unknown. Keep the closed metal face unmarked and without visible wiring. The full service access in front of the enclosure is empty; no hanging clothes, shelves, baskets or shoes in front of it;
+- an approximately 396 mm clear-wide coat compartment immediately to its right, with a normal left-to-right transverse hanging rail and three everyday jackets hanging on hangers. One upper shelf holds folded hats, and a low shelf for bags is shown well below the hanging jackets. Keep the coats within this narrow compartment. The full-height mirror belongs to the outside face of this wardrobe's open door; do not attach mirror to the room wall.
+
+Both compartment doors are open, with realistic slim oak door leaves and hinges. Preserve open passage and the same seating niche directly beside the black D1 entrance door. Under the seat, preserve the shallow closed drawer for slippers on the cabinet side and the high 400 mm open floor space on the door side, with two or three pairs of shoes resting directly on the continuous room floor. Coat hooks remain on the olive niche. Show no robot, loose electrical wires, outlets in the wet shoe space, extra rooms, additional furniture, people, text, numbers, legends or dimensions. The rendering illustrates the concept; the proportions of the room and furniture stay unchanged.
+

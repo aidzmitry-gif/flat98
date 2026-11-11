@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1050" viewBox="0 0 1600 1050">
+<defs>
+<style>
+ .title{font:700 29px 'Segoe UI',sans-serif;fill:#1c3833}.sub{font:15px 'Segoe UI',sans-serif;fill:#516a64}.h{font:700 19px 'Segoe UI',sans-serif;fill:#1c3833}.b{font:14px 'Segoe UI',sans-serif;fill:#243e39}.s{font:12px 'Segoe UI',sans-serif;fill:#425b55}.tiny{font:11px 'Segoe UI',sans-serif;fill:#425b55}.bold{font-weight:700}.wall{stroke:#253d38;stroke-width:5;fill:none}.line{stroke:#528095;stroke-width:1.4;fill:none;marker-start:url(#a);marker-end:url(#a)}.door{fill:#e5a664;fill-opacity:.19;stroke:#a86638;stroke-width:2}.outline{fill:none;stroke:#a86638;stroke-width:2}.dash{fill:none;stroke:#ac6950;stroke-width:2;stroke-dasharray:7 5}.box{fill:#fffefa;stroke:#cbd6d0;stroke-width:1.5}.note{fill:#fff2e5;stroke:#cb8e5a;stroke-width:1.2}
+</style><marker id="a" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto-start-reverse"><path d="M7 1L1 3.5L7 6" fill="none" stroke="#528095" stroke-width="1.3"/></marker>
+<pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><line y2="8" stroke="#c67357" stroke-width="2"/></pattern>
+</defs>
+<rect width="1600" height="1050" fill="#f6f4ef"/>
+<text x="40" y="46" class="title">Детская — дверцы и полки у стола</text>
+<text x="40" y="74" class="sub">Вид сверху: вход слева → окно справа. Кольца слева от входящего, двухъярусная кровать справа.</text>
+<rect x="1284" y="24" width="276" height="50" rx="8" class="note"/><text x="1422" y="55" text-anchor="middle" class="b bold">ЭСКИЗ · НЕ ДЛЯ ЗАКАЗА</text>
+<rect x="40" y="99" width="1040" height="810" rx="12" class="box"/>
+<text x="67" y="132" class="h">План с условными фасадами</text>
+<text x="67" y="153" class="s">Геометрия стен: 3825 R × 2810 B; мебель и дуги — проектные P, в масштабе плана.</text>
+<!-- X 0–3825, Y 0–2810; scale .19 -->
+<path d="M180 195H906.75V728.9H180V367.9" class="wall"/><path d="M180 195V367.9" stroke="#58869b" stroke-width="3" stroke-dasharray="6 5"/>
+<text x="158" y="285" text-anchor="middle" class="tiny" transform="rotate(-90 158 285)">входной сегмент 910 B; чистый проём M</text>
+<path d="M207 438H257M244 427L257 438L244 449" fill="none" stroke="#4c8193" stroke-width="3"/><text x="204" y="420" class="tiny bold">вид от входа</text>
+<!-- window -->
+<line x1="906.75" y1="310.9" x2="906.75" y2="614.9" stroke="#4a9bb2" stroke-width="10"/>
+<rect x="882" y="360" width="24.75" height="200" fill="url(#hatch)" stroke="#b87050" stroke-dasharray="5 4"/><text x="878" y="455" text-anchor="middle" class="tiny" transform="rotate(-90 878 455)">радиатор R-02 · размер / вылет M</text>
+<!-- left cabinet -->
+<rect x="659.75" y="195" width="247" height="114" fill="#ead8b0" stroke="#9b794a" stroke-width="2"/>
+<text x="783" y="227" text-anchor="middle" class="b bold">M3 · шкаф слева</text><text x="783" y="249" text-anchor="middle" class="s">1300 × 600 P</text><text x="783" y="271" text-anchor="middle" class="tiny">2 фасада по 400; полки 500 P</text><text x="783" y="290" text-anchor="middle" class="tiny">стол примыкает к боковине</text>
+<!-- left doors hinge at ends -->
+<path d="M659.75 309 L735.75 309 A76 76 0 0 1 659.75 385 Z" class="door"/>
+<path d="M811.75 309 L735.75 309 A76 76 0 0 0 811.75 385 Z" class="door"/>
+<line x1="659.75" y1="309" x2="659.75" y2="385" class="outline"/><line x1="811.75" y1="309" x2="811.75" y2="385" class="outline"/>
+<!-- sports -->
+<rect x="332" y="195" width="285" height="57" rx="5" fill="#dfebdc" stroke="#6e8a70" stroke-width="2"/><rect x="332" y="195" width="285" height="133" rx="6" fill="#e5eee2" fill-opacity=".45" stroke="#6e8a70" stroke-dasharray="7 5"/>
+<text x="474" y="229" text-anchor="middle" class="b bold">S1 · спорт + кольца</text><text x="474" y="272" text-anchor="middle" class="s">1500 × 300 P · мат до 700 P</text><text x="474" y="296" text-anchor="middle" class="tiny">фактическая зона падения — по паспорту</text>
+<!-- bed -->
+<rect x="180" y="529.4" width="399" height="199.5" rx="6" fill="#deead9" stroke="#66806b" stroke-width="2"/>
+<text x="379" y="582" text-anchor="middle" class="b bold">M2 · двухъярусная кровать</text><text x="379" y="608" text-anchor="middle" class="s">внешний предел 2100 × 1050 × 1850 P</text><text x="379" y="631" text-anchor="middle" class="tiny">матрасы 2 × 900 × 2000 P</text><text x="379" y="653" text-anchor="middle" class="tiny">лестница и фурнитура внутри конверта</text>
+<!-- right cabinet -->
+<rect x="659.75" y="614.9" width="247" height="114" fill="#ead8b0" stroke="#9b794a" stroke-width="2"/>
+<text x="783" y="647" text-anchor="middle" class="b bold">M1 · шкаф справа</text><text x="783" y="670" text-anchor="middle" class="s">1300 × 600 P</text><text x="783" y="691" text-anchor="middle" class="tiny">полки к столу над столешницей</text><text x="783" y="711" text-anchor="middle" class="tiny">2 дверцы по 400; полки 500 P</text>
+<!-- right cabinet two example doors facing room -->
+<path d="M659.75 614.9 L735.75 614.9 A76 76 0 0 0 659.75 538.9 Z" class="door"/>
+<path d="M811.75 614.9 L735.75 614.9 A76 76 0 0 1 811.75 538.9 Z" class="door"/>
+<line x1="659.75" y1="614.9" x2="659.75" y2="538.9" class="outline"/><line x1="811.75" y1="614.9" x2="811.75" y2="538.9" class="outline"/>
+<!-- desk on top, overlap means door conflict -->
+<rect x="811.75" y="310.9" width="95" height="304" fill="#f6ecd8" fill-opacity=".84" stroke="#ae8c50" stroke-width="2"/>
+<text x="849" y="464" text-anchor="middle" class="tiny bold" transform="rotate(-90 849 464)">M5 · стол ≈1600 × 500 P · между шкафами</text>
+<text x="765" y="469" class="tiny bold">ПОЛКИ У ОКНА · 500 P</text>
+<!-- dims -->
+<line x1="180" y1="775" x2="579" y2="775" class="line"/><line x1="579" y1="775" x2="659.75" y2="775" class="line"/><line x1="659.75" y1="775" x2="906.75" y2="775" class="line"/>
+<text x="379" y="764" text-anchor="middle" class="s bold">2100 P · кровать</text><text x="619" y="764" text-anchor="middle" class="s bold">425 P</text><text x="783" y="764" text-anchor="middle" class="s bold">1300 P · шкаф</text>
+<line x1="180" y1="814" x2="906.75" y2="814" class="line"/><text x="543" y="838" text-anchor="middle" class="b bold">3825 R · меньшая из измеренных длинных стен</text>
+<line x1="970" y1="195" x2="970" y2="728.9" class="line"/><text x="991" y="462" text-anchor="middle" class="b bold" transform="rotate(-90 991 462)">2810 B · перепроверить ширину</text>
+<text x="180" y="870" class="tiny">X=0 · входная стена</text><text x="907" y="870" text-anchor="end" class="tiny">X=3825 · оконная стена</text>
+
+<rect x="1100" y="99" width="460" height="810" rx="12" class="box"/>
+<text x="1125" y="135" class="h">Что показывает проверка</text>
+<rect x="1125" y="155" width="410" height="155" rx="8" class="note"/>
+<text x="1142" y="182" class="b bold">Полки у окна, дверцы ближе к входу</text>
+<text x="1142" y="205" class="s">Предложение: два фасада по 400 мм</text>
+<text x="1142" y="225" class="s">и секция полок 500 мм у окна.</text>
+<text x="1142" y="248" class="s">Дуги 90° не входят в контур стола,</text>
+<text x="1142" y="268" class="s">но примыкают к его границе. Зазоры,</text>
+<text x="1142" y="288" class="s">толщины и петли — по замеру и модели.</text>
+<text x="1125" y="343" class="h">Как читать дуги</text>
+<text x="1125" y="370" class="b">Цветной сектор — условная траектория</text>
+<text x="1125" y="393" class="b">одной дверцы на 90°; боковые петли.</text>
+<text x="1125" y="419" class="s">Два фасада показаны условно,</text>
+<text x="1125" y="440" class="s">секция полок — над столом у окна.</text>
+<text x="1125" y="470" class="b bold">В открытом положении дверцы занимают</text>
+<text x="1125" y="491" class="b bold">рабочую и игровую зоны. Кольца в это</text>
+<text x="1125" y="512" class="b bold">время не используются.</text>
+<text x="1125" y="551" class="h">Проверить до выбора фасадов</text>
+<text x="1125" y="578" class="s">• реальные размеры шкафов и боковин;</text>
+<text x="1125" y="602" class="s">• ширину/высоту каждого фасада и петли;</text>
+<text x="1125" y="626" class="s">• положение стола и высоту радиатора;</text>
+<text x="1125" y="650" class="s">• дверь комнаты, кровать и её лестницу;</text>
+<text x="1125" y="674" class="s">• траекторию колец и паспортную зону мата.</text>
+<rect x="1125" y="706" width="410" height="171" rx="8" fill="#edf3ef" stroke="#8ca69a"/>
+<text x="1142" y="733" class="b bold">Размеры R / B / P / M</text>
+<text x="1142" y="757" class="s">R — измерено: стены 3825 и 3837 мм;</text>
+<text x="1142" y="779" class="s">минимальная измеренная высота 2712 мм.</text>
+<text x="1142" y="803" class="s">B — план: ширина 2810, окно 1600.</text>
+<text x="1142" y="827" class="s">P — проектная величина; M — нет замера</text>
+<text x="1142" y="849" class="s">или паспорта выбранного изделия.</text>
+</svg>

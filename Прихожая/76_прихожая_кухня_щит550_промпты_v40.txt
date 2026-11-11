@@ -1,0 +1,47 @@
+APT-001 / ПРИХОЖАЯ / КУХНЯ / УВЕЛИЧЕННЫЙ ЩИТ / V40
+Инструмент: ImageGen. Визуализация иллюстративна; размеры и открывание требуют проверки по схеме и замерам.
+
+=== Основная визуализация ===
+Исходники:
+D:\6 Проекты\Квартира\Прихожая\74_прихожая_геометрия_открытый_шкаф_v40.png
+D:\6 Проекты\Квартира\Прихожая\65_прихожая_C_кухня_открытый_шкаф_v36.png
+
+Use case: precise-object-edit
+Asset type: a SINGLE photorealistic architectural interior visualization of the existing apartment hallway, with open wardrobes, viewed from the kitchen.
+
+IMAGE 1 is the BINDING 3D GEOMETRY AND CAMERA, newly generated from the apartment plan and the updated furniture dimensions. Transform image 1 into a realistic photograph. Preserve its viewpoint from the kitchen doorway, the location and relative width of every component, the two independent OPEN tall wardrobe doors, the entrance door's separate perpendicular wall on the right, and the open corridor transition on the left.
+IMAGE 2 is ONLY a reference for material, mood, realistic cabinet hardware and styling: light natural oak with fine vertical grain, soft muted olive niche, light oak floor, warm diffuse lighting, white closed electrical box, black entrance door. IMAGE 2 has OUTDATED narrower wardrobe and wider bench: never copy its proportions or camera.
+
+This is the updated plan along ONE continuous left-hand wall, left-to-right as seen in the model from the kitchen:
+- approximately 25 mm end allowance at the corridor end;
+- a full-height wardrobe 1050 mm wide along the wall, 580 mm external depth including furniture fronts, 2700 mm high;
+- immediately to its right a bench / open hooks niche only 575 mm wide and 420 mm deep, beside the entrance;
+- 25 mm at the entrance end.
+Together this occupies 1675 mm along the wall. Do not enlarge the bench to the size in image 2. The wardrobe is now visibly wider than the whole bench zone. The upper storage above the bench has the same 575 mm width and about 420 mm depth. Ceiling is 2750 mm at the measured points. Real opening clearances and the exact position and dimensions of the electrical board are still unknown.
+
+The tall wardrobe is DIVIDED into two adjacent separate vertical compartments:
+(1) The far-left electrical service bay, away from the entrance door, has approximately 550 mm clear internal width. Its own full-height hinged oak furniture door is OPEN towards the viewer. Inside on the rear wall show a modest CLOSED white electrical distribution box as a placeholder, with empty access space in front of it; its real box size is unknown. No shelves, coats or shoes in the electrical bay, and no exposed wiring.
+(2) Immediately to its right the clothes bay has approximately 446 mm clear internal width. Its own full-height mirrored furniture door is OPEN towards the viewer, mirror on the EXTERIOR of this door, not a separate wall. Show three normal jackets on a simple hanging rail and one shelf for folded hats. Maintain the narrow bay proportions, do not turn it into a second wardrobe. The two bays together and their dividers fit the single 1050-mm-wide wardrobe.
+
+At the right of the wardrobe, maintain the NARROW 575-mm-wide olive niche with hooks, a cushioned seat 460 mm above floor, and upper cabinets with real hinged doors slightly open. The shallow dry slipper drawer at the cabinet end is approximately 250 mm wide, 380 mm deep and 90 mm external height. Leave open floor below the seat: roughly 310 mm high under this drawer and 400 mm high on the entrance-door side for high boots. Show TWO pairs of everyday outdoor shoes in ONE row directly on the same continuous floor, with one pair of tall boots. Do not add wet-shoe shelves or a robot vacuum.
+
+CRITICAL: In image 1 the pale mint-colored area at the extreme left is an UNMODELLED OPEN PASSAGE to the corridor; it is NOT a wall. The owner says there is NO WALL on the left of the cabinet. Keep this passage visually open beyond the end of the wardrobe and extend the same floor continuously through it. Do not add a left building wall, partition, column, doorway frame, skirting along a nonexistent wall, or a solid surface that closes the corridor. Do not invent a long tunnel, far doors or other rooms: show only a small open transition with the distant unknown area gently defocused or outside the frame. The visible oak leaf is an OPEN CABINET DOOR with clear hinges, not a new wall.
+
+At the right of image 1 is the existing entrance door D1, closed, on a wall at 90 degrees to the furniture wall. Preserve its position and strong receding perspective from the kitchen, not on the same plane as the wardrobe and not relocated. It is the only entrance door in the image.
+
+Photorealistic oak cabinetry, neutral warm-white existing surfaces, matte black D1, realistic hinges, warm diffuse downlights. The wide-angle camera and the position of objects follow image 1. No extra walls or cabinets, no additional doorway, no people, no robots, no text, no dimensions, no split screen. Realistic high-quality photography, matching the actual compact space rather than a larger staged hallway.
+
+=== Локальная корректировка ===
+Исходник:
+C:\Users\aidzm\.codex\generated_images\01a0487f-28e0-7bd2-8428-24a402900f2d\exec-b0353be6-5755-4420-93ea-111a9b8de152.png
+
+Use case: precise-object-edit
+Edit the given image with the minimum possible changes; keep the EXACT same camera, furniture layout, oak materials, black entrance door at right, existing open cabinet doors and mirror, and proportions.
+
+Only make these three local corrections:
+1. In the extreme left background beyond the open end of the wardrobe, remove the invented distant window, green outdoor view, doorframes, and any discernible architectural features. The owner's plan DOES NOT define the far corridor. Keep this left side as an OPEN connection, not a wall: the same oak floor runs continuously into an indistinct softly blurred open continuation with no visible vertical wall plane, skirting, partition, doorway, window or column. Do not add a wall at the left end of the cabinet. The tall oak leaf with hinges belongs to the open cabinet and must be preserved.
+2. Under the narrow 575-mm bench, show exactly TWO realistic adult pairs of outdoor shoes, one pair of low shoes and one pair of high boots, side by side on the same floor in a single row. Remove the extra middle pair and keep the shallow closed drawer above them. No shelf and no tray under the shoes. Do not shrink shoes unrealistically.
+3. In the right-hand CLOTHES compartment of the open tall wardrobe, add one understated removable low oak shelf well below the hanging jackets, as in the approved schematic, with one small bag resting on it. Do not place this shelf, bag, clothing or anything else in the left electrical panel service compartment. Keep the white electrical-panel enclosure closed and access to it empty.
+
+Keep all remaining areas unchanged. Natural photorealism. No people, labels, dimensions, extra furniture, wall on the left, second door or robot.
+

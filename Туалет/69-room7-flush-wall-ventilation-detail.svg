@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1600" viewBox="0 0 2400 1600" role="img" aria-labelledby="title desc">
+<title id="title">Комната 7 — встроенная вентиляция в стене ванны</title>
+<desc id="desc">Координационный лист: тонкая съёмная панель заподлицо на существующей высокой точке стены ванны, с обслуживанием из помещения. Без ниши, нового короба и скрытой камеры в стене 160 миллиметров.</desc>
+<style>
+ .bg{fill:#151715}.panel{fill:#20231f;stroke:#777c72;stroke-width:3}.card{fill:#292c27;stroke:#50564d;stroke-width:2}.line{stroke:#525950;stroke-width:2}.heading{fill:#f3f0e8;font:700 43px Arial,sans-serif}.sub{fill:#aeb3aa;font:21px Arial,sans-serif}.h{fill:#f3f0e8;font:700 27px Arial,sans-serif}.label{fill:#f3f0e8;font:700 20px Arial,sans-serif}.body{fill:#d1d4cc;font:18px Arial,sans-serif}.small{fill:#aeb3aa;font:16px Arial,sans-serif}.gold{fill:#f0c56d;font:700 20px Arial,sans-serif}.cond{fill:#f0c56d;font:700 18px Arial,sans-serif}.green{fill:#58d29b;font:700 18px Arial,sans-serif}.warn{fill:#ef957b;font:700 18px Arial,sans-serif}.stopbox{fill:#402927;stroke:#ef957b;stroke-width:3}.tile{fill:#b9afa1;stroke:#dfd5c6;stroke-width:2}.wall{fill:#6d665e}.void{fill:#111312;stroke:#899188;stroke-width:2}.bronze{fill:#a47b4f;stroke:#e0bd8e;stroke-width:2}.arrow{stroke:#58d29b;stroke-width:4;fill:none;marker-end:url(#arrow)}.dash{stroke:#f0c56d;stroke-width:3;stroke-dasharray:10 9;fill:none}.dim{stroke:#aeb3aa;stroke-width:2;fill:none;marker-start:url(#dim);marker-end:url(#dim)}
+</style>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9z" fill="#58d29b"/></marker><marker id="dim" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M8,0 L0,4 L8,8" fill="none" stroke="#aeb3aa" stroke-width="1.5"/></marker></defs>
+<rect class="bg" width="2400" height="1600"/>
+<text class="heading" x="80" y="82">КОМНАТА 7 · ВСТРОЕННАЯ ВЕНТИЛЯЦИЯ В СТЕНЕ ВАННЫ</text>
+<text class="sub" x="80" y="120">Координация до плитки · существующая высокая точка в верхнем правом углу стены ванны сохраняется · расстановку, стену 160 мм и трассы не менять</text>
+<line class="line" x1="80" y1="150" x2="2320" y2="150"/>
+
+<!-- facade -->
+<rect class="panel" x="80" y="190" width="1060" height="650" rx="16"/>
+<text class="gold" x="120" y="240">A · ФАСАД СТЕНЫ ВАННЫ · ВИД ИЗ ПОМЕЩЕНИЯ</text>
+<text class="small" x="120" y="270">Панель — проектно в верхнем правом углу стены ванны, в существующей высокой точке; не должна читаться как ниша или мебель.</text>
+<rect class="tile" x="170" y="320" width="790" height="450" rx="3"/>
+<path d="M170 470H960M170 620H960M370 320V770M570 320V770M770 320V770" stroke="#e5ddd1" stroke-width="2"/>
+<rect x="760" y="360" width="130" height="70" rx="2" fill="#b9afa1" stroke="#88796b" stroke-width="4"/>
+<path d="M775 420H875" stroke="#6f6358" stroke-width="3" stroke-dasharray="3 6"/>
+<text class="label" x="120" y="725">тонкая плитко-совместимая лицевая панель</text>
+<text class="small" x="120" y="752">заподлицо с отделкой · съёмная только из помещения</text>
+<path class="dash" d="M735 342 L916 342 L916 449 L735 449Z"/>
+<text class="small" x="740" y="480">граница панели — проектно</text>
+<path class="arrow" d="M1020 375 C960 375 935 390 900 398"/>
+<text class="green" x="760" y="550">верхний правый угол стены ванны</text>
+<text class="small" x="760" y="577">существующая высокая точка · не переносить</text>
+<text class="warn" x="120" y="810">НЕ НАЗНАЧАТЬ ПО ЛИСТУ: ось, высоту, Ø, размер панели, сверление.</text>
+
+<!-- section -->
+<rect class="panel" x="1180" y="190" width="1140" height="650" rx="16"/>
+<text class="gold" x="1220" y="240">B · ПРИНЦИПИАЛЬНЫЙ РАЗРЕЗ · СЕРВИС ИЗ ПОМЕЩЕНИЯ</text>
+<text class="small" x="1220" y="270">Схема не задаёт толщины, диаметры или монтажные координаты.</text>
+<rect class="card" x="1250" y="335" width="880" height="360" rx="8"/>
+<rect class="tile" x="1290" y="390" width="48" height="250"/>
+<rect class="wall" x="1338" y="390" width="175" height="250"/>
+<rect class="void" x="1513" y="440" width="265" height="150" rx="6"/>
+<circle cx="1650" cy="515" r="45" fill="#3e443e" stroke="#aeb3aa" stroke-width="3"/>
+<path d="M1650 470v90M1605 515h90M1618 483l64 64M1682 483l-64 64" stroke="#aeb3aa" stroke-width="4"/>
+<path d="M1780 515H1965" stroke="#899188" stroke-width="25"/>
+<path d="M1885 475v80" stroke="#f0c56d" stroke-width="7"/>
+<rect x="1276" y="447" width="14" height="135" rx="2" fill="#b9afa1" stroke="#88796b" stroke-width="3"/>
+<path d="M1276 566H1290" stroke="#6f6358" stroke-width="4"/>
+<text class="label" x="1255" y="730">1. Панель</text><text class="label" x="1530" y="730">2. Мотор + клапан</text><text class="label" x="1870" y="730">3. Канал</text>
+<text class="small" x="1255" y="760">снимается из помещения</text><text class="small" x="1530" y="760">доступны для осмотра/замены</text><text class="small" x="1870" y="760">не прокладывать новый</text>
+<text class="warn" x="1220" y="810">ЗАПРЕЩЕНО: ниша, новый короб / воздуховод, скрытая сервисная камера в стене 160 мм.</text>
+
+<!-- requirements -->
+<rect class="panel" x="80" y="880" width="1460" height="560" rx="16"/>
+<text class="gold" x="120" y="930">C · 8 ОБЯЗАТЕЛЬНЫХ ТРЕБОВАНИЙ</text>
+<text class="body" x="130" y="980">1. Использовать существующую высокую точку в верхнем правом углу стены ванны; перенос не допускается.</text>
+<text class="body" x="130" y="1025">2. Лицевая панель тонкая, плитко-совместимая, заподлицо и снимается из помещения.</text>
+<text class="body" x="130" y="1070">3. Мотор, обратный клапан и соединения остаются доступными для обслуживания.</text>
+<text class="body" x="130" y="1115">4. Не делать нишу, новый короб, новый воздуховод или скрытую камеру в стене 160 мм.</text>
+<text class="body" x="130" y="1160">5. Отдельное недиммируемое питание; не подключать к LED, зеркалу, ВМ-07 или мокрым зонам.</text>
+<text class="body" x="130" y="1205">6. Управление: ручной пуск + таймер ИЛИ гигростат; окончательное решение — по модели.</text>
+<text class="body" x="130" y="1250">7. Переток через D4 рассчитать после натурного обмера, с учётом двери, коробки и порога.</text>
+<text class="body" x="130" y="1295">8. Финальная модель только после проверки канала, тяги, обратного потока и монтажной карты.</text>
+<text class="small" x="130" y="1365">Статус: </text><text class="cond" x="205" y="1365">УСЛОВНО</text><text class="small" x="335" y="1365">· не является разрешением на сверление или закрытие отделкой.</text>
+
+<!-- gate -->
+<rect class="panel" x="1580" y="880" width="740" height="560" rx="16"/>
+<text class="gold" x="1620" y="930">D · СТОП-ГЕЙТ И НАТУРНЫЕ ПРОВЕРКИ</text>
+<rect class="stopbox" x="1620" y="960" width="660" height="125" rx="10"/>
+<text class="warn" x="1650" y="1002">СТОП — НЕ ЗАКРЫВАТЬ ПЛИТКОЙ / НЕ ЗАКАЗЫВАТЬ</text>
+<text class="body" x="1650" y="1038">до подтверждения существующего канала, тяги,</text><text class="body" x="1650" y="1064">обратного потока, перетока D4 и сервисного доступа.</text>
+<text class="label" x="1625" y="1135">Проверить на объекте и приложить фото:</text>
+<text class="small" x="1635" y="1170">□ фактическое положение и состояние канала</text>
+<text class="small" x="1635" y="1200">□ тяга и отсутствие обратного потока</text>
+<text class="small" x="1635" y="1230">□ место обслуживания панели / мотора / клапана</text>
+<text class="small" x="1635" y="1260">□ трасса отдельного недиммируемого питания</text>
+<text class="small" x="1635" y="1290">□ ручной пуск, таймер или гигростат по паспорту</text>
+<text class="small" x="1635" y="1320">□ расчётный переток D4 после чистового обмера</text>
+<text class="small" x="1635" y="1350">□ конфликтов со стеклом, отделкой и доступом нет</text>
+<text class="small" x="1635" y="1380">□ модель, паспорт и монтажная карта утверждены</text>
+
+<rect class="card" x="80" y="1470" width="2240" height="75" rx="12"/>
+<text class="warn" x="115" y="1517">НЕ УКАЗЫВАЕТ ТОЧНЫЕ Ø, ГАБАРИТЫ, МОЩНОСТЬ, ШУМ, ОСЬ / ВЫСОТУ ИЛИ СВЕРЛЕНИЕ · ВСЁ ОПРЕДЕЛЯЕТСЯ ПО ФАКТУ И ПАСПОРТУ ВЫБРАННОЙ МОДЕЛИ</text>
+</svg>

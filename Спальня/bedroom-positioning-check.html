@@ -1,0 +1,83 @@
+<section id="bedroom-positioning-check" aria-labelledby="positioning-check-title">
+  <style>
+    #bedroom-positioning-check { color: var(--foreground); }
+    #bedroom-positioning-check h2 { margin: 0 0 12px; }
+    #bedroom-positioning-check svg { display: block; width: 100%; height: auto; overflow: visible; }
+    #bedroom-positioning-check .room { fill: color-mix(in srgb, var(--background) 86%, var(--foreground) 14%); stroke: var(--foreground); stroke-width: 2; }
+    #bedroom-positioning-check .wall { fill: none; stroke: var(--foreground); stroke-width: 7; }
+    #bedroom-positioning-check .opening { stroke: var(--green); stroke-width: 4; }
+    #bedroom-positioning-check .window { stroke: var(--blue); stroke-width: 4; }
+    #bedroom-positioning-check .radiator { fill: color-mix(in srgb, var(--blue) 16%, transparent); stroke: var(--blue); stroke-width: 1.5; }
+    #bedroom-positioning-check .bed { fill: color-mix(in srgb, var(--primary) 18%, var(--background) 82%); stroke: var(--foreground); stroke-width: 1.8; }
+    #bedroom-positioning-check .cot { fill: color-mix(in srgb, var(--green) 23%, var(--background) 77%); stroke: var(--green); stroke-width: 2; }
+    #bedroom-positioning-check .vanity { fill: color-mix(in srgb, var(--accent) 75%, transparent); stroke: var(--foreground); stroke-width: 1.4; }
+    #bedroom-positioning-check .wardrobe { fill: color-mix(in srgb, var(--secondary) 77%, var(--foreground) 23%); stroke: var(--foreground); stroke-width: 1.4; }
+    #bedroom-positioning-check .filler { fill: color-mix(in srgb, var(--muted) 82%, transparent); stroke: var(--muted-foreground); stroke-width: 1; stroke-dasharray: 3 3; }
+    #bedroom-positioning-check .no-pass { fill: color-mix(in srgb, var(--orange) 11%, transparent); stroke: var(--orange); stroke-width: 1.4; stroke-dasharray: 5 4; }
+    #bedroom-positioning-check .leader, #bedroom-positioning-check .dim { fill: none; stroke: var(--muted-foreground); stroke-width: 1.2; }
+    #bedroom-positioning-check .dim { marker-start: url(#arrow); marker-end: url(#arrow); }
+    #bedroom-positioning-check .label { fill: var(--foreground); font: 500 14px/1.2 system-ui, sans-serif; }
+    #bedroom-positioning-check .small { fill: var(--muted-foreground); font: 400 12px/1.2 system-ui, sans-serif; }
+    #bedroom-positioning-check .measure { fill: var(--foreground); font: 500 12px/1.2 system-ui, sans-serif; }
+    #bedroom-positioning-check .green { fill: var(--green); font: 500 12px/1.2 system-ui, sans-serif; }
+    #bedroom-positioning-check .orange { fill: var(--orange); font: 500 12px/1.2 system-ui, sans-serif; }
+  </style>
+  <h2 id="positioning-check-title">Проверка именно расположения мебели</h2>
+  <svg viewBox="0 0 860 735" role="img" aria-labelledby="positioning-svg-title positioning-svg-desc">
+    <title id="positioning-svg-title">Правильное положение кровати, люльки и встроенной мебельной группы в спальне B01</title>
+    <desc id="positioning-svg-desc">Кровать не центрируется: она сдвинута к наружной стене, чтобы сохранить проход у шкафа. Свободный проход P6 находится справа сверху. Встроенная мебель начинается только после прохода. Временная люлька располагается справа от кровати и не является встроенной мебелью.</desc>
+    <defs>
+      <marker id="arrow" viewBox="0 0 8 8" refX="4" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8z" fill="var(--muted-foreground)"></path></marker>
+    </defs>
+
+    <rect class="room" x="90" y="112" width="576" height="421.5" rx="1"></rect>
+    <path class="wall" d="M90 112 H666 M90 533.5 H666 M90 112 V533.5 M666 112 V253 M666 253 V533.5"></path>
+    <line class="opening" x1="666" y1="112" x2="666" y2="253"></line>
+    <text class="green" x="681" y="165">P6 · 940</text>
+    <text class="small" x="681" y="182">вход / проход</text>
+    <text class="small" x="681" y="199">никакой мебели</text>
+
+    <line class="window" x1="90" y1="202" x2="90" y2="442"></line>
+    <rect class="radiator" x="97" y="236" width="22" height="172" rx="2"></rect>
+    <text class="small" x="18" y="216">O3 + R-05</text>
+    <text class="small" x="18" y="232">не перекрывать</text>
+
+    <rect class="no-pass" x="90" y="233.5" width="45" height="300"></rect>
+    <text class="orange" x="18" y="468">300 мм</text>
+    <text class="small" x="18" y="485">технический</text>
+    <text class="small" x="18" y="501">зазор, не проход</text>
+
+    <rect class="bed" x="135" y="233.5" width="210" height="300" rx="8"></rect>
+    <line class="leader" x1="135" y1="490" x2="345" y2="490"></line>
+    <text class="label" x="158" y="370">кровать</text>
+    <text class="small" x="158" y="387">1 400×2 000</text>
+    <text class="small" x="157" y="514">изголовье на нижней стене</text>
+
+    <rect class="cot" x="345" y="391" width="82.5" height="142.5" rx="6"></rect>
+    <text class="green" x="440" y="401">временно: люлька 550×950</text>
+    <text class="small" x="440" y="418">справа у изголовья,</text>
+    <text class="small" x="440" y="435">вместо правой тумбы</text>
+    <path class="leader" d="M427.5 447 L437 434"></path>
+
+    <rect class="filler" x="576" y="253" width="90" height="9"></rect>
+    <rect class="vanity" x="576" y="262" width="90" height="124.5"></rect>
+    <rect class="wardrobe" x="576" y="386.5" width="90" height="147"></rect>
+    <text class="small" x="582" y="287">60 мм</text>
+    <text class="small" x="582" y="304">запас у P6</text>
+    <text class="small" x="582" y="333">зеркало +</text>
+    <text class="small" x="582" y="349">консоль 830</text>
+    <text class="small" x="582" y="415">шкаф 980</text>
+    <text class="small" x="582" y="431">раздв./скл.</text>
+    <text class="small" x="576" y="555">стена 5/8: 1 870, глубина 600</text>
+
+    <line class="dim" x1="345" y1="458" x2="576" y2="458"></line>
+    <text class="measure" x="421" y="449">1 540 без люльки</text>
+    <line class="dim" x1="427.5" y1="479" x2="576" y2="479"></line>
+    <text class="measure" x="460" y="470">990 с люлькой</text>
+
+    <text class="green" x="90" y="602">Кровать должна быть смещена влево: при центрировании до шкафа осталось бы только около 620 мм.</text>
+    <text class="green" x="90" y="626">Шкаф начинается после P6 и не является дверью или нишей в стене — это отдельный предмет мебели в комнате.</text>
+    <text class="orange" x="90" y="662">Перед заказом: проверить чистовой габарит R-05 и оставить 60–80 мм монтажного запаса у P6 и плинтусов.</text>
+    <text class="small" x="90" y="695">Основание B01: спальня 3 840×2 810; указанное — точное расчётное расположение, не итоговый обмер после отделки.</text>
+  </svg>
+</section>

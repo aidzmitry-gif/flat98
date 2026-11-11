@@ -1,0 +1,1994 @@
+{
+  "project": "SHP-001",
+  "revision": 1,
+  "sourceData": "procurement-data.json",
+  "controls": {
+    "pricedNoSparesBYN": 17331.9009872,
+    "sparesBYN": 450.25187,
+    "pricedWithSparesBYN": 17782.1528572,
+    "allowancesLowBYN": 18475,
+    "allowancesHighBYN": 45125,
+    "planningLowBYN": 36257.1528572,
+    "planningHighBYN": 62907.1528572,
+    "pilotKnownBYN": 5077.1999244,
+    "pilotAllowLowBYN": 65,
+    "pilotAllowHighBYN": 155,
+    "mandatoryUnpricedLines": 9
+  },
+  "bom": [
+    {
+      "id": "B01",
+      "item": "Beelink Mini S12 Pro N100/16GB/500GB SATA",
+      "class": "Основное оборудование",
+      "requiredQty": 1,
+      "firstBenchQty": 1,
+      "knownFullBYN": 1820.16416,
+      "knownBenchBYN": 1820.16416,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Текущая карточка O01; РФ",
+      "url": "https://beelink.ru/product/beelink-mini-s12-pro/",
+      "gate": "Карточка: указано 46; НДС включён. Гарантия и доставка в РБ неизвестны."
+    },
+    {
+      "id": "B07",
+      "item": "TP-Link EAP610",
+      "class": "Основное оборудование",
+      "requiredQty": 2,
+      "firstBenchQty": null,
+      "knownFullBYN": 971.44,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Справочная карточка O02 Masterdom; Беларусь",
+      "url": "https://masterdom.by/besprovodnaya-tochka-dostupa/tp-link-eap610/",
+      "gate": "485,72 BYN/шт. действует только при 100% оплате сразу одним чеком. Продавец заявляет наличие и доставку по Беларуси; количество 2, ревизия и PoE-комплект не подтверждены. Перед заказом подтвердить точные условия."
+    },
+    {
+      "id": "B33",
+      "item": "Raspberry Pi 4 Model B 4GB",
+      "class": "Основное оборудование",
+      "requiredQty": 1,
+      "firstBenchQty": 1,
+      "knownFullBYN": 495,
+      "knownBenchBYN": 495,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Текущая карточка O03; РБ",
+      "url": "https://unitsolutions.by/sistemy-upravleniya/5671-mikrokompyuter-raspberry-pi-4-model-b.html",
+      "gate": "Наличие, срок поставки и гарантия неизвестны."
+    },
+    {
+      "id": "B02",
+      "item": "Home Assistant Connect ZBT-2",
+      "class": "Основное оборудование",
+      "requiredQty": 1,
+      "firstBenchQty": 1,
+      "knownFullBYN": 147.4802,
+      "knownBenchBYN": 147.4802,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "O04 — справочный ориентир; продавец Seeed Studio",
+      "url": "https://www.seeedstudio.com/Home-Assistant-Connect-ZBT-2-p-6573.html",
+      "gate": "Квартира и конечная доставка — Беларусь, подтверждено владельцем. Условия Seeed по экспортному соответствию блокируют поставки в Беларусь и Россию, включая конечное использование и реэкспорт; это правило конкретного поставщика, не общее правовое заключение; обход не предлагается. O04 остаётся только справочной ценой; доступный маршрут не подтверждён. Для всех поставок из Китая доставка, посредник, таможня и прочие дополнительные расходы исключены из сметы по указанию владельца; это не нулевые расходы. Доставка по другим регионам, наличие и гарантия не подтверждены."
+    },
+    {
+      "id": "B03",
+      "item": "Home Assistant Voice Preview Edition",
+      "class": "Основное оборудование",
+      "requiredQty": 3,
+      "firstBenchQty": 1,
+      "knownFullBYN": 532.7346,
+      "knownBenchBYN": 177.57819999999998,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "O05 — справочный ориентир; продавец Seeed Studio",
+      "url": "https://www.seeedstudio.com/Home-Assistant-Voice-p-6998.html",
+      "gate": "Квартира и конечная доставка — Беларусь, подтверждено владельцем. Условия Seeed по экспортному соответствию блокируют поставки в Беларусь и Россию, включая конечное использование и реэкспорт; это правило конкретного поставщика, не общее правовое заключение; обход не предлагается. O05 остаётся только справочной ценой; доступный маршрут не подтверждён. Для всех поставок из Китая доставка, посредник, таможня и прочие дополнительные расходы исключены из сметы по указанию владельца; это не нулевые расходы. Доставка по другим регионам, наличие и гарантия не подтверждены. В комплект Voice PE не входят блок питания и кабель; B04, количество 3, уже учтён — повторная покупка не нужна."
+    },
+    {
+      "id": "B13",
+      "item": "Shelly Pro4PM SPSW-104PE16EU",
+      "class": "Основное оборудование",
+      "requiredQty": 4,
+      "firstBenchQty": 1,
+      "knownFullBYN": 1597.545,
+      "knownBenchBYN": 399.38625,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Текущая карточка O06; Международный ЕС",
+      "url": "https://www.shelly.com/products/shelly-pro-4pm",
+      "gate": "Способ доставки уточняется; налоги и доставка при оформлении заказа неизвестны."
+    },
+    {
+      "id": "B14",
+      "item": "Shelly ProDimmer2PM SPDM-002PE01EU",
+      "class": "Основное оборудование",
+      "requiredQty": 2,
+      "firstBenchQty": null,
+      "knownFullBYN": 581.9725000000001,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Текущая карточка O07; Международный ЕС",
+      "url": "https://www.shelly.com/products/shelly-pro-dimmer-2pm",
+      "gate": "Доставка в РБ и налоги неизвестны."
+    },
+    {
+      "id": "B15",
+      "item": "Shelly Pro2PM v.1 SPSW-202PE16EU",
+      "class": "Основное оборудование",
+      "requiredQty": 3,
+      "firstBenchQty": null,
+      "knownFullBYN": 1015.2337500000002,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Текущая карточка O08; Международный ЕС",
+      "url": "https://www.shelly.com/products/shelly-pro-2pm",
+      "gate": "Не заменять на устаревшую SPSW-002; двигатель проверяет электрик."
+    },
+    {
+      "id": "B18",
+      "item": "Shelly RC snubber",
+      "class": "Основное оборудование",
+      "requiredQty": 6,
+      "firstBenchQty": null,
+      "knownFullBYN": 58.942499999999995,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Текущая карточка O09; Международный ЕС",
+      "url": "https://www.shelly.com/de/products/rc-snubber",
+      "gate": "По два устройства на привод; окончательную схему проверяет электрик."
+    },
+    {
+      "id": "B19",
+      "item": "Shelly ProEM50 SPEM-002CEBEU50",
+      "class": "Основное оборудование",
+      "requiredQty": 2,
+      "firstBenchQty": null,
+      "knownFullBYN": 690.3725000000001,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Текущая карточка O10; Международный ЕС",
+      "url": "https://www.shelly.com/products/shelly-pro-em-50",
+      "gate": "2×CT 50A входят; фазу и ток необходимо подтвердить на объекте."
+    },
+    {
+      "id": "B20",
+      "item": "SONOFF SNZB-02P 1-pack",
+      "class": "Основное оборудование",
+      "requiredQty": 4,
+      "firstBenchQty": 1,
+      "knownFullBYN": 203.46247999999997,
+      "knownBenchBYN": 50.86561999999999,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Текущая карточка O11; Международный USD",
+      "url": "https://sonoff.tech/products/sonoff-zigbee-temperature-and-humidity-sensor-snzb-02p",
+      "gate": "Налоги и доставка в цену не включены."
+    },
+    {
+      "id": "B21",
+      "item": "SONOFF SNZB-02WD",
+      "class": "Основное оборудование",
+      "requiredQty": 2,
+      "firstBenchQty": null,
+      "knownFullBYN": 119.79003999999999,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Текущая карточка O12; Международный USD",
+      "url": "https://sonoff.tech/products/snzb-02wd-ip65-zigbee-lcd-smart-temperature-humidity-sensor",
+      "gate": "Налоги и доставка в цену не включены."
+    },
+    {
+      "id": "B22",
+      "item": "SONOFF SNZB-03P",
+      "class": "Основное оборудование",
+      "requiredQty": 3,
+      "firstBenchQty": null,
+      "knownFullBYN": 148.9851,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Текущая карточка O13; Международный USD",
+      "url": "https://sonoff.tech/products/sonoff-zigbee-motion-sensor-snzb-03p",
+      "gate": "Налоги и доставка в цену не включены."
+    },
+    {
+      "id": "B23",
+      "item": "SONOFF SNZB-04P 1-pack",
+      "class": "Основное оборудование",
+      "requiredQty": 5,
+      "firstBenchQty": null,
+      "knownFullBYN": 239.27909999999997,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Текущая карточка O14; Международный USD",
+      "url": "https://sonoff.tech/products/sonoff-zigbee-door-window-sensor-snzb-04p",
+      "gate": "Налоги и доставка в цену не включены."
+    },
+    {
+      "id": "B24",
+      "item": "SONOFF SNZB-01P 1-pack",
+      "class": "Основное оборудование",
+      "requiredQty": 2,
+      "firstBenchQty": null,
+      "knownFullBYN": 101.73123999999999,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Текущая карточка O15; Международный USD",
+      "url": "https://sonoff.tech/products/sonoff-zigbee-wireless-switch-snzb-01p",
+      "gate": "Дополнительные кнопки HA; не базовый свет."
+    },
+    {
+      "id": "B25",
+      "item": "SONOFF S60ZBTPF Type E/F 1-pack",
+      "class": "Основное оборудование",
+      "requiredQty": 2,
+      "firstBenchQty": null,
+      "knownFullBYN": 89.69203999999999,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Текущая карточка O16; Международный USD",
+      "url": "https://sonoff.tech/products/sonoff-iplug-zigbee-smart-plug-s60-series",
+      "gate": "Резервные Zigbee-маршрутизаторы для некритичных потребителей."
+    },
+    {
+      "id": "B31",
+      "item": "PreSonus Eris3.5 2ndGen pair 2777500133",
+      "class": "Основное оборудование",
+      "requiredQty": 1,
+      "firstBenchQty": 1,
+      "knownFullBYN": 300.94990199999995,
+      "knownBenchBYN": 300.94990199999995,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Текущая карточка O17; Международный USD",
+      "url": "https://www.presonus.com/products/eris-35-2nd-gen-pair",
+      "gate": "Пара TRS→RCA и межколоночный кабель включены; региональную вилку проверить."
+    },
+    {
+      "id": "B10",
+      "item": "Synology DS223j",
+      "class": "Основное оборудование",
+      "requiredQty": 1,
+      "firstBenchQty": null,
+      "knownFullBYN": 872.25,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Текущая карточка O18; РБ",
+      "url": "https://time-shop.by/nas/synology/ds223j",
+      "gate": "Код 8.861.713; без дисков. Наличие — по карточке. Бесплатная доставка только по Минску 22.10.2026; по РБ с 23.10 — от 22 BYN. Условия подтвердить; гарантия неизвестна."
+    },
+    {
+      "id": "B11",
+      "item": "WD Red Plus 4TB WD40EFPX ID293604",
+      "class": "Основное оборудование",
+      "requiredQty": 2,
+      "firstBenchQty": null,
+      "knownFullBYN": 2140.54,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Текущая карточка O19; РБ",
+      "url": "https://itguide.by/product/zhestkiy-disk-wd-red-plus-4tb-wd40efpx/",
+      "gate": "Цена наличными. Карта/рассрочка 1 123,78 BYN не используется; цена перевода неизвестна. Указана доставка 2–3 дня, физическое наличие не подтверждено. Гарантия 12 мес — заявление продавца. Подтвердить продавца, подлинность и совместимость по datasheet: карточка содержит конфликтные метаданные Shenzhen/4Kn."
+    },
+    {
+      "id": "B04",
+      "item": "Блоки питания USB-C 5 В / 2 А для Voice PE и кабели",
+      "class": "Обязательная позиция — цена неизвестна",
+      "requiredQty": 3,
+      "firstBenchQty": 1,
+      "knownFullBYN": null,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": 90,
+      "allowanceHighBYN": 180,
+      "benchAllowanceLowBYN": 30,
+      "benchAllowanceHighBYN": 60,
+      "source": "Аналитический диапазон всей строки; цены продавца нет",
+      "url": "",
+      "gate": "Voice PE комплект не включает БП и кабель; точные SKU/вилка/длина и наличие уже купленных комплектов требуют проверки. B04 qty3 уже учтено; не добавлять дубли."
+    },
+    {
+      "id": "B05",
+      "item": "TP-Link ER605, hardware v2.20",
+      "class": "Обязательная позиция — цена неизвестна",
+      "requiredQty": 1,
+      "firstBenchQty": null,
+      "knownFullBYN": null,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": 250,
+      "allowanceHighBYN": 450,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Аналитический диапазон всей строки; цены продавца нет",
+      "url": "",
+      "gate": "Проверить V2.20 и локальное управление без аккаунта."
+    },
+    {
+      "id": "B06",
+      "item": "Omada SG3428 non-TL, 24 порта",
+      "class": "Основное оборудование",
+      "requiredQty": 1,
+      "firstBenchQty": null,
+      "knownFullBYN": 647.076902,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "O21 — официальная карточка США, USD214.99 sale; международный справочный ориентир, не предложение РФ/РБ/Китая",
+      "url": "https://store.omadanetworks.com/collections/sitewide-deals/products/omada-24-port-gigabit-l2-managed-switch-with-4-sfp-slots",
+      "gate": "SG3428 без TL-24RJ45: 19 портов занято, 5 резерв; не заменять EOL TL-SG3428. O21 — официальная распродажа магазина США, только международный справочный ориентир, не предложение РФ/РБ/КНР. Цена основана на USD 214.99 sale, regular USD 239.99 не используется; доставка, налоги и гарантия в РБ неизвестны."
+    },
+    {
+      "id": "B08",
+      "item": "TP-Link TL-POE160S, 2 шт.",
+      "class": "Основное оборудование — справочный ориентир",
+      "requiredQty": 2,
+      "firstBenchQty": null,
+      "knownFullBYN": 203.7780888,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Справочный ориентир O22; Tinko, РФ, под заказ; цена по карточке серии",
+      "url": "https://www.tinko.ru/catalog/product/298553/",
+      "gate": "2 827,11 RUB за 1 шт.; ревизия оборудования, региональный комплект, НДС и конечная доставка неизвестны. REFERENCE, не твёрдый заказ. Проверить комплект питания EAP610."
+    },
+    {
+      "id": "B09",
+      "item": "APC BR900MI, 230 V / 900 VA / 540 W",
+      "class": "Основное оборудование",
+      "requiredQty": 1,
+      "firstBenchQty": null,
+      "knownFullBYN": 1540.09732,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Справочная цена O25 KNS; прежнее HPE-свидетельство 25 696 RUB сохранено только как CANDIDATE в аудите",
+      "url": "https://www.knskazan.ru/product/ibp-apc-br900mi/",
+      "gate": "42 733 RUB с НДС по оговорке продавца для юрлиц; ставка не указана. Комплект аксессуаров не расписан, статус «Ожидается», BY-маршрут unknown. Сохранить проверку нагрузки и времени работы T-U01; 60 минут не обещаются."
+    },
+    {
+      "id": "B12",
+      "item": "Seagate STKP8000400, USB 8 TB",
+      "class": "Основное оборудование",
+      "requiredQty": 1,
+      "firstBenchQty": 1,
+      "knownFullBYN": 1532.25,
+      "knownBenchBYN": 1532.25,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Текущая карточка O20; BYN для физлиц, под заказ",
+      "url": "https://www.teono.by/externalhdd/seagate/stkp8000400",
+      "gate": "O20, TEONO, только для физлиц; под заказ. На странице указана бесплатная доставка: Минск 22.10/РБ 23.10. Фактические наличие, срок и гарантия неизвестны. Хранить отдельную версионную backup-копию и периодически физически отключать диск. Доставка и налоги не включены в расчёт."
+    },
+    {
+      "id": "B16",
+      "item": "Somfy Glydea 35e WT, EU, 1,5 m, ref. 1002464",
+      "class": "Обязательная позиция — цена неизвестна",
+      "requiredQty": 3,
+      "firstBenchQty": null,
+      "knownFullBYN": null,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": 3000,
+      "allowanceHighBYN": 5400,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Аналитический диапазон всей строки; цены продавца нет",
+      "url": "",
+      "gate": "R01/R02/R05; ref. 1002464 и 1,5 м — не длина рельса; один control point на один мотор. Электрик проверяет направление, блокировку, стоп и ручной ход. Не выдавать сочетание привода и контроллера разных производителей за сертифицированную пару."
+    },
+    {
+      "id": "B17",
+      "item": "Рельсы Somfy на заказ, по обмеру",
+      "class": "Обязательная позиция — цена неизвестна",
+      "requiredQty": 3,
+      "firstBenchQty": null,
+      "knownFullBYN": null,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": 1200,
+      "allowanceHighBYN": 3600,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Аналитический диапазон всей строки; цены продавца нет",
+      "url": "",
+      "gate": "СТОП до обмера окна, ткани и длины."
+    },
+    {
+      "id": "B26",
+      "item": "S&P SILENT-100 CHZ",
+      "class": "Обязательная позиция — цена неизвестна",
+      "requiredQty": 2,
+      "firstBenchQty": null,
+      "knownFullBYN": null,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": 700,
+      "allowanceHighBYN": 1400,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Аналитический диапазон всей строки; цены продавца нет",
+      "url": "",
+      "gate": "СТОП: канал/переток/зоны; R07 — заводская обслуживаемая панель, не самодельный экран."
+    },
+    {
+      "id": "B27",
+      "item": "GIDROLOCK Premium, АКБ, art. 20110111",
+      "class": "Основное оборудование",
+      "requiredQty": 1,
+      "firstBenchQty": null,
+      "knownFullBYN": 374.4556,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Справочная цена O26 Gidrolock-prof; АКБ и артикул 20110111 указаны",
+      "url": "https://gidrolock-prof.ru/bloki-upravleniya-gidrolock/bu-premium-s-akb.html",
+      "gate": "Продавец заявляет наличие, это не резерв; налог и маршрут в Беларусь неизвестны. СТОП SH-009; автономная батарея/сигнал; HA только через документированный изолированный контакт."
+    },
+    {
+      "id": "B28",
+      "item": "GIDROLOCK Professional, DC 12 V",
+      "class": "Обязательная позиция — цена неизвестна",
+      "requiredQty": 2,
+      "firstBenchQty": null,
+      "knownFullBYN": null,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": 900,
+      "allowanceHighBYN": 2000,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Аналитический диапазон всей строки; цены продавца нет",
+      "url": "",
+      "gate": "Диаметр неизвестен; СТОП до обмера труб и проекта."
+    },
+    {
+      "id": "B29",
+      "item": "GIDROLOCK WSP+, проводные датчики (сметно 8)",
+      "class": "Обязательная позиция — цена неизвестна",
+      "requiredQty": 8,
+      "firstBenchQty": null,
+      "knownFullBYN": null,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": 500,
+      "allowanceHighBYN": 1200,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Аналитический диапазон всей строки; цены продавца нет",
+      "url": "",
+      "gate": "Сметно 8; не подтверждает покрытие L-01…L-08; водный реестр не заполнен."
+    },
+    {
+      "id": "B30",
+      "item": "Ei650, автономные дымовые извещатели",
+      "class": "Основное оборудование — справочный ориентир",
+      "requiredQty": 4,
+      "firstBenchQty": null,
+      "knownFullBYN": 270.8645,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Справочный ориентир O23; Германия; цена включает 19% НДС",
+      "url": "https://www.obi.de/p/5693585/ei-electronics-rauchmelder-ei650-mit-10-jahres-batterie",
+      "gate": "19,99 EUR за 1 шт; комплект с батареей, винтами и дюбелями. Немецкая доставка 4,95 EUR не включена и не является конечной поставкой; наличие 4 шт unknown. СТОП до пожарного проекта и расстановки. Reference, не твёрдый заказ."
+    },
+    {
+      "id": "B34",
+      "item": "Официальный блок питания Raspberry Pi 4 EU USB-C 5.1 V / 3 A",
+      "class": "Основное оборудование",
+      "requiredQty": 1,
+      "firstBenchQty": 1,
+      "knownFullBYN": 23.37375,
+      "knownBenchBYN": 23.37375,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Справочная NET-цена O27 Farnell Belgium; Manufacturer PN SC0444, ordercode 3106941",
+      "url": "https://be.farnell.com/en-BE/raspberry-pi/sc0213/rpi-power-supply-usb-c-5-1v-3a/dp/3106941",
+      "gate": "6,90 EUR без НДС; дополнительный НДС и цена с НДС неизвестны, не ноль. Маршрут в Беларусь неизвестен; использовать SC0444, не заменять другим артикулом."
+    },
+    {
+      "id": "B35",
+      "item": "Корпус Flirc для Pi 4",
+      "class": "Основное оборудование",
+      "requiredQty": 1,
+      "firstBenchQty": 1,
+      "knownFullBYN": 76.8285,
+      "knownBenchBYN": 76.8285,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Справочная gross-цена O28 MONRASPBERRY; FLIRC4 для Pi4",
+      "url": "https://monraspberry.com/en/product/flirc-box-for-raspberry-pi-4/",
+      "gate": "22,68 EUR с НДС; в комплекте термопрокладка, винты и ножки. Доставка и региональная гарантия в Беларусь неизвестны; включённый НДС не вычитать."
+    },
+    {
+      "id": "B36",
+      "item": "Samsung PRO Endurance 64 GB microSD",
+      "class": "Основное оборудование",
+      "requiredQty": 1,
+      "firstBenchQty": 1,
+      "knownFullBYN": 53.3233424,
+      "knownBenchBYN": 53.3233424,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "O30 — ONECOM, артикул 71785; наличная цена точного MB-MJ64KA/EU с SD-адаптером; НДС, подлинность и цена производителя неизвестны",
+      "url": "https://onecom.ru/catalog/?ELEMENT_ID=351419&SECTION_ID=64639",
+      "gate": "Продавец заявляет наличие и 12-месячную гарантию; фактический остаток не подтверждён, перед приездом подтвердить у менеджера; резерва нет."
+    },
+    {
+      "id": "B37",
+      "item": "Кабель micro-HDMI → HDMI",
+      "class": "Обязательная позиция — цена неизвестна",
+      "requiredQty": 1,
+      "firstBenchQty": 1,
+      "knownFullBYN": null,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": 25,
+      "allowanceHighBYN": 60,
+      "benchAllowanceLowBYN": 25,
+      "benchAllowanceHighBYN": 60,
+      "source": "Аналитический диапазон всей строки; цены продавца нет",
+      "url": "",
+      "gate": "Длину выбрать после обмера и определения модели ТВ."
+    },
+    {
+      "id": "B38",
+      "item": "Патч-кабель Cat 6 для ТВ",
+      "class": "Обязательная позиция — цена неизвестна",
+      "requiredQty": 1,
+      "firstBenchQty": 1,
+      "knownFullBYN": null,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": 10,
+      "allowanceHighBYN": 35,
+      "benchAllowanceLowBYN": 10,
+      "benchAllowanceHighBYN": 35,
+      "source": "Аналитический диапазон всей строки; цены продавца нет",
+      "url": "",
+      "gate": "Не дублировать A_LOWV."
+    },
+    {
+      "id": "B39",
+      "item": "Atlas Design ATN000115, механизм кнопки без фиксации",
+      "class": "Основное оборудование",
+      "requiredQty": 30,
+      "firstBenchQty": null,
+      "knownFullBYN": 348.892428,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Опубликованная цена производителя Systeme — 322,69 RUB за единицу; НДС, наличие 30 шт. и цена для партии неизвестны, не твёрдый/оптовый заказ. Минимум розничной продажи 1 шт. — не заводской MOQ.",
+      "url": "https://systeme.ru/product/ATN000115",
+      "gate": "30 механизмов = 16+8+6 контактов; не 30 рамок, A_FRAME отдельно. Проверить наличие 30 шт., цену для партии и НДС до заказа; проверить NO по datasheet, электрик/раскладка — gate."
+    },
+    {
+      "id": "B44",
+      "item": "Timeguard FBT4N — локальный boost-таймер полотенцесушителя",
+      "class": "Основное оборудование — справочный ориентир",
+      "requiredQty": 1,
+      "firstBenchQty": null,
+      "knownFullBYN": 133.395444,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Справочный ориентир O24; цена с НДС, Великобритания",
+      "url": "https://westbasedirect.com/products/fbt4n",
+      "gate": "33,24 GBP с НДС; отправка за 2–3 дня не является конечной доставкой. Не использовать цену без НДС 27,70, рекомендованную цену 37,91 или соседнюю модель TGBT4N за 32,71. СТОП: IP20 — вне R07 и мокрой зоны; коробка BS ≥25 мм; квалифицированному специалисту подтвердить применимость в Беларуси, точную модель, нагрузку, штатную защиту и состояние OFF после возврата питания. Физически не проверялось. REFERENCE, не твёрдый заказ."
+    },
+    {
+      "id": "B40",
+      "item": "Shelly Pro 4PM SPSW-104PE16EU",
+      "class": "Запас — отдельной строкой",
+      "requiredQty": 1,
+      "firstBenchQty": null,
+      "knownFullBYN": 399.38625,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Запас по O06; источник: Международный ЕС",
+      "url": "https://www.shelly.com/products/shelly-pro-4pm",
+      "gate": "В полной сумме один запас; не часть пилота."
+    },
+    {
+      "id": "B41",
+      "item": "SONOFF SNZB-02P",
+      "class": "Запас — отдельной строкой",
+      "requiredQty": 1,
+      "firstBenchQty": null,
+      "knownFullBYN": 50.86561999999999,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Запас по O11; источник: Международный USD",
+      "url": "https://sonoff.tech/products/sonoff-zigbee-temperature-and-humidity-sensor-snzb-02p",
+      "gate": "В полной сумме один запас; не часть пилота."
+    },
+    {
+      "id": "B32",
+      "item": "TRS3.5mm→2RCAкабель",
+      "includedWith": "B31",
+      "class": "В комплекте, повторно не покупать",
+      "requiredQty": 0,
+      "firstBenchQty": null,
+      "knownFullBYN": null,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Комплектный кабель; purchaseQty=0",
+      "url": "",
+      "gate": "Цена не неизвестна: позиция включена с B31."
+    },
+    {
+      "id": "X_CO",
+      "item": "Ei208 CO, датчик угарного газа (условно исключён)",
+      "class": "Исключено из стоимости",
+      "requiredQty": null,
+      "firstBenchQty": null,
+      "knownFullBYN": null,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Не включено",
+      "url": "",
+      "gate": "Применимостьисточникагоренияunknown, не включатьценой0"
+    },
+    {
+      "id": "X_LOCK",
+      "item": "Philips DDL7025HS, умный замок (исключён)",
+      "class": "Исключено из стоимости",
+      "requiredQty": null,
+      "firstBenchQty": null,
+      "knownFullBYN": null,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": null,
+      "allowanceHighBYN": null,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Не включено",
+      "url": "",
+      "gate": "Умныйзамокне допущен; сохраняетсямеханическийключ/свободныйвыход"
+    },
+    {
+      "id": "A_FRAME",
+      "item": "Рамки и накладки для B39",
+      "class": "Аналитическая оценка — не предложение",
+      "requiredQty": null,
+      "firstBenchQty": null,
+      "knownFullBYN": null,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": 300,
+      "allowanceHighBYN": 800,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Раскладка/цвет/механизмыfieldgate",
+      "url": "",
+      "gate": "Оценка по всей строке; закрыть gate до решения."
+    },
+    {
+      "id": "A_LOWV",
+      "item": "Слаботочный шкаф, patch panel, медный Cat 6, терминация и маркировка",
+      "class": "Аналитическая оценка — не предложение",
+      "requiredQty": null,
+      "firstBenchQty": null,
+      "knownFullBYN": null,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": 3500,
+      "allowanceHighBYN": 8000,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Пообмерам,неповторятьTVpatchB38",
+      "url": "",
+      "gate": "Оценка по всей строке; закрыть gate до решения."
+    },
+    {
+      "id": "A_POWER",
+      "item": "Силовой щит, защита, кабели, LED-драйверы, селектор R07 авто-выкл/вкл",
+      "class": "Аналитическая оценка — не предложение",
+      "requiredQty": null,
+      "firstBenchQty": null,
+      "knownFullBYN": null,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": 2000,
+      "allowanceHighBYN": 6000,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Поэлектропроекту; селекторНЕB39моментальнаякнопка; светильники/сушительсамиприборыотделкапроекта",
+      "url": "",
+      "gate": "Оценка по всей строке; закрыть gate до решения."
+    },
+    {
+      "id": "A_LABOR",
+      "item": "Проектирование, электрик, сантехник, сеть, наладка и испытания",
+      "class": "Аналитическая оценка — не предложение",
+      "requiredQty": null,
+      "firstBenchQty": null,
+      "knownFullBYN": null,
+      "knownBenchBYN": null,
+      "allowanceLowBYN": 6000,
+      "allowanceHighBYN": 16000,
+      "benchAllowanceLowBYN": null,
+      "benchAllowanceHighBYN": null,
+      "source": "Предложенийподрядчиканет",
+      "url": "",
+      "gate": "Оценка по всей строке; закрыть gate до решения."
+    }
+  ],
+  "rooms": [
+    {
+      "id": "R01",
+      "room": "Кухня-гостиная",
+      "functions": "Голос; работа 1; готовка; ужин; кино; музыка; протечка; учёт",
+      "relayQty": 3,
+      "dimmerQty": 2,
+      "bom": "B20×1,B23×1,B16×1,B03×1,B31×1",
+      "physicalFallback": "Ручной режим и безопасное поведение сверять с SH-006; координаты / I/O-ID не назначены до обмера.",
+      "source": "SH-006 R-01; G-R0/G-R1"
+    },
+    {
+      "id": "R02",
+      "room": "Детская",
+      "functions": "PTT; свет; ночь; сон ребёнка; температура; шторы",
+      "relayQty": 1,
+      "dimmerQty": 1,
+      "bom": "B20×1,B23×1,B16×1",
+      "physicalFallback": "Ручной режим и безопасное поведение сверять с SH-006; координаты / I/O-ID не назначены до обмера.",
+      "source": "SH-006 R-02; G-R0/G-R1"
+    },
+    {
+      "id": "R03",
+      "room": "Прихожая",
+      "functions": "Голос; «Пришли / Ушли»; контакт двери; сервис",
+      "relayQty": 2,
+      "dimmerQty": 0,
+      "bom": "B23×1,B24×1,B03×1",
+      "physicalFallback": "Ручной режим и безопасное поведение сверять с SH-006; координаты / I/O-ID не назначены до обмера.",
+      "source": "SH-006 R-03; G-R0/G-R1"
+    },
+    {
+      "id": "R04",
+      "room": "Коридор",
+      "functions": "PTT; отдельная низкая ночная группа; движение; уборка; Wi-Fi",
+      "relayQty": 2,
+      "dimmerQty": 0,
+      "bom": "B22×1,B24×1",
+      "physicalFallback": "Ручной режим и безопасное поведение сверять с SH-006; координаты / I/O-ID не назначены до обмера.",
+      "source": "SH-006 R-04; G-R0/G-R1"
+    },
+    {
+      "id": "R05",
+      "room": "Спальня",
+      "functions": "Голос; сон; работа 2; шторы; ночь",
+      "relayQty": 1,
+      "dimmerQty": 1,
+      "bom": "B20×1,B23×1,B16×1,B03×1",
+      "physicalFallback": "Ручной режим и безопасное поведение сверять с SH-006; координаты / I/O-ID не назначены до обмера.",
+      "source": "SH-006 R-05; G-R0/G-R1"
+    },
+    {
+      "id": "R06",
+      "room": "Ванная",
+      "functions": "PTT; свет; наблюдение влажности; независимая вентиляция; протечка",
+      "relayQty": 2,
+      "dimmerQty": 0,
+      "bom": "B21×1,B26×1",
+      "physicalFallback": "Ручной режим и безопасное поведение сверять с SH-006; координаты / I/O-ID не назначены до обмера.",
+      "source": "SH-006 R-06; G-R0/G-R1"
+    },
+    {
+      "id": "R07",
+      "room": "WC",
+      "functions": "PTT; потолок / зеркало / нижние 24 В; отдельный селектор авто-выкл/вкл; boost; вентиляция; протечка",
+      "relayQty": 3,
+      "dimmerQty": 0,
+      "bom": "B21×1,B22×1,B26×1,B44×1",
+      "physicalFallback": "Ручной режим и безопасное поведение сверять с SH-006; координаты / I/O-ID не назначены до обмера.",
+      "source": "SH-006 R-07; G-R0/G-R1"
+    },
+    {
+      "id": "R08",
+      "room": "Гардеробная",
+      "functions": "PTT; ручной / вспомогательный свет от движения; температура; обычная розетка",
+      "relayQty": 1,
+      "dimmerQty": 0,
+      "bom": "B20×1,B22×1",
+      "physicalFallback": "Ручной режим и безопасное поведение сверять с SH-006; координаты / I/O-ID не назначены до обмера.",
+      "source": "SH-006 R-08; G-R0/G-R1"
+    },
+    {
+      "id": "R09",
+      "room": "Терраса",
+      "functions": "PTT; ручной свет; контакт; без штор (один контур)",
+      "relayQty": 1,
+      "dimmerQty": 0,
+      "bom": "B23×1",
+      "physicalFallback": "Ручной режим и безопасное поведение сверять с SH-006; координаты / I/O-ID не назначены до обмера.",
+      "source": "SH-006 R-09; G-R0/G-R1"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "SC-R01-LGT",
+      "scenarioId": "SC-R01-LGT",
+      "room": "R01 — Кухня-гостиная",
+      "name": "Основной свет",
+      "triggerCondition": "Физические кнопки; Assist — по желанию.",
+      "action": "SW01–SW03 управляют тремя группами; DIM01–DIM02 — двумя группами; пресеты настраиваются после пилота.",
+      "failureBehavior": "При HA/LAN off прямые кнопки сохраняют основной свет; HA не требуется.",
+      "functionalIO": "IO-LGT-SW01–SW03; IO-LGT-DIM01–DIM02",
+      "bomIds": [
+        "B13",
+        "B14",
+        "B39"
+      ],
+      "testIds": [
+        "T-01",
+        "T-02",
+        "T-07"
+      ],
+      "gateStatus": "G1: сверить группы, нагрузки и физический режим; координаты не назначены.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R01-WORK",
+      "scenarioId": "SC-R01-WORK",
+      "room": "R01 — Кухня-гостиная",
+      "name": "Рабочее место 1",
+      "triggerCondition": "Локальная панель управления / Assist.",
+      "action": "Рабочая группа DIM02 = 100%; сцену запускать с панели или Assist, без отдельной физической кнопки сцены. Не управлять питанием ПК.",
+      "failureBehavior": "Обычная физическая кнопка управляет своей группой вручную через B39; запуск сценария зависит от HA.",
+      "functionalIO": "IO-LGT-DIM02",
+      "bomIds": [
+        "B14",
+        "B39"
+      ],
+      "testIds": [
+        "T-07",
+        "T-10"
+      ],
+      "gateStatus": "Согласовать уровень после пилота; обычные розетки остаются под питанием.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R01-MEAL",
+      "scenarioId": "SC-R01-MEAL",
+      "room": "R01 — Кухня-гостиная",
+      "name": "Готовка / ужин",
+      "triggerCondition": "Локальная панель управления / Assist.",
+      "action": "Готовка: SW01 ON. Ужин: SW02 ON и DIM01 = 20%; сцену запускать с панели или Assist, без отдельной физической кнопки. Бытовые приборы не коммутировать.",
+      "failureBehavior": "Обычные физические кнопки включают соответствующие группы вручную через B39; сценарий не переключает силовые розетки приборов и зависит от HA.",
+      "functionalIO": "IO-LGT-SW01–SW02; IO-LGT-DIM01",
+      "bomIds": [
+        "B13",
+        "B14",
+        "B39"
+      ],
+      "testIds": [
+        "T-07",
+        "T-10"
+      ],
+      "gateStatus": "Предустановки уточнить после пилота; схема нагрузок — G1.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R01-CINEMA",
+      "scenarioId": "SC-R01-CINEMA",
+      "room": "R01 — Кухня-гостиная",
+      "name": "Кино",
+      "triggerCondition": "Локальная панель управления / Assist; TV pilot завершён.",
+      "action": "DIM01 = 10%; сцену запускать с панели или Assist, без отдельной физической кнопки. Одна команда Kodi CEC только после проверки TV pilot; если неизвестно — штатный пульт TV.",
+      "failureBehavior": "Обычная физическая кнопка управляет группой вручную через B39; запуск сценария зависит от HA. CEC не подтверждён до пилота.",
+      "functionalIO": "IO-LGT-DIM01; IO-TV-CEC (только после пилота)",
+      "bomIds": [
+        "B14",
+        "B33",
+        "B34",
+        "B35",
+        "B36",
+        "B37",
+        "B38",
+        "B39"
+      ],
+      "testIds": [
+        "T-02",
+        "T-07"
+      ],
+      "gateStatus": "CEC/HDMI совместимость — gate пилота; preset tuneable.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R01-MUSIC",
+      "scenarioId": "SC-R01-MUSIC",
+      "room": "R01 — Кухня-гостиная",
+      "name": "Музыка",
+      "triggerCondition": "Локальная панель управления / Assist.",
+      "action": "Локальный именованный playlist: play/pause/next; без online account. Громкость и питание Eris доступны вручную.",
+      "failureBehavior": "При отказе HAOS/Music Assistant воспроизведение недоступно до восстановления сервиса; у колонок нет автономного NAS-плеера. Ручные громкость/выключение доступны. LAN/NAS нужны для медиатеки.",
+      "functionalIO": "IO-MEDIA-R01",
+      "bomIds": [
+        "B01",
+        "B07",
+        "B10",
+        "B11",
+        "B31",
+        "B32"
+      ],
+      "testIds": [
+        "T-02",
+        "T-V04"
+      ],
+      "gateStatus": "Проверить local media, физические громкость/выключение и восстановление сервиса; не обещать online service.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R01-CUR",
+      "scenarioId": "SC-R01-CUR",
+      "room": "R01 — Кухня-гостиная",
+      "name": "Шторы",
+      "triggerCondition": "Локальное направление/stop; Assist только после механического пилота.",
+      "action": "Штора open/close/stop с interlock; при HA off работают локальные входы; обесточенный ручной путь — по тесту Somfy.",
+      "failureBehavior": "При отказе HA — local inputs; manual operation при снятии питания проверяется по Somfy, не предполагается.",
+      "functionalIO": "IO-CUR-R01",
+      "bomIds": [
+        "B15",
+        "B16",
+        "B17",
+        "B18",
+        "B39"
+      ],
+      "testIds": [
+        "T-01",
+        "T-04",
+        "T-07"
+      ],
+      "gateStatus": "Обмеры/механический образец и направление до серии; физический тест не проводился.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R01-LEAK",
+      "scenarioId": "SC-R01-LEAK",
+      "room": "R01 — Кухня-гостиная",
+      "name": "Протечка",
+      "triggerCondition": "Проводной датчик/контур протечки.",
+      "action": "Независимое закрытие клапана и локальный сигнал; повторное открытие — только человеком, никогда не командой HA.",
+      "failureBehavior": "Локальная цепь должна закрыть клапан без HA/WAN; точное покрытие неизвестно до SH-009 L-ID map.",
+      "functionalIO": "IO-WAT-REESTR (зона/датчик по SH-009 L-ID)",
+      "bomIds": [
+        "B27",
+        "B28",
+        "B29"
+      ],
+      "testIds": [
+        "T-L01",
+        "T-05",
+        "T-N01"
+      ],
+      "gateStatus": "Закрыть SH-009 coverage mapping до закрытия конструкций; неизвестное не считать защищённым.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R01-ENE",
+      "scenarioId": "SC-R01-ENE",
+      "room": "R01 — Кухня-гостиная",
+      "name": "Учёт энергии",
+      "triggerCondition": "Локальный энергосчётчик; single-phase / ≤ CT gate.",
+      "action": "4 CT-канала только read-only: ввод, плита, духовка, посудомоечная машина; без исполнительных команд.",
+      "failureBehavior": "При HA/LAN off физическая безопасность не зависит от учётных данных; пропавшая сущность — unavailable, не ноль.",
+      "functionalIO": "IO-ENE-CT01…CT04 (функциональные входы, не terminal map)",
+      "bomIds": [
+        "B19"
+      ],
+      "testIds": [
+        "T-ENE01"
+      ],
+      "gateStatus": "Проверить однофазность/предел CT и 4 канала по эталону; доступ/место — G1.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R01-TH",
+      "scenarioId": "SC-R01-TH",
+      "room": "R01 — Кухня-гостиная",
+      "name": "Температура / влажность",
+      "triggerCondition": "Периодическое локальное измерение.",
+      "action": "Показывать T/RH; не выдавать команду отоплению.",
+      "failureBehavior": "При потере датчика/связи значение unavailable, не ноль; отопление не переключается.",
+      "functionalIO": "IO-THR-R01",
+      "bomIds": [
+        "B20"
+      ],
+      "testIds": [
+        "T-02",
+        "T-03"
+      ],
+      "gateStatus": "Проверить размещение и доступность после пилота; физический тест не проводился.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R02-LGT",
+      "scenarioId": "SC-R02-LGT",
+      "room": "R02 — Детская",
+      "name": "Основной свет",
+      "triggerCondition": "Физические кнопки; Assist/PTT по решению семьи.",
+      "action": "SW04 и DIM03 управляют светом; сцены не заменяют прямую кнопку.",
+      "failureBehavior": "При HA/LAN off прямой свет работает; ребёнок не остаётся без физического света.",
+      "functionalIO": "IO-LGT-SW04; IO-LGT-DIM03",
+      "bomIds": [
+        "B13",
+        "B14",
+        "B39"
+      ],
+      "testIds": [
+        "T-01",
+        "T-07"
+      ],
+      "gateStatus": "G1: нагрузка/группа и доступность кнопки; уровень после пилота.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R02-NIGHT",
+      "scenarioId": "SC-R02-NIGHT",
+      "room": "R02 — Детская",
+      "name": "Ночной свет",
+      "triggerCondition": "Только явное действие взрослого.",
+      "action": "DIM03 = 10%; не включать принудительно яркий свет; сохранить физический override.",
+      "failureBehavior": "Ручная кнопка/override остаются доступными; движение само по себе не повышает яркость.",
+      "functionalIO": "IO-LGT-DIM03",
+      "bomIds": [
+        "B14",
+        "B39"
+      ],
+      "testIds": [
+        "T-04",
+        "T-07"
+      ],
+      "gateStatus": "Уровень согласовать с семьёй после пилота; физический тест не проводился.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R02-SLEEP",
+      "scenarioId": "SC-R02-SLEEP",
+      "room": "R02 — Детская",
+      "name": "Сон ребёнка",
+      "triggerCondition": "Локальная панель управления / Assist взрослого.",
+      "action": "SW04 OFF; DIM03 = 5%; запуск с панели или Assist, без отдельной физической кнопки сцены; не глушить автономные аварийные сигналы.",
+      "failureBehavior": "Обычные физические кнопки через B39 вручную управляют группами; запуск сцены зависит от HA. Smoke/water alarms независимы и не маскируются.",
+      "functionalIO": "IO-LGT-SW04; IO-LGT-DIM03",
+      "bomIds": [
+        "B13",
+        "B14",
+        "B39",
+        "B30"
+      ],
+      "testIds": [
+        "T-10",
+        "T-11"
+      ],
+      "gateStatus": "Уровень света — после семейного теста; аварийные устройства независимы.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R02-TH",
+      "scenarioId": "SC-R02-TH",
+      "room": "R02 — Детская",
+      "name": "Температура / влажность",
+      "triggerCondition": "Периодическое локальное измерение.",
+      "action": "Отображать T/RH без команды отоплению.",
+      "failureBehavior": "При unavailable показывать недоступность, не ноль; никакого heating command.",
+      "functionalIO": "IO-THR-R02",
+      "bomIds": [
+        "B20"
+      ],
+      "testIds": [
+        "T-02",
+        "T-03"
+      ],
+      "gateStatus": "Проверить размещение и поведение при потере датчика.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R02-CUR",
+      "scenarioId": "SC-R02-CUR",
+      "room": "R02 — Детская",
+      "name": "Шторы",
+      "triggerCondition": "Взрослый у локальной кнопки; команда stop доступна.",
+      "action": "Ручное направление/stop; voice exposure выключен, так как satellite не идентифицирует взрослого.",
+      "failureBehavior": "При HA/LAN off local input остаётся; ручной ход при снятом питании проверяется отдельно.",
+      "functionalIO": "IO-CUR-R02",
+      "bomIds": [
+        "B15",
+        "B16",
+        "B17",
+        "B18",
+        "B39"
+      ],
+      "testIds": [
+        "T-01",
+        "T-04",
+        "T-07"
+      ],
+      "gateStatus": "Граница voice exposure и motor pilot обязательны до включения дистанционного управления.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R03-LGT",
+      "scenarioId": "SC-R03-LGT",
+      "room": "R03 — Прихожая",
+      "name": "Основной свет",
+      "triggerCondition": "Физические кнопки; Assist — по желанию.",
+      "action": "SW05–SW06 управляют двумя группами.",
+      "failureBehavior": "Прямые кнопки сохраняют свет без HA/LAN.",
+      "functionalIO": "IO-LGT-SW05–SW06",
+      "bomIds": [
+        "B13",
+        "B39"
+      ],
+      "testIds": [
+        "T-01",
+        "T-07"
+      ],
+      "gateStatus": "G1: подтвердить группы/физические кнопки; координаты не назначены.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R03-ARRIVE",
+      "scenarioId": "SC-R03-ARRIVE",
+      "room": "R03 — Прихожая",
+      "name": "Пришли",
+      "triggerCondition": "Существующая кнопка B24: короткое нажатие / single.",
+      "action": "SW05 (вход) ON и SW07 (коридор) ON; дверь не отпирается. Сцену запускает существующая кнопка.",
+      "failureBehavior": "Сценовая команда зависит от HA/LAN; обычные кнопки B39 сохраняют ручное управление группами. Никаких команд замка.",
+      "functionalIO": "IO-BTN-R03 (conditional HA); IO-LGT-SW05,SW07",
+      "bomIds": [
+        "B13",
+        "B24",
+        "B39"
+      ],
+      "testIds": [
+        "T-02",
+        "T-10"
+      ],
+      "gateStatus": "Проверить границы сцены и отсутствие lock action.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R03-LEAVE",
+      "scenarioId": "SC-R03-LEAVE",
+      "room": "R03 — Прихожая",
+      "name": "Ушли",
+      "triggerCondition": "Существующая кнопка B24: длинное нажатие / long.",
+      "action": "Выключить только утверждённые световые группы; холодильник, сеть, вода, вентиляция, ПК и роутер остаются включены; не запирать дверь. Сцену запускает существующая кнопка.",
+      "failureBehavior": "Сценовая команда зависит от HA/LAN; обычные кнопки B39 сохраняют ручное управление группами. Критичные/постоянные розетки не выключать.",
+      "functionalIO": "IO-BTN-R03 (conditional HA); IO-LGT-SW01…SW16 (только одобренный свет)",
+      "bomIds": [
+        "B13",
+        "B14",
+        "B24",
+        "B39"
+      ],
+      "testIds": [
+        "T-10",
+        "T-11"
+      ],
+      "gateStatus": "Перечень выключаемых групп подтверждает владелец до G1; не охватывать силовые розетки.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R03-DOOR",
+      "scenarioId": "SC-R03-DOOR",
+      "room": "R03 — Прихожая",
+      "name": "Контакт двери",
+      "triggerCondition": "Изменение reed contact.",
+      "action": "Показывать только open/closed status; не отпирает и не является сертифицированной intrusion alarm.",
+      "failureBehavior": "При HA/LAN off контактный статус может быть недоступен; механический доступ и выход не зависят от него.",
+      "functionalIO": "IO-OPEN-R03",
+      "bomIds": [
+        "B23"
+      ],
+      "testIds": [
+        "T-02",
+        "T-08"
+      ],
+      "gateStatus": "Indoor suitability/монтаж проверить до установки; не заявлять сертифицированную охрану.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R04-LGT",
+      "scenarioId": "SC-R04-LGT",
+      "room": "R04 — Коридор",
+      "name": "Основной свет",
+      "triggerCondition": "Физические кнопки.",
+      "action": "SW07 и SW08 — две световые группы.",
+      "failureBehavior": "При HA/LAN off физические кнопки сохраняют основной свет.",
+      "functionalIO": "IO-LGT-SW07–SW08",
+      "bomIds": [
+        "B13",
+        "B39"
+      ],
+      "testIds": [
+        "T-01",
+        "T-07"
+      ],
+      "gateStatus": "G1: подтвердить группу и отдельный низковыходной контур.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R04-NIGHT",
+      "scenarioId": "SC-R04-NIGHT",
+      "room": "R04 — Коридор",
+      "name": "Ночной контур",
+      "triggerCondition": "PIR + ночной интервал 22:00–07:00; B24 double запускает сцену группы по HA.",
+      "action": "Автоматически только SW08 — отдельная группа низкого выхода ON на 90 с с retrigger; ручное ON приоритетно до ручного OFF; PIR — движение, не статичное присутствие. По double на B24 — ночная группа.",
+      "failureBehavior": "Автоматика и сцена B24 зависят от HA; при HA off AUTO недоступен. Обычные B39 сохраняют ручное управление группами. Не формировать команду яркости для реле.",
+      "functionalIO": "IO-BTN-R04 (conditional HA); IO-LGT-SW08; IO-PIR-R04",
+      "bomIds": [
+        "B13",
+        "B22",
+        "B24",
+        "B39"
+      ],
+      "testIds": [
+        "T-04",
+        "T-07"
+      ],
+      "gateStatus": "Отдельная группа низкого выхода; проверить 90 с, повторный запуск, ручной приоритет и B24 double.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R04-CLEAN",
+      "scenarioId": "SC-R04-CLEAN",
+      "room": "R04 — Коридор",
+      "name": "Уборка",
+      "triggerCondition": "Существующая кнопка B24: single запускает сцену через HA.",
+      "action": "SW07 ON; не отключать alarms. Обычная кнопка B39 вручную управляет своей группой.",
+      "failureBehavior": "Сценовая команда зависит от HA/LAN; прямое управление B39 по группам остаётся. Аварийные устройства не меняются.",
+      "functionalIO": "IO-BTN-R04 (conditional HA); IO-LGT-SW07",
+      "bomIds": [
+        "B13",
+        "B24",
+        "B39"
+      ],
+      "testIds": [
+        "T-07",
+        "T-10"
+      ],
+      "gateStatus": "G1: подтвердить состав сцены; alarms независимы.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R05-LGT",
+      "scenarioId": "SC-R05-LGT",
+      "room": "R05 — Спальня",
+      "name": "Основной свет",
+      "triggerCondition": "Физические кнопки; Assist — опционально после проверки.",
+      "action": "SW09 и DIM04 управляют группой и светом рабочего места.",
+      "failureBehavior": "При HA/LAN off физический свет доступен.",
+      "functionalIO": "IO-LGT-SW09; IO-LGT-DIM04",
+      "bomIds": [
+        "B13",
+        "B14",
+        "B39"
+      ],
+      "testIds": [
+        "T-01",
+        "T-07"
+      ],
+      "gateStatus": "G1: подтвердить нагрузки; presets tunable after pilot.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R05-SLEEP",
+      "scenarioId": "SC-R05-SLEEP",
+      "room": "R05 — Спальня",
+      "name": "Сон",
+      "triggerCondition": "Локальная панель управления / Assist.",
+      "action": "SW09 OFF; DIM04 = 5%; запуск с панели или Assist, без отдельной физической кнопки сцены; alarms остаются включены.",
+      "failureBehavior": "Обычные физические кнопки через B39 вручную управляют группами; запуск сцены зависит от HA. Автономные alarms не выключаются.",
+      "functionalIO": "IO-LGT-SW09; IO-LGT-DIM04",
+      "bomIds": [
+        "B13",
+        "B14",
+        "B39",
+        "B30"
+      ],
+      "testIds": [
+        "T-04",
+        "T-10"
+      ],
+      "gateStatus": "Уровень согласовать после пилота; не заглушать тревоги.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R05-WORK",
+      "scenarioId": "SC-R05-WORK",
+      "room": "R05 — Спальня",
+      "name": "Рабочее место 2",
+      "triggerCondition": "Локальная панель управления / Assist.",
+      "action": "DIM04 = 100%; запуск с панели или Assist, без отдельной физической кнопки сцены. Cat6 endpoints не управляются световым сценарием.",
+      "failureBehavior": "Обычная физическая кнопка через B39 вручную управляет группой; запуск сценария зависит от HA. Network power не переключать.",
+      "functionalIO": "IO-LGT-DIM04; IO-NET-R05 (не переключаемое питание)",
+      "bomIds": [
+        "B07",
+        "B14",
+        "B39"
+      ],
+      "testIds": [
+        "T-06",
+        "T-07",
+        "T-10"
+      ],
+      "gateStatus": "Проверить Cat6/network path отдельно; световой preset tuning после пилота.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R05-CUR",
+      "scenarioId": "SC-R05-CUR",
+      "room": "R05 — Спальня",
+      "name": "Шторы",
+      "triggerCondition": "Локальное направление/stop; voice только после motor pilot.",
+      "action": "Локальный привод с direction/stop; voice exposure до механического пилота выключен.",
+      "failureBehavior": "При HA off local input; ручной путь при снятом питании проверяется по Somfy.",
+      "functionalIO": "IO-CUR-R05",
+      "bomIds": [
+        "B15",
+        "B16",
+        "B17",
+        "B18",
+        "B39"
+      ],
+      "testIds": [
+        "T-01",
+        "T-04",
+        "T-07"
+      ],
+      "gateStatus": "Обмер rail/curtain и ручной power-off test до series.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R05-TH",
+      "scenarioId": "SC-R05-TH",
+      "room": "R05 — Спальня",
+      "name": "Температура / влажность",
+      "triggerCondition": "Периодическое локальное измерение.",
+      "action": "Показать T/RH; без команд отоплению.",
+      "failureBehavior": "При недоступности датчика — unavailable, не ноль.",
+      "functionalIO": "IO-THR-R05",
+      "bomIds": [
+        "B20"
+      ],
+      "testIds": [
+        "T-02",
+        "T-03"
+      ],
+      "gateStatus": "Проверить местоположение и потерю связи.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R06-LGT",
+      "scenarioId": "SC-R06-LGT",
+      "room": "R06 — Ванная",
+      "name": "Основной / ночной свет",
+      "triggerCondition": "Физическая кнопка/PTT по согласию.",
+      "action": "SW10 и SW11 управляют основной/ночной группой.",
+      "failureBehavior": "При HA/LAN off физические группы работают; PTT не заменяет кнопку.",
+      "functionalIO": "IO-LGT-SW10–SW11",
+      "bomIds": [
+        "B13",
+        "B39"
+      ],
+      "testIds": [
+        "T-01",
+        "T-04",
+        "T-07"
+      ],
+      "gateStatus": "Учитывать мокрую зону; группы подтвердить по проекту.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R06-VENT",
+      "scenarioId": "SC-R06-VENT",
+      "room": "R06 — Ванная",
+      "name": "Вентиляция",
+      "triggerCondition": "Локальный humidistat + физическое ручное управление.",
+      "action": "SILENT fan независимо от HA; SNZB-02WD display-only; стартовая цель 60% RH/15 min, настройка после airflow test.",
+      "failureBehavior": "При HA/LAN off local humidistat/manual path сохраняют работу; датчик не является исполнительным реле.",
+      "functionalIO": "IO-VENT-R06; IO-THR-R06 (display only)",
+      "bomIds": [
+        "B21",
+        "B26"
+      ],
+      "testIds": [
+        "T-01",
+        "T-02",
+        "T-07"
+      ],
+      "gateStatus": "Wet-zone/shaft/electrical gate; проверить airflow и сервисный доступ до установки.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R06-LEAK",
+      "scenarioId": "SC-R06-LEAK",
+      "room": "R06 — Ванная",
+      "name": "Протечка",
+      "triggerCondition": "Независимый проводной water circuit.",
+      "action": "Закрытие клапана и локальный alarm; открытие повторно только человеком.",
+      "failureBehavior": "Независимость от HA/WAN обязательна; coverage отсутствует до SH-009 L-ID mapping.",
+      "functionalIO": "IO-WAT-REESTR (zone IDs only from SH-009)",
+      "bomIds": [
+        "B27",
+        "B28",
+        "B29"
+      ],
+      "testIds": [
+        "T-L01",
+        "T-05",
+        "T-N01"
+      ],
+      "gateStatus": "Проверить SH-009 zone/detector/valve coverage до закрытия конструкций.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R07-LGT",
+      "scenarioId": "SC-R07-LGT",
+      "room": "R07 — WC",
+      "name": "Свет WC",
+      "triggerCondition": "Физические кнопки.",
+      "action": "SW12 потолок, SW13 зеркало, SW14 только 24 V под тумбой; LED под ванной/WC не устанавливать.",
+      "failureBehavior": "Физический свет не зависит от HA; selector находится в A_POWER, не B39.",
+      "functionalIO": "IO-LGT-SW12–SW14; IO-PWR-R07-SELECTOR",
+      "bomIds": [
+        "A_POWER",
+        "B13",
+        "B39"
+      ],
+      "testIds": [
+        "T-01",
+        "T-07"
+      ],
+      "gateStatus": "Selector отдельно в A_POWER; 24 V driver/load и мокрые зоны — G1.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R07-NIGHT",
+      "scenarioId": "SC-R07-NIGHT",
+      "room": "R07 — WC",
+      "name": "Нижний ночной свет",
+      "triggerCondition": "Физический selector AUTO + PIR + SW12/SW13 OFF + night condition.",
+      "action": "SW14 ON 90 s с retrigger; физические OFF/ON имеют приоритет; PIR означает движение, не static presence.",
+      "failureBehavior": "Manual ON остаётся независимо от HA; при HA off AUTO unavailable, не блокирует ручное ON. Selector — A_POWER, не B39.",
+      "functionalIO": "IO-LGT-SW12–SW14; IO-PIR-R07; IO-PWR-R07-SELECTOR",
+      "bomIds": [
+        "A_POWER",
+        "B13",
+        "B22",
+        "B39"
+      ],
+      "testIds": [
+        "T-01",
+        "T-04",
+        "T-07"
+      ],
+      "gateStatus": "Проверить selector truth table и retrigger; не выдумывать lux sensor или relay brightness.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R07-VENT",
+      "scenarioId": "SC-R07-VENT",
+      "room": "R07 — WC",
+      "name": "Вентиляция",
+      "triggerCondition": "Локальный гигростат и ручное управление; B21 — только наблюдение.",
+      "action": "Независимый вентилятор; стартовая настройка 60%/15 мин; заводской узел должен оставаться обслуживаемым, без самодельной блокировки передней крышки.",
+      "failureBehavior": "При HA off локальное управление сохраняется; неисправный/отсутствующий датчик влажности не подменять нулём.",
+      "functionalIO": "IO-VENT-R07; IO-THR-R07 (только наблюдение)",
+      "bomIds": [
+        "B21",
+        "B26"
+      ],
+      "testIds": [
+        "T-01",
+        "T-02",
+        "T-07"
+      ],
+      "gateStatus": "Gate мокрой зоны/шахты, сервисного доступа и airflow test до окончательной настройки.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R07-LEAK",
+      "scenarioId": "SC-R07-LEAK",
+      "room": "R07 — WC",
+      "name": "Протечка",
+      "triggerCondition": "Независимый проводной water input.",
+      "action": "Закрыть клапан и выдать local alarm; reopen only by human.",
+      "failureBehavior": "Работа водного контура не зависит от HA; protected area unknown until SH-009 L-ID mapping.",
+      "functionalIO": "IO-WAT-REESTR (zone IDs only from SH-009)",
+      "bomIds": [
+        "B27",
+        "B28",
+        "B29"
+      ],
+      "testIds": [
+        "T-L01",
+        "T-05",
+        "T-N01"
+      ],
+      "gateStatus": "Закрыть SH-009 coverage map; не утверждать защиту неизвестных зон.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R07-BOOST",
+      "scenarioId": "SC-R07-BOOST",
+      "room": "R07 — WC",
+      "name": "Boost полотенцесушителя",
+      "triggerCondition": "Локальный таймер/переключатель; точная модель полотенцесушителя и нагрузка не подтверждены.",
+      "action": "Только после согласования оборудования: локальные интервалы 15/30/60/120/240 минут; отмена/OFF; автоматический запуск после возврата питания не допускается до натурного теста.",
+      "failureBehavior": "Независимо от HA; СТОП до точной нагрузки, штатной защиты, коробки, применимости требований РБ и проверки OFF-after-power-return квалифицированным специалистом.",
+      "functionalIO": "IO-BOOST-R07 — функциональная метка, не клеммы/координаты",
+      "bomIds": [
+        "B44"
+      ],
+      "testIds": [
+        "T-01",
+        "T-04",
+        "T-11"
+      ],
+      "gateStatus": "СТОП до выбора и проверки полотенцесушителя, нагрузки, штатной защиты и применимости норм РБ; все физические проверки Не проводилось."
+    },
+    {
+      "id": "SC-R08-LGT",
+      "scenarioId": "SC-R08-LGT",
+      "room": "R08 — Гардеробная",
+      "name": "Свет гардеробной",
+      "triggerCondition": "Физическая кнопка или PIR motion.",
+      "action": "SW15 ON на 120 s с retrigger; manual ON отключает auto-off до manual OFF; PIR — движение, не статичное присутствие.",
+      "failureBehavior": "Manual control retained; auto-off только вспомогательный сценарий, not guaranteed presence detection.",
+      "functionalIO": "IO-LGT-SW15; IO-PIR-R08",
+      "bomIds": [
+        "B13",
+        "B22",
+        "B39"
+      ],
+      "testIds": [
+        "T-01",
+        "T-07"
+      ],
+      "gateStatus": "Проверить retrigger/manual priority; не заявлять mmWave или static-presence.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R08-TH",
+      "scenarioId": "SC-R08-TH",
+      "room": "R08 — Гардеробная",
+      "name": "Температура / влажность",
+      "triggerCondition": "Периодическое измерение.",
+      "action": "Показывать T/RH; не управлять отоплением.",
+      "failureBehavior": "Недоступное измерение — unavailable, не ноль; без heating command.",
+      "functionalIO": "IO-THR-R08",
+      "bomIds": [
+        "B20"
+      ],
+      "testIds": [
+        "T-02",
+        "T-03"
+      ],
+      "gateStatus": "Проверить placement и reconnect after sensor loss.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R09-LGT",
+      "scenarioId": "SC-R09-LGT",
+      "room": "R09 — Терраса",
+      "name": "Свет террасы",
+      "triggerCondition": "Физическая кнопка/PTT по согласию; environment fit required.",
+      "action": "SW16 управляет террасным светом.",
+      "failureBehavior": "Прямая кнопка сохраняет свет; после outdoor suitability check.",
+      "functionalIO": "IO-LGT-SW16",
+      "bomIds": [
+        "B13",
+        "B39"
+      ],
+      "testIds": [
+        "T-01",
+        "T-07"
+      ],
+      "gateStatus": "Проверить environmental rating, нагрузку и safe enclosure до монтажа.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-R09-DOOR",
+      "scenarioId": "SC-R09-DOOR",
+      "room": "R09 — Терраса",
+      "name": "Контакт двери",
+      "triggerCondition": "Изменение контактного датчика.",
+      "action": "Только open/closed status; indoor-fit gate; не unlock, штор нет.",
+      "failureBehavior": "При HA/LAN off статус unavailable; дверь не блокируется автоматизацией.",
+      "functionalIO": "IO-OPEN-R09",
+      "bomIds": [
+        "B23"
+      ],
+      "testIds": [
+        "T-02",
+        "T-08"
+      ],
+      "gateStatus": "Проверить indoor suitability; не трактовать как certified intrusion alarm.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-SYS-FIRE",
+      "scenarioId": "SC-SYS-FIRE",
+      "room": "Общие",
+      "name": "Автономный дымовой сигнал",
+      "triggerCondition": "Самостоятельный Ei650 alarm; ручной test button.",
+      "action": "Локальное оповещение по автономному извещателю; не зависеть от HA.",
+      "failureBehavior": "При отказе HA/LAN сигнализация остаётся автономной; размещение/питание — отдельная gate.",
+      "functionalIO": "IO-FIRE-EI650 (functional signal only)",
+      "bomIds": [
+        "B30"
+      ],
+      "testIds": [
+        "T-08"
+      ],
+      "gateStatus": "Placement and local audibility test; мобильный/cloud push не обещать.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-SYS-UPS",
+      "scenarioId": "SC-SYS-UPS",
+      "room": "Общие",
+      "name": "UPS / потеря сети",
+      "triggerCondition": "Событие mains loss/restore.",
+      "action": "Защищать только N100/router/switch/AP/NAS list; фактическое время измерить; 60 min не обещать и VoicePE room power не включать в обещание.",
+      "failureBehavior": "При runtime exhaustion сервисы отключатся; no guarantee 60 minutes; no room-power claim.",
+      "functionalIO": "IO-UPS-LOSS/RESTORE (functional only)",
+      "bomIds": [
+        "B01",
+        "B05",
+        "B06",
+        "B07",
+        "B09",
+        "B10",
+        "B11"
+      ],
+      "testIds": [
+        "T-04",
+        "T-U01"
+      ],
+      "gateStatus": "Измерить конфигурацию/нагрузку и shutdown path; не выводить runtime из VA.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-SYS-VOICE",
+      "scenarioId": "SC-SYS-VOICE",
+      "room": "Общие",
+      "name": "Локальный голос",
+      "triggerCondition": "Wakeword на 3 satellites R01/R03/R05; PTT в остальных 6 rooms.",
+      "action": "Local RU Whisper Base/native Assist/Piper; физический mute; LAN/N100 обязательны.",
+      "failureBehavior": "При LAN/N100 off голос unavailable; physical buttons and local safety controls remain.",
+      "functionalIO": "IO-VOICE-WAKE-R01/R03/R05; IO-VOICE-PTT-R02/R04/R06/R07/R08/R09; IO-VOICE-MUTE-01…03",
+      "bomIds": [
+        "B01",
+        "B02",
+        "B03",
+        "B04",
+        "B07",
+        "B31",
+        "B32"
+      ],
+      "testIds": [
+        "T-V01",
+        "T-V02",
+        "T-V03",
+        "T-V04"
+      ],
+      "gateStatus": "Voice thresholds are test targets only; no identity authentication; all physical tests not conducted.; статус: Не проводилось"
+    },
+    {
+      "id": "SC-SYS-CHAT",
+      "scenarioId": "SC-SYS-CHAT",
+      "room": "Общие",
+      "name": "Необязательный локальный чат",
+      "triggerCondition": "Optional Ollama qwen3:4b conversation-only; Home Assistant control disabled.",
+      "action": "Native-first “Prefer handling commands locally” ON; backup native-only “Дом без ИИ”; PC-off means chat unavailable while basic command routing must pass. No identity authentication.",
+      "failureBehavior": "Experimental Ollama path is not promised working; avoid command execution from chat; PC-off must not break native commands.",
+      "functionalIO": "IO-VOICE-CHAT-R01/R03/R05 + continued-chat routing (functional only)",
+      "bomIds": [
+        "B01",
+        "B02",
+        "B03",
+        "B04",
+        "B07"
+      ],
+      "testIds": [
+        "T-V04"
+      ],
+      "gateStatus": "Tuning/bug-fix status unverified; do not claim tested. Native-first source: https://www.home-assistant.io/integrations/conversation ; https://www.home-assistant.io/blog/2024/12/04/release-202412/. Existing PC only, no new purchase.; статус: Не проводилось"
+    }
+  ],
+  "acceptance": [
+    {
+      "id": "T-01",
+      "name": "Ручное управление",
+      "criterion": "При выключенных HA и LAN проверить физическое управление всеми базовыми световыми группами, направление/стоп штор и автономную вентиляцию. Отдельно после допуска B44, без HA/LAN/WAN/телефона: каждый интервал 15/30/60/120/240 мин, штатное завершение и ручная отмена до/после 15 с по инструкции.",
+      "evidence": "Прямые местные органы доступны без HA/LAN; таймер завершает каждый цикл и отменяет нагрев. Это не проверка защиты от перегрева: штатную защиту сушителя допускают отдельно. Фактические результаты не получены.",
+      "status": "Не проводилось"
+    },
+    {
+      "id": "T-02",
+      "name": "Нет интернета",
+      "criterion": "Отключить WAN минимум на 30 минут",
+      "evidence": "Must-сценарии local-first работают; потерянные удалённые функции явно отмечены.",
+      "status": "Не проводилось"
+    },
+    {
+      "id": "T-03",
+      "name": "Перезапуск контроллера",
+      "criterion": "Холодный запуск",
+      "evidence": "Возврат к согласованному времени/состояниям; опасных команд нет.",
+      "status": "Не проводилось"
+    },
+    {
+      "id": "T-04",
+      "name": "Отключение 230 В",
+      "criterion": "Отключить/вернуть 230 В: проверить согласованное восстановление ядра/сети/дисков под UPS и отсутствие неожиданного света, движения штор или нагрева; отдельно B44 из OFF и каждого из 5 активных интервалов.",
+      "evidence": "Свет/приводы/защиты возвращаются по принятому безопасному правилу, вода сама не открывается. Для B44 после возврата питания выход сушителя обязан быть OFF во всех 6 случаях; проверяет квалифицированный специалист. UPS runtime измерить, 60 мин не гарантированы.",
+      "status": "Не проводилось"
+    },
+    {
+      "id": "T-05",
+      "name": "Протечка",
+      "criterion": "После T-L01 поочерёдно смочить каждый установленный датчик",
+      "evidence": "Зона и клапан верны; локальный сигнал есть; повторное открытие только человеком.",
+      "status": "Не проводилось"
+    },
+    {
+      "id": "T-06",
+      "name": "Сеть",
+      "criterion": "Два рабочих места одновременно проводят видеозвонок",
+      "evidence": "Проводная связь/покрытие и задержки по критерию владельца.",
+      "status": "Не проводилось"
+    },
+    {
+      "id": "T-07",
+      "name": "Свет / шторы",
+      "criterion": "Кнопки и сцены по комнатам",
+      "evidence": "Направление, диммирование, стоп и ручной режим сверены с SH-006.",
+      "status": "Не проводилось"
+    },
+    {
+      "id": "T-08",
+      "name": "Безопасность",
+      "criterion": "Извещатели и датчики открытия по инструкции",
+      "evidence": "Сигнал слышен/виден; автоматизация не блокирует выход/ручной доступ.",
+      "status": "Не проводилось"
+    },
+    {
+      "id": "T-09",
+      "name": "Резервная копия",
+      "criterion": "Проверяемое восстановление",
+      "evidence": "Чистая тестовая среда/резервный контроллер или процедура с файлами владельца.",
+      "status": "Не проводилось"
+    },
+    {
+      "id": "T-10",
+      "name": "Семейные сценарии",
+      "criterion": "F-01…F-08",
+      "evidence": "Базовые действия не требуют телефона.",
+      "status": "Не проводилось"
+    },
+    {
+      "id": "T-11",
+      "name": "Обучение",
+      "criterion": "Владелец показывает отключение групп, воду, автоматику, сеть, локальные органы управления и отмену boost без телефона/интегратора. Не проводилось.",
+      "evidence": "Памятка включает stop/OFF, запрет автозапуска после питания до теста, независимость HA и ограничения согласования/монтажа. Не проводилось.",
+      "status": "Не проводилось"
+    },
+    {
+      "id": "T-L01",
+      "name": "Реестр протечки",
+      "criterion": "Сверить источник, зону, датчик, клапан и ручной кран",
+      "evidence": "Закрывается по SH-009 до закрытия конструкций; неизвестные зоны не считать защищёнными.",
+      "status": "Не проводилось"
+    },
+    {
+      "id": "T-N01",
+      "name": "Локальный сигнал",
+      "criterion": "Проверить локальную цепочку сигнала",
+      "evidence": "Не подменять локальный клапан/сигнал обещанием cloud/mobile push.",
+      "status": "Не проводилось"
+    },
+    {
+      "id": "T-U01",
+      "name": "UPS",
+      "criterion": "Проверить расчётную нагрузку и время",
+      "evidence": "60 минут не обещаны; измерить фактическую конфигурацию.",
+      "status": "Не проводилось"
+    },
+    {
+      "id": "T-V01",
+      "name": "RU-команды",
+      "criterion": "360 команд: 20×3×3×2 (тишина/ТВ)",
+      "evidence": "Цель: тишина ≥95%, ТВ ≥90%, p95 ≤5 с, медиана ≤3 с; только целевые пороги, не результат. Не проводилось.",
+      "status": "Не проводилось"
+    },
+    {
+      "id": "T-V02",
+      "name": "PTT / wakeword",
+      "criterion": "PTT 54 (6×3×3); wakeword 60 (20×3)",
+      "evidence": "Проверить отдельно по комнатам; PTT в шести комнатах, wakeword на трёх satellites. Не проводилось.",
+      "status": "Не проводилось"
+    },
+    {
+      "id": "T-V03",
+      "name": "Ложные пробуждения / mute",
+      "criterion": "3×1 ч; mute 10 на каждый из 3 satellites = 30",
+      "evidence": "Журнал ложных срабатываний и подтверждение физического mute; не проводилось. Идентификация говорящего не обещается.",
+      "status": "Не проводилось"
+    },
+    {
+      "id": "T-V04",
+      "name": "Одновременная работа / offline / routing",
+      "criterion": "12 фраз × PC ON/OFF = 24 проверки: свет, запрос состояния, сцена, музыка, команда в продолженном чате",
+      "evidence": "2 комнаты одновременно, 5 пар = 10 команд; WAN off 30 мин; AI-PC off; 10 восстановлений Music Assistant. При PC off native/basic commands обязаны проходить маршрутизацию. Не проводилось.",
+      "status": "Не проводилось"
+    },
+    {
+      "id": "T-ENE01",
+      "name": "Учёт энергии: 4 CT канала",
+      "criterion": "Сверить ввод/плиту/духовку/посудомоечную машину по эталону; проверка источника каждого канала; read-only",
+      "evidence": "Проверка однофазности и предела CT до монтажа; четыре канала физически ещё не тестировались. Не проводилось.",
+      "status": "Не проводилось"
+    }
+  ],
+  "sheet": {
+    "equipmentCaption": "30 ценовых ориентиров — справочные, не твёрдые заказы. Квартира и конечная доставка — Беларусь, подтверждено владельцем. Сумма частичная, смешанная NET/GROSS: O27 без НДС, дополнительный НДС неизвестен; O28 включает НДС; налоговый режим O29/O30 неизвестен. По 9 обязательным позициям цена не подтверждена. По указанию владельца доставка, посредник, таможня и прочая логистика исключены из сметы для всех регионов; это не нулевые расходы. O29 не входит в первый стенд; O30 включён по наличной цене ONECOM, безналичная альтернатива исключена. НДС, подлинность и цена производителя O30 неизвестны. См. Сводку.",
+    "id": "1kn_19v2iP7vfcD2lUhiwyIw5pp_cf7HM_g1JOz4LGX0",
+    "url": "https://docs.google.com/spreadsheets/d/1kn_19v2iP7vfcD2lUhiwyIw5pp_cf7HM_g1JOz4LGX0/edit",
+    "mimeType": "application/vnd.google-apps.spreadsheet",
+    "folderId": "12YxOdJZp88byzMzNVnj7TEcOZoeP6G5M",
+    "shared": false,
+    "permissions": [
+      {
+        "type": "user",
+        "role": "owner",
+        "displayName": "Ai Dzmitry"
+      }
+    ],
+    "timeZone": "Europe/Minsk",
+    "nativeTables": [
+      {
+        "tableId": "1348077228",
+        "name": "CurrentOffers",
+      "range": "Предложения РФ РБ Китай!A4:W33",
+      "dataRows": 29,
+        "filterViewId": 1058992354
+      },
+      {
+        "tableId": "1928028284",
+        "name": "HistoricalOnly",
+      "range": "Предложения РФ РБ Китай!A34:I43",
+      "dataRows": 9,
+        "filterViewId": 1182334504
+      },
+      {
+        "tableId": "392395369",
+        "name": "PlatformAudit",
+      "range": "Предложения РФ РБ Китай!A45:E49",
+        "dataRows": 4,
+        "filterViewId": 1002848586
+      },
+    {
+      "tableId": "197935613",
+      "name": "EquipmentStatus",
+      "range": "Выбранное оборудование!A4:N52",
+      "dataRows": 48,
+      "filterViewId": 351273494
+    },
+      {
+        "tableId": "473182390",
+        "name": "RoomScenarios",
+        "range": "Сценарии!A4:J46",
+        "dataRows": 42
+      },
+      {
+        "tableId": "2101316682",
+        "name": "AcceptanceTests",
+        "range": "Внедрение и приёмка!A11:E30",
+        "dataRows": 19
+      },
+      {
+        "tableId": "1002665968",
+        "name": "FxRates",
+        "range": "Источники и курсы!A4:E10",
+        "dataRows": 6,
+        "filterViewId": 1181573282
+      },
+      {
+        "tableId": "1121680014",
+        "name": "SourceRegister",
+      "range": "Источники и курсы!A12:G81",
+      "dataRows": 69,
+        "filterViewId": 1576831763
+      }
+    ],
+    "acceptanceStatusDropdown": {
+      "range": "Внедрение и приёмка!D12:D30",
+      "allowedValues": [
+        "Не проводилось",
+        "В работе",
+        "PASS",
+        "FAIL",
+        "Не применимо"
+      ],
+      "validatedRowsReadBack": 19,
+      "readBackStatuses": "Все 19 значений — Не проводилось"
+    },
+    "offerRangeAndAuditReadback": {
+    "currentOffersRows": "A4:W33",
+      "includedOfferIds": [
+      "O24",
+      "O25",
+      "O26",
+      "O27",
+      "O28",
+      "O29"
+      ],
+    "historicalRows": "A34:I43",
+    "marketplaceAuditRows": "A45:E49",
+      "marketplaceAuditDataRows": 4,
+    "H01PreservedAt": "A35:I35",
+    "H09OldO02At": "A43:I43",
+    "originalGapAuditTitle": "A51:H51",
+    "originalGapAuditRows": "A52:H70",
+      "originalGapAuditRowsCount": 18,
+    "currentMandatoryUnpriced": 10,
+    "currentPriceReferences": 29
+    },
+    "nativeVisualEvidence": {
+      "status": "PENDING — primary fresh filled-view after G07 STOP",
+      "priorBaselineTabId": "655405848",
+      "priorBaselineIsCurrentEvidence": false,
+      "views": []
+    },
+    "tabs": [
+      "Сводка",
+      "Выбранное оборудование",
+      "Предложения РФ РБ Китай",
+      "Сравнение решений",
+      "Комнаты и точки",
+      "Сценарии",
+      "Внедрение и приёмка",
+      "Источники и курсы"
+    ]
+  }
+}

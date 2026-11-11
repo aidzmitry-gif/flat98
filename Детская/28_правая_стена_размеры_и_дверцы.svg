@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100">
+<defs><style>
+.title{font:700 29px 'Segoe UI',sans-serif;fill:#173831}.h{font:700 20px 'Segoe UI',sans-serif;fill:#173831}.t{font:15px 'Segoe UI',sans-serif;fill:#29483f}.sm{font:13px 'Segoe UI',sans-serif;fill:#3a554e}.tiny{font:12px 'Segoe UI',sans-serif;fill:#4d645d}.bold{font-weight:700}.card{fill:#fffefa;stroke:#ccd9d2;stroke-width:1.5}.wall{stroke:#2a433d;stroke-width:6}.dim{stroke:#417c90;stroke-width:1.7;fill:none;marker-start:url(#a);marker-end:url(#a)}.door{fill:#dca36a;fill-opacity:.23;stroke:#a4683c;stroke-width:2}.warn{fill:#fff1e7;stroke:#c99069;stroke-width:1.4}
+</style><marker id="a" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse"><path d="M8 1L1 4L8 7" fill="none" stroke="#417c90" stroke-width="1.4"/></marker></defs>
+<rect width="1600" height="1100" fill="#f6f4ed"/>
+<text x="45" y="46" class="title">Детская · правая стена и открывание шкафа</text>
+<text x="45" y="75" class="t">Окно слева · шкаф у окна · кровать справа в углу у глухой стены</text>
+<rect x="1260" y="24" width="294" height="50" rx="9" class="warn"/><text x="1407" y="55" text-anchor="middle" class="t bold">ЭСКИЗ · НЕ ДЛЯ ЗАКАЗА</text>
+
+<rect x="40" y="105" width="1520" height="396" rx="12" class="card"/>
+<text x="65" y="139" class="h">1. Вид на стену со стороны комнаты</text>
+<text x="65" y="163" class="sm">Длины на стене показаны пропорционально; высоты мебели — условные, не обмерены.</text>
+<!-- long wall 3825, 0.30 px/mm -->
+<line x1="245" y1="390" x2="1392.5" y2="390" class="wall"/><line x1="1392.5" y1="190" x2="1392.5" y2="390" class="wall"/>
+<text x="95" y="303" class="t bold">← ОКНО</text><text x="1407" y="277" class="sm">глухая</text><text x="1407" y="298" class="sm">стена</text>
+<rect x="245" y="204" width="390" height="186" fill="#ead7b1" stroke="#977145" stroke-width="2"/>
+<rect x="245" y="204" width="150" height="186" fill="#f6e4bf" stroke="#a67c48" stroke-dasharray="5 4"/>
+<text x="320" y="263" text-anchor="middle" class="sm bold">ПОЛКИ</text><text x="320" y="285" text-anchor="middle" class="tiny">к столу</text><text x="320" y="307" text-anchor="middle" class="tiny">500 P</text>
+<line x1="515" y1="204" x2="515" y2="390" stroke="#977145" stroke-width="1.5"/><text x="515" y="337" text-anchor="middle" class="sm bold">ДВА ФАСАДА</text><text x="515" y="358" text-anchor="middle" class="tiny">по 400 P</text>
+<rect x="762.5" y="245" width="630" height="145" rx="5" fill="#e0eadc" stroke="#66846c" stroke-width="2"/>
+<line x1="770" y1="300" x2="1384" y2="300" stroke="#66846c" stroke-width="8"/><text x="1078" y="277" text-anchor="middle" class="t bold">ДВУХЪЯРУСНАЯ КРОВАТЬ</text><text x="1078" y="350" text-anchor="middle" class="sm">до 2100 P · торец у глухой стены</text>
+<line x1="245" y1="430" x2="635" y2="430" class="dim"/><line x1="635" y1="430" x2="762.5" y2="430" class="dim"/><line x1="762.5" y1="430" x2="1392.5" y2="430" class="dim"/>
+<text x="440" y="421" text-anchor="middle" class="sm bold">1300 P · шкаф</text><text x="699" y="421" text-anchor="middle" class="sm bold">425 P</text><text x="1078" y="421" text-anchor="middle" class="sm bold">2100 P · кровать</text>
+<line x1="245" y1="465" x2="1392.5" y2="465" class="dim"/><text x="819" y="488" text-anchor="middle" class="t bold">3825 R · меньшая из двух измеренных длинных стен</text>
+
+<rect x="40" y="520" width="940" height="440" rx="12" class="card"/>
+<text x="65" y="553" class="h">2. План сверху — как открываются дверцы</text>
+<text x="65" y="578" class="sm">Прямоугольники и дуги — условная компоновка, не рабочий чертёж.</text>
+<!-- scale .30, cabinet width390 depth180 -->
+<line x1="130" y1="876" x2="767" y2="876" class="wall"/>
+<rect x="130" y="696" width="390" height="180" fill="#ead7b1" stroke="#977145" stroke-width="2"/>
+<rect x="130" y="696" width="150" height="180" fill="#f6e4bf" stroke="#a67c48" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="205" y="758" text-anchor="middle" class="sm bold">полки</text><text x="205" y="780" text-anchor="middle" class="tiny">500 P</text><text x="400" y="769" text-anchor="middle" class="sm bold">шкаф 800 P</text>
+<path d="M280 696 L400 696 A120 120 0 0 0 280 576 Z" class="door"/><path d="M520 696 L400 696 A120 120 0 0 1 520 576 Z" class="door"/>
+<line x1="280" y1="696" x2="280" y2="576" stroke="#a4683c" stroke-width="3"/><line x1="520" y1="696" x2="520" y2="576" stroke="#a4683c" stroke-width="3"/>
+<text x="400" y="608" text-anchor="middle" class="tiny bold">дверцы 400 P · 90°</text>
+<rect x="130" y="615" width="150" height="81" fill="#eee6d8" stroke="#a18f73" stroke-dasharray="5 4"/><text x="205" y="647" text-anchor="middle" class="tiny">стол / окно</text><text x="205" y="668" text-anchor="middle" class="tiny">примыкание</text>
+<rect x="647.5" y="720" width="250" height="156" fill="#e0eadc" stroke="#66846c" stroke-width="2"/><text x="772" y="784" text-anchor="middle" class="sm bold">кровать</text><text x="772" y="806" text-anchor="middle" class="tiny">продолжается вправо →</text>
+<line x1="520" y1="911" x2="647.5" y2="911" class="dim"/><text x="584" y="902" text-anchor="middle" class="tiny bold">425 P</text>
+<text x="130" y="940" class="tiny">Полки 500 мм у окна и фасады по 400 мм — только гипотеза для проверки, не выбранная мебель.</text>
+
+<rect x="1000" y="520" width="560" height="440" rx="12" class="card"/>
+<text x="1025" y="553" class="h">Что ещё необходимо проверить</text>
+<text x="1025" y="590" class="t bold">425 мм — это остаток по стене,</text><text x="1025" y="613" class="t bold">а не гарантированный доступ к шкафу.</text>
+<text x="1025" y="648" class="sm">• 3825 и 3837 мм — измеренные длинные стены;</text>
+<text x="1025" y="672" class="sm">  какая из них именно справа — уточнить по источнику.</text>
+<text x="1025" y="703" class="sm">• Ширина комнаты 2810 и окно 1600 — по B01,</text>
+<text x="1025" y="727" class="sm">  контрольный замер; потолок минимум 2712 R.</text>
+<text x="1025" y="758" class="sm">• Паспорта кровати и петель, толщина фасадов,</text>
+<text x="1025" y="782" class="sm">  реальные зазоры, место лестницы и ящиков.</text>
+<text x="1025" y="813" class="sm">• Расположение двери комнаты не установлено</text>
+<text x="1025" y="837" class="sm">  на этой визуализации; проверить на объекте.</text>
+<text x="1025" y="868" class="sm">• Стол, подоконник и радиатор: высоты, доступ,</text>
+<text x="1025" y="892" class="sm">  открывание окна и требуемые зазоры — M.</text>
+<text x="1025" y="925" class="tiny">R — замер · B — план, перепроверить · P — предложение · M — неизвестно.</text>
+<text x="48" y="1002" class="sm">Источники: docs/04_Цифровая_ведомость_обмеров_v1.md; docs/20_Чистые_размеры_детской_APT-001_revision_10.md.</text>
+<text x="48" y="1027" class="sm">Положение полок, ширины фасадов и модель кровати — проектные. Верхний ярус — только по возрасту и паспорту.</text>
+</svg>

@@ -1,0 +1,107 @@
+<div id="bedroom-full-layout" aria-label="Полная планировочная схема спальни 5">
+  <style>
+    #bedroom-full-layout { color: var(--foreground); width: 100%; }
+    #bedroom-full-layout svg { display: block; width: 100%; height: auto; overflow: visible; }
+    #bedroom-full-layout .title { fill: var(--foreground); font: 500 22px system-ui, sans-serif; }
+    #bedroom-full-layout .label { fill: var(--foreground); font: 500 17px system-ui, sans-serif; }
+    #bedroom-full-layout .small { fill: var(--muted-foreground); font: 400 15px system-ui, sans-serif; }
+    #bedroom-full-layout .dim { fill: var(--orange); font: 500 16px system-ui, sans-serif; }
+    #bedroom-full-layout .room { fill: color-mix(in srgb, var(--blue) 7%, transparent); }
+    #bedroom-full-layout .wardrobe-room { fill: color-mix(in srgb, var(--muted) 72%, transparent); }
+    #bedroom-full-layout .wall { fill: var(--foreground); opacity: .58; }
+    #bedroom-full-layout .bed { fill: color-mix(in srgb, var(--purple) 24%, transparent); stroke: var(--purple); stroke-width: 3; }
+    #bedroom-full-layout .bedside { fill: color-mix(in srgb, var(--purple) 15%, transparent); stroke: var(--purple); stroke-width: 2; }
+    #bedroom-full-layout .built-in { fill: color-mix(in srgb, var(--viz-series-1) 30%, transparent); stroke: var(--viz-series-1); stroke-width: 3; }
+    #bedroom-full-layout .vanity { fill: color-mix(in srgb, var(--yellow) 30%, transparent); stroke: var(--yellow); stroke-width: 2; }
+    #bedroom-full-layout .mirror { fill: color-mix(in srgb, var(--blue) 32%, transparent); stroke: var(--blue); stroke-width: 2; }
+    #bedroom-full-layout .pouf { fill: color-mix(in srgb, var(--yellow) 37%, transparent); stroke: var(--yellow); stroke-width: 2; }
+    #bedroom-full-layout .clear { fill: color-mix(in srgb, var(--green) 13%, transparent); stroke: var(--green); stroke-width: 2; stroke-dasharray: 7 6; }
+    #bedroom-full-layout .window { stroke: var(--green); stroke-width: 5; }
+    #bedroom-full-layout .radiator { stroke: var(--muted-foreground); stroke-width: 2; stroke-dasharray: 5 5; }
+    #bedroom-full-layout .measure { stroke: var(--orange); stroke-width: 2; fill: none; }
+    #bedroom-full-layout .measure-dash { stroke: var(--orange); stroke-width: 2; fill: none; stroke-dasharray: 7 7; }
+    #bedroom-full-layout .leader { stroke: var(--foreground); stroke-width: 1.5; fill: none; opacity: .72; }
+  </style>
+
+  <svg viewBox="0 0 1140 760" role="img" aria-labelledby="full-plan-title full-plan-desc">
+    <title id="full-plan-title">Полная схема расстановки спальни 5</title>
+    <desc id="full-plan-desc">Спальня 3840 на 2810 мм. На стене 5/8 расположен встроенный блок 1870 на 600 мм: закрытый шкаф 1000 мм и ниша туалетного столика с зеркалом 870 мм. В комнате также показаны кровать 1400 на 2000 мм, две прикроватные тумбы, пуф, окно O3, радиатор R-05 и свободный проход P6.</desc>
+
+    <text x="88" y="42" class="title">Спальня 5 — схема расстановки</text>
+    <text x="88" y="67" class="small">Стены, P6 и O3 — B01. Габариты мебели — проектное предложение, до чистового замера.</text>
+
+    <!-- Bedroom 5, B01 3840 × 2810. Scale: 0.18 px/mm. -->
+    <rect x="88" y="110" width="691.2" height="505.8" class="room" />
+    <rect x="779.2" y="279.2" width="23.4" height="336.6" class="wall" />
+    <rect x="88" y="91" width="691.2" height="19" class="wall" />
+    <rect x="69" y="110" width="19" height="505.8" class="wall" />
+    <rect x="88" y="615.8" width="691.2" height="19" class="wall" />
+
+    <!-- P6: fixed free opening, 940 mm. -->
+    <path d="M 779.2 110 L 819 110 M 779.2 279.2 L 819 279.2 M 808 110 L 808 279.2" class="measure-dash" />
+    <text x="833" y="190" class="dim" transform="rotate(-90 833 190)">P6 · 940</text>
+    <rect x="625" y="124" width="139" height="137" rx="2" class="clear" />
+    <text x="694" y="183" class="label" text-anchor="middle">свободный</text>
+    <text x="694" y="204" class="small" text-anchor="middle">вход</text>
+
+    <!-- O3 and radiator, clear of furniture. -->
+    <line x1="88" y1="218" x2="88" y2="506" class="window" />
+    <line x1="110" y1="233" x2="110" y2="491" class="radiator" />
+    <text x="137" y="335" class="small" transform="rotate(-90 137 335)">O3 · 1600</text>
+    <text x="157" y="335" class="small" transform="rotate(-90 157 335)">R-05 — свободно</text>
+
+    <!-- Neighbouring dressing room, reference only. -->
+    <rect x="802.6" y="279.2" width="313.2" height="313.2" class="wardrobe-room" />
+    <text x="959.2" y="402" class="label" text-anchor="middle">Гардеробная №8</text>
+    <text x="959.2" y="425" class="small" text-anchor="middle">1740 × 1740</text>
+    <text x="959.2" y="447" class="small" text-anchor="middle">за стеной 5/8</text>
+
+    <!-- Built-in volume: 1870 × 600. -->
+    <rect x="671.2" y="279.2" width="108" height="336.6" class="built-in" />
+    <!-- Vanity niche 870 × 600, immediately after P6. -->
+    <rect x="671.2" y="279.2" width="108" height="156.6" class="vanity" />
+    <rect x="710.8" y="302" width="68.4" height="108" class="vanity" />
+    <rect x="766" y="302" width="13.2" height="108" class="mirror" />
+    <circle cx="676" cy="356" r="28" class="pouf" />
+    <text x="720" y="341" class="small" text-anchor="middle">столик</text>
+    <text x="720" y="361" class="small" text-anchor="middle">+ зеркало</text>
+    <text x="676" y="360" class="small" text-anchor="middle">пуф</text>
+    <!-- Closed wardrobe 1000 × 600. -->
+    <rect x="671.2" y="435.8" width="108" height="180" class="built-in" />
+    <text x="725" y="530" class="label" text-anchor="middle" transform="rotate(-90 725 530)">ШКАФ 1000</text>
+    <text x="750" y="530" class="small" text-anchor="middle" transform="rotate(-90 750 530)">глубина 600</text>
+    <path d="M 656 279.2 L 656 615.8" class="measure" />
+    <text x="637" y="448" class="dim" text-anchor="middle" transform="rotate(-90 637 448)">1870</text>
+
+    <!-- Bed 1400 × 2000 and bedside tables. -->
+    <rect x="142" y="255.8" width="252" height="360" class="bed" />
+    <rect x="142" y="588" width="252" height="27.8" class="bedside" />
+    <rect x="96" y="541" width="46" height="74.8" class="bedside" />
+    <rect x="394" y="541" width="72" height="74.8" class="bedside" />
+    <text x="268" y="423" class="label" text-anchor="middle">КРОВАТЬ</text>
+    <text x="268" y="445" class="small" text-anchor="middle">1400 × 2000</text>
+    <text x="119" y="580" class="small" text-anchor="middle">тумба</text>
+    <text x="430" y="580" class="small" text-anchor="middle">тумба</text>
+    <text x="268" y="608" class="small" text-anchor="middle">изголовье</text>
+
+    <!-- Clear passage between bed and furniture wall. -->
+    <path d="M 486 279 L 639 279 L 639 615 L 486 615 Z" class="clear" />
+    <text x="562" y="434" class="label" text-anchor="middle">свободный</text>
+    <text x="562" y="455" class="label" text-anchor="middle">проход</text>
+    <text x="562" y="477" class="small" text-anchor="middle">не застраивать</text>
+
+    <!-- Dimensions. -->
+    <path d="M 88 672 L 88 702 M 779.2 672 L 779.2 702 M 88 695 L 779.2 695" class="measure" />
+    <text x="433.6" y="724" class="dim" text-anchor="middle">3840 мм</text>
+    <path d="M 38 110 L 61 110 M 38 615.8 L 61 615.8 M 47 110 L 47 615.8" class="measure" />
+    <text x="28" y="363" class="dim" text-anchor="middle" transform="rotate(-90 28 363)">2810 мм</text>
+
+    <!-- Legend. -->
+    <rect x="840" y="111" width="26" height="17" class="built-in" />
+    <text x="877" y="126" class="small">встроенный мебельный блок</text>
+    <rect x="840" y="143" width="26" height="17" class="bed" />
+    <text x="877" y="158" class="small">кровать и прикроватные тумбы</text>
+    <rect x="840" y="175" width="26" height="17" class="clear" />
+    <text x="877" y="190" class="small">свободная зона</text>
+  </svg>
+</div>

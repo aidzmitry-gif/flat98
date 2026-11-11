@@ -1,0 +1,90 @@
+<section id="bedroom-corrected-b01-layout" aria-labelledby="corrected-layout-title">
+  <style>
+    #bedroom-corrected-b01-layout { color: var(--foreground); }
+    #bedroom-corrected-b01-layout h2 { margin: 0 0 12px; }
+    #bedroom-corrected-b01-layout svg { display: block; width: 100%; height: auto; overflow: visible; }
+    #bedroom-corrected-b01-layout .room { fill: color-mix(in srgb, var(--background) 86%, var(--foreground) 14%); stroke: var(--foreground); stroke-width: 2; }
+    #bedroom-corrected-b01-layout .wall { fill: none; stroke: var(--foreground); stroke-width: 7; }
+    #bedroom-corrected-b01-layout .opening { stroke: var(--green); stroke-width: 4; }
+    #bedroom-corrected-b01-layout .return { fill: color-mix(in srgb, var(--muted) 82%, transparent); stroke: var(--foreground); stroke-width: 1.4; }
+    #bedroom-corrected-b01-layout .window { stroke: var(--blue); stroke-width: 4; }
+    #bedroom-corrected-b01-layout .radiator { fill: color-mix(in srgb, var(--orange) 14%, transparent); stroke: var(--orange); stroke-width: 1.3; stroke-dasharray: 4 3; }
+    #bedroom-corrected-b01-layout .bed { fill: color-mix(in srgb, var(--primary) 18%, var(--background) 82%); stroke: var(--foreground); stroke-width: 1.8; }
+    #bedroom-corrected-b01-layout .vanity { fill: color-mix(in srgb, var(--accent) 74%, transparent); stroke: var(--foreground); stroke-width: 1.4; }
+    #bedroom-corrected-b01-layout .wardrobe { fill: color-mix(in srgb, var(--secondary) 76%, var(--foreground) 24%); stroke: var(--foreground); stroke-width: 1.4; }
+    #bedroom-corrected-b01-layout .cot { fill: color-mix(in srgb, var(--green) 22%, var(--background) 78%); stroke: var(--green); stroke-width: 2; }
+    #bedroom-corrected-b01-layout .optional { fill: color-mix(in srgb, var(--muted) 70%, transparent); stroke: var(--muted-foreground); stroke-width: 1.3; stroke-dasharray: 5 4; }
+    #bedroom-corrected-b01-layout .dim, #bedroom-corrected-b01-layout .leader { fill: none; stroke: var(--muted-foreground); stroke-width: 1.2; }
+    #bedroom-corrected-b01-layout .dim { marker-start: url(#arrow); marker-end: url(#arrow); }
+    #bedroom-corrected-b01-layout .label { fill: var(--foreground); font: 500 14px/1.2 system-ui, sans-serif; }
+    #bedroom-corrected-b01-layout .small { fill: var(--muted-foreground); font: 400 12px/1.2 system-ui, sans-serif; }
+    #bedroom-corrected-b01-layout .measure { fill: var(--foreground); font: 500 12px/1.2 system-ui, sans-serif; }
+    #bedroom-corrected-b01-layout .green { fill: var(--green); font: 500 12px/1.2 system-ui, sans-serif; }
+    #bedroom-corrected-b01-layout .orange { fill: var(--orange); font: 500 12px/1.2 system-ui, sans-serif; }
+  </style>
+  <h2 id="corrected-layout-title">Исправленная планировка по B01: шкаф только на стене 5/8</h2>
+  <svg viewBox="0 0 880 770" role="img" aria-labelledby="corrected-svg-title corrected-svg-desc">
+    <title id="corrected-svg-title">Исправленный план спальни с мебельной группой длиной 1740 миллиметров</title>
+    <desc id="corrected-svg-desc">В спальне 3840 на 2810 открытый проход P6 имеет длину 940. После него расположен стеновой возврат 130, затем реальная общая стена 5/8 длиной 1740. Мебельная группа 1740 на 600 стоит только по этой стене внутри спальни. Кровать и временная люлька расположены в предложенных габаритах; радиатор не привязан численно.</desc>
+    <defs>
+      <marker id="arrow" viewBox="0 0 8 8" refX="4" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8z" fill="var(--muted-foreground)"></path></marker>
+    </defs>
+
+    <rect class="room" x="88" y="105" width="614.4" height="449.6" rx="1"></rect>
+    <path class="wall" d="M88 105 H702.4 M88 554.6 H702.4 M88 105 V554.6 M702.4 105 V255.4 M702.4 276.2 V554.6"></path>
+    <line class="opening" x1="702.4" y1="105" x2="702.4" y2="255.4"></line>
+    <rect class="return" x="695" y="255.4" width="7.4" height="20.8"></rect>
+    <text class="green" x="718" y="166">P6 · 940</text>
+    <text class="small" x="718" y="183">открытый проход</text>
+    <text class="small" x="718" y="200">без мебели</text>
+    <text class="small" x="718" y="265">стеновой возврат 130</text>
+
+    <line class="window" x1="88" y1="201" x2="88" y2="457"></line>
+    <rect class="radiator" x="96" y="252" width="25" height="154" rx="2"></rect>
+    <text class="small" x="16" y="217">O3 · 1 600</text>
+    <text class="orange" x="16" y="234">R-05: размер и ось н/д</text>
+
+    <rect class="bed" x="136" y="234.6" width="224" height="320" rx="8"></rect>
+    <line class="leader" x1="136" y1="508" x2="360" y2="508"></line>
+    <text class="label" x="168" y="379">кровать</text>
+    <text class="small" x="165" y="396">1 400×2 000 — предложение</text>
+    <text class="small" x="160" y="532">изголовье на нижней стене</text>
+
+    <rect class="optional" x="88" y="490.6" width="48" height="64"></rect>
+    <text class="small" x="94" y="478">левая тумба —</text>
+    <text class="small" x="94" y="493">только после</text>
+    <text class="small" x="94" y="508">замера R-05</text>
+
+    <rect class="cot" x="360" y="402.6" width="88" height="152" rx="6"></rect>
+    <text class="green" x="462" y="418">временно: приставная люлька</text>
+    <text class="green" x="462" y="435">550×950 вместо правой тумбы</text>
+    <path class="leader" d="M448 453 L458 434"></path>
+
+    <rect class="vanity" x="606.4" y="276.2" width="96" height="115.2"></rect>
+    <rect class="wardrobe" x="606.4" y="391.4" width="96" height="158.4"></rect>
+    <text class="small" x="613" y="314">зеркало +</text>
+    <text class="small" x="613" y="330">консоль ~720</text>
+    <text class="small" x="613" y="425">закрытый шкаф</text>
+    <text class="small" x="613" y="441">~990, раздвижной</text>
+    <text class="small" x="606" y="575">мебельная группа в спальне · 1 740×600</text>
+    <text class="small" x="606" y="592">не ниша и не фасад двери</text>
+
+    <line class="dim" x1="448" y1="470" x2="606.4" y2="470"></line>
+    <text class="measure" x="482" y="461">990 при люльке</text>
+    <line class="dim" x1="360" y1="491" x2="606.4" y2="491"></line>
+    <text class="measure" x="430" y="482">1 540 без люльки</text>
+
+    <line class="dim" x1="88" y1="68" x2="702.4" y2="68"></line>
+    <line class="leader" x1="88" y1="76" x2="88" y2="105"></line>
+    <line class="leader" x1="702.4" y1="76" x2="702.4" y2="105"></line>
+    <text class="measure" x="362" y="58">3 840 B01</text>
+    <line class="dim" x1="50" y1="105" x2="50" y2="554.6"></line>
+    <line class="leader" x1="58" y1="105" x2="88" y2="105"></line>
+    <line class="leader" x1="58" y1="554.6" x2="88" y2="554.6"></line>
+    <text class="measure" x="38" y="347" transform="rotate(-90 38 347)">2 810 B01</text>
+
+    <text class="green" x="88" y="635">Ключевая правка: 1 870 = 1 740 стены 5/8 + 130 стеновой возврат; под мебель доступно 1 740, не 1 870.</text>
+    <text class="orange" x="88" y="661">До заказа: снять чистовую длину стены 5/8, обе кромки P6, выступ R-05 и чистовой габарит кровати.</text>
+    <text class="small" x="88" y="694">Позиции кровати и люльки — расчётное предложение; исходный B01 подтверждает контур, проём и стены, но не мебель.</text>
+  </svg>
+</section>

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1540" height="890" viewBox="0 0 1540 890">
+<defs>
+  <style>.title{font:700 30px 'Segoe UI',sans-serif;fill:#183e33}.h{font:700 20px 'Segoe UI',sans-serif;fill:#183e33}.t{font:16px 'Segoe UI',sans-serif;fill:#29483e}.s{font:14px 'Segoe UI',sans-serif;fill:#435d53}.b{font-weight:700}.card{fill:#fffefa;stroke:#cad9d1;stroke-width:1.5}.wall{stroke:#23443a;stroke-width:4;fill:none}.dim{stroke:#427b8e;stroke-width:1.5;marker-start:url(#arr);marker-end:url(#arr)}.guide{stroke:#81998e;stroke-width:1.2;stroke-dasharray:5 5}.warn{fill:#fce8db;stroke:#bf8066;stroke-width:1.5}</style>
+  <marker id="arr" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse"><path d="M8 1L1 4L8 7" fill="none" stroke="#427b8e" stroke-width="1.2"/></marker>
+  <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path d="M0 0V8" stroke="#bc664e" stroke-width="2.5"/></pattern>
+</defs>
+<rect width="1540" height="890" fill="#f6f5ef"/>
+<text x="35" y="47" class="title">Детская · лестница у правой стены</text>
+<text x="35" y="76" class="t">Вид сверху · обмер S10 и план БТИ B01 · мм</text>
+<rect x="1275" y="23" width="230" height="48" rx="9" class="warn"/><text x="1390" y="53" class="t b" text-anchor="middle">ЭСКИЗ РАССТАНОВКИ</text>
+
+<rect x="30" y="100" width="950" height="758" rx="12" class="card"/>
+<text x="55" y="137" class="h">Горка слева, лестница справа</text>
+<text x="55" y="162" class="s">Лестница и ширина горки показаны условно. Вылет горки принят 1334 для сравнения.</text>
+<!-- Bed wall 3837, nominal width 2810, origin 145,210, scale 0.18. -->
+<line x1="145" y1="210" x2="835.66" y2="210" class="wall"/><line x1="145" y1="715.8" x2="835.66" y2="715.8" class="wall"/>
+<line x1="145" y1="210" x2="145" y2="715.8" class="wall"/><line x1="835.66" y1="373.8" x2="835.66" y2="715.8" class="wall"/>
+<text x="490" y="195" text-anchor="middle" class="s b">СТЕНА СО СПОРТОМ · 3825 ПО ОБМЕРУ</text>
+<rect x="681" y="210" width="154.66" height="163.8" fill="#f9eee5"/>
+<line x1="835.66" y1="210" x2="835.66" y2="373.8" stroke="#4e8594" stroke-width="3" stroke-dasharray="6 5"/>
+<text x="844" y="248" class="s b">ВХОД P2</text><text x="844" y="268" class="s">910 по БТИ</text>
+<text x="63" y="442" class="s b">ОКНО</text><line x1="145" y1="318" x2="145" y2="606" stroke="#4e8594" stroke-width="5"/>
+<rect x="145" y="210" width="90" height="397.8" fill="#eee8d5" stroke="#c1ac88"/><text x="190" y="418" text-anchor="middle" class="s b">СТОЛ</text>
+<rect x="145" y="607.8" width="234" height="108" fill="#ead6b5" stroke="#ae906a"/><text x="262" y="654" text-anchor="middle" class="s b">ШКАФ У ОКНА</text><text x="262" y="676" text-anchor="middle" class="s">1300 × 600, проект</text>
+<rect x="421.66" y="210" width="270" height="126" fill="#edf5ea" stroke="#7c9d82" stroke-dasharray="6 5"/>
+<rect x="421.66" y="210" width="270" height="54" fill="#c8dec9" stroke="#6c8d73"/>
+<text x="557" y="242" text-anchor="middle" class="s b">РАМА · 1500 × 300, ПРОЕКТ</text>
+<text x="614" y="319" text-anchor="middle" class="s">мат до 700, условно</text>
+<rect x="457.66" y="526.8" width="378" height="189" fill="#dcebdd" stroke="#76947b" stroke-width="2"/>
+<text x="646" y="612" text-anchor="middle" class="t b">КРОВАТЬ</text><text x="646" y="639" text-anchor="middle" class="s">2100 × 1050, проект</text>
+<rect x="457.66" y="286.68" width="88.66" height="240.12" fill="#eadcc0" stroke="#ab8a60" stroke-width="2" stroke-dasharray="5 5"/>
+<rect x="457.66" y="286.68" width="88.66" height="49.32" fill="url(#hatch)" stroke="#bc664e"/>
+<text x="501" y="418" text-anchor="middle" class="s b">ГОРКА</text><text x="501" y="439" text-anchor="middle" class="s">пример</text><text x="501" y="460" text-anchor="middle" class="s">1334</text>
+<path d="M550 452H593 M584 447L593 452L584 457" stroke="#427b8e" stroke-width="1.5" fill="none"/>
+<text x="602" y="456" class="s">фасады к кровати</text>
+<path d="M546.32 508H565V526.8" fill="none" stroke="#427b8e" stroke-width="1.5"/><text x="572" y="515" class="s b">90°</text>
+<path d="M450 307H362" class="guide"/><text x="353" y="312" text-anchor="end" class="s b">≈ 274 на мат</text>
+<rect x="724.66" y="418.8" width="111" height="108" fill="#fff0cf" stroke="#bd965a" stroke-width="2" stroke-dasharray="5 5"/>
+<text x="780" y="460" text-anchor="middle" class="s b">ЛЕСТНИЦА</text><text x="780" y="482" text-anchor="middle" class="s">вдоль стены</text><text x="780" y="504" text-anchor="middle" class="s">вылет уточнить</text>
+<line x1="835.66" y1="373.8" x2="916" y2="373.8" class="guide"/><line x1="835.66" y1="526.8" x2="916" y2="526.8" class="guide"/>
+<line x1="912" y1="373.8" x2="912" y2="526.8" class="dim"/><text x="930" y="450" text-anchor="middle" transform="rotate(90 930 450)" class="s b">850 до линии входа</text>
+<line x1="145" y1="749" x2="379" y2="749" class="dim"/><text x="262" y="742" text-anchor="middle" class="s">1300</text>
+<line x1="379" y1="749" x2="457.66" y2="749" class="dim"/><text x="418" y="742" text-anchor="middle" class="s">437</text>
+<line x1="457.66" y1="749" x2="835.66" y2="749" class="dim"/><text x="646" y="742" text-anchor="middle" class="s">2100</text>
+<line x1="145" y1="792" x2="835.66" y2="792" class="dim"/><text x="490" y="783" text-anchor="middle" class="t b">3837 · СТЕНА С КРОВАТЬЮ ПО ОБМЕРУ</text>
+<text x="55" y="828" class="s">2810 — ширина по БТИ. Контуры спорткомплекса и мата перенесены из схемы 48.</text>
+
+<rect x="1000" y="100" width="510" height="758" rx="12" class="card"/>
+<text x="1025" y="137" class="h">Проверка двух торцов</text>
+<text x="1025" y="178" class="t b">Лестница у правой стены</text>
+<text x="1025" y="208" class="t">2810 − 910 − 1050 = 850.</text>
+<text x="1025" y="234" class="s">От края кровати до линии проёма P2 по БТИ.</text>
+<text x="1025" y="259" class="s">Сверить вылет лестницы с ящиками и входом.</text>
+<rect x="1020" y="294" width="470" height="195" rx="9" class="warn"/>
+<text x="1037" y="325" class="t b">Горка слева выходит к спортзоне</text>
+<text x="1037" y="355" class="s">При вылете 1334 и мате глубиной 700</text>
+<text x="1037" y="379" class="s">наложение по глубине составляет около 274 мм.</text>
+<text x="1037" y="403" class="s">До условной рамы остаётся около 126 мм.</text>
+<text x="1037" y="431" class="s">Размер зоны съезда и зона колец пока не заданы.</text>
+<text x="1037" y="455" class="s">Габариты примера горки взяты по Maxtrix.</text>
+<text x="1025" y="540" class="t b">Хранение под горкой</text>
+<text x="1025" y="570" class="s">Фасады со стороны нижнего яруса.</text>
+<text x="1025" y="595" class="s">Проверить открывание и доступ к шкафу.</text>
+<line x1="1025" y1="642" x2="1485" y2="642" stroke="#d1ddd4"/>
+<text x="1025" y="673" class="s">Основание: S10, БТИ B01, схемы детской 48 и 70.</text>
+</svg>

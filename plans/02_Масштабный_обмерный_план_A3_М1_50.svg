@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="297mm" height="420mm" viewBox="0 0 297 420">
+  <title>Квартира — масштабный обмерный план, А3, М 1:50</title>
+  <desc>Технический план с масштабом 1:50. Сплошными линиями показаны контуры с подтверждёнными размерами. Пунктирные контуры показывают положение помещения по схеме S14 и не являются координатной геометрией.</desc>
+  <defs>
+    <style>
+      text { font-family: Arial, sans-serif; fill: #101820; }
+      .title { font-size: 5px; font-weight: 700; } .sub { font-size: 2.5px; }
+      .room { fill: #fbfcfd; stroke: #101820; stroke-width: .7; }
+      .provisional { fill: #fff8e8; stroke: #7b5b14; stroke-width: .55; stroke-dasharray: 2 1.2; }
+      .dimline { stroke: #2d5f87; stroke-width: .28; fill: none; }
+      .ext { stroke: #2d5f87; stroke-width: .22; }
+      .ceiling { fill: #125d43; font-size: 2.35px; font-weight: 700; }
+      .name { font-size: 3.25px; font-weight: 700; } .detail { font-size: 2.25px; }
+      .dim { fill: #164f7a; font-size: 2.35px; font-weight: 700; }
+      .small { font-size: 1.9px; } .src { fill: #005b96; font-size: 2.2px; text-decoration: underline; }
+      .note { fill: #6d4b0b; font-size: 2.15px; }
+      .panel { fill: #f7f9fb; stroke: #9eabb6; stroke-width: .35; }
+      .thin { stroke: #101820; stroke-width: .25; fill: none; }
+      .door { stroke: #101820; stroke-width: .35; fill: none; } .opening { stroke: #fff; stroke-width: 1.8; }
+    </style>
+    <marker id="arrow" viewBox="0 0 4 4" refX="2" refY="2" markerWidth="2" markerHeight="2" orient="auto-start-reverse"><path d="M0,0 L4,2 L0,4 z" fill="#2d5f87"/></marker>
+    <pattern id="hatch" width="2" height="2" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="2" stroke="#d7b96d" stroke-width=".35"/></pattern>
+  </defs>
+
+  <rect x="5" y="5" width="287" height="410" fill="#fff" stroke="#101820" stroke-width=".5"/>
+  <text x="14" y="17" class="title">МАСШТАБНЫЙ ОБМЕРНЫЙ ПЛАН КВАРТИРЫ</text>
+  <text x="14" y="22" class="sub">Лист А3 · М 1:50 при печати 100% · единицы на размерных линиях — мм · редакция 7 · 10.08.2026</text>
+  <text x="14" y="27" class="sub">Основание: контрольные обмеры S01–S14. Сплошной контур = размер подтверждён; пунктир = связь помещений без полной координатной цепочки.</text>
+
+  <!-- 9 Terrace: 3310 x 2110, verified -->
+  <a href="../Чертежи квартиры/photo_1_2026-08-04_22-23-23.jpg" target="_blank">
+    <rect x="22.4" y="55" width="66.2" height="42.2" class="room"/>
+    <text x="25" y="62" class="name">9 Терраса</text><text x="25" y="67" class="detail">открытая, высота потолка н/п</text><text x="25" y="72" class="dim">остекление: 1655; проём: 1298</text><text x="25" y="77" class="src">S01 · S12</text>
+  </a>
+  <line x1="22.4" y1="52" x2="88.6" y2="52" class="dimline" marker-start="url(#arrow)" marker-end="url(#arrow)"/><line x1="22.4" y1="55" x2="22.4" y2="50" class="ext"/><line x1="88.6" y1="55" x2="88.6" y2="50" class="ext"/><text x="52" y="50.5" class="dim">3310</text>
+  <line x1="18.5" y1="55" x2="18.5" y2="97.2" class="dimline" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="16.5" y="79" class="dim" transform="rotate(-90 16.5 79)">2110 / 2130</text>
+
+  <!-- 1 Kitchen-living: confirmed fragments shown at true scale -->
+  <a href="../Чертежи квартиры/photo_12_2026-08-04_22-23-24.jpg" target="_blank">
+    <rect x="20" y="97.2" width="71" height="114.1" class="room"/>
+    <text x="23" y="105" class="name">1 Кухня-гостиная</text><text x="23" y="110" class="detail">контрольный контур: 3550 × 5705</text><text x="23" y="115" class="dim">доп. горизонталь контура: 2749</text><text x="23" y="120" class="ceiling">потолок: 2714–2727; центр 2719</text><text x="23" y="125" class="detail">локально у розеток: 2530; розетки D15/D50</text><text x="23" y="130" class="src">S03 · S10 · S12</text>
+  </a>
+  <line x1="20" y1="215" x2="91" y2="215" class="dimline" marker-start="url(#arrow)" marker-end="url(#arrow)"/><line x1="20" y1="211.3" x2="20" y2="218" class="ext"/><line x1="91" y1="211.3" x2="91" y2="218" class="ext"/><text x="51" y="213.5" class="dim">~3550</text>
+  <line x1="15" y1="97.2" x2="15" y2="211.3" class="dimline" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="13" y="159" class="dim" transform="rotate(-90 13 159)">5705</text>
+  <!-- opening Д2 915 in lower kitchen wall -->
+  <line x1="51.1" y1="211.3" x2="69.4" y2="211.3" class="opening"/><path d="M51.1 211.3 A18.3 18.3 0 0 1 69.4 193" class="door"/><text x="50" y="190" class="dim">проём 915 × 2150</text>
+  <text x="48" y="188" class="small">Д2</text>
+
+  <!-- 2 Child room: width is verified, depth connection is not -->
+  <a href="../Чертежи квартиры/photo_10_2026-08-04_22-23-24.jpg" target="_blank">
+    <rect x="91" y="97.2" width="76.7" height="114.1" class="provisional" fill="url(#hatch)"/>
+    <text x="95" y="105" class="name">2 Детская</text><text x="95" y="110" class="detail">сторона: 3825 / 3837</text><text x="95" y="115" class="ceiling">потолок: 2712–2716; центр 2715</text><text x="95" y="120" class="note">глубина на S10 не задана как размер стены</text><text x="95" y="125" class="src">S10</text>
+  </a>
+  <line x1="91" y1="93.5" x2="167.7" y2="93.5" class="dimline" marker-start="url(#arrow)" marker-end="url(#arrow)"/><line x1="91" y1="97.2" x2="91" y2="91" class="ext"/><line x1="167.7" y1="97.2" x2="167.7" y2="91" class="ext"/><text x="121" y="92" class="dim">3825 / 3837</text>
+
+  <!-- Opening map from S14. Location is shown; confirmed linear sizes are D1 and D2. -->
+  <line x1="36" y1="97.2" x2="47" y2="97.2" class="opening"/><line x1="36" y1="95.4" x2="47" y2="95.4" class="thin"/><text x="38" y="93.2" class="small">О1</text>
+  <line x1="124" y1="97.2" x2="135" y2="97.2" class="opening"/><line x1="124" y1="95.4" x2="135" y2="95.4" class="thin"/><text x="126" y="93.2" class="small">О2</text>
+  <line x1="110" y1="373.3" x2="122" y2="373.3" class="opening"/><line x1="110" y1="375.1" x2="122" y2="375.1" class="thin"/><text x="112" y="382" class="small">О3</text>
+  <line x1="20" y1="225" x2="20" y2="247.8" class="opening"/><path d="M20 225 A22.8 22.8 0 0 1 42.8 247.8" class="door"/><text x="23" y="243" class="small">Д1</text>
+  <line x1="110.4" y1="218" x2="110.4" y2="228" class="opening"/><path d="M110.4 218 A10 10 0 0 0 100.4 228" class="door"/><text x="102" y="222" class="small">Д3</text>
+  <line x1="110.4" y1="241" x2="110.4" y2="251" class="opening"/><path d="M110.4 241 A10 10 0 0 0 100.4 251" class="door"/><text x="102" y="245" class="small">Д4</text>
+  <line x1="110.4" y1="267" x2="110.4" y2="277" class="opening"/><path d="M110.4 267 A10 10 0 0 0 100.4 277" class="door"/><text x="102" y="271" class="small">Д5</text>
+
+  <!-- 3 Entrance: position only, no closed plan dimensions -->
+  <a href="../Чертежи квартиры/photo_9_2026-08-04_22-23-24.jpg" target="_blank">
+    <rect x="20" y="211.3" width="71" height="37.6" class="provisional" fill="url(#hatch)"/>
+    <text x="23" y="219" class="name">3 Прихожая (вход)</text><text x="23" y="224" class="ceiling">потолок, углы/центр: 2750</text><text x="23" y="229" class="note">контур без переносимой размерной цепочки</text><text x="23" y="234" class="src">S08 · S09</text>
+  </a>
+
+  <!-- 4 Corridor: two verified measured fragments -->
+  <a href="../Чертежи квартиры/photo_6_2026-08-04_22-23-23.jpg" target="_blank">
+    <rect x="91" y="211.3" width="19.4" height="37.6" class="room"/>
+    <rect x="91" y="248.9" width="19.2" height="35.6" class="room"/>
+    <text x="92.5" y="220" class="name">4</text><text x="92.5" y="225" class="detail">970×1880</text><text x="92.5" y="230" class="detail">960×1780</text><text x="92.5" y="235" class="dim">до балки: 630</text><text x="92.5" y="240" class="ceiling">H 2750*</text><text x="92.5" y="245" class="src">S06 · U01</text>
+  </a>
+  <line x1="91" y1="207.5" x2="110.4" y2="207.5" class="dimline" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="96" y="206" class="dim">970</text>
+  <line x1="87" y1="211.3" x2="87" y2="248.9" class="dimline" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="85" y="234" class="dim" transform="rotate(-90 85 234)">1880</text>
+  <line x1="113.8" y1="248.9" x2="113.8" y2="284.5" class="dimline" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="116" y="272" class="dim" transform="rotate(-90 116 272)">1780</text>
+
+  <!-- sanitary rooms: topology only -->
+  <a href="../Чертежи квартиры/photo_9_2026-08-04_22-35-06.jpg" target="_blank">
+    <rect x="110.4" y="211.3" width="34.8" height="25" class="provisional" fill="url(#hatch)"/>
+    <text x="113" y="219" class="name">6 Ванная</text><text x="113" y="224" class="note">полный контур / высота</text><text x="113" y="228" class="note">не читаются как рабочие</text><text x="113" y="233" class="src">F09–F20</text>
+  </a>
+  <a href="../Чертежи квартиры/photo_5_2026-08-04_22-23-23.jpg" target="_blank">
+    <rect x="110.4" y="236.3" width="34.8" height="25" class="provisional" fill="url(#hatch)"/>
+    <text x="113" y="244" class="name">7 Туалет</text><text x="113" y="249" class="detail">короб: 456; t=28</text><text x="113" y="253" class="detail">участки: 933 / 1142 / 658</text><text x="113" y="257" class="note">контур / высота: уточнить</text><text x="113" y="261" class="src">S05</text>
+  </a>
+
+  <!-- 8 Wardrobe: verified local rectangle -->
+  <a href="../Чертежи квартиры/photo_7_2026-08-04_22-23-24.jpg" target="_blank">
+    <rect x="110.4" y="261.3" width="34.8" height="34.6" class="room"/>
+    <text x="113" y="269" class="name">8 Гардеробная</text><text x="113" y="274" class="detail">1739/1745 × 1732/1730</text><text x="113" y="279" class="dim">внутренняя отметка: 1748</text><text x="113" y="284" class="ceiling">потолок: 2712–2718</text><text x="113" y="289" class="src">S07</text>
+  </a>
+  <line x1="110.4" y1="299" x2="145.2" y2="299" class="dimline" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="120" y="297.5" class="dim">1739 / 1745</text>
+
+  <!-- 5 Bedroom: verified local rectangle -->
+  <a href="../Чертежи квартиры/photo_2_2026-08-04_22-23-23.jpg" target="_blank">
+    <rect x="91" y="295.9" width="57.4" height="77.4" class="room"/>
+    <text x="94" y="304" class="name">5 Спальня</text><text x="94" y="309" class="detail">2870 / 2830 × 3870</text><text x="94" y="314" class="ceiling">2750 вне перехода 4↔5</text><text x="94" y="318" class="note">в переходе: потолок ниже, H н/д</text><text x="94" y="323" class="src">S02 · S04 · U01</text>
+  </a>
+  <line x1="91" y1="377" x2="148.4" y2="377" class="dimline" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="111" y="375.5" class="dim">2870 / 2830</text>
+  <line x1="152" y1="295.9" x2="152" y2="373.3" class="dimline" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="154" y="338" class="dim" transform="rotate(-90 154 338)">3870</text>
+  <!-- user-confirmed transition corridor 4 to bedroom 5; no linear dimensions yet -->
+  <line x1="100.6" y1="284.5" x2="100.6" y2="295.9" class="provisional"/>
+  <text x="92" y="288.5" class="note">4↔5: проём</text><text x="92" y="292" class="note">ниже потолок; фрагм. стен</text>
+
+  <!-- Opening overlay: must remain above room fills. -->
+  <line x1="36" y1="97.2" x2="47" y2="97.2" class="opening"/><line x1="36" y1="95.4" x2="47" y2="95.4" class="thin"/><text x="38" y="93.2" class="small">О1</text>
+  <line x1="124" y1="97.2" x2="135" y2="97.2" class="opening"/><line x1="124" y1="95.4" x2="135" y2="95.4" class="thin"/><text x="126" y="93.2" class="small">О2</text>
+  <line x1="110" y1="373.3" x2="122" y2="373.3" class="opening"/><line x1="110" y1="375.1" x2="122" y2="375.1" class="thin"/><text x="112" y="382" class="small">О3</text>
+  <line x1="20" y1="225" x2="20" y2="247.8" class="opening"/><path d="M20 225 A22.8 22.8 0 0 1 42.8 247.8" class="door"/><text x="23" y="244" class="dim">Д1 1140×2150</text>
+  <line x1="51.1" y1="211.3" x2="69.4" y2="211.3" class="opening"/><path d="M51.1 211.3 A18.3 18.3 0 0 1 69.4 193" class="door"/><text x="48" y="188" class="small">Д2</text>
+  <line x1="110.4" y1="218" x2="110.4" y2="228" class="opening"/><path d="M110.4 218 A10 10 0 0 0 100.4 228" class="door"/><text x="102" y="222" class="small">Д3</text>
+  <line x1="110.4" y1="241" x2="110.4" y2="251" class="opening"/><path d="M110.4 241 A10 10 0 0 0 100.4 251" class="door"/><text x="102" y="245" class="small">Д4</text>
+  <line x1="110.4" y1="267" x2="110.4" y2="277" class="opening"/><path d="M110.4 267 A10 10 0 0 0 100.4 277" class="door"/><text x="102" y="271" class="small">Д5</text>
+
+  <!-- notes and legend -->
+  <rect x="185" y="40" width="97" height="250" rx="2" class="panel"/>
+  <text x="191" y="50" class="name">Статус масштаба</text>
+  <line x1="191" y1="53" x2="276" y2="53" class="thin"/>
+  <text x="191" y="60" class="detail">1 drawing mm = 50 real mm.</text>
+  <text x="191" y="65" class="detail">Проверка печати: масштабная линейка ниже.</text>
+  <rect x="191" y="70" width="20" height="3" fill="#101820"/><rect x="211" y="70" width="20" height="3" fill="#fff" stroke="#101820" stroke-width=".25"/><text x="191" y="77" class="detail">0</text><text x="209" y="77" class="detail">1000</text><text x="229" y="77" class="detail">2000 мм</text>
+  <text x="191" y="89" class="name">Условные обозначения</text>
+  <rect x="191" y="94" width="12" height="8" class="room"/><text x="207" y="99" class="detail">подтверждённый масштабный контур</text>
+  <rect x="191" y="106" width="12" height="8" class="provisional" fill="url(#hatch)"/><text x="207" y="111" class="detail">схемное положение; размерной цепочки нет</text>
+  <line x1="191" y1="119" x2="203" y2="119" class="dimline" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="207" y="120" class="detail">контрольный размер, мм</text>
+  <text x="191" y="133" class="name">Размеры и высоты</text>
+  <text x="191" y="140" class="detail">Плановые размеры — синим; значения</text><text x="191" y="144" class="detail">потолка — зелёным. Разные значения</text><text x="191" y="148" class="detail">не усреднялись.</text>
+  <text x="191" y="158" class="name">Неподтверждённые зоны</text>
+  <text x="191" y="165" class="note">Детская: отсутствует второй плановый</text><text x="191" y="169" class="note">размер. Прихожая: нет замкнутой цепочки.</text><text x="191" y="173" class="note">Ванная и туалет: рабочий полный контур</text><text x="191" y="177" class="note">и высоты не считываются в доступных JPG.</text>
+  <text x="191" y="188" class="name">Ключевые источники</text>
+  <a href="../Чертежи квартиры/photo_14_2026-08-04_22-23-24.jpg" target="_blank"><text x="191" y="195" class="src">S14 — взаимное расположение 1–9</text></a>
+  <a href="../Чертежи квартиры/photo_12_2026-08-04_22-23-24.jpg" target="_blank"><text x="191" y="200" class="src">S12 — кухня-гостиная, потолок</text></a>
+  <a href="../Чертежи квартиры/photo_10_2026-08-04_22-23-24.jpg" target="_blank"><text x="191" y="205" class="src">S10 — детская и проём</text></a>
+  <a href="../Чертежи квартиры/photo_9_2026-08-04_22-23-24.jpg" target="_blank"><text x="191" y="210" class="src">S09 — прихожая</text></a>
+  <a href="../Чертежи квартиры/photo_6_2026-08-04_22-23-23.jpg" target="_blank"><text x="191" y="215" class="src">S06 — коридор</text></a>
+  <a href="../Чертежи квартиры/photo_2_2026-08-04_22-23-23.jpg" target="_blank"><text x="191" y="220" class="src">S02 — спальня</text></a>
+  <a href="../Чертежи квартиры/photo_7_2026-08-04_22-23-24.jpg" target="_blank"><text x="191" y="225" class="src">S07 — гардеробная</text></a>
+  <text x="191" y="236" class="name">Проёмы по S14</text>
+  <text x="191" y="243" class="detail">О1 — кухня, О2 — детская, О3 — спальня.</text><text x="191" y="247" class="detail">Д1 — вход 1140×2150; Д2 — кухня/прихожая 915×2150.</text><text x="191" y="251" class="detail">Д3–Д5 — санузлы и гардеробная.</text><text x="191" y="255" class="note">Для О1–О3, Д3–Д5 на S14 нет линейных</text><text x="191" y="259" class="note">привязок: показано положение, не ширина.</text>
+  <text x="191" y="240" class="name">Перед применением</text>
+  <text x="191" y="270" class="name">Перед применением</text>
+  <text x="191" y="277" class="note">Не использовать пунктирные контуры для</text><text x="191" y="281" class="note">заказа мебели, плитки или переноса стен.</text><text x="191" y="285" class="note">Для этого нужны недостающие размеры</text><text x="191" y="289" class="note">и повторная проверка на объекте.</text>
+  <text x="14" y="406" class="small">APT-001 · масштабный технический лист · лист 1 из 2 · не является разрешением на перепланировку.</text>
+</svg>

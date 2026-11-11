@@ -1,0 +1,163 @@
+<section id="bedroom-newborn-layout" aria-labelledby="newborn-title">
+  <style>
+    #bedroom-newborn-layout {
+      color: var(--foreground);
+    }
+    #bedroom-newborn-layout h2 {
+      margin: 0 0 12px;
+    }
+    #bedroom-newborn-layout svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      overflow: visible;
+    }
+    #bedroom-newborn-layout .room {
+      fill: color-mix(in srgb, var(--background) 84%, var(--foreground) 16%);
+      stroke: var(--foreground);
+      stroke-width: 2;
+    }
+    #bedroom-newborn-layout .wall {
+      stroke: var(--foreground);
+      stroke-width: 7;
+      fill: none;
+    }
+    #bedroom-newborn-layout .opening {
+      stroke: var(--green);
+      stroke-width: 4;
+      fill: none;
+    }
+    #bedroom-newborn-layout .window {
+      stroke: var(--blue);
+      stroke-width: 4;
+      fill: none;
+    }
+    #bedroom-newborn-layout .radiator {
+      fill: color-mix(in srgb, var(--blue) 16%, transparent);
+      stroke: var(--blue);
+      stroke-width: 1.5;
+    }
+    #bedroom-newborn-layout .unit {
+      fill: color-mix(in srgb, var(--secondary) 78%, var(--foreground) 22%);
+      stroke: var(--foreground);
+      stroke-width: 1.5;
+    }
+    #bedroom-newborn-layout .vanity {
+      fill: color-mix(in srgb, var(--accent) 72%, transparent);
+      stroke: var(--foreground);
+      stroke-width: 1.5;
+    }
+    #bedroom-newborn-layout .bed {
+      fill: color-mix(in srgb, var(--primary) 16%, var(--background) 84%);
+      stroke: var(--foreground);
+      stroke-width: 1.7;
+    }
+    #bedroom-newborn-layout .cot {
+      fill: color-mix(in srgb, var(--green) 25%, var(--background) 75%);
+      stroke: var(--green);
+      stroke-width: 2;
+    }
+    #bedroom-newborn-layout .removed {
+      fill: color-mix(in srgb, var(--destructive) 10%, transparent);
+      stroke: var(--destructive);
+      stroke-width: 1.5;
+      stroke-dasharray: 6 4;
+    }
+    #bedroom-newborn-layout .dim,
+    #bedroom-newborn-layout .leader {
+      stroke: var(--muted-foreground);
+      stroke-width: 1.25;
+      fill: none;
+    }
+    #bedroom-newborn-layout .dim {
+      marker-start: url(#arrow);
+      marker-end: url(#arrow);
+    }
+    #bedroom-newborn-layout .label {
+      fill: var(--foreground);
+      font: 500 14px/1.2 system-ui, sans-serif;
+    }
+    #bedroom-newborn-layout .small {
+      fill: var(--muted-foreground);
+      font: 400 12px/1.2 system-ui, sans-serif;
+    }
+    #bedroom-newborn-layout .measure {
+      fill: var(--foreground);
+      font: 500 12px/1.2 system-ui, sans-serif;
+    }
+    #bedroom-newborn-layout .accent {
+      fill: var(--green);
+      font: 500 13px/1.2 system-ui, sans-serif;
+    }
+  </style>
+  <h2 id="newborn-title">Временная приставная люлька — план B01</h2>
+  <svg viewBox="0 0 820 770" role="img" aria-labelledby="newborn-svg-title newborn-svg-desc">
+    <title id="newborn-svg-title">План спальни с временной приставной люлькой справа от взрослой кровати</title>
+    <desc id="newborn-svg-desc">Люлька 550 на 950 миллиметров ставится вместо правой прикроватной тумбы. До фасада встроенной группы остаётся проход 990 миллиметров. Проход P6, окно O3 и радиатор R-05 свободны.</desc>
+    <defs>
+      <marker id="arrow" viewBox="0 0 8 8" refX="4" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M 0 0 L 8 4 L 0 8 z" fill="var(--muted-foreground)"></path>
+      </marker>
+    </defs>
+
+    <rect class="room" x="88" y="140" width="576" height="421.5" rx="1"></rect>
+    <path class="wall" d="M88 140 H664 M88 561.5 H664 M88 140 V561.5 M664 140 V281 M664 281 V561.5"></path>
+
+    <line class="opening" x1="664" y1="140" x2="664" y2="281"></line>
+    <text class="accent" x="677" y="203">P6 · 940</text>
+    <text class="small" x="677" y="220">свободный проход</text>
+
+    <line class="window" x1="88" y1="230" x2="88" y2="470"></line>
+    <rect class="radiator" x="95" y="264" width="23" height="172" rx="2"></rect>
+    <text class="small" x="25" y="245">O3 · 1 600</text>
+    <text class="small" x="22" y="261">R-05 свободен</text>
+
+    <rect class="vanity" x="574" y="281" width="90" height="156.6"></rect>
+    <rect class="unit" x="574" y="437.6" width="90" height="123.9"></rect>
+    <text class="small" x="583" y="316">зона</text>
+    <text class="small" x="583" y="332">зеркала</text>
+    <text class="small" x="583" y="465">шкаф</text>
+    <text class="small" x="583" y="481">1 000</text>
+    <text class="small" x="574" y="583">встроенная группа по стене 5/8 · 1 870×600</text>
+
+    <rect class="bed" x="133" y="261.5" width="210" height="300" rx="8"></rect>
+    <line class="leader" x1="133" y1="516" x2="343" y2="516"></line>
+    <text class="label" x="158" y="398">кровать</text>
+    <text class="small" x="157" y="415">1 400×2 000</text>
+    <text class="small" x="158" y="541">изголовье</text>
+
+    <rect class="unit" x="88" y="501.5" width="45" height="60"></rect>
+    <text class="small" x="92" y="494">левая тумба 300×400</text>
+
+    <rect class="removed" x="343" y="501.5" width="45" height="60"></rect>
+    <path class="leader" d="M388 532 L452 502"></path>
+    <text class="small" x="457" y="498">временно убрать</text>
+    <text class="small" x="457" y="514">правую тумбу 300×400</text>
+
+    <rect class="cot" x="343" y="419" width="82.5" height="142.5" rx="6"></rect>
+    <line x1="355" y1="432" x2="413" y2="432" stroke="var(--green)" stroke-width="1.5"></line>
+    <line x1="355" y1="549" x2="413" y2="549" stroke="var(--green)" stroke-width="1.5"></line>
+    <text class="accent" x="438" y="430">приставная люлька</text>
+    <text class="accent" x="438" y="447">550×950 (внешний габарит)</text>
+    <path class="leader" d="M425.5 466 L434 446"></path>
+
+    <line class="dim" x1="425.5" y1="478" x2="574" y2="478"></line>
+    <text class="measure" x="458" y="469">проход 990</text>
+    <text class="small" x="458" y="493">до фасада шкафа</text>
+
+    <line class="dim" x1="88" y1="100" x2="664" y2="100"></line>
+    <line class="leader" x1="88" y1="108" x2="88" y2="140"></line>
+    <line class="leader" x1="664" y1="108" x2="664" y2="140"></line>
+    <text class="measure" x="332" y="91">3 840</text>
+
+    <line class="dim" x1="48" y1="140" x2="48" y2="561.5"></line>
+    <line class="leader" x1="56" y1="140" x2="88" y2="140"></line>
+    <line class="leader" x1="56" y1="561.5" x2="88" y2="561.5"></line>
+    <text class="measure" x="36" y="364" transform="rotate(-90 36 364)">2 810</text>
+
+    <text class="label" x="88" y="630">Временный сценарий на период с новорождённым</text>
+    <text class="small" x="88" y="653">Люлька занимает место правой тумбы; окно, радиатор и P6 не затрагиваются.</text>
+    <text class="small" x="88" y="677">Перед покупкой: сверить внешний габарит, высоту матраса, способ фиксации и допустимый зазор по инструкции выбранной модели.</text>
+    <text class="small" x="88" y="708">Основа схемы: спальня B01 3 840×2 810; мебельные размеры — концептуальные, требуют контрольного обмера.</text>
+  </svg>
+</section>

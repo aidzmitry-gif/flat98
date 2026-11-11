@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1100" viewBox="0 0 1800 1100">
+  <defs>
+    <style>
+      .title{font:700 34px 'Segoe UI',Arial,sans-serif;fill:#17312f}
+      .subtitle{font:400 17px 'Segoe UI',Arial,sans-serif;fill:#58706b}
+      .h2{font:700 23px 'Segoe UI',Arial,sans-serif;fill:#17312f}
+      .h3{font:700 18px 'Segoe UI',Arial,sans-serif;fill:#203c38}
+      .body{font:400 15px 'Segoe UI',Arial,sans-serif;fill:#334844}
+      .small{font:400 13px 'Segoe UI',Arial,sans-serif;fill:#536864}
+      .micro{font:400 11px 'Segoe UI',Arial,sans-serif;fill:#62736f}
+      .bold{font-weight:700;fill:#17312f}
+      .wall{stroke:#263c38;stroke-width:5;fill:none;stroke-linecap:square}
+      .dim{stroke:#317087;stroke-width:1.7;fill:none;marker-start:url(#arr);marker-end:url(#arr)}
+      .thin{stroke:#9aaba7;stroke-width:1.2;fill:none}
+      .dash{stroke-dasharray:8 6}
+      .card{fill:#fffefa;stroke:#cbd5d1;stroke-width:1.5}
+      .module{fill:#dbe8d7;stroke:#6e8d75;stroke-width:1.7}
+      .module2{fill:#e6d1a3;stroke:#8c7144;stroke-width:1.7}
+      .proposed{fill:#f3ead7;stroke:#ad8a4e;stroke-width:1.2}
+      .measure{fill:#f8e5dc;stroke:#b36f56;stroke-width:1.2}
+      .b01{fill:#e7f0f3;stroke:#477b8d;stroke-width:1.2}
+      .real{fill:#e4f0e8;stroke:#577762;stroke-width:1.2}
+    </style>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse">
+      <path d="M8,1 L1,4 L8,7" fill="none" stroke="#317087" stroke-width="1.4"/>
+    </marker>
+    <pattern id="radiator" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#db8d68" stroke-width="3"/>
+    </pattern>
+    <pattern id="nofurniture" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#7eb0be" stroke-width="2" opacity=".45"/>
+    </pattern>
+  </defs>
+
+  <rect width="1800" height="1100" fill="#f7f5ef"/>
+  <text x="55" y="54" class="title">Детская B01 — координационный пакет мебельщику, решение D</text>
+  <text x="55" y="84" class="subtitle">Актуализация: двухъярусная M2 по листам 11/12 · реальные стены не усредняются · B01 требует контроля</text>
+  <rect x="1530" y="32" width="215" height="48" rx="9" class="measure"/>
+  <text x="1637" y="62" text-anchor="middle" class="h3" fill="#8b4e3a">НЕ В ПРОИЗВОДСТВО</text>
+
+  <text x="55" y="139" class="h2">1. Координационный план с двухъярусной M2</text>
+  <text x="55" y="165" class="small">Пропорции показаны по B01/минимальной длине только для проверки коллизий; заказные оси появятся после обмера.</text>
+
+  <!-- Main room plan -->
+  <g aria-label="plan">
+    <line x1="110" y1="210" x2="730" y2="210" class="wall"/>
+    <line x1="110" y1="666" x2="730" y2="666" class="wall"/>
+    <line x1="730" y1="210" x2="730" y2="666" class="wall"/>
+    <line x1="110" y1="358" x2="110" y2="666" class="wall"/>
+
+    <!-- B01 entry segment -->
+    <line x1="110" y1="210" x2="110" y2="358" stroke="#477b8d" stroke-width="3" stroke-dasharray="7 5"/>
+    <text x="82" y="286" transform="rotate(-90 82 286)" text-anchor="middle" class="small">B01 910 · чистый вход н/д</text>
+
+    <!-- Window and radiator -->
+    <line x1="730" y1="309" x2="730" y2="568" stroke="#4a9bb2" stroke-width="9"/>
+    <line x1="742" y1="309" x2="742" y2="568" stroke="#8fc2cf" stroke-width="3"/>
+    <rect x="700" y="340" width="29" height="200" fill="url(#radiator)"/>
+    <circle cx="704" cy="522" r="6" fill="#b36f56"/>
+    <rect x="532" y="340" width="148" height="105" rx="7" fill="#fffefa" stroke="#9fc0c8" stroke-width="1"/>
+    <text x="545" y="365" class="small bold">O2 1600 B01</text>
+    <text x="545" y="383" class="micro">створки разные по фото</text>
+    <text x="545" y="410" class="micro bold">R-02 н/д:</text>
+    <text x="545" y="427" class="micro">габарит / ось / вылет</text>
+    <text x="545" y="443" class="micro">клапан, трубы — доступ</text>
+    <line x1="680" y1="368" x2="726" y2="368" class="thin"/>
+    <line x1="680" y1="414" x2="712" y2="414" class="thin"/>
+
+    <!-- No furniture zone at window -->
+    <rect x="676" y="210" width="54" height="456" fill="url(#nofurniture)"/>
+    <text x="690" y="638" transform="rotate(-90 690 638)" class="micro">окно и радиатор — без мебели</text>
+
+    <!-- M1 wardrobe -->
+    <rect x="110" y="455" width="97" height="211" rx="5" class="module2"/>
+    <text x="158" y="540" text-anchor="middle" class="h3">M1</text>
+    <text x="158" y="562" text-anchor="middle" class="small">шкаф</text>
+    <text x="158" y="583" text-anchor="middle" class="small">1300×600 P</text>
+
+    <!-- 600 buffer -->
+    <rect x="110" y="358" width="20" height="97" fill="#f3ead7" opacity=".7"/>
+    <text x="139" y="410" class="micro">буфер 600 P</text>
+
+    <!-- M2 bed: external envelope unknown -->
+    <rect x="240" y="515" width="350" height="151" rx="7" fill="#eef3eb" stroke="#b36f56" stroke-width="1.7" stroke-dasharray="8 6"/>
+    <rect x="252" y="528" width="324" height="138" rx="6" class="module"/>
+    <text x="414" y="584" text-anchor="middle" class="h3">M2 · 2×900×2000</text>
+    <text x="414" y="608" text-anchor="middle" class="small">конверт ≤2100×1050×1850 — P/M</text>
+    <text x="414" y="630" text-anchor="middle" class="micro">включая лестницу и выступающую фурнитуру</text>
+
+    <!-- M3 storage -->
+    <rect x="272" y="210" width="227" height="57" rx="5" class="module"/>
+    <text x="385" y="238" text-anchor="middle" class="h3">M3 · 1400×350 P</text>
+    <text x="385" y="257" text-anchor="middle" class="micro">съемное хранение</text>
+
+    <!-- M4 fold desk -->
+    <rect x="515" y="210" width="162" height="20" rx="3" class="module2"/>
+    <rect x="515" y="210" width="162" height="81" rx="5" fill="none" stroke="#ad8a4e" stroke-width="1.5" stroke-dasharray="8 6"/>
+    <text x="596" y="250" text-anchor="middle" class="h3">M4</text>
+    <text x="596" y="270" text-anchor="middle" class="small">1000×500 открыт</text>
+    <text x="596" y="309" text-anchor="middle" class="micro">крепление стены и P1/D1 — M</text>
+
+    <!-- Main dimensions -->
+    <line x1="110" y1="186" x2="730" y2="186" class="dim"/>
+    <text x="420" y="176" text-anchor="middle" class="small bold">две стены R: 3825 и 3837 · расчет остатков только от 3825</text>
+    <line x1="86" y1="210" x2="86" y2="666" class="dim"/>
+    <text x="60" y="438" transform="rotate(-90 60 438)" text-anchor="middle" class="small bold">2810 B01 · нужен второй поперечный контроль</text>
+
+    <rect x="110" y="688" width="620" height="66" rx="8" class="b01"/>
+    <text x="126" y="712" class="small"><tspan class="bold">Входная цепь:</tspan> 910 B01 + 600 P + 1300 P = 2810 B01 — подтвержденного чистового запаса нет.</text>
+    <text x="126" y="737" class="small"><tspan class="bold">Кровать:</tspan> 800 P + L внешняя + остаток = 3825 R. При L=2050 остаток 975; при L=2100 — 925.</text>
+  </g>
+
+  <!-- Right module cards -->
+  <g aria-label="module cards">
+    <rect x="840" y="132" width="425" height="218" rx="12" class="card"/>
+    <rect x="840" y="132" width="425" height="8" rx="4" fill="#ad8a4e"/>
+    <text x="865" y="174" class="h2">M1 · шкаф</text>
+    <rect x="1168" y="151" width="70" height="28" rx="7" class="proposed"/>
+    <text x="1203" y="170" text-anchor="middle" class="small bold">P</text>
+    <text x="865" y="208" class="body"><tspan class="bold">Конверт:</tspan> Ш1300 × Г600; H по минимуму обмера.</text>
+    <text x="865" y="237" class="body">Доборы/монтажный запас входят в 1300 либо корпус уже.</text>
+    <text x="865" y="266" class="body">Нужны: чистый вход, наличники, плинтус, вертикаль.</text>
+    <text x="865" y="295" class="body">Закрытые фасады; крепление; без антресоли над кроватью.</text>
+    <rect x="865" y="313" width="218" height="24" rx="6" class="measure"/>
+    <text x="974" y="330" text-anchor="middle" class="micro bold">СТОП: не выпускать корпус</text>
+
+    <rect x="1290" y="132" width="455" height="218" rx="12" class="card"/>
+    <rect x="1290" y="132" width="455" height="8" rx="4" fill="#6e8d75"/>
+    <text x="1315" y="174" class="h2">M2 · двухъярусная</text>
+    <rect x="1648" y="151" width="70" height="28" rx="7" class="measure"/>
+    <text x="1683" y="170" text-anchor="middle" class="small bold">M</text>
+    <text x="1315" y="208" class="body"><tspan class="bold">Матрасы:</tspan> 2×900×2000; конверт ≤2100×1050×1850.</text>
+    <text x="1315" y="237" class="body">Лестница внутри D1050, длинная сторона, ножная треть.</text>
+    <text x="1315" y="266" class="body">Ограждения/матрасы/нагрузки — по паспорту модели.</text>
+    <text x="1315" y="295" class="body">Привязки B1/B2 назначить после выбора M2.</text>
+    <rect x="1315" y="313" width="245" height="24" rx="6" class="measure"/>
+    <text x="1437" y="330" text-anchor="middle" class="micro bold">СТОП: выбрать реальную модель</text>
+
+    <rect x="840" y="374" width="425" height="188" rx="12" class="card"/>
+    <rect x="840" y="374" width="425" height="8" rx="4" fill="#6e8d75"/>
+    <text x="865" y="416" class="h2">M3 · низкое хранение</text>
+    <rect x="1168" y="393" width="70" height="28" rx="7" class="proposed"/>
+    <text x="1203" y="412" text-anchor="middle" class="small bold">P</text>
+    <text x="865" y="450" class="body">Ш1400 × Г350; высота после выбора функции.</text>
+    <text x="865" y="479" class="body">Отдельный модуль, обратимое крепление от опрокидывания.</text>
+    <text x="865" y="508" class="body">Сохраняется при установке двухъярусной M2.</text>
+    <text x="865" y="537" class="small">Проверить плинтус, розетки и полный ход фасадов.</text>
+
+    <rect x="1290" y="374" width="455" height="188" rx="12" class="card"/>
+    <rect x="1290" y="374" width="455" height="8" rx="4" fill="#ad8a4e"/>
+    <text x="1315" y="416" class="h2">M4 · откидной стол</text>
+    <rect x="1648" y="393" width="70" height="28" rx="7" class="proposed"/>
+    <text x="1683" y="412" text-anchor="middle" class="small bold">P</text>
+    <text x="1315" y="450" class="body">Ш1000 × Г500 открыт; около Г120 закрыт.</text>
+    <text x="1315" y="479" class="body">Высота — после кресла и роста ребенка.</text>
+    <text x="1315" y="508" class="body">Основание стены, анкеры, P1/D1 и механизм — M.</text>
+    <text x="1315" y="537" class="small">Сохраняется; проверить проход при открытой столешнице.</text>
+
+    <rect x="840" y="586" width="905" height="182" rx="12" class="card"/>
+    <rect x="840" y="586" width="905" height="8" rx="4" fill="#477b8d"/>
+    <text x="865" y="628" class="h2">2. Два яруса в одном модуле M2 — предельный внешний конверт</text>
+    <text x="865" y="662" class="body"><tspan class="bold">Продольно:</tspan> 800 P + L M2 + остаток = 3825 R. <tspan class="bold">Поперечно:</tspan> ширина B01 2810 требует второго контроля.</text>
+    <rect x="865" y="686" width="250" height="48" rx="8" class="b01"/>
+    <text x="990" y="707" text-anchor="middle" class="small bold">800 + 2100 + 925</text>
+    <text x="990" y="725" text-anchor="middle" class="micro">= 3825 по реальной стене</text>
+    <rect x="1130" y="686" width="250" height="48" rx="8" class="proposed"/>
+    <text x="1255" y="707" text-anchor="middle" class="small bold">1050 + 1410 + 350</text>
+    <text x="1255" y="725" text-anchor="middle" class="micro">у M3, только по B01</text>
+    <rect x="1395" y="686" width="250" height="48" rx="8" class="measure"/>
+    <text x="1520" y="707" text-anchor="middle" class="small bold">1050 + 1260 + 500</text>
+    <text x="1520" y="725" text-anchor="middle" class="micro">у M4 открыт, только по B01</text>
+    <text x="1665" y="715" class="micro" fill="#8b4e3a">лист 11/12 обязателен</text>
+  </g>
+
+  <!-- Stop gates -->
+  <rect x="55" y="800" width="1690" height="245" rx="14" fill="#fffefa" stroke="#cbd5d1" stroke-width="1.5"/>
+  <text x="80" y="842" class="h2">3. Стоп-точки до рабочего проекта и заказа</text>
+  <text x="80" y="870" class="small">Закрыть одним контрольным обмером и одной ревизией; фотографии и B01 не заменяют размеры.</text>
+
+  <g transform="translate(85 902)">
+    <circle cx="22" cy="22" r="22" fill="#477b8d"/><text x="22" y="29" text-anchor="middle" font-family="Segoe UI,Arial" font-size="19" font-weight="700" fill="white">1</text>
+    <text x="55" y="16" class="h3">Комната</text><text x="55" y="39" class="micro">ширина в 3 сечениях; стены в 3 уровнях</text><text x="55" y="56" class="micro">обе диагонали</text>
+  </g>
+  <g transform="translate(430 902)">
+    <circle cx="22" cy="22" r="22" fill="#477b8d"/><text x="22" y="29" text-anchor="middle" font-family="Segoe UI,Arial" font-size="19" font-weight="700" fill="white">2</text>
+    <text x="55" y="16" class="h3">Вход</text><text x="55" y="39" class="micro">чистый проем, наличники</text><text x="55" y="56" class="micro">откосы и открывание</text>
+  </g>
+  <g transform="translate(745 902)">
+    <circle cx="22" cy="22" r="22" fill="#477b8d"/><text x="22" y="29" text-anchor="middle" font-family="Segoe UI,Arial" font-size="19" font-weight="700" fill="white">3</text>
+    <text x="55" y="16" class="h3">Окно / R-02</text><text x="55" y="39" class="micro">створки, ручки, подоконник, R-02</text><text x="55" y="56" class="micro">трубы и клапан</text>
+  </g>
+  <g transform="translate(1105 902)">
+    <circle cx="22" cy="22" r="22" fill="#477b8d"/><text x="22" y="29" text-anchor="middle" font-family="Segoe UI,Arial" font-size="19" font-weight="700" fill="white">4</text>
+    <text x="55" y="16" class="h3">Мебель</text><text x="55" y="39" class="micro">M2 с лестницей и матрасами</text><text x="55" y="56" class="micro">ограждения и нагрузки</text>
+  </g>
+  <g transform="translate(1430 902)">
+    <circle cx="22" cy="22" r="22" fill="#477b8d"/><text x="22" y="29" text-anchor="middle" font-family="Segoe UI,Arial" font-size="19" font-weight="700" fill="white">5</text>
+    <text x="55" y="16" class="h3">Инженерия</text><text x="55" y="39" class="micro">плинтусы, розетки, P1/D1</text><text x="55" y="56" class="micro">основание стен</text>
+  </g>
+
+  <line x1="80" y1="978" x2="1720" y2="978" stroke="#d7dfdc"/>
+  <rect x="85" y="995" width="56" height="26" rx="6" class="real"/><text x="113" y="1013" text-anchor="middle" class="micro bold">R</text>
+  <text x="151" y="1013" class="small">реальный контроль</text>
+  <rect x="310" y="995" width="56" height="26" rx="6" class="b01"/><text x="338" y="1013" text-anchor="middle" class="micro bold">B</text>
+  <text x="376" y="1013" class="small">B01 / источник</text>
+  <rect x="525" y="995" width="56" height="26" rx="6" class="proposed"/><text x="553" y="1013" text-anchor="middle" class="micro bold">P</text>
+  <text x="591" y="1013" class="small">проектное предложение</text>
+  <rect x="820" y="995" width="56" height="26" rx="6" class="measure"/><text x="848" y="1013" text-anchor="middle" class="micro bold">M</text>
+  <text x="886" y="1013" class="small">обмерить / выбрать до заказа</text>
+  <text x="1715" y="1013" text-anchor="end" class="small bold" fill="#8b4e3a">Выпуск в производство только после закрытия всех M</text>
+
+  <text x="55" y="1080" class="micro">Основание: APT-001 revision 10 + решение D · лист 09; M2 — только совместно с листами 11/12</text>
+  <text x="1745" y="1080" text-anchor="end" class="micro">Следующий обязательный шаг: контрольный обмер по листу 08</text>
+</svg>

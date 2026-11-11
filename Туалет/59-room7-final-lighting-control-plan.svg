@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1080" viewBox="0 0 1440 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Комната 7 — финальный план освещения и управления</title>
+  <desc id="desc">Масштабная схема освещения санузла B01 2090 на 1740 миллиметров. Ванна 1600 на 700 слева, положение WC, тумбы и ВМ-07 сохранено. Показаны две потолочные точки, фронтальная подсветка зеркала и только одна скрытая светодиодная линия под тумбой.</desc>
+  <style>
+    .bg{fill:#171817}.panel{fill:#232522;stroke:#8d918a;stroke-width:2}.wall{fill:none;stroke:#f0eee7;stroke-width:7}.door{fill:none;stroke:#7bbcf0;stroke-width:4;stroke-dasharray:9 6}.fixture{fill:#3c3028;stroke:#d6b18a;stroke-width:2.5}.vanity{fill:#51402f;stroke:#e0a95c;stroke-width:3}.service{fill:#352e53;stroke:#a48afb;stroke-width:2.5}.dim{fill:none;stroke:#a8aaa4;stroke-width:1.4;stroke-dasharray:5 4}.line{stroke:#4c504a;stroke-width:1.5}.light{fill:#f5c878;stroke:#fff2bf;stroke-width:2.5}.light-core{fill:#fff8d7}.mirror{stroke:#aee9eb;stroke-width:7;stroke-linecap:round}.led{stroke:#f5c878;stroke-width:5;stroke-linecap:round}.callout{fill:none;stroke:#f5c878;stroke-width:2;stroke-dasharray:5 4}.control{fill:#41ce85;stroke:#c5f4dc;stroke-width:1.5}.heading{fill:#f3f0e8;font:700 26px Arial,sans-serif}.sub{fill:#a8aaa4;font:16px Arial,sans-serif}.small{fill:#a8aaa4;font:14px Arial,sans-serif}.tiny{fill:#a8aaa4;font:12px Arial,sans-serif}.tinywarn{fill:#f3a458;font:700 12px Arial,sans-serif}.label{fill:#f3f0e8;font:700 16px Arial,sans-serif}.gold{fill:#f5c878;font:700 16px Arial,sans-serif}.green{fill:#41ce85;font:700 15px Arial,sans-serif}.cyan{fill:#aee9eb;font:700 15px Arial,sans-serif}.warn{fill:#f3a458;font:700 15px Arial,sans-serif}
+  </style>
+  <rect class="bg" width="1440" height="1080"/>
+  <text class="heading" x="60" y="55">Комната 7 · финальный план освещения и управления</text>
+  <text class="sub" x="60" y="84">B01 2090 × 1740 мм · масштаб 1:2,86 · координаты — от левой стены и стены D4</text>
+
+  <!-- Scale 0.35 px/mm. Interior origin X=80, Y=190. -->
+  <rect class="panel" x="80" y="190" width="731.5" height="609"/>
+  <path class="wall" d="M80 190 H346 M629.5 190 H811.5 V799 H80 V190"/>
+  <path class="door" d="M346 190 H629.5"/>
+  <text class="small" x="488" y="220" text-anchor="middle">D4 · наружу</text>
+  <text class="small" x="213" y="151" text-anchor="middle">760</text><text class="small" x="488" y="151" text-anchor="middle">810</text><text class="small" x="720.5" y="151" text-anchor="middle">520</text>
+
+  <!-- Bath: X=0..700; Y=140..1740. -->
+  <rect class="fixture" x="80" y="239" width="245" height="560" rx="11"/>
+  <text class="label" x="202.5" y="495" text-anchor="middle">ванна</text>
+  <text class="gold" x="202.5" y="518" text-anchor="middle">1600 × 700</text>
+  <text class="small" x="202.5" y="781" text-anchor="middle">Y=140…1740</text>
+  <line x1="325" y1="563" x2="325" y2="755" stroke="#aee9eb" stroke-width="5"/>
+  <text class="tiny" x="335" y="584">экран</text><text class="tiny" x="335" y="600">X=700</text>
+
+  <!-- Fixed furniture and service zone: unchanged geometry. -->
+  <rect class="fixture" x="559.5" y="484" width="175" height="189" rx="38"/>
+  <text class="label" x="647" y="585" text-anchor="middle">WC</text><text class="small" x="647" y="607" text-anchor="middle">X≈1370…1870</text>
+  <rect class="service" x="563" y="673" width="248.5" height="126"/>
+  <text class="label" x="687" y="726" text-anchor="middle">ВМ-07</text>
+  <text class="small" x="687" y="750" text-anchor="middle">710 × 360 · пятно сохранено</text>
+  <text class="tiny" x="687" y="774" text-anchor="middle">люк проверить на объекте</text>
+  <rect class="vanity" x="325" y="676.5" width="238" height="122.5" rx="4"/>
+  <text class="label" x="444" y="735" text-anchor="middle">тумба + раковина</text><text class="small" x="444" y="755" text-anchor="middle">670–674 × 345–347</text>
+
+  <!-- G1 ceiling lighting. Exact centres: L1 X=1100,Y=780; L2 X=350,Y=1250. -->
+  <circle class="light" cx="465" cy="463" r="22"/><circle class="light-core" cx="465" cy="463" r="9"/>
+  <text class="gold" x="465" y="505" text-anchor="middle">L1</text><text class="small" x="465" y="523" text-anchor="middle">1100, 780</text>
+  <circle class="light" cx="202.5" cy="627.5" r="22"/><circle class="light-core" cx="202.5" cy="627.5" r="9"/>
+  <text class="gold" x="202.5" y="670" text-anchor="middle">L2</text><text class="small" x="202.5" y="688" text-anchor="middle">350, 1250</text>
+
+  <!-- G2 front mirror strips: elevation element placed over vanity wall. -->
+  <rect x="365" y="685" width="158" height="55" rx="3" fill="#273534" stroke="#aee9eb" stroke-width="2"/>
+  <line class="mirror" x1="382" y1="696" x2="382" y2="729"/><line class="mirror" x1="506" y1="696" x2="506" y2="729"/>
+  <text class="cyan" x="444" y="673" text-anchor="middle">G2 · зеркало</text>
+
+  <!-- G3: exactly one hidden under-vanity line. -->
+  <line class="led" x1="337" y1="792" x2="551" y2="792"/>
+  <text class="gold" x="444" y="865" text-anchor="middle">G3 · скрытая LED 24V под тумбой</text>
+  <text class="tiny" x="444" y="883" text-anchor="middle">2700K · авто / выкл / вкл</text>
+
+  <!-- D4 control point: exact side waits for hinges and casing. -->
+  <circle class="control" cx="646" cy="168" r="10"/><path d="M646 158v20 M636 168h20" stroke="#173d2a" stroke-width="2"/>
+  <path class="callout" d="M646 158 V126 H690"/>
+  <text class="green" x="700" y="130">управление D4</text>
+  <text class="tiny" x="700" y="149">сторона после петель</text>
+
+  <!-- explicit prohibition beneath the bath and WC -->
+  <path class="callout" d="M110 764 h155"/><text class="tinywarn" x="110" y="750">LED под ванной и WC — не делать</text>
+
+  <!-- dimensions -->
+  <line class="dim" x1="80" y1="910" x2="811.5" y2="910"/><text class="small" x="445.75" y="934" text-anchor="middle">2090</text>
+  <line class="dim" x1="53" y1="190" x2="53" y2="799"/><text class="small" x="36" y="495" text-anchor="middle" transform="rotate(-90 36 495)">1740</text>
+
+  <!-- Decision panel -->
+  <rect class="panel" x="865" y="118" width="515" height="842" rx="15"/>
+  <text class="heading" x="900" y="170">Свет · три независимые группы</text>
+  <text class="gold" x="900" y="214">Группа 1 · базовый свет</text>
+  <text class="label" x="900" y="242">2 потолочных светильника · 3000K · CRI 90+</text>
+  <text class="small" x="918" y="264">Диммирование. L1: 1100,780 · L2: 350,1250.</text>
+  <text class="cyan" x="900" y="300">Группа 2 · лицо у зеркала</text>
+  <text class="label" x="900" y="328">2 фронтальные полосы · 3000K · CRI 90+</text>
+  <text class="small" x="918" y="350">Отдельный диммер; не смешивать с потолочным светом.</text>
+  <text class="gold" x="900" y="386">Группа 3 · мягкий ночной</text>
+  <text class="label" x="900" y="414">Только скрытая линия 24V под тумбой · 2700K</text>
+  <text class="small" x="918" y="436">Режим: авто / выкл / вкл. Под ванной и WC LED не делать.</text>
+  <line class="line" x1="900" y1="465" x2="1345" y2="465"/>
+  <text class="green" x="900" y="505">Управление и монтаж</text>
+  <text class="label" x="900" y="533">• Управление — снаружи D4</text>
+  <text class="small" x="918" y="554">Конкретную сторону выбрать после подтверждения петель и наличника.</text>
+  <text class="label" x="900" y="584">• Драйверы — доступны для обслуживания</text>
+  <text class="small" x="918" y="605">Не в ВМ-07 и не в стене 160 мм.</text>
+  <text class="label" x="900" y="635">• Основной свет работает без сервера и облака</text>
+  <text class="small" x="918" y="656">Физическое диммирование и ручное управление обязательны.</text>
+  <line class="line" x1="900" y1="685" x2="1345" y2="685"/>
+  <text class="warn" x="900" y="725">Сценарии</text>
+  <text class="label" x="900" y="753">Уборка</text><text class="small" x="1010" y="753">G1 100% · G2 100% · G3 выкл</text>
+  <text class="label" x="900" y="783">Ежедневный</text><text class="small" x="1010" y="783">G1 50% · G2 60% · G3 выкл</text>
+  <text class="label" x="900" y="813">Вечер</text><text class="small" x="1010" y="813">G1 выкл · G2 40% · G3 15%</text>
+  <text class="label" x="900" y="843">Ванна</text><text class="small" x="1010" y="843">G1 выкл · G2 20% · G3 15%</text>
+  <text class="label" x="900" y="873">Ночь</text><text class="small" x="1010" y="873">G1 выкл · G2 выкл · G3 5% авто</text>
+  <text class="tiny" x="900" y="918">Проценты — стартовые; уточнить на объекте без мерцания и бликов.</text>
+  <text class="tiny" x="900" y="938">Финальный монтаж — после обмера и согласования защиты с электриком.</text>
+</svg>

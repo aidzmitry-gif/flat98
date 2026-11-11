@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1500" viewBox="0 0 1800 1500">
+  <defs>
+    <style>
+      .title{font:700 31px 'Segoe UI',Arial,sans-serif;fill:#18312e}
+      .subtitle{font:400 16px 'Segoe UI',Arial,sans-serif;fill:#5a706c}
+      .h2{font:700 21px 'Segoe UI',Arial,sans-serif;fill:#18312e}
+      .h3{font:700 15px 'Segoe UI',Arial,sans-serif;fill:#203d38}
+      .body{font:400 14px 'Segoe UI',Arial,sans-serif;fill:#334844}
+      .small{font:400 12.5px 'Segoe UI',Arial,sans-serif;fill:#506762}
+      .micro{font:400 11px 'Segoe UI',Arial,sans-serif;fill:#5d716d}
+      .white{fill:#fff}
+      .bold{font-weight:700}
+      .card{fill:#fffefa;stroke:#cbd6d2;stroke-width:1.5}
+      .wall{stroke:#263d38;stroke-width:5;fill:none;stroke-linecap:square}
+      .guide{stroke:#93a6a1;stroke-width:1.15;fill:none;stroke-dasharray:6 5}
+      .leader{stroke:#fff;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .dimR{stroke:#47745e;stroke-width:1.7;fill:none;marker-start:url(#arrR);marker-end:url(#arrR)}
+      .dimB{stroke:#36778c;stroke-width:1.6;fill:none;marker-start:url(#arrB);marker-end:url(#arrB)}
+      .bed{fill:#dce9d8;stroke:#587762;stroke-width:2}
+      .wood{fill:#e8d3a7;stroke:#8e7247;stroke-width:1.7}
+      .sport{fill:#e5eee1;stroke:#657c61;stroke-width:1.7}
+      .mat{fill:#e5ece3;fill-opacity:.73;stroke:#6f8e76;stroke-width:1.5;stroke-dasharray:7 5}
+      .desk{fill:#f3ead7;stroke:#ad8b4f;stroke-width:1.7}
+      .real{fill:#e5f0e8;stroke:#577762;stroke-width:1.2}
+      .b01{fill:#e6f0f3;stroke:#477b8d;stroke-width:1.2}
+      .proposed{fill:#f5edda;stroke:#ad8a4e;stroke-width:1.2}
+      .measure{fill:#f8e5dc;stroke:#b36f56;stroke-width:1.2}
+      .stop{fill:#fff1ee;stroke:#b15f4e;stroke-width:1.4}
+      .free{fill:#eef1ef;stroke:#94a39f;stroke-width:1.3}
+      .photoTag{fill:#1d2d2a;fill-opacity:.87;stroke:#fff;stroke-opacity:.75;stroke-width:1}
+      .num{fill:#d7b86f;stroke:#fff;stroke-width:2}
+    </style>
+    <marker id="arrR" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse">
+      <path d="M8,1 L1,4 L8,7" fill="none" stroke="#47745e" stroke-width="1.4"/>
+    </marker>
+    <marker id="arrB" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse">
+      <path d="M8,1 L1,4 L8,7" fill="none" stroke="#36778c" stroke-width="1.4"/>
+    </marker>
+    <pattern id="radiator" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#d98664" stroke-width="3"/>
+    </pattern>
+    <clipPath id="photoClip"><rect x="70" y="178" width="710" height="887" rx="10"/></clipPath>
+  </defs>
+
+  <rect width="1800" height="1500" fill="#f6f4ee"/>
+  <text x="45" y="49" class="title">Детская B01 — схема с размерами по изображению</text>
+  <text x="45" y="77" class="subtitle">Зеркальный вариант E: спорт слева · кровать справа · шкафы по обе стороны окна · стол от M3 до M1 · без напольных штор</text>
+  <rect x="1500" y="28" width="255" height="50" rx="9" class="measure"/>
+  <text x="1628" y="58" text-anchor="middle" class="h3" fill="#8b4e3a">НЕ В ПРОИЗВОДСТВО</text>
+
+  <!-- PHOTO / COMPOSITION -->
+  <rect x="45" y="110" width="760" height="1125" rx="14" class="card"/>
+  <text x="70" y="148" class="h2">1. Привязка к показанному виду</text>
+  <image href="15_визуализация_зеркальный_вариант_E.png" x="70" y="178" width="710" height="887" preserveAspectRatio="xMidYMid meet" clip-path="url(#photoClip)"/>
+
+  <rect x="88" y="196" width="179" height="37" rx="7" class="photoTag"/>
+  <text x="177" y="220" text-anchor="middle" class="small white bold">Hmin = 2712 мм · R</text>
+
+  <!-- 1 sport -->
+  <circle cx="178" cy="512" r="18" class="num"/><text x="178" y="518" text-anchor="middle" class="h3 white">1</text>
+  <path d="M195 505 L215 480 L215 444" class="leader"/>
+  <rect x="86" y="352" width="261" height="93" rx="8" class="photoTag"/>
+  <text x="102" y="377" class="small white bold">1 · S1 спорт + кольца</text>
+  <text x="102" y="398" class="micro white">рама 1500×300 P · мат до 700 P</text>
+  <text x="102" y="418" class="micro white">анкеры / нагрузка / зона падения — M</text>
+  <text x="102" y="436" class="micro white">кольца только к рассчитанной перекладине</text>
+
+  <!-- 2 window -->
+  <circle cx="423" cy="397" r="18" class="num"/><text x="423" y="403" text-anchor="middle" class="h3 white">2</text>
+  <path d="M440 390 L475 360" class="leader"/>
+  <rect x="470" y="282" width="281" height="80" rx="8" class="photoTag"/>
+  <text x="486" y="307" class="small white bold">2 · окно O2 = 1600 мм · B</text>
+  <text x="486" y="328" class="micro white">цепь по стене: 610 + 1600 + 600</text>
+  <text x="486" y="348" class="micro white">плиссе по створкам; створки / ручки — M</text>
+
+  <!-- 7 wardrobe in the far left corner beside the window -->
+  <circle cx="323" cy="335" r="18" class="num"/><text x="323" y="341" text-anchor="middle" class="h3 white">7</text>
+  <path d="M337 325 L362 310" class="leader"/>
+  <rect x="86" y="244" width="330" height="78" rx="8" class="photoTag"/>
+  <text x="102" y="269" class="small white bold">7 · M3 шкаф слева у окна</text>
+  <text x="102" y="290" class="micro white">вдоль левой стены; стол примыкает справа</text>
+  <text x="102" y="310" class="micro white">конверт 1300×600 P · высота / фасады — M</text>
+
+  <!-- 6 wardrobe in the far right corner beside the window -->
+  <circle cx="700" cy="387" r="18" class="num"/><text x="700" y="393" text-anchor="middle" class="h3 white">6</text>
+  <path d="M688 373 L666 349" class="leader"/>
+  <rect x="478" y="380" width="284" height="96" rx="8" class="photoTag"/>
+  <text x="494" y="405" class="small white bold">6 · M1 шкаф у окна справа</text>
+  <text x="494" y="426" class="micro white">полки в сторону стола — над столешницей</text>
+  <text x="494" y="446" class="micro white">остальная часть — распашные двери</text>
+  <text x="494" y="466" class="micro white">деление / фасады / петли — M</text>
+
+  <!-- 3 desk -->
+  <circle cx="434" cy="758" r="18" class="num"/><text x="434" y="764" text-anchor="middle" class="h3 white">3</text>
+  <path d="M451 750 L500 717" class="leader"/>
+  <rect x="254" y="638" width="316" height="81" rx="8" class="photoTag"/>
+  <text x="270" y="663" class="small white bold">3 · M5 стол ≈1600×500 мм · P</text>
+  <text x="270" y="684" class="micro white">от M3 до M1; справа полки над столом</text>
+  <text x="270" y="704" class="micro white">подоконник и полный R-02 — M, до них стоп</text>
+
+  <!-- 4 bunk -->
+  <circle cx="660" cy="665" r="18" class="num"/><text x="660" y="671" text-anchor="middle" class="h3 white">4</text>
+  <path d="M643 658 L612 624" class="leader"/>
+  <rect x="493" y="502" width="269" height="124" rx="8" class="photoTag"/>
+  <text x="509" y="527" class="small white bold">4 · M2 кровать справа</text>
+  <text x="509" y="548" class="micro white">матрасы: 2 × 900×2000 P</text>
+  <text x="509" y="568" class="micro white">весь внешний конверт:</text>
+  <text x="509" y="588" class="micro white bold">≤2100×1050×1850 мм P</text>
+  <text x="509" y="608" class="micro white">лестница и фурнитура внутри конверта</text>
+
+  <!-- 5 toy storage integrated in desk, not a separate module -->
+  <circle cx="201" cy="922" r="18" class="num"/><text x="201" y="928" text-anchor="middle" class="h3 white">5</text>
+  <path d="M219 918 L253 901" class="leader"/>
+  <rect x="86" y="824" width="301" height="78" rx="8" class="photoTag"/>
+  <text x="102" y="849" class="small white bold">5 · игрушки в нижних ящиках стола</text>
+  <text x="102" y="870" class="micro white">контейнеры без крышек + складной мат</text>
+  <text x="102" y="890" class="micro white">отдельного модуля на левой стене нет</text>
+
+  <rect x="70" y="1085" width="710" height="122" rx="10" class="b01"/>
+  <text x="91" y="1112" class="h3" fill="#315f70">Фото — не масштабный обмер</text>
+  <text x="91" y="1137" class="small">Перспектива показывает композицию и стороны, но не позволяет получать миллиметры по пикселям.</text>
+  <text x="91" y="1160" class="small">Размерная основа находится справа: R — реальные обмеры; B — B01 под контрольный замер;</text>
+  <text x="91" y="1183" class="small">P — проектный предел; M — отсутствующий размер или паспорт изделия.</text>
+
+  <!-- SCALED PLAN -->
+  <rect x="830" y="110" width="925" height="1125" rx="14" class="card"/>
+  <text x="858" y="148" class="h2">2. Масштабный план · пропорционально 3825×2810</text>
+  <text x="858" y="171" class="small">X: вход → окно. Y: спорт → кровать. Расчёт по меньшей реально измеренной длинной стене 3825 мм.</text>
+
+  <g aria-label="scaled room plan">
+    <!-- room 3825 × 2810 at scale 0.17 -->
+    <line x1="920" y1="205" x2="1570.25" y2="205" class="wall"/>
+    <line x1="920" y1="682.7" x2="1570.25" y2="682.7" class="wall"/>
+    <line x1="1570.25" y1="205" x2="1570.25" y2="682.7" class="wall"/>
+    <line x1="920" y1="359.7" x2="920" y2="682.7" class="wall"/>
+    <line x1="920" y1="205" x2="920" y2="359.7" stroke="#477b8d" stroke-width="3" stroke-dasharray="7 5"/>
+    <text x="897" y="282" text-anchor="middle" class="micro" transform="rotate(-90 897 282)">входной участок 910 B · не чистый проём</text>
+
+    <!-- view arrow -->
+    <path d="M945 421 L1008 421 M993 409 L1008 421 L993 433" stroke="#36778c" stroke-width="3" fill="none"/>
+    <text x="945" y="405" class="micro bold">вид на изображении</text>
+
+    <!-- window chain -->
+    <line x1="1570.25" y1="308.7" x2="1570.25" y2="580.7" stroke="#4a9bb2" stroke-width="10"/>
+    <line x1="1582" y1="308.7" x2="1582" y2="580.7" stroke="#8fc2cf" stroke-width="3"/>
+    <text x="1560" y="296" text-anchor="end" class="micro bold">O2 · 1600 B</text>
+    <rect x="1546" y="372" width="24" height="145" fill="url(#radiator)" stroke="#b36f56" stroke-width="1.2" stroke-dasharray="5 4"/>
+    <text x="1539" y="445" text-anchor="middle" class="micro" transform="rotate(-90 1539 445)">R-02: полный габарит / ось / клапан — M</text>
+
+    <!-- wardrobe: far right corner beside window -->
+    <rect x="1349.25" y="580.7" width="221" height="102" rx="5" class="wood"/>
+    <text x="1459.75" y="604" text-anchor="middle" class="h3">M1 · шкаф справа</text>
+    <text x="1459.75" y="625" text-anchor="middle" class="micro">к M5 — полки над столом</text>
+    <text x="1459.75" y="645" text-anchor="middle" class="micro">остальное — распашные двери</text>
+    <text x="1459.75" y="666" text-anchor="middle" class="micro">1300×600 P · деление M</text>
+
+    <!-- sports and mat -->
+    <rect x="1056" y="205" width="255" height="51" rx="5" class="sport"/>
+    <rect x="1056" y="205" width="255" height="119" rx="7" class="mat"/>
+    <line x1="1076" y1="218" x2="1291" y2="218" stroke="#657c61" stroke-width="6" stroke-linecap="round"/>
+    <line x1="1086" y1="218" x2="1086" y2="253" stroke="#657c61" stroke-width="3"/>
+    <line x1="1112" y1="218" x2="1112" y2="253" stroke="#657c61" stroke-width="3"/>
+    <line x1="1138" y1="218" x2="1138" y2="253" stroke="#657c61" stroke-width="3"/>
+    <text x="1184" y="278" text-anchor="middle" class="h3">S1 · спорт слева</text>
+    <text x="1184" y="298" text-anchor="middle" class="micro">1500×300 P · мат до 700 P</text>
+    <text x="1184" y="316" text-anchor="middle" class="micro">кольца / анкеры / зона падения — M</text>
+
+    <!-- wardrobe: far left corner beside window; desk abuts its right side -->
+    <rect x="1349.25" y="205" width="221" height="102" rx="5" class="wood"/>
+    <text x="1459.75" y="232" text-anchor="middle" class="h3">M3 · шкаф слева у окна</text>
+    <text x="1459.75" y="254" text-anchor="middle" class="small">1300×600 P</text>
+    <text x="1459.75" y="275" text-anchor="middle" class="micro">стол примыкает справа</text>
+    <text x="1459.75" y="295" text-anchor="middle" class="micro">точный габарит / фасады — M</text>
+
+    <!-- central aisle -->
+    <rect x="1056" y="324" width="357" height="180.2" fill="#edf4e9" fill-opacity=".55"/>
+    <text x="1235" y="392" text-anchor="middle" class="h3">центральный проход</text>
+    <text x="1235" y="417" text-anchor="middle" class="small">1060 B с разложенным матом</text>
+    <text x="1235" y="440" text-anchor="middle" class="small">1460 B со сложенным матом</text>
+    <text x="1235" y="462" text-anchor="middle" class="micro">не считать зоной безопасности колец</text>
+
+    <!-- bunk -->
+    <rect x="920" y="504.2" width="357" height="178.5" rx="8" class="bed" stroke-dasharray="8 5"/>
+    <rect x="925" y="513" width="347" height="169.7" rx="7" fill="#eaf1e6" stroke="#587762" stroke-width="1.5"/>
+    <text x="1098.5" y="552" text-anchor="middle" class="h3">M2 · кровать справа</text>
+    <text x="1098.5" y="574" text-anchor="middle" class="small">2 × 900×2000</text>
+    <text x="1098.5" y="596" text-anchor="middle" class="micro">внешний предел ≤2100×1050×1850 P</text>
+    <text x="1098.5" y="616" text-anchor="middle" class="micro">изголовье у входной стены; лестница у ног</text>
+    <text x="1098.5" y="636" text-anchor="middle" class="micro">до шкафа ≥425 при L кровати 2100</text>
+    <rect x="1198" y="504.2" width="59" height="28" rx="4" class="proposed"/>
+    <line x1="1209" y1="510" x2="1209" y2="527" stroke="#8e7247" stroke-width="2"/>
+    <line x1="1221" y1="510" x2="1221" y2="527" stroke="#8e7247" stroke-width="2"/>
+    <line x1="1233" y1="510" x2="1233" y2="527" stroke="#8e7247" stroke-width="2"/>
+    <line x1="1245" y1="510" x2="1245" y2="527" stroke="#8e7247" stroke-width="2"/>
+
+    <!-- conditional desk -->
+    <rect x="1485.25" y="308.7" width="85" height="272" rx="4" class="desk" fill-opacity=".74"/>
+    <text x="1527" y="444" text-anchor="middle" class="micro bold" transform="rotate(-90 1527 444)">M5 · ≈1600×500 P · от M3 до M1</text>
+    <rect x="1463" y="333" width="22" height="88" rx="10" fill="#efebe5" stroke="#9b9386"/>
+    <rect x="1463" y="445" width="22" height="88" rx="10" fill="#efebe5" stroke="#9b9386"/>
+    <rect x="1538" y="372" width="32" height="122" class="stop" fill-opacity=".56" stroke-dasharray="6 4"/>
+    <text x="1479" y="568" class="micro" fill="#8b4e3a">стоп до R-02</text>
+
+    <!-- chain dimensions along X -->
+    <line x1="920" y1="726" x2="1277" y2="726" class="dimB"/>
+    <line x1="1277" y1="726" x2="1349.25" y2="726" class="dimB"/>
+    <line x1="1349.25" y1="726" x2="1570.25" y2="726" class="dimB"/>
+    <text x="1098.5" y="716" text-anchor="middle" class="micro bold">кровать ≤2100 P</text>
+    <text x="1313" y="716" text-anchor="middle" class="micro bold">≥425</text>
+    <text x="1459.75" y="716" text-anchor="middle" class="micro bold">шкаф 1300 P</text>
+    <line x1="920" y1="758" x2="1570.25" y2="758" class="dimR"/>
+    <text x="1245" y="782" text-anchor="middle" class="small bold" fill="#355f4c">2100 + 425 + 1300 = 3825 · расчёт по длинной стене R</text>
+
+    <!-- Y dimension and window chain -->
+    <line x1="1631" y1="205" x2="1631" y2="682.7" class="dimB"/>
+    <text x="1651" y="444" text-anchor="middle" class="small bold" fill="#315f70" transform="rotate(-90 1651 444)">2810 B · между внутренними гранями</text>
+    <line x1="1598" y1="205" x2="1598" y2="308.7" class="dimB"/>
+    <line x1="1598" y1="308.7" x2="1598" y2="580.7" class="dimB"/>
+    <line x1="1598" y1="580.7" x2="1598" y2="682.7" class="dimB"/>
+    <text x="1610" y="260" class="micro bold" fill="#315f70">610</text>
+    <text x="1610" y="448" class="micro bold" fill="#315f70">1600</text>
+    <text x="1610" y="636" class="micro bold" fill="#315f70">600</text>
+
+    <text x="920" y="807" class="micro bold">X=0 · вход</text>
+    <text x="1570" y="807" text-anchor="end" class="micro bold">X=3825 · оконная стена</text>
+    <text x="1688" y="229" class="micro bold">Y=0</text>
+    <text x="1688" y="677" class="micro bold">Y=2810</text>
+  </g>
+
+  <!-- STATUS CARDS -->
+  <rect x="858" y="833" width="421" height="113" rx="10" class="real"/>
+  <text x="879" y="860" class="h3" fill="#355f4c">R · реально измерено</text>
+  <text x="879" y="885" class="small">длинные стены: 3825 и 3837 мм — отдельно</text>
+  <text x="879" y="908" class="small">минимальная высота: 2712 мм</text>
+  <text x="879" y="931" class="micro">2712 − 1850 = 862 мм — номинальный остаток</text>
+
+  <rect x="1290" y="833" width="437" height="113" rx="10" class="b01"/>
+  <text x="1311" y="860" class="h3" fill="#315f70">B · основа B01, проверить</text>
+  <text x="1311" y="885" class="small">ширина 2810 · окно O2 1600 · отступы 610/600</text>
+  <text x="1311" y="908" class="small">входной участок 910 — не чистый проём</text>
+  <text x="1311" y="931" class="micro">нужны 3 поперечных размера + диагонали</text>
+
+  <rect x="858" y="960" width="869" height="103" rx="10" class="proposed"/>
+  <text x="879" y="987" class="h3" fill="#86682f">P / M · мебель вписана как предел, не как заказ</text>
+  <text x="879" y="1012" class="small">M3 и M1 — шкафы у окна по 1300×600 · M5 ≈1600×500 между ними · M2 ≤2100×1050×1850 · S1 1500×300 + мат до 700.</text>
+  <text x="879" y="1037" class="small">До выпуска: чистый вход, створки/ручки O2, подоконник, полный R-02, паспорта кровати и спорта, стена и анкеры.</text>
+
+  <rect x="858" y="1077" width="869" height="111" rx="10" class="stop"/>
+  <text x="879" y="1104" class="h3" fill="#8b4e3a">Безопасность сейчас: детям 2 года</text>
+  <text x="879" y="1129" class="small bold" fill="#8b4e3a">Верхний ярус пока не использовать. Он закладывается на будущее — по возрасту и паспорту выбранной модели.</text>
+  <text x="879" y="1153" class="small">Лестница должна блокироваться/сниматься; кольца — только на сертифицированном модуле с расчётным креплением,</text>
+  <text x="879" y="1174" class="small">не к потолку «по картинке». 1060 мм прохода не является зоной падения.</text>
+
+  <text x="858" y="1215" class="micro"><tspan class="bold">R</tspan> — обмер · <tspan class="bold">B</tspan> — B01/контроль · <tspan class="bold">P</tspan> — проектный предел · <tspan class="bold">M</tspan> — нужен обмер или паспорт.</text>
+
+  <!-- DETAILED DIMENSION MAP -->
+  <rect x="45" y="1258" width="1710" height="222" rx="14" class="card"/>
+  <text x="70" y="1291" class="h2">3. Дополнительная размерная карта · все размеры в мм</text>
+
+  <text x="90" y="1320" class="h3">X — спорт и шкаф у окна слева</text>
+  <rect x="90" y="1332" width="160" height="28" rx="4" class="free"/>
+  <rect x="250" y="1332" width="300" height="28" rx="4" class="sport"/>
+  <rect x="550" y="1332" width="45" height="28" rx="4" class="free"/>
+  <rect x="595" y="1332" width="260" height="28" rx="4" class="wood"/>
+  <text x="170" y="1351" text-anchor="middle" class="micro bold">800</text>
+  <text x="400" y="1351" text-anchor="middle" class="micro bold">S1 1500</text>
+  <text x="572" y="1351" text-anchor="middle" class="micro bold">225</text>
+  <text x="725" y="1351" text-anchor="middle" class="micro bold">M3 1300</text>
+  <line x1="90" y1="1380" x2="855" y2="1380" class="dimR"/>
+  <text x="472" y="1401" text-anchor="middle" class="small bold" fill="#355f4c">0–800 свободно · S1 X=800–2300 · зазор 225 · M3 X=2525–3825 · всего 3825 R</text>
+
+  <text x="90" y="1423" class="h3">X — кровать и шкаф у окна справа</text>
+  <rect x="90" y="1435" width="420" height="28" rx="4" class="bed"/>
+  <rect x="510" y="1435" width="85" height="28" rx="4" class="free"/>
+  <rect x="595" y="1435" width="260" height="28" rx="4" class="wood"/>
+  <text x="300" y="1454" text-anchor="middle" class="micro bold">M2 ≤2100</text>
+  <text x="552" y="1454" text-anchor="middle" class="micro bold">≥425</text>
+  <text x="725" y="1454" text-anchor="middle" class="micro bold">M1 1300</text>
+  <text x="865" y="1454" class="micro">X: M2 0–2100 · M1 2525–3825 · зазор ≥425 P</text>
+
+  <line x1="930" y1="1312" x2="930" y2="1428" class="guide"/>
+  <text x="960" y="1320" class="h3">Y — поперечные координаты</text>
+  <text x="960" y="1344" class="small"><tspan class="bold">S1:</tspan> Y=0–300 P; складной мат: Y=0–700 P.</text>
+  <text x="960" y="1368" class="small"><tspan class="bold">M3:</tspan> Y=0–600 P; <tspan class="bold">M5:</tspan> Y=610–2210 P, L≈1600; X=3325–3825.</text>
+  <text x="960" y="1392" class="small"><tspan class="bold">M2:</tspan> Y=1760–2810 P, глубина 1050; высота ≤1850 P.</text>
+  <text x="960" y="1416" class="small"><tspan class="bold">M1:</tspan> Y=2210–2810 P; к M5 — полки над столом, остальное — распашные двери.</text>
+  <text x="960" y="1440" class="small"><tspan class="bold">Проход:</tspan> 1060 B с матом / 1460 B со сложенным матом.</text>
+  <text x="960" y="1465" class="micro">Контроль: ширина 2810 B; O2 610+1600+600 B; длинные стены 3825/3837 R; Hmin 2712 R.</text>
+</svg>

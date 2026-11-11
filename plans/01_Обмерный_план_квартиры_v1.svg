@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1800" height="1280" viewBox="0 0 1800 1280">
+  <title>Единый цифровой обмерный план квартиры — редакция 3</title>
+  <desc>Схема связей помещений и контрольные размеры. Контуры схематичны; числовые подписи имеют источники в ведомости и кликабельные ссылки на JPG.</desc>
+  <style>
+    text { font-family: Arial, sans-serif; fill: #152334; }
+    .title { font-size: 28px; font-weight: 700; }
+    .subtitle { font-size: 15px; fill: #526270; }
+    .room { stroke: #1f4057; stroke-width: 3; }
+    .r1 { fill: #e6f2fa; } .r2 { fill: #f7efd8; } .r3 { fill: #eee8f8; }
+    .r4 { fill: #e7f4e6; } .r5 { fill: #f9e7e7; } .r6 { fill: #e7f1ee; }
+    .r7 { fill: #f4ebdf; } .r8 { fill: #f2eaf6; } .r9 { fill: #e7f6f5; }
+    .rn { font-size: 20px; font-weight: 700; } .meta { font-size: 14px; }
+    .dim { font-size: 15px; font-weight: 700; fill: #173b56; }
+    .src { font-size: 13px; fill: #005b96; text-decoration: underline; }
+    .note { font-size: 13px; fill: #6a4a14; }
+    .line { stroke: #4f6679; stroke-width: 2; fill: none; }
+    .opening { stroke: #ffffff; stroke-width: 9; } .door { stroke: #1f4057; stroke-width: 2; fill: none; }
+    .legend { fill: #f7f9fb; stroke: #9caebb; stroke-width: 1.5; }
+  </style>
+
+  <rect width="1800" height="1280" fill="#ffffff"/>
+  <text x="70" y="55" class="title">Единый цифровой обмерный план квартиры — редакция 3</text>
+  <text x="70" y="82" class="subtitle">Контрольные обмеры по фото. Планировочная схема — ориентировочная; размеры не усреднялись.</text>
+  <text x="70" y="104" class="subtitle">Каждый блок кликабелен и ведёт к основному JPG-источнику. Полная расшифровка — в ведомости.</text>
+
+  <!-- 9. Terrace -->
+  <a href="../Чертежи квартиры/photo_1_2026-08-04_22-23-23.jpg" target="_blank">
+    <rect x="200" y="150" width="250" height="90" class="room r9"/>
+    <text x="218" y="180" class="rn">9 · Терраса</text>
+    <text x="218" y="204" class="dim">3310 × 2110 / 2130</text>
+    <text x="218" y="226" class="src">S01 · S12</text>
+  </a>
+
+  <!-- 1. Kitchen-living -->
+  <a href="../Чертежи квартиры/photo_12_2026-08-04_22-23-24.jpg" target="_blank">
+    <rect x="110" y="240" width="430" height="410" class="room r1"/>
+    <text x="135" y="282" class="rn">1 · Кухня-гостиная</text>
+    <text x="135" y="312" class="dim">стены: ~3550; 5705; 2749</text>
+    <text x="135" y="338" class="dim">потолок: 2714–2727; фрагмент: 2530</text>
+    <text x="135" y="364" class="meta">дверной проём: 893 × 2121</text>
+    <text x="135" y="394" class="src">S03 · S10 · S12</text>
+    <text x="135" y="422" class="note">Размеры относятся к разным стенам/фрагментам.</text>
+  </a>
+  <line x1="330" y1="650" x2="410" y2="650" class="opening"/>
+  <path d="M330 650 A80 80 0 0 1 410 570" class="door"/>
+
+  <!-- 2. Child room -->
+  <a href="../Чертежи квартиры/photo_10_2026-08-04_22-23-24.jpg" target="_blank">
+    <rect x="540" y="240" width="330" height="410" class="room r2"/>
+    <text x="565" y="282" class="rn">2 · Детская</text>
+    <text x="565" y="312" class="dim">потолок: 2712–2716; центр: 2715</text>
+    <text x="565" y="338" class="dim">стороны: 3825 / 3837</text>
+    <text x="565" y="368" class="src">S10</text>
+    <text x="565" y="395" class="note">Окно — фото F02/F07,</text>
+    <text x="565" y="414" class="note">без самостоятельной цифры.</text>
+  </a>
+
+  <!-- 3. Entrance -->
+  <a href="../Чертежи квартиры/photo_9_2026-08-04_22-23-24.jpg" target="_blank">
+    <rect x="110" y="650" width="430" height="190" class="room r3"/>
+    <text x="130" y="688" class="rn">3 · Прихожая (вход)</text>
+    <text x="130" y="716" class="meta">электрощит, входная зона и проёмы — на S09</text>
+    <text x="130" y="739" class="dim">потолок, углы/центр: 2750</text>
+    <text x="130" y="764" class="src">S08 · S09 · F08 · F26 · F28</text>
+    <text x="130" y="793" class="note">Число щита не перенесено: база рулетки на фото неоднозначна.</text>
+  </a>
+
+  <!-- 4. Corridor -->
+  <a href="../Чертежи квартиры/photo_6_2026-08-04_22-23-23.jpg" target="_blank">
+    <rect x="540" y="650" width="170" height="400" class="room r4"/>
+    <text x="554" y="686" class="rn">4 · Коридор</text>
+    <text x="554" y="714" class="dim">970 × 1880</text>
+    <text x="554" y="738" class="dim">960 × 1780</text>
+    <text x="554" y="762" class="meta">балка: 630</text>
+    <text x="554" y="786" class="dim">потолок: 2750</text>
+    <text x="554" y="814" class="src">S06</text>
+  </a>
+
+  <!-- 6. Bathroom -->
+  <a href="../Чертежи квартиры/photo_9_2026-08-04_22-35-06.jpg" target="_blank">
+    <rect x="710" y="650" width="160" height="135" class="room r6"/>
+    <text x="722" y="682" class="rn">6 · Ванная</text>
+    <text x="722" y="708" class="dim">контур: без цифры</text>
+    <text x="722" y="732" class="meta">вода/канализация</text>
+    <text x="722" y="760" class="src">F09–F20</text>
+  </a>
+
+  <!-- 7. Toilet -->
+  <a href="../Чертежи квартиры/photo_5_2026-08-04_22-23-23.jpg" target="_blank">
+    <rect x="710" y="785" width="160" height="135" class="room r7"/>
+    <text x="722" y="817" class="rn">7 · Туалет</text>
+    <text x="722" y="843" class="dim">контур: без цифры</text>
+    <text x="722" y="867" class="meta">короб: 456; t=28</text>
+    <text x="722" y="895" class="src">S05 · F21–F27</text>
+  </a>
+
+  <!-- 8. Wardrobe -->
+  <a href="../Чертежи квартиры/photo_7_2026-08-04_22-23-24.jpg" target="_blank">
+    <rect x="710" y="920" width="160" height="130" class="room r8"/>
+    <text x="722" y="950" class="rn">8 · Гардеробная</text>
+    <text x="722" y="974" class="dim">план: 1732–1745</text>
+    <text x="722" y="997" class="dim">потолок: 2712–2718</text>
+    <text x="722" y="1025" class="src">S07</text>
+  </a>
+
+  <!-- 5. Bedroom -->
+  <a href="../Чертежи квартиры/photo_2_2026-08-04_22-23-23.jpg" target="_blank">
+    <rect x="540" y="1050" width="330" height="190" class="room r5"/>
+    <text x="560" y="1090" class="rn">5 · Спальня</text>
+    <text x="560" y="1120" class="dim">2870 / 2830 × 3870</text>
+    <text x="560" y="1146" class="meta">высота потолка, углы/центр: 2750</text>
+    <text x="560" y="1176" class="src">S02 · S04</text>
+  </a>
+
+  <!-- source legend -->
+  <rect x="1040" y="145" width="690" height="1095" rx="8" class="legend"/>
+  <text x="1070" y="187" class="rn">Легенда источников</text>
+  <text x="1070" y="218" class="subtitle">S — листы со схемами и числами (22:23); F — фото объекта (22:35).</text>
+  <text x="1070" y="252" class="meta">Для ванной и туалета фото подтверждают зону и инженерию,</text>
+  <text x="1070" y="274" class="meta">но не дают однозначно переносимого полного габарита.</text>
+
+  <a href="../Чертежи квартиры/photo_14_2026-08-04_22-23-24.jpg" target="_blank"><text x="1070" y="320" class="src">S14 — легенда помещений 1–9</text></a>
+  <a href="../Чертежи квартиры/photo_1_2026-08-04_22-23-23.jpg" target="_blank"><text x="1070" y="350" class="src">S01 — терраса</text></a>
+  <a href="../Чертежи квартиры/photo_2_2026-08-04_22-23-23.jpg" target="_blank"><text x="1070" y="380" class="src">S02 / S04 — спальня</text></a>
+  <a href="../Чертежи квартиры/photo_3_2026-08-04_22-23-23.jpg" target="_blank"><text x="1070" y="410" class="src">S03 — кухня-гостиная, стена с розетками</text></a>
+  <a href="../Чертежи квартиры/photo_5_2026-08-04_22-23-23.jpg" target="_blank"><text x="1070" y="440" class="src">S05 — туалет, короб</text></a>
+  <a href="../Чертежи квартиры/photo_6_2026-08-04_22-23-23.jpg" target="_blank"><text x="1070" y="470" class="src">S06 — коридор</text></a>
+  <a href="../Чертежи квартиры/photo_7_2026-08-04_22-23-24.jpg" target="_blank"><text x="1070" y="500" class="src">S07 — гардеробная</text></a>
+  <a href="../Чертежи квартиры/photo_9_2026-08-04_22-23-24.jpg" target="_blank"><text x="1070" y="530" class="src">S09 — прихожая, проёмы/высоты</text></a>
+  <a href="../Чертежи квартиры/photo_10_2026-08-04_22-23-24.jpg" target="_blank"><text x="1070" y="560" class="src">S10 — детская, проём кухни-гостиной</text></a>
+  <a href="../Чертежи квартиры/photo_12_2026-08-04_22-23-24.jpg" target="_blank"><text x="1070" y="590" class="src">S12 — кухня-гостиная и терраса</text></a>
+  <a href="../Чертежи квартиры/photo_9_2026-08-04_22-35-06.jpg" target="_blank"><text x="1070" y="620" class="src">F09–F20 — ванная, инженерные точки</text></a>
+  <a href="../Чертежи квартиры/photo_21_2026-08-04_22-35-06.jpg" target="_blank"><text x="1070" y="650" class="src">F21–F27 — туалет, сантехника и унитаз</text></a>
+  <a href="../Чертежи квартиры/photo_8_2026-08-04_22-35-06.jpg" target="_blank"><text x="1070" y="680" class="src">F08 / F26 / F28 — прихожая, электрощит</text></a>
+
+  <line x1="1070" y1="720" x2="1695" y2="720" class="line"/>
+  <text x="1070" y="754" class="rn">Статус точности</text>
+  <text x="1070" y="784" class="meta">• Дробные/парные значения сохранены как разные контрольные записи.</text>
+  <text x="1070" y="810" class="meta">• Для прихожей нет переносимой числовой величины щита: конечная база на фото неясна.</text>
+  <text x="1070" y="836" class="meta">• Полные габариты ванной и туалета не показаны как рабочие: текущие JPG не</text>
+  <text x="1090" y="856" class="meta">  позволяют независимо подтвердить их числовые значения.</text>
+  <text x="1070" y="878" class="meta">• Значения в овалах на эскизах — высоты потолка по углам и в центре.</text>
+  <text x="1070" y="912" class="note">Перед заказом мебели используйте ведомость и оригинал JPG, а не только схему.</text>
+
+  <text x="70" y="1260" class="subtitle">APT-001 · редакция 3 · 2026-08-05 · единицы: миллиметры · не является разрешением на перепланировку.</text>
+</svg>

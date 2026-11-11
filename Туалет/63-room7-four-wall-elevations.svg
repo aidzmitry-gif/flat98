@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3400" height="2700" viewBox="0 0 3400 2700" role="img" aria-labelledby="title desc">
+<title id="title">Комната 7 — полный координационный лист: четыре развёртки и план</title>
+<desc id="desc">Координационная схема санузла B01 2090 на 1740 на 2617 мм. Фиксированные плановые данные, условные высотные решения и запреты разделены.</desc>
+<style>
+ .bg{fill:#151715}.panel{fill:#20231f;stroke:#777c72;stroke-width:3}.box{fill:#292c27;stroke:#596057;stroke-width:2}.wall{fill:#e8e5da;fill-opacity:.12;stroke:#f1f0e9;stroke-width:5}.tile{stroke:#595e56;stroke-width:1}.door{fill:#293b43;stroke:#82c3ed;stroke-width:5;stroke-dasharray:13 9}.bronze{fill:#5a4633;stroke:#e0b16c;stroke-width:4}.glass{fill:#aee9eb;fill-opacity:.12;stroke:#aee9eb;stroke-width:4}.vm{fill:#302a49;stroke:#a891ec;stroke-width:4}.fixture{fill:#382d27;stroke:#d6b18a;stroke-width:4}.vanity{fill:#51402f;stroke:#e0a95c;stroke-width:4}.dim{fill:none;stroke:#9ca198;stroke-width:2;stroke-dasharray:8 6}.line{stroke:#525950;stroke-width:2}.heading{fill:#f3f0e8;font:700 46px Arial,sans-serif}.sub{fill:#aeb3aa;font:22px Arial,sans-serif}.h{fill:#f3f0e8;font:700 27px Arial,sans-serif}.label{fill:#f3f0e8;font:700 21px Arial,sans-serif}.body{fill:#d1d4cc;font:19px Arial,sans-serif}.small{fill:#aeb3aa;font:16px Arial,sans-serif}.gold{fill:#f0c56d;font:700 20px Arial,sans-serif}.cyan{fill:#8dd7d4;font:700 20px Arial,sans-serif}.red{fill:#ef957b;font:700 19px Arial,sans-serif}.green{fill:#58d29b;font:700 20px Arial,sans-serif}.fixed{fill:#8dd7d4;font:700 17px Arial,sans-serif}.cond{fill:#f0c56d;font:700 17px Arial,sans-serif}
+</style>
+<rect class="bg" width="3400" height="2700"/>
+<text class="heading" x="100" y="95">КОМНАТА 7 · ПОЛНЫЙ КООРДИНАЦИОННЫЙ ЛИСТ</text>
+<text class="sub" x="100" y="134">B01 2090 × 1740 × 2617 мм · фиксированное = подтверждено планом · условное = выбрать модель / сверить на объекте</text>
+<line class="line" x1="100" y1="168" x2="3300" y2="168"/>
+
+<!-- A: D4 elevation -->
+<rect class="panel" x="70" y="220" width="1580" height="900" rx="16"/>
+<text class="gold" x="110" y="270">A · СТЕНА D4 · 2090 мм · ВИД ИЗ ПОМЕЩЕНИЯ</text>
+<text class="fixed" x="1110" y="270">ФИКС.: D4-цепочка 760 + 810 + 520</text>
+<rect class="wall" x="110" y="310" width="1500" height="650"/>
+<path class="tile" d="M110 473h1500M110 636h1500M110 799h1500M360 310v650M610 310v650M860 310v650M1110 310v650M1360 310v650"/>
+<rect class="bronze" x="178" y="550" width="430" height="24" rx="5"/><rect class="bronze" x="178" y="735" width="430" height="24" rx="5"/>
+<rect x="220" y="503" width="68" height="38" fill="#d9d0bf"/><path d="M220 516h68M220 529h68" stroke="#9a8b76"/><rect x="302" y="493" width="26" height="48" rx="6" fill="#603c22"/><rect x="310" y="481" width="10" height="14" fill="#e0b16c"/>
+<rect x="218" y="680" width="27" height="48" rx="6" fill="#603c22"/><rect x="254" y="680" width="27" height="48" rx="6" fill="#eee7d9"/><rect x="302" y="695" width="66" height="30" rx="7" fill="#5a4633"/><circle cx="335" cy="695" r="5" fill="#e0b16c"/>
+<text class="small" x="393" y="530" text-anchor="middle">2 бронзовые полки 600 × 125</text><text class="small" x="393" y="780" text-anchor="middle">только участок 760 со стороны ванны</text>
+<text class="small" x="393" y="507" text-anchor="middle">+1320: полотенца + янтарный дозатор</text><text class="small" x="393" y="704" text-anchor="middle">+1050: 2 дозатора + лоток</text>
+<rect class="door" x="654" y="335" width="580" height="625"/>
+<line x1="690" y1="348" x2="690" y2="947" stroke="#e0b16c" stroke-width="6"/><circle cx="690" cy="480" r="9" fill="#e0b16c"/><circle cx="690" cy="790" r="9" fill="#e0b16c"/>
+<circle cx="1164" cy="667" r="11" fill="#e0b16c"/><path d="M1164 667h42" stroke="#e0b16c" stroke-width="8" stroke-linecap="round"/>
+<path d="M1000 425q18-18 36 0v34M1060 425q18-18 36 0v34" fill="none" stroke="#e0b16c" stroke-width="6"/>
+<text class="label" x="944" y="630" text-anchor="middle">D4 · открывание наружу</text><text class="small" x="944" y="658" text-anchor="middle">петли слева · рычаг справа · 2 складных крючка изнутри</text>
+<rect class="bronze" x="1335" y="442" width="175" height="385" rx="9"/><path d="M1362 475v317m31-317v317m31-317v317m31-317v317M1362 520h92m-92 62h92m-92 62h92m-92 62h92m-92 62h92" stroke="#e0b16c" stroke-width="4"/><rect x="1373" y="644" width="70" height="105" fill="#ded7c8" opacity=".85"/>
+<text class="cond" x="1422" y="420" text-anchor="middle">УСЛ.: 800 × 400 × 76 · 200 Вт</text><text class="small" x="1422" y="850" text-anchor="middle">электрический сушитель + полотенце</text>
+<text class="green" x="178" y="900">НИЖНЯЯ ЛЕВАЯ ЗОНА СВОБОДНА</text><text class="red" x="178" y="930">НЕТ: щёток / держателей / стерилизаторов · третьей полки · дополнительного стеллажа</text>
+<line class="dim" x1="110" y1="995" x2="1610" y2="995"/><text class="small" x="382" y="1025" text-anchor="middle">760</text><text class="small" x="944" y="1025" text-anchor="middle">810 · чистый проём D4 — контрольный замер</text><text class="small" x="1422" y="1025" text-anchor="middle">520</text>
+
+<!-- B: long bath wall -->
+<rect class="panel" x="1720" y="220" width="1610" height="900" rx="16"/>
+<text class="gold" x="1760" y="270">B · ДЛИННАЯ СТЕНА ВАННЫ · 1740 мм</text><text class="fixed" x="2895" y="270">ФИКС.: ванна 1600 × 700</text>
+<rect class="wall" x="1760" y="310" width="1530" height="650"/><path class="tile" d="M1760 473h1530M1760 636h1530M1760 799h1530M2015 310v650M2270 310v650M2525 310v650M2780 310v650M3035 310v650"/>
+<rect class="fixture" x="1845" y="704" width="1390" height="256" rx="18"/><path d="M1875 737h1330" stroke="#d6b18a" stroke-width="4"/><text class="label" x="2540" y="840" text-anchor="middle">ВАННА 1600 × 700 · закреплённый контур</text>
+<rect class="glass" x="2930" y="403" width="100" height="510"/><text class="small" x="2980" y="385" text-anchor="middle">неподвижное стекло</text>
+<circle cx="3192" cy="370" r="30" fill="none" stroke="#8dd7d4" stroke-width="5"/><path d="M3162 370h60m-30-30v60" stroke="#8dd7d4" stroke-width="4"/><text class="cond" x="3105" y="430" text-anchor="end">УСЛ.: вентиляция высоко в правом верхнем углу</text><text class="small" x="3105" y="452" text-anchor="end">точные оси / канал / решётку сверить на объекте</text>
+<path d="M1942 540h62v203h-62" fill="none" stroke="#e0b16c" stroke-width="11"/><text class="cond" x="2045" y="558">поручень 450–463 мм на закладной</text><text class="small" x="2045" y="582">модель и высоту согласовать с пользователями</text>
+<!-- K1: the single allowed shower-storage element; fixed externally to the bath wall, not recessed -->
+<rect class="bronze" x="2595" y="661" width="229" height="45" rx="5"/>
+<path d="M2606 675h207m-207 15h207m-184-29v45m46-45v45m46-45v45m46-45v45" fill="none" stroke="#e0b16c" stroke-width="3"/>
+<circle cx="2630" cy="696" r="3" fill="#151715"/><circle cx="2675" cy="696" r="3" fill="#151715"/><circle cx="2720" cy="696" r="3" fill="#151715"/><circle cx="2765" cy="696" r="3" fill="#151715"/>
+<text class="cond" x="2709" y="642" text-anchor="middle">K1 · 260 × 90 × 180 · низ +1000</text><text class="small" x="2709" y="730" text-anchor="middle">двухъярусная корзина SUS304 · сатиновая PVD тёплая бронза · дренаж</text>
+<text class="red" x="2730" y="500" text-anchor="middle">ТОЛЬКО K1 · БЕЗ НИШ / ДРУГИХ ПОЛОК</text><text class="small" x="2730" y="528" text-anchor="middle">стена 160 мм — не углублять; накладная корзина справа от душа в виде от входа</text>
+<text class="red" x="2550" y="930" text-anchor="middle">НЕТ LED ПОД ВАННОЙ · НЕТ ДОП. АКСЕССУАРОВ НА СТЕНЕ ВАННЫ, КРОМЕ K1</text>
+
+<!-- C: far wall -->
+<rect class="panel" x="70" y="1170" width="1580" height="900" rx="16"/>
+<text class="gold" x="110" y="1220">C · ДАЛЬНЯЯ СТЕНА · 2090 мм · Y=1740</text><text class="fixed" x="1110" y="1220">ФИКС.: ванна X0…700 · тумба X700…1380 · ВМ‑07 X1380…2090</text>
+<rect class="wall" x="110" y="1260" width="1500" height="650"/><path class="tile" d="M110 1423h1500M110 1586h1500M110 1749h1500M360 1260v650M610 1260v650M860 1260v650M1110 1260v650M1360 1260v650"/>
+<rect class="fixture" x="120" y="1660" width="500" height="250" rx="14"/><path d="M380 1360v290m0-290q60-65 120 0m-120 0h120m-55 80v170m-82 55h164" fill="none" stroke="#e0b16c" stroke-width="12" stroke-linecap="round"/><circle cx="445" cy="1538" r="20" fill="none" stroke="#e0b16c" stroke-width="8"/><path d="M505 1580q45 58 8 118" fill="none" stroke="#e0b16c" stroke-width="8"/>
+<text class="label" x="370" y="1810" text-anchor="middle">ТОРЕЦ ВАННЫ + ДУШ</text><text class="small" x="370" y="1840" text-anchor="middle">верхний + ручной душ · рейка · термостат</text>
+<rect class="vanity" x="622" y="1660" width="480" height="250"/><line x1="622" y1="1770" x2="1102" y2="1770" stroke="#e0a95c" stroke-width="4"/><rect x="650" y="1634" width="425" height="35" fill="#e6e1d5"/><circle cx="860" cy="1651" r="13" fill="none" stroke="#e0b16c" stroke-width="6"/><path d="M860 1638v-53" stroke="#e0b16c" stroke-width="7"/><rect class="bronze" x="761" y="1785" width="190" height="16" rx="8"/><rect x="826" y="1801" width="61" height="65" fill="#ded7c8"/>
+<text class="label" x="862" y="1745" text-anchor="middle">ТУМБА 680 × 350 · 2 ящика</text><text class="small" x="862" y="1882" text-anchor="middle">раковина / смеситель · рейка для рук. полотенца</text>
+<rect class="glass" x="710" y="1335" width="300" height="240" rx="7"/><line x1="740" y1="1360" x2="740" y2="1548" stroke="#f0c56d" stroke-width="12"/><line x1="980" y1="1360" x2="980" y2="1548" stroke="#f0c56d" stroke-width="12"/>
+<text class="cond" x="860" y="1315" text-anchor="middle">зеркальный шкаф глубиной 80–110</text><text class="small" x="860" y="1605" text-anchor="middle">G2: 2 вертикальных фронтальных светильника</text><text class="small" x="1030" y="1415" text-anchor="start">SHV +1400 — внутри шкафа</text><text class="small" x="1030" y="1437" text-anchor="start">на стороне WC / ВМ‑07; условно</text>
+<rect class="vm" x="1105" y="1660" width="495" height="250"/><path d="M1155 1710h375v145h-375zM1190 1785h305m-25-20 25 20-25 20" fill="none" stroke="#c9baff" stroke-width="3" stroke-dasharray="9 6"/>
+<text class="label" x="1352" y="1772" text-anchor="middle">ВМ‑07 · 710 × 360</text><text class="small" x="1352" y="1802" text-anchor="middle">люк / зона открывания / сервис — сохранить</text><text class="red" x="1352" y="1840" text-anchor="middle">ничего не крепить к панели ВМ‑07</text>
+<text class="cyan" x="862" y="1944" text-anchor="middle">G3 — LED ТОЛЬКО ПОД ТУМБОЙ · тёплый, по датчику / ночному сценарию</text>
+
+<!-- D: WC VM wall -->
+<rect class="panel" x="1720" y="1170" width="1610" height="900" rx="16"/>
+<text class="gold" x="1760" y="1220">D · СТЕНА WC / ВМ‑07 · 1740 мм</text><text class="fixed" x="2830" y="1220">ФИКС.: WC сохранён · ВМ‑07 доступ сохраняется</text>
+<rect class="wall" x="1760" y="1260" width="1530" height="650"/><path class="tile" d="M1760 1423h1530M1760 1586h1530M1760 1749h1530M2015 1260v650M2270 1260v650M2525 1260v650M2780 1260v650M3035 1260v650"/>
+<rect x="2050" y="1400" width="470" height="510" fill="#6e6557" opacity=".7"/><path d="M2080 1410v485m28-485v485m28-485v485m28-485v485m28-485v485m28-485v485m28-485v485m28-485v485m28-485v485m28-485v485m28-485v485m28-485v485m28-485v485m28-485v485m28-485v485" stroke="#b8aa93" stroke-width="4"/>
+<rect class="bronze" x="2190" y="1460" width="185" height="55" rx="4"/><path d="M2282 1472v30M2207 1488h151" stroke="#e0b16c" stroke-width="3"/>
+<rect class="fixture" x="2110" y="1635" width="345" height="275" rx="86"/><text class="label" x="2282" y="1775" text-anchor="middle">ПОДВЕСНОЙ WC</text><text class="small" x="2282" y="1805" text-anchor="middle">чаша — не разворачивать</text>
+<path d="M1975 1555v170m0-170h58m-58 90q40 25 0 85" fill="none" stroke="#e0b16c" stroke-width="8"/><text class="small" x="1880" y="1748">гигиенический</text><text class="small" x="1880" y="1770">душ</text>
+<circle cx="2575" cy="1710" r="24" fill="none" stroke="#e0b16c" stroke-width="7"/><path d="M2598 1710h54" stroke="#e0b16c" stroke-width="7"/><text class="small" x="2625" y="1760" text-anchor="middle">бумага</text>
+<path d="M2655 1815v78m-23 0h46" stroke="#e0b16c" stroke-width="8"/><text class="small" x="2678" y="1850">ёршик</text>
+<rect class="vm" x="2825" y="1500" width="450" height="410"/><path d="M2880 1560h330v245h-330zM2920 1682h220m-25-20 25 20-25 20" fill="none" stroke="#c9baff" stroke-width="4" stroke-dasharray="10 7"/>
+<text class="label" x="3050" y="1715" text-anchor="middle">ВМ‑07 · ЛЮК</text><text class="small" x="3050" y="1746" text-anchor="middle">зона открывания и сервисная траектория</text><text class="red" x="3050" y="1780" text-anchor="middle">никаких аксессуаров на ВМ‑07</text>
+<text class="red" x="2550" y="1940" text-anchor="middle">НЕТ LED ПОД WC · WC/кнопка/душ — модель и точные высоты только после обмера</text>
+
+<!-- lower coordination strip + plan -->
+<rect class="panel" x="70" y="2130" width="3260" height="500" rx="16"/>
+<text class="gold" x="110" y="2180">ПЛАН‑ВРЕЗКА B01 · ВИД СВЕРХУ · КООРДИНАЦИЯ, НЕ МОНТАЖНАЯ РАЗБИВКА</text>
+<rect class="wall" x="150" y="2225" width="800" height="340"/>
+<rect class="door" x="440" y="2225" width="310" height="25"/><text class="small" x="595" y="2208" text-anchor="middle">D4 810 · наружу</text>
+<rect class="bronze" x="155" y="2225" width="267" height="27" rx="4"/><text class="small" x="288" y="2245" text-anchor="middle">низкий добор 140</text>
+<rect class="fixture" x="155" y="2252" width="267" height="308" rx="8"/><text class="small" x="288" y="2405" text-anchor="middle">ванна</text><text class="small" x="288" y="2425" text-anchor="middle">1600 × 700</text>
+<rect class="glass" x="422" y="2340" width="18" height="220"/><text class="small" x="430" y="2325" text-anchor="middle">стекло</text>
+<!-- K1 on the long bath wall, next to the shower end; small symbol only, not a recessed niche -->
+<rect class="bronze" x="155" y="2394" width="15" height="50" rx="3"/><path d="M158 2406h9m-9 17h9m-6-29v50" stroke="#e0b16c" stroke-width="2"/><text class="small" x="176" y="2420">K1</text>
+<rect class="vanity" x="422" y="2492" width="260" height="68"/><text class="small" x="552" y="2534" text-anchor="middle">тумба</text>
+<rect class="fixture" x="680" y="2350" width="145" height="155" rx="55"/><text class="small" x="752" y="2430" text-anchor="middle">WC</text>
+<rect class="vm" x="682" y="2492" width="263" height="68"/><text class="small" x="813" y="2534" text-anchor="middle">ВМ‑07</text>
+<path d="M422 2420h258" stroke="#58d29b" stroke-width="5"/><path d="M650 2408l30 12-30 12" fill="#58d29b"/><text class="green" x="551" y="2404" text-anchor="middle">проход к WC 670</text>
+<path d="M422 2515h260" stroke="#e0b16c" stroke-width="5"/><text class="small" x="552" y="2482" text-anchor="middle">ванна → ВМ‑07: 680</text>
+<circle cx="571" cy="2377" r="15" fill="#f0c56d" stroke="#fff1c8" stroke-width="4"/><text class="small" x="594" y="2382">L1</text>
+<circle cx="284" cy="2469" r="15" fill="#f0c56d" stroke="#fff1c8" stroke-width="4"/><text class="small" x="307" y="2474">L2</text>
+<circle cx="443" cy="2550" r="10" fill="#58d29b" stroke="#c8ffe5" stroke-width="3"/><text class="small" x="460" y="2544">S1</text>
+<circle cx="400" cy="2534" r="10" fill="#58d29b" stroke="#c8ffe5" stroke-width="3"/><text class="small" x="382" y="2524" text-anchor="end">S2</text>
+<path d="M435 2552h230" stroke="#8dd7d4" stroke-width="5"/><text class="small" x="550" y="2584" text-anchor="middle">G3 только под тумбой</text>
+<text class="small" x="988" y="2550">добор у D4 — со скатом в ванну, без хранения</text>
+<text class="small" x="160" y="2600">2090</text><text class="small" x="105" y="2400" transform="rotate(-90 105 2400)">1740</text>
+<rect class="box" x="1080" y="2225" width="980" height="340" rx="12"/>
+<text class="h" x="1120" y="2270">МАТЕРИАЛЫ</text>
+<text class="body" x="1120" y="2310">• стены: светлый матовый известняк / керамогранит</text><text class="body" x="1120" y="2342">• акцент WC: рифлёный greige</text><text class="body" x="1120" y="2374">• пол: более тёмный матовый, противоскользящий</text><text class="body" x="1120" y="2406">• металл / K1: SUS304, сатиновая PVD-бронза; K1 260 × 90 × 180, дренаж</text>
+<text class="red" x="1120" y="2460">Запреты: нет шкафов из верхней левой облицовки; нет ниш в стене 160 мм.</text><text class="red" x="1120" y="2492">Стена ванны: только K1; без других полок / стеллажа, щёток и розетки 230 В.</text>
+<rect class="box" x="2110" y="2225" width="1180" height="340" rx="12"/>
+<text class="h" x="2150" y="2270">СВЕТ · ЭЛЕКТРИКА · УПРАВЛЕНИЕ</text>
+<text class="body" x="2150" y="2310">L1/L2 — потолочные светильники 3000 K; G2 — фронтальный свет зеркала.</text><text class="body" x="2150" y="2342">G3 — LED 2700 K только под тумбой; S1/S2 — извлекаемые датчики протечки.</text><text class="body" x="2150" y="2374">Сушитель 200 Вт: таймер вне D4; отдельная линия / УЗО — по электропроекту.</text><text class="body" x="2150" y="2406">SHV: только внутри зеркального шкафа, +1400 ориентир; не обычная 230 В розетка.</text>
+<text class="cond" x="2150" y="2460">УСЛОВНО: высоты светильников, вентканал, оси крепежа, люк ВМ‑07, модели и монтажные карты.</text><text class="fixed" x="2150" y="2492">ФИКС.: контур B01, ванна, тумба X700…1380, ВМ‑07 X1380…2090, WC и проход 670.</text>
+<text class="red" x="100" y="2670">НЕ ЧЕРТЁЖ ДЛЯ СВЕРЛЕНИЯ</text><text class="sub" x="450" y="2670">До монтажа: контрольный обмер чистовой плитки, D4, ванны/экрана/стекла, скрытых трасс, ВМ‑07 и вентиляции.</text>
+</svg>

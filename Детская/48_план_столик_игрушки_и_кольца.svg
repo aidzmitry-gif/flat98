@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1350" viewBox="0 0 1800 1350">
+<defs><style>
+ .title{font:700 31px 'Segoe UI',sans-serif;fill:#193d32}.head{font:700 21px 'Segoe UI',sans-serif;fill:#193d32}.t{font:16px 'Segoe UI',sans-serif;fill:#29483e}.small{font:14px 'Segoe UI',sans-serif;fill:#455d53}.bold{font-weight:700}.card{fill:#fffefa;stroke:#ccd8d0;stroke-width:1.5}.wall{stroke:#23443a;stroke-width:4;fill:none}.guide{stroke:#81998e;stroke-width:1;stroke-dasharray:5 4}.dim{stroke:#427b8e;stroke-width:1.5;marker-start:url(#arr);marker-end:url(#arr)}.outline{stroke:#73947d;stroke-width:1.5;stroke-dasharray:6 5;fill:#eef5ee}.note{fill:#fff1e5;stroke:#ca9873;stroke-width:1.5}
+ </style><marker id="arr" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse"><path d="M8 1L1 4L8 7" fill="none" stroke="#427b8e" stroke-width="1.2"/></marker></defs>
+<rect width="1800" height="1350" fill="#f6f5ef"/>
+<text x="45" y="48" class="title">Детская · столик, игрушки и кольца</text><text x="45" y="76" class="t">Эскиз по исходным обмерам и условной расстановке · все размеры в мм</text>
+<rect x="1510" y="24" width="245" height="46" rx="8" class="note"/><text x="1632" y="54" text-anchor="middle" class="t bold">НЕ ДЛЯ ЗАКАЗА</text>
+
+<rect x="40" y="100" width="1100" height="370" rx="14" class="card"/>
+<text x="70" y="136" class="head">1. Левая стена — вид со стороны кровати</text>
+<text x="70" y="160" class="small">Длина по горизонтали в условном масштабе; высота и положение двери на виде условны.</text>
+<!-- elevation X 145..986, scale .22 -->
+<line x1="145" y1="356" x2="986.5" y2="356" class="wall"/>
+<text x="55" y="349" class="small">ДВЕРЬ ←</text><text x="1000" y="349" class="small">→ ОКНО</text>
+<rect x="321" y="210" width="330" height="146" rx="4" fill="#dfeee0" stroke="#79947f"/>
+<line x1="337" y1="229" x2="635" y2="229" stroke="#79947f" stroke-width="6"/>
+<line x1="450" y1="229" x2="450" y2="292" stroke="#79947f" stroke-width="2"/><circle cx="450" cy="304" r="12" fill="none" stroke="#79947f" stroke-width="4"/>
+<line x1="520" y1="229" x2="520" y2="292" stroke="#79947f" stroke-width="2"/><circle cx="520" cy="304" r="12" fill="none" stroke="#79947f" stroke-width="4"/>
+<text x="486" y="339" text-anchor="middle" class="small bold">РАМА 1500 P · КОЛЬЦА</text>
+<rect x="733.5" y="297" width="132" height="59" fill="#efd6af" stroke="#b79669"/><line x1="799.5" y1="297" x2="799.5" y2="356" stroke="#b79669"/><text x="800" y="319" text-anchor="middle" class="small bold">КОРЗИНЫ</text><text x="800" y="340" text-anchor="middle" class="small">600 P</text>
+<rect x="876.5" y="206" width="110" height="150" fill="#eee8d5" stroke="#c1ac88"/><text x="931" y="255" text-anchor="middle" class="small">СТОЛ У</text><text x="931" y="275" text-anchor="middle" class="small">ОКНА</text><text x="931" y="296" text-anchor="middle" class="small">500 P</text>
+<line x1="145" y1="386" x2="321" y2="386" class="dim"/><text x="233" y="380" text-anchor="middle" class="small">800 P</text>
+<line x1="321" y1="386" x2="651" y2="386" class="dim"/><text x="486" y="380" text-anchor="middle" class="small">1500 P</text>
+<line x1="651" y1="386" x2="733.5" y2="386" class="dim"/><text x="692" y="380" text-anchor="middle" class="small">375 P</text>
+<line x1="733.5" y1="386" x2="865.5" y2="386" class="dim"/><text x="799" y="380" text-anchor="middle" class="small">600 P</text>
+<line x1="865.5" y1="386" x2="876.5" y2="386" class="dim"/><text x="874" y="408" class="small">50 P</text>
+<line x1="876.5" y1="386" x2="986.5" y2="386" class="dim"/><text x="931" y="380" text-anchor="middle" class="small">500 P</text>
+<line x1="145" y1="431" x2="986.5" y2="431" class="dim"/><text x="565" y="425" text-anchor="middle" class="t bold">3825 R · принята меньшая из двух продольных стен</text>
+
+<rect x="1170" y="100" width="590" height="370" rx="14" class="card"/>
+<text x="1200" y="138" class="head">2. Проверка по контурам</text>
+<text x="1200" y="175" class="t">Зазор от рамы до стола: 3325 − 2300 =</text><text x="1200" y="201" class="t bold">1025 P, вдоль стены.</text>
+<text x="1200" y="237" class="t">Хранение 600 × 300 P помещается</text><text x="1200" y="262" class="t">в этом условном промежутке.</text>
+<rect x="1195" y="285" width="540" height="145" rx="8" class="note"/>
+<text x="1212" y="313" class="t bold">Зону колец проверить пока нельзя.</text><text x="1212" y="338" class="small">Нет модели комплекса, вылета и положения колец,</text><text x="1212" y="360" class="small">паспортной зоны падения и точного обмера.</text><text x="1212" y="393" class="small">Непересечение с матом не доказывает безопасность.</text>
+
+<rect x="40" y="495" width="1100" height="815" rx="14" class="card"/>
+<text x="70" y="532" class="head">3. План сверху — положение столика и хранения</text>
+<text x="70" y="558" class="small">Ось X: от входной стороны к окну; Y: от стены спорта к кровати.</text>
+<!-- plan scale .20 px/mm; origin 160,610 -->
+<line x1="160" y1="610" x2="925" y2="610" class="wall"/><line x1="925" y1="610" x2="925" y2="1172" class="wall"/><line x1="160" y1="1172" x2="925" y2="1172" class="wall"/>
+<line x1="160" y1="790" x2="160" y2="1172" class="wall"/><line x1="160" y1="610" x2="160" y2="790" class="guide"/><text x="72" y="700" class="small">ВХОД</text><text x="72" y="720" class="small">условно</text>
+<rect x="320" y="610" width="300" height="140" class="outline"/><text x="470" y="735" text-anchor="middle" class="small">мат до 700 P</text>
+<rect x="320" y="610" width="300" height="60" rx="4" fill="#c8dec9" stroke="#6c8d73"/><text x="470" y="645" text-anchor="middle" class="small bold">РАМА 1500 × 300 P</text>
+<rect x="695" y="610" width="120" height="60" fill="#efd6af" stroke="#aa8a65"/><text x="755" y="635" text-anchor="middle" class="small bold">ХРАНЕНИЕ</text><text x="755" y="655" text-anchor="middle" class="small">600 × 300 P</text>
+<circle cx="755" cy="730" r="50" fill="#fff7dd" stroke="#c59c66" stroke-width="2"/><text x="755" y="728" text-anchor="middle" class="small bold">СТОЛИК</text><text x="755" y="746" text-anchor="middle" class="small">Ø 500 P</text>
+<rect x="725" y="790" width="60" height="60" rx="7" fill="#e6eade" stroke="#7c967d"/><text x="755" y="826" text-anchor="middle" class="small">СТУЛ P</text>
+<rect x="825" y="610" width="100" height="442" fill="#eee8d5" stroke="#c3ad88"/><text x="875" y="659" text-anchor="middle" class="small">ПОЛКИ</text><text x="875" y="679" text-anchor="middle" class="small">НАД</text><text x="875" y="699" text-anchor="middle" class="small">СТОЛОМ</text><text x="875" y="812" text-anchor="middle" class="small bold">СТОЛ</text><text x="875" y="832" text-anchor="middle" class="small">500 P</text>
+<rect x="160" y="962" width="420" height="210" rx="4" fill="#e0ebe1" stroke="#8ba38d"/><text x="370" y="1060" text-anchor="middle" class="t bold">КРОВАТЬ · 2100 × 1050 P</text><text x="370" y="1086" text-anchor="middle" class="small">контур, без лестницы и фасадов</text>
+<rect x="665" y="1052" width="260" height="120" fill="#ead6b5" stroke="#ae906a"/><text x="795" y="1100" text-anchor="middle" class="small bold">ПРАВЫЙ ШКАФ</text><text x="795" y="1122" text-anchor="middle" class="small">1300 × 600 P</text>
+<text x="947" y="825" class="small">ОКНО →</text><line x1="1060" y1="610" x2="1060" y2="1172" class="dim"/><text x="1078" y="890" text-anchor="middle" transform="rotate(90 1078 890)" class="small">2810 B · ширина по плану</text><text x="70" y="1235" class="small">Стулья большого стола, фактические границы окна, двери и зона колец не заданы.</text>
+<line x1="160" y1="1204" x2="925" y2="1204" class="dim"/><text x="542" y="1198" text-anchor="middle" class="small">3825 R · выбранная длина для расчёта</text>
+
+<rect x="1170" y="495" width="590" height="815" rx="14" class="card"/>
+<text x="1200" y="535" class="head">Как читать план</text>
+<text x="1200" y="575" class="t bold">Исходные данные</text>
+<text x="1200" y="603" class="t">Две стены: 3825 и 3837 R; какая</text><text x="1200" y="628" class="t">из них слева — требует уточнения.</text>
+<text x="1200" y="663" class="t">Ширина комнаты: 2810 B по плану;</text><text x="1200" y="688" class="t">нужен контрольный обмер.</text>
+<text x="1200" y="727" class="t bold">Предложение для проверки</text>
+<text x="1200" y="755" class="t">Корзины: 600 × 300 P. Столик: Ø 500 P.</text><text x="1200" y="780" class="t">Стул: условный контур 300 × 300 P.</text><text x="1200" y="805" class="t">Столик расположен перед хранением;</text><text x="1200" y="830" class="t">для доступа к корзинам его сдвигают.</text>
+<text x="1200" y="870" class="t bold">Перед занятиями</text><text x="1200" y="898" class="t">Убирать столик, стул и игрушки из зоны</text><text x="1200" y="923" class="t">комплекса. Расположение хранения и мата</text><text x="1200" y="948" class="t">проверить по паспорту выбранной модели.</text>
+<text x="1200" y="990" class="t bold">Обязательно уточнить</text><text x="1200" y="1018" class="t">Проём двери; ширину комнаты; привязки</text><text x="1200" y="1043" class="t">стола и стеллажа; вылет и зону колец;</text><text x="1200" y="1068" class="t">габариты кровати и положение стульев.</text>
+<line x1="1200" y1="1096" x2="1725" y2="1096" stroke="#d1ddd4"/>
+<text x="1200" y="1126" class="small">R — размер из ведомости обмеров.</text><text x="1200" y="1148" class="small">B — из плана, требует обмера.</text><text x="1200" y="1170" class="small">P — эскизное предположение, не заказной размер.</text>
+<text x="1200" y="1210" class="small">Источник: ведомость обмеров проекта и схема 39.</text>
+<text x="1200" y="1233" class="small">Модель мебели и зоны безопасности не утверждены.</text>
+</svg>

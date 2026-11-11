@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2600" height="1750" viewBox="0 0 2600 1750">
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse"><path d="M8 0 L0 4 L8 8" fill="none" stroke="#567668" stroke-width="1.2"/></marker></defs>
+<style>text{font-family:Arial,'Segoe UI',sans-serif;fill:#203d38}.eyebrow{font-size:19px;font-weight:bold;letter-spacing:2px;fill:#377561}.title{font-size:46px;font-weight:bold}.subtitle{font-size:23px;fill:#627d74}.head{font-size:26px;font-weight:bold}.body{font-size:21px;fill:#405c52}.small{font-size:18px;fill:#627a70}.dimtext{font-size:21px;font-weight:bold;fill:#2d5d4b}.dim{stroke:#567668;stroke-width:1.8;marker-start:url(#a);marker-end:url(#a)}.ext{stroke:#9eb2a5;stroke-width:1.4}</style>
+<rect width="2600" height="1750" fill="#f1f4ef"/><text x="55.00" y="47.00" class="eyebrow" text-anchor="start" >APT-001 / ПРИХОЖАЯ / ВАРИАНТ C · V39 / ЛИСТ 1</text>
+<text x="55.00" y="106.00" class="title" text-anchor="start" >Больше места для щитка: новая компоновка</text>
+<text x="57.00" y="149.00" class="subtitle" text-anchor="start" >Увеличенная секция — предложение до замера щита; все размеры в миллиметрах</text>
+<rect x="45.00" y="185.00" width="1260.00" height="1125.00" fill="white" stroke="#dbe4dc" stroke-width="2" rx="20"/>
+<rect x="1325.00" y="185.00" width="1230.00" height="1125.00" fill="white" stroke="#dbe4dc" stroke-width="2" rx="20"/>
+<text x="72.00" y="226.00" class="head" text-anchor="start" >01  Ширины и высоты спереди</text>
+<text x="74.00" y="259.00" class="small" text-anchor="start" >Коридор слева · входная дверь справа · дверцы условно сняты</text>
+<rect x="223.50" y="312.00" width="357.00" height="918.00" fill="#dfc7a7" stroke="#927b60" stroke-width="2" />
+<rect x="229.62" y="318.12" width="187.00" height="905.76" fill="#e6f1eb" stroke="#afc9b8" stroke-width="1" />
+<rect x="416.62" y="312.00" width="6.12" height="918.00" fill="#c0a17f" stroke="none" stroke-width="1" />
+<rect x="422.74" y="318.12" width="151.64" height="905.76" fill="#f9f4ec" stroke="#d0c3b4" stroke-width="1" />
+<rect x="223.50" y="1202.80" width="357.00" height="27.20" fill="#c0a17f" stroke="none" stroke-width="1" />
+<rect x="422.74" y="499.00" width="151.64" height="6.12" fill="#ba9a78" stroke="none" stroke-width="1" />
+<rect x="422.74" y="1100.80" width="151.64" height="6.12" fill="#ba9a78" stroke="none" stroke-width="1" />
+<line x1="430.74" y1="635.00" x2="566.38" y2="635.00" class="" stroke="#4d6255" stroke-width="3"/>
+<path d="M436.74 654.00 l-5 12 v272.00 h38.55 v-272.00 l-5 -12 Z" fill="#aaa994" stroke="#8d8271" stroke-width="1"/>
+<path d="M433.74 654.00 l8 -8 l8 8" fill="none" stroke="#5c695c" stroke-width="2"/>
+<path d="M477.95 654.00 l-5 12 v272.00 h38.55 v-272.00 l-5 -12 Z" fill="#8e9787" stroke="#8d8271" stroke-width="1"/>
+<path d="M474.95 654.00 l8 -8 l8 8" fill="none" stroke="#5c695c" stroke-width="2"/>
+<path d="M519.17 654.00 l-5 12 v272.00 h38.55 v-272.00 l-5 -12 Z" fill="#bba58a" stroke="#8d8271" stroke-width="1"/>
+<path d="M516.17 654.00 l8 -8 l8 8" fill="none" stroke="#5c695c" stroke-width="2"/>
+<rect x="265.15" y="672.40" width="115.94" height="193.80" fill="none" stroke="#81a796" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="323.12" y="764.20" class="small" text-anchor="middle" >ЭЩ-03</text>
+<text x="323.12" y="794.80" class="small" text-anchor="middle" >габарит M</text>
+<rect x="580.50" y="312.00" width="195.50" height="187.00" fill="#dfc7a7" stroke="#927b60" stroke-width="2" />
+<line x1="678.25" y1="312.00" x2="678.25" y2="499.00" class="" stroke="#a98e72" stroke-width="1.5"/>
+<rect x="580.50" y="499.00" width="195.50" height="574.60" fill="#daeadd" stroke="#b3c8b7" stroke-width="1" />
+<path d="M639.15 720.00 v14 q0 6 6 6" fill="none" stroke="#65836f" stroke-width="3"/>
+<path d="M701.71 720.00 v14 q0 6 6 6" fill="none" stroke="#65836f" stroke-width="3"/>
+<rect x="580.50" y="1073.60" width="195.50" height="11.90" fill="#e9d7bf" stroke="#ad967a" stroke-width="1" rx="3"/>
+<rect x="580.50" y="1085.50" width="195.50" height="8.50" fill="#bd9d78" stroke="none" stroke-width="1" />
+<rect x="580.50" y="1094.00" width="85.00" height="30.60" fill="#d4b796" stroke="#ae9274" stroke-width="1" />
+<path d="M615.69 1192.60 h15 v30.40 h9 q5 1 7 7 h-31 Z" fill="#8a7965"/>
+<path d="M717.35 1133.10 h15 v89.90 h9 q5 1 7 7 h-31 Z" fill="#8a7965"/>
+<line x1="223.50" y1="1230.00" x2="779.00" y2="1230.00" class="" stroke="#587469" stroke-width="2"/>
+<line x1="215.00" y1="288.00" x2="784.50" y2="288.00" class="dim" />
+<text x="499.75" y="278.00" class="dimtext" text-anchor="middle" >1675 B</text>
+<line x1="183.50" y1="312.00" x2="183.50" y2="1230.00" class="dim" />
+<text x="174.50" y="771.00" class="dimtext" text-anchor="middle" transform="rotate(-90 174.50 771.00)">2700 P</text>
+<line x1="229.62" y1="350.00" x2="416.62" y2="350.00" class="dim" />
+<text x="323.12" y="340.00" class="dimtext" text-anchor="middle" >550 P</text>
+<line x1="422.74" y1="350.00" x2="574.38" y2="350.00" class="dim" />
+<text x="498.56" y="340.00" class="dimtext" text-anchor="middle" >446 P</text>
+<line x1="223.50" y1="1258.00" x2="580.50" y2="1258.00" class="dim" />
+<text x="402.00" y="1285.00" class="dimtext" text-anchor="middle" >1050 P</text>
+<line x1="580.50" y1="1258.00" x2="776.00" y2="1258.00" class="dim" />
+<text x="678.25" y="1285.00" class="dimtext" text-anchor="middle" >575 P</text>
+<text x="830.00" y="346.00" class="head" text-anchor="start" >Шкаф общий</text>
+<text x="830.00" y="381.00" class="body" text-anchor="start" >1050 × 580 × 2700 P</text>
+<text x="830.00" y="415.00" class="body" text-anchor="start" >550 — свет секции щита P</text>
+<text x="830.00" y="448.00" class="body" text-anchor="start" >446 — свет секции одежды P</text>
+<text x="830.00" y="514.00" class="head" text-anchor="start" >Антресоль у входа</text>
+<text x="830.00" y="549.00" class="body" text-anchor="start" >575 × 420 × 550 P</text>
+<text x="830.00" y="583.00" class="body" text-anchor="start" >Низ на высоте 2150 P</text>
+<text x="830.00" y="650.00" class="head" text-anchor="start" >Банкетка</text>
+<text x="830.00" y="685.00" class="body" text-anchor="start" >575 × 420, высота 460 P</text>
+<text x="830.00" y="718.00" class="body" text-anchor="start" >Ящик 250 × 380 × 90 P</text>
+<text x="830.00" y="785.00" class="head" text-anchor="start" >Место для обуви</text>
+<text x="830.00" y="820.00" class="body" text-anchor="start" >Один ряд на полу.</text>
+<text x="830.00" y="853.00" class="body" text-anchor="start" >Ориентир: около 2 пар;</text>
+<text x="830.00" y="886.00" class="body" text-anchor="start" >зависит от обуви и боковин.</text>
+<text x="830.00" y="969.00" class="small" text-anchor="start" >Было: шкаф 850 / место 775.</text>
+<text x="830.00" y="1001.00" class="small" text-anchor="start" >Стало: шкаф 1050 / место 575.</text>
+<text x="830.00" y="1033.00" class="small" text-anchor="start" >Секция щита: 400 → 550 P.</text>
+<text x="830.00" y="1097.00" class="small" text-anchor="start" >Высота шкафа — корпуса;</text>
+<text x="830.00" y="1129.00" class="small" text-anchor="start" >размеры фасадов уточняются.</text>
+<text x="830.00" y="1200.00" class="body" text-anchor="start" >25 + 1050 + 575 + 25 = 1675</text>
+<text x="1352.00" y="226.00" class="head" text-anchor="start" >02  План сверху: ширина и глубина</text>
+<text x="1354.00" y="259.00" class="small" text-anchor="start" >Глубины 580 и 420 — наружные, от левой стены</text>
+<line x1="1410.00" y1="365.00" x2="1410.00" y2="1118.75" class="" stroke="#355145" stroke-width="7"/>
+<rect x="1410.00" y="376.25" width="189.00" height="258.75" fill="#dbeadd" stroke="#8fa998" stroke-width="2" />
+<rect x="1410.00" y="635.00" width="261.00" height="472.50" fill="#dec4a1" stroke="#a78a6a" stroke-width="2" />
+<rect x="1410.00" y="643.10" width="261.00" height="200.70" fill="#f7f0e5" stroke="#c4b9aa" stroke-width="1" />
+<rect x="1410.00" y="851.90" width="261.00" height="247.50" fill="#e6f1eb" stroke="#b8cdbd" stroke-width="1" />
+<text x="1443.75" y="452.75" class="body" text-anchor="start" >БАНКЕТКА</text>
+<text x="1434.75" y="695.75" class="body" text-anchor="start" >ОДЕЖДА</text>
+<text x="1439.25" y="934.25" class="body" text-anchor="start" >ЩИТ</text>
+<line x1="1414.00" y1="524.75" x2="1595.00" y2="524.75" class="dim" />
+<text x="1504.50" y="514.75" class="dimtext" text-anchor="middle" >420 P</text>
+<line x1="1414.00" y1="781.25" x2="1667.00" y2="781.25" class="dim" />
+<text x="1540.50" y="771.25" class="dimtext" text-anchor="middle" >580 P</text>
+<line x1="1414.00" y1="1037.75" x2="1667.00" y2="1037.75" class="dim" />
+<text x="1540.50" y="1027.75" class="dimtext" text-anchor="middle" >580 P</text>
+<line x1="1726.00" y1="376.25" x2="1726.00" y2="635.00" class="dim" />
+<text x="1717.00" y="505.62" class="dimtext" text-anchor="middle" transform="rotate(-90 1717.00 505.62)">575 P</text>
+<line x1="1726.00" y1="635.00" x2="1726.00" y2="1107.50" class="dim" />
+<text x="1717.00" y="871.25" class="dimtext" text-anchor="middle" transform="rotate(-90 1717.00 871.25)">1050 P</text>
+<line x1="1410.00" y1="333.00" x2="1684.50" y2="333.00" class="dim" />
+<text x="1547.25" y="323.00" class="dimtext" text-anchor="middle" >610 B</text>
+<text x="1696.50" y="338.00" class="small" text-anchor="start" >D1 →</text>
+<text x="1400.00" y="1195.00" class="small" text-anchor="start" >↓ открытый переход в коридор 4</text>
+<text x="1920.00" y="360.00" class="head" text-anchor="start" >Глубина каждого элемента</text>
+<text x="1920.00" y="400.00" class="body" text-anchor="start" >Секция щита: 580 P с фасадом</text>
+<text x="1920.00" y="435.00" class="body" text-anchor="start" >Секция одежды: 580 P с фасадом</text>
+<text x="1920.00" y="470.00" class="body" text-anchor="start" >Верх над сиденьем: 420 P</text>
+<text x="1920.00" y="505.00" class="body" text-anchor="start" >Банкетка: 420 P</text>
+<text x="1920.00" y="540.00" class="body" text-anchor="start" >Ящик для тапочек: 380 P</text>
+<text x="1920.00" y="606.00" class="head" text-anchor="start" >Внутренние глубины — M:</text>
+<text x="1920.00" y="641.00" class="body" text-anchor="start" >зависят от задней стенки,</text>
+<text x="1920.00" y="676.00" class="body" text-anchor="start" >фасадов и прокладки кабелей.</text>
+<text x="1920.00" y="755.00" class="body" text-anchor="start" >У D1 по B01: 610 − 420 = 190.</text>
+<text x="1920.00" y="790.00" class="small" text-anchor="start" >Это не замер до коробки</text>
+<text x="1920.00" y="820.00" class="small" text-anchor="start" >и не проверка открывания.</text>
+<text x="1920.00" y="900.00" class="body" text-anchor="start" >Ранее показанный рендер</text>
+<text x="1920.00" y="935.00" class="body" text-anchor="start" >относится к ширине 850/775,</text>
+<text x="1920.00" y="970.00" class="body" text-anchor="start" >а не к этой новой пропорции.</text>
+<rect x="45.00" y="1327.00" width="2510.00" height="370.00" fill="#fff9ef" stroke="#dbe4dc" stroke-width="2" rx="20"/>
+<text x="72.00" y="1370.00" class="head" text-anchor="start" >Сначала проверить щит и доступ</text>
+<text x="72.00" y="1410.00" class="body" text-anchor="start" >550 мм — предполагаемая внутренняя ширина секции, не размер щита и не гарантия, что он поместится.</text>
+<text x="72.00" y="1447.00" class="body" text-anchor="start" >Нужны реальные ширина, высота и глубина щита с рамой, открывание его дверцы, кабельные вводы и доступ для обслуживания.</text>
+<text x="72.00" y="1484.00" class="body" text-anchor="start" >Перенос, размещение внутри мебели, материалы, допустимые расстояния и возможность обслуживания проверяются с электриком по месту.</text>
+<text x="72.00" y="1521.00" class="small" text-anchor="start" >B — БТИ · P — проектное предложение · M — измерить. Мебельные размеры не являются размерами для изготовления.</text>
+<text x="72.00" y="1557.00" class="small" text-anchor="start" >D1: 610 + 1010 + 470 = 2090 по B01; отдельный контроль 1140 × 2150 к углам не привязан.</text>
+<text x="72.00" y="1593.00" class="small" text-anchor="start" >Уменьшение банкетки снижает запас для обуви: 2 пары — ориентир, а не подтверждённая вместимость.</text>
+</svg>

@@ -1,0 +1,90 @@
+<section id="bedroom-improved-layout" aria-labelledby="improved-layout-title">
+  <style>
+    #bedroom-improved-layout { color: var(--foreground); }
+    #bedroom-improved-layout h2 { margin: 0 0 12px; }
+    #bedroom-improved-layout svg { display: block; width: 100%; height: auto; overflow: visible; }
+    #bedroom-improved-layout .room { fill: color-mix(in srgb, var(--background) 86%, var(--foreground) 14%); stroke: var(--foreground); stroke-width: 2; }
+    #bedroom-improved-layout .wall { fill: none; stroke: var(--foreground); stroke-width: 7; }
+    #bedroom-improved-layout .opening { stroke: var(--green); stroke-width: 4; }
+    #bedroom-improved-layout .window { stroke: var(--blue); stroke-width: 4; }
+    #bedroom-improved-layout .radiator { fill: color-mix(in srgb, var(--blue) 16%, transparent); stroke: var(--blue); stroke-width: 1.5; }
+    #bedroom-improved-layout .rug { fill: color-mix(in srgb, var(--accent) 22%, transparent); stroke: var(--muted-foreground); stroke-width: 1.2; stroke-dasharray: 5 4; }
+    #bedroom-improved-layout .bed { fill: color-mix(in srgb, var(--primary) 18%, var(--background) 82%); stroke: var(--foreground); stroke-width: 1.7; }
+    #bedroom-improved-layout .vanity { fill: color-mix(in srgb, var(--accent) 72%, transparent); stroke: var(--foreground); stroke-width: 1.5; }
+    #bedroom-improved-layout .wardrobe { fill: color-mix(in srgb, var(--secondary) 78%, var(--foreground) 22%); stroke: var(--foreground); stroke-width: 1.5; }
+    #bedroom-improved-layout .cot { fill: color-mix(in srgb, var(--green) 23%, var(--background) 77%); stroke: var(--green); stroke-width: 2; }
+    #bedroom-improved-layout .pending { fill: color-mix(in srgb, var(--orange) 15%, transparent); stroke: var(--orange); stroke-width: 1.5; stroke-dasharray: 5 4; }
+    #bedroom-improved-layout .removed { fill: color-mix(in srgb, var(--destructive) 9%, transparent); stroke: var(--destructive); stroke-width: 1.5; stroke-dasharray: 5 4; }
+    #bedroom-improved-layout .dim, #bedroom-improved-layout .leader { stroke: var(--muted-foreground); stroke-width: 1.2; fill: none; }
+    #bedroom-improved-layout .dim { marker-start: url(#arrow); marker-end: url(#arrow); }
+    #bedroom-improved-layout .label { fill: var(--foreground); font: 500 14px/1.2 system-ui, sans-serif; }
+    #bedroom-improved-layout .small { fill: var(--muted-foreground); font: 400 12px/1.2 system-ui, sans-serif; }
+    #bedroom-improved-layout .measure { fill: var(--foreground); font: 500 12px/1.2 system-ui, sans-serif; }
+    #bedroom-improved-layout .green { fill: var(--green); font: 500 12px/1.2 system-ui, sans-serif; }
+    #bedroom-improved-layout .orange { fill: var(--orange); font: 500 12px/1.2 system-ui, sans-serif; }
+  </style>
+  <h2 id="improved-layout-title">Улучшенная рабочая планировка спальни B01</h2>
+  <svg viewBox="0 0 850 780" role="img" aria-labelledby="improved-svg-title improved-svg-desc">
+    <title id="improved-svg-title">План улучшенной спальни с временной приставной люлькой</title>
+    <desc id="improved-svg-desc">На плане показаны кровать 1400 на 2000, встроенная мебельная группа 1870 на 600 по стене 5/8, свободный проход P6, окно и радиатор, ковёр и временная приставная люлька вместо правой тумбы. Указаны улучшения для безопасных проходов и светового сценария.</desc>
+    <defs>
+      <marker id="arrow" viewBox="0 0 8 8" refX="4" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M 0 0 L 8 4 L 0 8 z" fill="var(--muted-foreground)"></path>
+      </marker>
+    </defs>
+
+    <rect class="room" x="90" y="126" width="576" height="421.5" rx="1"></rect>
+    <path class="wall" d="M90 126 H666 M90 547.5 H666 M90 126 V547.5 M666 126 V267 M666 267 V547.5"></path>
+    <line class="opening" x1="666" y1="126" x2="666" y2="267"></line>
+    <text class="green" x="681" y="183">P6 · 940</text>
+    <text class="small" x="681" y="200">оставить пустым</text>
+
+    <line class="window" x1="90" y1="216" x2="90" y2="456"></line>
+    <rect class="radiator" x="97" y="250" width="22" height="172" rx="2"></rect>
+    <text class="small" x="22" y="231">O3 · 1 600</text>
+    <text class="small" x="22" y="247">R-05: не закрывать</text>
+
+    <rect class="rug" x="120" y="202.5" width="240" height="345"></rect>
+    <text class="small" x="129" y="222">ковёр 1 600×2 300</text>
+
+    <rect class="bed" x="135" y="247.5" width="210" height="300" rx="8"></rect>
+    <line class="leader" x1="135" y1="502" x2="345" y2="502"></line>
+    <text class="label" x="158" y="385">кровать</text>
+    <text class="small" x="158" y="402">1 400×2 000</text>
+    <text class="small" x="154" y="526">изголовье: мягкое, 1 050–1 150 H</text>
+
+    <rect class="pending" x="90" y="487.5" width="45" height="60"></rect>
+    <text class="orange" x="92" y="476">левая тумба</text>
+    <text class="small" x="92" y="492">только после</text>
+    <text class="small" x="92" y="507">замера R-05</text>
+
+    <rect class="removed" x="345" y="487.5" width="45" height="60"></rect>
+    <path class="leader" d="M390 518 L454 491"></path>
+    <text class="small" x="459" y="487">правую тумбу убрать</text>
+    <text class="small" x="459" y="503">на период люльки</text>
+
+    <rect class="cot" x="345" y="405" width="82.5" height="142.5" rx="6"></rect>
+    <text class="green" x="439" y="420">временная приставная люлька</text>
+    <text class="green" x="439" y="437">550×950, не встраивать</text>
+    <path class="leader" d="M427.5 450 L436 436"></path>
+
+    <rect class="vanity" x="576" y="267" width="90" height="156.6"></rect>
+    <rect class="wardrobe" x="576" y="423.6" width="90" height="123.9"></rect>
+    <text class="small" x="584" y="297">зеркало</text>
+    <text class="small" x="584" y="313">+ консоль</text>
+    <text class="small" x="584" y="329">870×350–400</text>
+    <text class="small" x="584" y="452">шкаф 1 000</text>
+    <text class="small" x="584" y="468">раздвижной</text>
+    <text class="small" x="584" y="484">или складной</text>
+    <text class="small" x="576" y="569">группа по стене 5/8 · 1 870×600</text>
+
+    <line class="dim" x1="427.5" y1="461" x2="576" y2="461"></line>
+    <text class="measure" x="461" y="452">990 проход</text>
+
+    <text class="green" x="102" y="605">Постоянно: матовые фасады без чёрных контрастных профилей; зеркало — единственный акцент.</text>
+    <text class="green" x="102" y="628">Свет: общий + независимые бра у кровати + подсветка зеркала, всё 2700–3000 K и с диммированием.</text>
+    <text class="green" x="102" y="651">Окно: тюль и плотный blackout до пола, но радиатор не закрывать глухим экраном.</text>
+    <text class="orange" x="102" y="688">Контроль перед заказом: чистовой обмер комнаты, габарит R-05, наличники/плинтус и реальная высота зоны P6.</text>
+    <text class="small" x="102" y="720">Размеры B01: 3 840×2 810; мебель и декор — рабочее предложение, не монтажный чертёж.</text>
+  </svg>
+</section>

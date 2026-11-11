@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2880" height="2160" viewBox="0 0 2880 2160" role="img" aria-labelledby="title desc">
+ <title id="title">Комната 7 — архитектурные улучшения</title>
+ <desc id="desc">Координационный лист санузла B01 2090 на 1740 мм с неизменной сантехнической геометрией и десятью архитектурными улучшениями. Не является чертежом для сверления.</desc>
+ <style>
+  .bg{fill:#151715}.panel{fill:#20231f;stroke:#777c72;stroke-width:3}.inset{fill:#282b26;stroke:#4f554d;stroke-width:2}.wall{fill:none;stroke:#f1f0e9;stroke-width:10}.door{fill:none;stroke:#82c3ed;stroke-width:6;stroke-dasharray:16 11}.bath{fill:#382d27;stroke:#d6b18a;stroke-width:4}.wc{fill:#382d27;stroke:#d6b18a;stroke-width:4}.vanity{fill:#51402f;stroke:#e0a95c;stroke-width:5}.vm{fill:#302a49;stroke:#a891ec;stroke-width:4}.glass{fill:#9ee9eb;fill-opacity:.14;stroke:#aee9eb;stroke-width:5}.water{fill:#263f45;stroke:#73d5df;stroke-width:4}.dim{fill:none;stroke:#9a9e96;stroke-width:2;stroke-dasharray:9 7}.leader{fill:none;stroke:#d9c08a;stroke-width:3}.muted{stroke:#525950;stroke-width:2}.call{fill:#d9b875;stroke:#fff1c9;stroke-width:3}.danger{fill:#5a302c;stroke:#f18d78;stroke-width:3}.must{fill:#f0c56d}.rec{fill:#8dd7d4}.no{fill:#ef957b}.heading{fill:#f3f0e8;font:700 46px Arial,sans-serif}.subtitle{fill:#abb0a8;font:23px Arial,sans-serif}.label{fill:#f3f0e8;font:700 24px Arial,sans-serif}.body{fill:#d1d4cc;font:21px Arial,sans-serif}.small{fill:#aeb3aa;font:18px Arial,sans-serif}.tiny{fill:#aeb3aa;font:16px Arial,sans-serif}.gold{fill:#f0c56d;font:700 22px Arial,sans-serif}.cyan{fill:#8dd7d4;font:700 22px Arial,sans-serif}.red{fill:#ef957b;font:700 21px Arial,sans-serif}.num{fill:#171817;font:700 24px Arial,sans-serif}
+ </style>
+ <rect class="bg" width="2880" height="2160"/>
+ <text class="heading" x="110" y="100">КОМНАТА 7 · АРХИТЕКТУРНЫЕ УЛУЧШЕНИЯ</text>
+ <text class="subtitle" x="110" y="138">B01 2090 × 1740 мм · D4: 760 + 810 + 520 · фиксированная расстановка сохранена · координационный лист</text>
+ <line x1="110" y1="172" x2="2770" y2="172" class="muted"/>
+
+ <!-- Plan. Origin 120,330; 0.82 px/mm. -->
+ <rect class="panel" x="80" y="250" width="1760" height="1660" rx="18"/>
+ <text class="gold" x="120" y="294">ПЛАН · масштабная ориентация, мм</text>
+ <path class="wall" d="M120 330 H743.2 M1407.4 330 H1833.8 V1756.8 H120 V330"/>
+ <path class="door" d="M743.2 330 H1407.4"/>
+ <text class="small" x="705" y="307" text-anchor="middle">760</text><text class="small" x="1075.3" y="307" text-anchor="middle">810 · D4 наружу</text><text class="small" x="1620.6" y="307" text-anchor="middle">520</text>
+ <!-- Bath X 0..700 Y140..1740 -->
+ <rect class="bath" x="120" y="444.8" width="574" height="1312" rx="18"/>
+ <text class="label" x="407" y="1010" text-anchor="middle">ВАННА</text><text class="gold" x="407" y="1042" text-anchor="middle">1600 × 700</text><text class="small" x="407" y="1070" text-anchor="middle">X=0…700 · Y=140…1740</text>
+ <rect class="inset" x="670" y="1120" width="24" height="500" rx="4"/><text class="tiny" x="657" y="1650" text-anchor="end">съёмный экран</text>
+ <!-- fixed safety glass at far bath side -->
+ <path class="glass" d="M694 1756.8 V1208 H645"/><text class="tiny" x="605" y="1191" text-anchor="end">стекло</text>
+ <!-- WC unchanged -->
+ <rect class="wc" x="1243.4" y="1018.8" width="410" height="442.8" rx="84"/>
+ <text class="label" x="1448.4" y="1221" text-anchor="middle">WC</text><text class="small" x="1448.4" y="1249" text-anchor="middle">X≈1370…1870</text><text class="small" x="1448.4" y="1275" text-anchor="middle">Y≈840…1380</text>
+ <!-- vanity -->
+ <rect class="vanity" x="694" y="1469.8" width="557.6" height="287" rx="8"/>
+ <ellipse cx="973" cy="1580" rx="104" ry="50" fill="#272a27" stroke="#f0c56d" stroke-width="4"/>
+ <text class="label" x="973" y="1672" text-anchor="middle">ТУМБА + РАКОВИНА</text><text class="small" x="973" y="1700" text-anchor="middle">X=700…1380 · Y=1390…1740</text>
+ <!-- vm -->
+ <rect class="vm" x="1251.6" y="1461.6" width="582.2" height="295.2" rx="5"/>
+ <rect x="1332" y="1508" width="132" height="132" rx="66" fill="none" stroke="#c9baff" stroke-width="5"/>
+ <text class="label" x="1542" y="1670" text-anchor="middle">ВМ‑07</text><text class="small" x="1542" y="1698" text-anchor="middle">710 × 360 · доступ проверить</text>
+ <!-- passage -->
+ <line x1="694" y1="972" x2="1243" y2="972" stroke="#58d29b" stroke-width="5"/><path d="M694 972l18-10v20zM1243 972l-18-10v20z" fill="#58d29b"/><text x="968" y="948" text-anchor="middle" fill="#58d29b" font-family="Arial" font-size="23" font-weight="700">670 мм — проход</text>
+ <!-- Wproof and leak -->
+ <path d="M137 463h540v1276H137z" fill="none" stroke="#73d5df" stroke-width="3" stroke-dasharray="12 9"/><text class="tiny" x="150" y="500">единая гидроизоляция</text>
+ <circle cx="735" cy="1718" r="13" fill="#48cf8a"/><circle cx="670" cy="1660" r="13" fill="#48cf8a"/><text class="tiny" x="748" y="1730">S1</text><text class="tiny" x="645" y="1650" text-anchor="end">S2</text>
+ <!-- Vent existing point -->
+ <circle cx="180" cy="535" r="30" fill="none" stroke="#8dd7d4" stroke-width="5"/><path d="M150 535h60m-30-30v60" stroke="#8dd7d4" stroke-width="4"/>
+ <!-- Grip backing -->
+ <path d="M135 760h45v370h-45" fill="none" stroke="#f0c56d" stroke-width="11"/><text class="tiny" x="205" y="788">усиление</text>
+ <!-- shower rail caddy -->
+ <path d="M615 1398v-170" stroke="#d6b18a" stroke-width="7"/><rect x="588" y="1290" width="54" height="46" rx="5" fill="#51402f" stroke="#d6b18a" stroke-width="3"/>
+ <!-- Mirror cabinet envelope -->
+ <rect x="782" y="1358" width="382" height="94" rx="6" fill="#233437" stroke="#aee9eb" stroke-width="4"/><line x1="803" y1="1371" x2="1143" y2="1371" stroke="#f0c56d" stroke-width="5"/>
+ <!-- dims -->
+ <line class="dim" x1="120" y1="1815" x2="1833.8" y2="1815"/><text class="small" x="977" y="1850" text-anchor="middle">2090</text><line class="dim" x1="62" y1="330" x2="62" y2="1756.8"/><text class="small" x="37" y="1043" transform="rotate(-90 37 1043)" text-anchor="middle">1740</text>
+ <!-- Callouts on plan -->
+ <path class="leader" d="M1300 1575 L1160 1575 L1160 1450"/><circle class="call" cx="1300" cy="1575" r="23"/><text class="num" x="1300" y="1583" text-anchor="middle">1</text>
+ <path class="leader" d="M255 420 L255 470"/><circle class="call" cx="255" cy="392" r="23"/><text class="num" x="255" y="400" text-anchor="middle">2</text>
+ <path class="leader" d="M742 1510 L697 1510"/><circle class="call" cx="780" cy="1510" r="23"/><text class="num" x="780" y="1518" text-anchor="middle">3</text>
+ <path class="leader" d="M226 535 L180 535"/><circle class="call" cx="252" cy="535" r="23"/><text class="num" x="252" y="543" text-anchor="middle">4</text>
+ <path class="leader" d="M232 760 L180 760"/><circle class="call" cx="258" cy="760" r="23"/><text class="num" x="258" y="768" text-anchor="middle">5</text>
+ <path class="leader" d="M724 1208 L694 1208"/><circle class="call" cx="751" cy="1208" r="23"/><text class="num" x="751" y="1216" text-anchor="middle">6</text>
+ <path class="leader" d="M655 1312 L642 1312"/><circle class="call" cx="683" cy="1312" r="23"/><text class="num" x="683" y="1320" text-anchor="middle">7</text>
+ <path class="leader" d="M764 1718 L748 1718"/><circle class="call" cx="792" cy="1718" r="23"/><text class="num" x="792" y="1726" text-anchor="middle">8</text>
+ <path class="leader" d="M1188 1400 L1164 1400"/><circle class="call" cx="1215" cy="1400" r="23"/><text class="num" x="1215" y="1408" text-anchor="middle">9</text>
+ <path class="leader" d="M450 1785 L450 1757"/><circle class="call" cx="450" cy="1820" r="23"/><text class="num" x="450" y="1828" text-anchor="middle">10</text>
+
+ <!-- Right panel -->
+ <rect class="panel" x="1900" y="250" width="900" height="1660" rx="18"/>
+ <text class="heading" x="1950" y="320" font-size="38">ВНЕДРИТЬ</text>
+ <text class="small" x="1950" y="353">Сначала проверить на объекте; затем закупка и монтаж.</text>
+ <rect class="inset" x="1940" y="385" width="820" height="540" rx="12"/>
+ <text class="must" x="1975" y="432" font-family="Arial" font-size="25" font-weight="700">MUST · ДО ПЛИТКИ / ЗАКАЗА</text>
+ <text class="body" x="1975" y="475">1 · ВМ‑07: полноразмерный макет доступа;</text><text class="small" x="2010" y="501">не менять расстановку до проверки люка.</text>
+ <text class="body" x="1975" y="548">2 · Одна система гидроизоляции: угловые ленты,</text><text class="small" x="2010" y="574">манжеты и водяная проба.</text>
+ <text class="body" x="1975" y="621">4 · Вентиляция: существующая точка, измерить</text><text class="small" x="2010" y="647">канал; обратный клапан и переток D4 — расчётом.</text>
+ <text class="body" x="1975" y="694">5 · Закладная под настоящий нагрузочный поручень.</text>
+ <text class="body" x="1975" y="741">8 · S1/S2 + система протечки: ручной сброс,</text><text class="small" x="2010" y="767">доступ к запорным клапанам обязателен.</text>
+ <text class="body" x="1975" y="814">10 · Матовая крупноформатная плитка; нескользкий</text><text class="small" x="2010" y="840">пол; единый физический образец satin PVD bronze.</text>
+ <rect class="inset" x="1940" y="955" width="820" height="495" rx="12"/>
+ <text class="rec" x="1975" y="1002" font-family="Arial" font-size="25" font-weight="700">RECOMMENDED · ЕЖЕДНЕВНОЕ УДОБСТВО</text>
+ <text class="body" x="1975" y="1048">3 · Съёмный экран ванны; сифон/перелив доступны.</text>
+ <text class="body" x="1975" y="1097">6 · Неподвижное безопасное стекло + прозрачный</text><text class="small" x="2010" y="1123">водоотбойник; гидрофобное покрытие — опция.</text>
+ <text class="body" x="1975" y="1170">7 · Съёмная корзина на душевой стойке;</text><text class="small" x="2010" y="1196">не полка и не ниша на стене ванны.</text>
+ <text class="body" x="1975" y="1243">9 · Зеркальный шкаф: глубина 80–110 мм,</text><text class="small" x="2010" y="1269">фронтальный свет; anti-fog — опционально.</text>
+ <text class="small" x="1975" y="1330">Уточнить модели стекла, ванны и мебели по картам монтажа.</text>
+ <rect x="1940" y="1480" width="820" height="205" rx="12" fill="#332524" stroke="#ef957b" stroke-width="3"/>
+ <text class="no" x="1975" y="1527" font-family="Arial" font-size="25" font-weight="700">DO NOT ADD</text>
+ <text class="body" x="1975" y="1574">Никакого дополнительного хранения, третьей полки,</text>
+ <text class="body" x="1975" y="1610">LED под ванной / WC и розетки 230V внутри.</text>
+ <text class="small" x="1975" y="1647">Не делать ниш в перегородках 160 мм и не занимать проход 670 мм.</text>
+ <line class="muted" x1="1940" y1="1730" x2="2760" y2="1730"/>
+ <text class="red" x="1950" y="1780">НЕ ЧЕРТЁЖ ДЛЯ СВЕРЛЕНИЯ</text>
+ <text class="small" x="1950" y="1815">Размеры и позиции необмеренных компонентов — только после</text>
+ <text class="small" x="1950" y="1843">контрольного обмера, совместной разметки и карт монтажа.</text>
+ <text class="tiny" x="120" y="2020">Лист 62 · фиксированные пятна: ванна, WC, тумба, ВМ‑07 и проход не переносить. Обозначения 1–10 соответствуют правой панели.</text>
+ <text class="tiny" x="2760" y="2020" text-anchor="end">28.08.2026 · Концепция / координация</text>
+</svg>

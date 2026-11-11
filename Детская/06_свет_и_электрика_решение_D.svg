@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1040" viewBox="0 0 1800 1040">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M8,0 L0,4 L8,8" fill="none" stroke="#2d7187" stroke-width="1.4"/>
+    </marker>
+    <pattern id="rad" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#bd7347" stroke-width="3"/>
+    </pattern>
+    <style>
+      text { font-family: Arial, sans-serif; fill: #26342e; }
+      .title { font-size: 30px; font-weight: 700; }
+      .sub { font-size: 16px; fill: #52635a; }
+      .head { font-size: 20px; font-weight: 700; }
+      .label { font-size: 13px; font-weight: 700; }
+      .small { font-size: 12px; fill: #53645b; }
+      .note { font-size: 12px; fill: #83542f; }
+      .room { fill: #fcfcfa; stroke: #283831; stroke-width: 4; }
+      .wall { stroke: #283831; stroke-width: 10; }
+      .opening { stroke: #f7f6f1; stroke-width: 16; }
+      .window { stroke: #4f96bb; stroke-width: 11; }
+      .bed { fill: #c9dac6; stroke: #5c805d; stroke-width: 2; }
+      .wardrobe { fill: #ddc79f; stroke: #8b6b3f; stroke-width: 2; }
+      .storage { fill: #e6eee7; stroke: #738f79; stroke-width: 2; }
+      .desk { fill: #d9e7eb; fill-opacity: .45; stroke: #588092; stroke-width: 2; stroke-dasharray: 7 5; }
+      .future { fill: #e9f1f4; fill-opacity: .55; stroke: #4f8399; stroke-width: 2; stroke-dasharray: 8 6; }
+      .light { fill: #f0cf76; stroke: #8b6b3f; stroke-width: 2; }
+      .control { fill: #d9e7eb; stroke: #2d7187; stroke-width: 2; }
+      .power { fill: #ffffff; stroke: #8b5c5c; stroke-width: 2; }
+      .reserve { fill: #ffffff; stroke: #8b5c5c; stroke-width: 2; stroke-dasharray: 6 4; }
+      .data { fill: #ffffff; stroke: #6c5c8b; stroke-width: 2; }
+      .zone { fill: #eef5ef; stroke: #74a184; stroke-width: 1.5; stroke-dasharray: 7 5; }
+      .dim { stroke: #2d7187; stroke-width: 1.4; fill: none; marker-start: url(#arr); marker-end: url(#arr); }
+      .dimtext { font-size: 12px; font-weight: 700; fill: #2d7187; }
+      .box { fill: #fbfaf6; stroke: #c4ccc7; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <rect width="1800" height="1040" fill="#f7f6f1"/>
+  <text x="55" y="52" class="title">Детская — концепция света и электрики, решение D</text>
+  <text x="55" y="82" class="sub">Актуализация: двухъярусная M2 · B1/B2 раздельно · окно и радиатор свободны · оси только после выбора модели</text>
+
+  <!-- CURRENT PLAN -->
+  <g transform="translate(55 135)">
+    <text x="0" y="0" class="head">1. План с двухъярусной кроватью M2</text>
+    <text x="0" y="24" class="small">B01 3850×2810; стены 3825/3837. Точные высоты и оси уточняются после выбора мебели.</text>
+    <g transform="translate(55 90)">
+      <!-- scale .16 -->
+      <rect x="0" y="0" width="616" height="449.6" class="room"/>
+      <line x1="0" y1="0" x2="0" y2="145.6" class="opening"/>
+      <line x1="0" y1="145.6" x2="0" y2="449.6" class="wall"/>
+      <line x1="616" y1="96" x2="616" y2="352" class="window"/>
+      <rect x="588" y="96" width="28" height="256" fill="url(#rad)" opacity=".7"/>
+
+      <rect x="0" y="241.6" width="96" height="208" rx="4" class="wardrobe"/>
+      <text x="48" y="338" text-anchor="middle" class="label">шкаф</text>
+      <text x="48" y="356" text-anchor="middle" class="small">600×1300</text>
+      <rect x="128" y="305.6" width="320" height="144" rx="8" class="bed"/>
+      <text x="288" y="382" text-anchor="middle" class="label">M2 · 2×900×2000 · D≤1050</text>
+      <rect x="160" y="0" width="224" height="56" rx="4" class="storage"/>
+      <text x="272" y="31" text-anchor="middle" class="label">хранение 1400</text>
+      <rect x="400" y="0" width="160" height="80" rx="4" class="desk"/>
+      <text x="480" y="43" text-anchor="middle" class="label">стол 1000×500</text>
+
+      <!-- C1 ceiling main light zone -->
+      <circle cx="308" cy="225" r="28" class="light"/>
+      <circle cx="308" cy="225" r="49" fill="none" stroke="#8b6b3f" stroke-dasharray="7 5"/>
+      <text x="308" y="222" text-anchor="middle" class="label">C1</text>
+      <text x="308" y="241" text-anchor="middle" class="small">центр-зона</text>
+
+      <!-- entry control zone -->
+      <rect x="0" y="158" width="36" height="50" rx="5" class="control"/>
+      <text x="18" y="180" text-anchor="middle" class="label">S1</text>
+      <text x="18" y="197" text-anchor="middle" class="small">вход</text>
+
+      <!-- current bed reading and power zone at headboard side -->
+      <circle cx="155" cy="398" r="11" class="light"/>
+      <text x="155" y="402" text-anchor="middle" class="label">B1</text>
+      <text x="190" y="414" class="small">чтение; питание вне M2</text>
+
+      <!-- upper bunk reading point, final axis after model selection -->
+      <circle cx="155" cy="345" r="11" fill="#ffffff" stroke="#8b6b3f" stroke-width="2" stroke-dasharray="6 4"/>
+      <text x="155" y="349" text-anchor="middle" class="label">B2</text>
+      <text x="190" y="349" class="small">верхний ярус</text>
+
+      <!-- desk power/data zone -->
+      <rect x="455" y="0" width="62" height="23" rx="4" class="power"/>
+      <rect x="522" y="0" width="30" height="23" rx="4" class="data"/>
+      <text x="486" y="17" text-anchor="middle" class="label">P1</text>
+      <text x="537" y="17" text-anchor="middle" class="label">D1</text>
+      <text x="480" y="103" text-anchor="middle" class="small">силовая + слаботочный резерв</text>
+
+      <!-- general service outlet zone -->
+      <rect x="350" y="426" width="54" height="23" rx="4" class="power"/>
+      <text x="377" y="443" text-anchor="middle" class="label">P2</text>
+      <text x="421" y="443" class="small">уборка/ночник</text>
+
+      <!-- optional low voltage route to window, not a mounting point -->
+      <path d="M552 24 C585 30 590 55 590 88" fill="none" stroke="#6c5c8b" stroke-width="2" stroke-dasharray="6 5"/>
+      <text x="525" y="128" class="small">LV резерв к окну — только если выбран привод плиссе</text>
+
+      <text x="602" y="223" text-anchor="middle" class="small" transform="rotate(-90 602 223)">R-02: без розеток/LED</text>
+      <line x1="0" y1="-28" x2="616" y2="-28" class="dim"/>
+      <text x="308" y="-36" text-anchor="middle" class="dimtext">3850 B01 / 3825–3837 контроль</text>
+      <text x="-18" y="73" text-anchor="middle" class="dimtext" transform="rotate(-90 -18 73)">проход 910</text>
+    </g>
+    <text x="55" y="590" class="note">B1/B2 не ставить в зоне головы, лестницы и борта. Кабели недоступны ребёнку; оси — после паспорта M2.</text>
+  </g>
+
+  <!-- BUNK ELEVATION -->
+  <g transform="translate(880 135)">
+    <text x="0" y="0" class="head">2. Разрез: два независимых локальных света</text>
+    <text x="0" y="24" class="small">Точки не назначать до паспорта M2; провода и блоки питания вне зоны лестницы и ограждений.</text>
+    <g transform="translate(65 76)">
+      <line x1="0" y1="360" x2="650" y2="360" stroke="#283831" stroke-width="4"/>
+      <rect x="65" y="285" width="500" height="22" rx="5" class="wardrobe"/>
+      <rect x="65" y="160" width="500" height="22" rx="5" class="wardrobe"/>
+      <rect x="78" y="252" width="474" height="33" rx="10" fill="#fbf7eb" stroke="#9b875e" stroke-width="1.5"/>
+      <rect x="78" y="127" width="474" height="33" rx="10" fill="#fbf7eb" stroke="#9b875e" stroke-width="1.5"/>
+      <rect x="65" y="55" width="22" height="305" rx="5" class="wardrobe"/>
+      <rect x="543" y="55" width="22" height="305" rx="5" class="wardrobe"/>
+      <rect x="87" y="55" width="350" height="22" rx="5" class="bed"/>
+      <line x1="87" y1="103" x2="437" y2="103" stroke="#5c805d" stroke-width="12" stroke-linecap="round"/>
+
+      <line x1="457" y1="162" x2="457" y2="360" stroke="#8b6b3f" stroke-width="10" stroke-linecap="round"/>
+      <line x1="535" y1="162" x2="535" y2="360" stroke="#8b6b3f" stroke-width="10" stroke-linecap="round"/>
+      <line x1="457" y1="202" x2="535" y2="202" stroke="#8b6b3f" stroke-width="8"/>
+      <line x1="457" y1="247" x2="535" y2="247" stroke="#8b6b3f" stroke-width="8"/>
+      <line x1="457" y1="292" x2="535" y2="292" stroke="#8b6b3f" stroke-width="8"/>
+      <line x1="457" y1="337" x2="535" y2="337" stroke="#8b6b3f" stroke-width="8"/>
+
+      <circle cx="130" cy="224" r="14" class="light"/>
+      <text x="130" y="229" text-anchor="middle" class="label">B1</text>
+      <text x="157" y="229" class="small">нижний ярус</text>
+      <circle cx="130" cy="99" r="14" class="light"/>
+      <text x="130" y="104" text-anchor="middle" class="label">B2</text>
+      <text x="157" y="104" class="small">верхний ярус</text>
+
+      <rect x="325" y="5" width="290" height="54" rx="7" class="box"/>
+      <text x="340" y="27" class="label">C1 — компактный, без подвеса</text>
+      <text x="340" y="47" class="small">ось вне зоны подъёма и головы верхнего яруса</text>
+      <circle cx="610" cy="95" r="22" class="light"/>
+      <text x="610" y="100" text-anchor="middle" class="label">C1</text>
+
+    </g>
+  </g>
+
+  <!-- GROUPS AND SCENES -->
+  <g transform="translate(880 590)">
+    <rect x="0" y="0" width="805" height="330" rx="8" class="box"/>
+    <text x="25" y="38" class="head">3. Группы и физическое управление</text>
+    <text x="25" y="73" class="label">G1 — основной свет C1</text>
+    <text x="265" y="73" class="small">диммируемый, компактный потолочный светильник, без низкого подвеса</text>
+    <text x="25" y="103" class="label">G2 — B1 и B2</text>
+    <text x="265" y="103" class="small">локальное чтение; питание вне M2 с сервисным доступом; управление раздельно</text>
+    <text x="25" y="133" class="label">G3 — рабочее место</text>
+    <text x="265" y="133" class="small">локальная лампа подключается через розетку; встроенный LED необязателен</text>
+    <line x1="25" y1="154" x2="780" y2="154" stroke="#c7cfca"/>
+    <text x="25" y="184" class="label">Вход</text>
+    <text x="145" y="184" class="small">физическое включение G1 и сценария приглушённого света</text>
+    <text x="25" y="214" class="label">Учёба</text>
+    <text x="145" y="214" class="small">G1 + локальная настольная лампа; без декоративной подсветки окна</text>
+    <text x="25" y="244" class="label">Чтение</text>
+    <text x="145" y="244" class="small">только B1 или B2; не зависеть от приложения или сервера</text>
+    <text x="25" y="274" class="label">Ночь</text>
+    <text x="145" y="274" class="small">приглушённый локальный свет; маршрут к проходу без яркого потолочного света</text>
+    <text x="25" y="308" class="note">Тип кабеля, защита, высоты, подрозетники и трассы — только в рабочем электропроекте и у квалифицированного электрика.</text>
+  </g>
+
+  <g transform="translate(55 955)">
+    <line x1="0" y1="0" x2="1690" y2="0" stroke="#c7cfca"/>
+    <circle cx="14" cy="35" r="9" class="light"/><text x="32" y="40" class="small">свет</text>
+    <rect x="105" y="26" width="20" height="18" rx="3" class="control"/><text x="135" y="40" class="small">управление</text>
+    <rect x="260" y="26" width="20" height="18" rx="3" class="power"/><text x="290" y="40" class="small">силовая зона</text>
+    <rect x="415" y="26" width="20" height="18" rx="3" class="data"/><text x="445" y="40" class="small">данные/LV</text>
+    <rect x="560" y="26" width="20" height="18" rx="3" class="reserve"/><text x="590" y="40" class="small">резерв</text>
+    <text x="1690" y="40" text-anchor="end" class="small">Концептуальная координация; не монтажный электропроект.</text>
+  </g>
+</svg>

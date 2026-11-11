@@ -1,0 +1,246 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1760" height="1260" viewBox="0 0 1760 1260">
+<title>Прихожая 3 — три уточнённых компоновки</title>
+<desc>План БТИ и развёртки трёх эскизных вариантов мебели с непрерывным полом под банкеткой, без переноса электрощита. Все размеры даны в миллиметрах.</desc>
+<defs>
+  <marker id="d" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L8,4 L0,8 Z" fill="#526663"/>
+  </marker>
+</defs>
+<style>
+ text {font-family:"Segoe UI",Arial,sans-serif;fill:#233636}
+ .top{font-size:17px;font-weight:650;letter-spacing:2px;fill:#276056}
+ .title{font-size:45px;font-weight:740}
+ .sub{font-size:20px;fill:#475d5a}
+ .h2{font-size:24px;font-weight:700}
+ .h3{font-size:17px;font-weight:700}
+ .body{font-size:18px}
+ .small{font-size:15px;fill:#455d5a}
+ .tiny{font-size:13px;fill:#4d6260}
+ .dimtext,.door,.tag{font-size:15px;font-weight:680}
+ .door{fill:#8c560e}
+ .tag{fill:#3a5350}
+ .pill{fill:white;font-size:23px;font-weight:700}
+ .kicker{font-size:15px;font-weight:700;fill:#276056}
+ .card{fill:#fff;stroke:#d8dfd9;stroke-width:1.5}
+ .guide{stroke:#aebdb6;stroke-width:1}
+ .dimline{stroke:#526663;stroke-width:1.35}
+ .wall{stroke:#2e4140;stroke-width:7;stroke-linecap:square}
+ .opening{stroke:#b07527;stroke-width:3;stroke-dasharray:8 5}
+ .openedge{stroke:#76918a;stroke-width:2;stroke-dasharray:6 7}
+ .floor{stroke:#276056;stroke-width:2.2}
+ .case{fill:#ded6c7;stroke:#827b6a;stroke-width:1.2}
+ .alcove{fill:#e9f0e8;stroke:#a4b8aa;stroke-width:1}
+ .cushion{fill:#ab8c70;stroke:#755d48;stroke-width:1}
+ .deck{fill:#a79075;stroke:#755d48;stroke-width:1}
+ .mirror{fill:#c9dee0;stroke:#709094;stroke-width:1}
+ .shoe{fill:#796655;stroke:#55463c;stroke-width:1;stroke-linejoin:round}
+ .hook{fill:none;stroke:#51635e;stroke-width:1.6;stroke-linecap:round}
+</style>
+<rect width="1760" height="1260" fill="#f4f6f2"/>
+<text x="48" y="51" class="top">APT‑001 / ПОМЕЩЕНИЕ 3 / ЭСКИЗ 08.11.2026</text>
+<text x="48" y="103" class="title">Прихожая на участке 1675 мм</text>
+<text x="49" y="133" class="sub">Левая стена · три варианта с непрерывным полом под сиденьем</text>
+<rect x="48" y="153" width="695" height="490" class="card" rx="18"/>
+<text x="74" y="196" text-anchor="start" class="h2">01   План по БТИ</text>
+<line x1="129" y1="232" x2="547" y2="232" class="dimline" marker-start="url(#d)" marker-end="url(#d)"/>
+<line x1="129" y1="236" x2="129" y2="259" class="guide"/>
+<line x1="547" y1="236" x2="547" y2="259" class="guide"/>
+<text x="338" y="223" text-anchor="middle" class="dimtext">2090  B</text>
+<line x1="102" y1="266" x2="102" y2="601" class="dimline" marker-start="url(#d)" marker-end="url(#d)"/>
+<line x1="108" y1="266" x2="124" y2="266" class="guide"/>
+<line x1="108" y1="601" x2="124" y2="601" class="guide"/>
+<text x="85" y="433.5" transform="rotate(-90 85 433.5)" class="dimtext" text-anchor="middle">1675  B</text>
+<rect x="129" y="266" width="418" height="335" fill="#f5f4ef"/>
+<rect x="129" y="271" width="116" height="202" class="case"/>
+<rect x="129" y="473" width="84" height="123" class="alcove"/>
+<line x1="129" y1="266" x2="129" y2="601" class="wall"/>
+<line x1="129" y1="266" x2="251" y2="266" class="wall"/>
+<line x1="453" y1="266" x2="547" y2="266" class="wall"/>
+<line x1="547" y1="266" x2="547" y2="379" class="wall"/>
+<line x1="547" y1="561" x2="547" y2="601" class="wall"/>
+<line x1="251" y1="266" x2="453" y2="266" class="opening"/>
+<line x1="547" y1="379" x2="547" y2="561" class="opening"/>
+<line x1="129" y1="601" x2="547" y2="601" class="openedge"/>
+<text x="352" y="289" text-anchor="middle" class="door">D1 · 1010 B</text>
+<text x="188" y="302" text-anchor="middle" class="tiny">закрытый блок</text>
+<text x="188" y="323" text-anchor="middle" class="tiny">ЭЩ-03 / E-03</text>
+<text x="188" y="349" text-anchor="middle" class="dimtext">580 P</text>
+<text x="171" y="515" text-anchor="middle" class="dimtext">420 P</text>
+<text x="171" y="538" text-anchor="middle" class="tiny">сиденье</text>
+<line x1="249" y1="396" x2="542" y2="396" class="dimline" marker-start="url(#d)" marker-end="url(#d)"/>
+<text x="396" y="385" text-anchor="middle" class="dimtext">1510 P</text>
+<text x="396" y="420" text-anchor="middle" class="tiny">остаток при закрытом шкафе</text>
+<text x="568" y="393" text-anchor="start" class="door">D2 · 910 B</text>
+<text x="568" y="415" text-anchor="start" class="small">кухня</text>
+<line x1="656" y1="502" x2="494" y2="457" stroke="#276056" stroke-width="2" marker-end="url(#d)"/>
+<text x="569" y="527" text-anchor="start" class="small">вид из кухни</text>
+<text x="566" y="550" text-anchor="start" class="tiny">дверь внутрь кухни</text>
+<text x="338" y="626" text-anchor="middle" class="small">открытый переход в коридор 4</text>
+<text x="331" y="552" text-anchor="start" class="tiny">Показан контур варианта A</text>
+<rect x="759" y="153" width="953" height="490" class="card" rx="18"/>
+<text x="787" y="196" text-anchor="start" class="h2">02   Размеры и обувная ниша</text>
+<rect x="789" y="209" width="28" height="24" fill="#edf0f6" rx="5"/>
+<text x="803" y="227" text-anchor="middle" class="tag">B</text>
+<text x="828" y="227" text-anchor="start" class="body">2090 × 1675 по БТИ. Цепочка у D1 · 610 + 1010 + 470.</text>
+<rect x="789" y="240" width="28" height="24" fill="#e7f2eb" rx="5"/>
+<text x="803" y="258" text-anchor="middle" class="tag">R</text>
+<text x="828" y="258" text-anchor="start" class="body">Контроль D1 · 1140 × 2150 (U01). H = 2750 в точках S09.</text>
+<rect x="789" y="271" width="28" height="24" fill="#f2ebe0" rx="5"/>
+<text x="803" y="289" text-anchor="middle" class="tag">P</text>
+<text x="828" y="289" text-anchor="start" class="body">При глубине 580 мм до границы D1 по БТИ остаётся 30 мм.</text>
+<rect x="789" y="302" width="28" height="24" fill="#fff1df" rx="5"/>
+<text x="803" y="320" text-anchor="middle" class="tag">M</text>
+<text x="828" y="320" text-anchor="start" class="body">Чистовые торцы, коробка и ход D1, привязки щита и E-03.</text>
+<line x1="787" y1="339" x2="1683" y2="339" class="guide"/>
+<text x="787" y="371" text-anchor="start" class="kicker">Разрез по банкетке A</text>
+<line x1="809" y1="400" x2="809" y2="605" class="wall"/>
+<line x1="809" y1="605" x2="1095" y2="605" class="floor"/>
+<rect x="811" y="421" width="166" height="14" class="cushion" rx="3"/>
+<rect x="811" y="435" width="166" height="10" class="deck"/>
+<rect x="811" y="445" width="166" height="36" class="case"/>
+<line x1="932" y1="464" x2="965" y2="464" stroke="#81715d" stroke-width="2"/>
+<path d="M843 603 v-25 c12 -4 20 0 28 5 l14 6 h26 c8 0 13 5 13 14 Z" class="shoe"/>
+<line x1="998" y1="481" x2="998" y2="605" class="dimline" marker-start="url(#d)" marker-end="url(#d)"/>
+<text x="1007" y="549" text-anchor="start" class="dimtext">310</text>
+<line x1="1054" y1="421" x2="1054" y2="605" class="dimline" marker-start="url(#d)" marker-end="url(#d)"/>
+<text x="1064" y="519" text-anchor="start" class="dimtext">460</text>
+<text x="837" y="629" text-anchor="start" class="tiny">одна плоскость чистового пола</text>
+<text x="1150" y="402" text-anchor="start" class="h3">Улица → банкетка → тапочки</text>
+<text x="1150" y="432" text-anchor="start" class="body">Сиденье высотой 460 и глубиной 420 мм.</text>
+<text x="1150" y="462" text-anchor="start" class="body">Под ним один открытый ряд на чистовом полу.</text>
+<text x="1150" y="492" text-anchor="start" class="body">Моющаяся отделка внизу ниши облегчает уборку.</text>
+<text x="1150" y="522" text-anchor="start" class="body">В B просвет 400 мм по всей ширине ниши.</text>
+<text x="1150" y="552" text-anchor="start" class="body">Щит и розетки закладываем в сухой секции у D1.</text>
+<text x="1150" y="582" text-anchor="start" class="body">Место внутренних перегородок — по обмеру.</text>
+<text x="1150" y="615" text-anchor="start" class="tiny">Основания размеров · B — БТИ · R — обмер / U01 · P — эскиз · M — замерить</text>
+<rect x="48" y="661" width="544" height="490" class="card" rx="18"/>
+<rect x="69" y="683" width="40" height="34" rx="8" fill="#276056"/>
+<text x="89" y="708" text-anchor="middle" class="pill">A</text>
+<text x="123" y="709" text-anchor="start" class="h2">Больше закрытого хранения</text>
+<text x="73" y="744" text-anchor="start" class="tiny">к коридору</text>
+<text x="274" y="744" text-anchor="end" class="tiny">к D1</text>
+<rect x="73" y="770" width="201" height="330" fill="#f8f7f3" stroke="#a2a6a0" stroke-width="1"/>
+<line x1="73" y1="776" x2="274" y2="776" class="guide"/>
+<rect x="76" y="776" width="73.8" height="69.6" class="case"/>
+<rect x="76" y="845.6" width="73.8" height="199.2" class="alcove"/>
+<path d="M89.284 903.4 v8 q0 6 5 4" class="hook"/>
+<path d="M105.52 903.4 v8 q0 6 5 4" class="hook"/>
+<path d="M120.28 903.4 v8 q0 6 5 4" class="hook"/>
+<path d="M136.516 903.4 v8 q0 6 5 4" class="hook"/>
+<rect x="76" y="1044.8" width="73.8" height="4.2" class="cushion" rx="2"/>
+<rect x="76" y="1049" width="73.8" height="3" class="deck"/>
+<rect x="76" y="1052" width="73.8" height="10.8" class="case"/>
+<line x1="105.52" y1="1057.76" x2="120.28" y2="1057.76" stroke="#81715d" stroke-width="1.4"/>
+<path d="M85.95 1098 v-16 h7 v10 h5 q5 0 5 6 Z" class="shoe"/>
+<path d="M122.85 1098 v-9 h7 v3 h5 q5 0 5 6 Z" class="shoe"/>
+<line x1="76" y1="1110" x2="76" y2="1118" class="guide"/>
+<text x="112.9" y="1134" text-anchor="middle" class="dimtext">615</text>
+<rect x="149.8" y="776" width="121.2" height="324" class="case"/>
+<rect x="153.8" y="826.4" width="52.6" height="243" class="mirror" rx="2"/>
+<line x1="157.8" y1="882.8" x2="200.4" y2="863.6" stroke="#eff7f5" stroke-width="2"/>
+<line x1="210.4" y1="776" x2="210.4" y2="1100" class="guide"/>
+<rect x="223.7" y="941.6" width="34" height="24" rx="3" fill="#ecf4ed" stroke="#81a393" stroke-dasharray="3 2"/>
+<text x="240.7" y="957.6" text-anchor="middle" class="tiny">ЭЩ</text>
+<line x1="149.8" y1="1110" x2="149.8" y2="1118" class="guide"/>
+<text x="210.4" y="1134" text-anchor="middle" class="dimtext">1010</text>
+<line x1="271" y1="1110" x2="271" y2="1118" class="guide"/>
+<line x1="68" y1="1100" x2="279" y2="1100" class="floor"/>
+<text x="297" y="803" text-anchor="start" class="h3">Закрытый блок · 1010 мм</text>
+<text x="297" y="830" text-anchor="start" class="small">Зеркало на створке у банкетки.</text>
+<line x1="297" y1="851" x2="564" y2="851" class="guide"/>
+<text x="297" y="887" text-anchor="start" class="h3">Просвет под сиденьем · 310 мм</text>
+<text x="297" y="914" text-anchor="start" class="small">Тапочки в ящике под подушкой.</text>
+<line x1="297" y1="935" x2="564" y2="935" class="guide"/>
+<text x="297" y="971" text-anchor="start" class="h3">2–3 пары по ширине обуви</text>
+<text x="297" y="998" text-anchor="start" class="small">Базовый вариант для ежедневного входа.</text>
+<text x="297" y="1086" text-anchor="start" class="tiny">Номинальные секции + 25 мм с каждого торца.</text>
+<rect x="608" y="661" width="544" height="490" class="card" rx="18"/>
+<rect x="629" y="683" width="40" height="34" rx="8" fill="#276056"/>
+<text x="649" y="708" text-anchor="middle" class="pill">B</text>
+<text x="683" y="709" text-anchor="start" class="h2">Больше высоты для сапог</text>
+<text x="633" y="744" text-anchor="start" class="tiny">к коридору</text>
+<text x="834" y="744" text-anchor="end" class="tiny">к D1</text>
+<rect x="633" y="770" width="201" height="330" fill="#f8f7f3" stroke="#a2a6a0" stroke-width="1"/>
+<line x1="633" y1="776" x2="834" y2="776" class="guide"/>
+<rect x="636" y="776" width="48" height="324" class="case"/>
+<rect x="640" y="826.4" width="40" height="243" class="mirror" rx="2"/>
+<line x1="644" y1="882.8" x2="674" y2="863.6" stroke="#eff7f5" stroke-width="2"/>
+<line x1="636" y1="1070" x2="684" y2="1070" class="guide"/>
+<line x1="636" y1="1110" x2="636" y2="1118" class="guide"/>
+<text x="660" y="1134" text-anchor="middle" class="dimtext">400</text>
+<rect x="684" y="776" width="65.4" height="69.6" class="case"/>
+<rect x="684" y="845.6" width="65.4" height="199.2" class="alcove"/>
+<path d="M695.772 903.4 v8 q0 6 5 4" class="hook"/>
+<path d="M710.16 903.4 v8 q0 6 5 4" class="hook"/>
+<path d="M723.24 903.4 v8 q0 6 5 4" class="hook"/>
+<path d="M737.628 903.4 v8 q0 6 5 4" class="hook"/>
+<rect x="684" y="1044.8" width="65.4" height="4.2" class="cushion" rx="2"/>
+<rect x="684" y="1049" width="65.4" height="3" class="deck"/>
+<path d="M691.85 1098 v-25 h7 v19 h5 q5 0 5 6 Z" class="shoe"/>
+<path d="M724.55 1098 v-9 h7 v3 h5 q5 0 5 6 Z" class="shoe"/>
+<line x1="684" y1="1110" x2="684" y2="1118" class="guide"/>
+<text x="716.7" y="1134" text-anchor="middle" class="dimtext">545</text>
+<rect x="749.4" y="776" width="81.6" height="324" class="case"/>
+<rect x="773.2" y="941.6" width="34" height="24" rx="3" fill="#ecf4ed" stroke="#81a393" stroke-dasharray="3 2"/>
+<text x="790.2" y="957.6" text-anchor="middle" class="tiny">ЭЩ</text>
+<line x1="749.4" y1="1110" x2="749.4" y2="1118" class="guide"/>
+<text x="790.2" y="1134" text-anchor="middle" class="dimtext">680</text>
+<line x1="831" y1="1110" x2="831" y2="1118" class="guide"/>
+<line x1="628" y1="1100" x2="839" y2="1100" class="floor"/>
+<text x="857" y="803" text-anchor="start" class="h3">Просвет под сиденьем · 400 мм</text>
+<text x="857" y="830" text-anchor="start" class="small">Тапочки в зеркальном шкафу.</text>
+<line x1="857" y1="851" x2="1124" y2="851" class="guide"/>
+<text x="857" y="887" text-anchor="start" class="h3">2 взрослые пары</text>
+<text x="857" y="914" text-anchor="start" class="small">Высокую пару мерить от подошвы.</text>
+<line x1="857" y1="935" x2="1124" y2="935" class="guide"/>
+<text x="857" y="971" text-anchor="start" class="h3">Сервисная секция · 680 мм</text>
+<text x="857" y="998" text-anchor="start" class="small">Разделение зависит от привязок щита.</text>
+<text x="857" y="1086" text-anchor="start" class="tiny">Номинальные секции + 25 мм с каждого торца.</text>
+<rect x="1168" y="661" width="544" height="490" class="card" rx="18"/>
+<rect x="1189" y="683" width="40" height="34" rx="8" fill="#276056"/>
+<text x="1209" y="708" text-anchor="middle" class="pill">C</text>
+<text x="1243" y="709" text-anchor="start" class="h2">Шире банкетка</text>
+<text x="1193" y="744" text-anchor="start" class="tiny">к коридору</text>
+<text x="1394" y="744" text-anchor="end" class="tiny">к D1</text>
+<rect x="1193" y="770" width="201" height="330" fill="#f8f7f3" stroke="#a2a6a0" stroke-width="1"/>
+<line x1="1193" y1="776" x2="1394" y2="776" class="guide"/>
+<rect x="1196" y="776" width="93" height="69.6" class="case"/>
+<rect x="1196" y="845.6" width="93" height="199.2" class="alcove"/>
+<path d="M1212.74 903.4 v8 q0 6 5 4" class="hook"/>
+<path d="M1233.2 903.4 v8 q0 6 5 4" class="hook"/>
+<path d="M1251.8 903.4 v8 q0 6 5 4" class="hook"/>
+<path d="M1272.26 903.4 v8 q0 6 5 4" class="hook"/>
+<path d="M1207.16 963.2 v7 q0 5 4 3" class="hook"/>
+<path d="M1274.12 963.2 v7 q0 5 4 3" class="hook"/>
+<rect x="1196" y="1044.8" width="93" height="4.2" class="cushion" rx="2"/>
+<rect x="1196" y="1049" width="93" height="3" class="deck"/>
+<rect x="1242.5" y="1052" width="46.5" height="10.8" class="case"/>
+<line x1="1261.1" y1="1057.76" x2="1270.4" y2="1057.76" stroke="#81715d" stroke-width="1.4"/>
+<path d="M1203 1098 v-25 h7 v19 h5 q5 0 5 6 Z" class="shoe"/>
+<path d="M1234 1098 v-9 h7 v3 h5 q5 0 5 6 Z" class="shoe"/>
+<path d="M1265 1098 v-9 h7 v3 h5 q5 0 5 6 Z" class="shoe"/>
+<line x1="1196" y1="1110" x2="1196" y2="1118" class="guide"/>
+<text x="1242.5" y="1134" text-anchor="middle" class="dimtext">775</text>
+<rect x="1289" y="776" width="102" height="324" class="case"/>
+<rect x="1293" y="826.4" width="43" height="243" class="mirror" rx="2"/>
+<line x1="1297" y1="882.8" x2="1330" y2="863.6" stroke="#eff7f5" stroke-width="2"/>
+<line x1="1340" y1="776" x2="1340" y2="1100" class="guide"/>
+<rect x="1348.5" y="941.6" width="34" height="24" rx="3" fill="#ecf4ed" stroke="#81a393" stroke-dasharray="3 2"/>
+<text x="1365.5" y="957.6" text-anchor="middle" class="tiny">ЭЩ</text>
+<line x1="1289" y1="1110" x2="1289" y2="1118" class="guide"/>
+<text x="1340" y="1134" text-anchor="middle" class="dimtext">850</text>
+<line x1="1391" y1="1110" x2="1391" y2="1118" class="guide"/>
+<line x1="1188" y1="1100" x2="1399" y2="1100" class="floor"/>
+<text x="1417" y="803" text-anchor="start" class="h3">Широкая посадка · 775 мм</text>
+<text x="1417" y="830" text-anchor="start" class="small">Крючки на двух высотах.</text>
+<line x1="1417" y1="851" x2="1684" y2="851" class="guide"/>
+<text x="1417" y="887" text-anchor="start" class="h3">Просвет 310 и 400 мм</text>
+<text x="1417" y="914" text-anchor="start" class="small">Ящик для тапочек с одного края.</text>
+<line x1="1417" y1="935" x2="1684" y2="935" class="guide"/>
+<text x="1417" y="971" text-anchor="start" class="h3">3 пары, до 4 компактных</text>
+<text x="1417" y="998" text-anchor="start" class="small">Под всей банкеткой — общий пол.</text>
+<text x="1417" y="1086" text-anchor="start" class="tiny">Номинальные секции + 25 мм с каждого торца.</text>
+<line x1="48" y1="1173" x2="1712" y2="1173" class="guide"/>
+<text x="48" y="1202" class="small">Источники · B01 и S09, уточнение U01, фото F08, лист решений D2 от 07.11.2026. Габариты мебельных секций относятся к эскизу.</text>
+<text x="48" y="1227" class="small">До деталировки · сверить чистовой габарит стены, выступы коробки и ручки D1, открыть крышку щита на месте, привязать розетки и примерить высокую обувь.</text>
+</svg>

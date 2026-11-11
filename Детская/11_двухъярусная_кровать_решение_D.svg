@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1100" viewBox="0 0 1800 1100">
+  <defs>
+    <style>
+      .title{font:700 33px 'Segoe UI',Arial,sans-serif;fill:#17312f}
+      .subtitle{font:400 16px 'Segoe UI',Arial,sans-serif;fill:#58706b}
+      .h2{font:700 22px 'Segoe UI',Arial,sans-serif;fill:#17312f}
+      .h3{font:700 17px 'Segoe UI',Arial,sans-serif;fill:#203c38}
+      .body{font:400 14px 'Segoe UI',Arial,sans-serif;fill:#334844}
+      .small{font:400 12.5px 'Segoe UI',Arial,sans-serif;fill:#536864}
+      .micro{font:400 11px 'Segoe UI',Arial,sans-serif;fill:#62736f}
+      .bold{font-weight:700;fill:#17312f}
+      .wall{stroke:#263c38;stroke-width:5;fill:none;stroke-linecap:square}
+      .dim{stroke:#317087;stroke-width:1.6;fill:none;marker-start:url(#arr);marker-end:url(#arr)}
+      .guide{stroke:#9aaba7;stroke-width:1.2;fill:none;stroke-dasharray:6 5}
+      .leader{stroke:#6e817d;stroke-width:1.2;fill:none}
+      .card{fill:#fffefa;stroke:#cbd5d1;stroke-width:1.5}
+      .bed{fill:#dbe8d7;stroke:#587762;stroke-width:2}
+      .mattress{fill:#fbf7eb;stroke:#9b875e;stroke-width:1.5}
+      .wood{fill:#e6d1a3;stroke:#8c7144;stroke-width:1.7}
+      .proposed{fill:#f3ead7;stroke:#ad8a4e;stroke-width:1.2}
+      .measure{fill:#f8e5dc;stroke:#b36f56;stroke-width:1.2}
+      .b01{fill:#e7f0f3;stroke:#477b8d;stroke-width:1.2}
+      .real{fill:#e4f0e8;stroke:#577762;stroke-width:1.2}
+      .safe{fill:#edf4e9;stroke:#6e8d75;stroke-width:1.2}
+      .warn{fill:#fff4e8;stroke:#bd7347;stroke-width:1.3}
+    </style>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse">
+      <path d="M8,1 L1,4 L8,7" fill="none" stroke="#317087" stroke-width="1.4"/>
+    </marker>
+    <pattern id="radiator" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#db8d68" stroke-width="3"/>
+    </pattern>
+    <pattern id="nofurniture" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#7eb0be" stroke-width="2" opacity=".42"/>
+    </pattern>
+  </defs>
+
+  <rect width="1800" height="1100" fill="#f7f5ef"/>
+  <text x="55" y="52" class="title">Детская B01 — двухъярусная кровать по реальным длинным стенам</text>
+  <text x="55" y="81" class="subtitle">Решение D · 2×900×2000 · лестница внутри внешнего конверта · оконная стена и R-02 свободны</text>
+  <rect x="1510" y="31" width="235" height="49" rx="9" class="measure"/>
+  <text x="1627" y="61" text-anchor="middle" class="h3" fill="#8b4e3a">НЕ В ПРОИЗВОДСТВО</text>
+
+  <!-- PLAN CARD -->
+  <rect x="55" y="112" width="790" height="660" rx="14" class="card"/>
+  <text x="82" y="151" class="h2">1. План: кровать вдоль нынешней стены</text>
+  <text x="82" y="176" class="small">Расчёт по минимуму стены 3825 R; ширина 2810 пока только B01.</text>
+
+  <g aria-label="room plan">
+    <!-- room 3825 x 2810, scale 0.15 -->
+    <line x1="155" y1="235" x2="729" y2="235" class="wall"/>
+    <line x1="155" y1="657" x2="729" y2="657" class="wall"/>
+    <line x1="729" y1="235" x2="729" y2="657" class="wall"/>
+    <line x1="155" y1="372" x2="155" y2="657" class="wall"/>
+    <line x1="155" y1="235" x2="155" y2="372" stroke="#477b8d" stroke-width="3" stroke-dasharray="7 5"/>
+    <text x="128" y="304" text-anchor="middle" class="micro" transform="rotate(-90 128 304)">910 B01 · чистый вход M</text>
+
+    <!-- window / radiator / no-furniture band -->
+    <line x1="729" y1="327" x2="729" y2="567" stroke="#4a9bb2" stroke-width="9"/>
+    <line x1="741" y1="327" x2="741" y2="567" stroke="#8fc2cf" stroke-width="3"/>
+    <rect x="699" y="356" width="29" height="185" fill="url(#radiator)"/>
+    <circle cx="702" cy="526" r="6" fill="#b36f56"/>
+    <rect x="688" y="235" width="41" height="422" fill="url(#nofurniture)"/>
+    <text x="710" y="635" text-anchor="middle" class="micro" transform="rotate(-90 710 635)">O2 / R-02 — мебель запрещена</text>
+    <text x="738" y="314" text-anchor="end" class="micro bold">O2 1600 B</text>
+
+    <!-- M1 wardrobe -->
+    <rect x="155" y="462" width="90" height="195" rx="5" class="wood"/>
+    <text x="200" y="548" text-anchor="middle" class="h3">M1</text>
+    <text x="200" y="569" text-anchor="middle" class="small">шкаф</text>
+    <text x="200" y="590" text-anchor="middle" class="small">1300×600 P</text>
+
+    <!-- Bunk external envelope -->
+    <rect x="275" y="499" width="315" height="158" rx="8" class="bed"/>
+    <rect x="288" y="514" width="289" height="129" rx="7" class="mattress"/>
+    <text x="432" y="559" text-anchor="middle" class="h3">M2 · двухъярусная</text>
+    <text x="432" y="581" text-anchor="middle" class="small">матрасы 2×900×2000</text>
+    <text x="432" y="604" text-anchor="middle" class="micro">внешний конверт ≤2100×1050 P</text>
+
+    <!-- integrated ladder in room-facing long side / foot third -->
+    <g aria-label="integrated ladder">
+      <rect x="513" y="499" width="58" height="24" rx="4" fill="#f3ead7" stroke="#8c7144" stroke-width="1.4"/>
+      <line x1="522" y1="503" x2="522" y2="519" stroke="#8c7144" stroke-width="2"/>
+      <line x1="533" y1="503" x2="533" y2="519" stroke="#8c7144" stroke-width="2"/>
+      <line x1="544" y1="503" x2="544" y2="519" stroke="#8c7144" stroke-width="2"/>
+      <line x1="555" y1="503" x2="555" y2="519" stroke="#8c7144" stroke-width="2"/>
+      <text x="542" y="489" text-anchor="middle" class="micro bold">лестница внутри D≤1050</text>
+    </g>
+    <text x="296" y="638" class="micro">изголовье / вход</text>
+    <text x="565" y="638" text-anchor="end" class="micro">ноги / окно</text>
+
+    <!-- M3 / M4 retained -->
+    <rect x="305" y="235" width="210" height="53" rx="5" fill="#e6eee7" stroke="#738f79" stroke-width="1.5"/>
+    <text x="410" y="259" text-anchor="middle" class="h3">M3 · 1400×350 P</text>
+    <text x="410" y="278" text-anchor="middle" class="micro">остаётся</text>
+    <rect x="530" y="235" width="150" height="18" rx="3" class="wood"/>
+    <rect x="530" y="235" width="150" height="75" rx="5" fill="none" stroke="#ad8a4e" stroke-width="1.5" stroke-dasharray="8 6"/>
+    <text x="605" y="270" text-anchor="middle" class="h3">M4</text>
+    <text x="605" y="291" text-anchor="middle" class="micro">D500 открыт / D120 закрыт</text>
+
+    <!-- aisle areas -->
+    <rect x="275" y="310" width="315" height="189" fill="#edf4e9" fill-opacity=".48"/>
+    <text x="432" y="393" text-anchor="middle" class="h3">центральный проход</text>
+    <text x="432" y="417" text-anchor="middle" class="small">с M3: 2810−1050−350 = 1410 B</text>
+    <text x="432" y="440" text-anchor="middle" class="small">у открытого M4: 2810−1050−500 = 1260 B</text>
+    <text x="432" y="463" text-anchor="middle" class="micro">подтвердить вторым поперечным обмером</text>
+
+    <!-- longitudinal dimensions -->
+    <line x1="155" y1="700" x2="275" y2="700" class="dim"/>
+    <line x1="275" y1="700" x2="590" y2="700" class="dim"/>
+    <line x1="590" y1="700" x2="729" y2="700" class="dim"/>
+    <text x="215" y="690" text-anchor="middle" class="small bold">800 P</text>
+    <text x="432" y="690" text-anchor="middle" class="small bold">L внешняя ≤2100 P</text>
+    <text x="660" y="690" text-anchor="middle" class="small bold">≥925 расчёт R</text>
+    <line x1="155" y1="726" x2="729" y2="726" class="dim"/>
+    <text x="442" y="747" text-anchor="middle" class="small bold">3825 R — гарантированная расчётная длина</text>
+  </g>
+
+  <!-- ELEVATION CARD -->
+  <rect x="870" y="112" width="875" height="660" rx="14" class="card"/>
+  <text x="897" y="151" class="h2">2. Продольная развёртка и вертикальный конверт</text>
+  <text x="897" y="176" class="small">Высоты P — для подбора модели; защитная геометрия и матрас — только по паспорту сертифицированной кровати.</text>
+
+  <g aria-label="bunk elevation">
+    <!-- ceiling and floor -->
+    <line x1="935" y1="237" x2="1687" y2="237" stroke="#7f918d" stroke-width="3"/>
+    <text x="949" y="226" class="small bold">потолок: 2712 min R</text>
+    <line x1="935" y1="690" x2="1687" y2="690" stroke="#263c38" stroke-width="4"/>
+    <text x="1687" y="713" text-anchor="end" class="micro">чистый пол</text>
+
+    <!-- bed frame -->
+    <rect x="1010" y="650" width="570" height="18" rx="5" class="wood"/>
+    <rect x="1010" y="468" width="570" height="18" rx="5" class="wood"/>
+    <rect x="1020" y="623" width="550" height="27" rx="10" class="mattress"/>
+    <rect x="1020" y="440" width="550" height="28" rx="10" class="mattress"/>
+    <rect x="1010" y="381" width="22" height="309" rx="5" class="wood"/>
+    <rect x="1558" y="381" width="22" height="309" rx="5" class="wood"/>
+
+    <!-- full wall-side / end guards, room-side rail with ladder opening -->
+    <rect x="1032" y="381" width="420" height="24" rx="5" class="bed"/>
+    <line x1="1032" y1="424" x2="1452" y2="424" stroke="#587762" stroke-width="14" stroke-linecap="round"/>
+
+    <!-- ladder in foot third -->
+    <g aria-label="ladder">
+      <line x1="1460" y1="468" x2="1460" y2="690" stroke="#8c7144" stroke-width="11" stroke-linecap="round"/>
+      <line x1="1547" y1="468" x2="1547" y2="690" stroke="#8c7144" stroke-width="11" stroke-linecap="round"/>
+      <line x1="1460" y1="512" x2="1547" y2="512" stroke="#8c7144" stroke-width="9" stroke-linecap="round"/>
+      <line x1="1460" y1="558" x2="1547" y2="558" stroke="#8c7144" stroke-width="9" stroke-linecap="round"/>
+      <line x1="1460" y1="604" x2="1547" y2="604" stroke="#8c7144" stroke-width="9" stroke-linecap="round"/>
+      <line x1="1460" y1="650" x2="1547" y2="650" stroke="#8c7144" stroke-width="9" stroke-linecap="round"/>
+    </g>
+    <line x1="1452" y1="345" x2="1558" y2="345" class="dim"/>
+    <text x="1505" y="334" text-anchor="middle" class="small bold">проём лестницы 300–400</text>
+
+    <!-- height dimensions -->
+    <line x1="965" y1="237" x2="965" y2="690" class="dim"/>
+    <line x1="1610" y1="381" x2="1610" y2="690" class="dim"/>
+    <text x="1628" y="536" text-anchor="middle" class="small bold" transform="rotate(-90 1628 536)">H внешняя ≤1850 P</text>
+    <line x1="1650" y1="237" x2="1650" y2="381" class="dim"/>
+    <text x="1668" y="309" text-anchor="middle" class="small bold" transform="rotate(-90 1668 309)">≥862 расчёт</text>
+
+    <!-- lower clear height -->
+    <line x1="985" y1="486" x2="985" y2="623" class="dim"/>
+    <text x="969" y="555" text-anchor="middle" class="micro bold" transform="rotate(-90 969 555)">800–850 P</text>
+
+    <!-- callouts -->
+    <rect x="945" y="718" width="760" height="37" rx="8" class="warn"/>
+    <text x="1325" y="741" text-anchor="middle" class="small bold">Матрас не выбирать «по толщине на глаз»: верхний предел задаёт постоянная метка производителя.</text>
+
+    <rect x="1110" y="260" width="360" height="72" rx="8" class="safe"/>
+    <text x="1128" y="282" class="small bold">Защитный борт верхнего яруса:</text>
+    <text x="1128" y="302" class="small">не менее 260 над основанием и 160 над матрасом;</text>
+    <text x="1128" y="321" class="small">по 4 сторонам; только нормативный проём лестницы; съём — инструментом.</text>
+    <path d="M1290 332 L1290 396" class="leader"/>
+
+    <rect x="900" y="403" width="265" height="78" rx="8" class="b01"/>
+    <text x="916" y="425" class="small bold">Ориентиры высоты P:</text>
+    <text x="916" y="446" class="small">верх нижнего матраса ≈400</text>
+    <text x="916" y="466" class="small">низ верхнего основания 1200–1250</text>
+
+    <rect x="1200" y="539" width="242" height="58" rx="8" class="proposed"/>
+    <text x="1321" y="561" text-anchor="middle" class="small bold">Лестница — на длинной стороне</text>
+    <text x="1321" y="581" text-anchor="middle" class="micro">в ножной трети, внутрь D≤1050</text>
+    <path d="M1442 568 L1470 568" class="leader"/>
+  </g>
+
+  <!-- SAFETY / RELEASE CARD -->
+  <rect x="55" y="798" width="1690" height="247" rx="14" class="card"/>
+  <text x="82" y="839" class="h2">3. Обязательные условия выбора и выпуска</text>
+  <text x="82" y="865" class="small">ТР ТС 025/2012 применяется и к мебели по индивидуальному заказу; детская мебель требует подтверждения соответствия.</text>
+
+  <g transform="translate(82 892)">
+    <rect x="0" y="0" width="355" height="92" rx="10" class="safe"/>
+    <text x="18" y="25" class="h3">Ограждение</text>
+    <text x="18" y="48" class="small">по 4 сторонам; только проём лестницы 300–400;</text>
+    <text x="18" y="68" class="small">между основанием/царгой/торцами ≤25 мм.</text>
+    <text x="18" y="86" class="micro">Нельзя «доработать потом» без проверки конструкции.</text>
+
+    <rect x="377" y="0" width="320" height="92" rx="10" class="safe"/>
+    <text x="395" y="25" class="h3">Лестница</text>
+    <text x="395" y="48" class="small">шаг 250±50; просвет ≥200;</text>
+    <text x="395" y="68" class="small">полезная длина ступени ≥300 мм.</text>
+    <text x="395" y="86" class="micro">Одинаковый шаг; без выноса в проход.</text>
+
+    <rect x="719" y="0" width="315" height="92" rx="10" class="warn"/>
+    <text x="737" y="25" class="h3">Эксплуатация</text>
+    <text x="737" y="48" class="small">верхний ярус — только 6+;</text>
+    <text x="737" y="68" class="small">один ребёнок, без игр/прыжков/верёвок.</text>
+    <text x="737" y="86" class="micro">6+ — консервативное правило безопасного пользования.</text>
+
+    <rect x="1056" y="0" width="545" height="92" rx="10" class="measure"/>
+    <text x="1074" y="25" class="h3">СТОП до заказа</text>
+    <text x="1074" y="48" class="small">3 ширины + диагонали; R-02 и окно; чистый вход;</text>
+    <text x="1074" y="68" class="small">паспорт модели, внешний габарит с лестницей, масса/анкеры;</text>
+    <text x="1074" y="86" class="micro">сертификат, толщина матраса и фактический потолок над кроватью.</text>
+  </g>
+
+  <!-- legend -->
+  <rect x="82" y="1003" width="45" height="23" rx="6" class="real"/><text x="104" y="1019" text-anchor="middle" class="micro bold">R</text>
+  <text x="136" y="1019" class="micro">реальный контроль</text>
+  <rect x="272" y="1003" width="45" height="23" rx="6" class="b01"/><text x="294" y="1019" text-anchor="middle" class="micro bold">B</text>
+  <text x="326" y="1019" class="micro">B01 / подтвердить</text>
+  <rect x="475" y="1003" width="45" height="23" rx="6" class="proposed"/><text x="497" y="1019" text-anchor="middle" class="micro bold">P</text>
+  <text x="529" y="1019" class="micro">проектный предел</text>
+  <rect x="670" y="1003" width="45" height="23" rx="6" class="measure"/><text x="692" y="1019" text-anchor="middle" class="micro bold">M</text>
+  <text x="724" y="1019" class="micro">измерить / выбрать</text>
+  <text x="1715" y="1019" text-anchor="end" class="small bold" fill="#8b4e3a">Заказывать только сертифицированную модель после закрытия всех M</text>
+
+  <text x="55" y="1081" class="micro">Основание: APT-001 revision 10 + решение D · лист 11 · расчётная координация, не рабочий чертёж изготовителя</text>
+  <text x="1745" y="1081" text-anchor="end" class="micro">Размеры в мм · 28.08.2026</text>
+</svg>

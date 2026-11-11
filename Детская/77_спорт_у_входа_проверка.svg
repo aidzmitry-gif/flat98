@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1480" height="824" viewBox="0 0 1480 824">
+  <defs>
+    <style>
+      text{font-family:'Segoe UI',Arial,sans-serif;fill:#243b34}
+      .title{font-size:32px;font-weight:700}.head{font-size:21px;font-weight:700}
+      .body{font-size:17px}.small{font-size:15px}.label{font-size:15px;font-weight:700}
+      .dim{stroke:#4b6d80;stroke-width:1.4;fill:none}
+    </style>
+    <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <path d="M0 0V8" stroke="#b76950" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="1480" height="824" fill="#f5f4ee"/>
+  <text x="34" y="49" class="title">Детская · шведская стенка у входа</text>
+  <text x="35" y="78" class="body">Эскиз расстановки по обмерам и плану БТИ · размеры в мм</text>
+
+  <rect x="30" y="105" width="965" height="674" rx="14" fill="#fffefa" stroke="#c9d5cd"/>
+  <text x="53" y="145" class="head">Вид сверху</text>
+  <path d="M130 176v-8h690.66v8 M130 176v9 M820.66 176v9" class="dim"/>
+  <rect x="377" y="154" width="197" height="24" fill="#fffefa"/>
+  <text x="475" y="172" text-anchor="middle" class="label">3837 · стена по S10</text>
+
+  <!-- Scale 0.18 px/mm. The long wall with the bed is at top. -->
+  <rect x="130" y="196" width="690.66" height="505.8" fill="#f9f6eb"/>
+  <rect x="130" y="196" width="234" height="108" fill="#e7d8bd" stroke="#af986d"/>
+  <text x="247" y="243" text-anchor="middle" class="label">ШКАФ У ОКНА</text>
+  <text x="247" y="267" text-anchor="middle" class="small">1300 × 600 · проект</text>
+  <rect x="130" y="304" width="90" height="397.8" fill="#ece3cf" stroke="#af986d"/>
+  <text x="175" y="507" text-anchor="middle" class="label">СТОЛ</text>
+  <text x="91" y="507" text-anchor="middle" class="label" transform="rotate(-90 91 507)">ОКНО</text>
+
+  <rect x="442.66" y="196" width="378" height="189" fill="#dce5d2" stroke="#819575" stroke-width="1.6"/>
+  <text x="631.66" y="277" text-anchor="middle" class="head">Двухъярусная кровать</text>
+  <text x="631.66" y="307" text-anchor="middle" class="body">2100 × 1050 · проект</text>
+  <text x="631.66" y="333" text-anchor="middle" class="small">Лестница со ступенями убрана</text>
+
+  <rect x="496.66" y="407.5" width="324" height="108" rx="4" fill="#e6ebdc" stroke="#799274" stroke-width="2"/>
+  <path d="M604.66 407.5v108 M712.66 407.5v108" stroke="#a4b19b" stroke-dasharray="4 4"/>
+  <text x="605" y="453" text-anchor="middle" class="label">СКЛАДНОЙ МАТ</text>
+  <text x="605" y="476" text-anchor="middle" class="body">600 × 1800</text>
+  <rect x="730.66" y="385" width="90" height="240.12" fill="url(#hatch)" opacity=".45" stroke="#b76950" stroke-dasharray="5 4"/>
+  <rect x="802.66" y="403.9" width="18" height="115.2" rx="2" fill="#637956" stroke="#496243"/>
+  <path d="M797 447h-30m0 0v-25m0 25v31" stroke="#4e6446" stroke-width="2" fill="none"/>
+  <circle cx="767" cy="422" r="6" fill="#fffefa" stroke="#4e6446" stroke-width="2"/>
+  <circle cx="767" cy="478" r="6" fill="#fffefa" stroke="#4e6446" stroke-width="2"/>
+  <path d="M730 573h-29l-14 13" stroke="#a45842" fill="none"/>
+  <text x="474" y="591" class="label" style="fill:#8e4a38">Штриховка · прежняя горка</text>
+  <text x="474" y="613" class="small">Её контур пересекает место мата.</text>
+
+  <path d="M130 701.8V196H820.66V538 M130 701.8H820.66" stroke="#283e37" stroke-width="4" fill="none"/>
+  <path d="M130 383v191" stroke="#668ea0" stroke-width="5"/>
+  <path d="M820.66 538V701.8" stroke="#668ea0" stroke-width="3" stroke-dasharray="7 6"/>
+  <path d="M830 196h29 M830 385h29 M830 538h29 M830 701.8h29 M850 196v505.8" class="dim"/>
+  <text x="868" y="295" class="label">1050 · кровать</text>
+  <text x="868" y="445" class="label">850 · участок</text>
+  <text x="868" y="469" class="small">между кроватью</text>
+  <text x="868" y="491" class="small">и проёмом</text>
+  <text x="868" y="610" class="label">ВХОД P2</text>
+  <text x="868" y="634" class="small">910 · по БТИ</text>
+  <text x="54" y="740" class="small">Контур мата показан в масштабе. Кольца и вылет турника условны.</text>
+  <text x="54" y="762" class="small">Открывание двери и чистовые привязки проёма требуют проверки.</text>
+
+  <rect x="1014" y="105" width="436" height="674" rx="14" fill="#fffefa" stroke="#c9d5cd"/>
+  <text x="1038" y="145" class="head">Проверка короткой стены</text>
+  <text x="1038" y="187" class="body">2810 по БТИ − 910 проём − 1050 кровать</text>
+  <text x="1038" y="222" class="head">= 850 мм по плану</text>
+  <path d="M1038 245h384" stroke="#d8e0d6"/>
+  <text x="1038" y="280" class="label">Прежняя рама 1500</text>
+  <text x="1038" y="306" class="body">Для переноса не хватает 650 мм.</text>
+  <text x="1038" y="356" class="label">Компактная рама 640 × 2200</text>
+  <text x="1038" y="382" class="body">При центровке по 105 мм с каждой стороны.</text>
+  <text x="1038" y="421" class="label">Складной мат 600 × 1800</text>
+  <text x="1038" y="447" class="body">600 вдоль стены, 1800 в глубину комнаты.</text>
+
+  <rect x="1030" y="478" width="402" height="160" rx="10" fill="#faf0df" stroke="#e3c5a5"/>
+  <text x="1047" y="508" class="label">Зону для занятий ещё нужно проверить</text>
+  <text x="1047" y="535" class="small">Нужны ход двери, материал стены</text>
+  <text x="1047" y="559" class="small">и свободное место вокруг колец.</text>
+  <text x="1047" y="583" class="small">Мат показан по габаритам изделия.</text>
+  <text x="1047" y="607" class="small">Площадь приземления требует проверки.</text>
+  <text x="1038" y="680" class="small">Геометрия комнаты · обмер S10 и БТИ B01.</text>
+  <text x="1038" y="704" class="small">Рама и мат · габариты примера BenchK.</text>
+  <text x="1038" y="728" class="small">Горка · контур из предыдущей схемы.</text>
+</svg>

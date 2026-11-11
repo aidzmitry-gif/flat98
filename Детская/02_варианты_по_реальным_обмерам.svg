@@ -1,0 +1,199 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="920" viewBox="0 0 1900 920">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M8,0 L0,4 L8,8" fill="none" stroke="#2d7187" stroke-width="1.4"/>
+    </marker>
+    <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#be7649" stroke-width="3"/>
+    </pattern>
+    <style>
+      text { font-family: Arial, sans-serif; fill: #26342e; }
+      .title { font-size: 30px; font-weight: 700; }
+      .sub { font-size: 16px; fill: #52635a; }
+      .head { font-size: 20px; font-weight: 700; }
+      .room { fill: #fcfcfa; stroke: #283831; stroke-width: 4; }
+      .wall { stroke: #283831; stroke-width: 10; }
+      .window { stroke: #4f96bb; stroke-width: 11; }
+      .opening { stroke: #f7f6f1; stroke-width: 16; }
+      .dim { stroke: #2d7187; stroke-width: 1.5; fill: none; marker-start: url(#arrow); marker-end: url(#arrow); }
+      .ext { stroke: #2d7187; stroke-width: 1.2; }
+      .dimtext { font-size: 13px; font-weight: 700; fill: #2d7187; }
+      .label { font-size: 13px; font-weight: 700; }
+      .small { font-size: 12px; fill: #52635a; }
+      .note { font-size: 13px; fill: #83542f; }
+      .bed { fill: #cadbc7; stroke: #5c805d; stroke-width: 2; }
+      .wardrobe { fill: #ddc79f; stroke: #8b6b3f; stroke-width: 2; }
+      .storage { fill: #e7eee7; stroke: #738f79; stroke-width: 2; }
+      .desk { fill: #dbe7eb; stroke: #588092; stroke-width: 2; }
+      .play { fill: #f3ecde; stroke: #c2a36d; stroke-width: 2; stroke-dasharray: 7 6; }
+      .aisle { fill: #eef5f0; stroke: #74a184; stroke-width: 1.5; stroke-dasharray: 7 5; }
+    </style>
+  </defs>
+
+  <rect width="1900" height="920" fill="#f7f6f1"/>
+  <text x="55" y="54" class="title">Детская — варианты по обмерам: B01 3 850 × 2 810; стены 3 825 / 3 837 мм</text>
+  <text x="55" y="84" class="sub">Запасы по длине посчитаны от минимума 3825 мм. Поперечная ось 2810 пока только B01 и требует контрольного замера.</text>
+
+  <!-- PANEL A -->
+  <g transform="translate(55 135)">
+    <text x="0" y="0" class="head">A. Один ребёнок: кровать + учеба</text>
+    <text x="0" y="25" class="small">Рекомендуемый стартовый вариант; второй комплект мебели добавляется без перестройки.</text>
+    <g transform="translate(30 80)">
+      <!-- exact inner shell, scale 0.13 px/mm: 3850 x 2810 -->
+      <rect x="0" y="0" width="500.5" height="365.3" class="room"/>
+      <!-- opening 910 at the corner of entry short wall -->
+      <line x1="0" y1="0" x2="0" y2="118.3" class="opening"/>
+      <line x1="0" y1="118.3" x2="0" y2="365.3" class="wall"/>
+      <!-- window O2: 600 + 1600 + 610 -->
+      <line x1="500.5" y1="78" x2="500.5" y2="286" class="window"/>
+      <rect x="475" y="78" width="25.5" height="208" fill="url(#hatch)" opacity="0.75"/>
+
+      <!-- wardrobe 600 x 1300, on solid 1900 section of entry wall -->
+      <rect x="0" y="196.3" width="78" height="169" rx="3" class="wardrobe"/>
+      <text x="39" y="265" text-anchor="middle" class="label">Шкаф</text>
+      <text x="39" y="282" text-anchor="middle" class="small">600×1300</text>
+
+      <!-- bed 2000 x 900 -->
+      <rect x="91" y="248.3" width="260" height="117" rx="8" class="bed"/>
+      <rect x="101" y="258.3" width="46" height="97" rx="8" fill="#f5f1e9"/>
+      <text x="223" y="306" text-anchor="middle" class="label">Кровать 900×2000</text>
+
+      <!-- low storage 1200 x 350 -->
+      <rect x="123.5" y="0" width="156" height="45.5" rx="3" class="storage"/>
+      <text x="201.5" y="21" text-anchor="middle" class="label">Хранение</text>
+      <text x="201.5" y="37" text-anchor="middle" class="small">350×1200</text>
+
+      <!-- desk 1000 x 500 -->
+      <rect x="325" y="0" width="130" height="65" rx="3" class="desk"/>
+      <text x="390" y="28" text-anchor="middle" class="label">Стол</text>
+      <text x="390" y="45" text-anchor="middle" class="small">500×1000</text>
+
+      <ellipse cx="305" cy="154" rx="116" ry="72" class="play"/>
+      <text x="305" y="150" text-anchor="middle" class="label">Свободный центр</text>
+      <text x="305" y="168" text-anchor="middle" class="small">игра / трансформация</text>
+
+      <text x="-13" y="64" class="dimtext" transform="rotate(-90 -13 64)">проход 910</text>
+      <text x="490" y="179" text-anchor="middle" class="small" transform="rotate(-90 490 179)">R-02, точный габарит н/д</text>
+      <text x="500" y="302" text-anchor="end" class="dimtext">O2 1600</text>
+
+      <line x1="0" y1="-24" x2="500.5" y2="-24" class="dim"/>
+      <line x1="0" y1="-12" x2="0" y2="-31" class="ext"/>
+      <line x1="500.5" y1="-12" x2="500.5" y2="-31" class="ext"/>
+      <text x="250.25" y="-31" text-anchor="middle" class="dimtext">3850 B01 / 3825–3837 контроль</text>
+      <line x1="-28" y1="0" x2="-28" y2="365.3" class="dim"/>
+      <line x1="-16" y1="0" x2="-35" y2="0" class="ext"/>
+      <line x1="-16" y1="365.3" x2="-35" y2="365.3" class="ext"/>
+      <text x="-36" y="183" text-anchor="middle" class="dimtext" transform="rotate(-90 -36 183)">2810</text>
+    </g>
+    <text x="30" y="480" class="note">По стене 3825: до окна кровать ≥1125 мм, стол ≥325 мм.</text>
+  </g>
+
+  <!-- PANEL B -->
+  <g transform="translate(665 135)">
+    <text x="0" y="0" class="head">B. Один ребёнок: максимум свободного пола</text>
+    <text x="0" y="25" class="small">Низкая кровать и хранение; письменный стол добавляется позднее вместо части стеллажа.</text>
+    <g transform="translate(30 80)">
+      <rect x="0" y="0" width="500.5" height="365.3" class="room"/>
+      <line x1="0" y1="0" x2="0" y2="118.3" class="opening"/>
+      <line x1="0" y1="118.3" x2="0" y2="365.3" class="wall"/>
+      <line x1="500.5" y1="78" x2="500.5" y2="286" class="window"/>
+      <rect x="475" y="78" width="25.5" height="208" fill="url(#hatch)" opacity="0.75"/>
+
+      <rect x="0" y="196.3" width="78" height="169" rx="3" class="wardrobe"/>
+      <text x="39" y="265" text-anchor="middle" class="label">Шкаф</text>
+      <text x="39" y="282" text-anchor="middle" class="small">600×1300</text>
+
+      <!-- low bed 1900 x 800 -->
+      <rect x="110.5" y="261.3" width="247" height="104" rx="8" class="bed"/>
+      <rect x="120.5" y="271.3" width="43" height="84" rx="8" fill="#f5f1e9"/>
+      <text x="234" y="315" text-anchor="middle" class="label">Низкая кровать 800×1900</text>
+
+      <!-- low storage 1400 x 350 -->
+      <rect x="130" y="0" width="182" height="45.5" rx="3" class="storage"/>
+      <text x="221" y="21" text-anchor="middle" class="label">Низкое хранение</text>
+      <text x="221" y="37" text-anchor="middle" class="small">350×1400</text>
+
+      <ellipse cx="300" cy="156" rx="145" ry="91" class="play"/>
+      <text x="300" y="151" text-anchor="middle" class="label">Максимум свободного пола</text>
+      <text x="300" y="170" text-anchor="middle" class="small">без кресел и стола у радиатора</text>
+
+      <text x="-13" y="64" class="dimtext" transform="rotate(-90 -13 64)">проход 910</text>
+      <text x="490" y="179" text-anchor="middle" class="small" transform="rotate(-90 490 179)">R-02, точный габарит н/д</text>
+      <text x="500" y="302" text-anchor="end" class="dimtext">O2 1600</text>
+
+      <line x1="0" y1="-24" x2="500.5" y2="-24" class="dim"/>
+      <line x1="0" y1="-12" x2="0" y2="-31" class="ext"/>
+      <line x1="500.5" y1="-12" x2="500.5" y2="-31" class="ext"/>
+      <text x="250.25" y="-31" text-anchor="middle" class="dimtext">3850 B01 / 3825–3837 контроль</text>
+      <line x1="-28" y1="0" x2="-28" y2="365.3" class="dim"/>
+      <line x1="-16" y1="0" x2="-35" y2="0" class="ext"/>
+      <line x1="-16" y1="365.3" x2="-35" y2="365.3" class="ext"/>
+      <text x="-36" y="183" text-anchor="middle" class="dimtext" transform="rotate(-90 -36 183)">2810</text>
+    </g>
+    <text x="30" y="480" class="note">По стене 3825: до оконной стены от кровати ≥1075 мм.</text>
+  </g>
+
+  <!-- PANEL C -->
+  <g transform="translate(1275 135)">
+    <text x="0" y="0" class="head">C. Два ребёнка: две кровати 900×2000</text>
+    <text x="0" y="25" class="small">Проверка будущего сценария в том же контуре, без переноса стен, окна и радиатора.</text>
+    <g transform="translate(30 80)">
+      <rect x="0" y="0" width="500.5" height="365.3" class="room"/>
+      <line x1="0" y1="0" x2="0" y2="118.3" class="opening"/>
+      <line x1="0" y1="118.3" x2="0" y2="365.3" class="wall"/>
+      <line x1="500.5" y1="78" x2="500.5" y2="286" class="window"/>
+      <rect x="475" y="78" width="25.5" height="208" fill="url(#hatch)" opacity="0.75"/>
+
+      <rect x="0" y="196.3" width="78" height="169" rx="3" class="wardrobe"/>
+      <text x="39" y="265" text-anchor="middle" class="label">Шкаф</text>
+      <text x="39" y="282" text-anchor="middle" class="small">600×1300</text>
+
+      <!-- bed 1 2000 x 900, starts after the entry opening -->
+      <rect x="130" y="0" width="260" height="117" rx="8" class="bed"/>
+      <rect x="334" y="10" width="46" height="97" rx="8" fill="#f5f1e9"/>
+      <text x="260" y="62" text-anchor="middle" class="label">Кровать 1 — 900×2000</text>
+
+      <!-- bed 2 2000 x 900 -->
+      <rect x="91" y="248.3" width="260" height="117" rx="8" class="bed"/>
+      <rect x="101" y="258.3" width="46" height="97" rx="8" fill="#f5f1e9"/>
+      <text x="221" y="309" text-anchor="middle" class="label">Кровать 2 — 900×2000</text>
+
+      <!-- exact central aisle 2810 - 900 - 900 = 1010 -->
+      <rect x="91" y="117" width="299" height="131.3" rx="5" class="aisle"/>
+      <text x="240.5" y="177" text-anchor="middle" class="label">Центральный проход</text>
+      <text x="240.5" y="197" text-anchor="middle" class="dimtext">1010 мм</text>
+
+      <text x="-13" y="64" class="dimtext" transform="rotate(-90 -13 64)">проход 910</text>
+      <text x="490" y="179" text-anchor="middle" class="small" transform="rotate(-90 490 179)">R-02, точный габарит н/д</text>
+      <text x="500" y="302" text-anchor="end" class="dimtext">O2 1600</text>
+
+      <line x1="0" y1="-24" x2="500.5" y2="-24" class="dim"/>
+      <line x1="0" y1="-12" x2="0" y2="-31" class="ext"/>
+      <line x1="500.5" y1="-12" x2="500.5" y2="-31" class="ext"/>
+      <text x="250.25" y="-31" text-anchor="middle" class="dimtext">3850 B01 / 3825–3837 контроль</text>
+      <line x1="-28" y1="0" x2="-28" y2="365.3" class="dim"/>
+      <line x1="-16" y1="0" x2="-35" y2="0" class="ext"/>
+      <line x1="-16" y1="365.3" x2="-35" y2="365.3" class="ext"/>
+      <text x="-36" y="183" text-anchor="middle" class="dimtext" transform="rotate(-90 -36 183)">2810</text>
+    </g>
+    <text x="30" y="480" class="note">До окна ≥825/1125 мм; проход 1010 по B01 — проверить ширину.</text>
+  </g>
+
+  <g transform="translate(55 720)">
+    <line x1="0" y1="0" x2="1790" y2="0" stroke="#c6cec9" stroke-width="1"/>
+    <text x="0" y="38" class="head">Что зафиксировано и что ещё нельзя заказывать</text>
+    <text x="0" y="70" class="label">Зафиксировано:</text>
+    <text x="110" y="70" class="small">B01 3850×2810; контроль длинных стен 3825/3837; проход 910; O2 1600; отступы 610/600; R-02 под окном.</text>
+    <text x="0" y="96" class="label">Не измерено:</text>
+    <text x="110" y="96" class="small">контроль ширины 2810, габарит и ось радиатора, подоконник и чистовая отделка. Перед заказом мебели — контрольный обмер.</text>
+    <rect x="0" y="130" width="22" height="18" fill="url(#hatch)"/>
+    <text x="32" y="144" class="small">зона окна/радиатора без мебели</text>
+    <rect x="265" y="130" width="22" height="18" class="wardrobe"/>
+    <text x="297" y="144" class="small">высокий закрытый шкаф</text>
+    <rect x="520" y="130" width="22" height="18" class="bed"/>
+    <text x="552" y="144" class="small">кровать</text>
+    <rect x="680" y="130" width="22" height="18" class="desk"/>
+    <text x="712" y="144" class="small">стол</text>
+    <text x="1790" y="144" text-anchor="end" class="small">Концептуальный план, масштабная геометрия; не мебельный заказной чертёж.</text>
+  </g>
+</svg>

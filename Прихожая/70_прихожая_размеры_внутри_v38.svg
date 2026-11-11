@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2600" height="1700" viewBox="0 0 2600 1700">
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse"><path d="M8 0 L0 4 L8 8" fill="none" stroke="#5a786e" stroke-width="1.2"/></marker></defs>
+<style>text{font-family:Arial,'Segoe UI',sans-serif;fill:#213d39} .eyebrow{font-size:19px;font-weight:bold;letter-spacing:2px;fill:#387462} .title{font-size:47px;font-weight:bold} .subtitle{font-size:23px;fill:#657d76} .head{font-size:26px;font-weight:bold} .body{font-size:21px;fill:#3e5850} .small{font-size:18px;fill:#61796f} .micro{font-size:16px;fill:#627970} .dimtxt{font-size:20px;font-weight:bold;fill:#2f594b} .dim{stroke:#5a786e;stroke-width:1.8;marker-start:url(#a);marker-end:url(#a)} .ext{stroke:#a0b0a7;stroke-width:1.4}</style>
+<rect width="2600" height="1700" fill="#f1f4ef"/><text x="55.00" y="47.00" class="eyebrow" text-anchor="start" >APT-001 / ПРИХОЖАЯ / ВАРИАНТ C · V38 / ЛИСТ 2</text>
+<text x="55.00" y="106.00" class="title" text-anchor="start" >Больше размеров: шкаф внутри и обувь</text>
+<text x="57.00" y="150.00" class="subtitle" text-anchor="start" >Высоты от пола; внутренние ширины и глубины — предварительное предложение, не раскрой</text>
+<rect x="45.00" y="185.00" width="1158.00" height="1230.00" fill="white" stroke="#dbe4dc" stroke-width="2" rx="20"/>
+<text x="72.00" y="225.00" class="head" text-anchor="start" >01  Внутреннее наполнение</text>
+<text x="74.00" y="258.00" class="small" text-anchor="start" >Передние дверцы условно сняты</text>
+<rect x="258.50" y="312.00" width="289.00" height="918.00" fill="#dbc2a2" stroke="#927a62" stroke-width="2" />
+<rect x="264.62" y="318.12" width="136.00" height="905.76" fill="#eaf2ec" stroke="#bdcec0" stroke-width="1" />
+<rect x="400.62" y="312.00" width="6.12" height="918.00" fill="#c1a17e" stroke="none" stroke-width="1" />
+<rect x="406.74" y="318.12" width="134.64" height="905.76" fill="#f9f4ed" stroke="#d0c5b8" stroke-width="1" />
+<rect x="258.50" y="1202.80" width="289.00" height="27.20" fill="#c1a17e" stroke="none" stroke-width="1" />
+<rect x="406.74" y="499.00" width="134.64" height="6.12" fill="#b99c7c" stroke="none" stroke-width="1" />
+<rect x="406.74" y="1100.80" width="134.64" height="6.12" fill="#b99c7c" stroke="none" stroke-width="1" />
+<line x1="414.74" y1="635.00" x2="533.38" y2="635.00" class="" stroke="#485d51" stroke-width="3"/>
+<rect x="287.74" y="655.40" width="89.76" height="200.60" fill="none" stroke="#82a596" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="332.62" y="750.60" class="small" text-anchor="middle" >ЭЩ-03</text>
+<text x="332.62" y="782.90" class="micro" text-anchor="middle" >размер M</text>
+<path d="M418.74 653.00 l-5 12 v278.80 h33.21 v-278.80 l-5 -12 Z" fill="#aaa994" stroke="#887e6d" stroke-width="1"/>
+<path d="M415.74 653.00 l8 -8 l8 8" fill="none" stroke="#5f695c" stroke-width="2"/>
+<path d="M455.29 653.00 l-5 12 v278.80 h33.21 v-278.80 l-5 -12 Z" fill="#899683" stroke="#887e6d" stroke-width="1"/>
+<path d="M452.29 653.00 l8 -8 l8 8" fill="none" stroke="#5f695c" stroke-width="2"/>
+<path d="M491.83 653.00 l-5 12 v278.80 h33.21 v-278.80 l-5 -12 Z" fill="#bba58a" stroke="#887e6d" stroke-width="1"/>
+<path d="M488.83 653.00 l8 -8 l8 8" fill="none" stroke="#5f695c" stroke-width="2"/>
+<rect x="547.50" y="312.00" width="263.50" height="187.00" fill="#dbc2a2" stroke="#927a62" stroke-width="2" />
+<line x1="679.25" y1="312.00" x2="679.25" y2="499.00" class="" stroke="#ad9273" stroke-width="1.4"/>
+<rect x="547.50" y="499.00" width="263.50" height="574.60" fill="#dcebdd" stroke="#b5caba" stroke-width="1" />
+<path d="M613.38 720.00 v15 q0 6 6 6" fill="none" stroke="#678371" stroke-width="3"/>
+<path d="M679.25 720.00 v15 q0 6 6 6" fill="none" stroke="#678371" stroke-width="3"/>
+<path d="M745.12 720.00 v15 q0 6 6 6" fill="none" stroke="#678371" stroke-width="3"/>
+<rect x="547.50" y="1073.60" width="263.50" height="11.90" fill="#e8d6be" stroke="#ae987d" stroke-width="1" rx="3"/>
+<rect x="547.50" y="1085.50" width="263.50" height="8.50" fill="#be9d79" stroke="none" stroke-width="1" />
+<rect x="547.50" y="1094.00" width="125.80" height="30.60" fill="#d6b996" stroke="#ae9274" stroke-width="1" />
+<path d="M579.12 1192.60 h14 v30.40 h8 q5 1 7 7 h-29 Z" fill="#8d7b67"/>
+<path d="M652.90 1192.60 h14 v30.40 h8 q5 1 7 7 h-29 Z" fill="#8d7b67"/>
+<path d="M726.68 1133.10 h14 v89.90 h8 q5 1 7 7 h-29 Z" fill="#8d7b67"/>
+<line x1="258.50" y1="1230.00" x2="814.00" y2="1230.00" class="" stroke="#587367" stroke-width="2"/>
+<line x1="264.62" y1="339.00" x2="400.62" y2="339.00" class="dim" />
+<text x="332.62" y="329.00" class="dimtxt" text-anchor="middle" >400 P</text>
+<line x1="406.74" y1="339.00" x2="541.38" y2="339.00" class="dim" />
+<text x="474.06" y="329.00" class="dimtxt" text-anchor="middle" >396 P</text>
+<line x1="146.50" y1="312.00" x2="146.50" y2="1230.00" class="dim" />
+<text x="137.50" y="771.00" class="dimtxt" text-anchor="middle" transform="rotate(-90 137.50 771.00)">2700 P</text>
+<line x1="181.50" y1="499.00" x2="181.50" y2="1230.00" class="dim" />
+<text x="172.50" y="864.50" class="dimtxt" text-anchor="middle" transform="rotate(-90 172.50 864.50)">2150 P</text>
+<line x1="216.50" y1="635.00" x2="216.50" y2="1230.00" class="dim" />
+<text x="207.50" y="932.50" class="dimtxt" text-anchor="middle" transform="rotate(-90 207.50 932.50)">1750 P</text>
+<line x1="528.38" y1="1100.80" x2="528.38" y2="1230.00" class="dim" />
+<text x="519.38" y="1165.40" class="dimtxt" text-anchor="middle" transform="rotate(-90 519.38 1165.40)">380 P</text>
+<text x="610.40" y="1117.00" class="small" text-anchor="middle" >370 P</text>
+<line x1="258.50" y1="1263.00" x2="547.50" y2="1263.00" class="dim" />
+<text x="403.00" y="1288.00" class="dimtxt" text-anchor="middle" >850 P</text>
+<line x1="547.50" y1="1263.00" x2="811.00" y2="1263.00" class="dim" />
+<text x="679.25" y="1288.00" class="dimtxt" text-anchor="middle" >775 P</text>
+<text x="270.00" y="1330.00" class="small" text-anchor="start" >От верха нижней полки до оси штанги: 1750 − 380 = 1370 мм P.</text>
+<text x="270.00" y="1363.00" class="small" text-anchor="start" >Фактическое место под одежду меньше из-за вешалок и фурнитуры.</text>
+<rect x="1220.00" y="185.00" width="1335.00" height="710.00" fill="white" stroke="#dbe4dc" stroke-width="2" rx="20"/>
+<text x="1250.00" y="225.00" class="head" text-anchor="start" >02  Банкетка сбоку: две части одной ниши</text>
+<text x="1290.00" y="270.00" class="body" text-anchor="start" >Со стороны шкафа</text>
+<text x="1920.00" y="270.00" class="body" text-anchor="start" >Со стороны входной двери</text>
+<line x1="1320.00" y1="735.00" x2="1320.00" y2="292.80" class="" stroke="#385448" stroke-width="6"/>
+<line x1="1312.00" y1="735.00" x2="1616.40" y2="735.00" class="" stroke="#385448" stroke-width="2"/>
+<rect x="1320.00" y="426.80" width="281.40" height="23.45" fill="#e8d6be" stroke="#ae987d" stroke-width="1" rx="3"/>
+<rect x="1320.00" y="450.25" width="281.40" height="16.75" fill="#bd9d79" stroke="none" stroke-width="1" />
+<rect x="1320.00" y="467.00" width="254.60" height="60.30" fill="#d5b997" stroke="#ae9274" stroke-width="1" />
+<line x1="1325.00" y1="500.50" x2="1569.60" y2="500.50" class="dim" />
+<text x="1447.30" y="490.50" class="dimtxt" text-anchor="middle" >380 P</text>
+<line x1="1631.40" y1="527.30" x2="1631.40" y2="735.00" class="dim" />
+<text x="1622.40" y="631.15" class="dimtxt" text-anchor="middle" transform="rotate(-90 1622.40 631.15)">310 P</text>
+<line x1="1678.40" y1="467.00" x2="1678.40" y2="527.30" class="dim" />
+<text x="1669.40" y="497.15" class="dimtxt" text-anchor="middle" transform="rotate(-90 1669.40 497.15)">90 P</text>
+<line x1="1320.00" y1="399.80" x2="1601.40" y2="399.80" class="dim" />
+<text x="1460.70" y="389.80" class="dimtxt" text-anchor="middle" >420 P</text>
+<line x1="1280.00" y1="426.80" x2="1280.00" y2="735.00" class="dim" />
+<text x="1271.00" y="580.90" class="dimtxt" text-anchor="middle" transform="rotate(-90 1271.00 580.90)">460 P</text>
+<line x1="1920.00" y1="735.00" x2="1920.00" y2="292.80" class="" stroke="#385448" stroke-width="6"/>
+<line x1="1912.00" y1="735.00" x2="2216.40" y2="735.00" class="" stroke="#385448" stroke-width="2"/>
+<rect x="1920.00" y="426.80" width="281.40" height="23.45" fill="#e8d6be" stroke="#ae987d" stroke-width="1" rx="3"/>
+<rect x="1920.00" y="450.25" width="281.40" height="16.75" fill="#bd9d79" stroke="none" stroke-width="1" />
+<line x1="2231.40" y1="467.00" x2="2231.40" y2="735.00" class="dim" />
+<text x="2222.40" y="601.00" class="dimtxt" text-anchor="middle" transform="rotate(-90 2222.40 601.00)">400 P</text>
+<path d="M2040.60 540.70 h38 v176.30 h24 q12 0 17 18 h-79 Z" fill="#8d7b67"/>
+<line x1="1920.00" y1="399.80" x2="2201.40" y2="399.80" class="dim" />
+<text x="2060.70" y="389.80" class="dimtxt" text-anchor="middle" >420 P</text>
+<line x1="1880.00" y1="426.80" x2="1880.00" y2="735.00" class="dim" />
+<text x="1871.00" y="580.90" class="dimtxt" text-anchor="middle" transform="rotate(-90 1871.00 580.90)">460 P</text>
+<text x="1290.00" y="800.00" class="body" text-anchor="start" >Внешний размер сухого ящика:</text>
+<text x="1290.00" y="832.00" class="body" text-anchor="start" >370 вдоль стены × 380 глубина × 90 высота P.</text>
+<text x="1920.00" y="800.00" class="body" text-anchor="start" >Для высокой обуви оставлен</text>
+<text x="1920.00" y="832.00" class="body" text-anchor="start" >просвет около 400 мм P.</text>
+<rect x="1220.00" y="913.00" width="1335.00" height="502.00" fill="white" stroke="#dbe4dc" stroke-width="2" rx="20"/>
+<text x="1250.00" y="953.00" class="head" text-anchor="start" >03  Что ещё означают размеры</text>
+<text x="1250.00" y="992.00" class="body" text-anchor="start" >• 400 и 396 мм — ширина отделений внутри, между деталями P.</text>
+<text x="1250.00" y="1028.00" class="body" text-anchor="start" >• Верхняя полка на h = 2150 мм; над ней около 532 мм P.</text>
+<text x="1250.00" y="1064.00" class="body" text-anchor="start" >• Штанга на h = 1750 мм; нижняя съёмная полка на h = 380 мм P.</text>
+<text x="1250.00" y="1100.00" class="body" text-anchor="start" >• 580 мм — наружная глубина шкафа вместе с фасадом P.</text>
+<text x="1250.00" y="1136.00" class="body" text-anchor="start" >• Ящик указан снаружи; внутри меньше из-за стенок и направляющих.</text>
+<text x="1250.00" y="1172.00" class="body" text-anchor="start" >• Высота, ширина и ось щита: M; на рисунке габарит условный.</text>
+<text x="1250.00" y="1208.00" class="body" text-anchor="start" >• Фасады, зеркало, петли, задняя стенка и кабели — после обмера.</text>
+<text x="1250.00" y="1244.00" class="body" text-anchor="start" >• Обувь стоит на общем полу одним рядом, не на выдвижной полке.</text>
+<text x="1250.00" y="1301.00" class="small" text-anchor="start" >B — БТИ · P — предложение · M — нужно замерить.</text>
+<text x="1250.00" y="1335.00" class="small" text-anchor="start" >Щит и трассу переноса проверяет электрик; мебель — после чистового обмера.</text>
+<rect x="45.00" y="1434.00" width="2510.00" height="206.00" fill="#fff9ef" stroke="#dbe4dc" stroke-width="2" rx="20"/>
+<text x="72.00" y="1477.00" class="head" text-anchor="start" >Проверка размерной цепочки</text>
+<text x="72.00" y="1518.00" class="body" text-anchor="start" >Стенка: 25 + 850 + 775 + 25 = 1675 мм. Шкаф: 400 + 396 + 3 × 18 = 850 мм. Размеры конструкции — P.</text>
+<text x="72.00" y="1557.00" class="body" text-anchor="start" >Сиденье: 460 − 35 подушка − 25 основание = 400 мм. В зоне ящика: 400 − 90 = 310 мм P.</text>
+<text x="72.00" y="1591.00" class="small" text-anchor="start" >До заказа проверить привязки D1/D2, размеры щита, чистовой пол, петли, направляющие и проходы с открытыми створками.</text>
+</svg>

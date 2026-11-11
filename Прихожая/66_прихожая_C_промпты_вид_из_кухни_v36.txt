@@ -1,0 +1,43 @@
+APT-001 / ПРИХОЖАЯ / ВАРИАНТ C / ВИД ИЗ КУХНИ v36
+Инструмент: ImageGen. Визуализация иллюстративна, проверка размеров — по модели v35.
+
+=== Основной запрос ===
+Исходники:
+D:\6 Проекты\Квартира\Прихожая\63_прихожая_C_геометрия_вида_v35.png
+D:\6 Проекты\Квартира\Прихожая\60_прихожая_C_открытые_фасады_коридор_v34.png
+
+Use case: precise-object-edit
+Asset type: one photorealistic interior visualization, corrected from a dimensioned spatial model.
+
+REFERENCE 1 is the binding GEOMETRY AND CAMERA of this exact apartment. Transform that simple 3D blockout into a realistic photograph, and open the existing wardrobe doors so its contents can be seen. Preserve the camera position at the kitchen opening, the picture composition, the sequence of the elements and the same single straight furniture wall. The wide-angle perspective looks towards the furniture with the entrance door on the perpendicular wall at the right. Use this actual VIEW FROM THE KITCHEN, not a view straight along a long hallway. REFERENCE 2 is ONLY the material and detail reference: natural light oak, muted olive niche, black door, light oak floor, open wardrobe internals, seating cushion, and warm lighting. Do not copy the camera, hallway shape, wardrobe or entrance-door proportions from reference 2.
+
+Critical architectural correction from the owner: THERE IS NO WALL AT THE LEFT END OF THE WARDROBE. In reference 1 the pale mint region on the extreme left is NOT a wall: it represents the OPEN CONNECTION to the corridor, whose distant geometry is unknown. In the photorealistic result the continuous floor extends into this open side connection, and a small unobstructed opening beyond the cabinet is visible near the left frame. Do not build any left-hand wall, solid partition, column, door jamb, doorframe, room enclosure or solid backing that cuts off that opening. Do not invent or depict a long corridor with distant doors or extra features. Let the limited left edge of the frame show only the open continuation and continuous floor; its unseen far geometry should remain out of frame or softly indistinct. The cupboard has its normal thin furniture side panel; it is not a building wall.
+
+Exactly preserve this spatial arrangement, starting on the LEFT of the image and going to the RIGHT:
+- open corridor transition;
+- the existing tall wardrobe, approximately 850 mm wide along the furniture wall, 580 mm deep including the front, approximately 2700 mm high under the 2750 mm ceiling;
+- the existing open coat-hook and seating alcove immediately adjacent, approximately 775 mm wide and 420 mm deep. Its front is recessed by 160 mm relative to the deeper tall wardrobe;
+- the existing closed black entrance door D1 on its OWN wall at 90 degrees to the wardrobe wall, at the right edge of the image. Match reference 1's position and receding perspective; do not place this door in the plane of the furniture, do not move it to the left, and do not add another entrance.
+
+Open both full-height wardrobe furniture doors toward the camera at plausible angles, clearly showing actual hinges and cabinet partitions, without the open leaves resembling an extra wall that seals off the corridor. Farther from the entrance, the first approximately 400-mm-clear compartment is an electrical service bay: show a small CLOSED white electrical-panel enclosure on the rear wall. Keep the space in front of the panel clear, with no clothes, shelves or exposed wires. Its actual size is unknown; the box is only an illustrative placeholder. Next to it is a roughly 396-mm-clear clothes compartment, with a normal rail and three hanging jackets, one shelf above for hats, and a removable low shelf for bags. The full-height mirror is fixed on the EXTERIOR of the open clothes-compartment door, not on a separate wall. Both doors are recognisably operational.
+
+The open olive niche beside the door has practical hooks and a cushioned bench at approximately 460 mm above the floor. Above this niche, show two small usable upper cabinet doors with real seams and hinges, slightly open so they clearly are not fixed decorative filler. Under the bench is one small shallow CLOSED dry drawer for slippers on the wardrobe side; below and beside it leave the open floor area. Show two or three pairs of everyday shoes in ONE row directly on the same continuous floor, including one pair of taller boots. No shoe tray, no drawer for wet outdoor shoes, no robot vacuum.
+
+Use normal believable material texture, not a blueprint or an isometric view: soft white walls where confirmed, light natural oak with fine vertical grain, muted olive inside the niche, a compact black metal entrance door, warm soft lighting, understated modern residential interior. Keep the scale and camera of reference 1 as closely as possible; do not exaggerate cabinet widths, door opening or corridor depth. The input model is schematic; transform only its look, not its room layout.
+
+No text, labels, dimensions, people, pasted plan, split screen, additional furniture, second entrances, artificial left-hand wall, long tunnel or far doors. The panel location and sizes are conceptual; no visible wiring.
+
+=== Исправление фоновой стены слева ===
+Исходники:
+C:\Users\aidzm\.codex\generated_images\01a0487f-28e0-7bd2-8428-24a402900f2d\exec-8cf16b7f-32c9-47df-8518-d37e1ecd4a1a.png
+D:\6 Проекты\Квартира\Прихожая\63_прихожая_C_геометрия_вида_v35.png
+
+Use case: precise-object-edit
+Edit reference 1, the photorealistic image, with the SMALLEST possible change. Reference 2 is the geometry of the user's floor plan; the pale mint area at the left of the wardrobe means the corridor transition is OPEN and unspecified, NOT a wall.
+
+The previous render STILL wrongly added a flat beige wall and a white skirting board at the left side of the frame. The user explicitly states THERE IS NO WALL THERE.
+
+LOCAL EDIT ONLY: remove the entire beige wall surface and all skirting/baseboard in the image region LEFT of the open oak wardrobe door. In that region show OPEN SPACE through the real unobstructed transition into the corridor. Extend the same light oak floor continuously from the foreground out through this open side, with perspective receding into a softly lit, softly defocused continuation beyond the crop. Above the continuing floor show only a softly blurred undefined open background; no flat vertical wall surface, no skirting line, no column, no partition, no doorway frame, no mural, no cabinetry, and no long distinct tunnel or distant door. Let the distance fade out of frame so its unknown geometry is not invented. Most importantly, the LEFT edge of the cabinet must be exposed to open passage, not touching a wall. Do not mistake the actual open oak wardrobe DOOR for a wall: preserve that hinged furniture door with its hinges.
+
+PRESERVE all other pixels and the exact camera/perspective and geometry from reference 1: two open tall wardrobe doors, closed white electrical enclosure inside the service bay, three coats in the adjacent bay with mirror on its open door, the olive open bench niche, the two upper open cabinet doors, shallow dry slipper drawer, the single row of footwear directly on the floor, and the black entrance door on the perpendicular wall at right. No repositioning, no additional walls, no text, no labels, no people, no robot. Make the new open area natural and photorealistic with matching light, but keep its actual unknown layout visually indistinct.
+

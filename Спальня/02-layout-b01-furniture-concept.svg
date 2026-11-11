@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1080" viewBox="0 0 1500 1080">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#637381"/>
+    </marker>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#d6a16d" stroke-width="3"/>
+    </pattern>
+    <style>
+      .title { font: 700 30px Arial, sans-serif; fill: #27313a; }
+      .subtitle { font: 400 16px Arial, sans-serif; fill: #637381; }
+      .label { font: 600 16px Arial, sans-serif; fill: #27313a; }
+      .small { font: 400 14px Arial, sans-serif; fill: #52606d; }
+      .dim { font: 600 15px Arial, sans-serif; fill: #395d72; }
+      .note { font: 400 14px Arial, sans-serif; fill: #895d27; }
+      .wall { stroke: #333a40; stroke-width: 10; fill: none; stroke-linecap: square; }
+      .window { stroke: #2f8c75; stroke-width: 8; fill: none; }
+      .dimension { stroke: #637381; stroke-width: 2; fill: none; marker-start: url(#arrow); marker-end: url(#arrow); }
+      .extension { stroke: #aeb8c1; stroke-width: 1.5; stroke-dasharray: 5 5; }
+    </style>
+  </defs>
+
+  <rect width="1500" height="1080" fill="#fbfcfc"/>
+  <text x="70" y="66" class="title">Спальня 5 — план расстановки по B01</text>
+  <text x="70" y="94" class="subtitle">Масштабная концепция: геометрия оболочки — подтверждённые обмеры; мебель — предложение.</text>
+
+  <!-- Room interior: x=220…1180, y=210…912.5; scale 1 px = 4 mm -->
+  <rect x="220" y="210" width="960" height="702.5" fill="#f4efe8"/>
+
+  <!-- B01 walls; O3 and P6 remain explicitly open -->
+  <line x1="220" y1="210" x2="1180" y2="210" class="wall"/>
+  <line x1="220" y1="912.5" x2="1180" y2="912.5" class="wall"/>
+  <line x1="220" y1="210" x2="220" y2="360" class="wall"/>
+  <line x1="220" y1="760" x2="220" y2="912.5" class="wall"/>
+  <line x1="1180" y1="445" x2="1180" y2="912.5" class="wall"/>
+
+  <!-- O3: 600 + 1600 + 610 along the left short wall -->
+  <line x1="209" y1="360" x2="209" y2="760" class="window"/>
+  <line x1="231" y1="360" x2="231" y2="760" class="window"/>
+  <line x1="196" y1="360" x2="244" y2="360" class="window"/>
+  <line x1="196" y1="760" x2="244" y2="760" class="window"/>
+  <text x="170" y="565" class="label" transform="rotate(-90 170 565)">O3 · 1600</text>
+
+  <!-- P6: confirmed 940-mm open passage; no door swing is assumed -->
+  <line x1="1180" y1="210" x2="1180" y2="445" stroke="#d29047" stroke-width="6" stroke-dasharray="14 9"/>
+  <text x="1220" y="330" class="label" transform="rotate(-90 1220 330)">P6 · 940</text>
+  <text x="1250" y="372" class="note" transform="rotate(-90 1250 372)">открытый проход; дверь/H н/д</text>
+
+  <!-- R-05 is deliberately a non-dimensional protected zone, not an invented radiator size -->
+  <rect x="222" y="385" width="40" height="350" fill="url(#hatch)" stroke="#c98b45" stroke-width="2" stroke-dasharray="7 5"/>
+  <text x="287" y="560" class="note" transform="rotate(-90 287 560)">R-05 под O3 — габарит, ось и H н/д</text>
+
+  <!-- Proposal: shallow vanity niche 850 x 380 -->
+  <rect x="295" y="210" width="212.5" height="95" rx="8" fill="#efe0ce" stroke="#a76e42" stroke-width="3"/>
+  <path d="M 320 230 h 92 a 45 45 0 0 1 0 70 h -92 z" fill="none" stroke="#a76e42" stroke-width="3"/>
+  <rect x="342" y="290" width="100" height="15" fill="#fff9f0" stroke="#a76e42" stroke-width="2"/>
+  <text x="401" y="332" text-anchor="middle" class="label">ниша / столик</text>
+  <text x="401" y="353" text-anchor="middle" class="small">850 × 380</text>
+
+  <!-- Proposal: wardrobe 1550 x 600; sliding fronts are assumed in the narrow aisle -->
+  <rect x="507.5" y="210" width="387.5" height="150" rx="4" fill="#ded7cc" stroke="#777065" stroke-width="3"/>
+  <line x1="636.7" y1="210" x2="636.7" y2="360" stroke="#a8a095" stroke-width="2"/>
+  <line x1="765.8" y1="210" x2="765.8" y2="360" stroke="#a8a095" stroke-width="2"/>
+  <text x="701" y="278" text-anchor="middle" class="label">шкаф до потолка</text>
+  <text x="701" y="301" text-anchor="middle" class="small">1550 × 600 · раздвижные фасады</text>
+
+  <!-- Clear arrival zone at P6 -->
+  <rect x="895" y="210" width="285" height="235" fill="#e7f0ec" stroke="#6b9a88" stroke-width="2" stroke-dasharray="8 5"/>
+  <text x="1038" y="300" text-anchor="middle" class="label">свободная зона P6</text>
+  <text x="1038" y="322" text-anchor="middle" class="small">1140 × 940</text>
+
+  <!-- Proposal: bed 1400 x 2000, headboard at the right/bottom end away from P6 -->
+  <rect x="680" y="562.5" width="500" height="350" rx="18" fill="#d9c5b3" stroke="#806c5d" stroke-width="3"/>
+  <rect x="1147" y="562.5" width="33" height="350" rx="8" fill="#b99d85"/>
+  <rect x="700" y="580" width="410" height="92" rx="16" fill="#f8f4ed"/>
+  <rect x="700" y="672" width="410" height="200" rx="20" fill="#eee6db"/>
+  <line x1="1010" y1="580" x2="1010" y2="872" stroke="#c6b6a5" stroke-width="2"/>
+  <text x="930" y="735" text-anchor="middle" class="label">кровать 1400 × 2000</text>
+  <text x="930" y="758" text-anchor="middle" class="small">изголовье на правой короткой стене</text>
+
+  <!-- The actual 810-mm circulation strip -->
+  <rect x="220" y="360" width="675" height="202.5" fill="#f7f9f8" stroke="#80a69a" stroke-width="2" stroke-dasharray="7 5"/>
+  <text x="560" y="470" text-anchor="middle" class="label">проход 810 мм</text>
+  <text x="560" y="492" text-anchor="middle" class="small">между шкафом 600 и кроватью 1400</text>
+
+  <!-- Dimensions -->
+  <line x1="220" y1="970" x2="1180" y2="970" class="dimension"/>
+  <line x1="220" y1="912.5" x2="220" y2="995" class="extension"/>
+  <line x1="1180" y1="912.5" x2="1180" y2="995" class="extension"/>
+  <text x="700" y="957" text-anchor="middle" class="dim">3840 мм · B01</text>
+  <line x1="130" y1="210" x2="130" y2="912.5" class="dimension"/>
+  <line x1="155" y1="210" x2="220" y2="210" class="extension"/>
+  <line x1="155" y1="912.5" x2="220" y2="912.5" class="extension"/>
+  <text x="115" y="565" class="dim" transform="rotate(-90 115 565)">2810 мм · B01</text>
+  <line x1="220" y1="1015" x2="370" y2="1015" class="dimension"/>
+  <line x1="220" y1="760" x2="220" y2="1035" class="extension"/>
+  <line x1="370" y1="760" x2="370" y2="1035" class="extension"/>
+  <text x="295" y="1005" text-anchor="middle" class="dim">610</text>
+  <line x1="220" y1="1050" x2="620" y2="1050" class="dimension"/>
+  <line x1="220" y1="360" x2="220" y2="1068" class="extension"/>
+  <line x1="620" y1="360" x2="620" y2="1068" class="extension"/>
+  <text x="420" y="1040" text-anchor="middle" class="dim">O3 = 1600</text>
+
+  <!-- Evidence panel -->
+  <rect x="1215" y="180" width="235" height="720" rx="12" fill="#ffffff" stroke="#d7dde1" stroke-width="2"/>
+  <text x="1240" y="222" class="label">Что зафиксировано</text>
+  <text x="1240" y="252" class="small">• оболочка: 3840 × 2810</text>
+  <text x="1240" y="276" class="small">• высота: 2750</text>
+  <text x="1240" y="300" class="small">• O3: 600 + 1600 + 610</text>
+  <text x="1240" y="324" class="small">• P6: открытый 940</text>
+  <text x="1240" y="348" class="small">• R-05: под O3</text>
+  <text x="1240" y="392" class="label">Что не выдумываем</text>
+  <text x="1240" y="422" class="small">• тип/размер радиатора</text>
+  <text x="1240" y="446" class="small">• высота подоконника</text>
+  <text x="1240" y="470" class="small">• дверь и её открывание</text>
+  <text x="1240" y="494" class="small">• контур/H понижения P6</text>
+  <text x="1240" y="538" class="label">Перед заказом</text>
+  <text x="1240" y="568" class="small">снять эти четыре точки</text>
+  <text x="1240" y="592" class="small">на объекте и сверить</text>
+  <text x="1240" y="616" class="small">шаг фасадов шкафа.</text>
+  <line x1="1240" y1="656" x2="1425" y2="656" stroke="#d7dde1" stroke-width="2"/>
+  <text x="1240" y="688" class="note">Предложение мебели:</text>
+  <text x="1240" y="712" class="small">кровать 1400×2000;</text>
+  <text x="1240" y="736" class="small">шкаф 1550×600;</text>
+  <text x="1240" y="760" class="small">ниша 850×380.</text>
+  <text x="1240" y="812" class="note">Не рабочий чертёж.</text>
+  <text x="1240" y="836" class="small">Все новые размеры —</text>
+  <text x="1240" y="860" class="small">к согласованию.</text>
+</svg>

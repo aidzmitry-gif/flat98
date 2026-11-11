@@ -1,0 +1,21 @@
+APT-001 / ПРИХОЖАЯ / ВАРИАНТ C / ДВЕРЦЫ И ПРОХОД v34
+Инструмент: ImageGen, редактирование по образцу.
+Исходная визуализация: D:\6 Проекты\Квартира\Прихожая\57_прихожая_C_шкаф_внутри_v33.png
+
+Use case: precise-object-edit
+Asset type: photorealistic interior visualization demonstrating ACTUALLY OPENABLE cabinet doors.
+
+Edit the provided image of the same entryway. The user says there is NO WALL to the LEFT of this cabinet, and the apparently blank upper cabinet elements should open. The image must fix both mistakes.
+
+KEEP the same floor plan and same approximate view from the kitchen side towards the black entrance door on the right. Keep the furniture sequence along the single left-hand wall: the closed-cabinet block is at the corridor end, further from the entrance door; the olive open bench-and-hooks alcove is next to the entrance door. Keep the same oak, olive, black door and light-oak floor; keep the bench, dry slippers drawer, 2–3 pairs of outdoor shoes directly on the floor, hooks for jackets, and mirrored outer face of the wardrobe door. The wall length is approximately 1675 mm; wardrobe block approximately 850 mm wide and 580 mm deep; bench approximately 775 mm wide. This is the SAME design, do not move or turn any part onto a different wall.
+
+Most important, remove the beige side return wall seen along the extreme left of the reference. The wardrobe's left end is exposed to an OPEN CONTINUATION OF THE CORRIDOR; the floor flows continuously to the left past the visible end of the cabinet. There is NO perpendicular side wall, return, column, partition, doorframe, solid infill, or enclosed niche at the wardrobe's left end. Show a little of the genuinely open corridor beyond the left end with the same floor, leaving its distant arrangement neutral and unspecified. The wardrobe may have its necessary thin structural end panel; this is furniture, not a building wall. Widen the view slightly only if necessary to make the open left continuation visible; keep the entrance door at right.
+
+Show all storage front panels as unmistakably functional, with genuine fine door seams and visible hinges:
+(1) the far-left electrical-service compartment has its OWN full-height slim oak furniture door swung open towards the viewer, with hinges visible; its back wall carries a CLOSED small white electrical distribution box with an unobstructed clear area in front of it. No exposed wires. The exact box dimensions are not known; depict it only illustratively.
+(2) the adjacent full-height coat-compartment furniture door is swung open so three hanging jackets and a hat shelf can be seen. Put the full-height mirror on the exterior of this OPEN door; the mirror is part of the door, not a wall.
+(3) the upper cabinets ABOVE THE BENCH have two small real storage compartments with two real doors, BOTH swung open on visible hinges, exposing usable empty or lightly filled shelves. Clearly show the open doors and hinges, not static vertical slatted decorative infills. Above the service and coat compartments, do not invent a continuous blank fixed fascia: the two full-height doors reach the top of the cabinet.
+Show only thin structural cabinet side panels and dividers. These opened doors temporarily swing into the room for this demonstration; all doors must be plausible, independent and sized to match their own compartments.
+
+Natural believable perspective, practical modest entryway, no decorative false panels, no robot vacuum, no extra cabinets or second entrance, no new walls, no text or dimensions. One realistic photographic view. The wardrobe side is open to the corridor, not enclosed by a left wall.
+

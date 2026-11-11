@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1365" viewBox="0 0 1920 1365">
+<title>Прихожая C — наполнение шкафа и банкетки, v33</title>
+<desc>Эскизное внутреннее наполнение мебели вдоль стены 1675 мм по БТИ. Щит в дальней сухой части, габарит неизвестен и требует обмера. Схема не является рабочим чертежом.</desc>
+<defs><marker id="arrow" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 Z" fill="#53655f"/></marker></defs>
+<style>
+text{font-family:"Segoe UI",Arial,sans-serif;fill:#243b36}
+.top{font-size:17px;font-weight:700;letter-spacing:1.7px;fill:#2d6657}
+.title{font-size:44px;font-weight:740}
+.subtitle{font-size:20px;fill:#536961}
+.head{font-size:24px;font-weight:700}
+.callhead{font-size:20px;font-weight:700}
+.body{font-size:18px}
+.small{font-size:16px;fill:#465e56}
+.tiny{font-size:13px;fill:#51665d}
+.dimtext{font-size:16px;font-weight:700;fill:#30463e}
+.badge{font-size:15px;fill:#fff;font-weight:700}
+.badgebg{fill:#2e6657}
+.card{fill:#fff;stroke:#d9e1da;stroke-width:1.5}
+.warncard{fill:#fff8ed;stroke:#dfbc85;stroke-width:1.5}
+.guide{stroke:#aebeb4;stroke-width:1.2}
+.dim{stroke:#53655f;stroke-width:1.4}
+.wall{stroke:#334c41;stroke-width:6}
+.floor{stroke:#2d6657;stroke-width:2}
+.case{fill:#e1d6c6;stroke:#877b6a;stroke-width:1.2}
+.casewall{fill:#b9a58a;stroke:#806f59;stroke-width:1}
+.service{fill:#e5efeb;stroke:#a3bdb0;stroke-width:1}
+.coatbay{fill:#f4f0e9;stroke:#baad9c;stroke-width:1}
+.panel{fill:#e6e9e6;stroke:#7e988b;stroke-width:1.7;stroke-dasharray:5 3}
+.shelf{fill:#ad9579;stroke:#806d55;stroke-width:1}
+.alcove{fill:#e5eee2;stroke:#99b2a0;stroke-width:1}
+.cushion{fill:#b39376;stroke:#816953;stroke-width:1}
+.drawer{fill:#dcc8ac;stroke:#9e8b73;stroke-width:1}
+.hook{fill:none;stroke:#51635e;stroke-width:1.6;stroke-linecap:round}
+.shoe{fill:#816d59;stroke:#55483b;stroke-width:1;stroke-linejoin:round}
+</style>
+<rect width="1920" height="1365" fill="#f2f5f1"/>
+<text x="48" y="49" class="top">APT‑001 / ПРИХОЖАЯ / ВАРИАНТ C / НАПОЛНЕНИЕ v33</text>
+<text x="48" y="101" class="title">Что будет внутри шкафа</text>
+<text x="50" y="135" class="subtitle">Один ряд обуви на полу · банкетка у входа · щиток в дальней сухой секции</text>
+<rect x="48" y="168" width="964" height="932" class="card" rx="18"/>
+<text x="76" y="209" class="head" text-anchor="start">01   Внутреннее наполнение</text>
+<text x="76" y="237" class="small" text-anchor="start">Развёртка без мебельных дверей. От коридора к входной двери D1.</text>
+<text x="159" y="286" class="tiny" text-anchor="start">к коридору</text>
+<text x="571.75" y="286" class="tiny" text-anchor="end">к D1</text>
+<line x1="155" y1="317" x2="573.75" y2="317" class="dim" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="364.375" y="306" class="dimtext" text-anchor="middle">1675 B</text>
+<line x1="155" y1="320" x2="155" y2="336" class="guide"/>
+<line x1="573.75" y1="320" x2="573.75" y2="336" class="guide"/>
+<line x1="119" y1="351" x2="119" y2="1026" class="dim" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="106" y="688.5" transform="rotate(-90 106 688.5)" text-anchor="middle" class="dimtext">2700 P</text>
+<rect x="161.25" y="351" width="212.5" height="675" class="case"/>
+<rect x="165.75" y="355.5" width="100" height="666" class="service"/>
+<rect x="265.75" y="351" width="4.5" height="675" class="casewall"/>
+<rect x="270.25" y="355.5" width="99" height="666" class="coatbay"/>
+<rect x="161.25" y="1006" width="212.5" height="20" class="casewall"/>
+<rect x="270.25" y="488.5" width="99" height="4.5" class="shelf"/>
+<rect x="270.25" y="931" width="99" height="4.5" class="shelf"/>
+<g transform="translate(0 25)">
+<line x1="278.25" y1="563.5" x2="361.25" y2="563.5" stroke="#374b45" stroke-width="3"/>
+<path d="M285.95 579.5 l-7.7 10 v215 h22 v-215 l-7.7 -10 Z" fill="#9b9a8b" stroke="#766d5d" stroke-width="1"/>
+<path d="M311.95 582.5 l-7.7 10 v195 h22 v-195 l-7.7 -10 Z" fill="#b8aa93" stroke="#766d5d" stroke-width="1"/>
+<path d="M337.95 579.5 l-7.7 10 v225 h22 v-225 l-7.7 -10 Z" fill="#7e8277" stroke="#766d5d" stroke-width="1"/>
+<path d="M281.25 579.5 l8 -9 l8 9 M307.25 582.5 l8 -9 l8 9 M333.25 579.5 l8 -9 l8 9" fill="none" stroke="#5e675b" stroke-width="2"/>
+</g>
+<rect x="285.25" y="460.5" width="35" height="12" fill="#a99c85" rx="5"/>
+<rect x="324.25" y="468.5" width="28" height="8" fill="#c7bba9" rx="4"/>
+<rect x="291.25" y="949" width="48" height="35" fill="#b3a28b" rx="4"/>
+<rect x="179.75" y="598.5" width="72" height="155" class="panel" rx="3"/>
+<text x="215.75" y="660.5" class="tiny" text-anchor="middle">ЭЩ-03</text>
+<text x="215.75" y="681.5" class="tiny" text-anchor="middle">размер M</text>
+<circle cx="178.75" cy="403.5" r="15" class="badgebg"/><text x="178.75" y="408.5" class="badge" text-anchor="middle">1</text>
+<circle cx="283.25" cy="403.5" r="15" class="badgebg"/><text x="283.25" y="408.5" class="badge" text-anchor="middle">2</text>
+<text x="215.75" y="381" class="dimtext" text-anchor="middle">400 P</text>
+<text x="319.75" y="381" class="dimtext" text-anchor="middle">396 P</text>
+<rect x="373.75" y="351" width="193.75" height="137.5" class="case"/>
+<rect x="373.75" y="488.5" width="193.75" height="422.5" class="alcove"/>
+<line x1="470.625" y1="351" x2="470.625" y2="488.5" class="guide"/>
+<path d="M408.625 623 v9 q0 7 6 4" class="hook"/>
+<path d="M451.25 623 v9 q0 7 6 4" class="hook"/>
+<path d="M493.875 623 v9 q0 7 6 4" class="hook"/>
+<path d="M536.5 623 v9 q0 7 6 4" class="hook"/>
+<path d="M402.813 747.5 v7 q0 5 4 3" class="hook"/>
+<path d="M536.5 747.5 v7 q0 5 4 3" class="hook"/>
+<rect x="373.75" y="911" width="193.75" height="8.75" class="cushion" rx="3"/>
+<rect x="373.75" y="919.75" width="193.75" height="6.25" class="shelf"/>
+<rect x="378.25" y="926" width="92.375" height="22.5" class="drawer"/>
+<line x1="402.25" y1="937.25" x2="446.625" y2="937.25" class="guide"/>
+<path d="M396.75 1024 v-26 h12 v19 h8 q5 0 5 7 Z M440.75 1024 v-26 h12 v19 h8 q5 0 5 7 Z M504.75 1024 v-68 h14 v59 h8 q6 0 6 9 Z" class="shoe"/>
+<circle cx="391.75" cy="516" r="15" class="badgebg"/><text x="391.75" y="521" class="badge" text-anchor="middle">3</text>
+<circle cx="391.75" cy="933.5" r="15" class="badgebg"/><text x="391.75" y="938.5" class="badge" text-anchor="middle">4</text>
+<line x1="143" y1="1026" x2="585.75" y2="1026" class="floor"/>
+<line x1="161.25" y1="1031" x2="161.25" y2="1045" class="guide"/>
+<line x1="373.75" y1="1031" x2="373.75" y2="1045" class="guide"/>
+<line x1="567.5" y1="1031" x2="567.5" y2="1045" class="guide"/>
+<line x1="161.25" y1="1050" x2="373.75" y2="1050" class="dim" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<line x1="373.75" y1="1050" x2="567.5" y2="1050" class="dim" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="267.5" y="1075" class="dimtext" text-anchor="middle">850 P</text>
+<text x="470.625" y="1075" class="dimtext" text-anchor="middle">775 P</text>
+<circle cx="636" cy="327" r="15" class="badgebg"/><text x="636" y="332" class="badge" text-anchor="middle">1</text>
+<text x="660" y="333" class="callhead" text-anchor="start">Щиток · отделение 400 P</text>
+<text x="660" y="363" class="body" text-anchor="start">Размер самого щита пока неизвестен.</text>
+<text x="660" y="390" class="body" text-anchor="start">Независимая мебельная дверца.</text>
+<text x="660" y="417" class="body" text-anchor="start">Свободный подход к крышке щита.</text>
+<line x1="620" y1="442" x2="977" y2="442" class="guide"/>
+<circle cx="636" cy="474" r="15" class="badgebg"/><text x="636" y="479" class="badge" text-anchor="middle">2</text>
+<text x="660" y="480" class="callhead" text-anchor="start">Куртки · отделение 396 P</text>
+<text x="660" y="510" class="body" text-anchor="start">Штанга на высоте 1750 мм от пола.</text>
+<text x="660" y="537" class="body" text-anchor="start">Ориентир — 3–4 объёмные куртки.</text>
+<text x="660" y="564" class="body" text-anchor="start">На крепления штанги нужен запас.</text>
+<line x1="620" y1="588" x2="977" y2="588" class="guide"/>
+<circle cx="636" cy="620" r="15" class="badgebg"/><text x="636" y="625" class="badge" text-anchor="middle">3</text>
+<text x="660" y="626" class="callhead" text-anchor="start">Верхняя полка</text>
+<text x="660" y="656" class="body" text-anchor="start">Верх полки h=2150 мм.</text>
+<text x="660" y="683" class="body" text-anchor="start">Свободная высота над ней ≈532 мм.</text>
+<text x="660" y="710" class="body" text-anchor="start">Шапки и сезонные вещи.</text>
+<line x1="620" y1="734" x2="977" y2="734" class="guide"/>
+<circle cx="636" cy="766" r="15" class="badgebg"/><text x="636" y="771" class="badge" text-anchor="middle">4</text>
+<text x="660" y="772" class="callhead" text-anchor="start">Сиденье и обувь</text>
+<text x="660" y="802" class="body" text-anchor="start">Банкетка 775 × 420 мм, h=460 мм.</text>
+<text x="660" y="829" class="body" text-anchor="start">Сухой ящик для тапочек под сиденьем.</text>
+<text x="660" y="856" class="body" text-anchor="start">Снизу — один открытый ряд на полу.</text>
+<line x1="620" y1="880" x2="977" y2="880" class="guide"/>
+<text x="620" y="918" class="small" text-anchor="start">Нижняя съёмная полка h=380 мм.</text>
+<text x="620" y="945" class="small" text-anchor="start">От неё до оси штанги 1370 мм.</text>
+<text x="620" y="972" class="small" text-anchor="start">Цоколь шкафа 80 мм. Материал 18 мм.</text>
+<text x="620" y="999" class="small" text-anchor="start">Все внутренние размеры — эскиз P.</text>
+<rect x="1030" y="168" width="842" height="468" class="card" rx="18"/>
+<text x="1058" y="209" class="head" text-anchor="start">02   Банкетка в разрезе</text>
+<text x="1058" y="237" class="small" text-anchor="start">Два участка одного сиденья · высота 460 мм</text>
+<text x="1080" y="275" class="callhead" text-anchor="start">Со стороны шкафа</text>
+<text x="1470" y="275" class="callhead" text-anchor="start">Со стороны входной двери</text>
+<line x1="1090" y1="355" x2="1090" y2="540" class="wall"/>
+<line x1="1086" y1="540" x2="1296" y2="540" class="floor"/>
+<rect x="1090" y="392.8" width="134.4" height="11.2" class="cushion" rx="2"/>
+<rect x="1090" y="404" width="134.4" height="8" class="shelf"/>
+<line x1="1090" y1="330" x2="1224.4" y2="330" class="dim" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="1157.2" y="321" class="dimtext" text-anchor="middle">420 P</text>
+<rect x="1090" y="412" width="134.4" height="28.8" class="drawer"/>
+<line x1="1186" y1="425" x2="1210" y2="425" class="guide"/>
+<line x1="1245" y1="440.8" x2="1245" y2="540" class="dim" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="1254" y="495.4" class="dimtext" text-anchor="start">310</text>
+<path d="M1127 538 v-28 h20 v20 h15 q8 0 8 9 Z" class="shoe"/>
+<line x1="1470" y1="355" x2="1470" y2="540" class="wall"/>
+<line x1="1466" y1="540" x2="1676" y2="540" class="floor"/>
+<rect x="1470" y="392.8" width="134.4" height="11.2" class="cushion" rx="2"/>
+<rect x="1470" y="404" width="134.4" height="8" class="shelf"/>
+<line x1="1470" y1="330" x2="1604.4" y2="330" class="dim" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="1537.2" y="321" class="dimtext" text-anchor="middle">420 P</text>
+<line x1="1625" y1="412" x2="1625" y2="540" class="dim" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="1634" y="481" class="dimtext" text-anchor="start">400</text>
+<path d="M1507 538 v-70 h20 v61 h15 q8 0 8 9 Z" class="shoe"/>
+<text x="1090" y="585" class="small" text-anchor="start">ящик ≈370 × 380 × 90 P</text>
+<text x="1470" y="585" class="small" text-anchor="start">ботинки стоят на общем полу</text>
+<text x="1058" y="614" class="tiny" text-anchor="start">Размеры ящика внешние. Полезная высота меньше после установки направляющих.</text>
+<rect x="1030" y="652" width="842" height="448" class="card" rx="18"/>
+<text x="1058" y="695" class="head" text-anchor="start">03   Глубина и устройство шкафа</text>
+<text x="1058" y="723" class="small" text-anchor="start">План шкафа · размер по глубине условный</text>
+<line x1="1080" y1="794" x2="1080" y2="1036" class="wall"/>
+<rect x="1083" y="796" width="280" height="230" class="coatbay"/>
+<rect x="1354" y="796" width="9" height="230" class="casewall"/>
+<line x1="1095" y1="1036" x2="1363" y2="1036" class="floor"/>
+<line x1="1080" y1="767" x2="1363" y2="767" class="dim" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="1221" y="757" class="dimtext" text-anchor="middle">580 P с фасадом</text>
+<line x1="1093" y1="1005" x2="1347" y2="1005" class="dim" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="1220" y="996" class="small" text-anchor="middle">≈550–555 P внутри</text>
+<circle cx="1222" cy="895" r="13" fill="#748b80" stroke="#3a554a" stroke-width="2"/>
+<text x="1222" y="934" class="tiny" text-anchor="middle">ось штанги</text>
+<text x="1408" y="799" class="body" text-anchor="start">Обычная штанга вдоль фасада.</text>
+<text x="1408" y="831" class="body" text-anchor="start">Плечики и объём курток примерить.</text>
+<text x="1408" y="875" class="body" text-anchor="start">Задняя стенка в зоне щита</text>
+<text x="1408" y="902" class="body" text-anchor="start">зависит от корпуса и кабелей.</text>
+<text x="1408" y="946" class="body" text-anchor="start">Розетки E-03 привязать отдельно</text>
+<text x="1408" y="973" class="body" text-anchor="start">к доступной сухой зоне.</text>
+<text x="1058" y="1074" class="small" text-anchor="start">При 18-мм деталях 400 + 396 + 3 × 18 = 850 мм.</text>
+<rect x="48" y="1118" width="1824" height="210" class="warncard" rx="18"/>
+<text x="76" y="1157" class="head" text-anchor="start">Размер щита ещё не измерен</text>
+<text x="76" y="1191" class="body" text-anchor="start">400 мм — предварительная ширина отделения, а не ширина щита. После обмера щита, вводов и его дверцы электрик определит необходимый доступ.</text>
+<text x="76" y="1223" class="body" text-anchor="start">Дверцы шкафа, крепление банкетки и положение розеток согласуются после проверки на месте. Место для щита находится дальше от входной двери.</text>
+<text x="76" y="1255" class="body" text-anchor="start">Габарит по стене · 25 + 850 + 775 + 25 = 1675 мм по B01. Потолок 2750 мм по точкам S09. Высота корпуса 2700 мм принята для эскиза.</text>
+<text x="76" y="1294" class="small" text-anchor="start">B — план БТИ · P — эскиз · M — замерить. База 850/775 соответствует варианту C v32. Размеры в миллиметрах.</text>
+</svg>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1100" viewBox="0 0 1800 1100">
+  <defs>
+    <style>
+      .title{font:700 32px 'Segoe UI',Arial,sans-serif;fill:#17312f}
+      .subtitle{font:400 16px 'Segoe UI',Arial,sans-serif;fill:#58706b}
+      .h2{font:700 22px 'Segoe UI',Arial,sans-serif;fill:#17312f}
+      .h3{font:700 16px 'Segoe UI',Arial,sans-serif;fill:#203c38}
+      .body{font:400 14px 'Segoe UI',Arial,sans-serif;fill:#334844}
+      .small{font:400 12.5px 'Segoe UI',Arial,sans-serif;fill:#536864}
+      .micro{font:400 11px 'Segoe UI',Arial,sans-serif;fill:#62736f}
+      .bold{font-weight:700;fill:#17312f}
+      .wall{stroke:#263c38;stroke-width:5;fill:none;stroke-linecap:square}
+      .dim{stroke:#317087;stroke-width:1.6;fill:none;marker-start:url(#arr);marker-end:url(#arr)}
+      .guide{stroke:#9aaba7;stroke-width:1.2;fill:none;stroke-dasharray:6 5}
+      .leader{stroke:#6e817d;stroke-width:1.2;fill:none}
+      .card{fill:#fffefa;stroke:#cbd5d1;stroke-width:1.5}
+      .bed{fill:#dbe8d7;stroke:#587762;stroke-width:2}
+      .wood{fill:#e6d1a3;stroke:#8c7144;stroke-width:1.7}
+      .sport{fill:#e7eee2;stroke:#667d62;stroke-width:1.7}
+      .mat{fill:#e5ece3;fill-opacity:.72;stroke:#6e8d75;stroke-width:1.5;stroke-dasharray:7 5}
+      .desk{fill:#f3ead7;stroke:#ad8a4e;stroke-width:1.7}
+      .measure{fill:#f8e5dc;stroke:#b36f56;stroke-width:1.2}
+      .b01{fill:#e7f0f3;stroke:#477b8d;stroke-width:1.2}
+      .real{fill:#e4f0e8;stroke:#577762;stroke-width:1.2}
+      .proposed{fill:#f5edda;stroke:#ad8a4e;stroke-width:1.2}
+      .warn{fill:#fff4e8;stroke:#bd7347;stroke-width:1.3}
+      .stop{fill:#fff1ee;stroke:#b15f4e;stroke-width:1.5}
+    </style>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse">
+      <path d="M8,1 L1,4 L8,7" fill="none" stroke="#317087" stroke-width="1.4"/>
+    </marker>
+    <pattern id="radiator" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#db8d68" stroke-width="3"/>
+    </pattern>
+  </defs>
+
+  <rect width="1800" height="1100" fill="#f7f5ef"/>
+  <text x="55" y="52" class="title">Детская B01 — зеркальный вариант E по референсу</text>
+  <text x="55" y="81" class="subtitle">Вид от входа: спорт слева · окно и два рабочих места по центру · двухъярусная кровать справа · без напольных штор</text>
+  <rect x="1505" y="31" width="240" height="49" rx="9" class="measure"/>
+  <text x="1625" y="61" text-anchor="middle" class="h3" fill="#8b4e3a">НЕ В ПРОИЗВОДСТВО</text>
+
+  <!-- PLAN -->
+  <rect x="55" y="112" width="1040" height="760" rx="14" class="card"/>
+  <text x="82" y="151" class="h2">1. План в наших координатах</text>
+  <text x="82" y="176" class="small">X: вход → окно. Y: левая стена со спортом → правая стена с кроватью. Масштабная основа: 3825 R × 2810 B01.</text>
+
+  <g aria-label="room plan">
+    <!-- room: 3825 × 2810 at scale 0.17 -->
+    <line x1="160" y1="230" x2="810" y2="230" class="wall"/>
+    <line x1="160" y1="708" x2="810" y2="708" class="wall"/>
+    <line x1="810" y1="230" x2="810" y2="708" class="wall"/>
+    <line x1="160" y1="385" x2="160" y2="708" class="wall"/>
+    <line x1="160" y1="230" x2="160" y2="385" stroke="#477b8d" stroke-width="3" stroke-dasharray="7 5"/>
+    <text x="137" y="308" text-anchor="middle" class="micro" transform="rotate(-90 137 308)">910 B01 · чистый вход M</text>
+
+    <!-- viewpoint -->
+    <path d="M187 447 L245 447 M231 435 L245 447 L231 459" stroke="#317087" stroke-width="3" fill="none"/>
+    <text x="188" y="432" class="micro bold">вид от входа</text>
+
+    <!-- window / unknown radiator -->
+    <line x1="810" y1="334" x2="810" y2="606" stroke="#4a9bb2" stroke-width="10"/>
+    <line x1="822" y1="334" x2="822" y2="606" stroke="#8fc2cf" stroke-width="3"/>
+    <text x="827" y="324" text-anchor="end" class="micro bold">O2 1600 B · створки M</text>
+    <rect x="786" y="372" width="24" height="195" fill="url(#radiator)" stroke="#b36f56" stroke-width="1.2" stroke-dasharray="5 4"/>
+    <text x="782" y="470" text-anchor="middle" class="micro" transform="rotate(-90 782 470)">R-02 габарит / ось / клапан — M</text>
+
+    <!-- entry wardrobe -->
+    <rect x="160" y="487" width="102" height="221" rx="5" class="wood"/>
+    <text x="211" y="581" text-anchor="middle" class="h3">M1</text>
+    <text x="211" y="603" text-anchor="middle" class="small">шкаф</text>
+    <text x="211" y="623" text-anchor="middle" class="micro">1300×600 P</text>
+
+    <!-- sports frame on LEFT wall -->
+    <rect x="296" y="230" width="255" height="51" rx="5" class="sport"/>
+    <rect x="296" y="230" width="255" height="119" rx="7" class="mat"/>
+    <line x1="316" y1="242" x2="531" y2="242" stroke="#667d62" stroke-width="6" stroke-linecap="round"/>
+    <line x1="326" y1="242" x2="326" y2="278" stroke="#667d62" stroke-width="3"/>
+    <line x1="351" y1="242" x2="351" y2="278" stroke="#667d62" stroke-width="3"/>
+    <line x1="376" y1="242" x2="376" y2="278" stroke="#667d62" stroke-width="3"/>
+    <line x1="401" y1="242" x2="401" y2="278" stroke="#667d62" stroke-width="3"/>
+    <text x="424" y="301" text-anchor="middle" class="h3">S1 · спорт СЛЕВА</text>
+    <text x="424" y="321" text-anchor="middle" class="micro">рама 1500×300 P · мат до 700 P</text>
+    <text x="424" y="339" text-anchor="middle" class="micro">анкеры / зона падения / нагрузка — M</text>
+
+    <!-- shallow storage near sport wall -->
+    <rect x="551" y="230" width="174" height="60" rx="5" fill="#e6eee7" stroke="#738f79" stroke-width="1.5"/>
+    <text x="638" y="255" text-anchor="middle" class="h3">S2 · хранение</text>
+    <text x="638" y="275" text-anchor="middle" class="micro">1025×350 P</text>
+
+    <!-- bunk on RIGHT wall -->
+    <rect x="296" y="529" width="357" height="179" rx="8" class="bed" stroke-dasharray="8 5"/>
+    <rect x="300" y="538" width="349" height="170" rx="7" fill="#e9f0e5" stroke="#587762" stroke-width="1.5"/>
+    <text x="474" y="594" text-anchor="middle" class="h3">M2 · кровать СПРАВА</text>
+    <text x="474" y="616" text-anchor="middle" class="small">2×900×2000</text>
+    <text x="474" y="638" text-anchor="middle" class="micro">визуал: ≈2050×1000; предел ≤2100×1050 P</text>
+    <rect x="565" y="529" width="68" height="28" rx="4" class="proposed"/>
+    <line x1="577" y1="534" x2="577" y2="552" stroke="#8c7144" stroke-width="2"/>
+    <line x1="591" y1="534" x2="591" y2="552" stroke="#8c7144" stroke-width="2"/>
+    <line x1="605" y1="534" x2="605" y2="552" stroke="#8c7144" stroke-width="2"/>
+    <line x1="619" y1="534" x2="619" y2="552" stroke="#8c7144" stroke-width="2"/>
+    <text x="599" y="519" text-anchor="middle" class="micro bold">лестница внутри конверта</text>
+
+    <!-- conditional desk under window, shifted away from bunk -->
+    <rect x="725" y="281" width="85" height="238" rx="4" class="desk" fill-opacity=".72"/>
+    <text x="758" y="401" text-anchor="middle" class="micro bold" transform="rotate(-90 758 401)">M5 · 1400×500 P · только после R-02</text>
+    <rect x="615" y="295" width="110" height="100" rx="24" fill="#f1eee8" stroke="#9b9386" stroke-width="1.3"/>
+    <rect x="615" y="407" width="110" height="100" rx="24" fill="#f1eee8" stroke="#9b9386" stroke-width="1.3"/>
+    <text x="670" y="348" text-anchor="middle" class="micro">место 1</text>
+    <text x="670" y="460" text-anchor="middle" class="micro">место 2</text>
+    <rect x="777" y="372" width="33" height="147" fill="#fff1ee" fill-opacity=".58" stroke="#b15f4e" stroke-width="1.4" stroke-dasharray="6 4"/>
+    <text x="733" y="542" class="micro" fill="#8b4e3a">пересечение с R-02 — стоп выпуска</text>
+
+    <!-- aisle calculations -->
+    <rect x="296" y="349" width="319" height="180" fill="#edf4e9" fill-opacity=".47"/>
+    <text x="450" y="420" text-anchor="middle" class="h3">центральный проход</text>
+    <text x="450" y="444" text-anchor="middle" class="small">с матом: 2810−1050−700 = 1060 B</text>
+    <text x="450" y="467" text-anchor="middle" class="small">со сложенным спортом: 1460 B</text>
+    <text x="450" y="489" text-anchor="middle" class="micro">не заказные числа до 3 поперечных обмеров</text>
+    <line x1="675" y1="349" x2="675" y2="529" class="dim"/>
+    <text x="691" y="439" text-anchor="middle" class="micro bold" transform="rotate(-90 691 439)">1060 B</text>
+
+    <!-- dimensions -->
+    <line x1="160" y1="754" x2="296" y2="754" class="dim"/>
+    <line x1="296" y1="754" x2="653" y2="754" class="dim"/>
+    <line x1="653" y1="754" x2="810" y2="754" class="dim"/>
+    <text x="228" y="744" text-anchor="middle" class="small bold">800 P</text>
+    <text x="474" y="744" text-anchor="middle" class="small bold">L≤2100 P</text>
+    <text x="732" y="744" text-anchor="middle" class="small bold">≥925 расчёт R</text>
+    <line x1="160" y1="787" x2="810" y2="787" class="dim"/>
+    <text x="485" y="810" text-anchor="middle" class="small bold">3825 R — минимальная реальная длинная стена</text>
+    <line x1="866" y1="230" x2="866" y2="708" class="dim"/>
+    <text x="885" y="469" text-anchor="middle" class="small bold" transform="rotate(-90 885 469)">2810 B01 · проверить в 3 сечениях</text>
+
+    <!-- coordinate labels -->
+    <text x="160" y="834" class="micro bold">X=0 · вход</text>
+    <text x="810" y="834" text-anchor="end" class="micro bold">X=3825 · оконная стена</text>
+    <text x="928" y="257" class="micro bold">Y=0 · спорт</text>
+    <text x="928" y="703" class="micro bold">Y=2810 · кровать</text>
+  </g>
+
+  <!-- FRONT / FACTS -->
+  <rect x="1120" y="112" width="625" height="760" rx="14" class="card"/>
+  <text x="1147" y="151" class="h2">2. Что именно зеркалим</text>
+  <text x="1147" y="176" class="small">Фронтальный принцип из референса, но без копирования его неизвестной геометрии.</text>
+
+  <g aria-label="front mirrored composition">
+    <line x1="1160" y1="216" x2="1705" y2="216" stroke="#8c9a96" stroke-width="3"/>
+    <line x1="1160" y1="490" x2="1705" y2="490" stroke="#263c38" stroke-width="4"/>
+    <rect x="1175" y="255" width="105" height="235" rx="6" class="sport"/>
+    <line x1="1195" y1="278" x2="1260" y2="278" stroke="#667d62" stroke-width="8" stroke-linecap="round"/>
+    <line x1="1202" y1="278" x2="1202" y2="430" stroke="#667d62" stroke-width="5"/>
+    <line x1="1230" y1="278" x2="1230" y2="430" stroke="#667d62" stroke-width="5"/>
+    <line x1="1258" y1="278" x2="1258" y2="430" stroke="#667d62" stroke-width="5"/>
+    <circle cx="1212" cy="362" r="12" fill="none" stroke="#8c7144" stroke-width="5"/>
+    <circle cx="1248" cy="362" r="12" fill="none" stroke="#8c7144" stroke-width="5"/>
+    <text x="1227" y="514" text-anchor="middle" class="micro bold">СЛЕВА</text>
+    <text x="1227" y="530" text-anchor="middle" class="micro">спорт + мат</text>
+
+    <rect x="1310" y="254" width="210" height="154" rx="4" fill="#eef3f1" stroke="#4a9bb2" stroke-width="4"/>
+    <line x1="1415" y1="254" x2="1415" y2="408" stroke="#8fc2cf" stroke-width="3"/>
+    <rect x="1295" y="412" width="240" height="20" rx="4" class="desk"/>
+    <rect x="1340" y="434" width="58" height="54" rx="18" fill="#eeeae3" stroke="#9b9386"/>
+    <rect x="1432" y="434" width="58" height="54" rx="18" fill="#eeeae3" stroke="#9b9386"/>
+    <rect x="1394" y="431" width="42" height="57" fill="url(#radiator)" opacity=".8"/>
+    <text x="1415" y="514" text-anchor="middle" class="micro bold">ПО ЦЕНТРУ</text>
+    <text x="1415" y="530" text-anchor="middle" class="micro">O2 + плиссе + 2 места</text>
+
+    <rect x="1550" y="263" width="138" height="227" rx="6" class="bed"/>
+    <line x1="1558" y1="337" x2="1680" y2="337" stroke="#587762" stroke-width="12"/>
+    <line x1="1558" y1="426" x2="1680" y2="426" stroke="#587762" stroke-width="12"/>
+    <line x1="1662" y1="337" x2="1662" y2="490" stroke="#8c7144" stroke-width="7"/>
+    <line x1="1682" y1="337" x2="1682" y2="490" stroke="#8c7144" stroke-width="7"/>
+    <line x1="1662" y1="380" x2="1682" y2="380" stroke="#8c7144" stroke-width="5"/>
+    <line x1="1662" y1="422" x2="1682" y2="422" stroke="#8c7144" stroke-width="5"/>
+    <line x1="1662" y1="464" x2="1682" y2="464" stroke="#8c7144" stroke-width="5"/>
+    <text x="1619" y="514" text-anchor="middle" class="micro bold">СПРАВА</text>
+    <text x="1619" y="530" text-anchor="middle" class="micro">2 яруса + лестница</text>
+  </g>
+
+  <rect x="1147" y="558" width="571" height="141" rx="10" class="real"/>
+  <text x="1168" y="584" class="h3">Расчёт, который уже держится на R</text>
+  <text x="1168" y="610" class="body">800 + 2100 + 925 = 3825 мм</text>
+  <text x="1168" y="634" class="small">Кровать с внешней длиной ≤2100 помещается вдоль меньшей</text>
+  <text x="1168" y="654" class="small">реальной стены. При H≤1850 остаток до потолка:</text>
+  <text x="1168" y="680" class="body">2712 − 1850 = 862 мм</text>
+
+  <rect x="1147" y="716" width="571" height="125" rx="10" class="stop"/>
+  <text x="1168" y="743" class="h3" fill="#8b4e3a">Стол у окна — условный, а не заказной</text>
+  <text x="1168" y="768" class="small">Размер 1400×500 P вписывается в композицию, но R-02,</text>
+  <text x="1168" y="789" class="small">подоконник, клапан, трубы и сервисный зазор не измерены.</text>
+  <text x="1168" y="816" class="small bold">До обмера: только открытая снизу съёмная столешница; выпуск запрещён.</text>
+
+  <!-- LEGEND / STOP POINTS -->
+  <rect x="55" y="900" width="1690" height="155" rx="14" class="card"/>
+  <text x="82" y="934" class="h2">3. Статус размеров и обязательные стоп-точки</text>
+  <rect x="82" y="954" width="30" height="22" rx="4" class="real"/><text x="122" y="970" class="small"><tspan class="bold">R</tspan> — реально измерено</text>
+  <rect x="295" y="954" width="30" height="22" rx="4" class="b01"/><text x="335" y="970" class="small"><tspan class="bold">B</tspan> — из B01, перепроверить</text>
+  <rect x="560" y="954" width="30" height="22" rx="4" class="proposed"/><text x="600" y="970" class="small"><tspan class="bold">P</tspan> — проектный предел</text>
+  <rect x="800" y="954" width="30" height="22" rx="4" class="measure"/><text x="840" y="970" class="small"><tspan class="bold">M</tspan> — нужен обмер / паспорт</text>
+
+  <text x="82" y="1003" class="small bold">До заказа:</text>
+  <text x="165" y="1003" class="small">3 ширины + диагонали · чистый вход · O2/створки/ручки · подоконник и полный R-02 · выбранная кровать · выбранный спортмодуль и анкеры.</text>
+  <text x="82" y="1029" class="small bold">Окно:</text>
+  <text x="138" y="1029" class="small">две отдельные бесшнуровые плиссе «день–ночь» по фактическим створкам; напольных штор нет.</text>
+  <text x="1050" y="1029" class="small" fill="#8b4e3a">Визуализация показывает композицию; размеры задаёт этот лист после закрытия M.</text>
+</svg>

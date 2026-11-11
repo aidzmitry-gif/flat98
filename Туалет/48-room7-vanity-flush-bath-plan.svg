@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="980" viewBox="0 0 1280 980" role="img" aria-labelledby="title desc">
+  <title id="title">Комната 7 — тумба вплотную к ванне</title>
+  <desc id="desc">Масштабная план-схема санузла B01 2090 на 1740 миллиметров. Тумба с раковиной 500 на 350 миллиметров занимает x 700 до 1200 и примыкает к ванне по линии x 700. Унитаз, ванна и люк ВМ-07 остаются на своих местах.</desc>
+  <style>
+    .bg { fill:#171817; } .panel { fill:#232522; stroke:#8d918a; stroke-width:2; }
+    .wall { fill:none; stroke:#f0eee7; stroke-width:7; } .door { fill:none; stroke:#7bbcf0; stroke-width:4; stroke-dasharray:9 6; }
+    .fixture { fill:#3c3028; stroke:#d6b18a; stroke-width:2.5; } .vanity { fill:#51402f; stroke:#e0a95c; stroke-width:3; }
+    .service { fill:#352e53; stroke:#a48afb; stroke-width:2.5; } .seam { stroke:#f1c78f; stroke-width:2; stroke-dasharray:3 3; }
+    .dim { fill:none; stroke:#a8aaa4; stroke-width:1.4; stroke-dasharray:5 4; } .arrow { fill:none; stroke:#41ce85; stroke-width:2.2; }
+    .heading { fill:#f3f0e8; font:700 25px Arial,sans-serif; } .muted { fill:#a8aaa4; font:16px Arial,sans-serif; }
+    .small { fill:#a8aaa4; font:14px Arial,sans-serif; } .strong { fill:#f3f0e8; font:700 17px Arial,sans-serif; }
+    .bronze { fill:#d5b07f; font:700 16px Arial,sans-serif; } .green { fill:#41ce85; font:700 16px Arial,sans-serif; }
+    .warn { fill:#f3a458; font:14px Arial,sans-serif; } .cross { stroke:#f38f68; stroke-width:3; }
+  </style>
+  <rect class="bg" width="1280" height="980"/>
+  <text class="heading" x="70" y="58">Комната 7 · тумба вплотную к ванне</text>
+  <text class="muted" x="70" y="86">B01 2090 × 1740 мм · масштабный план · все размеры в миллиметрах</text>
+
+  <!-- Exact scale 0.35 px/mm. Origin: X=95, Y=180. -->
+  <rect class="panel" x="95" y="180" width="731.5" height="609"/>
+  <path class="wall" d="M95 180 H361 M644.5 180 H826.5 V789 H95 V180"/>
+  <path class="door" d="M361 180 H644.5"/>
+  <text class="small" x="502.75" y="211" text-anchor="middle">D4 · наружу</text>
+  <text class="small" x="228" y="142" text-anchor="middle">760</text>
+  <text class="small" x="502.75" y="142" text-anchor="middle">810</text>
+  <text class="small" x="735.5" y="142" text-anchor="middle">520</text>
+
+  <!-- fixed fixtures -->
+  <rect class="fixture" x="95" y="334" width="245" height="455" rx="11"/>
+  <text class="strong" x="217.5" y="545" text-anchor="middle">ванна</text>
+  <text class="small" x="217.5" y="568" text-anchor="middle">1300 × 700</text>
+  <text class="small" x="217.5" y="766" text-anchor="middle">душ на дальней стене</text>
+  <rect class="fixture" x="574.5" y="474" width="175" height="189" rx="38"/>
+  <text class="strong" x="662" y="574" text-anchor="middle">WC</text>
+  <text class="small" x="662" y="596" text-anchor="middle">X≈1370…1870</text>
+  <rect class="service" x="578" y="663" width="248.5" height="126"/>
+  <text class="strong" x="702" y="730" text-anchor="middle">ВМ-07</text>
+  <text class="small" x="702" y="752" text-anchor="middle">710 × 360 · доступ сохранить</text>
+
+  <!-- new vanity: x=700..1200, y=1390..1740 -->
+  <rect class="vanity" x="340" y="666.5" width="175" height="122.5" rx="4"/>
+  <line class="seam" x1="340" y1="668" x2="340" y2="787"/>
+  <text class="strong" x="427.5" y="716" text-anchor="middle">тумба + раковина</text>
+  <text class="bronze" x="427.5" y="740" text-anchor="middle">500 × 350</text>
+  <text class="small" x="427.5" y="761" text-anchor="middle">X=700…1200</text>
+  <!-- small rail shown on door-facing facade -->
+  <line x1="410" y1="676" x2="497.5" y2="676" stroke="#e0a95c" stroke-width="7" stroke-linecap="round"/>
+  <text class="small" x="530" y="681">рейка полотенца 250</text>
+
+  <!-- clearance and direction callouts -->
+  <line class="arrow" x1="340" y1="452" x2="574.5" y2="452"/>
+  <path d="M340 452 l10 -6 v12 z M574.5 452 l-10 -6 v12 z" fill="#41ce85"/>
+  <text class="green" x="457" y="438" text-anchor="middle">670 мм — проход у WC</text>
+  <line class="arrow" x1="515" y1="645" x2="578" y2="645"/>
+  <path d="M515 645 l9 -5 v10 z M578 645 l-9 -5 v10 z" fill="#41ce85"/>
+  <text class="small" x="546.5" y="633" text-anchor="middle">180 мм до ВМ‑07</text>
+
+  <!-- explanatory side panel -->
+  <rect x="875" y="150" width="350" height="600" rx="14" fill="#232522" stroke="#8d918a" stroke-width="2"/>
+  <text class="heading" x="905" y="198" font-size="21">Что изменено</text>
+  <text class="bronze" x="905" y="238">Тумба: X=700…1200</text>
+  <text class="muted" x="905" y="264">Y=1390…1740 · 500 × 350</text>
+  <text class="muted" x="905" y="297">Столешница заканчивается у ванны.</text>
+  <text class="muted" x="905" y="321">Между изделиями — только</text>
+  <text class="strong" x="905" y="347">шов 3–5 мм с герметиком.</text>
+  <text class="warn" x="905" y="391">Не заводить столешницу на ванну</text>
+  <text class="warn" x="905" y="413">и не делать жёсткую связку.</text>
+  <line x1="905" y1="452" x2="1195" y2="452" stroke="#4c504a" stroke-width="1"/>
+  <text class="strong" x="905" y="486">Ничего не переставляем</text>
+  <text class="muted" x="905" y="516">ванна — X=0…700</text>
+  <text class="muted" x="905" y="542">WC — X≈1370…1870</text>
+  <text class="muted" x="905" y="568">ВМ‑07 — X=1380…2090</text>
+  <text class="muted" x="905" y="594">проход у WC — 670 мм</text>
+  <text class="small" x="905" y="649">Ручное полотенце: рейка</text>
+  <text class="small" x="905" y="672">200–250 мм на лицевом фасаде</text>
+  <text class="small" x="905" y="695">тумбы, не в стыке с ванной.</text>
+
+  <!-- dimensions -->
+  <line class="dim" x1="95" y1="815" x2="826.5" y2="815"/>
+  <text class="small" x="460.75" y="840" text-anchor="middle">2090</text>
+  <line class="dim" x1="68" y1="180" x2="68" y2="789"/>
+  <text class="small" x="51" y="485" text-anchor="middle" transform="rotate(-90 51 485)">1740</text>
+  <text class="small" x="95" y="890">Контуры сантехники — проектная привязка; перед изготовлением тумбы проверить чистовой экран ванны, плитку и доступ к ВМ‑07.</text>
+</svg>

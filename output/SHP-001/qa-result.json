@@ -1,0 +1,1262 @@
+{
+  "project": "SHP-001",
+  "revision": 1,
+  "checkedAt": "2026-10-19",
+  "firstSufficientLazinessRung": "Rung 2 — reuse output/SHP-001/procurement-data.json, workbook-data.json, the existing SHP-001-procurement.xlsx, bundled @oai/artifact-tool, and the same native Sheet/update path. Rung 1 no-op fails because accepted traceability requires all 48 exported BOM IDs/items and all scenario references to resolve; no new dependency or abstraction is needed.",
+  "plannedCheckGroups": 12,
+  "checkGroups": {
+    "sourceAndControls": {
+      "result": "PASS",
+      "offers": 24,
+      "unpriced": 15,
+      "allowances": 4,
+      "rooms": 9,
+      "actual": {
+        "pricedNoSparesBYN": 14908.6412468,
+        "sparesBYN": 450.25187,
+        "pricedWithSparesBYN": 15358.8931168,
+        "allowancesLowBYN": 20925,
+        "allowancesHighBYN": 50575,
+        "planningLowBYN": 36283.8931168,
+        "planningHighBYN": 65933.8931168,
+        "pilotKnownBYN": 4923.674332,
+        "pilotAllowLowBYN": 265,
+        "pilotAllowHighBYN": 605,
+        "pilotPlanningLowBYN": 5188.674332,
+        "pilotPlanningHighBYN": 5528.674332,
+        "mandatoryUnpricedLines": 15
+      },
+      "expected": {
+        "pricedNoSparesBYN": 14908.6412468,
+        "sparesBYN": 450.25187,
+        "pricedWithSparesBYN": 15358.8931168,
+        "allowancesLowBYN": 20925,
+        "allowancesHighBYN": 50575,
+        "planningLowBYN": 36283.8931168,
+        "planningHighBYN": 65933.8931168,
+        "mandatoryUnpricedLines": 15,
+        "pilotKnownBYN": 4923.674332,
+        "pilotAllowLowBYN": 265,
+        "pilotAllowHighBYN": 605,
+        "pilotPlanningLowBYN": 5188.674332,
+        "pilotPlanningHighBYN": 5528.674332
+      }
+    },
+    "quantityFxAndLineTotals": {
+      "result": "PASS",
+      "formulaColumns": [
+        "packages",
+        "unit BYN",
+        "current full BOM BYN",
+        "pilot packages",
+        "pilot BYN"
+      ],
+      "formulaEdits": true
+    },
+    "packRounding": {
+      "result": "PASS",
+      "test": "5 required, 2 per pack -> 3 packages",
+      "resultValue": 3
+    },
+    "quantityAndPriceEditRestore": {
+      "result": "PASS",
+      "qtyEditRestored": true,
+      "priceBlankZeroRestored": true
+    },
+    "blankVersusZero": {
+      "result": "PASS",
+      "blankFormulaResult": "",
+      "zeroFormulaResult": ""
+    },
+    "missingAndDuplicateOffers": {
+      "result": "PASS",
+      "mandatoryUnpriced": 15,
+      "duplicateOfferIds": []
+    },
+    "stageAdditivity": {
+      "result": "PASS",
+      "pilotKnownBYN": 4923.674332,
+      "pilotAllowanceLowBYN": 265,
+      "pilotAllowanceHighBYN": 605,
+      "pilotTotalLowBYN": 5188.674332,
+      "pilotTotalHighBYN": 5528.674332,
+      "clarification": "Первый стенд — часть пилота; class admission sample items are inside full BOM and not extra buys."
+    },
+    "scenarioIds": {
+      "checkId": "C-SC1",
+      "result": "PASS",
+      "count": 42,
+      "unique": 42,
+      "ids": [
+        "SC-R01-LGT",
+        "SC-R01-WORK",
+        "SC-R01-MEAL",
+        "SC-R01-CINEMA",
+        "SC-R01-MUSIC",
+        "SC-R01-CUR",
+        "SC-R01-LEAK",
+        "SC-R01-ENE",
+        "SC-R01-TH",
+        "SC-R02-LGT",
+        "SC-R02-NIGHT",
+        "SC-R02-SLEEP",
+        "SC-R02-TH",
+        "SC-R02-CUR",
+        "SC-R03-LGT",
+        "SC-R03-ARRIVE",
+        "SC-R03-LEAVE",
+        "SC-R03-DOOR",
+        "SC-R04-LGT",
+        "SC-R04-NIGHT",
+        "SC-R04-CLEAN",
+        "SC-R05-LGT",
+        "SC-R05-SLEEP",
+        "SC-R05-WORK",
+        "SC-R05-CUR",
+        "SC-R05-TH",
+        "SC-R06-LGT",
+        "SC-R06-VENT",
+        "SC-R06-LEAK",
+        "SC-R07-LGT",
+        "SC-R07-NIGHT",
+        "SC-R07-VENT",
+        "SC-R07-LEAK",
+        "SC-R07-BOOST",
+        "SC-R08-LGT",
+        "SC-R08-TH",
+        "SC-R09-LGT",
+        "SC-R09-DOOR",
+        "SC-SYS-FIRE",
+        "SC-SYS-UPS",
+        "SC-SYS-VOICE",
+        "SC-SYS-CHAT"
+      ]
+    },
+    "scenarioTraceability": {
+      "checkId": "C-SC2",
+      "result": "PASS",
+      "requiredColumns": 10,
+      "bomRows": 48,
+      "uniqueBomIds": 48,
+      "nonemptyBomItems": 48,
+      "referenceSet": "workbook-data.bom id fields only",
+      "scenarioReferencesResolveOnlyAgainstExportedBom": true,
+      "missingFields": [],
+      "unknownBomIds": [],
+      "unknownTestIds": [],
+      "notConductedRows": 42,
+      "acceptedScenarioRows": 42,
+      "statusErrors": [],
+      "notAcceptedScenarios": [],
+      "b32IncludedRow": {
+        "id": "B32",
+        "item": "TRS3.5mm→2RCAкабель",
+        "requiredQty": 0,
+        "sourcePurchaseQty": 0,
+        "includedWith": "B31",
+        "knownMoneyFieldsRemainNull": true
+      },
+      "reason": "PASS: all 48 exported BOM rows have unique IDs and nonempty items; every SC bomIds reference resolves against workbook-data.bom only. B32 is retained as the included-with-B31 zero-quantity cable, not a purchase, allowance, or unknown price. SC-R07-BOOST remains B44/IO-BOOST-R07 with STOP gate; all physical tests remain Не проводилось."
+    },
+    "frozenScopePreservation": {
+      "checkId": "C-SC3",
+      "result": "PASS",
+      "roomCount": 9,
+      "relayCount": 16,
+      "dimmerCount": 4,
+      "curtainMotors": 3,
+      "shellyEthernetPorts": 11,
+      "baseEthernetPorts": 8,
+      "physicalEthernetPorts": 19,
+      "switchPorts": 24,
+      "spareEthernetPorts": 5,
+      "declaredNetworkPlan": true,
+      "totalsUnchanged": false,
+      "pricingDeltaScopedToAcceptedReferencesO22O23O24": true,
+      "mandatoryUnpricedLines": 15
+    },
+    "visualQA": {
+      "result": "PENDING",
+      "localRenderResult": "PASS_AFTER_A06_POLICY_REFRESH",
+      "nativeVisualResult": "PENDING_PRIMARY_FRESH_FILLED_VIEW_AFTER_G07_STOP",
+      "nativeVisualEvidence": {
+        "status": "Historical prior-run evidence; not current for A06.",
+        "method": "Chrome, live native Google Sheets view after exact-range batchUpdate; separate from local artifact-tool renders.",
+        "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1kn_19v2iP7vfcD2lUhiwyIw5pp_cf7HM_g1JOz4LGX0/edit",
+        "browser": "Chrome",
+        "tabId": "655405848",
+        "views": [
+          "Сводка: A7:D15, текущие суммы/резервы/первый стенд.",
+          "Предложения РФ РБ Китай: A24:W25, O20/O21; A26:I34 — H01-H08; A37:E41 — аудит площадок без стирания.",
+          "Сценарии: A38:J38 and F38:J38, SC-R07-BOOST only B44 and IO-BOOST-R07 with STOP gate.",
+          "Внедрение и приёмка: A12:C12 and A15:C15, complete T01/T04 sibling coverage; D12:D30 status and dropdown readback."
+        ],
+        "screenshotsMaterializedAsFiles": false,
+        "result": "Historical prior-run result only: updated T01/T04 readable at 100%; old Offers values and audit readback were confirmed then. This evidence does not verify the A06 state."
+      },
+      "tabs": [
+        {
+          "sheet": "Сводка",
+          "range": "A1:D16",
+          "file": "D:\\6 Проекты\\Квартира\\output\\SHP-001\\preview-01.png",
+          "bytes": 95307
+        },
+        {
+          "sheet": "Выбранное оборудование",
+          "range": "A1:G23",
+          "file": "D:\\6 Проекты\\Квартира\\output\\SHP-001\\preview-02.png",
+          "bytes": 118915
+        },
+        {
+          "sheet": "Выбранное оборудование",
+          "range": "A23:K52",
+          "file": "D:\\6 Проекты\\Квартира\\output\\SHP-001\\preview-02-allowances.png",
+          "bytes": 174700
+        },
+        {
+          "sheet": "Предложения РФ РБ Китай",
+          "range": "A1:N28",
+          "file": "D:\\6 Проекты\\Квартира\\output\\SHP-001\\preview-03.png",
+          "bytes": 154749
+        },
+        {
+          "sheet": "Предложения РФ РБ Китай",
+          "range": "A29:I65",
+          "file": "D:\\6 Проекты\\Квартира\\output\\SHP-001\\preview-03-audit.png",
+          "bytes": 591719
+        },
+        {
+          "sheet": "Предложения РФ РБ Китай",
+          "range": "O4:W28",
+          "file": "D:\\6 Проекты\\Квартира\\output\\SHP-001\\preview-03-source-notes.png",
+          "bytes": 341404
+        },
+        {
+          "sheet": "Сравнение решений",
+          "range": "A1:E7",
+          "file": "D:\\6 Проекты\\Квартира\\output\\SHP-001\\preview-04.png",
+          "bytes": 57037
+        },
+        {
+          "sheet": "Комнаты и точки",
+          "range": "A1:H16",
+          "file": "D:\\6 Проекты\\Квартира\\output\\SHP-001\\preview-05.png",
+          "bytes": 153549
+        },
+        {
+          "sheet": "Сценарии",
+          "range": "A1:J46",
+          "file": "D:\\6 Проекты\\Квартира\\output\\SHP-001\\preview-06.png",
+          "bytes": 835724
+        },
+        {
+          "sheet": "Внедрение и приёмка",
+          "range": "A10:E16",
+          "file": "D:\\6 Проекты\\Квартира\\output\\SHP-001\\preview-07.png",
+          "bytes": 87755
+        },
+        {
+          "sheet": "Источники и курсы",
+          "range": "A1:G76",
+          "file": "D:\\6 Проекты\\Квартира\\output\\SHP-001\\preview-08.png",
+          "bytes": 735072
+        }
+      ]
+    },
+    "nativeMimePrivacyReadback": {
+      "result": "PASS_AFTER_A06_NATIVE_BATCH",
+      "priorReadbackResult": "PASS before A06; retained historical metadata below.",
+      "expectedFolder": "12YxOdJZp88byzMzNVnj7TEcOZoeP6G5M",
+      "actualFolder": "12YxOdJZp88byzMzNVnj7TEcOZoeP6G5M",
+      "expectedMime": "application/vnd.google-apps.spreadsheet",
+      "actualMime": "application/vnd.google-apps.spreadsheet",
+      "spreadsheetId": "1kn_19v2iP7vfcD2lUhiwyIw5pp_cf7HM_g1JOz4LGX0",
+      "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1kn_19v2iP7vfcD2lUhiwyIw5pp_cf7HM_g1JOz4LGX0/edit",
+      "shared": false,
+      "permissions": [
+        {
+          "type": "user",
+          "role": "owner",
+          "displayName": "Ai Dzmitry"
+        }
+      ],
+      "timeZone": "Europe/Minsk",
+      "sourceVisibilityStatus": "permission_metadata_available",
+      "nativeTables": {
+        "result": "PASS_AFTER_A06_NATIVE_BATCH",
+        "tables": [
+          {
+            "tableId": "806872615",
+            "name": "SummaryMetrics",
+            "range": "Сводка!A6:D16",
+            "dataRows": 10,
+            "filterViewId": 584627876,
+            "status": "unchanged from frozen baseline"
+          },
+          {
+            "tableId": "197935613",
+            "name": "EquipmentStatus",
+            "range": "Выбранное оборудование!A4:N52",
+            "dataRows": 48,
+            "filterViewId": 351273494
+          },
+          {
+            "tableId": "1348077228",
+            "name": "CurrentOffers",
+            "range": "Предложения РФ РБ Китай!A4:W28",
+            "dataRows": 24,
+            "filterViewId": 1058992354
+          },
+          {
+            "tableId": "1928028284",
+            "name": "HistoricalOnly",
+            "range": "Предложения РФ РБ Китай!A29:I37",
+            "dataRows": 8,
+            "filterViewId": 1182334504
+          },
+          {
+            "tableId": "392395369",
+            "name": "PlatformAudit",
+            "range": "Предложения РФ РБ Китай!A40:E44",
+            "dataRows": 4,
+            "filterViewId": 1002848586
+          },
+          {
+            "tableId": "473182390",
+            "name": "RoomScenarios",
+            "range": "Сценарии!A4:J46",
+            "dataRows": 42,
+            "status": "unchanged from frozen baseline"
+          },
+          {
+            "tableId": "2101316682",
+            "name": "AcceptanceTests",
+            "range": "Внедрение и приёмка!A11:E30",
+            "dataRows": 19,
+            "status": "unchanged from frozen baseline"
+          },
+          {
+            "tableId": "1002665968",
+            "name": "FxRates",
+            "range": "Источники и курсы!A4:E10",
+            "dataRows": 6,
+            "filterViewId": 1181573282
+          },
+          {
+            "tableId": "1121680014",
+            "name": "SourceRegister",
+            "range": "Источники и курсы!A12:G76",
+            "dataRows": 64,
+            "filterViewId": 1576831763
+          }
+        ],
+        "affectedTablesAndFiltersVerified": 6,
+        "acceptanceStatusDropdown": {
+          "range": "Внедрение и приёмка!D12:D30",
+          "rule": [
+            "Не проводилось",
+            "В работе",
+            "PASS",
+            "FAIL",
+            "Не применимо"
+          ],
+          "validatedRowsReadBack": 19,
+          "allReadBackStatuses": "Не проводилось",
+          "extraRows31to34Cleared": true
+        },
+        "offersFilterAndAuditReadback": {
+          "currentOffersTableRange": "Предложения РФ РБ Китай!A4:W28",
+          "currentOffersFilterViewRange": "Предложения РФ РБ Китай!A4:W28",
+          "offerIdsIncluded": ["O01-O21", "O22", "O23", "O24"],
+          "historicalTableRange": "Предложения РФ РБ Китай!A29:I37",
+          "preservedH01Range": "Предложения РФ РБ Китай!A30:I30",
+          "preservedMarketplaceAuditRange": "Предложения РФ РБ Китай!A40:E44",
+          "marketplaceAuditDataRows": 4,
+          "originalGapAuditRange": "Предложения РФ РБ Китай!A47:H65",
+          "originalGapAuditOriginalRows": 18,
+          "currentUnpricedMandatory": 15,
+          "priceReferences": 24
+        }
+      }
+    }
+  },
+  "formulaErrorScan": {
+    "result": "PASS",
+    "ndjson": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+  },
+  "g07NativeReadback": {
+    "result": "PASS",
+    "writeBatch": "one atomic batch, 57 requests",
+    "localBuild": {
+      "strictJsonParse": "3/3 PASS",
+      "builderSyntax": "PASS",
+      "xlsxImportRecalculate": "PASS",
+      "xlsxBytes": 72017,
+      "xlsxSha256": "9606B397A5E7A34E463026A7805D1E156588D0314797F50ADF7E83A34E40C6F8",
+      "formulaErrors": 0,
+      "inspectSidecarBytes": 1415644,
+      "inspectSidecarSha256": "53D941057FE0D84AE937BBB01B96791C827339B6A1B8CFF1E4EA218D88E280A8"
+    },
+    "spreadsheetId": "1kn_19v2iP7vfcD2lUhiwyIw5pp_cf7HM_g1JOz4LGX0",
+    "private": true,
+    "tabs": 8,
+    "offers": 24,
+    "mandatoryUnpriced": 15,
+    "equipmentRows": 48,
+    "equipmentColumns": 14,
+    "historicalRowsPreserved": 8,
+    "platformAuditRowsPreserved": 4,
+    "originalGapAuditRowsCompared": 18,
+    "sourceRowsAdded": ["O22", "O23", "O24", "SRC-SEEED-POLICY"],
+    "affectedTableAndFilterIdsPreserved": 6,
+    "physicalTestStatuses": "19/19 Не проводилось",
+    "formulaErrors": 0,
+    "totalsBYN": {
+      "base": 14908.6412468,
+      "spares": 450.25187,
+      "withSpares": 15358.8931168,
+      "allowancesLow": 20925,
+      "allowancesHigh": 50575,
+      "planningLow": 36283.8931168,
+      "planningHigh": 65933.8931168,
+      "pilotKnown": 4923.674332,
+      "pilotAllowLow": 265,
+      "pilotAllowHigh": 605,
+      "mandatoryUnpriced": 15
+    },
+    "policy": "Belarus confirmed; China-origin delivery/intermediary/customs/other add-ons excluded by owner, not zero. Only source-established China origin is classified; USD or brand alone is not used to infer origin. Seeed policy remains supplier-specific and blocks Belarus/Russia including ultimate end use/reexport; O04/O05 are references only.",
+    "limitations": [
+      "Native filled-view visual evidence remains pending primary-owned fresh view after G07 STOP.",
+      "Physical commissioning and installation acceptance were not conducted."
+    ]
+  },
+  "g07CorrectionRetake": {
+    "result": "PASS — corrected data/text ranges; primary fresh native visual remains pending",
+    "priorPrimaryRetake": {
+      "result": "REJECT",
+      "findings": [
+        "F-A06-01: the XLSX still showed stale destination-unknown/РБ-working-assumption wording in B02/B03 gates, while current owner-confirmed Belarus was already in workbook-data and native text.",
+        "F-A06-02: B09 original audit evidence incorrectly referred to a possibly stale exchange rate; source evidence warns that the published 25 696 RUB price itself may be stale.",
+        "F-A06-03: newly changed whole-English prose remained in a Russian-language workbook area."
+      ]
+    },
+    "localBuild": {
+      "builder": "output/SHP-001/a06-build.mjs --policy-refresh",
+      "marker": "not repeated; the one authorized marker invocation preceded the original XLSX authoring",
+      "strictJsonParse": "3/3 PASS",
+      "builderSyntax": "PASS",
+      "xlsxImportRecalculate": "PASS",
+      "formulaErrors": 0,
+      "xlsxBytes": 72553,
+      "xlsxSha256": "43CF28D2DE5A1216B7D8F7E30B358F0C30381E5518D1909748FB1038CF883C92",
+      "inspectSidecarBytes": 134239,
+      "inspectSidecarSha256": "B9EF1C7005B3EC50B0DC4E5B53D451EE6B794CB654A2D9C0CA1CE3082ECDA93D",
+      "equipmentCellsComparedByBomId": 672,
+      "equipmentMismatchesAfterExport": 0,
+      "totalsBYN": {
+        "base": 14908.6412468,
+        "spares": 450.25187,
+        "withSpares": 15358.8931168,
+        "allowancesLow": 20925,
+        "allowancesHigh": 50575,
+        "planningLow": 36283.8931168,
+        "planningHigh": 65933.8931168,
+        "pilotKnown": 4923.674332,
+        "pilotAllowLow": 265,
+        "pilotAllowHigh": 605,
+        "mandatoryUnpriced": 15
+      },
+      "renderedPreviews": [
+        "preview-01.png",
+        "preview-02.png",
+        "preview-02-country-policy.png",
+        "preview-02-candidate-gates.png",
+        "preview-02-FBT4N-gate.png",
+        "preview-03.png",
+        "preview-03-audit.png",
+        "preview-03-source-notes.png",
+        "preview-08.png"
+      ],
+      "localVisualInspection": "PASS for corrected summary, equipment/source gates, B09 audit, and four source records; no layout restyling."
+    },
+    "nativeWrite": {
+      "spreadsheetId": "1kn_19v2iP7vfcD2lUhiwyIw5pp_cf7HM_g1JOz4LGX0",
+      "writeBatch": "one bounded content-only batch, 18 requests",
+      "structureOrPermissionRequests": 0,
+      "changedAreas": [
+        "Выбранное оборудование!A2; L8/N8; L9/N9; L28/N28; L29/N29; L43/N43",
+        "Сводка!D16",
+        "Предложения РФ РБ Китай!A47:H47; C51; D50:E51",
+        "Источники и курсы!B73:B76; D73:D76; F73:F76"
+      ],
+      "readback": "PASS"
+    },
+    "nativeReadback": {
+      "equipmentCoordinateCellsComparedWithXlsx": 672,
+      "equipmentCoordinateMismatches": 0,
+      "B02B03Country": "Belarus confirmed by owner, with Seeed-specific restrictions retained",
+      "B09": {
+        "evidenceSaysPublishedPriceMayBeStale": true,
+        "price": null,
+        "candidateRetained": true,
+        "allowanceLowBYN": 1000,
+        "allowanceHighBYN": 2200
+      },
+      "gapAudit": {
+        "originalRows": 18,
+        "headersRussian": true,
+        "nativeMatchesXlsx": true
+      },
+      "sourceRegister": {
+        "rows": ["O22", "O23", "O24", "SRC-SEEED-POLICY"],
+        "narrativeFieldsRussian": true,
+        "nativeMatchesXlsx": true,
+        "URLsVendorsModelsAndCurrencyCodesPreserved": true
+      },
+      "summaryTotalsUnchanged": {
+        "base": 14908.6412468,
+        "spares": 450.25187,
+        "withSpares": 15358.8931168,
+        "allowancesLow": 20925,
+        "allowancesHigh": 50575,
+        "planningLow": 36283.8931168,
+        "planningHigh": 65933.8931168,
+        "pilotKnown": 4923.674332,
+        "pilotAllowLow": 265,
+        "pilotAllowHigh": 605,
+        "mandatoryUnpriced": 15
+      },
+      "countryAndChinaPolicy": "Belarus confirmed by owner. For all China-origin supplies, delivery, intermediary, customs and other add-ons remain excluded by owner instruction, not zero. Seeed restrictions are supplier-specific; no workaround. Other-region delivery costs remain unknown.",
+      "tabs": 8,
+      "sharing": "No sharing or permission change was issued; the previously verified private state remains in place.",
+      "nativeFilledView": "PENDING primary-owned fresh Chrome view after STOP",
+      "physicalAcceptance": "19/19 statuses remain Не проводилось"
+    },
+    "retainedExceptions": [
+      "Unknown delivery/route and availability remain unknown where not source-confirmed.",
+      "O22-O24 are reference prices, not firm orders; no additional quantities or numeric prices were introduced.",
+      "No formula, price, quantity, table, history, platform-audit, share, tab, or layout redesign was requested or changed by this retake."
+    ],
+    "firstSufficientLazinessRung": 2,
+    "simplifications": "Reused the existing builder and current workbook-data by BOM ID; no new dependency, builder, or abstraction.",
+    "ponytail": null,
+    "tokens": null,
+    "duration": null
+  },
+  "acceptance": {
+    "physicalTestStatuses": "Не проводилось",
+    "existingTestIDs": [
+      "T-01",
+      "T-02",
+      "T-03",
+      "T-04",
+      "T-05",
+      "T-06",
+      "T-07",
+      "T-08",
+      "T-09",
+      "T-10",
+      "T-11",
+      "T-L01",
+      "T-N01",
+      "T-U01",
+      "T-V01",
+      "T-V02",
+      "T-V03",
+      "T-V04",
+      "T-ENE01"
+    ]
+  },
+  "priorScenarioContentAudit": {
+    "result": "FAIL",
+    "reason": "Предыдущая версия содержала 9 агрегированных строк комнат, а не уникальные SC-ID→условие→действие→I/O→BOM→тесты.",
+    "currentScenarioCorrection": "Внесено 42 конкретные сценарные строки; функциональные I/O предложены, реальные клеммы/координаты не выдумываются. SC-R07-BOOST исправлен по SH-006: только B44/IO-BOOST-R07; остаётся STOP до допуска и натурных проверок, физический статус Не проводилось."
+  },
+  "layout": {
+    "tabs": [
+      "Сводка",
+      "Выбранное оборудование",
+      "Предложения РФ РБ Китай",
+      "Сравнение решений",
+      "Комнаты и точки",
+      "Сценарии",
+      "Внедрение и приёмка",
+      "Источники и курсы"
+    ],
+    "nativeTablesExpected": true,
+    "editableDropdown": "Внедрение и приёмка!D12:D30; физические тесты по умолчанию Не проводилось"
+  },
+  "result": {
+    "localXlsx": "D:\\6 Проекты\\Квартира\\output\\SHP-001\\SHP-001-procurement.xlsx",
+    "nativeSheetUrl": "https://docs.google.com/spreadsheets/d/1kn_19v2iP7vfcD2lUhiwyIw5pp_cf7HM_g1JOz4LGX0/edit",
+    "nativeSheetId": "1kn_19v2iP7vfcD2lUhiwyIw5pp_cf7HM_g1JOz4LGX0"
+  },
+  "failedAttempts": [
+    "PowerShell exploratory ContainsKey on PSCustomObject failed; rerun with property-name membership succeeded.",
+    "First local spreadsheet run rejected a raw Windows file URL; corrected with pathToFileURL.",
+    "First scenario-check run referenced expected totals before declaration; moved the check after totals were calculated.",
+    "First traceability check added source included B32 to its reference set and falsely passed although workbook-data.bom was ID-less on that row; corrected check now validates all scenario references against the exported BOM only and requires IDs/items on all 48 rows.",
+    "Initial scoped apply_patch failed to match the current R05-WORK line; no file change occurred, then exact lines were read and patched.",
+    "First native batchUpdate used numeric table IDs and was rejected atomically; retry with Google Sheets string table IDs succeeded.",
+    "Read-only artifact-tool import from workspace root could not resolve the bundled package; rerun from the owned output folder succeeded.",
+    "In-memory CurrentOffers rows.add probe was rejected because it overlapped HistoricalOnly; no file was written. The local XLSX edit must first preserve and relocate the existing history/audit ranges.",
+    "PowerShell ConvertFrom-Json accepted a trailing comma in procurement-data.json, but strict Node JSON.parse rejected it; repaired the malformed JSON via apply_patch, then strict JSON.parse passed for all three JSON files before authoring.",
+    "First A06 builder pre-export assertion expected the PlatformAudit header 'Платформа'; the actual native header was 'Площадка'. Corrected the expected value before a successful XLSX export.",
+    "Second A06 pre-export assertion assumed a separate totalsControl.sparesBYN field that is absent; derived spares as pricedWithSparesBYN minus pricedNoSparesBYN, then the local export/reimport checks passed.",
+    "First A06 native prewrite guard checked Drive metadata as mimeType; the connector returned mime_type, so it stopped before write. Corrected key and repeated the fresh guard; file identity, type and privacy matched.",
+    "Initial native baseline fingerprint counted format-only empty Offers!L25 as a value. Corrected the comparator to preserve A1 coordinates and compare userEnteredValue/formulas only; all six frozen content blocks then matched.",
+    "First table-range assertion compared numeric filterView IDs with strings and stopped before any further write. Corrected ID normalization; all six affected table/filter IDs and ranges passed.",
+    "Primary G07 retake rejected the metadata-only package: independent 672-cell native/XLSX comparison found stale Belarus destination text in B02/B03 N8:N9; B09 audit described possible currency staleness instead of stale published price; several newly changed English prose fields remained in the Russian tables. Corrected text and added a coordinate-level 672-cell comparison.",
+    "First scoped retake export saved locally but stopped at a source-row post-export assertion because the source readback variable shadowed the Russian source-translation array. Renamed the reader and reran; no native write occurred in this attempt.",
+    "Second scoped retake export saved locally but stopped at post-export validation because finalSummary was read before declaration. Added the final-summary handle and reran successfully; no native write occurred in this attempt.",
+    "An initial source-language heuristic counted Latin SKU/model names as English prose. Replaced it with exact narrative-cell comparison and preserved product codes, vendor names, URLs and currency codes.",
+    "G25 repair: the first strict guard reported null-versus-empty computed caches for unchanged formulas; the comparison was narrowed to identical-formula blank results, and the final candidate data_only comparison had zero differences.",
+    "G25 repair: an initial formula-map guard treated the artifact-tool empty formula marker differently from null; corrected the comparator without changing the candidate workbook.",
+    "G25 repair: artifact-tool inspection omitted a truly blank target cell from computed-style output; verified the target and all other cells with read-only semantic style components instead.",
+    "G25 repair: the .bak suffix was not accepted by the path-based openpyxl reader and direct StyleProxy equality produced false differences; used BytesIO read-only loading and copied semantic style components.",
+    "G25 repair: the first layout comparison included object-representation noise; field-level metadata comparison confirmed exact layout, filters and tables.",
+    "G25 repair: .NET File.Replace rejected a null backup path before writing; same-volume File.Move overwrite then passed the pre/post hash guards.",
+    "Admission28 native batch attempt 1/2: Google Sheets API returned HTTP 400 while validating the four updateTable table_id values supplied as numbers (TYPE_STRING required); the atomic request was rejected.",
+    "Admission28 native batch attempt 2/2: after converting those four table_id values to strings, Google Sheets API returned HTTP 400 at requests[75].updateTable because PlatformAudit cannot move to a non-overlapping range starting on a different row; the atomic request was rejected. No third attempt was authorized.",
+    "G07 historical source repair: first narrow builder invocation stopped before artifact import/export with spawnSync python EPERM; no candidate export or workbook/native mutation occurred in that invocation.",
+    "G07 historical source repair: the sole artifact-tool export generated its inspect sidecar and stopped before main-XLSX/native writes. The primary later removed only that exact authorized sidecar after path/size/SHA verification; no second export occurred."
+  ],
+  "tokens": null,
+  "parentIntegration": {
+    "checkedAt": "2026-10-19T12:22:53+03:00",
+    "result": "PASS",
+    "plannedGroups": 3,
+    "executed": 3,
+    "passed": 3,
+    "failed": 0,
+    "checks": {
+      "D-P01": "Independent Decimal recomputation: 21 offers, 18 unknown mandatory lines, 9 rooms,16 relay/4 dimmer; base14300.603214/spares450.25187/total14750.855084/planning36575.855084–67425.855084/pilot4923.674332+265–605 BYN.",
+      "D-P02": "48 unique nonempty BOM IDs/items;42 unique complete SCs; references resolve exported BOM only;19 tests not conducted; B32 included qty0/money null; B44 only BOOST; T01/T04 caller coverage retained; T11 JSON/XLSX/native reconciled.",
+      "D-P03": "Fresh native Equipment all48x14=672/672 fields match export; all8 captions; cost formulas/summary/private native MIME/Europe Minsk; actual Chrome655405848 filled view shows corrected B44 and A2."
+    },
+    "sourceSha256": "F74AC6AFF6DA499BF956BD6FEB92A507A9EC2C8E9DF1EDAE28C42EF2A7D73341",
+    "priorFailuresPreserved": [
+      "parent-1: orphan B32 and invalid QA",
+      "parent-2: stale A2 count and lost selected timer identity",
+      "parent-3: T11 local/native instruction divergence; B16 regex oracle initially failed mixed-language wording, not equipment defect"
+    ],
+    "localWorkbookEvidence": "Worker readback reports 672/672 XLSX/export fields, all19 statuses not conducted; local preview PNGs predate latest text-only corrections, are not final native evidence.",
+    "physicalAcceptance": "Not conducted; G07 is document/table verification only."
+  },
+  "g25FormulaRepair": {
+    "result": "PASS",
+    "target": "Выбранное оборудование!G25",
+    "operation": "Existing @oai/artifact-tool import/edit/export path; cleared only cell contents, retaining style.",
+    "baselineSha256": "43CF28D2DE5A1216B7D8F7E30B358F0C30381E5518D1909748FB1038CF883C92",
+    "finalSha256": "9CDD79250A7BD6DA1FF78861D3560F048D716196C575A87A4BCB8640EAB342B8",
+    "backup": "output/SHP-001/SHP-001-procurement.pre-G25-43CF28D2.xlsx.bak",
+    "backupSha256": "43CF28D2DE5A1216B7D8F7E30B358F0C30381E5518D1909748FB1038CF883C92",
+    "formulaValidation": {
+      "baselineFormulaCount": 191,
+      "baselineMalformedOnly": "Выбранное оборудование!G25 contained the incomplete formula = followed by an opening quote.",
+      "candidateFormulaCount": 190,
+      "candidateTokenizerErrors": 0,
+      "onlyFormulaRemoved": "Выбранное оборудование!G25",
+      "targetIsTrueBlank": true
+    },
+    "preservation": {
+      "sheets": 8,
+      "tables": 13,
+      "filtersExact": true,
+      "layoutExact": true,
+      "nonTargetCellValueFormulaDiffs": 0,
+      "semanticStyleDiffs": 0,
+      "dataOnlyValueDiffs": 0,
+      "workbookJsonUnchanged": true,
+      "procurementJsonUnchanged": true,
+      "nativeSheetChanged": false
+    },
+    "pilotRecalculationBYN": {
+      "known": 4923.674332,
+      "allowanceLow": 265,
+      "allowanceHigh": 605,
+      "planningLow": 5188.674332,
+      "planningHigh": 5528.674332
+    },
+    "inspectSidecar": {
+      "refreshedFromArtifactToolExport": true,
+      "sha256": "89D07A08ED23ECE332ADAFBC3DD3EC23AA043C8103D7310CD7A7B1FB6B050DD8",
+      "bytes": 1419590
+    },
+    "nativeFilledView": "PENDING primary-owned fresh view after STOP",
+    "firstSufficientLazinessRung": 2,
+    "simplifications": "Reused the existing artifact-tool workbook import/edit/export path; no new dependency or authoring framework.",
+    "retainedExceptions": [
+      "Physical tests remain not conducted.",
+      "Parent-owned fresh native filled-view verification remains pending after STOP."
+    ],
+    "ponytail": null,
+    "tokens": null,
+    "duration": null
+  },
+  "g07Admission28PublicApiLocal4RebuildStop": {
+    "result": "STOP — local candidate validated; Google Sheets rejected table-range relocation before applying the atomic batch",
+    "scope": "Admission28 original five price changes only; no further native write attempts",
+    "firstSufficientLazinessRung": 2,
+    "simplifications": "Reused the approved existing builder and bundled artifact-tool; no new abstraction or dependency.",
+    "localFiles": {
+      "procurementJsonUnchanged": true,
+      "workbookJsonUnchanged": true,
+      "builder": "output/SHP-001/a06-build.mjs",
+      "finalWorkbook": "output/SHP-001/SHP-001-procurement.xlsx",
+      "finalWorkbookSha256": "9C162209EDE81F5F29D214BCBE598922BA2020AE0B448F2B12E610224F117B1F",
+      "rollback": ".harness/tmp/SHP-001-A06-admission28-before.zip",
+      "nativeBeforeSnapshot": ".harness/tmp/SHP-001-A06-admission28-native-before.json",
+      "candidateSha256": "9C162209EDE81F5F29D214BCBE598922BA2020AE0B448F2B12E610224F117B1F"
+    },
+    "candidateGuards": {
+      "strictJsonParse": "3/3 PASS before build; procurement/workbook JSON unchanged",
+      "artifactToolImportEditExport": "PASS",
+      "sheets": 8,
+      "localExcelTables": 13,
+      "baseValidFormulaSemantics": 190,
+      "G25": "true blank, no formula, retained style",
+      "formulaTokenizer": "PASS for all remaining base and new formulas",
+      "candidateVsFrozenBaseline": "PASS for the 5 accepted price deltas and scoped moved table blocks; unrelated prices, quantities, BOM identity, SCs, and test statuses preserved",
+      "offers": 28,
+      "mandatoryUnpriced": 11,
+      "equipment": 48,
+      "scenarioRows": 42,
+      "physicalStatuses": "19/19 Не проводилось",
+      "totalsBYN": {
+        "base": 16929.6852168,
+        "spares": 450.25187,
+        "withSpares": 17379.9370868,
+        "allowancesLow": 18975,
+        "allowancesHigh": 46445,
+        "planningLow": 36354.9370868,
+        "planningHigh": 63824.9370868,
+        "pilotKnown": 5023.876582,
+        "pilotAllowanceLow": 115,
+        "pilotAllowanceHigh": 275,
+        "pilotPlanningLow": 5138.876582,
+        "pilotPlanningHigh": 5298.876582
+      },
+      "taxScope": "Mixed NET/GROSS partial estimate; B34 additional VAT and other applicable non-China costs remain unknown, not zero. Owner-directed China extras are excluded from estimate, not zero."
+    },
+    "nativeBatch": {
+      "spreadsheetId": "1kn_19v2iP7vfcD2lUhiwyIw5pp_cf7HM_g1JOz4LGX0",
+      "requestCount": 79,
+      "requestTypes": {
+        "copyPaste": 43,
+        "updateCells": 30,
+        "unmergeCells": 1,
+        "mergeCells": 1,
+        "updateTable": 4
+      },
+      "serializedPayloadBytes": null,
+      "serializedPayloadBytesReason": "Exact serialized connector payload size was not persisted in the local evidence; no byte count is claimed.",
+      "tableRanges": [
+        {"tableId": "392395369", "name": "PlatformAudit", "from": "Предложения РФ РБ Китай!A40:E44", "to": "Предложения РФ РБ Китай!A44:E48"},
+        {"tableId": "1928028284", "name": "HistoricalOnly", "from": "Предложения РФ РБ Китай!A29:I37", "to": "Предложения РФ РБ Китай!A33:I42"},
+        {"tableId": "1348077228", "name": "CurrentOffers", "from": "Предложения РФ РБ Китай!A4:W28", "to": "Предложения РФ РБ Китай!A4:W32"},
+        {"tableId": "1121680014", "name": "SourceRegister", "from": "Источники и курсы!A12:G76", "to": "Источники и курсы!A12:G80"}
+      ],
+      "attempts": [
+        {
+          "attempt": 1,
+          "tableIdEncoding": "number",
+          "toolError": "HTTPError: 400 — Invalid value at 'requests[75].update_table.table.table_id' (TYPE_STRING), 392395369; the same TYPE_STRING validation was returned for table IDs 1928028284, 1348077228, and 1121680014.",
+          "source": "Google Sheets API batchUpdate validation, not connector preflight"
+        },
+        {
+          "attempt": 2,
+          "tableIdEncoding": "string",
+          "toolError": "HTTPError: 400 — Invalid requests[75].updateTable: Невозможно переместить таблицу в новый диапазон, который не пересекается с текущим диапазоном и начинается с той же строки.",
+          "source": "Google Sheets API batchUpdate validation, not connector preflight"
+        }
+      ],
+      "successfulNativeBatches": 0,
+      "postFailureBoundedReadback": {
+        "ranges": ["Сводка!A1:D16", "Выбранное оборудование!A1:N53", "Предложения РФ РБ Китай!A1:W69", "Источники и курсы!A1:G80"],
+        "paddedRowsCompared": 218,
+        "valueFormulaDiffsVsImmutableNativeBefore": 0,
+        "meaning": "Bounded content readback only; it does not establish a fresh filled-view visual result or metadata outside these ranges."
+      },
+      "nativeFilledView": "PENDING primary-owned fresh view after STOP"
+    },
+    "sidecarCleanup": {
+      "path": ".harness/tmp/SHP-001-A06-admission28-candidate.xlsx.inspect.ndjson",
+      "sha256BeforeDeletion": "2B0C293BC0830D1FA4BCD82142704C37CFDC703865FCFA9ED6AF03A594D00A97",
+      "bytes": 1476519,
+      "status": "deleted after exact-path and SHA256 verification"
+    },
+    "retainedExceptions": [
+      "Google Sheets API rejected both atomic batches; no native price/table update was applied.",
+      "Fresh primary-owned native filled-view remains pending.",
+      "Physical tests and commissioning remain not conducted.",
+      "Unknown applicable VAT and non-China delivery/other costs remain unknown."
+    ],
+    "ponytail": "Only resume if the primary supplies an explicitly permitted minimum native update mechanism after resolving the Google Sheets updateTable row-start validation error.",
+    "tokens": null,
+    "duration": null
+  },
+  "g07Admission28NativeInsertResume": {
+    "result": "ONE atomic native batch applied; one bounded readback completed. Earlier G07 batch errors remain preserved in g07Admission28PublicApiLocal4RebuildStop.",
+    "preflight": {
+      "ranges": ["Сводка!A1:D21", "Выбранное оборудование!A1:N53", "Предложения РФ РБ Китай!A1:W69", "Источники и курсы!A1:G80"],
+      "sourceAppendTargetsA77G80": "empty",
+      "offersBefore": 24,
+      "unpricedBefore": 15,
+      "offersGridRowsBefore": 1003,
+      "frozenOffersRows": 4
+    },
+    "nativeBatch": {
+      "attemptCount": 1,
+      "successfulAppliedBatches": 1,
+      "requestCount": 35,
+      "requestTypes": {"insertDimension": 1, "updateTable": 3, "updateCells": 31},
+      "insert": {"sheetId": 1628535407, "dimension": "ROWS", "startIndex": 28, "endIndex": 32, "inheritFromBefore": true},
+      "updatedTables": [
+        {"tableId": "1348077228", "name": "CurrentOffers", "from": "Предложения РФ РБ Китай!A4:W28", "to": "Предложения РФ РБ Китай!A4:W32"},
+        {"tableId": "1928028284", "name": "HistoricalOnly", "from": "Предложения РФ РБ Китай!A29:I37", "to": "Предложения РФ РБ Китай!A33:I42"},
+        {"tableId": "1121680014", "name": "SourceRegister", "from": "Источники и курсы!A12:G76", "to": "Источники и курсы!A12:G80"}
+      ],
+      "automaticShift": [{"tableId": "392395369", "name": "PlatformAudit", "from": "Предложения РФ РБ Китай!A40:E44", "to": "Предложения РФ РБ Китай!A44:E48"}],
+      "responseMetadata": "Returned updatedSpreadsheet for the four requested sheets and seven table objects; target table IDs/names/ranges were present. No full eight-tab/native metadata claim.",
+      "responseErrors": []
+    },
+    "nativeReadback": {
+      "ranges": ["Сводка!A1:D21", "Выбранное оборудование!A1:N53", "Предложения РФ РБ Китай!A1:W69", "Источники и курсы!A1:G80"],
+      "offers": 28,
+      "uniqueOfferIDs": 28,
+      "mandatoryUnpriced": 11,
+      "equipmentRows": 48,
+      "equipmentUniqueIDs": 48,
+      "offersGridRowsAfter": 1007,
+      "frozenOffersRows": 4,
+      "addedOffers": [
+        {"id": "O25", "bom": "B09", "unitPrice": 42733, "currency": "RUB"},
+        {"id": "O26", "bom": "B27", "unitPrice": 10390, "currency": "RUB"},
+        {"id": "O27", "bom": "B34", "unitPrice": 6.9, "currency": "EUR", "tax": "NET; additional VAT unknown"},
+        {"id": "O28", "bom": "B35", "unitPrice": 22.68, "currency": "EUR", "tax": "gross; VAT included"}
+      ],
+      "oldO02": "Historical H09 row 42 read back with 13,390 RUB x2 and visible note; current O02 is B07 Masterdom 485.72 BYN x2 with 100% one-receipt prepayment condition.",
+      "removedAllowances": {"B09": "Equipment H:I blank", "B27": "Equipment H:I blank", "B34": "Equipment H:I blank", "B35": "Equipment H:I blank"},
+      "sourceRows77To80": "Four expected O25-O28 source rows read back with seller, region, notes and URL.",
+      "formulaCellsInBoundedReadback": 215,
+      "formulaEffectiveErrors": 0,
+      "summaryUnpricedCount": 11,
+      "summaryBelarusAndChinaPolicy": "Russian-language captions read back; Belarus is owner-confirmed; China additional expenses explicitly excluded by owner and described as not zero.",
+      "metadataLimit": "Readback was bounded to four tabs/ranges; tables or metadata outside the returned resource and complete consumer/rollback state remain unknown.",
+      "nativeFilledView": "Pending primary-owned fresh view after STOP."
+    },
+    "unchangedLocalFiles": {
+      "output/SHP-001/procurement-data.json": "36D57E255A4DB1E171C297A9759C4C37521C326216880012628D98862E72B20D",
+      "output/SHP-001/workbook-data.json": "7C9BAE49506118025DE69627765961908BAC1FB434C6C6088696E97F05226CE8",
+      "output/SHP-001/SHP-001-procurement.xlsx": "9C162209EDE81F5F29D214BCBE598922BA2020AE0B448F2B12E610224F117B1F",
+      "output/SHP-001/a06-build.mjs": "EB18575D5C6E2D20EF6699B43A9066BDC31B8EA0959A45D2BF57037D9ECFBC40"
+    },
+    "retainedExceptions": ["Physical tests remain NOT CONDUCTED.", "Non-China delivery/applicable extra costs and O27 additional VAT remain unknown.", "Full metadata, all consumers, and rollback completeness beyond bounded evidence remain unknown; no inverse batch attempted."],
+    "firstSufficientLazinessRung": "Rung 4, native platform primitive: one insertDimension plus three supported updateTable requests. Do nothing fails the accepted live-row outcome; the existing local builder and standard library cannot mutate this native Google Sheet. Higher rebuild/import paths are unnecessary and out of scope.",
+    "simplifications": ["One authorized atomic batch; no retry, native recreation, rebuild, extra discovery, or rollback."],
+    "ponytail": "If primary-owned filled-view/readback or canonical post-STOP reproof finds a mismatch, stop and use only a separately authorized minimal correction/inverse packet; no automatic retry.",
+    "tokens": null,
+    "duration": null
+  },
+  "g07Caption11CellRepair": {
+    "result": "PASS_LOCAL_AND_NATIVE_API_READBACK; primary-owned fresh visual check pending",
+    "scope": {
+      "localTextCells": [
+        "Выбранное оборудование!C29",
+        "Выбранное оборудование!C33",
+        "Выбранное оборудование!C37",
+        "Выбранное оборудование!C38",
+        "Сводка!A2",
+        "Сводка!D7",
+        "Сводка!D11",
+        "Сводка!D14",
+        "Сводка!D16",
+        "Выбранное оборудование!A2",
+        "Предложения РФ РБ Китай!A2"
+      ],
+      "changedCells": 11,
+      "onlyAuthorizedCaptionCellsChanged": true,
+      "workbookJsonDelta": "sheet.equipmentCaption only",
+      "procurementJsonUnchanged": true
+    },
+    "builderAndCandidate": {
+      "implementation": "Existing a06-build.mjs and bundled @oai/artifact-tool import/edit/export path; --caption-only performs one bounded 11-cell update.",
+      "candidateSha256": "49A545EB446AD4B0084B2F9F7F90C5F0CA82690DE4CA8994DC73A6F21E4B275B",
+      "finalWorkbookSha256": "49A545EB446AD4B0084B2F9F7F90C5F0CA82690DE4CA8994DC73A6F21E4B275B",
+      "beforeZipSha256": "69CC52CAC2AB2793F1D7085BE5246685BC44FCC89BD9F1BE48292AFB72449B19",
+      "beforeFinalWorkbookSha256": "9C162209EDE81F5F29D214BCBE598922BA2020AE0B448F2B12E610224F117B1F",
+      "guards": {
+        "sheets": 8,
+        "localTables": 13,
+        "formulaCountBeforeAndAfter": 218,
+        "only11CellValuesDiffer": true,
+        "otherCellValuesAndFormulaResultsPreserved": true,
+        "semanticStylesPreserved": true,
+        "dimensionsMergesFreezeFiltersValidationsAndTableMetadataPreserved": true,
+        "equipmentG25TrueBlank": true,
+        "summaryNumericControlsUnchanged": true,
+        "strictJsonParseAllThreeInputs": true
+      },
+      "readOnlyGuardRework": [
+        "The first local table comparison used TableList.items() as table objects; openpyxl returned string refs. Corrected read-only iteration to look up each table by key, then full semantic style/layout comparison passed.",
+        "An earlier pre-export builder invocation stopped before cell mutation or export because of a malformed mapping token; corrected in the same builder. It was not an export attempt and did not change the candidate or final workbook."
+      ]
+    },
+    "nativeBatch": {
+      "spreadsheetId": "1kn_19v2iP7vfcD2lUhiwyIw5pp_cf7HM_g1JOz4LGX0",
+      "attemptCount": 1,
+      "successfulAppliedBatches": 1,
+      "requestCount": 11,
+      "requestTypes": {"updateCells": 11},
+      "fieldMask": "userEnteredValue",
+      "preimageCoverage": "All 11 target userEnteredValue fields were freshly read immediately before the batch and matched the immutable accepted native preimages.",
+      "knownPreexistingDifference": "Native Summary!A2 matched its immutable native preimage; its prior wording was known to differ from the local XLSX preimage and was preserved in the before snapshot.",
+      "response": "Action completed; 11 empty replies. updatedSpreadsheet metadata echo contained the three requested sheets Summary, Equipment, and Offers; response_include_grid_data was false. This is not a full eight-tab native metadata claim.",
+      "readback": {
+        "targetCells": 11,
+        "targetValuesMatched": 11,
+        "result": "PASS"
+      }
+    },
+    "exportSidecar": {
+      "path": ".harness/tmp/SHP-001-admission28-labels-candidate.xlsx.inspect.ndjson",
+      "sha256BeforeDeletion": "72DCC37ADDC1C471BFED8F76FD43F858B241154160D939CA0CBBE5AB1B44E47B",
+      "bytes": 1476823,
+      "creationEvidence": "Exporter logged this exact sidecar at candidate export; file creation time matched export time.",
+      "status": "Removed by exact LiteralPath after workspace-containment, size, and SHA-256 verification"
+    },
+    "retainedHistory": [
+      "Prior JSON parse/rework diagnostics, two earlier native API 400 responses, and the earlier native capability STOP remain in the preceding QA history unchanged.",
+      "Earlier admission28 pricing, insertion, and native readback QA remains as its own historical record; this caption repair does not revise its values."
+    ],
+    "firstSufficientLazinessRung": "Rung 2: reuse the existing workbook builder, bundled artifact-tool, and supported Google Sheets batchUpdate path. Rung 1 no-op fails the accepted local/native caption consistency; a new helper or dependency is unnecessary.",
+    "simplifications": [
+      "One shared 11-cell mapping feeds the narrow builder path and caller guards.",
+      "One validated candidate export, one native batch, and one bounded readback; no workbook reconstruction, new dependency, or extra native operation."
+    ],
+    "retainedExceptions": [
+      "Primary-owned fresh native visual verification remains pending after STOP.",
+      "Native response metadata was bounded to three requested sheets; metadata outside the returned resource remains unknown.",
+      "Physical tests remain NOT CONDUCTED; O27 additional VAT and other applicable unknown amounts remain unknown."
+    ],
+    "ponytail": null,
+    "tokens": null,
+    "duration": null
+  },
+  "g07HistoricalSixSourceRepair": {
+    "result": "PASS_LOCAL_CANDIDATE_AND_NATIVE_READBACK; primary-owned post-STOP UI/Astra retake pending",
+    "scope": {
+      "procurementJsonFieldsRestoredFromImmutableSnapshot": [
+        "originalGapAudit[B27].evidence",
+        "originalGapAudit[B27].source",
+        "originalGapAudit[B34].evidence",
+        "originalGapAudit[B34].source",
+        "originalGapAudit[B35].evidence",
+        "originalGapAudit[B35].source"
+      ],
+      "localAndNativeRanges": [
+        "Предложения РФ РБ Китай!C59/F59",
+        "Предложения РФ РБ Китай!C63/F63",
+        "Предложения РФ РБ Китай!C64/F64"
+      ],
+      "pricesQuantitiesAllowancesScenariosAndWorkbookJsonChanged": false,
+      "otherProcurementJsonFieldsChanged": false
+    },
+    "snapshot": {
+      "path": ".harness/tmp/SHP-001-audit-source-before.zip",
+      "sha256": "103A3D1EC2CCDC41BEE703D23E4304F98FD2A499C52AD3DA0FFADA7D3E2689DC",
+      "bytes": 140905,
+      "includedCurrentFiles": 5,
+      "includedNativePreimages": 6,
+      "manifestHashesVerified": true,
+      "immutableAdmission28SourceSha256": "A0CFE842D6519FFF65B69B8D7B6B50D15F5151AE12BB8985335A6E4ACD0C775C"
+    },
+    "candidate": {
+      "path": ".harness/tmp/SHP-001-audit-source-candidate.xlsx",
+      "sha256": "280D9851594E6519F7060A5B4CD87DA23C21D799DED5C1CB790168BF7FAC58C3",
+      "bytes": 76769,
+      "artifactExports": 1,
+      "primaryReadOnlyGuard": {
+        "result": "PASS",
+        "durationMs": 5332.68,
+        "cellsCompared": 3576,
+        "exactApprovedValueChanges": 6,
+        "matchingCachedTextChanges": 6,
+        "otherCellValuesFormulaCachesStylesMetadataAndValidationsUnchanged": true,
+        "localTables": 13,
+        "formulas": 218,
+        "financialControls": 13,
+        "equipmentG25TrueBlank": true
+      },
+      "sourceIndependentWitness": {
+        "result": "PASS",
+        "durationMs": 2022.3691,
+        "procurementJsonExactSixFieldDelta": true
+      }
+    },
+    "mainWorkbook": {
+      "beforeSha256": "49A545EB446AD4B0084B2F9F7F90C5F0CA82690DE4CA8994DC73A6F21E4B275B",
+      "finalSha256": "280D9851594E6519F7060A5B4CD87DA23C21D799DED5C1CB790168BF7FAC58C3",
+      "matchesValidatedCandidate": true,
+      "beforeAndAfterEightTabsThirteenLocalTablesTwoHundredEighteenFormulasAndG25Guarded": true
+    },
+    "nativeBatch": {
+      "spreadsheetId": "1kn_19v2iP7vfcD2lUhiwyIw5pp_cf7HM_g1JOz4LGX0",
+      "attemptCount": 1,
+      "successfulAppliedBatches": 1,
+      "requestCount": 6,
+      "requestTypes": {"updateCells": 6},
+      "fieldMask": "userEnteredValue",
+      "freshPreimageCoverage": "All six cells matched the immutable preimages immediately before main-XLSX replacement and the atomic update.",
+      "response": "Action completed with six empty replies. updatedSpreadsheet metadata echo returned all eight sheets and thirteen native table entries; response_include_grid_data was false.",
+      "readback": {
+        "targetCells": 6,
+        "targetValuesMatched": 6,
+        "result": "PASS"
+      }
+    },
+    "sidecar": {
+      "path": ".harness/tmp/SHP-001-audit-source-candidate.xlsx.inspect.ndjson",
+      "sha256BeforeDeletion": "15D2DA5DB5A225E4AD9F2A2E8BFE804C2653958BD53AF4C329FAF3EF526D7D1C",
+      "bytes": 1476732,
+      "createdAt": "2026-10-19T20:31:52.0012142Z",
+      "status": "Removed by H01 under separate authorization after exact resolved-path, byte-count, SHA-256, and workspace-containment checks. No second artifact export occurred."
+    },
+    "files": {
+      "procurementDataSha256": "4A3FE928E959D242731AB5A9557FED0D331D2B7786DD8AE862FBA96A010A99E0",
+      "workbookDataSha256": "D260B10D854803CB1A31602D65E48D170F7DFCA205579E4FA83C76F2AAD22728",
+      "builderSha256": "7B224C0A4F83E89EBD02123B99DD7D936866EDC89A9F0A6F24A8A76309C92104",
+      "qaBeforeAppendSha256": "F51914EFE6825D5F54F8ABBB686A3EA0C442EC51AAFD5B152947E9619894248F"
+    },
+    "failedAttemptHistory": [
+      "First narrow invocation failed before import/export because Node could not spawn python (EPERM); no workbook/native write occurred.",
+      "The single actual export created an inspect sidecar, causing STOP before candidate validation and final/native writes. H01 later cleaned only the authorized exact sidecar; the existing candidate was retained and independently validated."
+    ],
+    "firstSufficientLazinessRung": "Rung 2: reuse the existing a06-build.mjs and bundled artifact-tool import/edit/export path. Rung 1 no-op cannot restore the six accepted traceability fields; standard-library XLSX authoring alone is not a safe substitute.",
+    "simplifications": [
+      "Only six source/evidence fields and their six corresponding local/native cells changed; no pricing, quantity, allowance, formula, or workbook-JSON refresh.",
+      "One validated candidate, one main-file replacement, one native batch, and one bounded readback; no extra export or native retry.",
+      "No separate helper file, new dependency, installation, child agent, or extra native table operation. An inline Node ZIP-entry reader was used to verify the authorized preimage after the subprocess guard hit EPERM."
+    ],
+    "retainedExceptions": [
+      "Primary-owned fresh filled-view/UI verification and the final Astra retake remain pending after STOP.",
+      "The first worker-turn elapsed time and token usage are unknown; prior QA history and all earlier native API errors remain unchanged."
+    ],
+    "ponytail": null,
+    "tokens": null,
+    "duration": null
+  },
+  "g07B39NativeStage": {
+    "result": "PASS_NATIVE_BATCH_AND_BOUNDED_READBACK; primary-owned filled-view/UI and Astra retake pending",
+    "scope": {
+      "offer": "O29 / B39, 30 x 322.69 RUB, reference only; VAT, 30-unit availability, and lot price unknown; retail minimum 1 is not factory MOQ",
+      "financialLineBYN": 348.892428,
+      "pilotIncluded": false,
+      "counts": {"activeOfferReferences": 29, "unpricedMandatoryLines": 10},
+      "unchanged": ["other 28 offers", "9 history rows", "B29", "A_FRAME", "ALABOR", "spares", "pilot", "FX", "quantities", "scenarios", "48 BOM rows", "42 SC references", "9 rooms", "19 physical tests NOT CONDUCTED", "8 safety gates"]
+    },
+    "nativePreimage": {
+      "result": "PASS",
+      "basis": "Fresh four-tab bounded read matched the accepted 28-reference / 11-unpriced state; Offers row 33 was the old History header and Sources A81:G81 was empty. Root independently confirmed 3003 positions, 215 formulas, grid rowCount 1007 / frozenRowCount 4, and no drift.",
+      "sourceTableMetadata": "Known IDs were used; full native table metadata was not returned by the preread and remains unknown."
+    },
+    "nativeBatch": {
+      "spreadsheetId": "1kn_19v2iP7vfcD2lUhiwyIw5pp_cf7HM_g1JOz4LGX0",
+      "attemptCount": 1,
+      "successfulAppliedBatches": 1,
+      "requestCount": 18,
+      "requestTypes": {"insertDimension": 1, "updateTable": 2, "updateCells": 15},
+      "fieldMasks": {"updateCells": "userEnteredValue", "updateTable": "range"},
+      "changedRanges": ["Offers!A33:W33", "Offers!A2", "Offers!A51", "Offers!D69:E69", "Offers!G69:H69", "Equipment!A2", "Equipment!C42", "Equipment!F42:I42", "Equipment!L42:N42", "Summary!A2", "Summary!D7", "Summary!D11", "Summary!D14", "Summary!D16", "Sources!A81:G81", "CurrentOffers table A4:W33", "SourceRegister table A12:G81"],
+      "operationOrder": "Insert one Offers row at zero-based [32,33) before the old History header; only the existing CurrentOffers and SourceRegister table ranges were updated. History, PlatformAudit, and audit ranges moved with the inserted row.",
+      "response": "Action completed with 18 empty replies. Metadata echo returned Offers rowCount 1008 / frozenRowCount 4 and CurrentOffers ID 1348077228 at A4:W33; Sources rowCount 1000 / frozenRowCount 4 and SourceRegister ID 1121680014 at A12:G81. The response included only these two sheets; it does not prove full eight-tab or thirteen-table metadata.",
+      "readback": {
+        "result": "PASS",
+        "boundedRanges": 14,
+        "requestedCellPositions": 51,
+        "verified": ["Summary's five captions", "Equipment A2, C42, F42 formula result, and L42:N42", "Offers A2, O29 row 33, audit title A51, and B39 audit D69:F69", "Sources O29 row 81"],
+        "formulaResults": {"Offers F33": 30, "Offers J33": 11.6297476, "Offers K33": 348.89242800000005, "Equipment F42": 348.89242800000005},
+        "blankCells": "Equipment G42:I42, Offers L33, and Offers G69:H69 were requested and absent from sparse CellData; L33 was explicitly returned without entered/effective value. No formula or error was returned for the blank allowance cells."
+      }
+    },
+    "preservedProcessHistory": ["Earlier two native API 400 responses and capability STOP remain in history.", "The earlier G07 main replacement occurred before the whole-baseline union guard; this workflow deviation remains recorded.", "The two initial local style-repair failures and the accepted four bounded local row-height exceptions remain recorded; no third export occurred.", "The earlier Source81 sparse-coordinate indexing diagnostic was a read-only indexing error, corrected before this batch; corrected native protocol uses updateTable plus updateCells, not rows.add."],
+    "firstSufficientLazinessRung": "Rung 2: reuse the accepted existing Google Sheets batchUpdate path and existing table IDs. Rung 1 no-op cannot add the accepted O29 offer and linked B39 lookup; no helper or dependency was needed.",
+    "simplifications": ["One atomic 18-request batch and one bounded 14-range readback; no retry, rollback, new table IDs, or native table recreation.", "Only the existing CurrentOffers and SourceRegister table ranges were resized; other ranges shifted through the single row insertion."],
+    "retainedExceptions": ["Primary-owned fresh UI/filled-view and Astra retake remain pending after STOP.", "Native metadata outside the returned Offers and Sources table entries, full-table formula scan, and full 8-tab layout remain unknown; the bounded readback confirmed the new O29 / B39 values and formula calculations only."],
+    "ponytail": null,
+    "tokens": null,
+    "duration": null
+  },
+  "g07B15CounterCorrection": {
+    "result": "PASS_SINGLE_CELL_NATIVE_CORRECTION_AND_READBACK; overall G07 acceptance retake remains primary-owned",
+    "finding": "Root's fresh post-STOP 4-tab review found the only unexplained difference: Summary!B15 was numeric 11 while the approved counter is 10. All other reviewed values/formulas and 12 money controls matched.",
+    "preimage": {"sheetId": 879996793, "cell": "Summary!B15", "userEnteredValue": 11, "effectiveValue": 11, "formattedValue": "11", "result": "fresh read matched the reported 11"},
+    "nativeBatch": {
+      "spreadsheetId": "1kn_19v2iP7vfcD2lUhiwyIw5pp_cf7HM_g1JOz4LGX0",
+      "attemptCount": 1,
+      "successfulAppliedBatches": 1,
+      "requestCount": 1,
+      "requestTypes": {"updateCells": 1},
+      "range": "Summary!B15",
+      "sheetId": 879996793,
+      "fieldMask": "userEnteredValue",
+      "newValue": 10,
+      "response": "Action completed with one empty reply; updatedSpreadsheet metadata echo returned eight sheet properties. No other cell, table, format, or local workbook was written."
+    },
+    "readback": {"result": "PASS", "range": "Summary!B15", "userEnteredValue": 10, "effectiveValue": 10, "formattedValue": "10"},
+    "priorG07B39NativeStage": "Preserved unchanged. Its prior overall readback count was incomplete because Summary!B15 was omitted from the original 18-request packet; do not relabel that earlier acceptance PASS. The actual prior batch receipt, original failures, and process deviations remain recorded.",
+    "unchangedProtectedFiles": {"procurementDataSha256": "296C35780AFF326962E7A80C281415A6C2FD659DB7ECBB6C2EF2A5A0BC6E7408", "workbookDataSha256": "B823A857E46BD233AA39FF353087D30F7EFABB7F21FD290A5C65B5BC847AF71E", "mainWorkbookSha256": "05D0DB3ACF421C37C66A16CF769A1F83073B045E3BB41A9580FFA08A0441E891", "builderSha256": "8C9C42943D494572CB6448276C7DEEF8323824F8CBC0E4EFEB0EE55E84EF6BE6"},
+    "firstSufficientLazinessRung": "Rung 2: reuse the existing Google Sheets updateCells path for the one incorrect counter. Rung 1 no-op leaves the confirmed 11 instead of 10.",
+    "simplifications": ["One numeric cell update and one-cell readback; no table, row, format, formula, or local artifact changes."],
+    "retainedExceptions": ["Root-owned full native readback, visual verification, and final Astra retake remain pending.", "Earlier two API 400s, capability STOP, local repair failures, accepted four local row-height exceptions, and main-replacement ordering deviation remain in the prior QA history."],
+    "ponytail": null,
+    "tokens": null,
+    "duration": null
+  },
+  "g07B36O30LocalStage": {
+    "result": "PASS_ROOT_FULL_LOCAL_GUARD_AND_ONE_CANDIDATE_PROMOTION; R4-R6 deferred; native and document writes not performed in this stage",
+    "scope": {
+      "offer": "O30 / B36, MB-MJ64KA/EU 64 GB with adapter, qty 1; selected cash price 1479.56 RUB; 1546.13 RUB noncash alternative excluded",
+      "counts": {"activeOfferReferences": 30, "unpricedMandatoryLines": 9, "equipmentRows": 48, "scenarioReferences": 42, "rooms": 9, "physicalTestsNotConducted": 19},
+      "financialControlsBYN": {"base": "17331.9009872", "spares": "450.25187", "withSpares": "17782.1528572", "allowanceLow": "18475", "allowanceHigh": "45125", "planLow": "36257.1528572", "planHigh": "62907.1528572", "pilotKnown": "5077.1999244", "pilotAllowanceLow": "65", "pilotAllowanceHigh": "155", "pilotPlanLow": "5142.1999244", "pilotPlanHigh": "5232.1999244"},
+      "unchanged": ["other 29 offers", "9 history rows", "all 18 original audit evidence rows and other 17 audit rows", "other 47 BOM lines", "FX", "spares", "pilot quantities", "scenarios", "12 document byte contents"]
+    },
+    "rootGuard": {
+      "result": "PASS",
+      "unionPositions": 4034,
+      "tabs": 8,
+      "tables": 13,
+      "all13NumericTableIDsExact": true,
+      "formulas": 231,
+      "formulaErrors": 0,
+      "valuesAndCaches": "Only declared offer/BOM/caption/counter changes and dependent caches; no unexpected values or caches",
+      "stylesHeightsAndStructure": "All semantic styles, effective row heights including default-height rows and spacers, table metadata/features, dimensions, merges, data validation, names and sheet metadata matched the accepted baseline except the declared five table-range changes",
+      "financialControls": {"B7": "17331.9009872", "B8": "450.25187", "B9": "17782.1528572", "B10": "18475", "C10": "45125", "B11": "36257.152857199995", "C11": "62907.152857199995", "B12": "5077.1999244", "B13": "65", "C13": "155", "B14": "5142.1999244", "C14": "5232.1999244", "B15": "9"}
+    },
+    "promotion": {
+      "operation": "One literal copy of the validated candidate to the main workbook; no export or rebuild",
+      "candidateSHA256": "1893BACA02FC85472C9F91F1DEBE1CD92EFA7154E0C0B6FA19E2B3E48218E130",
+      "mainBeforeSHA256": "05D0DB3ACF421C37C66A16CF769A1F83073B045E3BB41A9580FFA08A0441E891",
+      "mainAfterSHA256": "1893BACA02FC85472C9F91F1DEBE1CD92EFA7154E0C0B6FA19E2B3E48218E130",
+      "candidateExports": 1,
+      "candidateAndMainByteHashesMatch": true
+    },
+    "preservedProcessHistory": ["Two localized transport/preflight failures remain recorded; neither created another candidate.", "Missing pre-export numeric table-ID proof remains a process deviation and is not retroactively treated as workflow PASS; root independently verified all 13 exact IDs on the candidate before this one-copy promotion.", "The four previously accepted bounded local row-height exceptions remain recorded."],
+    "firstSufficientLazinessRung": "Rung 2: reuse the existing builder and artifact-tool export for the accepted O30/B36 update. Rung 1 no-op cannot price the selected line, link it to the BOM, or recalculate the controls.",
+    "simplifications": ["One candidate export followed by one guarded byte-for-byte promotion; no second export, native batch, document write, helper, or dependency."],
+    "retainedExceptions": ["R4-R6 remain deferred; G07 is not full N6/A06 acceptance. Source review and primary-owned later acceptance remain pending.", "The pre-export table-ID proof process deviation and two preflight transport failures are retained above; candidate root guard passed before promotion."],
+    "ponytail": null,
+    "tokens": null,
+    "duration": null
+  },
+  "g07B36O30ContactCorrection": {
+    "result": "STOP_PREEXPORT_GUARD; first candidate contact evidence failed; corrective candidate not exported",
+    "sourceErratum": {
+      "firstCandidateContactCheck": "FAIL: O30 notes omit the two required public ONECOM seller phones; the previous local financial/table/style/layout PASS is retained as historical evidence but does not establish contact completeness.",
+      "requiredSellerPhones": ["+7 (495) 565-34-90", "+7 (495) 615-01-01"],
+      "seller": "ONECOM, not Samsung",
+      "approvedTargets": ["procurement-data.json O30.notes", "Offers V34", "Sources F82"],
+      "unchangedURLTargets": ["Offers W34", "Sources G82"]
+    },
+    "preExport": {
+      "mainAndFirstCandidateSHA256": "1893BACA02FC85472C9F91F1DEBE1CD92EFA7154E0C0B6FA19E2B3E48218E130",
+      "all13NumericTableIDs": "Fresh read-only main-file check matched the previously verified 13 IDs/ranges.",
+      "correctedCandidateAndInspectAbsent": true,
+      "correctedCandidateExports": 0,
+      "mainPromotion": "HOLD"
+    },
+    "guardFailure": {
+      "result": "FAIL_BEFORE_EXPORT; no candidate or inspect sidecar was created",
+      "exactCell": "Выбранное оборудование!G6",
+      "beforeEditSnapshot": null,
+      "afterTwoInMemoryNoteSetters": "",
+      "meaning": "Artifact-tool snapshot changed an unrelated blank from null to empty string before export. The guard did not normalize or ignore this input-blank difference; no alternate API or retry was attempted.",
+      "earlierPreflightDiagnostic": "A read-only ZIP diff assumed O30 existed in the original before ZIP; the ZIP predates O30. The corrected guard used preserved first-candidate V34/F82 as O30 note preimages and passed before the builder run."
+    },
+    "localInputs": {
+      "procurementData": "O30.notes now appends the two authorized ONECOM phones; no other edit was made by this patch.",
+      "builder": "Added a narrow public-SDK two-cell contact-correction mode; it stopped at the in-memory guard before export.",
+      "workbookData": "Unchanged.",
+      "mainWorkbook": "Unchanged; remains the first candidate SHA above.",
+      "QAHistory": "All 24 prior top-level keys/values, including the earlier local PASS, remain unchanged; this separate erratum records the current contact failure and STOP."
+    },
+    "firstSufficientLazinessRung": "Rung 2: reuse the existing builder and public artifact-tool import/edit path; a no-op leaves the required ONECOM phones absent.",
+    "simplifications": ["One narrowly scoped contact correction; no table row, formula, price, quantity, FX, workbook JSON, native Sheet, or document edits."],
+    "retainedExceptions": ["No corrected candidate exists; root must resolve the unrelated blank representation guard before another execution authorization.", "No native or document writes; no cleanup or promotion; R4-R6 remain deferred.", "The two earlier transport failures, missing pre-export table-ID proof process deviation, and four accepted row-height exceptions remain in prior QA history."],
+    "ponytail": null,
+    "tokens": null,
+    "duration": null
+  },
+  "g07B36O30CorrectedCandidate": {
+    "result": "LOCAL_CANDIDATE_SELF_GUARD_PASS; awaiting independent root full guard and Source S1-S3; main promotion held",
+    "candidateSha256": "DA28919B0424B223294047323FBD854D3A378BC2B40543F209A3477D3159D6FD",
+    "mainAndFirstCandidateSha256": "1893BACA02FC85472C9F91F1DEBE1CD92EFA7154E0C0B6FA19E2B3E48218E130",
+    "sellerContacts": {
+      "seller": "ONECOM, not Samsung",
+      "phones": ["+7 (495) 565-34-90", "+7 (495) 615-01-01"],
+      "correctedCells": ["Предложения РФ РБ Китай!V34", "Источники и курсы!F82"],
+      "unchangedURLCells": ["Предложения РФ РБ Китай!W34", "Источники и курсы!G82"]
+    },
+    "localSelfGuard": {
+      "formulaCountBeforeAndAfter": 231,
+      "formulaErrors": 0,
+      "formulaArrays": "Exact match before/after and after reimport.",
+      "sourceD1EmptyFormulaCacheWhitelist": {
+        "expectedPreExportCount": 58,
+        "inMemoryNormalizedCount": 58,
+        "postReimportNormalizedCount": 0,
+        "unexpectedValueDifferences": 0,
+        "literalBlankAndNonemptyValueChecks": "Strict; no generic null/empty normalization."
+      },
+      "localTableRecords": 13,
+      "all13FinancialControlAssertions": "PASS",
+      "tableMetadataNamesRangesStylesFlagsColumns": "Matched pre-export snapshot.",
+      "numericTableIDAndFullStyleHeightGuard": "Pending independent root verification."
+    },
+    "inputHashesBeforeExport": {
+      "procurementData": "186A53B8598DF63966ED8DA036C9E2779BA4540C87FBD76D967CA2949846662F",
+      "workbookData": "AB539D0EADB4397AD41134A65BABB185AD9E9EFC4D14BC8CC2E51043E422EC9E",
+      "qaResult": "1498F2810A4842B4342100E19C1C2395EA48AFB9C048B29BCB86BD74DFB8E1EE"
+    },
+    "inspectSidecar": {
+      "path": ".harness/tmp/SHP-001-B36-O30-corrected-candidate.xlsx.inspect.ndjson",
+      "bytes": 1506348,
+      "sha256": "84126205B3A5C963A83D027BA56C97CFA7FC790A69304B5E8EB7C1069877C68C",
+      "retained": true
+    },
+    "exportCount": {"corrective": 1, "allB36O30Candidates": 2},
+    "transportHistory": "The Node REPL child launch returned EPERM before the builder started; a single approved direct bundled-Node invocation then completed the one corrective export.",
+    "mainPromotion": "HOLD pending root full guard and Source acceptance.",
+    "nativeAndDocumentWrites": 0,
+    "tokens": null,
+    "duration": null
+  },
+  "g07B36O30SourceAcceptance": {
+    "result": "PASS_SOURCE_LOCAL_S1_S3_ACCEPTED; one guarded candidate copy promoted to main; R4 not started",
+    "sourceAcceptanceReceipt": "receiptpassportSourceLocalAcceptance",
+    "sourceChecks": {"S1": "PASS", "S2": "PASS", "S3": "PASS"},
+    "copy": {
+      "count": 1,
+      "candidateSha256": "DA28919B0424B223294047323FBD854D3A378BC2B40543F209A3477D3159D6FD",
+      "mainBeforeSha256": "1893BACA02FC85472C9F91F1DEBE1CD92EFA7154E0C0B6FA19E2B3E48218E130",
+      "mainAfterSha256": "DA28919B0424B223294047323FBD854D3A378BC2B40543F209A3477D3159D6FD",
+      "byteLength": 81205,
+      "exactHashMatch": true
+    },
+    "preservedHistory": "All 26 prior top-level QA keys and values are preserved, including the first contact failure and corrective candidate history.",
+    "unchanged": {
+      "procurementDataSha256": "186A53B8598DF63966ED8DA036C9E2779BA4540C87FBD76D967CA2949846662F",
+      "workbookDataSha256": "AB539D0EADB4397AD41134A65BABB185AD9E9EFC4D14BC8CC2E51043E422EC9E",
+      "builderSha256": "A1FF4D1D1E85FE7760523D2D27BDBAEAAFA0277D350BB1E173344743DD6AD21A",
+      "beforeZipSha256": "854B2E3EA85756C971E6A375F20E8DBABFE0702A230ACF5F8FC7433415F1695A",
+      "firstCandidateSha256": "1893BACA02FC85472C9F91F1DEBE1CD92EFA7154E0C0B6FA19E2B3E48218E130",
+      "firstInspectSha256": "525B5FFB1C75A5E68366C7EF1306B6824F907C7C644418C956FD4F51ECA80ABE",
+      "nativePreimageSha256": "8D63C6DDA021DB5A1B2C037DFE3A5879818DB0DCC42F55F8B542395C35DBA227",
+      "correctedInspectSha256": "84126205B3A5C963A83D027BA56C97CFA7FC790A69304B5E8EB7C1069877C68C"
+    },
+    "nativeAndDocumentWrites": 0,
+    "tokens": null,
+    "duration": null
+  }
+}

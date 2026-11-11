@@ -1,0 +1,41 @@
+APT-001 / ПРИХОЖАЯ / ВИД ОТ ДВЕРИ ТУАЛЕТА D4 / V42
+Рендер: встроенный ImageGen. Ракурс, открывание и дальний коридор предварительные; использовать вместе с планом.
+
+=== Базовая визуализация ===
+Исходники:
+D:\6 Проекты\Квартира\Прихожая\78_прихожая_от_туалета_полуоткрыто_v42.png
+D:\6 Проекты\Квартира\Фото по помещениям\03_Прихожая\photo_8_2026-08-04_22-35-06.jpg
+D:\6 Проекты\Квартира\Прихожая\75_прихожая_кухня_щит550_v40.png
+
+Use case: sketch-to-render
+Asset type: one photorealistic wide-angle interior visualization of THIS apartment, looking from the toilet doorway towards the entrance.
+
+Reference roles:
+IMAGE 1 is the BINDING camera and 3D spatial blockout: camera at the D4 TOILET threshold on the right side of that opening, looking nearly straight at the D1 entrance. Keep the exact left-to-right order, perspective, positions of the cabinet, kitchen opening and entrance door from image 1. The light mint areas in image 1 are OPEN transitions/unknown space, not walls. This blockout incorporates the current 1050-mm wardrobe and the 575-mm bench on the entry's left-hand wall.
+IMAGE 2 is a REAL BEFORE PHOTO of the actual entry area, showing the original relationship between the black entrance door, the left wall, the kitchen-side opening on the right and the open circulation in front. Use only as secondary evidence of the real apartment and its general opening positions. Remove both people and all construction clutter, finish the room; do not preserve their identity.
+IMAGE 3 is ONLY the approved material and furniture-style reference: light natural oak, a full-height two-compartment wardrobe, mirror on the clothing door, muted olive bench nook beside the entrance, light oak flooring and a black entrance door. Do not copy its camera, perspective, furniture sizing or far background.
+
+The room geometry is crucial: this is NOT the view from the kitchen and NOT a long staged passage. The toilet D4 is behind the camera. Ahead, the black entrance door D1 is almost centered on the far wall. On the left of the view is the NEAR EXPOSED END and angled fronts of the same 1050-mm wardrobe, whose 580-mm-deep body is fitted along the entry's left wall. The short bench is beyond the wardrobe towards D1; FROM THIS TOILET VIEW IT IS MOSTLY OCCLUDED by the nearer and deeper wardrobe. Do not make the entire olive bench and interior of the wardrobe magically visible: at most show a physically plausible tiny glimpse beyond the cabinet. The larger service door can be slightly ajar about 30 degrees, but because of the oblique end-on view do not expose the panel or invent a front-facing cabinet presentation; show a recognisable hinged oak door edge. Door motion and clearances are provisional.
+
+The kitchen connection D2 is an actual OPEN SIDE PASSAGE on the RIGHT side of the hall before the black entrance door; show it in the position of the right-side opening in image 1, with continuous flooring and a subtly visible portion of the kitchen beyond. It must not be a fake second entrance door and must not be sealed by a wall. The larger corridor branches extend to the left and right close to the viewer. Keep the foreground circulation open on BOTH sides as in image 1. In particular, do NOT add any wall on the LEFT side of the wardrobe that closes the transition into the corridor: the warm oak surface facing the camera is the furniture's own thin end panel, not a building wall. The wardrobe may touch its actual support wall behind it; it must not create a new perpendicular partition or enclose the corridor.
+
+From this one camera, other passages are behind the viewer or outside the field of view; DO NOT invent extra visible doors, doors on the back wall, rooms or a long tunnel just to show them. The plan will show them separately. No toilet fixtures are in front of the camera. No wall on the left of the cabinet, no people, no text, no diagrams, no dimensions, no new furniture, no robot vacuum.
+
+Natural realistic wide-angle interior photography: soft warm white walls where already present, light natural oak cabinetry and flooring, matte black D1, warm practical ceiling light. Keep the dimensions and aperture positions as close to image 1 as the illustrative geometry allows; use a wide but believable lens. Make the entry door, left cabinet end, open foreground circulation and right-side kitchen opening all legible in a single frame.
+
+=== Коррекция боковых переходов ===
+Исходники:
+C:\Users\aidzm\.codex\generated_images\01a0487f-28e0-7bd2-8428-24a402900f2d\exec-99192db4-1349-480d-a3bc-214ee7c71632.png
+D:\6 Проекты\Квартира\Прихожая\78_прихожая_от_туалета_полуоткрыто_v42.png
+
+Use case: precise-object-edit
+Edit IMAGE 1 with the smallest necessary changes. IMAGE 2 is the geometry plan's camera blockout; its mint-colored side areas are OPEN CORRIDOR CONNECTIONS, not walls and not additional kitchen doors. Keep the exact camera from the toilet doorway, the black entry door directly ahead, the existing light-oak cabinet on the left, and the existing relative positions and proportions.
+
+Correct two false architectural elements in IMAGE 1:
+
+1. Remove the entire blank plaster wall and its skirting at the extreme LEFT of the oak cabinet. On our real plan there is NO perpendicular wall at this location: the corridor continues openly to the left next to the exposed end of the cabinet. Extend the same oak floor continuously out of frame to the left, into a softly lit open side of the corridor. Above it keep the far space indistinct and softly defocused, because its further boundaries are unknown. Do not add a replacement wall, panel, column, doorframe, end wall, window or skirting there. Preserve the oak face of the wardrobe itself, which is the legitimate 580-mm-deep END PANEL of a piece of furniture, not a building wall.
+
+2. The large white-framed opening in the close RIGHT foreground of image 1 and the duplicated large kitchen visible there were invented. Remove this large artificial jamb, frame, header and the kitchen cabinets behind it. The corridor continues OPENLY to the right in that close foreground, with the same continuous floor; its further geometry stays indistinct. Do not build an extra opening, frame, wall or new door there. KEEP exactly one real kitchen opening D2 farther down the hall, in the right wall beside the entrance, corresponding to the smaller opening visible near the black entry door and to the opening in image 2. Show that opening as a natural open aperture with at most a small unobtrusive glimpse of the kitchen, not a second entrance.
+
+Do not move or resize the black D1 door, cabinet, existing narrow glimpse of the bench, floor, ceiling, lighting or viewpoint. Do not fabricate any further visible room doors. Keep the near end of the wardrobe in the left foreground; it partially occludes the bench. Keep photo realism. No people, text, dimensions or robot. Show OPEN CORRIDOR SPACE on BOTH the left and right foreground sides, rather than two solid walls or door frames.
+
