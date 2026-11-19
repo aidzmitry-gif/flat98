@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1340" height="756" viewBox="0 0 1340 756">
+  <defs>
+    <style>
+      text{font-family:'Segoe UI',Arial,sans-serif;fill:#293d34}
+      .title{font-size:30px;font-weight:700}.head{font-size:21px;font-weight:700}
+      .body{font-size:17px}.small{font-size:15px}.bold{font-weight:700}
+      .dim{stroke:#507587;stroke-width:1.5;fill:none}
+    </style>
+  </defs>
+  <rect width="1340" height="756" fill="#f5f4ee"/>
+  <text x="34" y="49" class="title">Детская · стык столешницы с высоким шкафом</text>
+  <text x="35" y="78" class="body">Правый угол у окна · вид сверху · размеры мебели проектные, мм</text>
+  <rect x="30" y="105" width="710" height="616" rx="14" fill="#fffdf9" stroke="#cbd6cc"/>
+  <text x="53" y="145" class="head">Прямая кромка подходит к боковине</text>
+
+  <!-- Scale 0.38 px/mm. Window wall at y=185. Side wall x=620. -->
+  <rect x="105" y="185" width="515" height="190" fill="#eee0c5" stroke="#ac966e"/>
+  <rect x="392" y="185" width="228" height="171" fill="#dbe7d7" stroke="#85a081"/>
+  <rect x="392" y="375" width="228" height="296" fill="#e7dfc8" stroke="#a69474"/>
+  <path d="M105 185H620V671" stroke="#3b5044" stroke-width="4" fill="none"/>
+  <path d="M105 185H384" stroke="#7297a6" stroke-width="5"/>
+  <text x="247" y="176" text-anchor="middle" class="small bold">ОКНО</text>
+  <text x="242" y="269" text-anchor="middle" class="body bold">СТОЛЕШНИЦА</text>
+  <text x="242" y="294" text-anchor="middle" class="small">500 от стены с окном</text>
+  <text x="508" y="259" text-anchor="middle" class="body bold">СТЕЛЛАЖ</text>
+  <text x="508" y="284" text-anchor="middle" class="small">450 от стены с окном</text>
+  <text x="506" y="512" text-anchor="middle" class="body bold">ВЫСОКИЙ ШКАФ</text>
+  <text x="506" y="538" text-anchor="middle" class="small">600 от правой стены</text>
+  <path d="M105 375H620" stroke="#987647" stroke-width="3"/>
+  <path d="M392 375H620" stroke="#4f7160" stroke-width="4" stroke-dasharray="7 4"/>
+  <path d="M504 376v38" stroke="#4f7160" fill="none"/>
+  <text x="506" y="437" text-anchor="middle" class="small bold">СТЫК С БОКОВИНОЙ</text>
+  <path d="M630 356h26 M630 375h26 M645 356v19" class="dim"/>
+  <text x="662" y="370" class="small bold">50</text>
+
+  <path d="M392 537V385 A152 152 0 0 0 240 537Z" fill="#deebf0"/>
+  <path d="M392 385 A152 152 0 0 0 240 537" stroke="#608699" stroke-width="2" stroke-dasharray="5 4" fill="none"/>
+  <path d="M240 537H392" stroke="#608699" stroke-width="4"/>
+  <circle cx="392" cy="537" r="5" fill="#486f81"/>
+  <text x="313" y="515" text-anchor="middle" class="small bold">90°</text>
+  <text x="308" y="567" text-anchor="middle" class="small">Условный ход дверцы</text>
+  <path d="M392 573v76" stroke="#799480" stroke-dasharray="5 4" fill="none"/>
+  <text x="379" y="653" class="small" text-anchor="end">в комнату ↓</text>
+  <text x="53" y="698" class="small">Положение оси петли на схеме условное.</text>
+
+  <rect x="762" y="105" width="548" height="616" rx="14" fill="#fffdf9" stroke="#cbd6cc"/>
+  <text x="786" y="145" class="head">Что исправить в узле</text>
+  <text x="786" y="187" class="body bold">1. Столешница</text>
+  <text x="786" y="216" class="small">Одна прямая передняя кромка. В крайней секции</text>
+  <text x="786" y="240" class="small">столешница стыкуется с боковиной шкафа.</text>
+  <text x="786" y="264" class="small">Точный шов подогнать по чистовому обмеру.</text>
+  <path d="M786 290h500" stroke="#d5ddd4"/>
+  <text x="786" y="326" class="body bold">2. Полки</text>
+  <text x="786" y="355" class="small">Корпус заканчивается за 50 до передней кромки</text>
+  <text x="786" y="379" class="small">стола. Этот участок столешницы виден сверху.</text>
+  <path d="M786 405h500" stroke="#d5ddd4"/>
+  <text x="786" y="442" class="body bold">3. Дверца шкафа рядом со столом</text>
+  <text x="786" y="471" class="small">Петли на дальнем от окна краю. На схеме ход</text>
+  <text x="786" y="495" class="small">до 90° проходит со стороны комнаты.</text>
+  <text x="786" y="519" class="small">Фасад, ручку и ход петли сверить при замере.</text>
+  <rect x="785" y="555" width="502" height="125" rx="10" fill="#eef2e9"/>
+  <text x="804" y="585" class="body bold">Слева · зеркальный стык в будущем</text>
+  <text x="804" y="615" class="small">Сейчас край столешницы в этом месте открыт.</text>
+  <text x="804" y="639" class="small">Позже к нему подойдёт боковина левого шкафа.</text>
+</svg>

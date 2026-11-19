@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1270" height="645" viewBox="0 0 1270 645">
+  <defs>
+    <pattern id="basket" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 8L8 0" stroke="#637f97" stroke-width="1.5"/></pattern>
+    <style>
+      text{font-family:'Segoe UI',Arial,sans-serif;fill:#263e34}
+      .title{font-size:30px;font-weight:700}.head{font-size:21px;font-weight:700}
+      .body{font-size:16px}.small{font-size:14px}.bold{font-weight:700}
+      .dim{fill:none;stroke:#5d7988;stroke-width:1.35}
+    </style>
+    <g id="base">
+      <rect width="505.8" height="262" fill="#f8f5ea"/>
+      <rect width="505.8" height="90" fill="#eadcc1" stroke="#bca482"/>
+      <rect x="397.8" width="108" height="90" fill="#c9dbc5" stroke="#819781"/>
+      <rect x="397.8" y="90" width="108" height="144" fill="#ded3b9" stroke="#aa9370"/>
+      <path d="M0 262V0H505.8V262" stroke="#374f42" stroke-width="3" fill="none"/>
+      <path d="M109.8 0h288" stroke="#7197a6" stroke-width="5"/>
+      <text x="252.9" y="-11" class="small bold" text-anchor="middle">ОКНО 1600 · СТЕНА 2810 ПО БТИ</text>
+      <rect x="108" y="58" width="54" height="30" fill="url(#basket)" stroke="#637f97"/>
+      <text x="252.9" y="52" class="body bold" text-anchor="middle">СТОЛ · ГЛУБИНА 500</text>
+      <text x="451.8" y="151" class="small bold" text-anchor="middle">ПРАВЫЙ</text>
+      <text x="451.8" y="174" class="small bold" text-anchor="middle">ШКАФ</text>
+      <text x="451.8" y="199" class="small" text-anchor="middle">800 × 600</text>
+      <text x="451.8" y="47" class="small bold" text-anchor="middle">ПОЛКИ</text>
+      <path d="M397.8 63h-34l6-4m-6 4l6 4" fill="none" stroke="#55745c" stroke-width="1.7"/>
+    </g>
+    <g id="chair">
+      <rect width="108" height="108" rx="18" fill="#dceaf0" stroke="#7498a9" stroke-width="1.5"/>
+      <text x="54" y="48" class="small bold" text-anchor="middle">КРЕСЛО</text>
+      <text x="54" y="70" class="small" text-anchor="middle">600 × 600</text>
+    </g>
+  </defs>
+  <rect width="1270" height="645" fill="#f6f4ee"/>
+  <text x="34" y="48" class="title">Детская · проверка стыка и доступа к хранению</text>
+  <text x="35" y="78" class="body">Фрагмент плана у окна · размеры в мм · мебель показана в проектных габаритах</text>
+
+  <rect x="30" y="104" width="595" height="507" rx="14" fill="#fffdf9" stroke="#cbd6cc"/>
+  <text x="55" y="143" class="head">Сейчас · два одинаковых стеллажа</text>
+  <g transform="translate(74 193)">
+    <use href="#base"/>
+    <rect width="108" height="90" fill="#c9dbc5" stroke="#819781"/>
+    <path d="M108 63h34l-6-4m6 4l-6 4" fill="none" stroke="#55745c" stroke-width="1.7"/>
+    <text x="54" y="47" class="small bold" text-anchor="middle">ПОЛКИ</text><path d="M108 90v144" stroke="#829b86" stroke-dasharray="6 5" stroke-width="1.4"/><text x="54" y="153" class="small" text-anchor="middle">место под</text><text x="54" y="175" class="small" text-anchor="middle">левый шкаф</text>
+    <use href="#chair" x="126.45" y="114"/>
+    <use href="#chair" x="271.35" y="114"/>
+    <path d="M108 242h289.8 M108 235v14 M397.8 235v14" class="dim"/>
+    <text x="252.9" y="264" class="small bold" text-anchor="middle">1610 между секциями</text>
+  </g>
+  <text x="55" y="493" class="body bold">По 805 мм ширины на одно место.</text>
+  <text x="55" y="525" class="body">Фасад каждой секции в 600 мм от боковой стены.</text>
+  <text x="55" y="552" class="body">Стеллаж, стол и нижняя секция доходят до отметки 500.</text>
+
+  <text x="55" y="578" class="small">Штриховка · пример выдвижения корзины на 300 под столом.</text>
+  <rect x="645" y="104" width="595" height="507" rx="14" fill="#fffdf9" stroke="#cbd6cc"/>
+  <text x="670" y="143" class="head">В будущем · левый шкаф продолжает стеллаж</text>
+  <g transform="translate(689 193)">
+    <use href="#base"/>
+    <rect width="108" height="90" fill="#c9dbc5" stroke="#819781"/>
+    <rect y="90" width="108" height="144" fill="#ded3b9" stroke="#aa9370"/>
+    <path d="M108 63h34l-6-4m6 4l-6 4" fill="none" stroke="#55745c" stroke-width="1.7"/>
+    <text x="54" y="47" class="small bold" text-anchor="middle">ПОЛКИ</text>
+    <text x="54" y="151" class="small bold" text-anchor="middle">ЛЕВЫЙ</text>
+    <text x="54" y="174" class="small bold" text-anchor="middle">ШКАФ</text>
+    <text x="54" y="199" class="small" text-anchor="middle">800 × 600</text>
+    <use href="#chair" x="126.45" y="114"/>
+    <use href="#chair" x="271.35" y="114"/>
+    <path d="M108 242h289.8 M108 235v14 M397.8 235v14" class="dim"/>
+    <text x="252.9" y="264" class="small bold" text-anchor="middle">1610 между секциями</text>
+  </g>
+  <text x="670" y="493" class="body bold">По 805 мм ширины на одно место.</text>
+  <text x="670" y="525" class="body">Слева и справа предусмотрена общая боковина у стола.</text>
+  <text x="670" y="552" class="body">500 у окна + 800 закрытого шкафа = 1300 вдоль стены.</text>
+  <text x="670" y="577" class="body">Створки высокого шкафа движутся вдоль фасада.</text>
+  <text x="35" y="630" class="small">Оконная цепочка по БТИ 610 + 1600 + 600. Зазор у правого откоса требует чистового замера.</text>
+</svg>
+
+

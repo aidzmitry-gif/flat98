@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="570" viewBox="0 0 1060 570">
+  <defs>
+    <style>
+      text{font-family:'Segoe UI',Arial,sans-serif;fill:#273b33}
+      .title{font-size:29px;font-weight:700}.body{font-size:17px}.small{font-size:15px}.bold{font-weight:700}
+    </style>
+  </defs>
+  <rect width="1060" height="570" fill="#f7f5ef"/>
+  <text x="38" y="51" class="title">Детская · полки и шкафы по одной линии</text>
+  <text x="39" y="80" class="body">Вид сверху · примыкания показаны схематически</text>
+  <rect x="36" y="108" width="988" height="424" rx="12" fill="#fffdf8" stroke="#d5ddd4"/>
+  <path d="M133 472V158H927V472" fill="none" stroke="#34473c" stroke-width="4"/>
+  <path d="M311 158h438" stroke="#6992a1" stroke-width="7"/>
+  <rect x="133" y="163" width="794" height="104" fill="#f4ebda" stroke="#c1a888"/>
+  <text x="530" y="146" class="small bold" text-anchor="middle">ОКНО</text>
+  <text x="530" y="205" class="body bold" text-anchor="middle">СТОЛЕШНИЦА ДО БОКОВЫХ СТЕН</text>
+  <text x="530" y="231" class="small" text-anchor="middle">два рабочих места</text>
+  <rect x="133" y="163" width="169" height="104" fill="#d9e4d5" stroke="#829984"/>
+  <rect x="758" y="163" width="169" height="104" fill="#d9e4d5" stroke="#829984"/>
+  <text x="217" y="207" class="small bold" text-anchor="middle">Верх и низ</text>
+  <text x="217" y="229" class="small" text-anchor="middle">одна секция</text>
+  <text x="842" y="207" class="small bold" text-anchor="middle">Верх и низ</text>
+  <text x="842" y="229" class="small" text-anchor="middle">одна секция</text>
+
+  <rect x="133" y="269" width="169" height="172" fill="#edf1e9" fill-opacity=".65" stroke="#829984" stroke-dasharray="6 5"/>
+  <rect x="758" y="269" width="169" height="172" fill="#e4eadf" stroke="#829984"/>
+  <path d="M302 163v104 M758 163v278" stroke="#476a54" stroke-width="4"/>
+  <path d="M302 269v172" stroke="#476a54" stroke-width="3" stroke-dasharray="7 5"/>
+  <path d="M307 252h49l-7-4 M356 252l-7 4 M753 252h-49l7-4 M704 252l7 4" fill="none" stroke="#476a54" stroke-width="2"/>
+  <text x="530" y="293" class="small" text-anchor="middle">Полки и дверцы обращены друг к другу</text>
+  <text x="217" y="341" class="small bold" text-anchor="middle">МЕСТО ПОД ШКАФ</text>
+  <text x="217" y="366" class="small" text-anchor="middle">на будущее</text>
+  <text x="842" y="341" class="small bold" text-anchor="middle">ПРАВЫЙ ШКАФ</text>
+  <text x="842" y="366" class="small" text-anchor="middle">одна линия фасада</text>
+  <text x="530" y="490" class="small" text-anchor="middle">Линии показывают положение закрытых фасадов. Размеры секций уточняются по обмеру.</text>
+</svg>

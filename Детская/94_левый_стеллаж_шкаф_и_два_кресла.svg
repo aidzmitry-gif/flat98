@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1450" height="860" viewBox="0 0 1450 860">
+  <defs>
+    <style>
+      text{font-family:'Segoe UI',Arial,sans-serif;fill:#273d34}
+      .title{font-size:32px;font-weight:700}.head{font-size:22px;font-weight:700}
+      .body{font-size:17px}.small{font-size:15px}.tiny{font-size:13px}.bold{font-weight:700}
+      .dim{fill:none;stroke:#507588;stroke-width:1.5}.card{fill:#fffdf9;stroke:#d0dad0}
+    </style>
+  </defs>
+  <rect width="1450" height="860" fill="#f5f4ee"/>
+  <text x="34" y="47" class="title">Детская · левый стеллаж, два кресла и будущий шкаф</text>
+  <text x="35" y="77" class="body">Все размеры в мм · обмеры S10, план БТИ B01 и проектные габариты мебели</text>
+
+  <rect x="30" y="103" width="663" height="718" rx="14" class="card"/>
+  <text x="52" y="137" class="head">Вид сверху</text>
+  <!-- Origin 145,184, at 0.145 px/mm. Window at top; the two long walls have distinct lengths. -->
+  <g transform="translate(0 14)">
+    <path d="M145 170H552.45V726.365L145 724.625Z" fill="#faf7ee"/>
+    <rect x="145" y="170" width="407.45" height="72.5" fill="#eee0c6" stroke="#b59972"/>
+    <rect x="145" y="170" width="43.5" height="65.25" fill="#789171" stroke="#4f6c4e"/>
+    <rect x="465.45" y="170" width="87" height="72.5" fill="#ddcfb4" stroke="#b59972"/>
+    <rect x="465.45" y="242.5" width="87" height="116" fill="#e4d8bf" stroke="#b59972"/>
+    <rect x="400.2" y="358.5" width="152.25" height="63.365" fill="#f1e5ce" stroke="#b59972" stroke-dasharray="4 3"/>
+    <rect x="400.2" y="421.865" width="152.25" height="304.5" fill="#dce6d6" stroke="#8da187"/>
+    <rect x="145" y="242.5" width="320.45" height="116" fill="#eaf0f2" fill-opacity=".72" stroke="#8faab5" stroke-dasharray="5 4"/>
+    <rect x="145" y="358.5" width="43.5" height="145" fill="#e0ebdd" stroke="#69896d" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="295.075" y="463.625" width="87" height="261" rx="4" fill="#e6eadc" stroke="#829783" stroke-dasharray="5 4"/>
+    <path d="M295.075 550.625h87 M295.075 637.625h87" stroke="#a6b29d" stroke-dasharray="4 4"/>
+    <rect x="292.175" y="710.625" width="92.8" height="14" fill="#6f8967"/>
+    <path d="M145 724.625h131.95 A131.95 131.95 0 0 0 145 592.675Z" fill="#dfebf1" stroke="#7f9fae" stroke-dasharray="5 4"/>
+    <path d="M145 592.675v131.95" stroke="#577b90" stroke-width="4"/>
+    <circle cx="145" cy="724.625" r="4.2" fill="#577b90"/>
+    <path d="M145 724.625V170H552.45V726.365L276.95 724.625" fill="none" stroke="#344b3f" stroke-width="3"/>
+    <path d="M233.45 170h232" stroke="#6b96a8" stroke-width="5"/>
+    <path d="M145 156h407.45 M145 151v10 M552.45 151v10" class="dim"/>
+    <rect x="285" y="143" width="130" height="21" fill="#fffdf9"/>
+    <text x="350" y="159" text-anchor="middle" class="small bold">2810 по БТИ</text>
+
+    <text x="325" y="195" class="tiny bold" text-anchor="middle">ОКНО 1600 ПО БТИ</text>
+    <text x="325" y="223" class="small bold" text-anchor="middle">СТОЛЕШНИЦА · 500 В ГЛУБИНУ</text>
+    <text x="167" y="201" class="tiny bold" text-anchor="middle" style="fill:white">300</text>
+    <text x="167" y="220" class="tiny" text-anchor="middle" style="fill:white;font-size:11px">стеллаж</text>
+    <text x="508" y="289" class="small bold" text-anchor="middle">ШКАФ</text>
+    <text x="508" y="312" class="tiny" text-anchor="middle">600 в глубину</text>
+    <text x="478" y="393" class="small bold" text-anchor="middle">ЛЕСТНИЦА</text>
+    <text x="478" y="538" class="small bold" text-anchor="middle">КРОВАТЬ</text>
+    <text x="478" y="561" class="tiny" text-anchor="middle">2100 × 1050</text>
+
+    <rect x="214.2375" y="261.35" width="87" height="87" rx="18" fill="#d5e4eb" stroke="#7096a8" stroke-width="1.6"/>
+    <rect x="352.7125" y="261.35" width="87" height="87" rx="18" fill="#d5e4eb" stroke="#7096a8" stroke-width="1.6"/>
+    <text x="257.7375" y="301" class="small bold" text-anchor="middle">Кресло</text>
+    <text x="257.7375" y="323" class="tiny" text-anchor="middle">600 × 600</text>
+    <text x="396.2125" y="301" class="small bold" text-anchor="middle">Кресло</text>
+    <text x="396.2125" y="323" class="tiny" text-anchor="middle">600 × 600</text>
+    <text x="165" y="433" class="tiny bold" text-anchor="middle" transform="rotate(-90 165 433)">БУДУЩИЙ ШКАФ</text>
+    <path d="M189 408h34" class="dim"/>
+    <text x="229" y="403" class="tiny bold">1000 × 300</text>
+    <text x="229" y="425" class="tiny">вариант</text>
+    <path d="M188.5 483h106.575 M188.5 477v12 M295.075 477v12" class="dim"/>
+    <text x="242" y="476" text-anchor="middle" class="tiny bold">735 до мата</text>
+    <text x="338.5" y="608" text-anchor="middle" class="small bold" transform="rotate(-90 338.5 608)">МАТ 600 × 1800</text>
+    <text x="207" y="691" text-anchor="middle" class="tiny bold">ДВЕРЬ 90°</text>
+    <text x="207" y="711" text-anchor="middle" class="tiny">проект</text>
+
+    <path d="M123 170v554.625 M117 170h12 M117 724.625h12 M123 358.5h18 M123 592.675h18" class="dim"/>
+    <text x="104" y="274" class="tiny bold" text-anchor="middle" transform="rotate(-90 104 274)">1300 ДО ШКАФА</text>
+    <text x="104" y="475" class="small bold" text-anchor="middle" transform="rotate(-90 104 475)">1615 УЧАСТОК</text>
+    <text x="104" y="662" class="tiny bold" text-anchor="middle" transform="rotate(-90 104 662)">910 ПОД ДВЕРЬ</text>
+    <text x="579" y="442" class="small bold" text-anchor="middle" transform="rotate(90 579 442)">3837 · правая стена по обмеру</text>
+    <text x="68" y="445" class="small bold" text-anchor="middle" transform="rotate(-90 68 445)">3825 · левая стена по обмеру</text>
+  </g>
+  <text x="52" y="782" class="small">Синим показаны место для кресел и проектный ход двери.</text>
+  <text x="52" y="804" class="small">735 до мата · расстояние по плану при разложенном мате.</text>
+
+  <rect x="714" y="103" width="705" height="380" rx="14" class="card"/>
+  <text x="738" y="139" class="head">Стык стеллажа и столешницы</text>
+  <text x="739" y="168" class="small">Увеличенный вид сбоку вдоль левой стены · от окна в комнату →</text>
+  <!-- Depth section, 0.85 px/mm: 450 mm casing, 500 mm desktop. -->
+  <path d="M806 230v181h486" stroke="#7a8b7f" stroke-width="2" fill="none"/>
+  <rect x="806" y="229" width="382.5" height="76" fill="#d9e5d5" stroke="#7a967b"/>
+  <rect x="806" y="327" width="382.5" height="83" fill="#d9e5d5" stroke="#7a967b"/>
+  <rect x="806" y="305" width="425" height="22" fill="#e2c697" stroke="#9f845e"/>
+  <text x="990" y="271" class="body bold" text-anchor="middle">Верхние полки</text>
+  <text x="990" y="321" class="tiny bold" text-anchor="middle">ЕДИНАЯ СТОЛЕШНИЦА</text>
+  <text x="990" y="372" class="body bold" text-anchor="middle">Нижняя секция хранения</text>
+  <path d="M806 215h382.5 M806 209v12 M1188.5 209v12 M806 433h425 M806 427v12 M1231 427v12" class="dim"/>
+  <text x="997" y="208" class="small bold" text-anchor="middle">450 · корпус</text>
+  <text x="1019" y="453" class="small bold" text-anchor="middle">500 · столешница</text>
+  <path d="M1188.5 233v-10 M1231 303v-80 M1188.5 237h42.5" class="dim"/>
+  <text x="1244" y="242" class="small bold">50 отступ</text>
+  <text x="1244" y="266" class="tiny">до кромки</text>
+  <text x="786" y="321" class="small" text-anchor="middle" transform="rotate(-90 786 321)">стена с окном</text>
+
+  <rect x="714" y="500" width="705" height="321" rx="14" class="card"/>
+  <text x="738" y="539" class="head">Сколько места остаётся</text>
+  <text x="738" y="579" class="body bold">Два места · 2810 − 300 − 600 = 1910</text>
+  <text x="738" y="607" class="body">По 955 ширины на место. Кресла на плане условно 600 × 600.</text>
+  <text x="738" y="635" class="body">800 от кромки стола до границы зоны кресел · проектный отступ.</text>
+  <text x="738" y="679" class="body bold">Будущий шкаф · 3825 − 500 − 800 − 910 = 1615</text>
+  <text x="738" y="707" class="body">Предлагаемый шкаф 1000 × 300. До дуги двери по стене 615.</text>
+  <text x="738" y="745" class="small">Столешница опирается на нижний корпус. Скрытый крепёж изнутри.</text>
+  <text x="738" y="772" class="small">Размеры мебели, фактическое открывание двери и кресла проверить по месту.</text>
+  <text x="738" y="795" class="small">Зазор 735 у мата относится к габаритам, зону занятий проверяют отдельно.</text>
+</svg>

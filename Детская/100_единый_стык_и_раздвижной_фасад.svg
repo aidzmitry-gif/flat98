@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1290" height="680" viewBox="0 0 1290 680">
+  <defs>
+    <style>
+      text{font-family:'Segoe UI',Arial,sans-serif;fill:#293e35}
+      .title{font-size:29px;font-weight:700}.head{font-size:21px;font-weight:700}
+      .body{font-size:17px}.small{font-size:15px}.bold{font-weight:700}
+      .dim{stroke:#527b8e;stroke-width:1.5;fill:none}
+    </style>
+  </defs>
+  <rect width="1290" height="680" fill="#f5f4ed"/>
+  <text x="35" y="48" class="title">Детская · единый стык стола со шкафом</text>
+  <text x="36" y="78" class="body">Правый узел у окна · проектные размеры в мм</text>
+
+  <rect x="30" y="104" width="650" height="541" rx="13" fill="#fffefa" stroke="#cbd7ce"/>
+  <text x="53" y="143" class="head">Вид сверху</text>
+  <!-- Detail at 0.33 px/mm. Joinery ends at y=335, 500 mm from the window wall. -->
+  <rect x="87" y="170" width="469" height="165" fill="#efe1c7" stroke="#b49c77"/>
+  <rect x="358" y="170" width="198" height="165" fill="#dae6d5" stroke="#809980"/>
+  <rect x="358" y="335" width="198" height="264" fill="#e9dfcb" stroke="#ae9c7d"/>
+  <path d="M87 170H556V599" fill="none" stroke="#3b5044" stroke-width="3"/>
+  <path d="M87 170h269" fill="none" stroke="#7399a8" stroke-width="5"/>
+  <text x="219" y="164" text-anchor="middle" class="small bold">ОКНО</text>
+  <text x="214" y="243" text-anchor="middle" class="body bold">СТОЛЕШНИЦА</text>
+  <text x="214" y="271" text-anchor="middle" class="small">500 от окна</text>
+  <text x="456" y="233" text-anchor="middle" class="body bold">ПОЛКИ СВЕРХУ</text>
+  <text x="456" y="260" text-anchor="middle" class="small">и хранение снизу</text>
+  <text x="456" y="287" text-anchor="middle" class="small">общий контур</text>
+  <path d="M87 335H358" stroke="#96764b" stroke-width="3"/>
+  <path d="M358 335H556" stroke="#4c725b" stroke-width="5"/>
+  <text x="465" y="325" text-anchor="middle" class="small bold">СТЫК С БОКОВИНОЙ</text>
+  <path d="M567 170h20 M567 335h20 M581 170v165" class="dim"/>
+  <text x="600" y="257" class="small bold">500</text>
+  <path d="M566 599h20 M581 335v264" class="dim"/>
+  <text x="601" y="475" class="small bold">800</text>
+
+  <rect x="126" y="378" width="198" height="198" rx="23" fill="#e1ebef" stroke="#8dabb8"/>
+  <text x="225" y="468" text-anchor="middle" class="body bold">КРЕСЛО</text>
+  <text x="225" y="496" text-anchor="middle" class="small">600 × 600, условно</text>
+  <path d="M365 345V478 M374 459V590" stroke="#557a8d" stroke-width="4" stroke-linecap="round"/>
+  <path d="M400 389v156m-5-7l5 7 5-7 M418 545V389m-5 7l5-7 5 7" class="dim"/>
+  <text x="480" y="450" text-anchor="middle" class="small bold">ШКАФ</text>
+  <text x="480" y="479" text-anchor="middle" class="small">ход вдоль</text>
+  <text x="480" y="502" text-anchor="middle" class="small">фасада</text>
+  <text x="53" y="625" class="small">Слева будущий узел повторяет правый зеркально.</text>
+
+  <rect x="697" y="104" width="563" height="541" rx="13" fill="#fffefa" stroke="#cbd7ce"/>
+  <text x="721" y="143" class="head">Одна линия примыкания</text>
+  <rect x="741" y="174" width="252" height="61" fill="#dae6d5" stroke="#809980"/>
+  <rect x="741" y="235" width="252" height="21" fill="#dec399" stroke="#af936b"/>
+  <rect x="741" y="256" width="252" height="61" fill="#dae6d5" stroke="#809980"/>
+  <rect x="993" y="174" width="212" height="143" fill="#e9dfcb" stroke="#ae9c7d"/>
+  <path d="M993 174v143" stroke="#4c725b" stroke-width="4"/>
+  <text x="867" y="210" text-anchor="middle" class="small bold">СТЕЛЛАЖ</text>
+  <text x="867" y="251" text-anchor="middle" class="small bold">СТОЛЕШНИЦА</text>
+  <text x="867" y="292" text-anchor="middle" class="small bold">НИЖНЕЕ ХРАНЕНИЕ</text>
+  <text x="1099" y="229" text-anchor="middle" class="small bold">НЕПОДВИЖНАЯ</text>
+  <text x="1099" y="254" text-anchor="middle" class="small bold">БОКОВИНА ШКАФА</text>
+  <text x="721" y="350" class="body">Три элемента доходят до боковины на отметке 500.</text>
+  <text x="721" y="377" class="body">Корпуса заканчиваются вровень с кромкой стола.</text>
+  <text x="721" y="404" class="body">Монтажный шов подогнать по чистовому обмеру.</text>
+  <path d="M721 426h507" stroke="#d7ded5"/>
+  <text x="721" y="463" class="head">Раздвижные створки</text>
+  <text x="721" y="495" class="body">Полотна уходят одно за другое внутри шкафа.</text>
+  <text x="721" y="522" class="body">Кресло остаётся вне траектории створок.</text>
+  <text x="721" y="549" class="body">У секции 800 доступ открывается по половинам.</text>
+  <text x="721" y="576" class="small">Чистый проём зависит от нахлёста, профиля и ручек.</text>
+</svg>
