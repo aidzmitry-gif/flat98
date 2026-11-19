@@ -1,0 +1,16 @@
+# Исправленный вид с дивана — дверь на правой боковой стене
+
+2026-09-05. Уточнение пользователя имеет приоритет над прежней схемой: ТВ-стена глухая, дверь на правой боковой стене при взгляде с дивана. Терраса на левой боковой стене. Точный отступ входной двери от угла не предоставлен: положение на рендере предварительное.
+
+Размер тумбы в плане сохранён 1600 × 300 мм. Предлагаемые высоты: тумба 200…500 мм от пола, центр ТВ 1100 мм. Экран условно 55 дюймов; это не выбранная модель. Исходные координаты ТВ и дивана и ограничения изложены в записке v1. Текущий интерактивный HTML по двери устарел и этим рендером не изменяется.
+
+Встроенный Imagegen; корректировка первого изображения.
+
+## Финальное задание
+
+Edit the provided interior rendering to correct its ARCHITECTURE. The user explicitly corrected the entrance location.
+CRITICAL: THE ENTIRE WALL THAT HOLDS THE TELEVISION IS A SOLID UNBROKEN WALL WITH NO DOOR, NO OPENING, NO HALLWAY ANYWHERE ON THAT WALL.
+Remove the existing hallway opening currently to the right of the wooden accent from the frontal TV wall, filling it completely with matching matte sand plaster and continuous baseboard.
+The entrance belongs on the RIGHT-HAND PERPENDICULAR SIDE WALL, NOT on the TV wall. To show this correctly, WIDEN and pull back the view so the RIGHT INTERIOR CORNER where the TV wall meets the right side wall is clearly visible. Place the entrance opening AFTER that right corner, on the right SIDE wall running toward the viewer, with the top and bottom of the opening foreshortened along that side wall perspective. It is a right-side return-wall door, not a door near the right end of the front wall. Do not merely slide the old opening farther right within the same frontal wall. Show a slim neutral beige closed door (opening direction not specified). Door location along the side wall is schematic; do not add dimensions.
+Preserve LEFT terrace glazing in the LEFT perpendicular side wall, black frame, no curtains. Both right and left side walls must be visibly perpendicular to the continuous frontal TV wall. The floorplan is a plain rectangle, no jogs or new columns.
+View remains FROM THE SOFA toward TV FRONT, from seated eye level. Show both front room corners in the wider frame. Far TV wall is 5710 mm wide and illustrative ~2600 mm high. TV width about1220 mm, console1600 mm wide and300 mm deep, so TV occupies about21% and console28% of the full frontal wall width. The TV/console composition sits slightly LEFT of full wall center as seen by viewer, opposite sofa. Do not oversize the TV or console to fill the whole wall. Keep their current mutual alignment, three matte sand closed console fronts, walnut top with fine brass edging, warm restrained under-console glow, neutral floor and ceiling. Preserve the narrow walnut accent with warm vertical light to the RIGHT of the TV/console composition on the SAME solid TV wall, but it must not be a door edge. The remainder of the TV wall is plain sand plaster. No tall storage towers, fireplace, openings or protrusions in the TV wall. No new decor. Small cropped burnt-orange chair/table may remain in extreme right foreground if it doesn't obscure the corrected side-wall door. One photorealistic horizontal full-bleed interior render, no annotations. Accuracy of right-angle wall/door placement is the priority.

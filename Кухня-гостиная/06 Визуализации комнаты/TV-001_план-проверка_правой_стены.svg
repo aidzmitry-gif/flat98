@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="660" viewBox="0 0 1000 660">
+  <style>
+    .title{font:700 25px Arial,sans-serif;fill:#1f2933}.sub{font:15px Arial,sans-serif;fill:#52606d}.lbl{font:700 16px Arial,sans-serif;fill:#1f2933}.small{font:14px Arial,sans-serif;fill:#52606d}.dim{font:700 16px Arial,sans-serif;fill:#087f5b}.wall{stroke:#27323b;stroke-width:10;stroke-linecap:square}.furn{fill:#efe5da;stroke:#8c7764;stroke-width:2}.tv{fill:#202b33;stroke:#111820;stroke-width:2}.open{stroke:#0b8d72;stroke-width:6}.guide{stroke:#0b8d72;stroke-width:2;stroke-dasharray:7 5}.arrow{stroke:#0b8d72;stroke-width:2;marker-start:url(#a);marker-end:url(#a)}
+  </style>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M8,0 L0,4 L8,8" fill="none" stroke="#0b8d72" stroke-width="1.5"/></marker></defs>
+  <rect width="1000" height="660" fill="#fcfbf8"/>
+  <text x="60" y="42" class="title">TV-001 · контроль правой стены к террасе</text>
+  <text x="60" y="65" class="sub">План B01 5710 × 3500 мм. Правая грань — одна прямая плоскость; визуализации проверять только по этой цепочке.</text>
+
+  <!-- B01, scale 0.14 px/mm -->
+  <path class="wall" d="M60 90H859.4 M60 90V580 M60 580H859.4"/>
+  <!-- right facade: 1300 wall / O1 1600 / 600 wall -->
+  <path class="wall" d="M859.4 90V272"/>
+  <path class="open" d="M859.4 272V496"/>
+  <path class="wall" d="M859.4 496V580"/>
+  <path class="guide" d="M837 272H882 M837 496H882"/>
+
+  <!-- furniture placed by the approved plan orientation -->
+  <rect class="furn" x="80" y="115" width="210" height="210" rx="5"/>
+  <text x="185" y="205" text-anchor="middle" class="lbl">Г-кухня</text>
+  <text x="185" y="228" text-anchor="middle" class="small">слева</text>
+  <rect class="furn" x="365" y="115" width="280" height="140" rx="14"/>
+  <text x="505" y="183" text-anchor="middle" class="lbl">диван</text>
+  <text x="505" y="206" text-anchor="middle" class="small">верхняя стена</text>
+  <rect class="furn" x="665" y="115" width="155" height="105" rx="4"/>
+  <text x="742" y="163" text-anchor="middle" class="lbl">РМ</text>
+  <text x="742" y="185" text-anchor="middle" class="small">справа</text>
+  <rect class="furn" x="145" y="360" width="180" height="100" rx="18"/>
+  <text x="235" y="414" text-anchor="middle" class="lbl">стол</text>
+  <rect class="tv" x="393" y="530" width="224" height="42" rx="2"/>
+  <text x="505" y="557" text-anchor="middle" style="font:700 15px Arial,sans-serif;fill:white">ТВ / тумба 1600 × 300</text>
+
+  <!-- facade annotations -->
+  <line class="arrow" x1="910" y1="90" x2="910" y2="272"/>
+  <text x="928" y="184" class="lbl">1300 стена</text>
+  <line class="arrow" x1="910" y1="272" x2="910" y2="496"/>
+  <text x="928" y="377" class="lbl">O1 · 1600</text>
+  <text x="928" y="398" class="small">терраса</text>
+  <line class="arrow" x1="910" y1="496" x2="910" y2="580"/>
+  <text x="928" y="542" class="lbl">600 стена</text>
+
+  <rect x="60" y="602" width="800" height="34" rx="5" fill="#e8f6f0" stroke="#9ad8c5"/>
+  <text x="75" y="625" class="small">По одной прямой стене от дивана к ТВ: 1300 мм глухая стена → O1 1600 мм → 600 мм глухая стена. Высота и профиль O1 не подтверждены.</text>
+</svg>

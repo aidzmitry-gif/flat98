@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1180" viewBox="0 0 1600 1180">
+<defs>
+  <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 Z" fill="#4d5558"/></marker>
+  <style>
+    text{font-family:Arial,'Segoe UI',sans-serif;fill:#263238}
+    .title{font-size:30px;font-weight:700}.sub{font-size:17px;fill:#596368}.label{font-size:17px;font-weight:600}.small{font-size:14px}.dim{font-size:16px;fill:#354148}.muted{fill:#667176}.cardTitle{font-size:20px;font-weight:700}.cardBody{font-size:16px}.warn{fill:#8a4e25;font-size:15px;font-weight:600}
+    .dimline{stroke:#4d5558;stroke-width:1.5;marker-start:url(#arrow);marker-end:url(#arrow)}.ext{stroke:#788287;stroke-width:1}.dash{stroke-dasharray:7 6}
+  </style>
+</defs>
+<rect width="1600" height="1180" fill="#fbfaf7"/>
+<text x="70" y="58" class="title">B01 · Экранная стена — размерная схема декора</text>
+<text x="70" y="91" class="sub">Развёртка с дивана · размеры в мм · базовая ширина стены 5710</text>
+
+<!-- frontal wall; scale 0.20 px/mm; wall origin x=130, floor y=680 -->
+<rect x="130" y="140" width="1142" height="540" fill="#e8e1d7" stroke="#41494d" stroke-width="2"/>
+<!-- dimension chain on wall -->
+<rect x="178" y="200" width="120" height="480" fill="#795b43" stroke="#4c392a" stroke-width="2"/>
+<g fill="#b59879" stroke="#6f523b" stroke-width="1">
+ <rect x="181" y="203" width="56" height="70"/><rect x="239" y="203" width="56" height="70"/>
+ <rect x="181" y="277" width="56" height="70"/><rect x="239" y="277" width="56" height="70"/>
+ <rect x="181" y="351" width="56" height="70"/><rect x="239" y="351" width="56" height="70"/>
+ <rect x="181" y="425" width="56" height="70"/><rect x="239" y="425" width="56" height="70"/>
+ <rect x="181" y="499" width="56" height="70"/><rect x="239" y="499" width="56" height="70"/>
+ <rect x="181" y="573" width="56" height="103" fill="#c9b89f"/><rect x="239" y="573" width="56" height="103" fill="#c9b89f"/>
+</g>
+<rect x="298" y="572" width="560" height="108" fill="#8c755e" stroke="#574b3f" stroke-width="2"/>
+<g fill="#9a886f" stroke="#605345" stroke-width="1.2"><rect x="300" y="574" width="99" height="96"/><rect x="400" y="574" width="99" height="96"/><rect x="500" y="574" width="158" height="96"/><rect x="659" y="574" width="98" height="96"/><rect x="758" y="574" width="98" height="96"/></g>
+<rect x="357" y="251" width="447" height="255" rx="2" fill="#171a1b" stroke="#0d0f10" stroke-width="2"/>
+<rect x="359" y="253" width="443" height="251" fill="#74837c"/>
+<text x="130" y="126" class="small muted">ПОТОЛОК H ≈ 2712–2727* · в модели для визуализации принято H=2700</text>
+<text x="202" y="436" class="small" transform="rotate(-90 202 436)" text-anchor="middle" fill="#fff">книжный стеллаж</text>
+<text x="578" y="635" class="label" text-anchor="middle" fill="#fff">тумба 2800 × 450 × 540*</text>
+<text x="580" y="530" class="small" text-anchor="middle">полезное поле экрана 2214 × 1245</text>
+<text x="580" y="550" class="small" text-anchor="middle">ось экрана S=2240</text>
+<text x="1065" y="427" class="label" text-anchor="middle">свободная стена</text>
+<text x="1065" y="451" class="small" text-anchor="middle">2070</text>
+
+<!-- total and segment dimensions -->
+<line x1="130" y1="112" x2="1272" y2="112" class="dimline"/><line x1="130" y1="118" x2="130" y2="138" class="ext"/><line x1="1272" y1="118" x2="1272" y2="138" class="ext"/>
+<text x="701" y="105" class="dim" text-anchor="middle">5710 (плановая ширина; контрольный замер 5705)</text>
+<line x1="130" y1="713" x2="1272" y2="713" class="dimline"/><line x1="130" y1="680" x2="130" y2="720" class="ext"/><line x1="178" y1="680" x2="178" y2="720" class="ext"/><line x1="298" y1="680" x2="298" y2="720" class="ext"/><line x1="858" y1="680" x2="858" y2="720" class="ext"/><line x1="1272" y1="680" x2="1272" y2="720" class="ext"/>
+<text x="154" y="742" class="dim" text-anchor="middle">240</text><text x="238" y="742" class="dim" text-anchor="middle">600</text><text x="578" y="742" class="dim" text-anchor="middle">2800</text><text x="1065" y="742" class="dim" text-anchor="middle">2070</text>
+<text x="701" y="770" class="label" text-anchor="middle">240 + 600 + 2800 + 2070 = 5710 мм</text>
+<!-- screen width and cabinet side margins -->
+<line x1="357" y1="520" x2="804" y2="520" class="dimline"/><text x="580" y="545" class="dim" text-anchor="middle">2214</text>
+<line x1="822" y1="253" x2="822" y2="504" class="dimline"/><text x="840" y="379" class="dim" text-anchor="middle" transform="rotate(-90 840 379)">1245</text>
+<text x="328" y="570" class="small" text-anchor="middle">293</text><text x="832" y="570" class="small" text-anchor="middle">293</text>
+<line x1="72" y1="200" x2="72" y2="680" class="dimline"/><line x1="80" y1="200" x2="130" y2="200" class="ext"/><line x1="80" y1="680" x2="130" y2="680" class="ext"/><text x="60" y="440" class="dim" text-anchor="middle" transform="rotate(-90 60 440)">стеллаж H=2400</text>
+<line x1="92" y1="572" x2="92" y2="680" class="dimline"/><text x="80" y="626" class="small" text-anchor="middle" transform="rotate(-90 80 626)">540*</text>
+
+<!-- Option cards -->
+<text x="70" y="818" class="title" style="font-size:23px">Предлагаемые размеры отделки</text>
+<rect x="70" y="842" width="460" height="240" rx="12" fill="#f0e8dd" stroke="#c4b6a5"/>
+<text x="94" y="878" class="cardTitle">1 · Панель под травертин</text>
+<rect x="96" y="900" width="120" height="96" fill="#d7c7ad" stroke="#8f806d"/><rect x="137" y="925" width="45" height="27" fill="#52605f" stroke="#283033"/>
+<text x="240" y="914" class="cardBody">Ширина: 2800</text><text x="240" y="941" class="cardBody">Высота: ≈2100*</text><text x="240" y="968" class="cardBody">Выступ: ориентир 15–20</text>
+<text x="94" y="1030" class="small">По ширине тумбы; нижняя кромка от её верха.</text><text x="94" y="1054" class="small">Финальную высоту — по потолку и отделке.</text>
+
+<rect x="570" y="842" width="460" height="240" rx="12" fill="#eee9e3" stroke="#c4b6a5"/>
+<text x="594" y="878" class="cardTitle">2 · Тканевые акустические панели</text>
+<rect x="605" y="923" width="23" height="72" fill="#a29486" stroke="#71675e"/><rect x="637" y="935" width="94" height="52" fill="#59635d" stroke="#283033"/><rect x="740" y="923" width="23" height="72" fill="#a29486" stroke="#71675e"/>
+<text x="790" y="918" class="cardBody">2 шт. × 220 × 1250</text><text x="790" y="945" class="cardBody">Толщина: около 25</text><text x="790" y="972" class="cardBody">По бокам экрана</text>
+<text x="594" y="1030" class="small">Центр за экраном остаётся ровным.</text><text x="594" y="1054" class="small">Размер панели — эскизный, подогнать к раме.</text>
+
+<rect x="1070" y="842" width="460" height="240" rx="12" fill="#eee8df" stroke="#c4b6a5"/>
+<text x="1094" y="878" class="cardTitle">3 · Рельефная штукатурка</text>
+<rect x="1100" y="906" width="76" height="102" fill="#d6cec2" stroke="#897d70"/><path d="M1118 907 Q1142 930 1118 956 T1118 1007 M1137 907 Q1160 931 1137 956 T1137 1007 M1156 907 Q1178 931 1156 956 T1156 1007" fill="none" stroke="#b3a898" stroke-width="4"/>
+<text x="1200" y="918" class="cardBody">Ш × В: ≈1100 × 2200</text><text x="1200" y="945" class="cardBody">Рельеф: до 20–25</text><text x="1200" y="972" class="cardBody">На свободной стене справа</text>
+<text x="1094" y="1030" class="small">Оставить запас от наличника двери.</text><text x="1094" y="1054" class="small">Габарит и место — концепт для согласования.</text>
+
+<text x="70" y="1118" class="warn">* Проверка перед заказом: 5710 — плановая ширина, в обмерах есть 5705; потолок по точкам 2712–2727. H тумбы 540 — из 3D-модели, не утверждённый заказной размер.</text>
+<text x="70" y="1147" class="small muted">Экран: ориентир активного поля 2214 × 1245; его внешняя рама будет больше. Схема согласовательная, не монтажный чертёж.</text>
+</svg>

@@ -1,0 +1,166 @@
+<div id="b01-tv-scale">
+  <style>
+    #b01-tv-scale { --sand: light-dark(#e8ddcb,#615b51); --sand-side: light-dark(#d8cbb6,#514b40); --floor: light-dark(#eee8de,#393733); --walnut: light-dark(#836344,#795f45); --brass: light-dark(#b79650,#b79650); --screen: light-dark(#252725,#252725); }
+    #b01-tv-scale .scene { display:block; width:100%; }
+    #b01-tv-scale .scene text { fill:var(--foreground); font-size:12px; font-weight:400; }
+    #b01-tv-scale .scene .dim { stroke:var(--foreground); stroke-width:1; fill:none; }
+    #b01-tv-scale .scene .guide { stroke:var(--muted-foreground); stroke-width:1; stroke-dasharray:4 4; fill:none; }
+    #b01-tv-scale .scene .wall { fill:var(--sand); stroke:var(--muted-foreground); stroke-width:1; }
+    #b01-tv-scale .scene .furniture { fill:var(--sand-side); stroke:var(--muted-foreground); stroke-width:1; }
+    #b01-tv-scale .scene .sofa { fill:color-mix(in srgb,var(--viz-series-1) 20%,var(--background)); stroke:var(--viz-series-1); stroke-width:1; }
+    #b01-tv-scale .stage { margin-block:8px; }
+  </style>
+  <div class="viz-controls">
+    <label class="form-label" for="b01-variant">Компоновка
+      <select id="b01-variant" class="form-select"><option value="storage">Предлагаю: тумба 2000 + шкаф 600</option><option value="original">Исходная тумба 1600</option></select>
+    </label>
+    <label class="form-label" for="b01-view">Вид
+      <select id="b01-view" class="form-select"><option value="front">ТВ-стена · размеры</option><option value="sofa">Перспектива с дивана</option><option value="plan">План · стороны и привязки</option></select>
+    </label>
+    <label class="form-label" for="b01-diagonal">Экран для примерки
+      <select id="b01-diagonal" class="form-select"><option value="55">55″ · условная модель</option><option value="65" selected>65″ · условная модель</option><option value="75">75″ · условная модель</option></select>
+    </label>
+  </div>
+  <div class="stage"><svg class="scene" role="img" aria-label="Размерная модель ТВ-стены B01"></svg></div>
+  <div id="b01-detail" class="text-small tabular-nums" aria-live="polite"></div>
+  <div class="viz-controls">
+    <label class="form-label" for="b01-door">От ТВ-стены до двери справа, мм · по БТИ 200
+      <input id="b01-door" class="form-control" type="number" min="0" max="2585" step="1" value="200" placeholder="Отступ до ближнего края проёма">
+    </label>
+  </div>
+  <div id="b01-door-status" class="text-small" aria-live="polite">Дверь: БТИ 910; контроль 915 × 2150 · отступ БТИ 200</div>
+  <script>
+    (() => {
+      const root=document.getElementById('b01-tv-scale');
+      const stage=root.querySelector('.stage'), svg=root.querySelector('.scene');
+      const view=root.querySelector('#b01-view'), diagonal=root.querySelector('#b01-diagonal'), variant=root.querySelector('#b01-variant');
+      const doorInput=root.querySelector('#b01-door'), detail=root.querySelector('#b01-detail'), doorStatus=root.querySelector('#b01-door-status');
+      const D={W:5710,L:3500,H:2719,sofa:{x:2470,y:2500,w:2000,d:1000},console:{x:2700,y:0,w:1600,d:300,z:200,h:300},tvZ:1100};
+      const tower={x:1650,y:0,w:600,d:300,z:0,h:2200};
+      const storage=()=>variant.value==='storage';
+      function configure(){D.console=storage()?{x:2470,y:0,w:2000,d:300,z:150,h:350}:{x:2700,y:0,w:1600,d:300,z:200,h:300};}
+      const ns='http://www.w3.org/2000/svg';
+      const fmt=n=>Math.round(n).toLocaleString('ru-RU');
+      let drawTarget=svg;
+      function make(tag,attrs={},content){const el=document.createElementNS(ns,tag);Object.entries(attrs).forEach(([k,v])=>el.setAttribute(k,v));if(content!==undefined)el.textContent=content;drawTarget.appendChild(el);return el;}
+      function text(x,y,s,anchor='middle',attrs={}){return make('text',{x,y,'text-anchor':anchor,...attrs},s);}
+      function line(x1,y1,x2,y2,cls='dim',attrs={}){return make('line',{x1,y1,x2,y2,class:cls,...attrs});}
+      function rect(x,y,width,height,cls,attrs={}){return make('rect',{x,y,width,height,class:cls,...attrs});}
+      function dim(x1,x2,y,label){line(x1,y,x2,y);line(x1,y-4,x1,y+4);line(x2,y-4,x2,y+4);text((x1+x2)/2,y-7,label);}
+      function vertical(x,y1,y2,label,anchor='start'){line(x,y1,x,y2);line(x-4,y1,x+4,y1);line(x-4,y2,x+4,y2);text(x+(anchor==='start'?7:-7),(y1+y2)/2+4,label,anchor);}
+      function screen(){const d=Number(diagonal.value)*25.4;return {w:d*16/Math.sqrt(337),h:d*9/Math.sqrt(337)};}
+      function doorOffset(){if(doorInput.value.trim()==='')return null;const a=Number(doorInput.value);return Number.isFinite(a)&&a>=0&&a<=D.L-915?a:null;}
+      function header(width,first,second){text(8,20,first,'start');if(second)text(8,39,second,'start');}
+      function front(width){
+        const narrow=width<520,pad=narrow?16:48,s=(width-2*pad)/D.W,top=80,bottom=top+D.H*s,height=bottom+(narrow?134:119);
+        svg.setAttribute('viewBox',`0 0 ${width} ${height}`);svg.setAttribute('height',height);
+        header(width,'B01 · глухая ТВ-стена · вид с дивана',narrow?'Терраса ← боковые стены → вход':'Слева — боковая стена с террасой; справа — боковая стена с входом');
+        const X=x=>pad+x*s,Y=z=>bottom-z*s,c=D.console,t=screen();
+        rect(pad,top,D.W*s,D.H*s,'wall');
+        if(storage()){
+          const k=D.W-tower.x-tower.w;
+          rect(X(k),Y(tower.h),tower.w*s,tower.h*s,'furniture');
+          line(X(k+tower.w/2),Y(tower.h),X(k+tower.w/2),Y(0));
+          if(!narrow)text(X(k+tower.w/2),Y(tower.h)-10,'600 × 300 · H2200*');
+        }
+        const cx=D.W-c.x-c.w;
+        rect(X(cx),Y(c.z+c.h),c.w*s,c.h*s,'furniture');
+        rect(X(cx),Y(c.z+c.h),c.w*s,Math.max(2,20*s),'',{fill:'var(--walnut)'});
+        const fronts=storage()?4:3;
+        for(let i=1;i<fronts;i++)line(X(cx+c.w*i/fronts),Y(c.z+c.h-20),X(cx+c.w*i/fronts),Y(c.z),'dim',{stroke:'var(--muted-foreground)'});
+        const center=D.W-(c.x+c.w/2);
+        rect(X(center-t.w/2),Y(D.tvZ+t.h/2),t.w*s,t.h*s,'',{fill:'var(--screen)',rx:1});
+        dim(X(0),X(D.W),60,'5710 мм');
+        line(X(0),65,X(0),top,'guide');line(X(D.W),65,X(D.W),top,'guide');
+        dim(X(0),X(cx),bottom+35,fmt(cx));dim(X(cx),X(cx+c.w),bottom+35,fmt(c.w));dim(X(cx+c.w),X(D.W),bottom+35,fmt(c.x));
+        [0,cx,cx+c.w,D.W].forEach(x=>line(X(x),bottom+2,X(x),bottom+39,'guide'));
+        line(X(center),Y(D.tvZ+t.h/2)-10,X(center),bottom+4,'guide');
+        if(!narrow){
+          vertical(X(cx+c.w+90),Y(0),Y(D.tvZ),'1100*');
+          vertical(width-32,top,bottom,'2719*','end');
+          text(X(center),Y(D.tvZ+t.h/2)-18,`${diagonal.value}″ · ${fmt(t.w)} × ${fmt(t.h)}*`);
+        }
+        text(pad,bottom+69,`* Тумба H${c.h}; низ ${c.z}; центр ТВ 1100.`,'start');
+        text(pad,bottom+88,'2719 — обмер центра; готовый потолок не задан.','start');
+        if(narrow)text(pad,bottom+107,`Экран ${diagonal.value}″: ${fmt(t.w)} × ${fmt(t.h)} мм · примерка`,'start');
+        detail.textContent=storage()?'Предложение: 4 секции по 500 мм + шкаф 600 мм · ТВ строго по оси дивана · глубина 300 мм':'Исходная тумба — 28,0% ширины стены · глубина 300 мм · разница осей 30 мм';
+      }
+      function plan(width){
+        const pad=width<520?22:46,top=70,s=(width-2*pad)/D.W,h=D.L*s,height=top+h+85;
+        svg.setAttribute('viewBox',`0 0 ${width} ${height}`);svg.setAttribute('height',height);
+        header(width,'План · ТВ-стена сверху, диван снизу');
+        const X=x=>pad+(D.W-x)*s,Y=y=>top+y*s,box=(x,y,w,d,cls)=>rect(X(x+w),Y(y),w*s,d*s,cls);
+        rect(pad,top,D.W*s,h,'',{fill:'var(--background)',stroke:'var(--foreground)'});
+        rect(pad,Y(300),D.W*s,1000*s,'',{fill:'color-mix(in srgb,var(--viz-series-2) 12%,transparent)'});
+        box(D.console.x,0,D.console.w,300,'furniture');box(D.sofa.x,D.sofa.y,2000,1000,'sofa');
+        if(storage())box(tower.x,0,tower.w,tower.d,'furniture');
+        const tx=X(1625),ty=Y(1725);make('circle',{cx:tx,cy:ty,r:425*s,class:'furniture'});
+        box(4500,2900,1200,600,'furniture');
+        box(0,1300,600,1600,'furniture');box(0,2900,2440,600,'furniture');
+        const axis=D.console.x+D.console.w/2;
+        line(X(axis),Y(300),X(axis),Y(2500),'guide');
+        text(X(axis),Y(300)+17,'ТВ / тумба');text(X(3470),Y(3050),'Диван 2000');
+        const a=doorOffset();
+        line(X(5710),Y(600),X(5710),Y(2200),'dim',{style:'stroke:var(--viz-series-1);stroke-width:4'});
+        text(pad+8,Y(1400),'O1 · 1600','start');
+        if(a!==null){line(X(0),Y(a),X(0),Y(a+915),'dim',{style:'stroke:var(--viz-series-3);stroke-width:5'});text(X(0)-7,Y(a+457),'D2 · 915','end');}
+        else{text(X(0)-7,Y(600),'D2: отступ ?','end');}
+        dim(pad,pad+D.W*s,54,'5710 мм');
+        text(pad,top+h+30,'ТВ-стена — без проёмов · вход на боковой справа','start');
+        text(pad,top+h+50,'O1: 600 + 1600 + 1300 по БТИ · высота неизвестна','start');
+        detail.textContent='Между передним краем дивана и тумбой 2200 мм · стол показан Ø850 по вашей расстановке';
+      }
+      function sofa(width){
+        const height=Math.max(350,width*.64),cx=width*.44,cy=height*.44,f=width*.35,camX=3470,camY=3500,eye=1100;
+        svg.setAttribute('viewBox',`0 0 ${width} ${height}`);svg.setAttribute('height',height);
+        header(width,'Вид с дивана · геометрия из миллиметров');
+        const clip=make('clipPath',{id:'b01-scene-clip'}),clipRect=document.createElementNS(ns,'rect');
+        Object.entries({x:0,y:48,width,height:height-135}).forEach(([k,v])=>clipRect.setAttribute(k,v));clip.appendChild(clipRect);
+        drawTarget=make('g',{'clip-path':'url(#b01-scene-clip)'});
+        const P=([x,y,z])=>{const depth=camY-y;return [cx+(camX-x)*f/depth,cy-(z-eye)*f/depth];};
+        const poly=(pts,fill,stroke='var(--muted-foreground)',extra={})=>make('polygon',{points:pts.map(p=>P(p).join(',')).join(' '),fill,stroke,'stroke-width':.7,...extra});
+        const near=2100;
+        poly([[5710,0,0],[0,0,0],[0,near,0],[5710,near,0]],'var(--floor)');
+        poly([[5710,0,D.H],[0,0,D.H],[0,near,D.H],[5710,near,D.H]],'var(--floor)');
+        poly([[5710,0,0],[5710,near,0],[5710,near,D.H],[5710,0,D.H]],'var(--sand-side)');
+        poly([[0,0,0],[0,near,0],[0,near,D.H],[0,0,D.H]],'var(--sand-side)');
+        poly([[5710,0,0],[0,0,0],[0,0,D.H],[5710,0,D.H]],'var(--sand)');
+        poly([[5710,600,0],[5710,2100,0],[5710,2100,2150],[5710,600,2150]],'color-mix(in srgb,var(--viz-series-1) 18%,var(--background))','var(--viz-series-1)',{'stroke-dasharray':'5 3'});
+        const c=D.console,t=screen(),tvX=c.x+c.w/2;
+        poly([[tvX-t.w/2,35,D.tvZ-t.h/2],[tvX+t.w/2,35,D.tvZ-t.h/2],[tvX+t.w/2,35,D.tvZ+t.h/2],[tvX-t.w/2,35,D.tvZ+t.h/2]],'var(--screen)');
+        poly([[c.x,0,c.z+c.h],[c.x+c.w,0,c.z+c.h],[c.x+c.w,c.d,c.z+c.h],[c.x,c.d,c.z+c.h]],'var(--walnut)');
+        poly([[c.x,0,c.z],[c.x,c.d,c.z],[c.x,c.d,c.z+c.h],[c.x,0,c.z+c.h]],'var(--sand-side)');
+        poly([[c.x+c.w,0,c.z],[c.x+c.w,c.d,c.z],[c.x+c.w,c.d,c.z+c.h],[c.x+c.w,0,c.z+c.h]],'var(--sand-side)');
+        poly([[c.x,c.d,c.z],[c.x+c.w,c.d,c.z],[c.x+c.w,c.d,c.z+c.h],[c.x,c.d,c.z+c.h]],'var(--sand)');
+        const fronts=storage()?4:3;
+        for(let i=1;i<fronts;i++){const p=P([c.x+c.w*i/fronts,c.d,c.z]),q=P([c.x+c.w*i/fronts,c.d,c.z+c.h]);line(...p,...q);}
+        if(storage()){
+          const a=tower;
+          poly([[a.x,0,0],[a.x,a.d,0],[a.x,a.d,a.h],[a.x,0,a.h]],'var(--walnut)');
+          poly([[a.x,0,a.h],[a.x+a.w,0,a.h],[a.x+a.w,a.d,a.h],[a.x,a.d,a.h]],'var(--walnut)');
+          poly([[a.x,a.d,0],[a.x+a.w,a.d,0],[a.x+a.w,a.d,a.h],[a.x,a.d,a.h]],'var(--sand)');
+          const p=P([a.x+a.w/2,a.d,0]),q=P([a.x+a.w/2,a.d,a.h]);line(...p,...q);
+        }
+        const a=doorOffset();
+        if(a!==null&&a<near){poly([[0,a,0],[0,Math.min(a+915,near),0],[0,Math.min(a+915,near),2150],[0,a,2150]],'var(--sand)','var(--viz-series-3)',{'stroke-dasharray':'5 3'});}
+        const start=P([5710,0,D.H]),end=P([0,0,D.H]);dim(start[0],end[0],Math.min(start[1],end[1])-14,'5710 мм');
+        const l=P([c.x+c.w,300,c.z]),r=P([c.x,300,c.z]);dim(l[0],r[0],Math.max(l[1],r[1])+25,`${c.w} мм`);
+        drawTarget=svg;
+        text(12,height-64,'← Терраса','start');text(width-12,height-64,'Вход справа →','end');
+        text(12,height-42,'Высоты потолка, ТВ и O1 — предварительно','start');
+        text(12,height-23,a===null?'Дверь: положение вдоль стены не задано':'Дверь: положение по введённому отступу','start');
+        detail.textContent=`Камера по оси дивана X=3470 · ТВ X=${tvX} · перспектива меняет видимые ширины`;
+      }
+      function render(){
+        configure();
+        const width=Math.max(320,Math.round(stage.getBoundingClientRect().width));
+        svg.replaceChildren();make('title',{},'B01: точные горизонтальные размеры по переданным координатам; высоты — предварительно');
+        if(view.value==='front')front(width);else if(view.value==='plan')plan(width);else sofa(width);
+        const a=doorOffset();doorInput.setAttribute('aria-invalid',doorInput.value!==''&&a===null?'true':'false');
+        doorStatus.textContent=a===null?'Дверь 915 × 2150 · привязка не задана':`Отступ ${fmt(a)} мм (БТИ: 200) · проём: БТИ 910, контроль 915 × 2150`;
+      }
+      view.addEventListener('change',render);diagonal.addEventListener('change',render);variant.addEventListener('change',render);doorInput.addEventListener('input',render);
+      new ResizeObserver(render).observe(stage);render();
+    })();
+  </script>
+</div>

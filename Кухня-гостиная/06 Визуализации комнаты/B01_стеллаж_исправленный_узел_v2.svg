@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="690" viewBox="0 0 940 690">
+<rect width="940" height="690" fill="#faf7f1"/>
+<g font-family="Arial,sans-serif" fill="#253e36">
+<text x="40" y="48" font-size="28" font-weight="bold">B01  /  Открытые полки к рабочему столу</text>
+<text x="40" y="78" font-size="17">Фрагмент плана у террасы · вид сверху · размеры в миллиметрах</text>
+<!-- scale .14: y=124 desk wall, y=614 media wall; x=810 terrace wall -->
+<path d="M280 124H810V306 M810 530V614H280" stroke="#394a42" stroke-width="5" fill="none"/>
+<rect x="642" y="124" width="168" height="84" fill="#d3b78b" stroke="#806b49"/>
+<circle cx="723" cy="194" r="36.4" fill="#dbe5da" stroke="#59705c" stroke-dasharray="4 3"/>
+<text x="657" y="151" font-size="17">Рабочий стол</text><text x="696" y="200" font-size="14">Кресло</text>
+<path d="M810 306H698 M698 306A112 112 0 0 0 810 418" stroke="#56898a" fill="none" stroke-dasharray="5 4"/>
+<path d="M810 306H698 M810 418V530" stroke="#39797a" fill="none" stroke-width="5"/>
+<text x="823" y="417" font-size="16" transform="rotate(90 823 417)">Терраса</text>
+<rect x="300.4" y="551" width="392" height="63" fill="#e4dac7" stroke="#826e4a"/>
+<text x="395" y="588" font-size="17">ТВ-тумба 2800 × 450</text>
+<rect x="692.4" y="572" width="84" height="42" fill="#c8a879" stroke="#665838" stroke-width="2"/>
+<path d="M693 572H776" stroke="#197658" stroke-width="6"/>
+<path d="M734 558V241m-10 17 10-17 10 17" stroke="#197658" stroke-width="3" fill="none"/>
+<text x="347" y="463" font-size="19" font-weight="bold">Открытая сторона полок</text>
+<path d="M585 460H724" stroke="#197658" stroke-width="1.5"/>
+<text x="42" y="657" font-size="16">Стеллаж 600 × 300 · глухой торец к шторе · отступ от стены террасы 240 · верх до потолка</text>
+</g></svg>

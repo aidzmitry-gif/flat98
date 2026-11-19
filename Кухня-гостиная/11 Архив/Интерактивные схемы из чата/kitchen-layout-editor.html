@@ -1,0 +1,498 @@
+<div id="kitchen-layout-editor">
+  <h2>Интерактивная схема TV-011</h2>
+  <div class="viz-controls" aria-label="Управление расстановкой">
+    <label class="form-label" for="layout-item">Предмет
+      <select class="form-select" id="layout-item"></select>
+    </label>
+    <label class="form-label" for="layout-x">X от левой стены, мм
+      <input class="form-control tabular-nums" id="layout-x" type="number" min="0" step="50">
+    </label>
+    <label class="form-label" for="layout-y">Y от нижней стены, мм
+      <input class="form-control tabular-nums" id="layout-y" type="number" min="0" step="50">
+    </label>
+    <label class="form-check form-switch">
+      <input class="form-check-input" id="layout-table-group" type="checkbox" checked>
+      <span class="form-check-label">Стол со стульями</span>
+    </label>
+    <button class="btn btn-primary" id="layout-check" type="button">Проверить расстановку</button>
+  </div>
+  <div class="viz-row">
+    <span id="layout-status" aria-live="polite"></span>
+  </div>
+  <div class="plan-wrap">
+    <svg id="layout-svg" role="img" aria-labelledby="layout-svg-title layout-svg-desc">
+      <title id="layout-svg-title">План кухни-гостиной с перетаскиваемой мебелью</title>
+      <desc id="layout-svg-desc">Комната 5710 на 3500 миллиметров. Кухня, стол, стулья, диван, рабочее место и телевизор показаны в реальном масштабе.</desc>
+    </svg>
+  </div>
+</div>
+
+<style>
+  #kitchen-layout-editor {
+    display: grid;
+    gap: 12px;
+    width: 100%;
+    color: var(--foreground);
+  }
+
+  #kitchen-layout-editor .plan-wrap {
+    width: 100%;
+  }
+
+  #kitchen-layout-editor #layout-status {
+    width: 100%;
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  #kitchen-layout-editor .plan-svg {
+    display: block;
+    width: 100%;
+    touch-action: none;
+  }
+
+  #kitchen-layout-editor .room-field {
+    fill: var(--background);
+    stroke: var(--foreground);
+    stroke-width: 1.5;
+    vector-effect: non-scaling-stroke;
+  }
+
+  #kitchen-layout-editor .grid-line {
+    stroke: var(--border);
+    stroke-width: 1;
+    opacity: 0.42;
+    vector-effect: non-scaling-stroke;
+  }
+
+  #kitchen-layout-editor .door-d2 {
+    stroke: var(--orange);
+  }
+
+  #kitchen-layout-editor .door-o1 {
+    stroke: var(--green);
+  }
+
+  #kitchen-layout-editor .door-line {
+    stroke-width: 5;
+    vector-effect: non-scaling-stroke;
+  }
+
+  #kitchen-layout-editor .zone-shape {
+    fill-opacity: 0.06;
+    stroke-width: 1.5;
+    stroke-dasharray: 7 5;
+    vector-effect: non-scaling-stroke;
+  }
+
+  #kitchen-layout-editor .zone-route {
+    fill: var(--green);
+    stroke: var(--green);
+  }
+
+  #kitchen-layout-editor .zone-work {
+    fill: var(--orange);
+    stroke: var(--orange);
+  }
+
+  #kitchen-layout-editor .zone-door {
+    fill: var(--red);
+    stroke: var(--red);
+  }
+
+  #kitchen-layout-editor .zone-desk {
+    fill: var(--blue);
+    stroke: var(--blue);
+  }
+
+  #kitchen-layout-editor .object {
+    cursor: grab;
+  }
+
+  #kitchen-layout-editor .object.is-dragging {
+    cursor: grabbing;
+  }
+
+  #kitchen-layout-editor .item-shape {
+    fill: var(--item-color);
+    fill-opacity: 0.20;
+    stroke: var(--item-color);
+    stroke-width: 1.5;
+    vector-effect: non-scaling-stroke;
+  }
+
+  #kitchen-layout-editor .category-kitchen { --item-color: var(--orange); }
+  #kitchen-layout-editor .category-dining { --item-color: var(--green); }
+  #kitchen-layout-editor .category-living { --item-color: var(--purple); }
+  #kitchen-layout-editor .category-work { --item-color: var(--blue); }
+  #kitchen-layout-editor .category-media { --item-color: var(--red); }
+
+  #kitchen-layout-editor .object.is-selected .item-shape {
+    fill-opacity: 0.32;
+    stroke: var(--primary);
+    stroke-width: 3;
+  }
+
+  #kitchen-layout-editor .object.has-conflict .item-shape {
+    stroke: var(--destructive);
+    stroke-width: 3;
+  }
+
+  #kitchen-layout-editor .object-label,
+  #kitchen-layout-editor .zone-label,
+  #kitchen-layout-editor .dimension-label,
+  #kitchen-layout-editor .marker-label {
+    fill: var(--foreground);
+    pointer-events: none;
+    user-select: none;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  #kitchen-layout-editor .zone-label,
+  #kitchen-layout-editor .dimension-label {
+    fill: var(--muted-foreground);
+    font-weight: 400;
+  }
+
+  #kitchen-layout-editor .marker {
+    fill: var(--foreground);
+    stroke: var(--background);
+    stroke-width: 1.5;
+    vector-effect: non-scaling-stroke;
+  }
+
+  #kitchen-layout-editor .marker-label {
+    fill: var(--background);
+    font-size: 11px;
+  }
+
+  #kitchen-layout-editor.is-narrow .object-label,
+  #kitchen-layout-editor.is-narrow .zone-label,
+  #kitchen-layout-editor.is-narrow .dimension-label {
+    display: none;
+  }
+
+  @media (pointer: coarse) {
+    #kitchen-layout-editor .object {
+      cursor: default;
+    }
+  }
+</style>
+
+<script>
+(() => {
+  const root = document.getElementById('kitchen-layout-editor');
+  if (!root || root.dataset.ready === 'true') return;
+  root.dataset.ready = 'true';
+
+  const svg = root.querySelector('#layout-svg');
+  const select = root.querySelector('#layout-item');
+  const inputX = root.querySelector('#layout-x');
+  const inputY = root.querySelector('#layout-y');
+  const tableGroupToggle = root.querySelector('#layout-table-group');
+  const checkButton = root.querySelector('#layout-check');
+  const status = root.querySelector('#layout-status');
+  const NS = 'http://www.w3.org/2000/svg';
+  const ROOM_W = 5710;
+  const ROOM_H = 3500;
+  const SNAP = 50;
+
+  const objects = [
+    { id: 'k1', number: '1', name: 'Угол / подготовка', label: 'Угол', x: 0, y: 2900, w: 600, h: 600, category: 'kitchen' },
+    { id: 'k2', number: '2', name: 'Варка / ящики', label: 'Варка / ящики', x: 600, y: 2900, w: 600, h: 600, category: 'kitchen' },
+    { id: 'k3', number: '3', name: 'ПММ', x: 1200, y: 2900, w: 600, h: 600, category: 'kitchen' },
+    { id: 'k4', number: '4', name: 'Пенал', x: 1800, y: 2900, w: 600, h: 600, category: 'kitchen' },
+    { id: 'k5', number: '5', name: 'Мойка', x: 0, y: 2250, w: 600, h: 600, category: 'kitchen' },
+    { id: 'k6', number: '6', name: 'Выкатное хранение', label: 'Выкат 350', x: 0, y: 1900, w: 600, h: 350, category: 'kitchen' },
+    { id: 'k7', number: '7', name: 'Холодильник', x: 0, y: 1300, w: 600, h: 600, category: 'kitchen' },
+    { id: 'table', number: '8', name: 'Стол Ø850', x: 1200, y: 1300, w: 850, h: 850, category: 'dining', shape: 'circle' },
+    { id: 'chair-a', number: '8A', name: 'Стул 8A', x: 1850, y: 2150, w: 400, h: 400, category: 'dining' },
+    { id: 'chair-b', number: '8B', name: 'Стул 8B', x: 1000, y: 2150, w: 400, h: 400, category: 'dining' },
+    { id: 'chair-c', number: '8C', name: 'Стул 8C', x: 1900, y: 950, w: 400, h: 400, category: 'dining' },
+    { id: 'chair-d', number: '8D', name: 'Стул 8D', x: 950, y: 950, w: 400, h: 400, category: 'dining' },
+    { id: 'sofa', number: '9', name: 'Диван 2000×1000', x: 2450, y: 2500, w: 2000, h: 1000, category: 'living' },
+    { id: 'desk', number: '10', name: 'Рабочее место 1200×600', label: 'РМ 1200×600', x: 4500, y: 2900, w: 1200, h: 600, category: 'work' },
+    { id: 'tv', number: '11', name: 'ТВ / медиа 1600×300', x: 2650, y: 0, w: 1600, h: 300, category: 'media' }
+  ];
+
+  const tableSet = ['table', 'chair-a', 'chair-b', 'chair-c', 'chair-d'];
+  const fixedZones = [
+    { id: 'route-main', name: '12 · маршрут D2 → O1', x: 0, y: 350, w: 5710, h: 900, kind: 'route' },
+    { id: 'route-o1', name: 'проход к O1 · 900', x: 4810, y: 350, w: 900, h: 2100, kind: 'route' },
+    { id: 'work-top', name: 'рабочая зона · 700', x: 0, y: 2200, w: 2400, h: 700, kind: 'work', labelAt: 'bottom' },
+    { id: 'work-left', name: 'рабочая зона · 700', x: 600, y: 1300, w: 700, h: 1600, kind: 'work', hideLabel: true }
+  ];
+
+  let selectedId = 'table';
+  let scale = 1;
+  let drag = null;
+
+  const byId = (id) => objects.find((item) => item.id === id);
+  const svgEl = (tag, attrs = {}) => {
+    const el = document.createElementNS(NS, tag);
+    Object.entries(attrs).forEach(([key, value]) => el.setAttribute(key, String(value)));
+    return el;
+  };
+
+  const screenRect = (rect) => ({
+    x: rect.x * scale,
+    y: (ROOM_H - rect.y - rect.h) * scale,
+    w: rect.w * scale,
+    h: rect.h * scale
+  });
+
+  const modelPoint = (event) => {
+    const point = svg.createSVGPoint();
+    point.x = event.clientX;
+    point.y = event.clientY;
+    const local = point.matrixTransform(svg.getScreenCTM().inverse());
+    return { x: local.x / scale, y: ROOM_H - local.y / scale };
+  };
+
+  const snap = (value) => Math.round(value / SNAP) * SNAP;
+  const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
+  const overlap = (a, b) => Math.max(a.x, b.x) < Math.min(a.x + a.w, b.x + b.w)
+    && Math.max(a.y, b.y) < Math.min(a.y + a.h, b.y + b.h);
+
+  const activeZones = () => {
+    const pmm = byId('k3');
+    const desk = byId('desk');
+    return fixedZones.concat([
+      { id: 'pmm-door', name: 'дверца ПММ · 600', x: pmm.x, y: pmm.y - 600, w: 600, h: 600, kind: 'door', owner: 'k3' },
+      { id: 'desk-clearance', name: 'подход к креслу · 600', x: desk.x, y: desk.y - 410, w: 600, h: 620, kind: 'desk', owner: 'desk' }
+    ]);
+  };
+
+  const validate = () => {
+    const conflicts = new Set();
+    const messages = [];
+    for (let i = 0; i < objects.length; i += 1) {
+      for (let j = i + 1; j < objects.length; j += 1) {
+        if (overlap(objects[i], objects[j])) {
+          conflicts.add(objects[i].id);
+          conflicts.add(objects[j].id);
+          messages.push(`${objects[i].name} ↔ ${objects[j].name}`);
+        }
+      }
+    }
+    const zones = activeZones();
+    objects.filter((item) => item.category !== 'kitchen').forEach((item) => {
+      zones.forEach((zone) => {
+        if (zone.owner !== item.id && overlap(item, zone)) {
+          conflicts.add(item.id);
+          messages.push(`${item.name} → ${zone.name}`);
+        }
+      });
+    });
+    return { conflicts, messages: [...new Set(messages)] };
+  };
+
+  const addText = (parent, x, y, value, className, anchor = 'middle') => {
+    const node = svgEl('text', { x, y, class: className, 'text-anchor': anchor, 'dominant-baseline': 'middle' });
+    node.textContent = value;
+    parent.appendChild(node);
+    return node;
+  };
+
+  const drawZone = (parent, zone) => {
+    const r = screenRect(zone);
+    parent.appendChild(svgEl('rect', {
+      x: r.x, y: r.y, width: r.w, height: r.h,
+      class: `zone-shape zone-${zone.kind}`
+    }));
+    if (!zone.hideLabel) {
+      const labelY = zone.labelAt === 'bottom' ? r.y + r.h - 14 : r.y + 16;
+      addText(parent, r.x + r.w / 2, labelY, zone.name, 'zone-label');
+    }
+  };
+
+  const drawObject = (parent, item, conflict) => {
+    const r = screenRect(item);
+    const group = svgEl('g', {
+      class: `object category-${item.category}${item.id === selectedId ? ' is-selected' : ''}${conflict ? ' has-conflict' : ''}`,
+      'data-id': item.id,
+      transform: `translate(${r.x} ${r.y})`,
+      'aria-hidden': 'true'
+    });
+    const shape = item.shape === 'circle'
+      ? svgEl('circle', { cx: r.w / 2, cy: r.h / 2, r: r.w / 2, class: 'item-shape' })
+      : svgEl('rect', { x: 0, y: 0, width: r.w, height: r.h, rx: Math.min(10, r.w / 8, r.h / 8), class: 'item-shape' });
+    group.appendChild(shape);
+
+    const markerX = Math.min(15, Math.max(10, r.w * 0.18));
+    const markerY = Math.min(15, Math.max(10, r.h * 0.18));
+    group.appendChild(svgEl('circle', { cx: markerX, cy: markerY, r: 10, class: 'marker' }));
+    addText(group, markerX, markerY + 0.5, item.number, 'marker-label');
+    addText(group, r.w / 2, r.h / 2, item.label || item.name, 'object-label');
+
+    group.addEventListener('pointerdown', (event) => {
+      event.preventDefault();
+      selectItem(item.id);
+      const point = modelPoint(event);
+      const ids = item.id === 'table' && tableGroupToggle.checked ? tableSet : [item.id];
+      drag = {
+        pointerId: event.pointerId,
+        anchor: point,
+        primary: item.id,
+        ids,
+        starts: new Map(ids.map((id) => {
+          const current = byId(id);
+          return [id, { x: current.x, y: current.y }];
+        }))
+      };
+      group.classList.add('is-dragging');
+      svg.setPointerCapture(event.pointerId);
+    });
+    parent.appendChild(group);
+  };
+
+  const render = () => {
+    const width = Math.max(320, Math.round(root.querySelector('.plan-wrap').getBoundingClientRect().width));
+    scale = width / ROOM_W;
+    const height = Math.round(ROOM_H * scale);
+    root.classList.toggle('is-narrow', width < 500);
+    svg.classList.add('plan-svg');
+    svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
+    svg.setAttribute('height', String(height));
+
+    const title = svgEl('title', { id: 'layout-svg-title' });
+    title.textContent = 'План кухни-гостиной с перетаскиваемой мебелью';
+    const desc = svgEl('desc', { id: 'layout-svg-desc' });
+    desc.textContent = 'Комната 5710 на 3500 миллиметров. Все предметы показаны в масштабе и могут перемещаться.';
+    svg.replaceChildren(title, desc);
+
+    svg.appendChild(svgEl('rect', { x: 0, y: 0, width, height, class: 'room-field' }));
+    for (let x = 500; x < ROOM_W; x += 500) {
+      svg.appendChild(svgEl('line', { x1: x * scale, y1: 0, x2: x * scale, y2: height, class: 'grid-line' }));
+    }
+    for (let y = 500; y < ROOM_H; y += 500) {
+      const sy = (ROOM_H - y) * scale;
+      svg.appendChild(svgEl('line', { x1: 0, y1: sy, x2: width, y2: sy, class: 'grid-line' }));
+    }
+
+    svg.appendChild(svgEl('line', { x1: 0, y1: (ROOM_H - 1110) * scale, x2: 0, y2: (ROOM_H - 200) * scale, class: 'door-line door-d2' }));
+    svg.appendChild(svgEl('line', { x1: width, y1: (ROOM_H - 2200) * scale, x2: width, y2: (ROOM_H - 600) * scale, class: 'door-line door-o1' }));
+    addText(svg, 12, (ROOM_H - 655) * scale, 'D2 · 910', 'dimension-label', 'start');
+    addText(svg, width - 12, (ROOM_H - 1400) * scale, 'O1 · 1600 · терраса', 'dimension-label', 'end');
+    addText(svg, 12, 16, '5710 × 3500 мм', 'dimension-label', 'start');
+
+    const zoneLayer = svgEl('g', { 'aria-hidden': 'true' });
+    activeZones().forEach((zone) => drawZone(zoneLayer, zone));
+    svg.appendChild(zoneLayer);
+
+    const filler = screenRect({ x: 0, y: 2850, w: 600, h: 50 });
+    svg.appendChild(svgEl('rect', { x: filler.x, y: filler.y, width: filler.w, height: filler.h, class: 'item-shape category-kitchen' }));
+
+    const report = validate();
+    const ordered = objects.filter((item) => item.id !== selectedId).concat(objects.filter((item) => item.id === selectedId));
+    const objectLayer = svgEl('g');
+    ordered.forEach((item) => drawObject(objectLayer, item, report.conflicts.has(item.id)));
+    svg.appendChild(objectLayer);
+    updateStatus(report);
+  };
+
+  const selectItem = (id) => {
+    selectedId = id;
+    select.value = id;
+    const item = byId(id);
+    inputX.value = String(Math.round(item.x));
+    inputY.value = String(Math.round(item.y));
+    inputX.max = String(ROOM_W - item.w);
+    inputY.max = String(ROOM_H - item.h);
+    render();
+  };
+
+  const applyPosition = (id, targetX, targetY) => {
+    const item = byId(id);
+    const ids = id === 'table' && tableGroupToggle.checked ? tableSet : [id];
+    const starts = new Map(ids.map((currentId) => {
+      const current = byId(currentId);
+      return [currentId, { x: current.x, y: current.y }];
+    }));
+    let dx = snap(targetX) - item.x;
+    let dy = snap(targetY) - item.y;
+    const minDx = Math.max(...ids.map((currentId) => -starts.get(currentId).x));
+    const maxDx = Math.min(...ids.map((currentId) => ROOM_W - (starts.get(currentId).x + byId(currentId).w)));
+    const minDy = Math.max(...ids.map((currentId) => -starts.get(currentId).y));
+    const maxDy = Math.min(...ids.map((currentId) => ROOM_H - (starts.get(currentId).y + byId(currentId).h)));
+    dx = clamp(dx, minDx, maxDx);
+    dy = clamp(dy, minDy, maxDy);
+    ids.forEach((currentId) => {
+      const current = byId(currentId);
+      current.x = Math.round(starts.get(currentId).x + dx);
+      current.y = Math.round(starts.get(currentId).y + dy);
+    });
+  };
+
+  const updateStatus = (report = validate()) => {
+    const item = byId(selectedId);
+    inputX.value = String(Math.round(item.x));
+    inputY.value = String(Math.round(item.y));
+    const conflictText = report.messages.length ? `Конфликтов: ${report.messages.length}` : 'Пересечений нет';
+    const alignmentText = item.id === 'table' && Math.round(item.x + item.w) === 2400 ? ' · правый край = кухня 2400' : '';
+    status.textContent = `${item.number}. ${item.name} · X ${Math.round(item.x)} · Y ${Math.round(item.y)} · ${item.w}×${item.h} мм · шаг 50 мм · ${conflictText}${alignmentText}`;
+    status.classList.toggle('text-destructive', report.messages.length > 0);
+  };
+
+  svg.addEventListener('pointermove', (event) => {
+    if (!drag || drag.pointerId !== event.pointerId) return;
+    const point = modelPoint(event);
+    const primaryStart = drag.starts.get(drag.primary);
+    let dx = point.x - drag.anchor.x;
+    let dy = point.y - drag.anchor.y;
+    dx = snap(primaryStart.x + dx) - primaryStart.x;
+    dy = snap(primaryStart.y + dy) - primaryStart.y;
+    const minDx = Math.max(...drag.ids.map((id) => -drag.starts.get(id).x));
+    const maxDx = Math.min(...drag.ids.map((id) => ROOM_W - (drag.starts.get(id).x + byId(id).w)));
+    const minDy = Math.max(...drag.ids.map((id) => -drag.starts.get(id).y));
+    const maxDy = Math.min(...drag.ids.map((id) => ROOM_H - (drag.starts.get(id).y + byId(id).h)));
+    dx = clamp(dx, minDx, maxDx);
+    dy = clamp(dy, minDy, maxDy);
+    drag.ids.forEach((id) => {
+      const item = byId(id);
+      item.x = Math.round(drag.starts.get(id).x + dx);
+      item.y = Math.round(drag.starts.get(id).y + dy);
+    });
+    render();
+  });
+
+  const endDrag = (event) => {
+    if (!drag || drag.pointerId !== event.pointerId) return;
+    if (svg.hasPointerCapture(event.pointerId)) svg.releasePointerCapture(event.pointerId);
+    drag = null;
+    render();
+  };
+  svg.addEventListener('pointerup', endDrag);
+  svg.addEventListener('pointercancel', endDrag);
+
+  objects.forEach((item) => {
+    const option = document.createElement('option');
+    option.value = item.id;
+    option.textContent = `${item.number}. ${item.name}`;
+    select.appendChild(option);
+  });
+  select.addEventListener('change', () => selectItem(select.value));
+  [inputX, inputY].forEach((input) => input.addEventListener('change', () => {
+    applyPosition(selectedId, Number(inputX.value), Number(inputY.value));
+    render();
+  }));
+  tableGroupToggle.addEventListener('change', render);
+
+  checkButton.addEventListener('click', async () => {
+    const report = validate();
+    const coordinates = objects.map(({ number, name, x, y, w, h }) => ({ number, name, x, y, w, h }));
+    const prompt = `Проверь мою новую расстановку TV-011 по реальным размерам. Координаты в мм от левого нижнего угла B01: ${JSON.stringify(coordinates)}. Текущие предупреждения интерактивной схемы: ${report.messages.length ? report.messages.join('; ') : 'нет статических пересечений'}.`;
+    if (window.openai && typeof window.openai.sendFollowUpMessage === 'function') {
+      await window.openai.sendFollowUpMessage({ prompt, title: 'Проверить расстановку TV-011' });
+    } else {
+      status.textContent = 'Расстановка готова к проверке в Codex.';
+    }
+  });
+
+  const resizeObserver = new ResizeObserver(() => render());
+  resizeObserver.observe(root.querySelector('.plan-wrap'));
+  select.value = selectedId;
+  selectItem(selectedId);
+})();
+</script>

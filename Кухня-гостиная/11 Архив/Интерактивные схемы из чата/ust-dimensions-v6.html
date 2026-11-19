@@ -1,0 +1,115 @@
+<section id="ust-dim-v6" aria-labelledby="ud-title">
+  <style>
+    #ust-dim-v6{color:var(--foreground);font:inherit}#ust-dim-v6 .ud-toolbar{display:flex;flex-wrap:wrap;gap:.4rem;margin:.6rem 0;align-items:center}#ust-dim-v6 .ud-drawing{display:block;width:100%;height:auto}#ust-dim-v6 .ud-info{margin:.7rem 0;overflow-wrap:anywhere}#ust-dim-v6 .ud-field{display:block;margin:.65rem 0}#ust-dim-v6 select{max-width:100%}
+  </style>
+  <h2 id="ud-title">B01 · размеры проекторной стены, v6</h2>
+  <div class="ud-toolbar" aria-label="Вид чертежа">
+    <button class="btn" type="button" data-view="front" aria-pressed="true">Вся стена</button>
+    <button class="btn" type="button" data-view="inside" aria-pressed="false">Хранение</button>
+    <button class="btn" type="button" data-view="side" aria-pressed="false">Глубины</button>
+    <button class="btn" type="button" data-view="plan" aria-pressed="false">Комната</button>
+    <label class="form-check"><input class="form-check-input" id="ud-screen" type="checkbox"><span class="form-check-label">Экран опущен</span></label>
+  </div>
+  <svg id="ud-svg" class="ud-drawing" role="img" aria-label="Размерный чертёж"></svg>
+  <label class="ud-field form-label" for="ud-part">Элемент · размеры Ш × Г × В, мм</label>
+  <select id="ud-part" class="form-select" aria-label="Размеры выбранного элемента"></select>
+  <div id="ud-info" class="ud-info tabular-nums" aria-live="polite"></div>
+  <div class="text-small">Мебель — проектные размеры. Техника — справочные габариты производителя. Не для раскроя.</div>
+  <script>
+  (()=>{
+    const root=document.getElementById('ust-dim-v6'),svg=document.getElementById('ud-svg'),pick=document.getElementById('ud-part'),info=document.getElementById('ud-info'),screen=document.getElementById('ud-screen');
+    const parts=[
+      ['0','Стена B01','5710 × 3500 — база плана. В обмерном эскизе есть 5705; высота готового потолка не подтверждена.'],
+      ['1','Книжный стеллаж','600 × 300 × 2400. Две чистые колонки по273; пять открытых ячеек по342 по высоте. Проект.'],
+      ['2','Хранение за фасадами','2800 × 450 × 1470; низ Z630, верх Z2100. Четыре модуля по700; чистая ширина каждого664. Проект.'],
+      ['3','Нижняя тумба','2800 × 600 × 600 вместе с цоколем и верхом. Секции1000 + 800 + 1000. Проект.'],
+      ['4','Верхний короб','2800 × 650 × 300; Z2100…2400. Передняя панель18: внутренняя грань Y632; кассета доY583; номинальный резерв49. Монтаж уточнить.'],
+      ['5','Поле экрана100″','2214 × 1245; плоскость Y500. Низ изображения≈778, верх≈2023; монтажные отметки предварительные.'],
+      ['6','Кассета Elite100″','2581 × 118 × 125. Внешний габарит с кронштейном по таблице; модель SKT100UH2-DST-E6. Требуется монтажная сверка.'],
+      ['7','Площадка проектора','700 × 500 × 18; верх≈Z390. Ход480: Y60…560 → Y540…1040. Тип направляющих и нагрузка не выбраны.'],
+      ['8','Проектор PX3-PRO','550 × 296 × 120 по спецификации. Рабочий габарит Y716…1012; регулировка оптики и вентиляция обязательны.'],
+      ['9','Стеллаж декора','500 × 300 × 2400. Чистая ширина464; пять открытых ячеек по342 по высоте. Проект.'],
+      ['10','Место ёлки','Ø500, H1600 — условный предмет. X1015…1515 / Y50…550; до декора55 по X.'],
+      ['11','Четыре центральных фасада','Каждый Ш698 × В1468 × Т18 при номинальном модуле700 ×1470 и зазорах1мм по периметру. Только расчётная гипотеза.'],
+      ['12','Полки центрального хранения','8шт, Ш664 × Г380 × Т18: по3 в крайних секциях, по1 в двух средних. Размер до учёта фурнитуры и кромления.'],
+      ['13','Полки книжного стеллажа','8шт, Ш273 × Г270 × Т18. Две колонки; чистая высота каждой ячейки342. Проект.'],
+      ['14','Полки декора','4шт, Ш464 × Г270 × Т18. Пять ячеек высотой342. Проект.'],
+      ['15','Нижние фасады стеллажей','Книги:2шт298 ×478 ×18. Декор:1шт498 ×478 ×18. Формат Ш × В × Т; расчётные зазоры.'],
+      ['16','Опорная полоса под шкафами','2800 ×450 ×30; Z600…630. Состав и несущую конструкцию назначает мебельщик. Проект.'],
+      ['17','Боковые фасады тумбы','4шт498 ×478 ×18, в двух секциях1000. Центральный фасад — после выбора механизма.'],
+      ['18','Верх тумбы','2800 ×600 ×20; Z580…600. Для этой стены предлагается20мм, не подтверждение комплектации.'],
+      ['19','Цоколь','H100. Длины участков600 /2800 /500; общая3900. Глубина отступа цоколя пока не задана.'],
+      ['20','Диван и ось просмотра','2000 ×1000 в плане; X2470…4470 /Y2500…3500. Ось X3470 совпадает с центром экрана.'],
+      ['21','Ячейки для чемоданов','2шт: чистые Ш664 × Г≈390 × В802; пол наZ648. Условный чемодан500 ×300 ×750, не замер вещей пользователя.']
+    ];
+    parts.forEach(([id,name])=>{const o=document.createElement('option');o.value=id;o.textContent=id+' · '+name;pick.append(o)});pick.value='2';
+    function selected(){const p=parts.find(p=>p[0]===pick.value);info.textContent=p[1]+': '+p[2]}
+    pick.addEventListener('change',selected);selected();
+    const ns='http://www.w3.org/2000/svg',C={f:'var(--foreground)',m:'var(--muted-foreground)',b:'var(--border)',a:'var(--muted)',p:'var(--viz-series-1)',w:'var(--destructive)'};
+    let W=736,H=400,view='front';
+    function el(n,a={},t=''){const e=document.createElementNS(ns,n);for(const[k,v]of Object.entries(a))e.setAttribute(k,v);e.textContent=t;svg.append(e);return e}
+    function text(x,y,t,anchor='start',fill=C.f){return el('text',{x,y,fill,'font-size':12,'font-family':'Arial, sans-serif','text-anchor':anchor},t)}
+    function line(x1,y1,x2,y2,stroke=C.b,dash=''){return el('line',{x1,y1,x2,y2,stroke,'stroke-width':1,'stroke-dasharray':dash})}
+    function rect(x,y,w,h,fill='none',stroke=C.b,dash=''){return el('rect',{x,y,width:w,height:h,fill,stroke,'stroke-width':1,'stroke-dasharray':dash})}
+    function badge(x,y,n){el('circle',{cx:x,cy:y,r:11,fill:'var(--background)',stroke:C.f});text(x,y+4,n,'middle')}
+    function dh(a,b,y,label){line(a,y,b,y,C.m);line(a,y-4,a,y+4,C.m);line(b,y-4,b,y+4,C.m);text((a+b)/2,y-7,label,'middle')}
+    function dv(x,a,b,label){line(x,a,x,b,C.m);line(x-4,a,x+4,a,C.m);line(x-4,b,x+4,b,C.m);text(x-7,(a+b)/2+4,label,'end')}
+    function front(){
+      const k=(W-100)/5710,x=s=>54+s*k,Y=70+2400*k,z=h=>Y-h*k;H=Y+125;
+      text(16,22,'ФАСАД · вид с дивана');text(16,42,'Нумерация этой стены; все размеры — мм');
+      line(x(0),Y,x(5710),Y,C.f);rect(x(240),z(2400),600*k,2400*k,C.a);rect(x(3640),z(2400),500*k,2400*k,C.a);
+      rect(x(840),z(600),2800*k,600*k,C.a);rect(x(840),z(630),2800*k,30*k,C.a);
+      for(let i=0;i<4;i++){rect(x(840+i*700),z(2100),700*k,1470*k,C.a);if(!screen.checked)text(x(1190+i*700),z(1500),'2'+['а','б','в','г'][i],'middle')}
+      rect(x(840),z(2400),2800*k,300*k,C.a);badge(x(2240),z(2250),'4');
+      for(const s of [1340,1840,2640,3140])line(x(s),z(580),x(s),z(100));
+      for(const [a,b] of [[240,840],[840,3640],[3640,4140]]){line(x(a),z(100),x(b),z(100));line(x(a),z(580),x(b),z(580))}
+      line(x(540),z(580),x(540),z(100));
+      if(W>750){for(const [s,v] of [[1340,'1000'],[2240,'800'],[3140,'1000']])text(x(s),z(470),v,'middle')}
+      for(const s of [240,3640]){line(x(s),z(600),x(s+(s===240?600:500)),z(600));for(const h of [960,1320,1680,2040])line(x(s),z(h),x(s+(s===240?600:500)),z(h))}
+      line(x(540),z(2400),x(540),z(600));badge(x(540),z(1500),'1');badge(x(3890),z(1500),'9');badge(x(2240),z(310),'3');
+      if(screen.checked){rect(x(1133),z(2023),2214*k,1245*k,'color-mix(in srgb,var(--viz-series-1) 20%,var(--background))',C.p);badge(x(2240),z(1500),'5');if(W>500)text(x(2240),z(1200),'2214 × 1245','middle')}
+      dv(44,z(2400),Y,'2400');
+      if(W>550){const seg=[[0,240,'240'],[240,840,'600'],[840,3640,'2800'],[3640,4140,'500'],[4140,5710,'1570']];for(const[a,b,v]of seg)dh(x(a),x(b),Y+30,v);text(x(4925),z(1100),'свободная стена','middle');text(x(2240),z(2500),'ось экрана = ось дивана','middle');line(x(2240),z(2450),x(2240),Y,C.m,'4 5')}
+      else{dh(x(240),x(4140),Y+30,'мебель 3900')}
+      dh(x(0),x(5710),Y+65,'5710 — база B01');text(16,H-15,W>550?'Центр экрана S2240 = X3470. Справа от мебели остаётся1570.':'S2240 = X3470 · ось дивана');
+    }
+    function inside(){
+      const k=(W-105)/2800,x=s=>60+s*k,Y=65+1470*k,z=h=>Y-(h-630)*k;H=Y+120;
+      text(16,22,'ХРАНЕНИЕ №2 · без фасадов');text(16,42,W>520?'Корпус18; наружная ширина секции700, чистая664':'Корпус18 · чистая ширина664');
+      for(let i=0;i<4;i++){rect(x(i*700),z(2100),700*k,1470*k,C.a);rect(x(i*700+18),z(2082),664*k,1434*k,'var(--background)');text(x(i*700+350),z(2000),'2'+['а','б','в','г'][i],'middle');
+        const shelves=i===0||i===3?[993,1356,1719]:[1450];for(const h of shelves)rect(x(i*700+18),z(h+18),664*k,18*k,C.a);
+        if(i===1||i===2){rect(x(i*700+100),z(1398),500*k,750*k,'color-mix(in srgb,var(--viz-series-1) 12%,var(--background))',C.p,'4 3');if(W>550){text(x(i*700+350),z(1000),'чемодан','middle');text(x(i*700+350),z(875),'500 ×750','middle')}}
+      }
+      dv(48,z(2100),z(630),'1470');for(let i=0;i<4;i++)dh(x(i*700),x((i+1)*700),Y+27,'700');dh(x(0),x(2800),Y+60,'2800');
+      text(16,H-30,W>550?'2а/2г: четыре ячейки H345. 2б/2в: нижняя H802, верхняя H614.':'Крайние H345 · средние H802/614');text(16,H-10,'Полки №12: 664 ×380 ×18; пол на отметке Z648.');
+    }
+    function side(){
+      const k=(W-115)/3500,X=65,Y=65+2400*k,y=q=>X+q*k,z=q=>Y-q*k;H=Y+145;
+      text(16,22,'ГЛУБИНЫ · разрез по центру');text(16,42,'Ровная стена Y0; мебель целиком перед ней');
+      line(y(0),z(2400),y(0),Y,C.f);line(y(0),Y,y(3500),Y,C.f);
+      rect(y(0),z(600),600*k,600*k,C.a);rect(y(0),z(630),450*k,30*k,C.a);rect(y(0),z(2100),450*k,1470*k,C.a);rect(y(0),z(2400),650*k,300*k,C.a);rect(y(632),z(2400),18*k,300*k,C.a);
+      rect(y(465),z(2300),118*k,125*k,'color-mix(in srgb,var(--viz-series-1) 28%,var(--background))',C.p);
+      line(y(500),z(2175),y(500),z(718),C.p);line(y(500),z(2023),y(500),z(778),C.p);
+      rect(y(540),z(390),500*k,18*k,C.a);rect(y(716),z(510),296*k,120*k,'color-mix(in srgb,var(--viz-series-1) 28%,var(--background))',C.p);
+      rect(y(2500),z(800),1000*k,800*k,C.a);text(y(3000),z(350),'диван','middle');
+      if(W>600){text(y(750),z(2240),'короб650; кассета№6');text(y(650),z(1740),'шкаф450');text(y(800),z(1350),'экран Y500');text(y(1250),z(470),'№8 · опора≈390');line(y(450),z(1720),y(610),z(1720),C.m);line(y(500),z(1320),y(750),z(1320),C.m);dh(y(1040),y(2500),z(1000),'1460 до дивана')}
+      dh(y(0),y(600),Y+30,'600');dh(y(0),y(1040),Y+63,'1040 с площадкой');dh(y(0),y(2500),Y+95,'2500 — перед дивана');text(16,H-14,W>550?'Короб650 · панель18 · резерв перед кассетой49; по высоте75.':'Все монтажные отметки — предварительные.');
+    }
+    function plan(){
+      const k=(W-95)/5710,X=48,Y=62,x=a=>X+a*k,y=b=>Y+b*k;H=Y+3500*k+102;
+      text(16,22,'ПЛАН · B01, начало X0/Y0 слева сверху');text(16,42,W>550?'Сверху — экранная стена; координаты в мм от угла B01':'Сверху — экранная стена Y0');
+      rect(x(0),y(0),5710*k,3500*k);rect(x(4870),y(0),600*k,300*k,C.a);rect(x(2070),y(0),2800*k,600*k,C.a);rect(x(1570),y(0),500*k,300*k,C.a);
+      rect(x(3120),y(540),700*k,500*k,'color-mix(in srgb,var(--viz-series-1) 20%,var(--background))',C.p);line(x(2363),y(500),x(4577),y(500),C.p);
+      rect(x(2470),y(2500),2000*k,1000*k,C.a);rect(x(4500),y(2900),1200*k,600*k,C.a);
+      el('circle',{cx:x(1625),cy:y(1725),r:425*k,fill:C.a,stroke:C.b});el('circle',{cx:x(1265),cy:y(300),r:250*k,fill:'none',stroke:C.f});
+      const kitchen=[[0,2900,600,600],[630,2900,450,600],[1080,2900,450,600],[1530,2900,310,600],[1840,2900,600,600],[0,2350,600,500],[0,1900,600,450],[0,1300,600,600]];for(const[a,b,c,d]of kitchen)rect(x(a),y(b),c*k,d*k,C.a);
+      line(x(0),y(200),x(0),y(1115),C.p);line(x(5710),y(600),x(5710),y(2200),C.p);line(x(3470),y(500),x(3470),y(3500),C.m,'4 4');
+      if(W>580){text(x(1250),y(420),'10','middle');text(x(1625),y(1725),'Ø850','middle');text(x(3470),y(3050),'20 · диван2000 ×1000','middle');text(x(5100),y(3230),'стол1200','middle');text(x(80),y(900),'D2 915');text(x(5610),y(1550),'O1 1600','end');dh(x(0),x(5710),y(3500)+30,'5710');dv(40,y(0),y(3500),'3500');text(x(4000),y(1900),'1460 до дивана')}
+      else{dh(x(0),x(5710),y(3500)+28,'5710 ×3500')}
+      text(16,H-34,'Стулья и раскрытый диван не проверены.');text(16,H-14,'Прямой старый проход занят тумбой/площадкой.');
+    }
+    function draw(){W=Math.max(320,Math.floor(root.getBoundingClientRect().width||736));svg.replaceChildren();el('title',{},'B01 — размерная схема '+view);el('desc',{},'Мебель проектная, исходные размеры требуют сверки. Выберите элемент для подробных размеров.');({front,inside,side,plan})[view]();svg.setAttribute('viewBox','0 0 '+W+' '+Math.ceil(H));}
+    root.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>{view=b.dataset.view;root.querySelectorAll('[data-view]').forEach(q=>q.setAttribute('aria-pressed',q===b?'true':'false'));draw()}));screen.addEventListener('change',draw);new ResizeObserver(draw).observe(root);draw();
+  })();
+  </script>
+</section>

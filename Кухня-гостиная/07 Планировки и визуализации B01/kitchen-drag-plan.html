@@ -1,0 +1,180 @@
+<div id="kitchen-drag-plan">
+  <style>
+    #kitchen-drag-plan .kdp-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(230px, 0.42fr); gap: 1rem; align-items: start; }
+    #kitchen-drag-plan .kdp-room { position: relative; width: 100%; aspect-ratio: 5710 / 3500; overflow: hidden; border: 1px solid var(--border); background-color: var(--background); background-image: linear-gradient(color-mix(in srgb, var(--border) 42%, transparent) 1px, transparent 1px), linear-gradient(90deg, color-mix(in srgb, var(--border) 42%, transparent) 1px, transparent 1px), linear-gradient(color-mix(in srgb, var(--border) 68%, transparent) 1px, transparent 1px), linear-gradient(90deg, color-mix(in srgb, var(--border) 68%, transparent) 1px, transparent 1px); background-size: 8.7566% 14.2857%, 8.7566% 14.2857%, 17.5131% 28.5714%, 17.5131% 28.5714%; touch-action: none; }
+    #kitchen-drag-plan .kdp-passage, #kitchen-drag-plan .kdp-room-label, #kitchen-drag-plan .kdp-dimension, #kitchen-drag-plan .kdp-opening, #kitchen-drag-plan .kdp-fixed, #kitchen-drag-plan .kdp-filler, #kitchen-drag-plan .kdp-module { position: absolute; box-sizing: border-box; }
+    #kitchen-drag-plan .kdp-passage { z-index: 0; display: grid; place-items: center; color: var(--green); border: 1px dashed currentColor; background: color-mix(in srgb, var(--green) 13%, transparent); text-align: center; pointer-events: none; }
+    #kitchen-drag-plan .kdp-passage.is-blocked { color: var(--destructive); background: color-mix(in srgb, var(--destructive) 13%, transparent); }
+    #kitchen-drag-plan .kdp-main-passage { left: 0; bottom: 8.5714%; width: 100%; height: 28.5714%; }
+    #kitchen-drag-plan .kdp-work-passage { left: 21.016%; bottom: 61.4286%; width: 14.8862%; height: 21.4286%; }
+    #kitchen-drag-plan .kdp-room-label { top: 0.4rem; left: 0.55rem; z-index: 7; color: var(--muted-foreground); pointer-events: none; }
+    #kitchen-drag-plan .kdp-dimension { z-index: 7; color: var(--muted-foreground); pointer-events: none; }
+    #kitchen-drag-plan .kdp-kitchen-width { left: 0.4rem; bottom: 80.8%; }
+    #kitchen-drag-plan .kdp-opening { z-index: 7; color: var(--orange); pointer-events: none; }
+    #kitchen-drag-plan .kdp-opening-door { left: 0; bottom: 0; width: 16.0245%; height: 0.6rem; border-top: 2px solid currentColor; }
+    #kitchen-drag-plan .kdp-opening-door span { position: absolute; left: 0.2rem; bottom: 0.25rem; white-space: nowrap; }
+    #kitchen-drag-plan .kdp-opening-terrace { right: 0; bottom: 37.1429%; width: 0.6rem; height: 45.7143%; border-left: 2px solid currentColor; }
+    #kitchen-drag-plan .kdp-opening-terrace span { position: absolute; right: 0.25rem; top: 0.2rem; white-space: nowrap; }
+    #kitchen-drag-plan .kdp-fixed { z-index: 2; display: grid; place-items: center; overflow: hidden; color: var(--muted-foreground); border: 1px dashed var(--border); background: color-mix(in srgb, var(--muted) 46%, transparent); text-align: center; pointer-events: none; }
+    #kitchen-drag-plan .kdp-fixed.kdp-movable { pointer-events: auto; cursor: grab; }
+    #kitchen-drag-plan .kdp-fixed.kdp-movable:active { cursor: grabbing; }
+    #kitchen-drag-plan .kdp-fixed.is-selected { z-index: 6; border: 2px solid var(--primary); background: color-mix(in srgb, var(--primary) 18%, var(--muted)); }
+    #kitchen-drag-plan .kdp-fixed.is-colliding { border: 2px solid var(--destructive); background: color-mix(in srgb, var(--destructive) 16%, var(--muted)); }
+    #kitchen-drag-plan .kdp-filler { z-index: 3; overflow: hidden; color: var(--muted-foreground); background: color-mix(in srgb, var(--muted) 70%, transparent); pointer-events: none; }
+    #kitchen-drag-plan .kdp-filler.is-selected { z-index: 6; outline: 2px solid var(--primary); background: color-mix(in srgb, var(--primary) 30%, var(--muted)); }
+    #kitchen-drag-plan .kdp-filler.is-colliding { background: color-mix(in srgb, var(--destructive) 50%, var(--muted)); }
+    #kitchen-drag-plan .kdp-module { z-index: 4; display: grid; place-content: center; gap: 0.1rem; min-width: 0; padding: 0.18rem; overflow: hidden; color: var(--foreground); border: 1px solid var(--border); background: color-mix(in srgb, var(--accent) 44%, transparent); text-align: center; cursor: grab; }
+    #kitchen-drag-plan .kdp-module:active { cursor: grabbing; }
+    #kitchen-drag-plan .kdp-module.is-selected { z-index: 6; border: 2px solid var(--primary); background: color-mix(in srgb, var(--primary) 18%, var(--accent)); }
+    #kitchen-drag-plan .kdp-module.is-colliding { border: 2px solid var(--destructive); background: color-mix(in srgb, var(--destructive) 16%, var(--accent)); }
+    #kitchen-drag-plan .kdp-module-index { font-weight: 500; }
+    #kitchen-drag-plan .kdp-module-name, #kitchen-drag-plan .kdp-module-dims { white-space: nowrap; }
+    #kitchen-drag-plan .kdp-cooktop { position: absolute; top: 14%; left: 16%; width: 68%; height: 18%; display: flex; align-items: center; justify-content: center; gap: 0.12rem; color: var(--primary-foreground); background: var(--foreground); pointer-events: none; }
+    #kitchen-drag-plan .kdp-cooktop i { width: 0.42rem; height: 0.42rem; border: 1px solid currentColor; border-radius: 50%; }
+    #kitchen-drag-plan .kdp-cooktop-label { position: absolute; top: 38%; left: 0; right: 0; color: var(--foreground); }
+    #kitchen-drag-plan .kdp-module[data-id="drawers"] .kdp-module-name { margin-top: 0.9rem; }
+    #kitchen-drag-plan .kdp-control-title { margin-top: 0; }
+    #kitchen-drag-plan .kdp-selected-name, #kitchen-drag-plan .kdp-module-index { font-weight: 500; }
+    #kitchen-drag-plan .kdp-coordinates { margin-bottom: 0.8rem; }
+    #kitchen-drag-plan .kdp-actions, #kitchen-drag-plan .kdp-table-wrap { margin-top: 1rem; }
+    #kitchen-drag-plan .kdp-warning, #kitchen-drag-plan .kdp-plan-status { min-height: 1.3em; }
+    #kitchen-drag-plan .kdp-caution { color: var(--orange); }
+    @media (max-width: 620px) { #kitchen-drag-plan .kdp-layout { grid-template-columns: 1fr; } }
+    @media (max-width: 460px) { #kitchen-drag-plan .kdp-module-name, #kitchen-drag-plan .kdp-module-dims, #kitchen-drag-plan .kdp-fixed, #kitchen-drag-plan .kdp-filler, #kitchen-drag-plan .kdp-opening, #kitchen-drag-plan .kdp-passage, #kitchen-drag-plan .kdp-dimension { display: none; } #kitchen-drag-plan .kdp-module[data-id="drawers"] .kdp-module-name, #kitchen-drag-plan .kdp-cooktop, #kitchen-drag-plan .kdp-cooktop-label { display: none; } }
+  </style>
+
+  <h2>B01 · план расстановки</h2>
+  <div class="text-small text-muted">Координаты от левого нижнего угла · сетка 10 мм</div>
+  <div class="kdp-layout">
+    <div>
+      <div id="kdp-room" class="kdp-room" role="application" aria-label="План B01. Кухонные модули и диван можно перетаскивать по сетке 10 миллиметров.">
+        <div class="kdp-passage kdp-main-passage text-small" data-passage="main"><span id="kdp-main-passage">Основной проход D2 → O1 · 1000 мм</span></div>
+        <div class="kdp-passage kdp-work-passage text-small" data-passage="work"><span id="kdp-work-passage">Проход к кухне · 750 мм</span></div>
+        <div class="kdp-room-label text-small">B01 · 5710 × 3500 мм</div>
+        <div class="kdp-dimension kdp-kitchen-width text-small">Верхняя линия: <span id="kdp-kitchen-width">2440</span> мм</div>
+        <div class="kdp-opening kdp-opening-door text-small" aria-label="Дверь D2, 915 на 2150 миллиметров"><span>D2 · 915 × 2150</span></div>
+        <div class="kdp-opening kdp-opening-terrace text-small" aria-label="Проём на террасу O1, 1600 миллиметров"><span>O1 · 1600</span></div>
+        <div class="kdp-filler text-small" data-filler="rear"></div>
+        <div class="kdp-filler text-small" data-filler="left"></div>
+        <div class="kdp-fixed text-small" data-fixed="table">12 · Стол Ø850</div>
+        <button type="button" class="kdp-fixed kdp-movable text-small" data-fixed="sofa" aria-label="13. Диван 2000 на 1000 миллиметров. Можно перетащить.">13 · Диван<br>2000 × 1000</button>
+        <div class="kdp-fixed text-small" data-fixed="desk">14 · Рабочее место<br>1200 × 600</div>
+        <div class="kdp-fixed text-small" data-fixed="tv">15 · ТВ / медиа<br>1600 × 300</div>
+        <button type="button" class="kdp-module" data-id="prep"><span class="kdp-module-index">1</span><span class="kdp-module-name">Подготовка</span><span class="kdp-module-dims">600 × 600</span></button>
+        <button type="button" class="kdp-module" data-id="cargo"><span class="kdp-module-index">4</span><span class="kdp-module-name">Полки</span><span class="kdp-module-dims">450 × 600</span></button>
+        <button type="button" class="kdp-module" data-id="drawers"><span class="kdp-module-index">2</span><span class="kdp-module-name">Ящичный корпус</span><span class="kdp-module-dims">3 ящика · 450 × 600</span><span class="kdp-cooktop" aria-hidden="true"><i></i><i></i><i></i></span><span class="kdp-cooktop-label text-small">3 · варка 450</span></button>
+        <button type="button" class="kdp-module" data-id="pullout"><span class="kdp-module-index">5</span><span class="kdp-module-name">Выкат</span><span class="kdp-module-dims">310 × 600</span></button>
+        <button type="button" class="kdp-module" data-id="penal"><span class="kdp-module-index">6</span><span class="kdp-module-name">СВЧ / духовка</span><span class="kdp-module-dims">600 × 600</span></button>
+        <button type="button" class="kdp-module" data-id="sink"><span class="kdp-module-index">7</span><span class="kdp-module-name">Мойка</span><span class="kdp-module-dims">600 × 500</span></button>
+        <button type="button" class="kdp-module" data-id="dishwasher"><span class="kdp-module-index">8</span><span class="kdp-module-name">Посудомойка</span><span class="kdp-module-dims">600 × 450</span></button>
+        <button type="button" class="kdp-module" data-id="fridge"><span class="kdp-module-index">9</span><span class="kdp-module-name">Холодильник</span><span class="kdp-module-dims">600 × 600</span></button>
+      </div>
+      <div id="kdp-live" class="sr-only" aria-live="polite"></div>
+    </div>
+    <section class="card" aria-labelledby="kdp-control-heading">
+      <h3 id="kdp-control-heading" class="kdp-control-title">Выбранный элемент</h3>
+      <label class="form-label" for="kdp-select">Элемент<select id="kdp-select" class="form-select"></select></label>
+      <div id="kdp-selected-name" class="kdp-selected-name"></div>
+      <div id="kdp-coordinates" class="kdp-coordinates tabular-nums"></div>
+      <div class="viz-controls">
+        <label class="form-label" for="kdp-x">X, мм<input id="kdp-x" class="form-control tabular-nums" type="number" inputmode="numeric" step="10"></label>
+        <label class="form-label" for="kdp-y">Y, мм<input id="kdp-y" class="form-control tabular-nums" type="number" inputmode="numeric" step="10"></label>
+        <label class="form-label" for="kdp-w">Ширина, мм<input id="kdp-w" class="form-control tabular-nums" type="number" inputmode="numeric" min="100" step="10"></label>
+        <label class="form-label" for="kdp-h">Глубина, мм<input id="kdp-h" class="form-control tabular-nums" type="number" inputmode="numeric" min="100" step="10"></label>
+      </div>
+      <div id="kdp-warning" class="kdp-warning text-small" role="status" aria-live="polite"></div>
+      <div id="kdp-plan-status" class="kdp-plan-status text-small" role="status" aria-live="polite"></div>
+      <div class="kdp-actions"><button id="kdp-send" type="button" class="btn btn-primary">Передать изменения</button></div>
+    </section>
+  </div>
+  <div class="kdp-table-wrap table-responsive">
+    <table class="table table-sm" aria-label="Размеры и координаты элементов расстановки">
+      <thead><tr><th>Элемент</th><th class="text-end">X</th><th class="text-end">Y</th><th class="text-end">Ш × Г, мм</th></tr></thead>
+      <tbody id="kdp-rows"></tbody>
+    </table>
+  </div>
+
+  <script>
+    (() => {
+      const root = document.getElementById('kitchen-drag-plan');
+      const room = root.querySelector('#kdp-room');
+      const ROOM_W = 5710, ROOM_H = 3500, SNAP = 10, MIN_TECH_GAP = 50;
+      const modules = [
+        { id: 'prep', number: '1', name: 'Подготовка', x: 0, y: 2900, w: 600, h: 600 },
+        { id: 'cargo', number: '4', name: 'Хранение · полки', x: 630, y: 2900, w: 450, h: 600 },
+        { id: 'drawers', number: '2', name: 'Ящичный корпус · 3 ящика', x: 1080, y: 2900, w: 450, h: 600 },
+        { id: 'pullout', number: '5', name: 'Выкатное хранение', x: 1530, y: 2900, w: 310, h: 600 },
+        { id: 'penal', number: '6', name: 'СВЧ / духовка', x: 1840, y: 2900, w: 600, h: 600 },
+        { id: 'sink', number: '7', name: 'Мойка', x: 0, y: 2350, w: 600, h: 500 },
+        { id: 'dishwasher', number: '8', name: 'Посудомоечная машина', x: 0, y: 1900, w: 600, h: 450 },
+        { id: 'fridge', number: '9', name: 'Холодильник', x: 0, y: 1300, w: 600, h: 600 }
+      ];
+      const fillers = [
+        { id: 'rear', number: '10', name: 'Техзазор между №1 и №4', x: 600, y: 2900, w: 10, h: 600, label: '10 · техзазор 10' },
+        { id: 'left', number: '11', name: 'Техзазор между мойкой и подготовкой', x: 0, y: 2850, w: 600, h: 50, label: '11 · техзазор 50' }
+      ];
+      const fixed = [
+        { id: 'table', number: '12', name: 'Стол Ø850', x: 1200, y: 1300, w: 850, h: 850 },
+        { id: 'sofa', number: '13', name: 'Диван', x: 2470, y: 2500, w: 2000, h: 1000, movable: true },
+        { id: 'desk', number: '14', name: 'Рабочее место', x: 4500, y: 2900, w: 1200, h: 600 },
+        { id: 'tv', number: '15', name: 'ТВ / медиа', x: 2700, y: 0, w: 1600, h: 300 }
+      ];
+      const passages = [
+        { id: 'main', name: 'Основной проход D2 → O1', x: 0, y: 300, w: 5710, h: 1000 },
+        { id: 'work', name: 'Проход к кухне', x: 1200, y: 2150, w: 850, h: 750 }
+      ];
+      const fields = { x: root.querySelector('#kdp-x'), y: root.querySelector('#kdp-y'), w: root.querySelector('#kdp-w'), h: root.querySelector('#kdp-h') };
+      const live = root.querySelector('#kdp-live'), picker = root.querySelector('#kdp-select'), selectedName = root.querySelector('#kdp-selected-name'), coordinates = root.querySelector('#kdp-coordinates'), warning = root.querySelector('#kdp-warning'), planStatus = root.querySelector('#kdp-plan-status'), rows = root.querySelector('#kdp-rows'), kitchenWidth = root.querySelector('#kdp-kitchen-width'), workPassage = root.querySelector('#kdp-work-passage');
+      let selectedId = 'cargo', drag = null;
+      const items = () => [...modules, ...fillers, ...fixed];
+      const selectableItems = () => [...modules, ...fillers, fixed.find(item => item.id === 'sofa')];
+      const byId = id => items().find(item => item.id === id);
+      const snap = value => Math.round(value / SNAP) * SNAP;
+      const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
+      const overlap = (a, b) => a.x < b.x + b.w && a.x + a.w > b.x && a.y < b.y + b.h && a.y + a.h > b.y;
+      const xOverlap = (a, b) => a.x < b.x + b.w && a.x + a.w > b.x;
+      const yOverlap = (a, b) => a.y < b.y + b.h && a.y + a.h > b.y;
+      function setBox(element, item) { element.style.left = `${item.x / ROOM_W * 100}%`; element.style.bottom = `${item.y / ROOM_H * 100}%`; element.style.width = `${item.w / ROOM_W * 100}%`; element.style.height = `${item.h / ROOM_H * 100}%`; }
+      function normalize(item) { item.w = clamp(snap(Number(item.w) || 100), 100, ROOM_W); item.h = clamp(snap(Number(item.h) || 100), 100, ROOM_H); item.x = snap(clamp(Number(item.x) || 0, 0, ROOM_W - item.w)); item.y = snap(clamp(Number(item.y) || 0, 0, ROOM_H - item.h)); }
+      function selected() { return byId(selectedId); }
+      function roomPoint(event) { const bounds = room.getBoundingClientRect(); return { x: (event.clientX - bounds.left) / bounds.width * ROOM_W, y: (bounds.bottom - event.clientY) / bounds.height * ROOM_H }; }
+      function collisionPairs() { const pairs = [], all = [...items(), ...passages]; all.forEach((item, index) => all.slice(index + 1).forEach(other => { if (overlap(item, other)) pairs.push({ a: item, b: other }); })); return pairs; }
+      function clearanceWarnings() { const cautions = []; const addIfClose = (a, b) => { if (overlap(a, b)) return; if (yOverlap(a, b)) { const gap = a.x + a.w <= b.x ? b.x - (a.x + a.w) : a.x - (b.x + b.w); if (gap >= 0 && gap < MIN_TECH_GAP) cautions.push({ a, b, gap }); } if (xOverlap(a, b)) { const gap = a.y + a.h <= b.y ? b.y - (a.y + a.h) : a.y - (b.y + b.h); if (gap >= 0 && gap < MIN_TECH_GAP) cautions.push({ a, b, gap }); } }; modules.forEach(module => fixed.forEach(other => addIfClose(module, other))); const sofa = fixed.find(item => item.id === 'sofa'); [...modules, ...fixed.filter(item => item.id !== 'sofa')].forEach(other => addIfClose(sofa, other)); return cautions; }
+      function updateDiagnostics(announce) {
+        const item = selected(), pairs = collisionPairs(), cautions = clearanceWarnings(), active = pairs.filter(pair => pair.a === item || pair.b === item), colliding = new Set(pairs.flatMap(pair => [pair.a.id, pair.b.id]));
+        modules.forEach(other => root.querySelector(`.kdp-module[data-id="${other.id}"]`).classList.toggle('is-colliding', colliding.has(other.id)));
+        fillers.forEach(other => root.querySelector(`[data-filler="${other.id}"]`).classList.toggle('is-colliding', colliding.has(other.id)));
+        fixed.forEach(other => root.querySelector(`[data-fixed="${other.id}"]`).classList.toggle('is-colliding', colliding.has(other.id)));
+        passages.forEach(other => root.querySelector(`[data-passage="${other.id}"]`).classList.toggle('is-blocked', colliding.has(other.id)));
+        warning.setAttribute('aria-live', announce ? 'polite' : 'off'); planStatus.setAttribute('aria-live', announce ? 'polite' : 'off');
+        if (active.length) { warning.textContent = `Пересечение выбранного элемента: ${active.map(pair => pair.a === item ? pair.b.name : pair.a.name).join(', ')}`; warning.classList.add('text-destructive'); } else { warning.textContent = 'Выбранный элемент не пересекается с другими'; warning.classList.remove('text-destructive'); }
+        planStatus.classList.remove('text-destructive', 'kdp-caution');
+        if (pairs.length) { planStatus.textContent = `Проверка всего плана: ${pairs.length} пересеч. · ${pairs.map(pair => `${pair.a.name} ↔ ${pair.b.name}`).join('; ')}`; planStatus.classList.add('text-destructive'); }
+        else if (cautions.length) { planStatus.textContent = `Без пересечений. Техзазор менее ${MIN_TECH_GAP} мм: ${cautions.map(pair => `${pair.a.name} ↔ ${pair.b.name} — ${pair.gap} мм`).join('; ')}`; planStatus.classList.add('kdp-caution'); }
+        else planStatus.textContent = 'Проверка всего плана: пересечений нет';
+      }
+      function updateDimensionLabels() { const upper = modules.filter(item => item.y + item.h === ROOM_H), minX = Math.min(...upper.map(item => item.x)), maxX = Math.max(...upper.map(item => item.x + item.w)), table = byId('table'), lowerEdge = Math.min(...upper.map(item => item.y)); kitchenWidth.textContent = maxX - minX; workPassage.textContent = `Проход к кухне · ${lowerEdge - (table.y + table.h)} мм`; }
+      function tableItems() { const base = byId('drawers'), hob = { id: 'hob', number: '3', name: 'Варочная панель 450 · закреплена на №2', x: base.x, y: base.y, w: base.w, h: base.h }; return [modules[0], base, hob, ...modules.filter(item => item.id !== 'prep' && item.id !== 'drawers'), ...fillers, ...fixed]; }
+      function render(announce = false) {
+        modules.forEach(item => { const element = root.querySelector(`.kdp-module[data-id="${item.id}"]`); setBox(element, item); element.classList.toggle('is-selected', item.id === selectedId); element.setAttribute('aria-label', `${item.number}. ${item.name}: X ${item.x}, Y ${item.y}, ширина ${item.w}, глубина ${item.h} миллиметров`); const dims = element.querySelector('.kdp-module-dims'); if (dims) dims.textContent = item.id === 'drawers' ? `3 ящика · ${item.w} × ${item.h}` : `${item.w} × ${item.h}`; });
+        fillers.forEach(item => { const element = root.querySelector(`[data-filler="${item.id}"]`); setBox(element, item); element.textContent = item.label; });
+        fixed.forEach(item => { const element = root.querySelector(`[data-fixed="${item.id}"]`); setBox(element, item); element.classList.toggle('is-selected', item.id === selectedId); element.setAttribute('aria-label', `${item.number}. ${item.name}: X ${item.x}, Y ${item.y}, ширина ${item.w}, глубина ${item.h} миллиметров${item.movable ? '. Можно перетащить.' : ''}`); });
+        fillers.forEach(item => root.querySelector(`[data-filler="${item.id}"]`).classList.toggle('is-selected', item.id === selectedId));
+        const item = selected(); picker.value = selectedId; selectedName.textContent = `${item.number} · ${item.name}`; coordinates.textContent = `X ${item.x} · Y ${item.y} · ${item.w} × ${item.h} мм`; fields.x.value = item.x; fields.y.value = item.y; fields.w.value = item.w; fields.h.value = item.h; updateDimensionLabels(); updateDiagnostics(announce);
+        rows.innerHTML = tableItems().map(item => `<tr${item.id === selectedId ? ' aria-current="true"' : ''}><th scope="row">${item.number} · ${item.name}</th><td class="text-end text-nowrap">${item.x}</td><td class="text-end text-nowrap">${item.y}</td><td class="text-end text-nowrap">${item.w} × ${item.h}</td></tr>`).join('');
+        if (announce) live.textContent = `${item.name}: X ${item.x}, Y ${item.y}, ${item.w} на ${item.h} миллиметров.`;
+      }
+      function select(id, announce = true) { selectedId = id; render(announce); }
+      function beginDrag(element, event) { if (event.pointerType === 'mouse' && event.button !== 0) return; const item = byId(element.dataset.id || element.dataset.fixed); select(item.id, false); const point = roomPoint(event); drag = { id: item.id, dx: point.x - item.x, dy: point.y - item.y, pointerId: event.pointerId }; element.setPointerCapture(event.pointerId); event.preventDefault(); }
+      root.querySelectorAll('.kdp-module, .kdp-fixed.kdp-movable').forEach(element => { const id = element.dataset.id || element.dataset.fixed; element.addEventListener('click', () => select(id)); element.addEventListener('pointerdown', event => beginDrag(element, event)); });
+      picker.innerHTML = selectableItems().map(item => `<option value="${item.id}">${item.number} · ${item.name}</option>`).join('');
+      picker.addEventListener('change', () => select(picker.value));
+      room.addEventListener('pointermove', event => { if (!drag || event.pointerId !== drag.pointerId) return; const item = byId(drag.id), point = roomPoint(event); item.x = snap(clamp(point.x - drag.dx, 0, ROOM_W - item.w)); item.y = snap(clamp(point.y - drag.dy, 0, ROOM_H - item.h)); render(false); });
+      function endDrag(event) { if (!drag || event.pointerId !== drag.pointerId) return; drag = null; render(true); }
+      room.addEventListener('pointerup', endDrag); room.addEventListener('pointercancel', endDrag);
+      Object.values(fields).forEach(field => field.addEventListener('change', () => { const item = selected(); item.x = fields.x.value; item.y = fields.y.value; item.w = fields.w.value; item.h = fields.h.value; normalize(item); render(true); }));
+      root.querySelector('#kdp-send').addEventListener('click', async () => { const payload = tableItems().map(item => ({ number: item.number, name: item.name, x: item.x, y: item.y, w: item.w, h: item.h })); if (window.openai && typeof window.openai.sendFollowUpMessage === 'function') await window.openai.sendFollowUpMessage({ title: 'Проверить новую расстановку B01', prompt: `Проверь новую расстановку B01 по координатам в мм от левого нижнего угла. Варочная панель №3 закреплена на ящичном корпусе №2. Все элементы: ${JSON.stringify(payload)}` }); });
+      render(true);
+    })();
+  </script>
+</div>

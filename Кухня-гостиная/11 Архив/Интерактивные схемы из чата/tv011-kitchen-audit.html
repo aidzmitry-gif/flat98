@@ -1,0 +1,239 @@
+<div id="tv011-kitchen-audit" aria-labelledby="audit-title">
+  <style>
+    #tv011-kitchen-audit { color: var(--foreground); font: inherit; width: 100%; min-width: 0; max-width: 100%; overflow: hidden; }
+    #tv011-kitchen-audit .audit-grid { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr); gap: 20px; align-items: start; min-width: 0; max-width: 100%; }
+    #tv011-kitchen-audit .audit-title { margin: 0 0 6px; }
+    #tv011-kitchen-audit .audit-subtitle { margin: 0 0 14px; color: var(--muted-foreground); }
+    #tv011-kitchen-audit .audit-svg { width: 100%; height: auto; display: block; }
+    #tv011-kitchen-audit .audit-svg text { font-family: inherit; fill: var(--foreground); }
+    #tv011-kitchen-audit .audit-svg .room { fill: color-mix(in srgb, var(--muted) 42%, transparent); stroke: var(--border); stroke-width: 1.2; }
+    #tv011-kitchen-audit .audit-svg .module { fill: color-mix(in srgb, var(--orange) 21%, var(--background)); stroke: var(--foreground); stroke-width: 1.2; }
+    #tv011-kitchen-audit .audit-svg .appliance { fill: color-mix(in srgb, var(--foreground) 10%, var(--background)); stroke: var(--foreground); stroke-width: 1.2; }
+    #tv011-kitchen-audit .audit-svg .counter { fill: color-mix(in srgb, var(--yellow) 30%, var(--background)); stroke: var(--foreground); stroke-width: 1; }
+    #tv011-kitchen-audit .audit-svg .accent { fill: color-mix(in srgb, var(--green) 20%, var(--background)); stroke: var(--green); stroke-width: 1.1; }
+    #tv011-kitchen-audit .audit-svg .line { stroke: var(--muted-foreground); stroke-width: 1; fill: none; }
+    #tv011-kitchen-audit .audit-svg .dim { stroke: var(--muted-foreground); stroke-width: 1; fill: none; marker-start: url(#arrow); marker-end: url(#arrow); }
+    #tv011-kitchen-audit .audit-svg .tiny { font-size: 11px; fill: var(--muted-foreground); }
+    #tv011-kitchen-audit .audit-svg .small { font-size: 12px; }
+    #tv011-kitchen-audit .audit-svg .label { font-size: 13px; font-weight: 500; }
+    #tv011-kitchen-audit .audit-svg .title { font-size: 15px; font-weight: 500; }
+    #tv011-kitchen-audit .audit-svg .number { fill: var(--primary); font-size: 15px; font-weight: 500; }
+    #tv011-kitchen-audit .audit-grid > section { min-width: 0; }
+    #tv011-kitchen-audit .checks { display: grid; gap: 12px; min-width: 0; max-width: 100%; }
+    #tv011-kitchen-audit .audit-note { min-width: 0; max-width: 100%; overflow-wrap: anywhere; }
+    #tv011-kitchen-audit .checks h2 { margin: 0 0 6px; overflow-wrap: anywhere; }
+    #tv011-kitchen-audit .checks p { margin: 0; }
+    #tv011-kitchen-audit .audit-plan-mobile { display: none; }
+    #tv011-kitchen-audit .check-list { margin: 0; padding-left: 18px; }
+    #tv011-kitchen-audit .check-list li { margin: 5px 0; overflow-wrap: anywhere; }
+    #tv011-kitchen-audit .check-ok { color: var(--green); }
+    #tv011-kitchen-audit .check-pending { color: var(--orange); }
+    #tv011-kitchen-audit .legend { display: flex; flex-wrap: wrap; gap: 10px 14px; margin-top: 8px; color: var(--muted-foreground); }
+    #tv011-kitchen-audit .legend span { display: inline-flex; align-items: center; gap: 5px; }
+    #tv011-kitchen-audit .legend i { width: 11px; height: 11px; display: inline-block; background: color-mix(in srgb, var(--orange) 21%, var(--background)); border: 1px solid var(--foreground); }
+    #tv011-kitchen-audit .legend i.appliance-key { background: color-mix(in srgb, var(--foreground) 10%, var(--background)); }
+    @media (max-width: 820px) { #tv011-kitchen-audit .audit-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 500px) {
+      #tv011-kitchen-audit .audit-plan-desktop { display: none; }
+      #tv011-kitchen-audit .audit-plan-mobile { display: block; }
+    }
+  </style>
+
+  <h2 id="audit-title" class="audit-title">TV‑011 — контрольная сверка кухни</h2>
+  <p class="audit-subtitle">Габариты из вашего плана; фасады и комплектация — из переданных референсов и списка специалиста.</p>
+
+  <div class="audit-grid">
+    <section class="audit-plan-desktop" aria-label="Масштабный план кухни">
+      <svg class="audit-svg" viewBox="0 0 690 475" role="img" aria-labelledby="plan-title plan-desc">
+        <title id="plan-title">План Г-кухни TV-011</title>
+        <desc id="plan-desc">Комната B01 5710 на 3500 миллиметров. Верхний фронт 2400 миллиметров состоит из четырёх модулей по 600. Левая ветка включает мойку 600, выкатное хранение 350 и отдельностоящий холодильник 600.</desc>
+        <defs>
+          <marker id="arrow" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="currentColor"></path></marker>
+        </defs>
+
+        <text x="24" y="22" class="title">План B01 · кухня 2400 + 1600 мм</text>
+        <rect x="24" y="40" width="600" height="367.5" rx="2" class="room"></rect>
+        <text x="593" y="390" class="tiny">5710 × 3500 мм</text>
+
+        <!-- rear / top run: 4 modules x 600 -->
+        <rect x="24" y="40" width="63" height="63" class="module"></rect>
+        <rect x="87" y="40" width="63" height="63" class="module"></rect>
+        <rect x="150" y="40" width="63" height="63" class="module"></rect>
+        <rect x="213" y="40" width="63" height="63" class="module"></rect>
+        <rect x="99" y="55" width="39" height="32" class="appliance"></rect>
+        <rect x="225" y="50" width="39" height="19" class="appliance"></rect>
+        <rect x="225" y="74" width="39" height="23" class="appliance"></rect>
+
+        <!-- left leg: 600 + 350 + 600, with 50 filler -->
+        <rect x="24" y="108.25" width="63" height="63" class="module"></rect>
+        <rect x="24" y="171.25" width="63" height="36.75" class="module"></rect>
+        <rect x="24" y="208" width="63" height="63" class="appliance"></rect>
+        <rect x="40" y="126" width="31" height="25" class="accent"></rect>
+        <path d="M87 103 L87 108.25" class="line"></path>
+
+        <!-- labels top -->
+        <text x="55.5" y="64" text-anchor="middle" class="number">1</text>
+        <text x="55.5" y="79" text-anchor="middle" class="tiny">подготовка</text>
+        <text x="118.5" y="64" text-anchor="middle" class="number">2</text>
+        <text x="118.5" y="79" text-anchor="middle" class="tiny">варка</text>
+        <text x="181.5" y="64" text-anchor="middle" class="number">3</text>
+        <text x="181.5" y="79" text-anchor="middle" class="tiny">ПММ 600</text>
+        <text x="244.5" y="64" text-anchor="middle" class="number">4</text>
+        <text x="244.5" y="88" text-anchor="middle" class="tiny">пенал</text>
+
+        <!-- labels left -->
+        <text x="55.5" y="133" text-anchor="middle" class="number">5</text>
+        <text x="55.5" y="161" text-anchor="middle" class="tiny">мойка 600</text>
+        <text x="55.5" y="191" text-anchor="middle" class="number">6</text>
+        <text x="55.5" y="203" text-anchor="middle" class="tiny">выкат 350</text>
+        <text x="55.5" y="237" text-anchor="middle" class="number">7</text>
+        <text x="55.5" y="253" text-anchor="middle" class="tiny">холод. 600</text>
+
+        <!-- dimensions -->
+        <line x1="24" y1="29" x2="276" y2="29" class="dim"></line>
+        <text x="150" y="21" text-anchor="middle" class="small">2400</text>
+        <line x1="292" y1="40" x2="292" y2="103" class="dim"></line>
+        <text x="302" y="75" class="small">600</text>
+        <line x1="12" y1="108.25" x2="12" y2="271" class="dim"></line>
+        <text x="8" y="192" text-anchor="end" class="small">1600</text>
+        <line x1="9" y1="171.25" x2="9" y2="208" class="dim"></line>
+        <text x="15" y="195" class="tiny">350</text>
+        <text x="94" y="112" class="tiny">добор 50</text>
+
+        <!-- known furniture positioning context -->
+        <circle cx="194.25" cy="226.75" r="44.625" fill="color-mix(in srgb, var(--green) 10%, transparent)" stroke="var(--green)" stroke-width="1.2"></circle>
+        <text x="194.25" y="223" text-anchor="middle" class="label">стол Ø850</text>
+        <text x="194.25" y="238" text-anchor="middle" class="tiny">x1200 · y1300</text>
+        <rect x="281.25" y="40" width="210" height="105" rx="7" fill="color-mix(in srgb, var(--purple) 10%, transparent)" stroke="var(--purple)" stroke-width="1.2"></rect>
+        <text x="386" y="89" text-anchor="middle" class="label">диван 2000 × 1000</text>
+        <text x="386" y="105" text-anchor="middle" class="tiny">x2450 · y2500</text>
+
+        <text x="24" y="438" class="tiny">Координатная привязка: нижний левый угол B01. Масштаб плана: 1 px = 10 мм.</text>
+      </svg>
+      <div class="legend" aria-label="Легенда">
+        <span><i></i>корпус / фасад</span>
+        <span><i class="appliance-key"></i>техника / холодильник</span>
+        <span><i style="background:color-mix(in srgb, var(--green) 20%, var(--background));border-color:var(--green)"></i>мебель по TV‑011</span>
+      </div>
+    </section>
+
+    <section class="audit-plan-mobile" aria-label="Сжатый план кухни">
+      <svg class="audit-svg" viewBox="0 0 340 382" role="img" aria-labelledby="mobile-plan-title mobile-plan-desc">
+        <title id="mobile-plan-title">План кухни TV-011 для узкого экрана</title>
+        <desc id="mobile-plan-desc">Проверка габаритов кухни: четыре модуля по 600 миллиметров сзади, слева мойка 600, выкат 350 и холодильник 600.</desc>
+        <text x="12" y="22" class="title">Кухня 2400 + 1600 мм</text>
+        <rect x="12" y="42" width="240" height="60" class="module"></rect>
+        <line x1="72" y1="42" x2="72" y2="102" class="line"></line>
+        <line x1="132" y1="42" x2="132" y2="102" class="line"></line>
+        <line x1="192" y1="42" x2="192" y2="102" class="line"></line>
+        <rect x="12" y="107" width="60" height="60" class="module"></rect>
+        <rect x="12" y="167" width="60" height="35" class="module"></rect>
+        <rect x="12" y="202" width="60" height="60" class="appliance"></rect>
+        <text x="42" y="68" text-anchor="middle" class="number">1</text>
+        <text x="42" y="87" text-anchor="middle" class="tiny">подг. 600</text>
+        <text x="102" y="68" text-anchor="middle" class="number">2</text>
+        <text x="102" y="87" text-anchor="middle" class="tiny">варка 600</text>
+        <text x="162" y="68" text-anchor="middle" class="number">3</text>
+        <text x="162" y="87" text-anchor="middle" class="tiny">ПММ 600</text>
+        <text x="222" y="68" text-anchor="middle" class="number">4</text>
+        <text x="222" y="87" text-anchor="middle" class="tiny">пенал</text>
+        <text x="42" y="130" text-anchor="middle" class="number">5</text>
+        <text x="42" y="151" text-anchor="middle" class="tiny">мойка 600</text>
+        <text x="42" y="186" text-anchor="middle" class="number">6</text>
+        <text x="42" y="198" text-anchor="middle" class="tiny">выкат 350</text>
+        <text x="42" y="226" text-anchor="middle" class="number">7</text>
+        <text x="42" y="247" text-anchor="middle" class="tiny">холод. 600</text>
+        <text x="94" y="112" class="tiny">добор 50</text>
+        <text x="12" y="284" class="small">#2 — три ящика · #3 — ПММ 600</text>
+        <text x="12" y="307" class="small">Столешница: 860 мм</text>
+        <text x="12" y="325" class="tiny">100 цоколь + 740 корпус + 20 камень</text>
+        <text x="12" y="348" class="tiny">«Пустынный» · золото C2 / торцевое</text>
+        <text x="12" y="366" class="tiny">Tip-on · LED</text>
+      </svg>
+    </section>
+
+    <section class="checks" aria-label="Фасад и сверка комплектации">
+      <svg class="audit-svg" viewBox="0 0 520 390" role="img" aria-labelledby="front-title front-desc">
+        <title id="front-title">Контрольный фасад кухни</title>
+        <desc id="front-desc">Фронтальная проверка нижних модулей: высота столешницы 860 миллиметров, из которых цоколь 100, корпус 740 и столешница 20. Варочная секция имеет три фасада ящиков, ПММ один фасад 600.</desc>
+        <defs>
+          <marker id="arrow-front" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="currentColor"></path></marker>
+        </defs>
+        <text x="10" y="20" class="title">Фасад — проверяемая внешняя часть</text>
+
+        <!-- 150 ceiling fascia -->
+        <rect x="35" y="36" width="440" height="23" fill="color-mix(in srgb, var(--muted) 68%, transparent)" stroke="var(--border)"></rect>
+        <text x="255" y="51" text-anchor="middle" class="small">фальш‑планка до потолка · 150 мм</text>
+
+        <!-- upper cabinets (individual widths are not supplied) -->
+        <rect x="35" y="59" width="330" height="83" class="module"></rect>
+        <line x1="117.5" y1="59" x2="117.5" y2="142" class="line"></line>
+        <line x1="200" y1="59" x2="200" y2="142" class="line"></line>
+        <line x1="282.5" y1="59" x2="282.5" y2="142" class="line"></line>
+        <rect x="375" y="36" width="100" height="194" class="module"></rect>
+        <rect x="389" y="128" width="72" height="30" class="appliance"></rect>
+        <rect x="389" y="166" width="72" height="52" class="appliance"></rect>
+        <text x="200" y="94" text-anchor="middle" class="tiny">верхние фасады</text>
+        <text x="200" y="110" text-anchor="middle" class="tiny">точная разбивка не передана</text>
+        <text x="425" y="83" text-anchor="middle" class="tiny">Tip‑on</text>
+        <text x="425" y="121" text-anchor="middle" class="tiny">над СВЧ</text>
+
+        <!-- led light -->
+        <rect x="35" y="142" width="330" height="6" fill="var(--yellow)"></rect>
+        <text x="198" y="159" text-anchor="middle" class="tiny">врезная LED‑подсветка с диммером</text>
+
+        <!-- stone -->
+        <rect x="35" y="181" width="330" height="10" class="counter"></rect>
+        <text x="200" y="178" text-anchor="middle" class="tiny">столешница камень · 20 мм</text>
+
+        <!-- lower fronts: #1, #2 with three drawers, #3 dishwasher -->
+        <rect x="35" y="191" width="82.5" height="143" class="module"></rect>
+        <rect x="117.5" y="191" width="82.5" height="38" class="module"></rect>
+        <rect x="117.5" y="229" width="82.5" height="47" class="module"></rect>
+        <rect x="117.5" y="276" width="82.5" height="58" class="module"></rect>
+        <rect x="200" y="191" width="82.5" height="143" class="module"></rect>
+        <rect x="282.5" y="191" width="82.5" height="143" class="module"></rect>
+        <line x1="35" y1="332" x2="365" y2="332" stroke="var(--yellow)" stroke-width="3"></line>
+        <rect x="35" y="334" width="330" height="18" fill="color-mix(in srgb, var(--orange) 22%, var(--background))" stroke="var(--foreground)"></rect>
+
+        <text x="76" y="240" text-anchor="middle" class="number">1</text>
+        <text x="76" y="258" text-anchor="middle" class="tiny">подготовка 600</text>
+        <text x="159" y="242" text-anchor="middle" class="number">2</text>
+        <text x="159" y="260" text-anchor="middle" class="tiny">3 ящика</text>
+        <text x="241" y="242" text-anchor="middle" class="number">3</text>
+        <text x="241" y="260" text-anchor="middle" class="tiny">ПММ · 600</text>
+        <text x="324" y="242" text-anchor="middle" class="number">4</text>
+        <text x="324" y="260" text-anchor="middle" class="tiny">пенал · 600</text>
+        <text x="200" y="348" text-anchor="middle" class="tiny">пластиковый цоколь «Бежевый» · 100 мм</text>
+
+        <!-- golden handles -->
+        <line x1="53" y1="201" x2="98" y2="201" stroke="var(--yellow)" stroke-width="3"></line>
+        <line x1="135" y1="220" x2="183" y2="220" stroke="var(--yellow)" stroke-width="3"></line>
+        <line x1="135" y1="267" x2="183" y2="267" stroke="var(--yellow)" stroke-width="3"></line>
+        <line x1="135" y1="325" x2="183" y2="325" stroke="var(--yellow)" stroke-width="3"></line>
+
+        <line x1="20" y1="181" x2="20" y2="352" stroke="var(--muted-foreground)" stroke-width="1" marker-start="url(#arrow-front)" marker-end="url(#arrow-front)"></line>
+        <text x="14" y="270" text-anchor="middle" transform="rotate(-90 14 270)" class="small">860</text>
+        <text x="200" y="370" text-anchor="middle" class="tiny">100 цоколь + 740 корпус + 20 камень = 860 мм</text>
+      </svg>
+
+      <section class="audit-note">
+        <h2>Сверено по плану</h2>
+        <ul class="check-list">
+          <li><span class="check-ok">✓</span> задняя линия: 4 × 600 = 2400 мм;</li>
+          <li><span class="check-ok">✓</span> нижняя логика: #2 — три ящика, #3 — отдельный фасад ПММ 600;</li>
+          <li><span class="check-ok">✓</span> левая ветка: мойка 600 + выкат 350 + холодильник 600, с добором 50;</li>
+          <li><span class="check-ok">✓</span> видимые решения специалиста: цоколь 100, камень 20, C2 золото сверху, торцевое золото снизу, Tip‑on и LED.</li>
+        </ul>
+      </section>
+      <section class="audit-note">
+        <h2>Нужно из развёртки специалиста, чтобы повторить 1:1</h2>
+        <ul class="check-list">
+          <li><span class="check-pending">△</span> высоты трёх ящиков и распределение Axis Pro / Modern Slide;</li>
+          <li><span class="check-pending">△</span> где именно стоят лоток 500 и сушка 800;</li>
+          <li><span class="check-pending">△</span> точная разбивка верхних фасадов и высоты фасадов над СВЧ / холодильником.</li>
+        </ul>
+      </section>
+    </section>
+  </div>
+</div>

@@ -1,0 +1,927 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="594mm" height="420mm" viewBox="0 0 29700 21000">
+<rect width="100%" height="100%" fill="white"/>
+<rect x="0" y="0.0" width="29700.0" height="21000.0" stroke="#222222" stroke-width="9" fill="none"/>
+<rect x="350" y="350.0" width="29000.0" height="20300.0" stroke="#222222" stroke-width="9" fill="none"/>
+<text x="700" y="930.0" font-family="Arial, sans-serif" font-size="280" font-weight="700" text-anchor="start" fill="#202020">APT-001 | ПОДРОБНЫЙ ПЛАН КОНТРОЛЬНЫХ ОБМЕРОВ</text>
+<text x="700" y="1250.0" font-family="Arial, sans-serif" font-size="115" font-weight="400" text-anchor="start" fill="#5e5e5e">B01 БТИ + C01-C07/C09/C10/C12 + U01 + T01/V01; модель 1:1 мм; лист A2; печать М 1:50</text>
+<text x="26500.0" y="980.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#bf1e2e">Чужой референс: только оформление, данные запрещены</text>
+<line x1="700" y1="1450.0" x2="29000.0" y2="1450.0" stroke="#222222" stroke-width="9" fill="none"/>
+<rect x="2200.0" y="12250.0" width="13830.0" height="120.0" stroke="#d8d8d8" stroke-width="0" fill="#d8d8d8"/>
+<rect x="2200.0" y="12250.0" width="13830.0" height="120.0" stroke="#777777" stroke-width="35" fill="none"/>
+<rect x="2080.0" y="11640.0" width="120.0" height="610.0" stroke="#d8d8d8" stroke-width="0" fill="#d8d8d8"/>
+<rect x="2080.0" y="11640.0" width="120.0" height="610.0" stroke="#777777" stroke-width="35" fill="none"/>
+<rect x="2080.0" y="9440.0" width="120.0" height="600.0" stroke="#d8d8d8" stroke-width="0" fill="#d8d8d8"/>
+<rect x="2080.0" y="9440.0" width="120.0" height="600.0" stroke="#777777" stroke-width="35" fill="none"/>
+<rect x="16030.0" y="11640.0" width="120.0" height="610.0" stroke="#d8d8d8" stroke-width="0" fill="#d8d8d8"/>
+<rect x="16030.0" y="11640.0" width="120.0" height="610.0" stroke="#777777" stroke-width="35" fill="none"/>
+<rect x="16030.0" y="9440.0" width="120.0" height="600.0" stroke="#d8d8d8" stroke-width="0" fill="#d8d8d8"/>
+<rect x="16030.0" y="9440.0" width="120.0" height="600.0" stroke="#777777" stroke-width="35" fill="none"/>
+<rect x="2200.0" y="9320.0" width="3840.0" height="120.0" stroke="#d8d8d8" stroke-width="0" fill="#d8d8d8"/>
+<rect x="2200.0" y="9320.0" width="3840.0" height="120.0" stroke="#777777" stroke-width="35" fill="none"/>
+<line x1="2200.0" y1="12250.0" x2="16030.0" y2="12250.0" stroke="#777777" stroke-width="35" fill="none"/>
+<line x1="2200.0" y1="9440.0" x2="6040.0" y2="9440.0" stroke="#777777" stroke-width="35" fill="none"/>
+<line x1="12180.0" y1="9440.0" x2="16030.0" y2="9440.0" stroke="#777777" stroke-width="35" fill="none"/>
+<line x1="2200.0" y1="12250.0" x2="2200.0" y2="11640.0" stroke="#777777" stroke-width="35" fill="none"/>
+<line x1="2200.0" y1="10040.0" x2="2200.0" y2="9440.0" stroke="#777777" stroke-width="35" fill="none"/>
+<line x1="16030.0" y1="12250.0" x2="16030.0" y2="11640.0" stroke="#777777" stroke-width="35" fill="none"/>
+<line x1="16030.0" y1="10040.0" x2="16030.0" y2="9440.0" stroke="#777777" stroke-width="35" fill="none"/>
+<text x="2260.0" y="9250.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#aa6800">наружные/неразмерённые стены: t н/д [B01]</text>
+<rect x="6040.0" y="10380.0" width="130.0" height="1870.0" stroke="#d8d8d8" stroke-width="0" fill="#d8d8d8"/>
+<rect x="6040.0" y="10380.0" width="130.0" height="1870.0" stroke="#111111" stroke-width="25" fill="none"/>
+<rect x="7910.0" y="10480.0" width="160.0" height="1770.0" stroke="#d8d8d8" stroke-width="0" fill="#d8d8d8"/>
+<rect x="7910.0" y="10480.0" width="160.0" height="1770.0" stroke="#111111" stroke-width="25" fill="none"/>
+<rect x="10160.0" y="10480.0" width="160.0" height="1770.0" stroke="#d8d8d8" stroke-width="0" fill="#d8d8d8"/>
+<rect x="10160.0" y="10480.0" width="160.0" height="1770.0" stroke="#111111" stroke-width="25" fill="none"/>
+<rect x="12050.0" y="10350.0" width="130.0" height="1900.0" stroke="#d8d8d8" stroke-width="0" fill="#d8d8d8"/>
+<rect x="12050.0" y="10350.0" width="130.0" height="1900.0" stroke="#111111" stroke-width="25" fill="none"/>
+<rect x="6170.0" y="10480.0" width="400.0" height="30.0" stroke="#d8d8d8" stroke-width="0" fill="#d8d8d8"/>
+<rect x="6170.0" y="10480.0" width="400.0" height="30.0" stroke="#111111" stroke-width="25" fill="none"/>
+<rect x="7280.0" y="10480.0" width="630.0" height="30.0" stroke="#d8d8d8" stroke-width="0" fill="#d8d8d8"/>
+<rect x="7280.0" y="10480.0" width="630.0" height="30.0" stroke="#111111" stroke-width="25" fill="none"/>
+<rect x="8070.0" y="10480.0" width="760.0" height="30.0" stroke="#d8d8d8" stroke-width="0" fill="#d8d8d8"/>
+<rect x="8070.0" y="10480.0" width="760.0" height="30.0" stroke="#111111" stroke-width="25" fill="none"/>
+<rect x="9640.0" y="10480.0" width="520.0" height="30.0" stroke="#d8d8d8" stroke-width="0" fill="#d8d8d8"/>
+<rect x="9640.0" y="10480.0" width="520.0" height="30.0" stroke="#111111" stroke-width="25" fill="none"/>
+<rect x="10320.0" y="10480.0" width="140.0" height="30.0" stroke="#d8d8d8" stroke-width="0" fill="#d8d8d8"/>
+<rect x="10320.0" y="10480.0" width="140.0" height="30.0" stroke="#111111" stroke-width="25" fill="none"/>
+<rect x="11270.0" y="10480.0" width="780.0" height="30.0" stroke="#d8d8d8" stroke-width="0" fill="#d8d8d8"/>
+<rect x="11270.0" y="10480.0" width="780.0" height="30.0" stroke="#111111" stroke-width="25" fill="none"/>
+<text x="6105.0" y="11730.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020" transform="rotate(-90 6105.0 11730.0)">t=130</text>
+<text x="7990.0" y="11730.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020" transform="rotate(-90 7990.0 11730.0)">t=160</text>
+<text x="10240.0" y="11730.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020" transform="rotate(-90 10240.0 11730.0)">t=160</text>
+<text x="12115.0" y="11730.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020" transform="rotate(-90 12115.0 11730.0)">t=130</text>
+<text x="7595.0" y="10390.0" font-family="Arial, sans-serif" font-size="100" font-weight="400" text-anchor="middle" fill="#202020">t=30 [B01]</text>
+<line x1="7595.0" y1="10430.0" x2="7595.0" y2="10480.0" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="8450.0" y="10390.0" font-family="Arial, sans-serif" font-size="100" font-weight="400" text-anchor="middle" fill="#202020">t=30 [B01]</text>
+<line x1="8450.0" y1="10430.0" x2="8450.0" y2="10480.0" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="11660.0" y="10390.0" font-family="Arial, sans-serif" font-size="100" font-weight="400" text-anchor="middle" fill="#202020">t=30 [B01]</text>
+<line x1="11660.0" y1="10430.0" x2="11660.0" y2="10480.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="6570.0" y1="10495.0" x2="7280.0" y2="10495.0" stroke="#aa6800" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="6570.0" y1="10550.0" x2="6570.0" y2="10440.0" stroke="#aa6800" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="7280.0" y1="10550.0" x2="7280.0" y2="10440.0" stroke="#aa6800" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<text x="6925.0" y="10385.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#aa6800">D5: B01 710*</text>
+<line x1="8830.0" y1="10495.0" x2="9640.0" y2="10495.0" stroke="#aa6800" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="8830.0" y1="10550.0" x2="8830.0" y2="10440.0" stroke="#aa6800" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="9640.0" y1="10550.0" x2="9640.0" y2="10440.0" stroke="#aa6800" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<text x="9235.0" y="10385.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#aa6800">D4: B01 810*</text>
+<line x1="10460.0" y1="10495.0" x2="11270.0" y2="10495.0" stroke="#aa6800" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="10460.0" y1="10550.0" x2="10460.0" y2="10440.0" stroke="#aa6800" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="11270.0" y1="10550.0" x2="11270.0" y2="10440.0" stroke="#aa6800" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<text x="10865.0" y="10385.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#aa6800">D3: B01 810*</text>
+<line x1="6105.0" y1="10380.0" x2="6105.0" y2="9440.0" stroke="#aa6800" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="6050.0" y1="10380.0" x2="6160.0" y2="10380.0" stroke="#aa6800" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="6050.0" y1="9440.0" x2="6160.0" y2="9440.0" stroke="#aa6800" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<text x="6240.0" y="9910.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#aa6800" transform="rotate(-90 6240.0 9910.0)">P6</text>
+<line x1="6040.0" y1="10380.0" x2="5775.0" y2="10380.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="6040.0" y1="9440.0" x2="5775.0" y2="9440.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="5775.0" y1="10380.0" x2="5775.0" y2="9440.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="5775.0" y1="10380.0" x2="5799.7" y2="10315.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="5775.0" y1="10380.0" x2="5750.3" y2="10315.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="5775.0" y1="9440.0" x2="5799.7" y2="9505.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="5775.0" y1="9440.0" x2="5750.3" y2="9505.0" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="5675.0" y="9910.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020" transform="rotate(-90 5675.0 9910.0)">940 [B01]</text>
+<line x1="12115.0" y1="10350.0" x2="12115.0" y2="9440.0" stroke="#176c45" stroke-width="17.5" fill="none"/>
+<text x="12200.0" y="9860.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#176c45" transform="rotate(-90 12200.0 9860.0)">проход к 2 = 910 [B01]</text>
+<rect x="9450.0" y="11890.0" width="710.0" height="360.0" stroke="#111111" stroke-width="25" fill="none"/>
+<text x="9805.0" y="12135.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#aa6800">ВМ-07</text>
+<line x1="9450.0" y1="11890.0" x2="9450.0" y2="11710.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10160.0" y1="11890.0" x2="10160.0" y2="11710.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="9450.0" y1="11710.0" x2="10160.0" y2="11710.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="9450.0" y1="11710.0" x2="9515.0" y2="11685.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="9450.0" y1="11710.0" x2="9515.0" y2="11734.7" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10160.0" y1="11710.0" x2="10095.0" y2="11685.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10160.0" y1="11710.0" x2="10095.0" y2="11734.7" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="9805.0" y="11610.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020">710 [B01]</text>
+<line x1="9450.0" y1="12250.0" x2="9290.0" y2="12250.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="9450.0" y1="11890.0" x2="9290.0" y2="11890.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="9290.0" y1="12250.0" x2="9290.0" y2="11890.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="9290.0" y1="12250.0" x2="9314.7" y2="12185.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="9290.0" y1="12250.0" x2="9265.3" y2="12185.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="9290.0" y1="11890.0" x2="9314.7" y2="11955.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="9290.0" y1="11890.0" x2="9265.3" y2="11955.0" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="9190.0" y="12070.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020" transform="rotate(-90 9190.0 12070.0)">360 [B01]</text>
+<text x="9110.0" y="9680.0" font-family="Arial, sans-serif" font-size="110" font-weight="700" text-anchor="middle" fill="#7a7a7a">4 КОРИДОР</text>
+<text x="9110.0" y="9840.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#aa6800">связи: 3,5,8,7,6,2; P6 — проход, не стена; контур/площадь н/д</text>
+<rect x="6040.0" y="9320.0" width="2030.0" height="120.0" stroke="#d8d8d8" stroke-width="0" fill="#d8d8d8"/>
+<rect x="6040.0" y="9320.0" width="2030.0" height="120.0" stroke="#777777" stroke-width="35" fill="none"/>
+<rect x="7950.0" y="9240.0" width="120.0" height="200.0" stroke="#d8d8d8" stroke-width="0" fill="#d8d8d8"/>
+<rect x="7950.0" y="9240.0" width="120.0" height="200.0" stroke="#777777" stroke-width="35" fill="none"/>
+<line x1="6040.0" y1="9440.0" x2="8070.0" y2="9440.0" stroke="#777777" stroke-width="35" fill="none"/>
+<text x="7055.0" y="9180.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#aa6800">верхняя стена 5-3: t н/д [B01]</text>
+<polygon points="10160.0,9440.0 16030.0,9440.0 16030.0,9240.0 10320.0,9240.0 10320.0,9040.0 10160.0,9040.0" stroke="#d8d8d8" stroke-width="0" fill="#d8d8d8"/>
+<polygon points="10160.0,9440.0 16030.0,9440.0 16030.0,9240.0 10320.0,9240.0 10320.0,9040.0 10160.0,9040.0" stroke="#111111" stroke-width="25" fill="none"/>
+<line x1="15670.0" y1="9440.0" x2="15330.0" y2="9440.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="15670.0" y1="9240.0" x2="15330.0" y2="9240.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="15330.0" y1="9440.0" x2="15330.0" y2="9240.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="15330.0" y1="9440.0" x2="15354.7" y2="9375.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="15330.0" y1="9440.0" x2="15305.3" y2="9375.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="15330.0" y1="9240.0" x2="15354.7" y2="9305.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="15330.0" y1="9240.0" x2="15305.3" y2="9305.0" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="15230.0" y="9340.0" font-family="Arial, sans-serif" font-size="100" font-weight="400" text-anchor="middle" fill="#202020" transform="rotate(-90 15230.0 9340.0)">СТ-01: t=200 [B01]</text>
+<rect x="10320.0" y="5620.0" width="5710.0" height="120.0" stroke="#d8d8d8" stroke-width="0" fill="#d8d8d8"/>
+<rect x="10320.0" y="5620.0" width="5710.0" height="120.0" stroke="#777777" stroke-width="35" fill="none"/>
+<rect x="16030.0" y="8640.0" width="120.0" height="600.0" stroke="#d8d8d8" stroke-width="0" fill="#d8d8d8"/>
+<rect x="16030.0" y="8640.0" width="120.0" height="600.0" stroke="#777777" stroke-width="35" fill="none"/>
+<rect x="16030.0" y="5740.0" width="120.0" height="1300.0" stroke="#d8d8d8" stroke-width="0" fill="#d8d8d8"/>
+<rect x="16030.0" y="5740.0" width="120.0" height="1300.0" stroke="#777777" stroke-width="35" fill="none"/>
+<rect x="7950.0" y="7565.0" width="120.0" height="1675.0" stroke="#d8d8d8" stroke-width="0" fill="#d8d8d8"/>
+<rect x="7950.0" y="7565.0" width="120.0" height="1675.0" stroke="#777777" stroke-width="35" fill="none"/>
+<rect x="8070.0" y="7445.0" width="610.0" height="120.0" stroke="#d8d8d8" stroke-width="0" fill="#d8d8d8"/>
+<rect x="8070.0" y="7445.0" width="610.0" height="120.0" stroke="#777777" stroke-width="35" fill="none"/>
+<rect x="9690.0" y="7445.0" width="470.0" height="120.0" stroke="#d8d8d8" stroke-width="0" fill="#d8d8d8"/>
+<rect x="9690.0" y="7445.0" width="470.0" height="120.0" stroke="#777777" stroke-width="35" fill="none"/>
+<line x1="10320.0" y1="9240.0" x2="16030.0" y2="9240.0" stroke="#777777" stroke-width="35" fill="none"/>
+<line x1="10320.0" y1="5740.0" x2="16030.0" y2="5740.0" stroke="#777777" stroke-width="35" fill="none"/>
+<line x1="10320.0" y1="9240.0" x2="10320.0" y2="9040.0" stroke="#777777" stroke-width="35" fill="none"/>
+<line x1="10320.0" y1="8130.0" x2="10320.0" y2="5740.0" stroke="#777777" stroke-width="35" fill="none"/>
+<line x1="16030.0" y1="9240.0" x2="16030.0" y2="8640.0" stroke="#777777" stroke-width="35" fill="none"/>
+<line x1="16030.0" y1="7040.0" x2="16030.0" y2="5740.0" stroke="#777777" stroke-width="35" fill="none"/>
+<line x1="10320.0" y1="9040.0" x2="10320.0" y2="8130.0" stroke="#aa6800" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="10265.0" y1="9040.0" x2="10375.0" y2="9040.0" stroke="#aa6800" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="10265.0" y1="8130.0" x2="10375.0" y2="8130.0" stroke="#aa6800" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<text x="10455.0" y="8585.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#aa6800" transform="rotate(-90 10455.0 8585.0)">D2*</text>
+<text x="11440.0" y="8980.0" font-family="Arial, sans-serif" font-size="100" font-weight="400" text-anchor="start" fill="#202020">до D2 = 200 [B01]</text>
+<text x="10980.0" y="8740.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="start" fill="#1668a9">D2 3-1; B01=910; U01=915x2150; *сторона н/д</text>
+<line x1="15975.0" y1="8640.0" x2="15975.0" y2="7040.0" stroke="#176c45" stroke-width="17.5" fill="none"/>
+<line x1="16085.0" y1="8640.0" x2="16085.0" y2="7040.0" stroke="#176c45" stroke-width="17.5" fill="none"/>
+<line x1="15900.0" y1="8640.0" x2="16160.0" y2="8640.0" stroke="#176c45" stroke-width="17.5" fill="none"/>
+<line x1="15900.0" y1="7040.0" x2="16160.0" y2="7040.0" stroke="#176c45" stroke-width="17.5" fill="none"/>
+<text x="16175.0" y="7840.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#176c45" transform="rotate(-90 16175.0 7840.0)">O1 1600</text>
+<rect x="16160.0" y="5990.0" width="2000.0" height="3000.0" stroke="#777777" stroke-width="35" fill="none"/>
+<text x="16260.0" y="8640.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="start" fill="#bf1e2e">B01 2000x3000 / C01 3310x2110/2130</text>
+<line x1="8070.0" y1="9240.0" x2="8070.0" y2="7565.0" stroke="#7a7a7a" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<text x="9115.0" y="9390.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#7a7a7a">3-4: открыто, стеновой полосы нет</text>
+<rect x="10160.0" y="7565.0" width="160.0" height="565.0" stroke="#d8d8d8" stroke-width="0" fill="#d8d8d8"/>
+<rect x="10160.0" y="7565.0" width="160.0" height="565.0" stroke="#111111" stroke-width="25" fill="none"/>
+<text x="10240.0" y="8585.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#7a7a7a" transform="rotate(-90 10240.0 8585.0)">3-1</text>
+<text x="10240.0" y="7745.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020" transform="rotate(-90 10240.0 7745.0)">t=160 [B01]</text>
+<line x1="8070.0" y1="7565.0" x2="8680.0" y2="7565.0" stroke="#7a7a7a" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="9690.0" y1="7565.0" x2="10160.0" y2="7565.0" stroke="#7a7a7a" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="8680.0" y1="7565.0" x2="9690.0" y2="7565.0" stroke="#aa6800" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="8680.0" y1="7620.0" x2="8680.0" y2="7510.0" stroke="#aa6800" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="9690.0" y1="7620.0" x2="9690.0" y2="7510.0" stroke="#aa6800" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<text x="9185.0" y="7455.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#aa6800">D1: B01 1010*</text>
+<text x="9115.0" y="9050.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#1668a9">D1 U01=1140x2150; *привязка/сторона н/д</text>
+<rect x="8125.0" y="7815.0" width="165.0" height="775.0" stroke="#aa6800" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<text x="8460.0" y="8202.5" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#587a57" transform="rotate(-90 8460.0 8202.5)">ЭЩ-03: левая стена у входа [F08]; ось/H/габарит н/д</text>
+<circle cx="8205.0" cy="8940.0" r="32" stroke="#587a57" stroke-width="9" fill="none"/>
+<circle cx="8205.0" cy="8830.0" r="32" stroke="#587a57" stroke-width="9" fill="none"/>
+<circle cx="8205.0" cy="8720.0" r="32" stroke="#587a57" stroke-width="9" fill="none"/>
+<text x="8360.0" y="8830.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#587a57" transform="rotate(-90 8360.0 8830.0)">E-03: 3 розетки у пола [F08]; ось н/д</text>
+<line x1="2145.0" y1="11640.0" x2="2145.0" y2="10040.0" stroke="#176c45" stroke-width="17.5" fill="none"/>
+<line x1="2255.0" y1="11640.0" x2="2255.0" y2="10040.0" stroke="#176c45" stroke-width="17.5" fill="none"/>
+<line x1="2070.0" y1="11640.0" x2="2330.0" y2="11640.0" stroke="#176c45" stroke-width="17.5" fill="none"/>
+<line x1="2070.0" y1="10040.0" x2="2330.0" y2="10040.0" stroke="#176c45" stroke-width="17.5" fill="none"/>
+<text x="2345.0" y="10840.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#176c45" transform="rotate(-90 2345.0 10840.0)">O3 1600</text>
+<rect x="2290.0" y="10210.0" width="150.0" height="1260.0" stroke="#aa6800" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<text x="2575.0" y="10840.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#aa6800" transform="rotate(-90 2575.0 10840.0)">R-05 зона под O3; ось/габарит н/д</text>
+<line x1="15975.0" y1="11640.0" x2="15975.0" y2="10040.0" stroke="#176c45" stroke-width="17.5" fill="none"/>
+<line x1="16085.0" y1="11640.0" x2="16085.0" y2="10040.0" stroke="#176c45" stroke-width="17.5" fill="none"/>
+<line x1="15900.0" y1="11640.0" x2="16160.0" y2="11640.0" stroke="#176c45" stroke-width="17.5" fill="none"/>
+<line x1="15900.0" y1="10040.0" x2="16160.0" y2="10040.0" stroke="#176c45" stroke-width="17.5" fill="none"/>
+<text x="16175.0" y="10840.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#176c45" transform="rotate(-90 16175.0 10840.0)">O2 1600</text>
+<rect x="15940.0" y="10210.0" width="-150.0" height="1260.0" stroke="#aa6800" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<text x="15655.0" y="10840.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#aa6800" transform="rotate(-90 15655.0 10840.0)">R-02 зона под O2; ось/габарит н/д</text>
+<circle cx="4120.0" cy="9780.0" r="105" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="4120.0" y="9810.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#202020">5</text>
+<text x="4120.0" y="9990.0" font-family="Arial, sans-serif" font-size="105" font-weight="700" text-anchor="middle" fill="#202020">СПАЛЬНЯ</text>
+<text x="4120.0" y="10130.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#b01d28">Sрасч.=10,79 м2</text>
+<text x="4120.0" y="10260.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020">B01 3840x2810</text>
+<text x="4120.0" y="10370.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#5e5e5e">B01/C02</text>
+<circle cx="7040.0" cy="10770.0" r="82" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="7040.0" y="10796.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#202020">8</text>
+<text x="7040.0" y="10980.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#202020">ГАРДЕРОБНАЯ</text>
+<text x="7040.0" y="11120.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#b01d28">Sрасч.=3,03 м2</text>
+<text x="7040.0" y="11250.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020">B01 1740x1740</text>
+<text x="7040.0" y="11360.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#5e5e5e">B01/C07</text>
+<circle cx="9115.0" cy="10770.0" r="82" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="9115.0" y="10796.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#202020">7</text>
+<text x="9115.0" y="10980.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#202020">ТУАЛЕТ</text>
+<text x="9115.0" y="11120.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#b01d28">Sрасч.=3,64 м2</text>
+<text x="9115.0" y="11250.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020">B01 2090x1740</text>
+<text x="9115.0" y="11360.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#5e5e5e">B01/T01</text>
+<circle cx="11185.0" cy="10770.0" r="82" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="11185.0" y="10796.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#202020">6</text>
+<text x="11185.0" y="10980.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#202020">ВАННАЯ</text>
+<text x="11185.0" y="11120.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#b01d28">Sрасч.=3,01 м2</text>
+<text x="11185.0" y="11250.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020">B01 1730x1740</text>
+<text x="11185.0" y="11360.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#5e5e5e">B01/V01</text>
+<circle cx="14105.0" cy="9780.0" r="105" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="14105.0" y="9810.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#202020">2</text>
+<text x="14105.0" y="9990.0" font-family="Arial, sans-serif" font-size="105" font-weight="700" text-anchor="middle" fill="#202020">ДЕТСКАЯ</text>
+<text x="14105.0" y="10130.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#b01d28">Sрасч.=10,82 м2</text>
+<text x="14105.0" y="10260.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020">B01 3850x2810</text>
+<text x="14105.0" y="10370.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#5e5e5e">B01/C10</text>
+<circle cx="13175.0" cy="6140.0" r="105" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="13175.0" y="6170.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#202020">1</text>
+<text x="13175.0" y="6350.0" font-family="Arial, sans-serif" font-size="105" font-weight="700" text-anchor="middle" fill="#202020">КУХНЯ-ГОСТИНАЯ</text>
+<text x="13175.0" y="6490.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#b01d28">Sрасч.=19,99 м2</text>
+<text x="13175.0" y="6620.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020">B01 5710x3500</text>
+<text x="13175.0" y="6730.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#5e5e5e">B01/C03/C12</text>
+<circle cx="17160.0" cy="6610.0" r="82" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="17160.0" y="6636.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#202020">9</text>
+<text x="17160.0" y="6820.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#202020">ТЕРРАСА</text>
+<text x="17160.0" y="6960.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#b01d28">Sрасч.B01=6,00 м2</text>
+<text x="17160.0" y="7090.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020">B01 2000x3000</text>
+<text x="17160.0" y="7200.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#5e5e5e">B01/C01/C12</text>
+<circle cx="9115.0" cy="7900.0" r="82" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="9115.0" y="7926.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#202020">3</text>
+<text x="9115.0" y="8110.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#202020">ПРИХОЖАЯ</text>
+<text x="9115.0" y="8250.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#b01d28">S фрагм.=3,50 м2</text>
+<text x="9115.0" y="8380.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020">B01 фрагм.2090x1675</text>
+<text x="9115.0" y="8490.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#5e5e5e">B01/C09/U01</text>
+<rect x="10840.0" y="8680.0" width="380.0" height="210.0" stroke="#aa6800" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<circle cx="10940.0" cy="8785.0" r="35" stroke="#587a57" stroke-width="9" fill="none"/>
+<circle cx="11120.0" cy="8785.0" r="35" stroke="#587a57" stroke-width="9" fill="none"/>
+<text x="11300.0" y="8835.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#587a57">E-01: D15/D50 [C03]; локальная стена/оси н/д</text>
+<circle cx="2530.0" cy="11920.0" r="32" stroke="#72428e" stroke-width="9" fill="none"/>
+<text x="2588.0" y="11950.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="start" fill="#72428e">2750</text>
+<circle cx="5710.0" cy="11920.0" r="32" stroke="#72428e" stroke-width="9" fill="none"/>
+<text x="5768.0" y="11950.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="start" fill="#72428e">2750</text>
+<circle cx="2530.0" cy="9770.0" r="32" stroke="#72428e" stroke-width="9" fill="none"/>
+<text x="2588.0" y="9800.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="start" fill="#72428e">2750</text>
+<circle cx="5710.0" cy="9770.0" r="32" stroke="#72428e" stroke-width="9" fill="none"/>
+<text x="5768.0" y="9800.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="start" fill="#72428e">2750</text>
+<circle cx="4120.0" cy="11070.0" r="32" stroke="#72428e" stroke-width="9" fill="none"/>
+<text x="4178.0" y="11100.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="start" fill="#72428e">2750</text>
+<circle cx="12510.0" cy="11920.0" r="32" stroke="#72428e" stroke-width="9" fill="none"/>
+<text x="12568.0" y="11950.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="start" fill="#72428e">2716</text>
+<circle cx="15700.0" cy="11920.0" r="32" stroke="#72428e" stroke-width="9" fill="none"/>
+<text x="15758.0" y="11950.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="start" fill="#72428e">2712</text>
+<circle cx="12510.0" cy="9770.0" r="32" stroke="#72428e" stroke-width="9" fill="none"/>
+<text x="12568.0" y="9800.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="start" fill="#72428e">2716</text>
+<circle cx="15700.0" cy="9770.0" r="32" stroke="#72428e" stroke-width="9" fill="none"/>
+<text x="15758.0" y="9800.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="start" fill="#72428e">2712</text>
+<circle cx="14105.0" cy="11070.0" r="32" stroke="#72428e" stroke-width="9" fill="none"/>
+<text x="14163.0" y="11100.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="start" fill="#72428e">2715</text>
+<circle cx="6340.0" cy="12080.0" r="32" stroke="#72428e" stroke-width="9" fill="none"/>
+<text x="6398.0" y="12110.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="start" fill="#72428e">2716</text>
+<circle cx="7740.0" cy="12080.0" r="32" stroke="#72428e" stroke-width="9" fill="none"/>
+<text x="7798.0" y="12110.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="start" fill="#72428e">2715</text>
+<circle cx="6340.0" cy="10680.0" r="32" stroke="#72428e" stroke-width="9" fill="none"/>
+<text x="6398.0" y="10710.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="start" fill="#72428e">2716</text>
+<circle cx="7740.0" cy="10680.0" r="32" stroke="#72428e" stroke-width="9" fill="none"/>
+<text x="7798.0" y="10710.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="start" fill="#72428e">2712</text>
+<circle cx="7040.0" cy="11690.0" r="32" stroke="#72428e" stroke-width="9" fill="none"/>
+<text x="7098.0" y="11720.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="start" fill="#72428e">2718</text>
+<circle cx="9115.0" cy="11780.0" r="32" stroke="#72428e" stroke-width="9" fill="none"/>
+<text x="9173.0" y="11810.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="start" fill="#72428e">2617</text>
+<text x="9115.0" y="11940.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#72428e">H [T01]</text>
+<rect x="10550.0" y="11640.0" width="1270.0" height="440.0" stroke="#aa6800" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<text x="11185.0" y="11820.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#aa6800">B-06/V-06: внутри 6; оси/H н/д</text>
+<text x="11185.0" y="11500.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#aa6800">H н/д</text>
+<text x="11185.0" y="11320.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#aa6800">P-06: торец/выступ ~160 [F14]; оси н/д</text>
+<circle cx="10700.0" cy="8860.0" r="32" stroke="#72428e" stroke-width="9" fill="none"/>
+<text x="10758.0" y="8890.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="start" fill="#72428e">2714</text>
+<circle cx="15650.0" cy="8860.0" r="32" stroke="#72428e" stroke-width="9" fill="none"/>
+<text x="15708.0" y="8890.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="start" fill="#72428e">2717</text>
+<circle cx="10700.0" cy="6120.0" r="32" stroke="#72428e" stroke-width="9" fill="none"/>
+<text x="10758.0" y="6150.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="start" fill="#72428e">2727</text>
+<circle cx="15650.0" cy="6120.0" r="32" stroke="#72428e" stroke-width="9" fill="none"/>
+<text x="15708.0" y="6150.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="start" fill="#72428e">2712</text>
+<circle cx="13175.0" cy="7890.0" r="32" stroke="#72428e" stroke-width="9" fill="none"/>
+<text x="13233.0" y="7920.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="start" fill="#72428e">2719</text>
+<text x="10880.0" y="8480.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="start" fill="#72428e">локально H=2530 у E-01 [C03]</text>
+<text x="9115.0" y="8810.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#72428e">H1-H5=2750 [C09]</text>
+<line x1="2200.0" y1="12250.0" x2="2200.0" y2="12630.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="6040.0" y1="12250.0" x2="6040.0" y2="12630.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="2200.0" y1="12630.0" x2="6040.0" y2="12630.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="2200.0" y1="12630.0" x2="2265.0" y2="12605.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="2200.0" y1="12630.0" x2="2265.0" y2="12654.7" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="6040.0" y1="12630.0" x2="5975.0" y2="12605.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="6040.0" y1="12630.0" x2="5975.0" y2="12654.7" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="4120.0" y="12530.0" font-family="Arial, sans-serif" font-size="90" font-weight="400" text-anchor="middle" fill="#202020">3840</text>
+<line x1="6170.0" y1="12250.0" x2="6170.0" y2="12630.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="7910.0" y1="12250.0" x2="7910.0" y2="12630.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="6170.0" y1="12630.0" x2="7910.0" y2="12630.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="6170.0" y1="12630.0" x2="6235.0" y2="12605.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="6170.0" y1="12630.0" x2="6235.0" y2="12654.7" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="7910.0" y1="12630.0" x2="7845.0" y2="12605.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="7910.0" y1="12630.0" x2="7845.0" y2="12654.7" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="7040.0" y="12530.0" font-family="Arial, sans-serif" font-size="90" font-weight="400" text-anchor="middle" fill="#202020">1740</text>
+<line x1="8070.0" y1="12250.0" x2="8070.0" y2="12630.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10160.0" y1="12250.0" x2="10160.0" y2="12630.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="8070.0" y1="12630.0" x2="10160.0" y2="12630.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="8070.0" y1="12630.0" x2="8135.0" y2="12605.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="8070.0" y1="12630.0" x2="8135.0" y2="12654.7" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10160.0" y1="12630.0" x2="10095.0" y2="12605.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10160.0" y1="12630.0" x2="10095.0" y2="12654.7" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="9115.0" y="12530.0" font-family="Arial, sans-serif" font-size="90" font-weight="400" text-anchor="middle" fill="#202020">2090</text>
+<line x1="10320.0" y1="12250.0" x2="10320.0" y2="12630.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="12050.0" y1="12250.0" x2="12050.0" y2="12630.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10320.0" y1="12630.0" x2="12050.0" y2="12630.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10320.0" y1="12630.0" x2="10385.0" y2="12605.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10320.0" y1="12630.0" x2="10385.0" y2="12654.7" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="12050.0" y1="12630.0" x2="11985.0" y2="12605.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="12050.0" y1="12630.0" x2="11985.0" y2="12654.7" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="11185.0" y="12530.0" font-family="Arial, sans-serif" font-size="90" font-weight="400" text-anchor="middle" fill="#202020">1730</text>
+<line x1="12180.0" y1="12250.0" x2="12180.0" y2="12630.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16030.0" y1="12250.0" x2="16030.0" y2="12630.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="12180.0" y1="12630.0" x2="16030.0" y2="12630.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="12180.0" y1="12630.0" x2="12245.0" y2="12605.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="12180.0" y1="12630.0" x2="12245.0" y2="12654.7" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16030.0" y1="12630.0" x2="15965.0" y2="12605.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16030.0" y1="12630.0" x2="15965.0" y2="12654.7" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="14105.0" y="12530.0" font-family="Arial, sans-serif" font-size="90" font-weight="400" text-anchor="middle" fill="#202020">3850</text>
+<line x1="6040.0" y1="12250.0" x2="6040.0" y2="13010.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="6170.0" y1="12250.0" x2="6170.0" y2="13010.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="6040.0" y1="13010.0" x2="6170.0" y2="13010.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="6040.0" y1="13010.0" x2="6105.0" y2="12985.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="6040.0" y1="13010.0" x2="6105.0" y2="13034.7" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="6170.0" y1="13010.0" x2="6105.0" y2="12985.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="6170.0" y1="13010.0" x2="6105.0" y2="13034.7" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="6105.0" y="12910.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020">t=130</text>
+<line x1="7910.0" y1="12250.0" x2="7910.0" y2="13010.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="8070.0" y1="12250.0" x2="8070.0" y2="13010.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="7910.0" y1="13010.0" x2="8070.0" y2="13010.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="7910.0" y1="13010.0" x2="7975.0" y2="12985.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="7910.0" y1="13010.0" x2="7975.0" y2="13034.7" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="8070.0" y1="13010.0" x2="8005.0" y2="12985.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="8070.0" y1="13010.0" x2="8005.0" y2="13034.7" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="7990.0" y="12910.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020">t=160</text>
+<line x1="10160.0" y1="12250.0" x2="10160.0" y2="13010.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10320.0" y1="12250.0" x2="10320.0" y2="13010.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10160.0" y1="13010.0" x2="10320.0" y2="13010.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10160.0" y1="13010.0" x2="10225.0" y2="12985.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10160.0" y1="13010.0" x2="10225.0" y2="13034.7" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10320.0" y1="13010.0" x2="10255.0" y2="12985.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10320.0" y1="13010.0" x2="10255.0" y2="13034.7" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="10240.0" y="12910.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020">t=160</text>
+<line x1="12050.0" y1="12250.0" x2="12050.0" y2="13010.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="12180.0" y1="12250.0" x2="12180.0" y2="13010.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="12050.0" y1="13010.0" x2="12180.0" y2="13010.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="12050.0" y1="13010.0" x2="12115.0" y2="12985.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="12050.0" y1="13010.0" x2="12115.0" y2="13034.7" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="12180.0" y1="13010.0" x2="12115.0" y2="12985.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="12180.0" y1="13010.0" x2="12115.0" y2="13034.7" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="12115.0" y="12910.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020">t=130</text>
+<line x1="2200.0" y1="12250.0" x2="2200.0" y2="13400.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16030.0" y1="12250.0" x2="16030.0" y2="13400.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="2200.0" y1="13400.0" x2="16030.0" y2="13400.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="2200.0" y1="13400.0" x2="2265.0" y2="13375.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="2200.0" y1="13400.0" x2="2265.0" y2="13424.7" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16030.0" y1="13400.0" x2="15965.0" y2="13375.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16030.0" y1="13400.0" x2="15965.0" y2="13424.7" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="9115.0" y="13300.0" font-family="Arial, sans-serif" font-size="95" font-weight="400" text-anchor="middle" fill="#202020">13830 = полная цепь B01</text>
+<line x1="2200.0" y1="12250.0" x2="1120.0" y2="12250.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="2200.0" y1="9440.0" x2="1120.0" y2="9440.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="1120.0" y1="12250.0" x2="1120.0" y2="9440.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="1120.0" y1="12250.0" x2="1144.7" y2="12185.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="1120.0" y1="12250.0" x2="1095.3" y2="12185.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="1120.0" y1="9440.0" x2="1144.7" y2="9505.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="1120.0" y1="9440.0" x2="1095.3" y2="9505.0" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="1020.0" y="10845.0" font-family="Arial, sans-serif" font-size="90" font-weight="400" text-anchor="middle" fill="#202020" transform="rotate(-90 1020.0 10845.0)">2810</text>
+<line x1="2200.0" y1="12250.0" x2="1550.0" y2="12250.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="2200.0" y1="11640.0" x2="1550.0" y2="11640.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="1550.0" y1="12250.0" x2="1550.0" y2="11640.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="1550.0" y1="12250.0" x2="1574.7" y2="12185.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="1550.0" y1="12250.0" x2="1525.3" y2="12185.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="1550.0" y1="11640.0" x2="1574.7" y2="11705.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="1550.0" y1="11640.0" x2="1525.3" y2="11705.0" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="1450.0" y="11945.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020" transform="rotate(-90 1450.0 11945.0)">610</text>
+<line x1="2200.0" y1="11640.0" x2="1550.0" y2="11640.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="2200.0" y1="10040.0" x2="1550.0" y2="10040.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="1550.0" y1="11640.0" x2="1550.0" y2="10040.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="1550.0" y1="11640.0" x2="1574.7" y2="11575.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="1550.0" y1="11640.0" x2="1525.3" y2="11575.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="1550.0" y1="10040.0" x2="1574.7" y2="10105.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="1550.0" y1="10040.0" x2="1525.3" y2="10105.0" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="1450.0" y="10840.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020" transform="rotate(-90 1450.0 10840.0)">1600</text>
+<line x1="2200.0" y1="10040.0" x2="1550.0" y2="10040.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="2200.0" y1="9440.0" x2="1550.0" y2="9440.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="1550.0" y1="10040.0" x2="1550.0" y2="9440.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="1550.0" y1="10040.0" x2="1574.7" y2="9975.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="1550.0" y1="10040.0" x2="1525.3" y2="9975.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="1550.0" y1="9440.0" x2="1574.7" y2="9505.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="1550.0" y1="9440.0" x2="1525.3" y2="9505.0" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="1450.0" y="9740.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020" transform="rotate(-90 1450.0 9740.0)">600</text>
+<line x1="16030.0" y1="12250.0" x2="17110.0" y2="12250.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16030.0" y1="9440.0" x2="17110.0" y2="9440.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="17110.0" y1="12250.0" x2="17110.0" y2="9440.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="17110.0" y1="12250.0" x2="17134.7" y2="12185.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="17110.0" y1="12250.0" x2="17085.3" y2="12185.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="17110.0" y1="9440.0" x2="17134.7" y2="9505.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="17110.0" y1="9440.0" x2="17085.3" y2="9505.0" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="17010.0" y="10845.0" font-family="Arial, sans-serif" font-size="90" font-weight="400" text-anchor="middle" fill="#202020" transform="rotate(-90 17010.0 10845.0)">2810</text>
+<line x1="16030.0" y1="12250.0" x2="16680.0" y2="12250.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16030.0" y1="11640.0" x2="16680.0" y2="11640.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16680.0" y1="12250.0" x2="16680.0" y2="11640.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16680.0" y1="12250.0" x2="16704.7" y2="12185.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16680.0" y1="12250.0" x2="16655.3" y2="12185.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16680.0" y1="11640.0" x2="16704.7" y2="11705.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16680.0" y1="11640.0" x2="16655.3" y2="11705.0" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="16580.0" y="11945.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020" transform="rotate(-90 16580.0 11945.0)">610</text>
+<line x1="16030.0" y1="11640.0" x2="16680.0" y2="11640.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16030.0" y1="10040.0" x2="16680.0" y2="10040.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16680.0" y1="11640.0" x2="16680.0" y2="10040.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16680.0" y1="11640.0" x2="16704.7" y2="11575.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16680.0" y1="11640.0" x2="16655.3" y2="11575.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16680.0" y1="10040.0" x2="16704.7" y2="10105.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16680.0" y1="10040.0" x2="16655.3" y2="10105.0" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="16580.0" y="10840.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020" transform="rotate(-90 16580.0 10840.0)">1600</text>
+<line x1="16030.0" y1="10040.0" x2="16680.0" y2="10040.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16030.0" y1="9440.0" x2="16680.0" y2="9440.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16680.0" y1="10040.0" x2="16680.0" y2="9440.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16680.0" y1="10040.0" x2="16704.7" y2="9975.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16680.0" y1="10040.0" x2="16655.3" y2="9975.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16680.0" y1="9440.0" x2="16704.7" y2="9505.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16680.0" y1="9440.0" x2="16655.3" y2="9505.0" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="16580.0" y="9740.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020" transform="rotate(-90 16580.0 9740.0)">600</text>
+<line x1="6170.0" y1="12250.0" x2="5910.0" y2="12250.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="6170.0" y1="10510.0" x2="5910.0" y2="10510.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="5910.0" y1="12250.0" x2="5910.0" y2="10510.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="5910.0" y1="12250.0" x2="5934.7" y2="12185.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="5910.0" y1="12250.0" x2="5885.3" y2="12185.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="5910.0" y1="10510.0" x2="5934.7" y2="10575.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="5910.0" y1="10510.0" x2="5885.3" y2="10575.0" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="5810.0" y="11380.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020" transform="rotate(-90 5810.0 11380.0)">1740</text>
+<line x1="6170.0" y1="10480.0" x2="6170.0" y2="10090.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="6570.0" y1="10480.0" x2="6570.0" y2="10090.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="6170.0" y1="10090.0" x2="6570.0" y2="10090.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="6170.0" y1="10090.0" x2="6235.0" y2="10065.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="6170.0" y1="10090.0" x2="6235.0" y2="10114.7" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="6570.0" y1="10090.0" x2="6505.0" y2="10065.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="6570.0" y1="10090.0" x2="6505.0" y2="10114.7" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="6370.0" y="9990.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020">400</text>
+<line x1="6570.0" y1="10480.0" x2="6570.0" y2="10090.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="7280.0" y1="10480.0" x2="7280.0" y2="10090.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="6570.0" y1="10090.0" x2="7280.0" y2="10090.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="6570.0" y1="10090.0" x2="6635.0" y2="10065.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="6570.0" y1="10090.0" x2="6635.0" y2="10114.7" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="7280.0" y1="10090.0" x2="7215.0" y2="10065.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="7280.0" y1="10090.0" x2="7215.0" y2="10114.7" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="6925.0" y="9990.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020">710</text>
+<line x1="7280.0" y1="10480.0" x2="7280.0" y2="10090.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="7910.0" y1="10480.0" x2="7910.0" y2="10090.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="7280.0" y1="10090.0" x2="7910.0" y2="10090.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="7280.0" y1="10090.0" x2="7345.0" y2="10065.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="7280.0" y1="10090.0" x2="7345.0" y2="10114.7" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="7910.0" y1="10090.0" x2="7845.0" y2="10065.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="7910.0" y1="10090.0" x2="7845.0" y2="10114.7" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="7595.0" y="9990.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020">630</text>
+<line x1="8070.0" y1="10480.0" x2="8070.0" y2="10090.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="8830.0" y1="10480.0" x2="8830.0" y2="10090.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="8070.0" y1="10090.0" x2="8830.0" y2="10090.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="8070.0" y1="10090.0" x2="8135.0" y2="10065.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="8070.0" y1="10090.0" x2="8135.0" y2="10114.7" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="8830.0" y1="10090.0" x2="8765.0" y2="10065.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="8830.0" y1="10090.0" x2="8765.0" y2="10114.7" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="8450.0" y="9990.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020">760</text>
+<line x1="8830.0" y1="10480.0" x2="8830.0" y2="10090.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="9640.0" y1="10480.0" x2="9640.0" y2="10090.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="8830.0" y1="10090.0" x2="9640.0" y2="10090.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="8830.0" y1="10090.0" x2="8895.0" y2="10065.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="8830.0" y1="10090.0" x2="8895.0" y2="10114.7" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="9640.0" y1="10090.0" x2="9575.0" y2="10065.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="9640.0" y1="10090.0" x2="9575.0" y2="10114.7" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="9235.0" y="9990.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020">810</text>
+<line x1="9640.0" y1="10480.0" x2="9640.0" y2="10090.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10160.0" y1="10480.0" x2="10160.0" y2="10090.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="9640.0" y1="10090.0" x2="10160.0" y2="10090.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="9640.0" y1="10090.0" x2="9705.0" y2="10065.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="9640.0" y1="10090.0" x2="9705.0" y2="10114.7" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10160.0" y1="10090.0" x2="10095.0" y2="10065.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10160.0" y1="10090.0" x2="10095.0" y2="10114.7" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="9900.0" y="9990.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020">520</text>
+<line x1="10320.0" y1="10480.0" x2="10320.0" y2="10090.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10460.0" y1="10480.0" x2="10460.0" y2="10090.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10320.0" y1="10090.0" x2="10460.0" y2="10090.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10320.0" y1="10090.0" x2="10385.0" y2="10065.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10320.0" y1="10090.0" x2="10385.0" y2="10114.7" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10460.0" y1="10090.0" x2="10395.0" y2="10065.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10460.0" y1="10090.0" x2="10395.0" y2="10114.7" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="10390.0" y="9990.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020">140</text>
+<line x1="10460.0" y1="10480.0" x2="10460.0" y2="10090.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="11270.0" y1="10480.0" x2="11270.0" y2="10090.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10460.0" y1="10090.0" x2="11270.0" y2="10090.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10460.0" y1="10090.0" x2="10525.0" y2="10065.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10460.0" y1="10090.0" x2="10525.0" y2="10114.7" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="11270.0" y1="10090.0" x2="11205.0" y2="10065.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="11270.0" y1="10090.0" x2="11205.0" y2="10114.7" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="10865.0" y="9990.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020">810</text>
+<line x1="11270.0" y1="10480.0" x2="11270.0" y2="10090.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="12050.0" y1="10480.0" x2="12050.0" y2="10090.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="11270.0" y1="10090.0" x2="12050.0" y2="10090.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="11270.0" y1="10090.0" x2="11335.0" y2="10065.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="11270.0" y1="10090.0" x2="11335.0" y2="10114.7" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="12050.0" y1="10090.0" x2="11985.0" y2="10065.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="12050.0" y1="10090.0" x2="11985.0" y2="10114.7" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="11660.0" y="9990.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020">780</text>
+<line x1="10320.0" y1="5740.0" x2="10320.0" y2="5310.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16030.0" y1="5740.0" x2="16030.0" y2="5310.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10320.0" y1="5310.0" x2="16030.0" y2="5310.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10320.0" y1="5310.0" x2="10385.0" y2="5285.299999999999" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10320.0" y1="5310.0" x2="10385.0" y2="5334.700000000001" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16030.0" y1="5310.0" x2="15965.0" y2="5285.299999999999" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16030.0" y1="5310.0" x2="15965.0" y2="5334.700000000001" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="13175.0" y="5210.0" font-family="Arial, sans-serif" font-size="90" font-weight="400" text-anchor="middle" fill="#202020">5710 [B01]</text>
+<line x1="16030.0" y1="9240.0" x2="15250.0" y2="9240.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16030.0" y1="5740.0" x2="15250.0" y2="5740.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="15250.0" y1="9240.0" x2="15250.0" y2="5740.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="15250.0" y1="9240.0" x2="15274.7" y2="9175.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="15250.0" y1="9240.0" x2="15225.3" y2="9175.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="15250.0" y1="5740.0" x2="15274.7" y2="5805.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="15250.0" y1="5740.0" x2="15225.3" y2="5805.0" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="15150.0" y="7490.0" font-family="Arial, sans-serif" font-size="90" font-weight="400" text-anchor="middle" fill="#202020" transform="rotate(-90 15150.0 7490.0)">3500 [B01]</text>
+<line x1="16030.0" y1="9240.0" x2="15750.0" y2="9240.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16030.0" y1="8640.0" x2="15750.0" y2="8640.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="15750.0" y1="9240.0" x2="15750.0" y2="8640.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="15750.0" y1="9240.0" x2="15774.7" y2="9175.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="15750.0" y1="9240.0" x2="15725.3" y2="9175.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="15750.0" y1="8640.0" x2="15774.7" y2="8705.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="15750.0" y1="8640.0" x2="15725.3" y2="8705.0" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="15650.0" y="8940.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020" transform="rotate(-90 15650.0 8940.0)">600</text>
+<line x1="16030.0" y1="8640.0" x2="15750.0" y2="8640.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16030.0" y1="7040.0" x2="15750.0" y2="7040.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="15750.0" y1="8640.0" x2="15750.0" y2="7040.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="15750.0" y1="8640.0" x2="15774.7" y2="8575.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="15750.0" y1="8640.0" x2="15725.3" y2="8575.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="15750.0" y1="7040.0" x2="15774.7" y2="7105.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="15750.0" y1="7040.0" x2="15725.3" y2="7105.0" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="15650.0" y="7840.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020" transform="rotate(-90 15650.0 7840.0)">1600 O1</text>
+<line x1="16030.0" y1="7040.0" x2="15750.0" y2="7040.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16030.0" y1="5740.0" x2="15750.0" y2="5740.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="15750.0" y1="7040.0" x2="15750.0" y2="5740.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="15750.0" y1="7040.0" x2="15774.7" y2="6975.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="15750.0" y1="7040.0" x2="15725.3" y2="6975.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="15750.0" y1="5740.0" x2="15774.7" y2="5805.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="15750.0" y1="5740.0" x2="15725.3" y2="5805.0" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="15650.0" y="6390.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020" transform="rotate(-90 15650.0 6390.0)">1300</text>
+<line x1="10320.0" y1="9240.0" x2="10640.0" y2="9240.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10320.0" y1="9040.0" x2="10640.0" y2="9040.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10640.0" y1="9240.0" x2="10640.0" y2="9040.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10640.0" y1="9240.0" x2="10664.7" y2="9175.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10640.0" y1="9240.0" x2="10615.3" y2="9175.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10640.0" y1="9040.0" x2="10664.7" y2="9105.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10640.0" y1="9040.0" x2="10615.3" y2="9105.0" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="10540.0" y="9140.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020" transform="rotate(-90 10540.0 9140.0)">200</text>
+<line x1="10320.0" y1="9040.0" x2="10640.0" y2="9040.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10320.0" y1="8130.0" x2="10640.0" y2="8130.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10640.0" y1="9040.0" x2="10640.0" y2="8130.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10640.0" y1="9040.0" x2="10664.7" y2="8975.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10640.0" y1="9040.0" x2="10615.3" y2="8975.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10640.0" y1="8130.0" x2="10664.7" y2="8195.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10640.0" y1="8130.0" x2="10615.3" y2="8195.0" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="10540.0" y="8585.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020" transform="rotate(-90 10540.0 8585.0)">910 B01 / 915 U01</text>
+<line x1="10320.0" y1="8130.0" x2="10640.0" y2="8130.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10320.0" y1="5740.0" x2="10640.0" y2="5740.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10640.0" y1="8130.0" x2="10640.0" y2="5740.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10640.0" y1="8130.0" x2="10664.7" y2="8065.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10640.0" y1="8130.0" x2="10615.3" y2="8065.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10640.0" y1="5740.0" x2="10664.7" y2="5805.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10640.0" y1="5740.0" x2="10615.3" y2="5805.0" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="10540.0" y="6935.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020" transform="rotate(-90 10540.0 6935.0)">2390</text>
+<line x1="16160.0" y1="8990.0" x2="16160.0" y2="9540.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="18160.0" y1="8990.0" x2="18160.0" y2="9540.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16160.0" y1="9540.0" x2="18160.0" y2="9540.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16160.0" y1="9540.0" x2="16225.0" y2="9515.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="16160.0" y1="9540.0" x2="16225.0" y2="9564.7" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="18160.0" y1="9540.0" x2="18095.0" y2="9515.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="18160.0" y1="9540.0" x2="18095.0" y2="9564.7" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="17160.0" y="9440.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020">2000 [B01]</text>
+<line x1="18160.0" y1="8990.0" x2="18520.0" y2="8990.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="18160.0" y1="5990.0" x2="18520.0" y2="5990.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="18520.0" y1="8990.0" x2="18520.0" y2="5990.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="18520.0" y1="8990.0" x2="18544.7" y2="8925.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="18520.0" y1="8990.0" x2="18495.3" y2="8925.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="18520.0" y1="5990.0" x2="18544.7" y2="6055.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="18520.0" y1="5990.0" x2="18495.3" y2="6055.0" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="18420.0" y="7490.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020" transform="rotate(-90 18420.0 7490.0)">3000 [B01]</text>
+<line x1="8070.0" y1="7565.0" x2="8070.0" y2="7135.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="8680.0" y1="7565.0" x2="8680.0" y2="7135.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="8070.0" y1="7135.0" x2="8680.0" y2="7135.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="8070.0" y1="7135.0" x2="8135.0" y2="7110.299999999999" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="8070.0" y1="7135.0" x2="8135.0" y2="7159.700000000001" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="8680.0" y1="7135.0" x2="8615.0" y2="7110.299999999999" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="8680.0" y1="7135.0" x2="8615.0" y2="7159.700000000001" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="8375.0" y="7035.0" font-family="Arial, sans-serif" font-size="100" font-weight="400" text-anchor="middle" fill="#202020">610</text>
+<line x1="8680.0" y1="7565.0" x2="8680.0" y2="7135.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="9690.0" y1="7565.0" x2="9690.0" y2="7135.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="8680.0" y1="7135.0" x2="9690.0" y2="7135.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="8680.0" y1="7135.0" x2="8745.0" y2="7110.299999999999" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="8680.0" y1="7135.0" x2="8745.0" y2="7159.700000000001" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="9690.0" y1="7135.0" x2="9625.0" y2="7110.299999999999" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="9690.0" y1="7135.0" x2="9625.0" y2="7159.700000000001" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="9185.0" y="7035.0" font-family="Arial, sans-serif" font-size="100" font-weight="400" text-anchor="middle" fill="#202020">1010</text>
+<line x1="9690.0" y1="7565.0" x2="9690.0" y2="7135.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10160.0" y1="7565.0" x2="10160.0" y2="7135.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="9690.0" y1="7135.0" x2="10160.0" y2="7135.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="9690.0" y1="7135.0" x2="9755.0" y2="7110.299999999999" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="9690.0" y1="7135.0" x2="9755.0" y2="7159.700000000001" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10160.0" y1="7135.0" x2="10095.0" y2="7110.299999999999" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10160.0" y1="7135.0" x2="10095.0" y2="7159.700000000001" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="9925.0" y="7035.0" font-family="Arial, sans-serif" font-size="100" font-weight="400" text-anchor="middle" fill="#202020">470</text>
+<line x1="8070.0" y1="7565.0" x2="8070.0" y2="6805.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10160.0" y1="7565.0" x2="10160.0" y2="6805.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="8070.0" y1="6805.0" x2="10160.0" y2="6805.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="8070.0" y1="6805.0" x2="8135.0" y2="6780.299999999999" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="8070.0" y1="6805.0" x2="8135.0" y2="6829.700000000001" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10160.0" y1="6805.0" x2="10095.0" y2="6780.299999999999" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="10160.0" y1="6805.0" x2="10095.0" y2="6829.700000000001" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="9115.0" y="6705.0" font-family="Arial, sans-serif" font-size="100" font-weight="400" text-anchor="middle" fill="#202020">2090 [B01]: 610 + D1 1010 + 470</text>
+<line x1="8070.0" y1="9240.0" x2="7760.0" y2="9240.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="8070.0" y1="7565.0" x2="7760.0" y2="7565.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="7760.0" y1="9240.0" x2="7760.0" y2="7565.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="7760.0" y1="9240.0" x2="7784.7" y2="9175.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="7760.0" y1="9240.0" x2="7735.3" y2="9175.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="7760.0" y1="7565.0" x2="7784.7" y2="7630.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="7760.0" y1="7565.0" x2="7735.3" y2="7630.0" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="7660.0" y="8402.5" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020" transform="rotate(-90 7660.0 8402.5)">1675 [B01]</text>
+<line x1="2200.0" y1="12130.0" x2="2200.0" y2="11920.0" stroke="#1668a9" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="6070.0" y1="12130.0" x2="6070.0" y2="11920.0" stroke="#1668a9" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="2200.0" y1="11920.0" x2="6070.0" y2="11920.0" stroke="#1668a9" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="2200.0" y1="11920.0" x2="2265.0" y2="11895.3" stroke="#1668a9" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="2200.0" y1="11920.0" x2="2265.0" y2="11944.7" stroke="#1668a9" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="6070.0" y1="11920.0" x2="6005.0" y2="11895.3" stroke="#1668a9" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="6070.0" y1="11920.0" x2="6005.0" y2="11944.7" stroke="#1668a9" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<text x="4135.0" y="11820.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#1668a9">3870 [C02]</text>
+<text x="4120.0" y="11730.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#1668a9">поперечные 2830/2870 [C02]</text>
+<text x="7040.0" y="12160.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#1668a9">1739/1745 x 1732/1730 [C07]</text>
+<text x="11185.0" y="12160.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#1668a9">1745x1740; стар.1740x1730 [V01]</text>
+<text x="14105.0" y="11730.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#1668a9">сторона 3825/3837; 2-я ось н/д [C10]</text>
+<line x1="10320.0" y1="5740.0" x2="10320.0" y2="4960.0" stroke="#1668a9" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="16025.0" y1="5740.0" x2="16025.0" y2="4960.0" stroke="#1668a9" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="10320.0" y1="4960.0" x2="16025.0" y2="4960.0" stroke="#1668a9" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="10320.0" y1="4960.0" x2="10385.0" y2="4935.299999999999" stroke="#1668a9" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="10320.0" y1="4960.0" x2="10385.0" y2="4984.700000000001" stroke="#1668a9" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="16025.0" y1="4960.0" x2="15960.0" y2="4935.299999999999" stroke="#1668a9" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="16025.0" y1="4960.0" x2="15960.0" y2="4984.700000000001" stroke="#1668a9" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<text x="13172.5" y="4860.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#1668a9">5705 [C12]</text>
+<text x="13175.0" y="8200.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#1668a9">~3550 [C03]; доп.2749 [C12]; не усреднять</text>
+<rect x="19850.0" y="2000.0" width="9150.0" height="14000" stroke="#303030" stroke-width="9" fill="none"/>
+<text x="24425.0" y="2300.0" font-family="Arial, sans-serif" font-size="150" font-weight="700" text-anchor="middle" fill="#202020">ЛОКАЛЬНЫЕ УЗЛЫ / НЕЗАМКНУТЫЕ ДАННЫЕ</text>
+<text x="24425.0" y="2530.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#aa6800">не использовать как глобальные координаты без указанной привязки</text>
+<rect x="20200" y="2850.0" width="8450" height="2800" stroke="#303030" stroke-width="9" fill="none"/>
+<text x="20450" y="3150.0" font-family="Arial, sans-serif" font-size="105" font-weight="700" text-anchor="start" fill="#202020">4 КОРИДОР — локальные фрагменты [C06]</text>
+<rect x="20600" y="3270.0" width="970" height="1880" stroke="#7a7a7a" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<rect x="22350" y="3320.0" width="960" height="1780" stroke="#7a7a7a" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="20600" y1="5150.0" x2="20600" y2="5370.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="21570" y1="5150.0" x2="21570" y2="5370.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="20600" y1="5370.0" x2="21570" y2="5370.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="20600" y1="5370.0" x2="20665" y2="5345.299999999999" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="20600" y1="5370.0" x2="20665" y2="5394.700000000001" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="21570" y1="5370.0" x2="21505" y2="5345.299999999999" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="21570" y1="5370.0" x2="21505" y2="5394.700000000001" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="21085.0" y="5270.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020">970</text>
+<line x1="21570" y1="5150.0" x2="21790" y2="5150.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="21570" y1="3270.0" x2="21790" y2="3270.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="21790" y1="5150.0" x2="21790" y2="3270.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="21790" y1="5150.0" x2="21814.7" y2="5085.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="21790" y1="5150.0" x2="21765.3" y2="5085.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="21790" y1="3270.0" x2="21814.7" y2="3335.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="21790" y1="3270.0" x2="21765.3" y2="3335.0" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="21690" y="4210.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020" transform="rotate(-90 21690 4210.0)">1880</text>
+<line x1="22350" y1="5100.0" x2="22350" y2="5320.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="23310" y1="5100.0" x2="23310" y2="5320.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="22350" y1="5320.0" x2="23310" y2="5320.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="22350" y1="5320.0" x2="22415" y2="5295.299999999999" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="22350" y1="5320.0" x2="22415" y2="5344.700000000001" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="23310" y1="5320.0" x2="23245" y2="5295.299999999999" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="23310" y1="5320.0" x2="23245" y2="5344.700000000001" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="22830.0" y="5220.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020">960</text>
+<line x1="23310" y1="5100.0" x2="23530" y2="5100.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="23310" y1="3320.0" x2="23530" y2="3320.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="23530" y1="5100.0" x2="23530" y2="3320.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="23530" y1="5100.0" x2="23554.7" y2="5035.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="23530" y1="5100.0" x2="23505.3" y2="5035.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="23530" y1="3320.0" x2="23554.7" y2="3385.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="23530" y1="3320.0" x2="23505.3" y2="3385.0" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="23430" y="4210.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020" transform="rotate(-90 23430 4210.0)">1780</text>
+<text x="23900" y="3520.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">H отмеченных точек = 2750</text>
+<text x="23900" y="3675.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">проход до балки = 630</text>
+<text x="23900" y="3830.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">P6=940: H ниже, отметка н/д</text>
+<text x="23900" y="3985.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">полный контур коридора н/д</text>
+<rect x="20200" y="5950.0" width="8450" height="4550" stroke="#303030" stroke-width="9" fill="none"/>
+<text x="20450" y="6250.0" font-family="Arial, sans-serif" font-size="105" font-weight="700" text-anchor="start" fill="#202020">7 ТУАЛЕТ — локальный узел [B01/T01]</text>
+<rect x="20600" y="7510.0" width="2090" height="1740" stroke="#111111" stroke-width="25" fill="none"/>
+<text x="21645.0" y="7360.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#5e5e5e">контур B01 2090x1740; ориентация T01 к плану н/д</text>
+<circle cx="21645" cy="8550.0" r="170" stroke="#587a57" stroke-width="9" fill="none"/>
+<line x1="21645" y1="8850.0" x2="21645" y2="8250.0" stroke="#587a57" stroke-width="9" fill="none"/>
+<line x1="21345" y1="8550.0" x2="21945" y2="8550.0" stroke="#587a57" stroke-width="9" fill="none"/>
+<text x="21645" y="8595.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#587a57">WC ось</text>
+<text x="21645" y="9070.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#aa6800">схема осей условна</text>
+<rect x="21980" y="8890.0" width="710" height="360" stroke="#111111" stroke-width="25" fill="none"/>
+<text x="22335.0" y="9135.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#aa6800">ВМ-07</text>
+<line x1="21980" y1="8890.0" x2="21980" y2="8710.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="22690" y1="8890.0" x2="22690" y2="8710.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="21980" y1="8710.0" x2="22690" y2="8710.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="21980" y1="8710.0" x2="22045" y2="8685.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="21980" y1="8710.0" x2="22045" y2="8734.7" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="22690" y1="8710.0" x2="22625" y2="8685.3" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="22690" y1="8710.0" x2="22625" y2="8734.7" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="22335.0" y="8610.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020">710 [B01]</text>
+<line x1="21980" y1="9250.0" x2="21820" y2="9250.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="21980" y1="8890.0" x2="21820" y2="8890.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="21820" y1="9250.0" x2="21820" y2="8890.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="21820" y1="9250.0" x2="21844.7" y2="9185.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="21820" y1="9250.0" x2="21795.3" y2="9185.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="21820" y1="8890.0" x2="21844.7" y2="8955.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="21820" y1="8890.0" x2="21795.3" y2="8955.0" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="21720" y="9070.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020" transform="rotate(-90 21720 9070.0)">360 [B01]</text>
+<text x="21645" y="8230.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#aa6800">ВМ-07: короб 360x710 [B01]</text>
+<text x="21645" y="8380.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#aa6800">счётчики внутри; оси н/д [U02]</text>
+<text x="23300" y="6770.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">H потолка 2617</text>
+<text x="23300" y="6920.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">D4: предвар.705x2027</text>
+<text x="23300" y="7070.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">открывание наружу; петли н/д</text>
+<text x="23300" y="7220.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">WC: 550 от задней; 1621 от правой</text>
+<text x="23300" y="7370.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">проход от оси 824 до передней</text>
+<text x="23300" y="7520.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">вода: 620 от левой; h=200</text>
+<text x="23300" y="7670.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">ВМ-07: короб 360x710 [B01]; оси внутри н/д [U02]</text>
+<text x="23300" y="7820.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">канализация WC: 460-470; h=80</text>
+<text x="23300" y="7970.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">раковина: канализация h=240</text>
+<text x="23300" y="8120.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">кабель: h=1850; 1030/250</text>
+<text x="23300" y="8270.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">вентрешётка 260x260; 40/80</text>
+<text x="23300" y="8420.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">Л-07 щиток/лючок S05: 456; t28; 933/1142/658</text>
+<rect x="20200" y="10750.0" width="8450" height="2450" stroke="#303030" stroke-width="9" fill="none"/>
+<text x="20450" y="11050.0" font-family="Arial, sans-serif" font-size="105" font-weight="700" text-anchor="start" fill="#202020">9 ТЕРРАСА — конфликт контуров</text>
+<rect x="20700" y="10790.0" width="3310" height="2110" stroke="#bf1e2e" stroke-width="12.5" fill="none"/>
+<line x1="20700" y1="12900.0" x2="20700" y2="13120.0" stroke="#1668a9" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="24010" y1="12900.0" x2="24010" y2="13120.0" stroke="#1668a9" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="20700" y1="13120.0" x2="24010" y2="13120.0" stroke="#1668a9" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="20700" y1="13120.0" x2="20765" y2="13095.3" stroke="#1668a9" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="20700" y1="13120.0" x2="20765" y2="13144.7" stroke="#1668a9" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="24010" y1="13120.0" x2="23945" y2="13095.3" stroke="#1668a9" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="24010" y1="13120.0" x2="23945" y2="13144.7" stroke="#1668a9" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<text x="22355.0" y="13020.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#1668a9">3310 [C01]</text>
+<line x1="20700" y1="12900.0" x2="20480" y2="12900.0" stroke="#1668a9" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="20700" y1="10790.0" x2="20480" y2="10790.0" stroke="#1668a9" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="20480" y1="12900.0" x2="20480" y2="10790.0" stroke="#1668a9" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="20480" y1="12900.0" x2="20504.7" y2="12835.0" stroke="#1668a9" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="20480" y1="12900.0" x2="20455.3" y2="12835.0" stroke="#1668a9" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="20480" y1="10790.0" x2="20504.7" y2="10855.0" stroke="#1668a9" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<line x1="20480" y1="10790.0" x2="20455.3" y2="10855.0" stroke="#1668a9" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<text x="20380" y="11845.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#1668a9" transform="rotate(-90 20380 11845.0)">2110/2130 [C01]</text>
+<text x="24500" y="11480.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">B01: 2000x3000</text>
+<text x="24500" y="11640.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">C01: 3310x2110/2130</text>
+<text x="24500" y="11800.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">остекление 1655</text>
+<text x="24500" y="11960.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">проём 1298 [C12]</text>
+<text x="24500" y="12120.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">не совмещать без замера</text>
+<rect x="20200" y="13450.0" width="8450" height="2300" stroke="#303030" stroke-width="9" fill="none"/>
+<text x="20450" y="13750.0" font-family="Arial, sans-serif" font-size="105" font-weight="700" text-anchor="start" fill="#202020">НЕОПРЕДЕЛЁННОСТИ / НЕПРИВЯЗАННЫЕ ЭЛЕМЕНТЫ</text>
+<line x1="24350" y1="15550.0" x2="24350" y2="13950.0" stroke="#303030" stroke-width="9" fill="none"/>
+<text x="20450" y="14050.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#aa6800">1. наружная t стен</text>
+<text x="20450" y="14240.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#aa6800">2. полный верхний контур/площадь коридора</text>
+<text x="20450" y="14430.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#aa6800">3. привязки D1/D2 к углам</text>
+<text x="20450" y="14620.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#aa6800">4. D3/D5 W/H н/д; D4 перепроверить 705x2027</text>
+<text x="20450" y="14810.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#aa6800">5. H пониженного потолка P6</text>
+<text x="20450" y="15000.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#aa6800">6. H подоконников и габариты радиаторов</text>
+<text x="20450" y="15190.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#aa6800">7. H ванной и глобальные оси инженерии</text>
+<text x="20450" y="15380.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#aa6800">8. ЭЩ-03: габарит/H/ось на стене н/д</text>
+<text x="20450" y="15570.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#aa6800">9. ВМ-07: оси, H и габарит люка н/д</text>
+<text x="20450" y="15760.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#aa6800">10. Л-07: тип и связь с ВМ-07 н/д</text>
+<circle cx="24700.0" cy="14120.0" r="55" stroke="#587a57" stroke-width="9" fill="none"/>
+<circle cx="24825.0" cy="14120.0" r="55" stroke="#587a57" stroke-width="9" fill="none"/>
+<line x1="24655.0" y1="14200.0" x2="24875.0" y2="14040.0" stroke="#587a57" stroke-width="9" fill="none"/>
+<text x="25010.0" y="14145.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">E-01 кухня: D15/D50; оси/H н/д [C03]</text>
+<rect x="24690.0" y="14330.0" width="220.0" height="310.0" stroke="#bf1e2e" stroke-width="12.5" fill="none"/>
+<line x1="24690.0" y1="14640.0" x2="24910.0" y2="14330.0" stroke="#bf1e2e" stroke-width="12.5" fill="none"/>
+<line x1="24910.0" y1="14640.0" x2="24690.0" y2="14330.0" stroke="#bf1e2e" stroke-width="12.5" fill="none"/>
+<text x="25010.0" y="14530.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">ЭЩ-03 прихожая: габарит/H/ось н/д [F08]</text>
+<rect x="24690.0" y="14840.0" width="220.0" height="200.0" stroke="#587a57" stroke-width="9" fill="none"/>
+<line x1="24710.0" y1="14990.0" x2="24890.0" y2="14990.0" stroke="#587a57" stroke-width="9" fill="none"/>
+<line x1="24710.0" y1="14940.0" x2="24890.0" y2="14940.0" stroke="#587a57" stroke-width="9" fill="none"/>
+<line x1="24710.0" y1="14890.0" x2="24890.0" y2="14890.0" stroke="#587a57" stroke-width="9" fill="none"/>
+<text x="25010.0" y="14970.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">E-03: 3 розетки у пола в прихожей [F08]; ось н/д</text>
+<rect x="24690.0" y="15170.0" width="220.0" height="200.0" stroke="#587a57" stroke-width="9" fill="none"/>
+<text x="25010.0" y="15275.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">R-02/R-05 под O2/O3; габарит/H н/д</text>
+<circle cx="24800.0" cy="15630.0" r="95" stroke="#587a57" stroke-width="9" fill="none"/>
+<line x1="24800.0" y1="15770.0" x2="24800.0" y2="15490.0" stroke="#587a57" stroke-width="9" fill="none"/>
+<text x="25010.0" y="15655.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">WC: подтверждён; точные локальные оси — узел выше</text>
+<rect x="500" y="16550.0" width="28700" height="3950.0" stroke="#222222" stroke-width="9" fill="none"/>
+<line x1="7200.0" y1="20500.0" x2="7200.0" y2="16550.0" stroke="#222222" stroke-width="9" fill="none"/>
+<text x="700" y="16840.0" font-family="Arial, sans-serif" font-size="120" font-weight="700" text-anchor="start" fill="#202020">УСЛОВНЫЕ ОБОЗНАЧЕНИЯ И ПРАВИЛА</text>
+<line x1="760" y1="17112.0" x2="1270" y2="17112.0" stroke="#111111" stroke-width="25" fill="none"/>
+<text x="1400" y="17140.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#202020">внутренние стены B01 с t=30/130/160/200</text>
+<line x1="760" y1="17357.0" x2="1270" y2="17357.0" stroke="#777777" stroke-width="35" fill="none"/>
+<text x="1400" y="17385.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#202020">наружные/неразмерённые стены; t числом н/д</text>
+<line x1="760" y1="17602.0" x2="1270" y2="17602.0" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="1400" y="17630.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#202020">размеры/цепочки B01</text>
+<line x1="760" y1="17847.0" x2="1270" y2="17847.0" stroke="#1668a9" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<text x="1400" y="17875.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#202020">контрольные обмеры Cxx/U01</text>
+<line x1="760" y1="18092.0" x2="1270" y2="18092.0" stroke="#176c45" stroke-width="17.5" fill="none"/>
+<text x="1400" y="18120.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#202020">проёмы и окна</text>
+<line x1="760" y1="18337.0" x2="1270" y2="18337.0" stroke="#587a57" stroke-width="9" fill="none"/>
+<text x="1400" y="18365.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#202020">существующее оборудование/зона</text>
+<line x1="760" y1="18582.0" x2="1270" y2="18582.0" stroke="#72428e" stroke-width="9" fill="none"/>
+<text x="1400" y="18610.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#202020">точечные отметки потолка</text>
+<line x1="760" y1="18827.0" x2="1270" y2="18827.0" stroke="#bf1e2e" stroke-width="12.5" fill="none"/>
+<text x="1400" y="18855.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#202020">конфликт источников</text>
+<line x1="760" y1="19072.0" x2="1270" y2="19072.0" stroke="#aa6800" stroke-width="9" fill="none" stroke-dasharray="90 60"/>
+<text x="1400" y="19100.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#202020">неизвестно / нужна привязка</text>
+<text x="700" y="19480.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">Приоритет: контроль для заказа; B01 для топологии.</text>
+<text x="700" y="19655.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">Не усреднять разные стороны и источники.</text>
+<text x="700" y="19830.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">Sрасч. — геометрический расчёт, не официальная площадь.</text>
+<text x="700" y="20005.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">* Дуги D1-D5 не показаны; D4 наружу, петли н/д; сегмент B01 не равен чистой W.</text>
+<text x="700" y="20180.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">R01 (чужой пример) — только графический стиль.</text>
+<text x="700" y="20355.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#5e5e5e">Полная матрица: docs/11_Паспорт_подробного_обмерного_плана.md</text>
+<line x1="19600.0" y1="20500.0" x2="19600.0" y2="16550.0" stroke="#222222" stroke-width="9" fill="none"/>
+<text x="13400.0" y="16800.0" font-family="Arial, sans-serif" font-size="120" font-weight="700" text-anchor="middle" fill="#202020">ЭКСПЛИКАЦИЯ ПОМЕЩЕНИЙ / ПОСЛЕ ОБМЕРОВ</text>
+<line x1="7200.0" y1="20500.0" x2="7200.0" y2="17060.0" stroke="#222222" stroke-width="9" fill="none"/>
+<line x1="7750.0" y1="20500.0" x2="7750.0" y2="17060.0" stroke="#222222" stroke-width="9" fill="none"/>
+<line x1="10350.0" y1="20500.0" x2="10350.0" y2="17060.0" stroke="#222222" stroke-width="9" fill="none"/>
+<line x1="12650.0" y1="20500.0" x2="12650.0" y2="17060.0" stroke="#222222" stroke-width="9" fill="none"/>
+<line x1="14100.0" y1="20500.0" x2="14100.0" y2="17060.0" stroke="#222222" stroke-width="9" fill="none"/>
+<line x1="16150.0" y1="20500.0" x2="16150.0" y2="17060.0" stroke="#222222" stroke-width="9" fill="none"/>
+<line x1="19600.0" y1="20500.0" x2="19600.0" y2="17060.0" stroke="#222222" stroke-width="9" fill="none"/>
+<line x1="7200.0" y1="17060.0" x2="19600.0" y2="17060.0" stroke="#222222" stroke-width="9" fill="none"/>
+<line x1="7200.0" y1="17390.0" x2="19600.0" y2="17390.0" stroke="#222222" stroke-width="9" fill="none"/>
+<line x1="7200.0" y1="17720.0" x2="19600.0" y2="17720.0" stroke="#222222" stroke-width="9" fill="none"/>
+<line x1="7200.0" y1="18050.0" x2="19600.0" y2="18050.0" stroke="#222222" stroke-width="9" fill="none"/>
+<line x1="7200.0" y1="18380.0" x2="19600.0" y2="18380.0" stroke="#222222" stroke-width="9" fill="none"/>
+<line x1="7200.0" y1="18710.0" x2="19600.0" y2="18710.0" stroke="#222222" stroke-width="9" fill="none"/>
+<line x1="7200.0" y1="19040.0" x2="19600.0" y2="19040.0" stroke="#222222" stroke-width="9" fill="none"/>
+<line x1="7200.0" y1="19370.0" x2="19600.0" y2="19370.0" stroke="#222222" stroke-width="9" fill="none"/>
+<line x1="7200.0" y1="19700.0" x2="19600.0" y2="19700.0" stroke="#222222" stroke-width="9" fill="none"/>
+<line x1="7200.0" y1="20030.0" x2="19600.0" y2="20030.0" stroke="#222222" stroke-width="9" fill="none"/>
+<line x1="7200.0" y1="20360.0" x2="19600.0" y2="20360.0" stroke="#222222" stroke-width="9" fill="none"/>
+<text x="7475.0" y="17305.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#202020">№</text>
+<text x="9050.0" y="17305.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#202020">Помещение</text>
+<text x="11500.0" y="17305.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#202020">B01, мм</text>
+<text x="13375.0" y="17305.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#202020">Sрасч.</text>
+<text x="15125.0" y="17305.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#202020">H, мм</text>
+<text x="17875.0" y="17305.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="700" text-anchor="middle" fill="#202020">Статус</text>
+<text x="7475.0" y="17630.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">1</text>
+<text x="9050.0" y="17630.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">Кухня-гостиная</text>
+<text x="11500.0" y="17630.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">5710x3500</text>
+<text x="13375.0" y="17630.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">19,99</text>
+<text x="15125.0" y="17630.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">2714/2717/2727/2712; ц.2719</text>
+<text x="17875.0" y="17630.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">B01 + контроль</text>
+<text x="7475.0" y="17960.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">2</text>
+<text x="9050.0" y="17960.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">Детская</text>
+<text x="11500.0" y="17960.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">3850x2810</text>
+<text x="13375.0" y="17960.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">10,82</text>
+<text x="15125.0" y="17960.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">2712/2716; ц.2715</text>
+<text x="17875.0" y="17960.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">B01; 1 ось контроля</text>
+<text x="7475.0" y="18290.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">3</text>
+<text x="9050.0" y="18290.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">Прихожая</text>
+<text x="11500.0" y="18290.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">фрагм.2090x1675</text>
+<text x="13375.0" y="18290.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">3,50*</text>
+<text x="15125.0" y="18290.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">2750 (5 точек)</text>
+<text x="17875.0" y="18290.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">не полная площадь</text>
+<text x="7475.0" y="18620.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">4</text>
+<text x="9050.0" y="18620.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">Коридор</text>
+<text x="11500.0" y="18620.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">контур н/д</text>
+<text x="13375.0" y="18620.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">н/д</text>
+<text x="15125.0" y="18620.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">2750; P6 ниже н/д</text>
+<text x="17875.0" y="18620.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">топология + вставки</text>
+<text x="7475.0" y="18950.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">5</text>
+<text x="9050.0" y="18950.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">Спальня</text>
+<text x="11500.0" y="18950.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">3840x2810</text>
+<text x="13375.0" y="18950.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">10,79</text>
+<text x="15125.0" y="18950.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">2750 (5 точек)</text>
+<text x="17875.0" y="18950.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">B01 + контроль</text>
+<text x="7475.0" y="19280.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">6</text>
+<text x="9050.0" y="19280.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">Ванная</text>
+<text x="11500.0" y="19280.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">1730x1740</text>
+<text x="13375.0" y="19280.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">3,01</text>
+<text x="15125.0" y="19280.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">н/д</text>
+<text x="17875.0" y="19280.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">конфликт контроля</text>
+<text x="7475.0" y="19610.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">7</text>
+<text x="9050.0" y="19610.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">Туалет</text>
+<text x="11500.0" y="19610.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">2090x1740</text>
+<text x="13375.0" y="19610.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">3,64</text>
+<text x="15125.0" y="19610.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">2617 [T01]</text>
+<text x="17875.0" y="19610.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">инженерия локально</text>
+<text x="7475.0" y="19940.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">8</text>
+<text x="9050.0" y="19940.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">Гардеробная</text>
+<text x="11500.0" y="19940.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">1740x1740</text>
+<text x="13375.0" y="19940.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">3,03</text>
+<text x="15125.0" y="19940.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">2712-2718</text>
+<text x="17875.0" y="19940.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">4 контрольные стороны</text>
+<text x="7475.0" y="20270.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">9</text>
+<text x="9050.0" y="20270.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">Терраса</text>
+<text x="11500.0" y="20270.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">2000x3000</text>
+<text x="13375.0" y="20270.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">6,00 B01</text>
+<text x="15125.0" y="20270.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">не применяется</text>
+<text x="17875.0" y="20270.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">сильный конфликт</text>
+<text x="24400.0" y="16870.0" font-family="Arial, sans-serif" font-size="155" font-weight="700" text-anchor="middle" fill="#202020">APT-001</text>
+<line x1="19600.0" y1="17100.0" x2="29200.0" y2="17100.0" stroke="#222222" stroke-width="9" fill="none"/>
+<text x="24400.0" y="17500.0" font-family="Arial, sans-serif" font-size="180" font-weight="700" text-anchor="middle" fill="#202020">ПОДРОБНЫЙ ОБМЕРНЫЙ ПЛАН</text>
+<text x="24400.0" y="17800.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#5e5e5e">БТИ S15 + контрольные обмеры + фото</text>
+<line x1="19600.0" y1="18080.0" x2="29200.0" y2="18080.0" stroke="#222222" stroke-width="9" fill="none"/>
+<text x="19900" y="18370.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#202020">Лист</text>
+<text x="21600" y="18370.0" font-family="Arial, sans-serif" font-size="110" font-weight="700" text-anchor="start" fill="#202020">04</text>
+<text x="23200" y="18370.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#202020">Масштаб</text>
+<text x="26500" y="18370.0" font-family="Arial, sans-serif" font-size="110" font-weight="700" text-anchor="start" fill="#202020">1:50</text>
+<line x1="19600.0" y1="18600.0" x2="29200.0" y2="18600.0" stroke="#222222" stroke-width="9" fill="none"/>
+<text x="19900" y="18890.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#202020">Формат</text>
+<text x="21600" y="18890.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#202020">A2, альбом</text>
+<text x="25000" y="18890.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#202020">Ед.</text>
+<text x="26500" y="18890.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#202020">мм</text>
+<line x1="19600.0" y1="19120.0" x2="29200.0" y2="19120.0" stroke="#222222" stroke-width="9" fill="none"/>
+<text x="19900" y="19420.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#202020">Дата</text>
+<text x="21600" y="19420.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#202020">11.08.2026</text>
+<text x="25000" y="19420.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#202020">Рев.</text>
+<text x="26500" y="19420.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="start" fill="#202020">13</text>
+<line x1="19600.0" y1="19660.0" x2="29200.0" y2="19660.0" stroke="#222222" stroke-width="9" fill="none"/>
+<text x="24400.0" y="19970.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#5e5e5e">Красные/оранжевые позиции не применять без проверки</text>
+<text x="24400.0" y="20240.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#5e5e5e">Исходные фото не изменялись; публикация не выполнялась</text>
+<line x1="26700.0" y1="16250.0" x2="27700.0" y2="16250.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="26700.0" y1="16330.0" x2="26700.0" y2="16170.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="27200.0" y1="16330.0" x2="27200.0" y2="16170.0" stroke="#202020" stroke-width="9" fill="none"/>
+<line x1="27700.0" y1="16330.0" x2="27700.0" y2="16170.0" stroke="#202020" stroke-width="9" fill="none"/>
+<text x="26700.0" y="16480.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020">0</text>
+<text x="27200.0" y="16480.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020">500</text>
+<text x="27700.0" y="16480.0" font-family="Arial, sans-serif" font-size="90.0" font-weight="400" text-anchor="middle" fill="#202020">1000 мм</text>
+<text x="27200.0" y="16070.0" font-family="Arial, sans-serif" font-size="100.0" font-weight="400" text-anchor="middle" fill="#202020">М 1:50: 1000 мм = 20 мм</text>
+</svg>

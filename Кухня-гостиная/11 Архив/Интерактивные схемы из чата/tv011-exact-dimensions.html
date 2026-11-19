@@ -1,0 +1,173 @@
+<div id="tv011-exact-dimensions">
+  <style>
+    #tv011-exact-dimensions { color: var(--foreground); }
+    #tv011-exact-dimensions .viz-heading { margin: 0 0 8px; font-weight: 500; }
+    #tv011-exact-dimensions .viz-subheading { margin: 16px 0 6px; font-weight: 500; }
+    #tv011-exact-dimensions .note { margin: 5px 0 0; color: var(--muted-foreground); }
+    #tv011-exact-dimensions svg { display: block; width: 100%; height: auto; }
+    #tv011-exact-dimensions .room { fill: color-mix(in srgb, var(--secondary) 28%, transparent); stroke: var(--foreground); stroke-width: 2; }
+    #tv011-exact-dimensions .kitchen { fill: color-mix(in srgb, var(--orange) 22%, transparent); stroke: var(--orange); stroke-width: 1.4; }
+    #tv011-exact-dimensions .pmm { fill: color-mix(in srgb, var(--blue) 19%, transparent); stroke: var(--blue); stroke-width: 1.4; }
+    #tv011-exact-dimensions .door { fill: color-mix(in srgb, var(--red) 10%, transparent); stroke: var(--red); stroke-width: 1.4; stroke-dasharray: 5 4; }
+    #tv011-exact-dimensions .table-shape { fill: color-mix(in srgb, var(--green) 20%, transparent); stroke: var(--green); stroke-width: 1.4; }
+    #tv011-exact-dimensions .sofa { fill: color-mix(in srgb, var(--purple) 15%, transparent); stroke: var(--purple); stroke-width: 1.4; }
+    #tv011-exact-dimensions .desk { fill: color-mix(in srgb, var(--blue) 13%, transparent); stroke: var(--blue); stroke-width: 1.4; }
+    #tv011-exact-dimensions .tv { fill: color-mix(in srgb, var(--red) 15%, transparent); stroke: var(--red); stroke-width: 1.4; }
+    #tv011-exact-dimensions .chair { fill: color-mix(in srgb, var(--secondary) 45%, transparent); stroke: var(--muted-foreground); stroke-width: 1.1; }
+    #tv011-exact-dimensions .chair-conflict { fill: color-mix(in srgb, var(--red) 13%, transparent); stroke: var(--red); stroke-width: 1.4; }
+    #tv011-exact-dimensions .outline { fill: none; stroke: var(--border); stroke-width: 1; }
+    #tv011-exact-dimensions .dim { fill: none; stroke: var(--muted-foreground); stroke-width: 1; }
+    #tv011-exact-dimensions .module { fill: color-mix(in srgb, var(--orange) 18%, transparent); stroke: var(--foreground); stroke-width: 1.2; }
+    #tv011-exact-dimensions .module-pmm { fill: color-mix(in srgb, var(--blue) 17%, transparent); stroke: var(--blue); stroke-width: 1.4; }
+    #tv011-exact-dimensions .module-narrow { fill: color-mix(in srgb, var(--green) 17%, transparent); stroke: var(--green); stroke-width: 1.2; }
+    #tv011-exact-dimensions .module-column { fill: color-mix(in srgb, var(--purple) 15%, transparent); stroke: var(--purple); stroke-width: 1.2; }
+    #tv011-exact-dimensions .module-reference { fill: color-mix(in srgb, var(--orange) 13%, transparent); stroke: var(--orange); stroke-width: 1.2; }
+    #tv011-exact-dimensions .label { fill: var(--foreground); font-size: 13px; font-family: inherit; text-anchor: middle; }
+    #tv011-exact-dimensions .label-small { fill: var(--muted-foreground); font-size: 11px; font-family: inherit; text-anchor: middle; }
+    #tv011-exact-dimensions .label-warning { fill: var(--destructive); font-size: 12px; font-family: inherit; text-anchor: middle; }
+    #tv011-exact-dimensions .plan-label { fill: var(--foreground); font-size: 10px; font-family: inherit; text-anchor: middle; }
+    #tv011-exact-dimensions .tabular { font-variant-numeric: tabular-nums; }
+    @media (max-width: 520px) {
+      #tv011-exact-dimensions .plan-detail,
+      #tv011-exact-dimensions .facade-detail { display: none; }
+      #tv011-exact-dimensions .label { font-size: 23px; }
+      #tv011-exact-dimensions .label-small { font-size: 20px; }
+      #tv011-exact-dimensions .label-warning { font-size: 20px; }
+      #tv011-exact-dimensions .plan-label { font-size: 20px; }
+    }
+  </style>
+  <h2 class="viz-heading">TV-011 · проверка реальных размеров</h2>
+  <div class="viz-controls" role="group" aria-label="Вид нижнего фасада">
+    <label class="form-check"><input class="form-check-input" type="radio" name="facade" value="real" checked> <span class="form-check-label">Реализуемо: ПММ 600 остаётся</span></label>
+    <label class="form-check"><input class="form-check-input" type="radio" name="facade" value="reference"> <span class="form-check-label">Рисунок как на референсе</span></label>
+  </div>
+
+  <h3 class="viz-subheading">План B01 · 5710 × 3500 мм</h3>
+  <svg viewBox="0 0 760 475" role="img" aria-label="План помещения B01 с кухней, диваном, столом, рабочим местом и телевизором. Все габариты пропорциональны заданным координатам.">
+    <title>План B01 в пропорциональном масштабе</title>
+    <desc>Кухня занимает задний ряд 2400 миллиметров и левую ветку 1600 миллиметров. Круглый стол имеет диаметр 850 миллиметров.</desc>
+    <rect class="room" x="72" y="32" width="571" height="350"></rect>
+    <rect class="kitchen" x="72" y="32" width="30" height="60"></rect>
+    <rect class="kitchen" x="102" y="32" width="60" height="60"></rect>
+    <rect class="pmm" x="162" y="32" width="60" height="60"></rect>
+    <rect class="kitchen" x="222" y="32" width="30" height="60"></rect>
+    <rect class="module-column" x="252" y="32" width="60" height="60"></rect>
+    <rect class="kitchen" x="72" y="97" width="60" height="60"></rect>
+    <rect class="kitchen" x="72" y="157" width="60" height="35"></rect>
+    <rect class="kitchen" x="72" y="192" width="60" height="60"></rect>
+    <rect class="door" x="162" y="92" width="60" height="60"></rect>
+    <circle class="table-shape" cx="234.5" cy="209.5" r="42.5"></circle>
+    <rect class="chair-conflict" x="172" y="127" width="40" height="40" rx="3"></rect>
+    <rect class="chair" x="257" y="127" width="40" height="40" rx="3"></rect>
+    <rect class="chair" x="167" y="247" width="40" height="40" rx="3"></rect>
+    <rect class="chair" x="262" y="247" width="40" height="40" rx="3"></rect>
+    <rect class="sofa" x="317" y="32" width="200" height="100" rx="7"></rect>
+    <rect class="desk" x="522" y="32" width="120" height="60" rx="6"></rect>
+    <rect class="tv" x="342" y="352" width="160" height="30" rx="4"></rect>
+    <text class="plan-label plan-detail" x="87" y="58">300</text>
+    <text class="plan-label plan-detail" x="132" y="58">варка 600</text>
+    <text class="plan-label plan-detail" x="192" y="58">ПММ 600</text>
+    <text class="plan-label plan-detail" x="237" y="58">300</text>
+    <text class="plan-label plan-detail" x="282" y="58">пенал 600</text>
+    <text class="plan-label plan-detail" x="102" y="127">мойка 600</text>
+    <text class="plan-label plan-detail" x="102" y="177">выкат 350</text>
+    <text class="plan-label plan-detail" x="102" y="222">холод. 600</text>
+    <text class="plan-label plan-detail" x="192" y="124">дверца ПММ 600</text>
+    <text class="plan-label" x="234.5" y="210">стол Ø850</text>
+    <text class="plan-label" x="192" y="151">8B</text>
+    <text class="plan-label" x="277" y="151">8A</text>
+    <text class="plan-label" x="187" y="271">8D</text>
+    <text class="plan-label" x="282" y="271">8C</text>
+    <text class="plan-label" x="417" y="83">диван 2000 × 1000</text>
+    <text class="plan-label" x="582" y="66">РМ 1200 × 600</text>
+    <text class="plan-label" x="422" y="371">ТВ 1600 × 300</text>
+    <line class="dim" x1="72" y1="16" x2="312" y2="16"></line>
+    <line class="dim" x1="72" y1="11" x2="72" y2="21"></line>
+    <line class="dim" x1="312" y1="11" x2="312" y2="21"></line>
+    <text class="label-small tabular" x="192" y="12">задний ряд кухни · 2400 мм</text>
+    <line class="dim" x1="56" y1="92" x2="56" y2="252"></line>
+    <line class="dim" x1="51" y1="92" x2="61" y2="92"></line>
+    <line class="dim" x1="51" y1="252" x2="61" y2="252"></line>
+    <text class="label-small tabular" x="33" y="176" transform="rotate(-90 33 176)">левая ветка · 1600 мм</text>
+    <text class="label-small tabular" x="357.5" y="408">B01 · 5710 × 3500 мм · пропорционально заданным координатам</text>
+    <text class="label-warning" x="192" y="180">8B пересекает открывание ПММ</text>
+  </svg>
+
+  <h3 class="viz-subheading">Нижний фронт заднего ряда · 2400 мм</h3>
+  <svg viewBox="0 0 760 286" role="img" aria-live="polite" aria-label="Фасадная схема нижнего ряда кухни с переключением между реализуемым вариантом с посудомоечной машиной и референсным рисунком.">
+    <title>Схема нижнего фронта заднего ряда</title>
+    <desc id="facade-desc">Реализуемый вариант: модуль варки 600 с двумя фронтами, затем цельный фасад посудомоечной машины 600, узкий выкат 300 и пенал 600.</desc>
+    <line class="dim" x1="68" y1="33" x2="668" y2="33"></line>
+    <line class="dim" x1="68" y1="28" x2="68" y2="38"></line>
+    <line class="dim" x1="668" y1="28" x2="668" y2="38"></line>
+    <text class="label-small tabular" x="368" y="26">2400 мм</text>
+    <g id="facade-real">
+      <rect class="module" x="68" y="58" width="75" height="148"></rect>
+      <rect class="module" x="143" y="58" width="150" height="74"></rect>
+      <rect class="module" x="143" y="132" width="150" height="74"></rect>
+      <rect class="module-pmm" x="293" y="58" width="150" height="148"></rect>
+      <rect class="module-narrow" x="443" y="58" width="75" height="148"></rect>
+      <rect class="module-column" x="518" y="58" width="150" height="148"></rect>
+      <text class="label" x="105.5" y="126">угол</text>
+      <text class="label-small" x="105.5" y="145">300</text>
+      <text class="label facade-detail" x="218" y="95">варка / ящики</text>
+      <text class="label-small facade-detail" x="218" y="115">600 · два фасада</text>
+      <text class="label" x="368" y="126">ПММ</text>
+      <text class="label-small facade-detail" x="368" y="145">600 · цельный фасад</text>
+      <text class="label" x="480.5" y="126">выкат</text>
+      <text class="label-small" x="480.5" y="145">300</text>
+      <text class="label" x="593" y="126">пенал</text>
+      <text class="label-small facade-detail" x="593" y="145">600 · СВЧ / духовка</text>
+      <text class="label-small tabular" x="105.5" y="229">0–300</text>
+      <text class="label-small tabular" x="218" y="229">300–900</text>
+      <text class="label-small tabular" x="368" y="229">900–1500</text>
+      <text class="label-small tabular" x="480.5" y="229">1500–1800</text>
+      <text class="label-small tabular" x="593" y="229">1800–2400</text>
+      <text class="label-small" x="368" y="264">Вариант, который реально собирается с ПММ 600</text>
+    </g>
+    <g id="facade-reference" hidden>
+      <rect class="module" x="68" y="58" width="75" height="148"></rect>
+      <rect class="module-reference" x="143" y="58" width="150" height="74"></rect>
+      <rect class="module-reference" x="143" y="132" width="150" height="74"></rect>
+      <rect class="module-reference" x="293" y="58" width="150" height="74"></rect>
+      <rect class="module-reference" x="293" y="132" width="150" height="74"></rect>
+      <rect class="module-narrow" x="443" y="58" width="75" height="148"></rect>
+      <rect class="module-column" x="518" y="58" width="150" height="148"></rect>
+      <text class="label" x="105.5" y="126">угол</text>
+      <text class="label-small" x="105.5" y="145">300</text>
+      <text class="label" x="218" y="95">600</text>
+      <text class="label-small" x="218" y="115">верх / низ</text>
+      <text class="label" x="368" y="95">600</text>
+      <text class="label-small" x="368" y="115">верх / низ</text>
+      <text class="label" x="480.5" y="126">узкая</text>
+      <text class="label-small" x="480.5" y="145">300</text>
+      <text class="label" x="593" y="126">пенал</text>
+      <text class="label-small" x="593" y="145">600</text>
+      <text class="label-warning" x="368" y="241">Такой рисунок означает: в диапазоне 900–1500 нет встроенной ПММ 600.</text>
+      <text class="label-small" x="368" y="264">Это фасадный референс, а не рабочая схема с текущей ПММ.</text>
+    </g>
+  </svg>
+  <p id="facade-status" class="note" aria-live="polite">Проверено: 300 + 600 + 600 + 300 + 600 = 2400 мм. Вторая широкая секция — цельный фасад ПММ.</p>
+  <script>
+    (function () {
+      const root = document.getElementById('tv011-exact-dimensions');
+      const real = root.querySelector('#facade-real');
+      const reference = root.querySelector('#facade-reference');
+      const status = root.querySelector('#facade-status');
+      const desc = root.querySelector('#facade-desc');
+      root.querySelectorAll('input[name="facade"]').forEach((input) => {
+        input.addEventListener('change', () => {
+          const isReal = input.value === 'real' && input.checked;
+          real.hidden = !isReal;
+          reference.hidden = isReal;
+          status.textContent = isReal
+            ? 'Проверено: 300 + 600 + 600 + 300 + 600 = 2400 мм. Вторая широкая секция — цельный фасад ПММ.'
+            : 'Референс повторяет рисунок, но исключает ПММ 600 из секции 900–1500 мм.';
+          desc.textContent = isReal
+            ? 'Реализуемый вариант: модуль варки 600 с двумя фронтами, затем цельный фасад посудомоечной машины 600, узкий выкат 300 и пенал 600.'
+            : 'Референсный фасад: две широкие секции 600 с верхним и нижним фронтом, узкая секция 300 и пенал 600. Посудомоечной машины в таком фронте нет.';
+        });
+      });
+    }());
+  </script>
+</div>

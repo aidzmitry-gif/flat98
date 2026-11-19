@@ -1,0 +1,89 @@
+<div id="tv011-dimensioned-plan">
+  <style>
+    #tv011-dimensioned-plan { color: var(--foreground); }
+    #tv011-dimensioned-plan h2 { margin: 0; font-weight: 500; }
+    #tv011-dimensioned-plan .meta { margin: 4px 0 10px; color: var(--muted-foreground); }
+    #tv011-dimensioned-plan svg { display: block; width: 100%; height: auto; }
+    #tv011-dimensioned-plan .plan-narrow { display: none; }
+    #tv011-dimensioned-plan .room { fill: color-mix(in srgb, var(--secondary) 18%, transparent); stroke: var(--foreground); stroke-width: 2; }
+    #tv011-dimensioned-plan .kitchen { fill: color-mix(in srgb, var(--orange) 20%, transparent); stroke: var(--orange); stroke-width: 1.25; }
+    #tv011-dimensioned-plan .sofa { fill: color-mix(in srgb, var(--purple) 18%, transparent); stroke: var(--purple); stroke-width: 1.25; }
+    #tv011-dimensioned-plan .desk { fill: color-mix(in srgb, var(--blue) 18%, transparent); stroke: var(--blue); stroke-width: 1.25; }
+    #tv011-dimensioned-plan .table { fill: color-mix(in srgb, var(--green) 18%, transparent); stroke: var(--green); stroke-width: 1.25; }
+    #tv011-dimensioned-plan .chair { fill: color-mix(in srgb, var(--secondary) 62%, transparent); stroke: var(--muted-foreground); stroke-width: 1; }
+    #tv011-dimensioned-plan .tv { fill: color-mix(in srgb, var(--red) 18%, transparent); stroke: var(--red); stroke-width: 1.25; }
+    #tv011-dimensioned-plan .opening { stroke: var(--orange); stroke-width: 4; }
+    #tv011-dimensioned-plan .dim { stroke: var(--muted-foreground); stroke-width: 1; }
+    #tv011-dimensioned-plan .tick { stroke: var(--muted-foreground); stroke-width: 1; }
+    #tv011-dimensioned-plan .badge { fill: var(--primary); stroke: var(--primary-foreground); stroke-width: 1; }
+    #tv011-dimensioned-plan .badge-text { fill: var(--primary-foreground); font: 500 12px system-ui, sans-serif; text-anchor: middle; dominant-baseline: middle; }
+    #tv011-dimensioned-plan .name { fill: var(--foreground); font: 500 10px system-ui, sans-serif; text-anchor: middle; }
+    #tv011-dimensioned-plan .detail { fill: var(--muted-foreground); font: 10px system-ui, sans-serif; text-anchor: middle; }
+    #tv011-dimensioned-plan .dim-text { fill: var(--muted-foreground); font: 11px system-ui, sans-serif; text-anchor: middle; }
+    #tv011-dimensioned-plan .small { fill: var(--muted-foreground); font: 9px system-ui, sans-serif; text-anchor: middle; }
+    #tv011-dimensioned-plan .legend { margin-top: 12px; }
+    #tv011-dimensioned-plan .legend th:first-child, #tv011-dimensioned-plan .legend td:first-child { width: 42px; }
+    #tv011-dimensioned-plan .legend td:last-child, #tv011-dimensioned-plan .legend th:last-child { white-space: nowrap; }
+    #tv011-dimensioned-plan .note { margin: 8px 0 0; color: var(--muted-foreground); }
+    @media (max-width: 520px) {
+      #tv011-dimensioned-plan .plan-wide { display: none; }
+      #tv011-dimensioned-plan .plan-narrow { display: block; }
+      #tv011-dimensioned-plan .legend { margin-top: 8px; }
+    }
+  </style>
+
+  <h2>TV-011 · схема с нумерацией и размерами</h2>
+  <p class="meta">Все размеры — мм · координата 0,0 — левый нижний угол B01</p>
+
+  <svg class="plan-wide" viewBox="0 0 760 520" role="img" aria-label="План помещения B01 с кухней, мебелью, нумерацией и размерами">
+    <title>TV-011: исходная расстановка с размерами</title>
+    <desc>Комната 5710 на 3500 миллиметров. Кухня занимает заднюю стену 2400 миллиметров и левую ветку 1600 миллиметров. Мебель пронумерована для последующей перестановки.</desc>
+    <rect class="room" x="45" y="55" width="685.2" height="420" />
+    <line class="dim" x1="45" y1="30" x2="730.2" y2="30" /><line class="tick" x1="45" y1="24" x2="45" y2="36" /><line class="tick" x1="730.2" y1="24" x2="730.2" y2="36" /><text class="dim-text" x="387.6" y="25">5710</text>
+    <line class="dim" x1="22" y1="55" x2="22" y2="475" /><line class="tick" x1="16" y1="55" x2="28" y2="55" /><line class="tick" x1="16" y1="475" x2="28" y2="475" /><text class="dim-text" x="15" y="270" transform="rotate(-90 15 270)">3500</text>
+    <text class="detail" x="387.6" y="501">B01 · 5710 × 3500</text>
+
+    <rect class="kitchen" x="45" y="55" width="72" height="72" /><rect class="kitchen" x="117" y="55" width="72" height="72" /><rect class="kitchen" x="189" y="55" width="72" height="72" /><rect class="kitchen" x="261" y="55" width="72" height="72" />
+    <rect class="kitchen" x="45" y="133" width="72" height="72" /><rect class="kitchen" x="45" y="205" width="72" height="42" /><rect class="kitchen" x="45" y="247" width="72" height="72" />
+    <line class="dim" x1="45" y1="43" x2="333" y2="43" /><line class="tick" x1="45" y1="39" x2="45" y2="47" /><line class="tick" x1="333" y1="39" x2="333" y2="47" /><text class="dim-text" x="189" y="39">кухня по задней стене · 2400</text>
+    <line class="dim" x1="33" y1="127" x2="33" y2="319" /><line class="tick" x1="29" y1="127" x2="37" y2="127" /><line class="tick" x1="29" y1="319" x2="37" y2="319" /><text class="dim-text" x="28" y="223" transform="rotate(-90 28 223)">левая ветка · 1600</text>
+
+    <g><circle class="badge" cx="81" cy="73" r="11" /><text class="badge-text" x="81" y="73">1</text><text class="name" x="81" y="98">подготовка</text><text class="detail" x="81" y="112">600 × 600</text></g>
+    <g><circle class="badge" cx="153" cy="73" r="11" /><text class="badge-text" x="153" y="73">2</text><text class="name" x="153" y="98">варка / ящики</text><text class="detail" x="153" y="112">600 × 600</text></g>
+    <g><circle class="badge" cx="225" cy="73" r="11" /><text class="badge-text" x="225" y="73">3</text><text class="name" x="225" y="98">ПММ</text><text class="detail" x="225" y="112">600 × 600</text></g>
+    <g><circle class="badge" cx="297" cy="73" r="11" /><text class="badge-text" x="297" y="73">4</text><text class="name" x="297" y="98">пенал</text><text class="detail" x="297" y="112">600 × 600</text></g>
+    <g><circle class="badge" cx="81" cy="151" r="11" /><text class="badge-text" x="81" y="151">5</text><text class="name" x="81" y="176">мойка</text><text class="detail" x="81" y="190">600 × 600</text></g>
+    <g><circle class="badge" cx="81" cy="216" r="11" /><text class="badge-text" x="81" y="216">6</text><text class="name" x="81" y="234">выкат</text><text class="detail" x="81" y="244">600 × 350</text></g>
+    <g><circle class="badge" cx="81" cy="265" r="11" /><text class="badge-text" x="81" y="265">7</text><text class="name" x="81" y="291">холодильник</text><text class="detail" x="81" y="305">600 × 600</text></g>
+
+    <circle class="table" cx="240" cy="268" r="51" /><line class="dim" x1="189" y1="331" x2="291" y2="331" /><line class="tick" x1="189" y1="327" x2="189" y2="335" /><line class="tick" x1="291" y1="327" x2="291" y2="335" /><g><circle class="badge" cx="240" cy="261" r="12" /><text class="badge-text" x="240" y="261">8</text><text class="name" x="240" y="284">стол</text><text class="detail" x="240" y="298">Ø850</text></g><text class="dim-text" x="240" y="345">Ø850</text>
+    <rect class="chair" x="165" y="169" width="48" height="48" rx="3" /><rect class="chair" x="267" y="169" width="48" height="48" rx="3" /><rect class="chair" x="159" y="313" width="48" height="48" rx="3" /><rect class="chair" x="273" y="313" width="48" height="48" rx="3" />
+    <text class="small" x="189" y="197">8B</text><text class="small" x="291" y="197">8A</text><text class="small" x="183" y="341">8D</text><text class="small" x="297" y="341">8C</text>
+
+    <rect class="sofa" x="339" y="55" width="240" height="120" rx="5" /><g><circle class="badge" cx="459" cy="105" r="12" /><text class="badge-text" x="459" y="105">9</text><text class="name" x="459" y="130">диван</text><text class="detail" x="459" y="145">2000 × 1000</text></g>
+    <rect class="desk" x="585" y="55" width="144" height="72" rx="4" /><g><circle class="badge" cx="657" cy="78" r="12" /><text class="badge-text" x="657" y="78">10</text><text class="name" x="657" y="104">рабочее место</text><text class="detail" x="657" y="118">1200 × 600</text></g>
+    <rect class="tv" x="369" y="439" width="192" height="36" rx="3" /><g><circle class="badge" cx="465" cy="451" r="11" /><text class="badge-text" x="465" y="451">11</text><text class="small" x="465" y="468">ТВ / медиа · 1600 × 300</text></g>
+    <line class="opening" x1="45" y1="365" x2="45" y2="475" /><text class="small" x="65" y="461">D2 · 915 (контроль)</text>
+    <line class="opening" x1="730.2" y1="127" x2="730.2" y2="319" /><text class="small" x="685" y="223">O1 → терраса · 1600</text>
+  </svg>
+
+  <svg class="plan-narrow" viewBox="0 0 350 540" role="img" aria-label="Компактный план B01 с нумерацией">
+    <title>TV-011: компактная схема</title><desc>Номера соответствуют таблице ниже. План показывает исходную расстановку в комнате 5710 на 3500 миллиметров.</desc>
+    <rect class="room" x="10" y="48" width="330" height="202" /><text class="dim-text" x="175" y="28">B01 · 5710 × 3500 мм</text>
+    <rect class="kitchen" x="10" y="48" width="34.7" height="34.7" /><rect class="kitchen" x="44.7" y="48" width="34.7" height="34.7" /><rect class="kitchen" x="79.4" y="48" width="34.7" height="34.7" /><rect class="kitchen" x="114.1" y="48" width="34.7" height="34.7" />
+    <rect class="kitchen" x="10" y="85.6" width="34.7" height="34.7" /><rect class="kitchen" x="10" y="120.3" width="34.7" height="20.2" /><rect class="kitchen" x="10" y="140.5" width="34.7" height="34.7" />
+    <g><circle class="badge" cx="27" cy="62" r="9" /><text class="badge-text" x="27" y="62">1</text></g><g><circle class="badge" cx="62" cy="62" r="9" /><text class="badge-text" x="62" y="62">2</text></g><g><circle class="badge" cx="97" cy="62" r="9" /><text class="badge-text" x="97" y="62">3</text></g><g><circle class="badge" cx="131" cy="62" r="9" /><text class="badge-text" x="131" y="62">4</text></g><g><circle class="badge" cx="27" cy="100" r="9" /><text class="badge-text" x="27" y="100">5</text></g><g><circle class="badge" cx="27" cy="130" r="9" /><text class="badge-text" x="27" y="130">6</text></g><g><circle class="badge" cx="27" cy="157" r="9" /><text class="badge-text" x="27" y="157">7</text></g>
+    <circle class="table" cx="104" cy="150" r="24.5" /><g><circle class="badge" cx="104" cy="150" r="10" /><text class="badge-text" x="104" y="150">8</text></g>
+    <rect class="chair" x="69" y="102" width="23" height="23" /><rect class="chair" x="118" y="102" width="23" height="23" /><rect class="chair" x="66" y="171" width="23" height="23" /><rect class="chair" x="121" y="171" width="23" height="23" />
+    <rect class="sofa" x="152" y="48" width="116" height="58" rx="3" /><g><circle class="badge" cx="210" cy="77" r="10" /><text class="badge-text" x="210" y="77">9</text></g>
+    <rect class="desk" x="270" y="48" width="69" height="34.7" rx="3" /><g><circle class="badge" cx="304" cy="65" r="10" /><text class="badge-text" x="304" y="65">10</text></g>
+    <rect class="tv" x="166" y="233" width="92" height="17" rx="2" /><g><circle class="badge" cx="212" cy="241" r="8" /><text class="badge-text" x="212" y="241">11</text></g>
+    <line class="opening" x1="10" y1="197" x2="10" y2="250" /><text class="small" x="37" y="242">D2 · 915</text><line class="opening" x1="340" y1="83" x2="340" y2="175" /><text class="small" x="285" y="135">O1 · 1600</text>
+    <text class="detail" x="175" y="282">задняя ветка кухни · 2400</text><text class="detail" x="175" y="299">левая ветка · 1600</text>
+  </svg>
+
+  <div class="table-responsive legend"><table class="table table-sm"><thead><tr><th>№</th><th>Элемент</th><th class="text-end">Размер</th><th class="text-end">Координата x / y</th></tr></thead><tbody>
+    <tr><td>1</td><td>Угол / подготовка</td><td class="text-end">600 × 600</td><td class="text-end">0 / 2900</td></tr><tr><td>2</td><td>Варка / ящики</td><td class="text-end">600 × 600</td><td class="text-end">600 / 2900</td></tr><tr><td>3</td><td>ПММ</td><td class="text-end">600 × 600</td><td class="text-end">1200 / 2900</td></tr><tr><td>4</td><td>Пенал</td><td class="text-end">600 × 600</td><td class="text-end">1800 / 2900</td></tr><tr><td>5</td><td>Мойка</td><td class="text-end">600 × 600</td><td class="text-end">0 / 2250</td></tr><tr><td>6</td><td>Выкатное хранение</td><td class="text-end">600 × 350</td><td class="text-end">0 / 1900</td></tr><tr><td>7</td><td>Холодильник</td><td class="text-end">600 × 600</td><td class="text-end">0 / 1300</td></tr><tr><td>8</td><td>Стол круглый</td><td class="text-end">Ø850</td><td class="text-end">1200 / 1300</td></tr><tr><td>9</td><td>Диван</td><td class="text-end">2000 × 1000</td><td class="text-end">2450 / 2500</td></tr><tr><td>10</td><td>Рабочее место</td><td class="text-end">1200 × 600</td><td class="text-end">4500 / 2900</td></tr><tr><td>11</td><td>ТВ / медиа</td><td class="text-end">1600 × 300</td><td class="text-end">2700 / 0</td></tr>
+  </tbody></table></div>
+  <p class="note">Схема — для согласования расстановки. D2 и O1 отмечены по текущему плану; перед заказом кухни их привязки нужно контрольным замером подтвердить.</p>
+</div>
