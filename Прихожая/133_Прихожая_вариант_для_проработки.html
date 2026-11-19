@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Прихожая — вариант для проработки</title>
+<style>
+  :root{background:#f5f3ed;color:#29312a;font:16px/1.5 system-ui,"Segoe UI",sans-serif}
+  body{margin:0} main{max-width:1000px;margin:auto;padding:35px 24px 60px}
+  h1{font-size:clamp(2rem,5vw,3.15rem);line-height:1.1;margin:.3em 0}
+  h2{font-size:1.35rem;margin:1.5em 0 .55em} p{margin:.55em 0}
+  a{color:#2a5543;text-underline-offset:3px}
+  .intro{color:#505c51;max-width:690px}
+  .overview{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:22px;align-items:start;margin:24px 0}
+  figure{margin:0} img{display:block;width:100%;height:auto;border-radius:8px}
+  figcaption{color:#505c51;font-size:.85rem;padding-top:.45em}
+  .callout{padding:14px 17px;border-left:4px solid #79895d;background:#e7ecdf;margin:1em 0}
+  .measure{background:#fff;border:1px solid #d9dcd2;border-radius:8px;overflow:hidden}
+  table{width:100%;border-collapse:collapse}
+  th,td{text-align:left;vertical-align:top;padding:9px 12px;border-bottom:1px solid #e3e5dc}
+  th{background:#e8ecdf}
+  td:last-child{width:23%}
+  tr:last-child td{border-bottom:0}
+  ol,ul{padding-left:1.35em} li{margin:.4em 0}
+  .write{display:inline-block;min-width:4em;height:1em;border-bottom:1px solid #758076}
+  .nowrap{white-space:nowrap}
+  @media(max-width:560px){main{padding:22px 14px 36px}th,td{padding:8px}td:last-child{width:28%}}
+  @media print{
+    @page{size:A4;margin:13mm}
+    :root{background:white;font-size:10pt}main{padding:0;max-width:none} h1{font-size:24pt}
+    .overview{grid-template-columns:1.25fr .75fr;gap:15px;margin:14px 0}
+    .overview img{max-height:64mm;object-fit:contain;object-position:left top}
+    .onsite{break-before:page} .measure,.callout,tr,figure{break-inside:avoid}
+    a{color:inherit;text-decoration:none}
+  }
+</style>
+</head>
+<body>
+<main>
+<a href="00_Начните%20здесь.html">← Каталог прихожей</a>
+<h1>Прихожая</h1>
+<p class="intro">Вариант для проработки и лист контрольного замера. Размеры помещения взяты из плана B01, габариты мебели — из эскиза v47.</p>
+<section class="overview" aria-label="Вариант оформления и компоновка">
+  <div>
+    <h2>Светлый шкаф и гладкая дубовая ниша</h2>
+    <p>Рекомендую взять за основу вариант 1. Гладкую панель у крючков и за обувью проще протирать. Для ключей — отдельный небольшой крючок на панели со стороны входа. Точное место проверить с открытой входной дверью и висящей курткой.</p>
+    <ul>
+      <li><strong>У входа</strong> — банкетка 575 × 420 мм, сиденье на высоте 460 мм. Ящик для сухих тапочек занимает часть ширины. Обувь ставится в один ряд на пол, высокие ботинки — в зоне без ящика.</li>
+      <li><strong>Дальше от двери</strong> — шкаф 1050 × 580 × 2700 мм. Ближняя к банкетке секция — для одежды, зеркало на её дверце. Дальняя секция предусмотрена под щит. Переход в коридор за шкафом открыт.</li>
+      <li><strong>Отделка</strong> — молочный фасад, светлый дуб, скрытая подсветка ниши. Пол прихожей — декор «Дуб Синистра» по проекту квартиры. <a href="../docs/ОБЩЕЕ_РЕШЕНИЕ_ПОЛ_Дуб_Синистра_2026-11-09.md">Решение по полу</a>.</li>
+    </ul>
+  </div>
+  <figure>
+    <a href="124_вариант_1_светлый_дуб_v49.png"><img src="124_вариант_1_светлый_дуб_v49.png" alt="Светлый фасад и гладкая дубовая ниша, вид из кухни"></a>
+    <figcaption>Эскиз отделки. Крючок для ключей предложен дополнительно.</figcaption>
+  </figure>
+</section>
+
+<section aria-labelledby="check">
+<h2 id="check">Что показала проверка</h2>
+<p>Проверяйте весь ход полотен. В условном примере с дальними петлями створки одежды при 90° есть зазор, а во время движения створка задевает открытую входную дверь. <a href="134_Проверка_открывания_дверей.html">Проверка обоих порядков открывания на плане</a>.</p>
+<ol>
+  <li><strong>Щит нужно привязать к мебели.</strong> Ноль — чистовой внутренний угол у входной стены, отсчёт вдоль левой стены к коридору. По эскизу банкетка занимает отметки 25–600 мм, шкаф — 600–1650 мм. При стенках по 18 мм дальняя секция щита в свету приходится на 1082–1632 мм. Сравнить с обеими кромками фактического корпуса и проверить ход его дверцы. Если щит не вписывается, согласовать положение секции или возможность переноса по месту. <a href="../docs/08_Ведомость_инженерных_точек_и_оборудования.md">Ведомость инженерных точек</a>.</li>
+  <li><strong>Корпус 2700 мм требует проверки способа сборки.</strong> При глубине корпуса 562 мм его диагональ составляет около 2758 мм. Для подъёма собранного прямоугольного корпуса с пола в вертикальное положение через эту диагональ высоты 2750 мм из S09 недостаточно. Предусмотреть вертикальную сборку или согласовать деление корпуса с мебельщиком после чистового замера.</li>
+  <li><strong>Примерить ручки вместе с дверьми.</strong> При закрытом шкафе расчётный остаток до противоположной плоскости B01 — 1510 мм. При условном открытом на 90° фасаде одежды шириной 470 мм остаётся 1040 мм, при створке щита шириной 574 мм — 936 мм. Проверить совместное открывание с D1, учитывая петли, ручки, коробку и отделку. <a href="112_прихожая_план_и_проходы_v47.png">План проходов</a>.</li>
+</ol>
+</section>
+
+<section class="onsite" aria-labelledby="measure">
+<h2 id="measure">Лист контрольного замера</h2>
+<p>Записывайте чистовые размеры в миллиметрах. Отметки по левой стене — от угла у входа, высоты — от чистого пола. Если отделка ещё не готова, укажите её ожидаемую толщину отдельно.</p>
+<div class="measure">
+<table>
+<thead><tr><th scope="col">Что проверить</th><th scope="col">Где и как измерить</th><th scope="col">Факт, мм</th></tr></thead>
+<tbody>
+  <tr><td>Полезная длина левой стены</td><td>На уровне пола, сиденья и верха шкафа. Указать плинтус и выступы.</td><td><span class="write"></span> / <span class="write"></span> / <span class="write"></span></td></tr>
+  <tr><td>Высота и поперечный проход</td><td>Минимальная высота над шкафом и на месте сборки. Расстояние до противоположной стены в двух точках напротив шкафа и банкетки.</td><td><span class="write"></span> / <span class="write"></span> / <span class="write"></span></td></tr>
+  <tr><td>Входная дверь D1</td><td>Левая и правая привязки коробки, направление открывания, сторона петель и выступ ручки. Для двери есть отдельный <a href="../docs/30_Полевой_лист_G-D1_входной_двери_SH-004.md">полевой лист</a>.</td><td><span class="write"></span> / <span class="write"></span></td></tr>
+  <tr><td>Щит ЭЩ-03 и розетки E-03</td><td>Обе кромки щита от угла, низ и верх от пола, выступ от стены, сторона и угол открывания. Для розеток — оси и высоты. Сделать фото с рулеткой.</td><td>Привязки <span class="write"></span><br>Высоты <span class="write"></span><br>Выступ <span class="write"></span></td></tr>
+  <tr><td>Обувь и тапочки</td><td>Ширина двух реальных пар в один ряд, глубина самой длинной пары и высота ботинка. Сопоставить с чистым просветом под сиденьем и внутренним размером ящика.</td><td><span class="write"></span> / <span class="write"></span> / <span class="write"></span></td></tr>
+</tbody>
+</table>
+</div>
+<p class="callout">Для проверки на месте отметьте малярной лентой передние грани шкафа и банкетки на 580 и 420 мм от левой стены. Откройте входную дверь, проверьте ручку, посадку на банкетку и место для обуви. Запишите минимальный зазор и приложите фото.</p>
+<p><a href="113_прихожая_шкаф_и_банкетка_v47.png">Развёртка шкафа и банкетки</a> · <a href="116_проверка_размеров_и_пропорций_v47.md">Расчёты и ограничения v47</a> · <a href="132_сравнение_вариантов_v49.md">Сравнение отделок</a></p>
+</section>
+</main>
+</body>
+</html>

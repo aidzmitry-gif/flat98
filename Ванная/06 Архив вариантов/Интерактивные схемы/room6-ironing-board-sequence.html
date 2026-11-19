@@ -1,0 +1,109 @@
+<div id="room6-ironing-board-sequence" aria-live="polite">
+  <style>
+    #room6-ironing-board-sequence { color: var(--foreground); }
+    #room6-ironing-board-sequence .viz-controls { margin-bottom: 0.75rem; }
+    #room6-ironing-board-sequence .step-note { margin: 0.5rem 0 0; color: var(--muted-foreground); }
+    #room6-ironing-board-sequence svg { display: block; width: 100%; height: auto; }
+    #room6-ironing-board-sequence .wall { fill: none; stroke: var(--foreground); stroke-width: 2; }
+    #room6-ironing-board-sequence .furniture { fill: color-mix(in srgb, var(--orange) 18%, transparent); stroke: var(--orange); stroke-width: 1.5; }
+    #room6-ironing-board-sequence .service { fill: color-mix(in srgb, var(--red) 14%, transparent); stroke: var(--red); stroke-width: 1.5; }
+    #room6-ironing-board-sequence .board { fill: color-mix(in srgb, var(--green) 23%, transparent); stroke: var(--green); stroke-width: 2; }
+    #room6-ironing-board-sequence .board-muted { fill: color-mix(in srgb, var(--muted) 48%, transparent); stroke: var(--muted-foreground); stroke-width: 1.5; }
+    #room6-ironing-board-sequence .arrow { fill: none; stroke: var(--blue); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+    #room6-ironing-board-sequence .safe-zone { fill: color-mix(in srgb, var(--green) 9%, transparent); stroke: var(--green); stroke-width: 1; stroke-dasharray: 5 4; }
+    #room6-ironing-board-sequence .label { fill: var(--foreground); font-size: 13px; font-family: system-ui, sans-serif; font-weight: 500; }
+    #room6-ironing-board-sequence .sub { fill: var(--muted-foreground); font-size: 12px; font-family: system-ui, sans-serif; }
+    #room6-ironing-board-sequence .accent { fill: var(--green); font-size: 12px; font-family: system-ui, sans-serif; font-weight: 500; }
+    #room6-ironing-board-sequence .hidden { display: none; }
+  </style>
+  <h2>IKEA RUTER 404.716.11: M3 -> продольная рабочая зона</h2>
+  <div class="viz-controls" aria-label="Шаги раскладывания доски">
+    <button type="button" class="btn" data-step="1" aria-pressed="true">1. Снять</button>
+    <button type="button" class="btn" data-step="2" aria-pressed="false">2. Перенести</button>
+    <button type="button" class="btn" data-step="3" aria-pressed="false">3. Разложить</button>
+  </div>
+  <svg viewBox="0 0 820 540" role="img" aria-labelledby="room6-board-title room6-board-desc">
+    <title id="room6-board-title">Схема хранения и разворачивания гладильной доски в прачечной 6</title>
+    <desc id="room6-board-desc">Доска хранится вертикально в M3 на левой стене у дальней стены. В сложенном виде ее выводят в проход и раскрывают вдоль комнаты, не поперек, чтобы не перекрывать дверь и не касаться раковины, змеевика и нижних выводов у дальней стены.</desc>
+    <defs>
+      <marker id="room6-arrowhead" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+        <path d="M0,0 L8,4 L0,8 z" fill="var(--blue)"></path>
+      </marker>
+    </defs>
+    <text class="sub" x="100" y="38">Вид сверху. D3 сверху; мебель слева; змеевик, выводы и раковина у дальней правой стены.</text>
+    <rect class="wall" x="100" y="80" width="620" height="380" rx="2"></rect>
+    <path class="wall" d="M150 80 H250 M570 80 H720"></path>
+    <path class="arrow" d="M410 66 V42" marker-end="url(#room6-arrowhead)"></path>
+    <text class="label" x="378" y="30">D3 наружу</text>
+
+    <rect class="furniture" x="100" y="80" width="101" height="175"></rect>
+    <rect class="furniture" x="100" y="255" width="222" height="140"></rect>
+    <rect class="furniture" x="100" y="395" width="222" height="65"></rect>
+    <text class="label" x="122" y="145">M1</text>
+    <text class="sub" x="112" y="163">800 x 280</text>
+    <text class="label" x="170" y="325">M2</text>
+    <text class="sub" x="136" y="343">640 x 620</text>
+    <text class="label" x="170" y="426">M3</text>
+    <text class="sub" x="113" y="444">доска боком</text>
+
+    <rect class="service" x="596" y="395" width="124" height="65"></rect>
+    <path class="service" d="M683 407 v24 h-23"></path>
+    <text class="label" x="608" y="426">раковина</text>
+    <text class="sub" x="608" y="444">только после привязки</text>
+    <rect class="service" x="690" y="285" width="30" height="84" rx="9"></rect>
+    <path class="service" d="M697 300 h16 M697 318 h16 M697 336 h16 M697 354 h16"></path>
+    <text class="label" x="642" y="276">Z1</text>
+    <text class="sub" x="568" y="383">W1: 50 мм от задней стены</text>
+
+    <g id="board-step-1">
+      <rect class="board" x="167" y="404" width="18" height="47" rx="2"></rect>
+      <text class="accent" x="332" y="420">Сложенная доска: ориентир 1400 x 370 x 50 мм</text>
+      <text class="sub" x="332" y="439">Стоит вертикально в M3, ребром к проему.</text>
+      <text class="sub" x="332" y="456">Нужен чистый внутренний H не менее 1420 мм.</text>
+    </g>
+    <g id="board-step-2" class="hidden">
+      <rect class="board-muted" x="344" y="185" width="18" height="140" rx="2"></rect>
+      <path class="arrow" d="M178 402 C250 360 292 300 341 245" marker-end="url(#room6-arrowhead)"></path>
+      <text class="accent" x="388" y="330">Перенести сложенной в проход.</text>
+      <text class="sub" x="388" y="349">F1 сложена, дверцы техники закрыты.</text>
+      <text class="sub" x="388" y="366">Не раскладывать у W1, Z1 или раковины.</text>
+    </g>
+    <g id="board-step-3" class="hidden">
+      <rect class="safe-zone" x="321" y="103" width="148" height="322" rx="3"></rect>
+      <rect class="board" x="329" y="112" width="133" height="306" rx="8"></rect>
+      <path d="M338 138 h-29 M338 391 h-29" class="board"></path>
+      <text class="accent" x="476" y="175">доска раскрыта вдоль комнаты</text>
+      <text class="sub" x="476" y="194">консервативный контур 1400 x 370 мм</text>
+      <path class="arrow" d="M486 270 h46" marker-end="url(#room6-arrowhead)"></path>
+      <text class="label" x="476" y="290">стоять с правой стороны</text>
+      <text class="sub" x="476" y="309">Раковиной и Z1 в этот момент не пользоваться.</text>
+      <text class="sub" x="476" y="326">Поперек комнаты доску не ставить: она перекроет путь к D3.</text>
+    </g>
+    <text class="sub" x="100" y="500">Расчет: B01 1730 x 1740; M1/M2/M3 = 1740 по левой стене. Схема не заменяет натурный обмер.</text>
+  </svg>
+  <p id="room6-board-step-note" class="step-note">Шаг 1. Освободить верхний фиксатор, удерживая доску рукой; поднять ее из нижнего U-упора.</p>
+  <script>
+    (() => {
+      const root = document.getElementById('room6-ironing-board-sequence');
+      const notes = {
+        1: 'Шаг 1. Освободить верхний фиксатор, удерживая доску рукой; поднять ее из нижнего U-упора.',
+        2: 'Шаг 2. Нести только сложенную и зафиксированную доску в правую половину прохода. Задняя инженерная зона остается свободной.',
+        3: 'Шаг 3. Поставить доску вдоль комнаты и раскрыть ноги. Рабочая сторона - справа от доски; раковиной и Z1 в этот момент не пользоваться.'
+      };
+      const note = document.getElementById('room6-board-step-note');
+      const groups = {
+        1: document.getElementById('board-step-1'),
+        2: document.getElementById('board-step-2'),
+        3: document.getElementById('board-step-3')
+      };
+      root.querySelectorAll('[data-step]').forEach((button) => {
+        button.addEventListener('click', () => {
+          const step = button.dataset.step;
+          Object.entries(groups).forEach(([key, group]) => group.classList.toggle('hidden', key !== step));
+          root.querySelectorAll('[data-step]').forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
+          note.textContent = notes[step];
+        });
+      });
+    })();
+  </script>
+</div>

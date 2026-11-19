@@ -1,0 +1,82 @@
+<div id="scaled-laundry-plan" aria-labelledby="scaled-plan-title">
+  <style>
+    #scaled-laundry-plan { color: var(--foreground); }
+    #scaled-laundry-plan .scaled-plan { display: block; width: 100%; height: auto; }
+    #scaled-laundry-plan .room { fill: var(--background); stroke: none; }
+    #scaled-laundry-plan .wall { fill: var(--secondary); stroke: var(--foreground); stroke-width: 5; }
+    #scaled-laundry-plan .unknown-wall { fill: var(--muted); stroke: var(--foreground); stroke-width: 5; }
+    #scaled-laundry-plan .door-opening { stroke: var(--orange); stroke-width: 12; stroke-dasharray: 24 18; }
+    #scaled-laundry-plan .machine { fill: var(--accent); stroke: var(--foreground); stroke-width: 5; }
+    #scaled-laundry-plan .shelves { fill: var(--secondary); stroke: var(--foreground); stroke-width: 5; }
+    #scaled-laundry-plan .shelf-line { stroke: var(--muted-foreground); stroke-width: 4; }
+    #scaled-laundry-plan .dimension { fill: none; stroke: var(--muted-foreground); stroke-width: 3; marker-start: url(#scale-arrow); marker-end: url(#scale-arrow); }
+    #scaled-laundry-plan .extension { stroke: var(--muted-foreground); stroke-width: 3; }
+    #scaled-laundry-plan .label { fill: var(--foreground); font: 500 44px sans-serif; }
+    #scaled-laundry-plan .note { fill: var(--muted-foreground); font: 400 36px sans-serif; }
+    #scaled-laundry-plan .small { fill: var(--foreground); font: 500 36px sans-serif; }
+  </style>
+  <svg class="scaled-plan" viewBox="0 0 2500 2900" role="img" aria-labelledby="scaled-plan-title scaled-plan-description">
+    <title id="scaled-plan-title">Масштабная схема постирочной в помещении 6</title>
+    <desc id="scaled-plan-description">Контур ванной 6 по B01 1730 на 1740 миллиметров. Слева от входа показаны колонна стиральной и сушильной машин и открытые полки. Показаны подтвержденные толщины перегородок и неизвестная толщина наружной стены.</desc>
+    <defs>
+      <marker id="scale-arrow" viewBox="0 0 12 12" refX="6" refY="6" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+        <path d="M 0 0 L 12 6 L 0 12 z" fill="var(--muted-foreground)"></path>
+      </marker>
+    </defs>
+
+    <text x="140" y="115" class="label" font-size="18">Помещение 6 — схема расстановки по контуру B01</text>
+    <text x="140" y="155" class="note">Масштаб: 1 единица схемы = 1 мм</text>
+
+    <rect class="room" x="300" y="420" width="1730" height="1740"></rect>
+    <rect class="wall" x="140" y="390" width="160" height="1800"></rect>
+    <rect class="wall" x="2030" y="390" width="130" height="1800"></rect>
+    <rect class="wall" x="300" y="390" width="140" height="30"></rect>
+    <rect class="wall" x="1250" y="390" width="780" height="30"></rect>
+    <rect class="unknown-wall" x="140" y="2160" width="2020" height="85"></rect>
+    <line class="door-opening" x1="440" y1="405" x2="1250" y2="405"></line>
+
+    <rect class="machine" x="300" y="1020" width="593" height="595"></rect>
+    <line class="shelf-line" x1="596.5" y1="1020" x2="596.5" y2="1615"></line>
+    <text class="small" x="596.5" y="1265" text-anchor="middle">Haier HW100-BD14979U1</text>
+    <text class="note" x="596.5" y="1305" text-anchor="middle">стиральная · 595 × 583 × 850</text>
+    <text class="small" x="596.5" y="1375" text-anchor="middle">Haier HD80-D357U1-S</text>
+    <text class="note" x="596.5" y="1415" text-anchor="middle">сушилка сверху · 595 × 593 × 845</text>
+    <text class="note" x="596.5" y="1485" text-anchor="middle">HASTKU10 · 619 × 567 × 92</text>
+
+    <rect class="shelves" x="300" y="1615" width="350" height="545"></rect>
+    <line class="shelf-line" x1="300" y1="1751" x2="650" y2="1751"></line>
+    <line class="shelf-line" x1="300" y1="1887" x2="650" y2="1887"></line>
+    <line class="shelf-line" x1="300" y1="2023" x2="650" y2="2023"></line>
+    <text class="small" x="475" y="1830" text-anchor="middle">открытые</text>
+    <text class="small" x="475" y="1865" text-anchor="middle">полки*</text>
+
+    <rect class="shelves" x="650" y="1615" width="300" height="545"></rect>
+    <text class="small" x="800" y="1830" text-anchor="middle">доска</text>
+    <text class="note" x="800" y="1865" text-anchor="middle">ниша 300*</text>
+
+    <line class="extension" x1="300" y1="310" x2="300" y2="370"></line>
+    <line class="extension" x1="2030" y1="310" x2="2030" y2="370"></line>
+    <line class="dimension" x1="310" y1="310" x2="2020" y2="310"></line>
+    <text class="label" x="1165" y="280" text-anchor="middle">1730 мм — B01</text>
+
+    <line class="extension" x1="80" y1="420" x2="130" y2="420"></line>
+    <line class="extension" x1="80" y1="2160" x2="130" y2="2160"></line>
+    <line class="dimension" x1="80" y1="430" x2="80" y2="2150"></line>
+    <text class="label" x="48" y="1290" text-anchor="middle" transform="rotate(-90 48 1290)">1740 мм — B01</text>
+
+    <text class="note" x="370" y="365" text-anchor="middle">140</text>
+    <text class="small" x="845" y="365" text-anchor="middle">D3: сегмент B01 810*</text>
+    <text class="note" x="1640" y="365" text-anchor="middle">780</text>
+    <text class="note" x="220" y="1305" text-anchor="middle" transform="rotate(-90 220 1305)">стена 7/6 · t=160</text>
+    <text class="note" x="2095" y="1305" text-anchor="middle" transform="rotate(-90 2095 1305)">стена 6/2 · t=130</text>
+    <text class="note" x="1670" y="2310" text-anchor="middle">наружная стена: толщина н/д</text>
+    <text class="note" x="1640" y="700" text-anchor="middle">вход из коридора 4</text>
+    <text class="note" x="1640" y="735" text-anchor="middle">направление открывания н/д</text>
+
+    <line class="dimension" x1="903" y1="920" x2="2020" y2="920"></line>
+    <text class="label" x="1461.5" y="885" text-anchor="middle">проход около 1137 мм*</text>
+
+    <text class="note" x="140" y="2510">* Полки и ниша — проектные; техника, комплект и её габариты — реальные глобальные модели.</text>
+    <text class="note" x="140" y="2550">Контрольные размеры комнаты расходятся: 1745 × 1740 и старая запись 1740 × 1730; перед заказом нужен повторный обмер.</text>
+  </svg>
+</div>
